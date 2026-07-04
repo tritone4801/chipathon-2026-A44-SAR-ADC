@@ -1,0 +1,33 @@
+{
+  "mode": "ACTUAL_CDAC_CMP_ADC",
+  "band": "near_nyquist",
+  "size": "quick",
+  "status": "PASS",
+  "evidence_class": "ACTUAL_ELECTRICAL_AUTHORITY",
+  "source_table": "verification/reports/dynamic_metrics_near_nyquist.csv",
+  "review_report": "verification/reports/verification_summary.md",
+  "plot": "verification/plots/actual_spectrum_near_nyquist_quick.png",
+  "supply_mode": "damped",
+  "notes": "Actual closed-loop near_nyquist quick dynamic run completed from ngspice .meas DOUT samples.",
+  "SNDR_dB": 48.57993756106268,
+  "ENOB_bits": 7.777398265957256,
+  "SFDR_dB": 63.492251078844035,
+  "THD_dB": -67.1107511099236,
+  "fundamental_bin": 251,
+  "fundamental_frequency_hz": 980468.75,
+  "harmonic_bins_after_alias": [
+    10,
+    241,
+    20,
+    231
+  ],
+  "largest_spur_frequency_hz": 933593.75,
+  "largest_spur_dBc": -63.492251078844035,
+  "nfft": 512,
+  "fs_hz": 2000000.0,
+  "fin_hz": 980468.75,
+  "input_amplitude_vpp_diff": 3.0,
+  "clipping_detected": false,
+  "missing_samples": 0,
+  "discard_samples": 32
+}

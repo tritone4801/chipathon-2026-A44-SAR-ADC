@@ -9,6 +9,27 @@ template Makefile.
 No PRs are planned against upstream; all chipathon-specific material
 stays in this fork.
 
+## A44 SAR ADC Review Package
+
+This branch adds the current Team A44 JST SAR ADC schematic-review update
+without publishing runnable verification scripts, testbenches, generated decks,
+or rerun configuration files.
+
+Review entry points:
+
+| Artifact | Purpose |
+|---|---|
+| [`current_goal.md`](current_goal.md) | Frozen A44 SAR ADC project target, interface, timing contract, and pad plan |
+| [`docs/reviews/a44_ppt_progress_summary_20260703.md`](docs/reviews/a44_ppt_progress_summary_20260703.md) | GitHub table summary extracted from the schematic-review PPT |
+| [`docs/reviews/a44_schematic_review_update_20260703.md`](docs/reviews/a44_schematic_review_update_20260703.md) | Schematic-review status and design boundary |
+| [`docs/reviews/a44_confirmed_artifact_index_20260703.md`](docs/reviews/a44_confirmed_artifact_index_20260703.md) | Confirmed artifact index for design files, result summaries, and plots |
+| [`verification/reports/verification_summary.md`](verification/reports/verification_summary.md) | Compact actual CDAC + comparator integrated result summary |
+| [`docs/reviews/a44_time_frequency_result_plot_scope_20260703.md`](docs/reviews/a44_time_frequency_result_plot_scope_20260703.md) | Explicit time-domain and frequency-domain plot/result scope |
+
+Promoted result files are compact Markdown, CSV, JSON, and PNG artifacts only.
+Full PVT, Monte Carlo, layout/PEX/yield, and production-source signoff are not
+claimed by this update.
+
 ## Credits
 
 This repository is a **derivation**. The template, Nix flake, and
