@@ -21,6 +21,7 @@ Review entry points:
 |---|---|
 | [`current_goal.md`](current_goal.md) | Frozen A44 SAR ADC project target, interface, timing contract, and pad plan |
 | [`docs/reviews/a44_ppt_progress_summary_20260703.md`](docs/reviews/a44_ppt_progress_summary_20260703.md) | GitHub table summary extracted from the schematic-review PPT |
+| [`docs/reviews/a44_issue_114_update_20260704.md`](docs/reviews/a44_issue_114_update_20260704.md) | Issue-ready update text for official Chipathon issue #114 |
 | [`docs/reviews/a44_schematic_review_update_20260703.md`](docs/reviews/a44_schematic_review_update_20260703.md) | Schematic-review status and design boundary |
 | [`docs/reviews/a44_confirmed_artifact_index_20260703.md`](docs/reviews/a44_confirmed_artifact_index_20260703.md) | Confirmed artifact index for design files, result summaries, and plots |
 | [`verification/reports/verification_summary.md`](verification/reports/verification_summary.md) | Compact actual CDAC + comparator integrated result summary |
