@@ -1,0 +1,77 @@
+* Unit smoke for SAR_LOGIC_BEH_TT_3P3_27C through ngspice d_cosim.
+VDD vdd 0 3.3
+VCLKS clks 0 PULSE(3.3 0 100n 0.25n 0.25n 300n 500n)
+
+* All-one comparator response: reset 00 while CMPCK is low, valid 10 while high.
+BDCMPP dcmpp 0 V=3.3*u(v(cmpck)-1.65)
+VDCMPN dcmpn 0 0
+
+A_CLKS [clks] [clks_d] adc_logic_in
+A_DCMPP [dcmpp] [dcmpp_d] adc_logic_in
+A_DCMPN [dcmpn] [dcmpn_d] adc_logic_in
+
+ABEH [clks_d dcmpp_d dcmpn_d]
++ [cmpck_d
++ dctrlp7_d dctrlp6_d dctrlp5_d dctrlp4_d dctrlp3_d dctrlp2_d dctrlp1_d
++ dctrln7_d dctrln6_d dctrln5_d dctrln4_d dctrln3_d dctrln2_d dctrln1_d
++ dout7_d dout6_d dout5_d dout4_d dout3_d dout2_d dout1_d dout0_d
++ eoc_d
++ invalid7_d invalid6_d invalid5_d invalid4_d invalid3_d invalid2_d invalid1_d invalid0_d
++ timeout7_d timeout6_d timeout5_d timeout4_d timeout3_d timeout2_d timeout1_d timeout0_d
++ complete_d] sar_logic_beh
+
+A_CMPCK [cmpck_d] [cmpck_drv] dac_cmpck
+A_DCTRLP
++ [dctrlp7_d dctrlp6_d dctrlp5_d dctrlp4_d dctrlp3_d dctrlp2_d dctrlp1_d]
++ [dctrlp7_drv dctrlp6_drv dctrlp5_drv dctrlp4_drv dctrlp3_drv dctrlp2_drv dctrlp1_drv]
++ dac_dctrl
+A_DCTRLN
++ [dctrln7_d dctrln6_d dctrln5_d dctrln4_d dctrln3_d dctrln2_d dctrln1_d]
++ [dctrln7_drv dctrln6_drv dctrln5_drv dctrln4_drv dctrln3_drv dctrln2_drv dctrln1_drv]
++ dac_dctrl
+A_DOUT
++ [dout7_d dout6_d dout5_d dout4_d dout3_d dout2_d dout1_d dout0_d]
++ [dout7_drv dout6_drv dout5_drv dout4_drv dout3_drv dout2_drv dout1_drv dout0_drv]
++ dac_dout
+A_STATUS [eoc_d invalid0_d timeout0_d complete_d]
++ [eoc invalid0 timeout0 complete] dac_dout
+
+R_CMPCK cmpck_drv cmpck 1000
+C_CMPCK cmpck 0 20f
+R_DOUT7 dout7_drv dout7 1000
+R_DOUT6 dout6_drv dout6 1000
+R_DOUT5 dout5_drv dout5 1000
+R_DOUT4 dout4_drv dout4 1000
+R_DOUT3 dout3_drv dout3 1000
+R_DOUT2 dout2_drv dout2 1000
+R_DOUT1 dout1_drv dout1 1000
+R_DOUT0 dout0_drv dout0 1000
+C_DOUT7 dout7 0 10f
+C_DOUT6 dout6 0 10f
+C_DOUT5 dout5 0 10f
+C_DOUT4 dout4 0 10f
+C_DOUT3 dout3 0 10f
+C_DOUT2 dout2 0 10f
+C_DOUT1 dout1 0 10f
+C_DOUT0 dout0 0 10f
+
+.model adc_logic_in adc_bridge in_low=0.99 in_high=2.31 rise_delay=1p fall_delay=1p
+.model dac_cmpck dac_bridge input_load=10f t_rise=0.25n t_fall=0.25n out_low=0 out_high=3.3
+.model dac_dctrl dac_bridge input_load=10f t_rise=0.25n t_fall=0.25n out_low=0 out_high=3.3
+.model dac_dout dac_bridge input_load=10f t_rise=0.25n t_fall=0.25n out_low=0 out_high=3.3
+.model sar_logic_beh d_cosim
++ simulation="/foss/designs/manual_goal/verification/A44_TT_BEH_NO_R6_MC200_FAST64_SIGNOFF_20260718/models/SAR_LOGIC_BEH_TT_3P3_27C.so" delay=1p
+
+.control
+set wr_singlescale
+set wr_vecnames
+tran 0.05n 420n 0 0.05n
+meas tran t_cmp1 when v(cmpck)=1.65 rise=1
+meas tran t_cmp8 when v(cmpck)=1.65 rise=8
+meas tran t_complete when v(complete)=1.65 rise=1
+meas tran dout7_at_330 find v(dout7) at=330n
+meas tran dout0_at_330 find v(dout0) at=330n
+wrdata ../raw/tb_cosim_unit.csv time v(clks) v(cmpck) v(dcmpp) v(dcmpn) v(eoc) v(complete) v(invalid0) v(timeout0) v(dout7) v(dout0)
+quit
+.endc
+.end

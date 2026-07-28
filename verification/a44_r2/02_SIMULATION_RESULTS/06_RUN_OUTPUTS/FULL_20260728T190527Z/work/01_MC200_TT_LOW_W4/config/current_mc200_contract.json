@@ -1,0 +1,35 @@
+{
+  "campaign": "01_MC200_TT_LOW_W4",
+  "candidate_comparator_path": "/foss/designs/A44_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_MC200_PVT_FULLSTATIC_20260728_R1/01_MC200_TT_LOW_W4/netlists/core/subckts/Comparator_StrongARM_extracted.subckt.spice",
+  "candidate_comparator_sha256": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+  "candidate_id": "CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587",
+  "claim_boundary": [
+    "MC200 is the fixed TT population result.",
+    "PVT selected MC20 and FULL STATIC are reported separately.",
+    "No layout, PEX, silicon, production-yield, or tapeout signoff claim."
+  ],
+  "created_utc": "2026-07-28T03:56:34.016175+00:00",
+  "declared_candidate_comparator_sha256": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+  "method": {
+    "band": "LOW",
+    "corner": "TT_3P3_27C",
+    "formal_frames": "4_through_67",
+    "frames": 68,
+    "maxstep_ps": 50,
+    "method_id": "FAST64_V2_FIRST_CONVERSION_SEPARATED",
+    "noise_seed_rule": "100000_plus_mismatch_seed",
+    "population": "mismatch_seed_1_through_200",
+    "steady_state_method_id": "FAST64_SS_W4",
+    "workers": 4
+  },
+  "resizing_um": {
+    "XM1": 1.56,
+    "XM11": 16.8587,
+    "XM3": 3.51,
+    "XM4": 3.51,
+    "XM5": 8.2524,
+    "XM6": 8.2524,
+    "XM7": 16.8587
+  },
+  "status": "FROZEN_BEFORE_EXECUTION"
+}

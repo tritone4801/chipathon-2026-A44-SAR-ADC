@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "all_code_rows_4080": true,
+    "all_parseval": true,
+    "all_protocol_clean": true,
+    "all_returncode_zero": true,
+    "all_terminal": true,
+    "all_valid_frames_68": true,
+    "all_w4_50ps": true,
+    "baseline_pairing_60": true,
+    "formal_job_matrix_60": true,
+    "formal_pvt_binding": true,
+    "formal_records_60": true,
+    "frozen_inputs_unchanged": true,
+    "local_mismatch_pairing_probe": true,
+    "manual_visual_review": true,
+    "plot_pairs_5": true,
+    "smoke_gate": true,
+    "w4_code_rows_3840": true
+  },
+  "completed_utc": "2026-07-28T05:47:05.830538+00:00",
+  "pass": true,
+  "performance_failures_are_retained_evidence_not_completion_failures": true
+}

@@ -1,0 +1,10 @@
+* Minimal numparam agauss seed probe.
+.option seed=20260718
+.param AGAUSS_DRAW=agauss(0,1,1)
+BOUT out 0 v={AGAUSS_DRAW}
+.control
+op
+print v(out)
+quit
+.endc
+.end

@@ -1,0 +1,14 @@
+{
+  "case": "S044_FF",
+  "completed_utc": "2026-07-28T18:09:31.616122+00:00",
+  "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+  "elapsed_s": 0.20236276800278574,
+  "frames_per_bracket_point": 2,
+  "matching_transition_count": 0,
+  "mismatch_seed": 44,
+  "pass": false,
+  "pvt": "FF_3P6_M40C",
+  "returncode": 1,
+  "status": "FAIL_STATIC_FIRST5_REPRODUCIBILITY",
+  "transition_count": 5
+}

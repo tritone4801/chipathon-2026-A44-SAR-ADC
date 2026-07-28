@@ -1,0 +1,10 @@
+v {xschem version=3.4.8RC file_version=1.2
+}
+K {type=subcircuit
+format=""
+template="name=x1"
+}
+G {}
+V {}
+S {}
+E {}

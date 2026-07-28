@@ -1,0 +1,45 @@
+{
+  "case_status": {
+    "S044_TT": {
+      "absolute_static_status": "PASS",
+      "analysis": "PASS_COMPLETE",
+      "analysis_returncode": 0,
+      "completed_utc": "2026-07-28T05:22:14.329693+00:00",
+      "pilot": "PASS",
+      "started_utc": "2026-07-28T04:22:58.452977+00:00",
+      "transition_returncode": 0,
+      "transitions": "PASS"
+    },
+    "S116_TT": {
+      "absolute_static_status": "PASS",
+      "analysis": "PASS_COMPLETE",
+      "analysis_returncode": 0,
+      "completed_utc": "2026-07-28T06:17:58.140813+00:00",
+      "pilot": "PASS",
+      "pilot_returncode": 0,
+      "started_utc": "2026-07-28T05:22:14.332828+00:00",
+      "transition_returncode": 0,
+      "transitions": "PASS"
+    },
+    "S180_TT": {
+      "absolute_static_status": "PASS",
+      "analysis": "PASS_COMPLETE",
+      "analysis_returncode": 0,
+      "completed_utc": "2026-07-28T07:08:47.875334+00:00",
+      "pilot": "PASS",
+      "pilot_returncode": 0,
+      "started_utc": "2026-07-28T06:17:58.145736+00:00",
+      "transition_returncode": 0,
+      "transitions": "PASS"
+    }
+  },
+  "cases": [
+    "S044_TT",
+    "S116_TT",
+    "S180_TT"
+  ],
+  "completed_utc": "2026-07-28T07:08:47.877985+00:00",
+  "queue": "A",
+  "started_utc": "2026-07-28T04:22:58.450508+00:00",
+  "state": "COMPLETE"
+}

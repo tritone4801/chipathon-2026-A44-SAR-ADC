@@ -1,0 +1,37 @@
+{
+  "distance_to_historical_p95_lsb": 0.0017036765379683239,
+  "exact_validation": {
+    "max_abs_dnl_lsb": 2.5539657690342814,
+    "max_abs_inl_endpoint_lsb": 2.4880192112744965,
+    "missing_codes": 3,
+    "search_status": "FAIL",
+    "validation_status": "FAIL"
+  },
+  "exact_validation_file": "references/historical_selection/static_mc_exact_validation.csv",
+  "exact_validation_file_sha256": "2d218ded08973148f108a77c7d5e6bbe32c1b9d25a624f47bba91fa7dcf18787",
+  "historical_campaign_id": "A44_TT_BEH_NO_R6_MC200_FAST64_SIGNOFF_20260718",
+  "historical_p95_value_lsb": 2.593042424100689,
+  "historical_result_type": "RECONSTRUCTED_POPULATION",
+  "inl_reference_method": "endpoint",
+  "lower_order_seed": 116,
+  "lower_order_value_lsb": 2.5913387475627205,
+  "nonclaims": [
+    "seed 116 is not a universal P95 for every static metric",
+    "the current experiment does not remeasure a population percentile"
+  ],
+  "percentile": 95,
+  "percentile_algorithm": "numpy linear default equivalent",
+  "percentile_zero_based_position": 189.04999999999998,
+  "population_size": 200,
+  "selected_seed": 116,
+  "selected_seed_metric_value_lsb": 2.5913387475627205,
+  "selected_seed_rank_ascending": 190,
+  "selection_label": "HISTORICAL_P95_MAX_ABS_DNL_EP_NEAREST_OBSERVED_REPRESENTATIVE",
+  "selection_metric": "max_abs_dnl_lsb",
+  "selection_metric_definition": "maximum absolute endpoint-referenced DNL from historical reconstructed MC200 summary",
+  "source_file": "references/historical_selection/static_mc200_reconstructed_summary.csv",
+  "source_file_sha256": "d3a30841163a66cfc6fb935209bdc70d5ef5da70a23feb4e5637965d6e099d77",
+  "status": "PASS",
+  "upper_order_seed": 12,
+  "upper_order_value_lsb": 2.6254122783220977
+}

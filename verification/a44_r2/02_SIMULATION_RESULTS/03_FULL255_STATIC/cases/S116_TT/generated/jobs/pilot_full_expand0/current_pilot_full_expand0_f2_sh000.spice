@@ -1,0 +1,1166 @@
+* A44 actual analog core with fixed TT timed behavioral SAR control.
+.options method=gear reltol=1e-4 abstol=1e-13 vntol=1e-7 trtol=7 chgtol=1e-15 rshunt=1e12
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.option seed=116
+.param sw_stat_global=0 sw_stat_mismatch=1 mc_skew=3 res_mc_skew=3 cap_mc_skew=3 fnoicor=0
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice statistical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.include /foss/designs/A44_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_MC200_PVT_FULLSTATIC_20260728_R1/03_FULL255_STATIC/cases/S116_TT/netlists/core/subckts/SWITCH_BOOT_SP_native_extracted.subckt.spice
+.include /foss/designs/A44_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_MC200_PVT_FULLSTATIC_20260728_R1/03_FULL255_STATIC/cases/S116_TT/netlists/candidate/Comparator_StrongARM_CURRENT.subckt.spice
+.include /foss/designs/A44_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_MC200_PVT_FULLSTATIC_20260728_R1/03_FULL255_STATIC/cases/S116_TT/models/no_r6_equivalent_loads.inc
+.subckt CDAC_P_S116 VIN CLKS VTOP DCTRL7 DCTRL6 DCTRL5 DCTRL4 DCTRL3 DCTRL2 DCTRL1 VREFP VDD GND VREFN
+XM1 VBOT1 DCTRL1 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2 VBOT1 DCTRL1 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XC1 VTOP VBOT1 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=1.0077730860193408
+XM3 VBOT2 DCTRL2 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM4 VBOT2 DCTRL2 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XC2 VTOP VBOT2 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=1.9993508242670943
+XM5 VBOT3 DCTRL3 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=8
+XM6 VBOT3 DCTRL3 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=8
+XC3 VTOP VBOT3 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=4.0035359777037796
+XM7 VBOT4 DCTRL4 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=16
+XM8 VBOT4 DCTRL4 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=16
+XC4 VTOP VBOT4 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=7.9773989518451049
+XM9 VBOT5 DCTRL5 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=32
+XM10 VBOT5 DCTRL5 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=32
+XC5 VTOP VBOT5 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=15.983005571440614
+XM11 VBOT6 DCTRL6 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=64
+XM12 VBOT6 DCTRL6 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=64
+XC6 VTOP VBOT6 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=32.005991267542115
+XM13 VBOT7 DCTRL7 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=128
+XM14 VBOT7 DCTRL7 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=128
+XC7 VTOP VBOT7 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=63.987106077583967
+XC8 VTOP GND cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=1.0041115667654836
+x1 CLKS VDD GND VTOP VIN SWITCH_BOOT_SP
+.ends CDAC_P_S116
+.subckt CDAC_N_S116 VIN CLKS VTOP DCTRL7 DCTRL6 DCTRL5 DCTRL4 DCTRL3 DCTRL2 DCTRL1 VREFP VDD GND VREFN
+XM1 VBOT1 DCTRL1 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2 VBOT1 DCTRL1 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XC1 VTOP VBOT1 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=1.0042088438733439
+XM3 VBOT2 DCTRL2 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM4 VBOT2 DCTRL2 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XC2 VTOP VBOT2 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=1.9979886654282215
+XM5 VBOT3 DCTRL3 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=8
+XM6 VBOT3 DCTRL3 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=8
+XC3 VTOP VBOT3 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=3.9976034042903499
+XM7 VBOT4 DCTRL4 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=16
+XM8 VBOT4 DCTRL4 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=16
+XC4 VTOP VBOT4 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=7.9600841013549744
+XM9 VBOT5 DCTRL5 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=32
+XM10 VBOT5 DCTRL5 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=32
+XC5 VTOP VBOT5 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=15.965602699508391
+XM11 VBOT6 DCTRL6 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=64
+XM12 VBOT6 DCTRL6 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=64
+XC6 VTOP VBOT6 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=32.00317647851999
+XM13 VBOT7 DCTRL7 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=128
+XM14 VBOT7 DCTRL7 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=128
+XC7 VTOP VBOT7 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=63.998488081455811
+XC8 VTOP GND cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=0.99841962636248105
+x1 CLKS VDD GND VTOP VIN SWITCH_BOOT_SP
+.ends CDAC_N_S116
+
+.subckt SAR_ADC_ACTIVE VDD GND VREFP VREFN VINP VINN CLKS CMPCK
++ DCTRLP7 DCTRLP6 DCTRLP5 DCTRLP4 DCTRLP3 DCTRLP2 DCTRLP1
++ DCTRLN7 DCTRLN6 DCTRLN5 DCTRLN4 DCTRLN3 DCTRLN2 DCTRLN1
++ DCMPP DCMPN VRESP VRESN
+XCDACP VINP CLKS VRESP DCTRLP7 DCTRLP6 DCTRLP5 DCTRLP4 DCTRLP3 DCTRLP2 DCTRLP1 VREFP VDD GND VREFN CDAC_P_S116
+XCDACN VINN CLKS VRESN DCTRLN7 DCTRLN6 DCTRLN5 DCTRLN4 DCTRLN3 DCTRLN2 DCTRLN1 VREFP VDD GND VREFN CDAC_N_S116
+XCMP CMPCK DCMPP VRESP DCMPN VRESN VDD GND Comparator_StrongARM
+.ends SAR_ADC_ACTIVE
+
+.temp 27
+VVDD vdd 0 3.3
+VVREFP_ID vrefp_src 0 2.5
+RVREFP vrefp_src vrefp {REF_R_EQ}
+RVREFP_ESR vrefp vrefp_cap {REF_ESR_EQ}
+CVREFP_LOCAL vrefp_cap 0 {REF_CLOCAL_EQ}
+CVREFP_LINE vrefp 0 {REF_CLINE_EQ}
+VVREFN_ID vrefn_src 0 0.8
+RVREFN vrefn_src vrefn {REF_R_EQ}
+RVREFN_ESR vrefn vrefn_cap {REF_ESR_EQ}
+CVREFN_LOCAL vrefn_cap 0 {REF_CLOCAL_EQ}
+CVREFN_LINE vrefn 0 {REF_CLINE_EQ}
+
+VVINP_ID vinp_src 0 PWL(
++ 0 0.807166364217 4.99999e-07 0.807166364217 5e-07 0.807166364217 9.99999e-07 0.807166364217
++ 1e-06 0.817127301717 1.499999e-06 0.817127301717 1.5e-06 0.817127301717 1.999999e-06 0.817127301717
++ 2e-06 0.899980700078 2.499999e-06 0.899980700078 2.5e-06 0.899980700078 2.999999e-06 0.899980700078
++ 3e-06 0.909941637578 3.499999e-06 0.909941637578 3.5e-06 0.909941637578 3.999999e-06 0.909941637578
++ 4e-06 0.999424631357 4.499999e-06 0.999424631357 4.5e-06 0.999424631357 4.999999e-06 0.999424631357
++ 5e-06 1.00938556886 5.499999e-06 1.00938556886 5.5e-06 1.00938556886 5.999999e-06 1.00938556886
++ 6e-06 1.00605422678 6.499999e-06 1.00605422678 6.5e-06 1.00605422678 6.999999e-06 1.00605422678
++ 7e-06 1.01601516428 7.499999e-06 1.01601516428 7.5e-06 1.01601516428 7.999999e-06 1.01601516428
++ 8e-06 1.01268382219 8.499999e-06 1.01268382219 8.5e-06 1.01268382219 8.999999e-06 1.01268382219
++ 9e-06 1.02264475969 9.499999e-06 1.02264475969 9.5e-06 1.02264475969 9.999999e-06 1.02264475969
++ 1e-05 1.11212775347 1.0499999e-05 1.11212775347 1.05e-05 1.11212775347 1.0999999e-05 1.11212775347
++ 1.1e-05 1.12208869097 1.1499999e-05 1.12208869097 1.15e-05 1.12208869097 1.1999999e-05 1.12208869097
++ 1.2e-05 1.21157168475 1.2499999e-05 1.21157168475 1.25e-05 1.21157168475 1.2999999e-05 1.21157168475
++ 1.3e-05 1.22153262225 1.3499999e-05 1.22153262225 1.35e-05 1.22153262225 1.3999999e-05 1.22153262225
++ 1.4e-05 1.21820128017 1.4499999e-05 1.21820128017 1.45e-05 1.21820128017 1.4999999e-05 1.21820128017
++ 1.5e-05 1.22816221767 1.5499999e-05 1.22816221767 1.55e-05 1.22816221767 1.5999999e-05 1.22816221767
++ 1.6e-05 1.22483087559 1.6499999e-05 1.22483087559 1.65e-05 1.22483087559 1.6999999e-05 1.22483087559
++ 1.7e-05 1.23479181309 1.7499999e-05 1.23479181309 1.75e-05 1.23479181309 1.7999999e-05 1.23479181309
++ 1.8e-05 1.32427480687 1.8499999e-05 1.32427480687 1.85e-05 1.32427480687 1.8999999e-05 1.32427480687
++ 1.9e-05 1.33423574437 1.9499999e-05 1.33423574437 1.95e-05 1.33423574437 1.9999999e-05 1.33423574437
++ 2e-05 1.42371873815 2.0499999e-05 1.42371873815 2.05e-05 1.42371873815 2.0999999e-05 1.42371873815
++ 2.1e-05 1.43367967565 2.1499999e-05 1.43367967565 2.15e-05 1.43367967565 2.1999999e-05 1.43367967565
++ 2.2e-05 1.43034833357 2.2499999e-05 1.43034833357 2.25e-05 1.43034833357 2.2999999e-05 1.43034833357
++ 2.3e-05 1.44030927107 2.3499999e-05 1.44030927107 2.35e-05 1.44030927107 2.3999999e-05 1.44030927107
++ 2.4e-05 1.43697792899 2.4499999e-05 1.43697792899 2.45e-05 1.43697792899 2.4999999e-05 1.43697792899
++ 2.5e-05 1.44693886649 2.5499999e-05 1.44693886649 2.55e-05 1.44693886649 2.5999999e-05 1.44693886649
++ 2.6e-05 1.53642186027 2.6499999e-05 1.53642186027 2.65e-05 1.53642186027 2.6999999e-05 1.53642186027
++ 2.7e-05 1.54638279777 2.7499999e-05 1.54638279777 2.75e-05 1.54638279777 2.7999999e-05 1.54638279777
++ 2.8e-05 1.63586579154 2.8499999e-05 1.63586579154 2.85e-05 1.63586579154 2.8999999e-05 1.63586579154
++ 2.9e-05 1.64582672904 2.9499999e-05 1.64582672904 2.95e-05 1.64582672904 2.9999999e-05 1.64582672904
++ 3e-05 1.64912498238 3.0499999e-05 1.64912498238 3.05e-05 1.64912498238 3.0999999e-05 1.64912498238
++ 3.1e-05 1.65908591988 3.1499999e-05 1.65908591988 3.15e-05 1.65908591988
++ )
+VVINN_ID vinn_src 0 PWL(
++ 0 2.49283363578 4.99999e-07 2.49283363578 5e-07 2.49283363578 9.99999e-07 2.49283363578
++ 1e-06 2.48287269828 1.499999e-06 2.48287269828 1.5e-06 2.48287269828 1.999999e-06 2.48287269828
++ 2e-06 2.40001929992 2.499999e-06 2.40001929992 2.5e-06 2.40001929992 2.999999e-06 2.40001929992
++ 3e-06 2.39005836242 3.499999e-06 2.39005836242 3.5e-06 2.39005836242 3.999999e-06 2.39005836242
++ 4e-06 2.30057536864 4.499999e-06 2.30057536864 4.5e-06 2.30057536864 4.999999e-06 2.30057536864
++ 5e-06 2.29061443114 5.499999e-06 2.29061443114 5.5e-06 2.29061443114 5.999999e-06 2.29061443114
++ 6e-06 2.29394577322 6.499999e-06 2.29394577322 6.5e-06 2.29394577322 6.999999e-06 2.29394577322
++ 7e-06 2.28398483572 7.499999e-06 2.28398483572 7.5e-06 2.28398483572 7.999999e-06 2.28398483572
++ 8e-06 2.28731617781 8.499999e-06 2.28731617781 8.5e-06 2.28731617781 8.999999e-06 2.28731617781
++ 9e-06 2.27735524031 9.499999e-06 2.27735524031 9.5e-06 2.27735524031 9.999999e-06 2.27735524031
++ 1e-05 2.18787224653 1.0499999e-05 2.18787224653 1.05e-05 2.18787224653 1.0999999e-05 2.18787224653
++ 1.1e-05 2.17791130903 1.1499999e-05 2.17791130903 1.15e-05 2.17791130903 1.1999999e-05 2.17791130903
++ 1.2e-05 2.08842831525 1.2499999e-05 2.08842831525 1.25e-05 2.08842831525 1.2999999e-05 2.08842831525
++ 1.3e-05 2.07846737775 1.3499999e-05 2.07846737775 1.35e-05 2.07846737775 1.3999999e-05 2.07846737775
++ 1.4e-05 2.08179871983 1.4499999e-05 2.08179871983 1.45e-05 2.08179871983 1.4999999e-05 2.08179871983
++ 1.5e-05 2.07183778233 1.5499999e-05 2.07183778233 1.55e-05 2.07183778233 1.5999999e-05 2.07183778233
++ 1.6e-05 2.07516912441 1.6499999e-05 2.07516912441 1.65e-05 2.07516912441 1.6999999e-05 2.07516912441
++ 1.7e-05 2.06520818691 1.7499999e-05 2.06520818691 1.75e-05 2.06520818691 1.7999999e-05 2.06520818691
++ 1.8e-05 1.97572519313 1.8499999e-05 1.97572519313 1.85e-05 1.97572519313 1.8999999e-05 1.97572519313
++ 1.9e-05 1.96576425563 1.9499999e-05 1.96576425563 1.95e-05 1.96576425563 1.9999999e-05 1.96576425563
++ 2e-05 1.87628126185 2.0499999e-05 1.87628126185 2.05e-05 1.87628126185 2.0999999e-05 1.87628126185
++ 2.1e-05 1.86632032435 2.1499999e-05 1.86632032435 2.15e-05 1.86632032435 2.1999999e-05 1.86632032435
++ 2.2e-05 1.86965166643 2.2499999e-05 1.86965166643 2.25e-05 1.86965166643 2.2999999e-05 1.86965166643
++ 2.3e-05 1.85969072893 2.3499999e-05 1.85969072893 2.35e-05 1.85969072893 2.3999999e-05 1.85969072893
++ 2.4e-05 1.86302207101 2.4499999e-05 1.86302207101 2.45e-05 1.86302207101 2.4999999e-05 1.86302207101
++ 2.5e-05 1.85306113351 2.5499999e-05 1.85306113351 2.55e-05 1.85306113351 2.5999999e-05 1.85306113351
++ 2.6e-05 1.76357813973 2.6499999e-05 1.76357813973 2.65e-05 1.76357813973 2.6999999e-05 1.76357813973
++ 2.7e-05 1.75361720223 2.7499999e-05 1.75361720223 2.75e-05 1.75361720223 2.7999999e-05 1.75361720223
++ 2.8e-05 1.66413420846 2.8499999e-05 1.66413420846 2.85e-05 1.66413420846 2.8999999e-05 1.66413420846
++ 2.9e-05 1.65417327096 2.9499999e-05 1.65417327096 2.95e-05 1.65417327096 2.9999999e-05 1.65417327096
++ 3e-05 1.65087501762 3.0499999e-05 1.65087501762 3.05e-05 1.65087501762 3.0999999e-05 1.65087501762
++ 3.1e-05 1.64091408012 3.1499999e-05 1.64091408012 3.15e-05 1.64091408012
++ )
+RVINP vinp_src vinp {VIN_R_EQ}
+CVINP vinp 0 {VIN_CP_EQ+VIN_CCM_EQ}
+RVINN vinn_src vinn {VIN_R_EQ}
+CVINN vinn 0 {VIN_CN_EQ+VIN_CCM_EQ}
+CVIN_DIFF vinp vinn {VIN_CDM_EQ}
+
+VCLKS_ID clks_src 0 PULSE(0 3.3 5e-08 {CLK_TR_EQ} {CLK_TF_EQ} 125n 5e-07)
+RCLKS clks_src clks {CLK_R_EQ}
+CCLKS clks 0 {CLK_C_EQ}
+
+XCORE vdd 0 vrefp vrefn vinp vinn clks cmpck
++ dctrlp7 dctrlp6 dctrlp5 dctrlp4 dctrlp3 dctrlp2 dctrlp1
++ dctrln7 dctrln6 dctrln5 dctrln4 dctrln3 dctrln2 dctrln1
++ dcmpp dcmpn vresp vresn SAR_ADC_ACTIVE
+E_SAMPLE_DIFF sampled_diff 0 vresp vresn 1
+E_INPUT_DIFF input_diff 0 vinp vinn 1
+
+CLOGIC_P dcmpp 0 {CLOGIC_IN_P}
+CLOGIC_N dcmpn 0 {CLOGIC_IN_N}
+A_CLKS [clks] [clks_d] adc_logic_in
+A_DCMPP [dcmpp] [dcmpp_d] adc_logic_in
+A_DCMPN [dcmpn] [dcmpn_d] adc_logic_in
+ABEH [clks_d dcmpp_d dcmpn_d]
++ [cmpck_d
++ dctrlp7_d dctrlp6_d dctrlp5_d dctrlp4_d dctrlp3_d dctrlp2_d dctrlp1_d
++ dctrln7_d dctrln6_d dctrln5_d dctrln4_d dctrln3_d dctrln2_d dctrln1_d
++ dout7_d dout6_d dout5_d dout4_d dout3_d dout2_d dout1_d dout0_d
++ eoc_d
++ invalid7_d invalid6_d invalid5_d invalid4_d invalid3_d invalid2_d invalid1_d invalid0_d
++ timeout7_d timeout6_d timeout5_d timeout4_d timeout3_d timeout2_d timeout1_d timeout0_d
++ complete_d] sar_logic_beh
+
+A_CMPCK [cmpck_d] [cmpck_drv] dac_cmpck
+A_DCTRLP [dctrlp7_d dctrlp6_d dctrlp5_d dctrlp4_d dctrlp3_d dctrlp2_d dctrlp1_d]
++ [dctrlp7_drv dctrlp6_drv dctrlp5_drv dctrlp4_drv dctrlp3_drv dctrlp2_drv dctrlp1_drv] dac_dctrl
+A_DCTRLN [dctrln7_d dctrln6_d dctrln5_d dctrln4_d dctrln3_d dctrln2_d dctrln1_d]
++ [dctrln7_drv dctrln6_drv dctrln5_drv dctrln4_drv dctrln3_drv dctrln2_drv dctrln1_drv] dac_dctrl
+A_DOUT [dout7_d dout6_d dout5_d dout4_d dout3_d dout2_d dout1_d dout0_d]
++ [dout7_drv dout6_drv dout5_drv dout4_drv dout3_drv dout2_drv dout1_drv dout0_drv] dac_dout
+A_STATUS [eoc_d invalid0_d timeout0_d complete_d] [eoc invalid0 timeout0 complete] dac_status
+
+R_CMPCK cmpck_drv cmpck {CMPCK_R_EQ}
+R_DCTRLP7 dctrlp7_drv dctrlp7 {DCTRL_R_EQ}
+R_DCTRLP6 dctrlp6_drv dctrlp6 {DCTRL_R_EQ}
+R_DCTRLP5 dctrlp5_drv dctrlp5 {DCTRL_R_EQ}
+R_DCTRLP4 dctrlp4_drv dctrlp4 {DCTRL_R_EQ}
+R_DCTRLP3 dctrlp3_drv dctrlp3 {DCTRL_R_EQ}
+R_DCTRLP2 dctrlp2_drv dctrlp2 {DCTRL_R_EQ}
+R_DCTRLP1 dctrlp1_drv dctrlp1 {DCTRL_R_EQ}
+R_DCTRLN7 dctrln7_drv dctrln7 {DCTRL_R_EQ}
+R_DCTRLN6 dctrln6_drv dctrln6 {DCTRL_R_EQ}
+R_DCTRLN5 dctrln5_drv dctrln5 {DCTRL_R_EQ}
+R_DCTRLN4 dctrln4_drv dctrln4 {DCTRL_R_EQ}
+R_DCTRLN3 dctrln3_drv dctrln3 {DCTRL_R_EQ}
+R_DCTRLN2 dctrln2_drv dctrln2 {DCTRL_R_EQ}
+R_DCTRLN1 dctrln1_drv dctrln1 {DCTRL_R_EQ}
+
+R_DOUT7 dout7_drv dout7_rx {DOUT_R_EQ}
+R_DOUT6 dout6_drv dout6_rx {DOUT_R_EQ}
+R_DOUT5 dout5_drv dout5_rx {DOUT_R_EQ}
+R_DOUT4 dout4_drv dout4_rx {DOUT_R_EQ}
+R_DOUT3 dout3_drv dout3_rx {DOUT_R_EQ}
+R_DOUT2 dout2_drv dout2_rx {DOUT_R_EQ}
+R_DOUT1 dout1_drv dout1_rx {DOUT_R_EQ}
+R_DOUT0 dout0_drv dout0_rx {DOUT_R_EQ}
+C_DOUT7 dout7_rx 0 {DOUT_C_EQ}
+C_DOUT6 dout6_rx 0 {DOUT_C_EQ}
+C_DOUT5 dout5_rx 0 {DOUT_C_EQ}
+C_DOUT4 dout4_rx 0 {DOUT_C_EQ}
+C_DOUT3 dout3_rx 0 {DOUT_C_EQ}
+C_DOUT2 dout2_rx 0 {DOUT_C_EQ}
+C_DOUT1 dout1_rx 0 {DOUT_C_EQ}
+C_DOUT0 dout0_rx 0 {DOUT_C_EQ}
+
+.model adc_logic_in adc_bridge in_low=0.99 in_high=2.31 rise_delay=1p fall_delay=1p
+.model dac_cmpck dac_bridge input_load=10f t_rise={CMPCK_TR_EQ} t_fall={CMPCK_TF_EQ} out_low=0 out_high=3.3
+.model dac_dctrl dac_bridge input_load=10f t_rise={DCTRL_TR_EQ} t_fall={DCTRL_TF_EQ} out_low=0 out_high=3.3
+.model dac_dout dac_bridge input_load=10f t_rise={DOUT_TR_EQ} t_fall={DOUT_TF_EQ} out_low=0 out_high=3.3
+.model dac_status dac_bridge input_load=1f t_rise=0.05n t_fall=0.05n out_low=0 out_high=3.3
+.model sar_logic_beh d_cosim simulation="/foss/designs/A44_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_MC200_PVT_FULLSTATIC_20260728_R1/03_FULL255_STATIC/cases/S116_TT/models/SAR_LOGIC_BEH_TT_3P3_27C.so" delay=1p
+
+.save v(cmpck) v(vresp) v(vresn) v(vinp) v(vinn) v(sampled_diff) v(input_diff)
++ v(dout7_rx) v(dout6_rx) v(dout5_rx) v(dout4_rx) v(dout3_rx) v(dout2_rx) v(dout1_rx) v(dout0_rx)
++ v(complete) v(invalid0) v(timeout0)
+.control
+set noaskquit
+set plotwinsize=0
+tran 5e-10 3.1995e-05 0 5e-11
+meas tran f000_d7 find v(dout7_rx) at=4.8e-07
+meas tran f000_d6 find v(dout6_rx) at=4.8e-07
+meas tran f000_d5 find v(dout5_rx) at=4.8e-07
+meas tran f000_d4 find v(dout4_rx) at=4.8e-07
+meas tran f000_d3 find v(dout3_rx) at=4.8e-07
+meas tran f000_d2 find v(dout2_rx) at=4.8e-07
+meas tran f000_d1 find v(dout1_rx) at=4.8e-07
+meas tran f000_d0 find v(dout0_rx) at=4.8e-07
+meas tran f000_complete find v(complete) at=4.8e-07
+meas tran f000_invalid find v(invalid0) at=4.8e-07
+meas tran f000_timeout find v(timeout0) at=4.8e-07
+meas tran f000_sampled find v(sampled_diff) at=1.7e-07
+meas tran f000_input find v(input_diff) at=1.7e-07
+meas tran f000_tcomplete when v(complete)=1.65 rise=1
+meas tran f001_d7 find v(dout7_rx) at=9.8e-07
+meas tran f001_d6 find v(dout6_rx) at=9.8e-07
+meas tran f001_d5 find v(dout5_rx) at=9.8e-07
+meas tran f001_d4 find v(dout4_rx) at=9.8e-07
+meas tran f001_d3 find v(dout3_rx) at=9.8e-07
+meas tran f001_d2 find v(dout2_rx) at=9.8e-07
+meas tran f001_d1 find v(dout1_rx) at=9.8e-07
+meas tran f001_d0 find v(dout0_rx) at=9.8e-07
+meas tran f001_complete find v(complete) at=9.8e-07
+meas tran f001_invalid find v(invalid0) at=9.8e-07
+meas tran f001_timeout find v(timeout0) at=9.8e-07
+meas tran f001_sampled find v(sampled_diff) at=6.7e-07
+meas tran f001_input find v(input_diff) at=6.7e-07
+meas tran f001_tcomplete when v(complete)=1.65 rise=2
+meas tran f002_d7 find v(dout7_rx) at=1.48e-06
+meas tran f002_d6 find v(dout6_rx) at=1.48e-06
+meas tran f002_d5 find v(dout5_rx) at=1.48e-06
+meas tran f002_d4 find v(dout4_rx) at=1.48e-06
+meas tran f002_d3 find v(dout3_rx) at=1.48e-06
+meas tran f002_d2 find v(dout2_rx) at=1.48e-06
+meas tran f002_d1 find v(dout1_rx) at=1.48e-06
+meas tran f002_d0 find v(dout0_rx) at=1.48e-06
+meas tran f002_complete find v(complete) at=1.48e-06
+meas tran f002_invalid find v(invalid0) at=1.48e-06
+meas tran f002_timeout find v(timeout0) at=1.48e-06
+meas tran f002_sampled find v(sampled_diff) at=1.17e-06
+meas tran f002_input find v(input_diff) at=1.17e-06
+meas tran f002_tcomplete when v(complete)=1.65 rise=3
+meas tran f003_d7 find v(dout7_rx) at=1.98e-06
+meas tran f003_d6 find v(dout6_rx) at=1.98e-06
+meas tran f003_d5 find v(dout5_rx) at=1.98e-06
+meas tran f003_d4 find v(dout4_rx) at=1.98e-06
+meas tran f003_d3 find v(dout3_rx) at=1.98e-06
+meas tran f003_d2 find v(dout2_rx) at=1.98e-06
+meas tran f003_d1 find v(dout1_rx) at=1.98e-06
+meas tran f003_d0 find v(dout0_rx) at=1.98e-06
+meas tran f003_complete find v(complete) at=1.98e-06
+meas tran f003_invalid find v(invalid0) at=1.98e-06
+meas tran f003_timeout find v(timeout0) at=1.98e-06
+meas tran f003_sampled find v(sampled_diff) at=1.67e-06
+meas tran f003_input find v(input_diff) at=1.67e-06
+meas tran f003_tcomplete when v(complete)=1.65 rise=4
+meas tran f004_d7 find v(dout7_rx) at=2.48e-06
+meas tran f004_d6 find v(dout6_rx) at=2.48e-06
+meas tran f004_d5 find v(dout5_rx) at=2.48e-06
+meas tran f004_d4 find v(dout4_rx) at=2.48e-06
+meas tran f004_d3 find v(dout3_rx) at=2.48e-06
+meas tran f004_d2 find v(dout2_rx) at=2.48e-06
+meas tran f004_d1 find v(dout1_rx) at=2.48e-06
+meas tran f004_d0 find v(dout0_rx) at=2.48e-06
+meas tran f004_complete find v(complete) at=2.48e-06
+meas tran f004_invalid find v(invalid0) at=2.48e-06
+meas tran f004_timeout find v(timeout0) at=2.48e-06
+meas tran f004_sampled find v(sampled_diff) at=2.17e-06
+meas tran f004_input find v(input_diff) at=2.17e-06
+meas tran f004_tcomplete when v(complete)=1.65 rise=5
+meas tran f005_d7 find v(dout7_rx) at=2.98e-06
+meas tran f005_d6 find v(dout6_rx) at=2.98e-06
+meas tran f005_d5 find v(dout5_rx) at=2.98e-06
+meas tran f005_d4 find v(dout4_rx) at=2.98e-06
+meas tran f005_d3 find v(dout3_rx) at=2.98e-06
+meas tran f005_d2 find v(dout2_rx) at=2.98e-06
+meas tran f005_d1 find v(dout1_rx) at=2.98e-06
+meas tran f005_d0 find v(dout0_rx) at=2.98e-06
+meas tran f005_complete find v(complete) at=2.98e-06
+meas tran f005_invalid find v(invalid0) at=2.98e-06
+meas tran f005_timeout find v(timeout0) at=2.98e-06
+meas tran f005_sampled find v(sampled_diff) at=2.67e-06
+meas tran f005_input find v(input_diff) at=2.67e-06
+meas tran f005_tcomplete when v(complete)=1.65 rise=6
+meas tran f006_d7 find v(dout7_rx) at=3.48e-06
+meas tran f006_d6 find v(dout6_rx) at=3.48e-06
+meas tran f006_d5 find v(dout5_rx) at=3.48e-06
+meas tran f006_d4 find v(dout4_rx) at=3.48e-06
+meas tran f006_d3 find v(dout3_rx) at=3.48e-06
+meas tran f006_d2 find v(dout2_rx) at=3.48e-06
+meas tran f006_d1 find v(dout1_rx) at=3.48e-06
+meas tran f006_d0 find v(dout0_rx) at=3.48e-06
+meas tran f006_complete find v(complete) at=3.48e-06
+meas tran f006_invalid find v(invalid0) at=3.48e-06
+meas tran f006_timeout find v(timeout0) at=3.48e-06
+meas tran f006_sampled find v(sampled_diff) at=3.17e-06
+meas tran f006_input find v(input_diff) at=3.17e-06
+meas tran f006_tcomplete when v(complete)=1.65 rise=7
+meas tran f007_d7 find v(dout7_rx) at=3.98e-06
+meas tran f007_d6 find v(dout6_rx) at=3.98e-06
+meas tran f007_d5 find v(dout5_rx) at=3.98e-06
+meas tran f007_d4 find v(dout4_rx) at=3.98e-06
+meas tran f007_d3 find v(dout3_rx) at=3.98e-06
+meas tran f007_d2 find v(dout2_rx) at=3.98e-06
+meas tran f007_d1 find v(dout1_rx) at=3.98e-06
+meas tran f007_d0 find v(dout0_rx) at=3.98e-06
+meas tran f007_complete find v(complete) at=3.98e-06
+meas tran f007_invalid find v(invalid0) at=3.98e-06
+meas tran f007_timeout find v(timeout0) at=3.98e-06
+meas tran f007_sampled find v(sampled_diff) at=3.67e-06
+meas tran f007_input find v(input_diff) at=3.67e-06
+meas tran f007_tcomplete when v(complete)=1.65 rise=8
+meas tran f008_d7 find v(dout7_rx) at=4.48e-06
+meas tran f008_d6 find v(dout6_rx) at=4.48e-06
+meas tran f008_d5 find v(dout5_rx) at=4.48e-06
+meas tran f008_d4 find v(dout4_rx) at=4.48e-06
+meas tran f008_d3 find v(dout3_rx) at=4.48e-06
+meas tran f008_d2 find v(dout2_rx) at=4.48e-06
+meas tran f008_d1 find v(dout1_rx) at=4.48e-06
+meas tran f008_d0 find v(dout0_rx) at=4.48e-06
+meas tran f008_complete find v(complete) at=4.48e-06
+meas tran f008_invalid find v(invalid0) at=4.48e-06
+meas tran f008_timeout find v(timeout0) at=4.48e-06
+meas tran f008_sampled find v(sampled_diff) at=4.17e-06
+meas tran f008_input find v(input_diff) at=4.17e-06
+meas tran f008_tcomplete when v(complete)=1.65 rise=9
+meas tran f009_d7 find v(dout7_rx) at=4.98e-06
+meas tran f009_d6 find v(dout6_rx) at=4.98e-06
+meas tran f009_d5 find v(dout5_rx) at=4.98e-06
+meas tran f009_d4 find v(dout4_rx) at=4.98e-06
+meas tran f009_d3 find v(dout3_rx) at=4.98e-06
+meas tran f009_d2 find v(dout2_rx) at=4.98e-06
+meas tran f009_d1 find v(dout1_rx) at=4.98e-06
+meas tran f009_d0 find v(dout0_rx) at=4.98e-06
+meas tran f009_complete find v(complete) at=4.98e-06
+meas tran f009_invalid find v(invalid0) at=4.98e-06
+meas tran f009_timeout find v(timeout0) at=4.98e-06
+meas tran f009_sampled find v(sampled_diff) at=4.67e-06
+meas tran f009_input find v(input_diff) at=4.67e-06
+meas tran f009_tcomplete when v(complete)=1.65 rise=10
+meas tran f010_d7 find v(dout7_rx) at=5.48e-06
+meas tran f010_d6 find v(dout6_rx) at=5.48e-06
+meas tran f010_d5 find v(dout5_rx) at=5.48e-06
+meas tran f010_d4 find v(dout4_rx) at=5.48e-06
+meas tran f010_d3 find v(dout3_rx) at=5.48e-06
+meas tran f010_d2 find v(dout2_rx) at=5.48e-06
+meas tran f010_d1 find v(dout1_rx) at=5.48e-06
+meas tran f010_d0 find v(dout0_rx) at=5.48e-06
+meas tran f010_complete find v(complete) at=5.48e-06
+meas tran f010_invalid find v(invalid0) at=5.48e-06
+meas tran f010_timeout find v(timeout0) at=5.48e-06
+meas tran f010_sampled find v(sampled_diff) at=5.17e-06
+meas tran f010_input find v(input_diff) at=5.17e-06
+meas tran f010_tcomplete when v(complete)=1.65 rise=11
+meas tran f011_d7 find v(dout7_rx) at=5.98e-06
+meas tran f011_d6 find v(dout6_rx) at=5.98e-06
+meas tran f011_d5 find v(dout5_rx) at=5.98e-06
+meas tran f011_d4 find v(dout4_rx) at=5.98e-06
+meas tran f011_d3 find v(dout3_rx) at=5.98e-06
+meas tran f011_d2 find v(dout2_rx) at=5.98e-06
+meas tran f011_d1 find v(dout1_rx) at=5.98e-06
+meas tran f011_d0 find v(dout0_rx) at=5.98e-06
+meas tran f011_complete find v(complete) at=5.98e-06
+meas tran f011_invalid find v(invalid0) at=5.98e-06
+meas tran f011_timeout find v(timeout0) at=5.98e-06
+meas tran f011_sampled find v(sampled_diff) at=5.67e-06
+meas tran f011_input find v(input_diff) at=5.67e-06
+meas tran f011_tcomplete when v(complete)=1.65 rise=12
+meas tran f012_d7 find v(dout7_rx) at=6.48e-06
+meas tran f012_d6 find v(dout6_rx) at=6.48e-06
+meas tran f012_d5 find v(dout5_rx) at=6.48e-06
+meas tran f012_d4 find v(dout4_rx) at=6.48e-06
+meas tran f012_d3 find v(dout3_rx) at=6.48e-06
+meas tran f012_d2 find v(dout2_rx) at=6.48e-06
+meas tran f012_d1 find v(dout1_rx) at=6.48e-06
+meas tran f012_d0 find v(dout0_rx) at=6.48e-06
+meas tran f012_complete find v(complete) at=6.48e-06
+meas tran f012_invalid find v(invalid0) at=6.48e-06
+meas tran f012_timeout find v(timeout0) at=6.48e-06
+meas tran f012_sampled find v(sampled_diff) at=6.17e-06
+meas tran f012_input find v(input_diff) at=6.17e-06
+meas tran f012_tcomplete when v(complete)=1.65 rise=13
+meas tran f013_d7 find v(dout7_rx) at=6.98e-06
+meas tran f013_d6 find v(dout6_rx) at=6.98e-06
+meas tran f013_d5 find v(dout5_rx) at=6.98e-06
+meas tran f013_d4 find v(dout4_rx) at=6.98e-06
+meas tran f013_d3 find v(dout3_rx) at=6.98e-06
+meas tran f013_d2 find v(dout2_rx) at=6.98e-06
+meas tran f013_d1 find v(dout1_rx) at=6.98e-06
+meas tran f013_d0 find v(dout0_rx) at=6.98e-06
+meas tran f013_complete find v(complete) at=6.98e-06
+meas tran f013_invalid find v(invalid0) at=6.98e-06
+meas tran f013_timeout find v(timeout0) at=6.98e-06
+meas tran f013_sampled find v(sampled_diff) at=6.67e-06
+meas tran f013_input find v(input_diff) at=6.67e-06
+meas tran f013_tcomplete when v(complete)=1.65 rise=14
+meas tran f014_d7 find v(dout7_rx) at=7.48e-06
+meas tran f014_d6 find v(dout6_rx) at=7.48e-06
+meas tran f014_d5 find v(dout5_rx) at=7.48e-06
+meas tran f014_d4 find v(dout4_rx) at=7.48e-06
+meas tran f014_d3 find v(dout3_rx) at=7.48e-06
+meas tran f014_d2 find v(dout2_rx) at=7.48e-06
+meas tran f014_d1 find v(dout1_rx) at=7.48e-06
+meas tran f014_d0 find v(dout0_rx) at=7.48e-06
+meas tran f014_complete find v(complete) at=7.48e-06
+meas tran f014_invalid find v(invalid0) at=7.48e-06
+meas tran f014_timeout find v(timeout0) at=7.48e-06
+meas tran f014_sampled find v(sampled_diff) at=7.17e-06
+meas tran f014_input find v(input_diff) at=7.17e-06
+meas tran f014_tcomplete when v(complete)=1.65 rise=15
+meas tran f015_d7 find v(dout7_rx) at=7.98e-06
+meas tran f015_d6 find v(dout6_rx) at=7.98e-06
+meas tran f015_d5 find v(dout5_rx) at=7.98e-06
+meas tran f015_d4 find v(dout4_rx) at=7.98e-06
+meas tran f015_d3 find v(dout3_rx) at=7.98e-06
+meas tran f015_d2 find v(dout2_rx) at=7.98e-06
+meas tran f015_d1 find v(dout1_rx) at=7.98e-06
+meas tran f015_d0 find v(dout0_rx) at=7.98e-06
+meas tran f015_complete find v(complete) at=7.98e-06
+meas tran f015_invalid find v(invalid0) at=7.98e-06
+meas tran f015_timeout find v(timeout0) at=7.98e-06
+meas tran f015_sampled find v(sampled_diff) at=7.67e-06
+meas tran f015_input find v(input_diff) at=7.67e-06
+meas tran f015_tcomplete when v(complete)=1.65 rise=16
+meas tran f016_d7 find v(dout7_rx) at=8.48e-06
+meas tran f016_d6 find v(dout6_rx) at=8.48e-06
+meas tran f016_d5 find v(dout5_rx) at=8.48e-06
+meas tran f016_d4 find v(dout4_rx) at=8.48e-06
+meas tran f016_d3 find v(dout3_rx) at=8.48e-06
+meas tran f016_d2 find v(dout2_rx) at=8.48e-06
+meas tran f016_d1 find v(dout1_rx) at=8.48e-06
+meas tran f016_d0 find v(dout0_rx) at=8.48e-06
+meas tran f016_complete find v(complete) at=8.48e-06
+meas tran f016_invalid find v(invalid0) at=8.48e-06
+meas tran f016_timeout find v(timeout0) at=8.48e-06
+meas tran f016_sampled find v(sampled_diff) at=8.17e-06
+meas tran f016_input find v(input_diff) at=8.17e-06
+meas tran f016_tcomplete when v(complete)=1.65 rise=17
+meas tran f017_d7 find v(dout7_rx) at=8.98e-06
+meas tran f017_d6 find v(dout6_rx) at=8.98e-06
+meas tran f017_d5 find v(dout5_rx) at=8.98e-06
+meas tran f017_d4 find v(dout4_rx) at=8.98e-06
+meas tran f017_d3 find v(dout3_rx) at=8.98e-06
+meas tran f017_d2 find v(dout2_rx) at=8.98e-06
+meas tran f017_d1 find v(dout1_rx) at=8.98e-06
+meas tran f017_d0 find v(dout0_rx) at=8.98e-06
+meas tran f017_complete find v(complete) at=8.98e-06
+meas tran f017_invalid find v(invalid0) at=8.98e-06
+meas tran f017_timeout find v(timeout0) at=8.98e-06
+meas tran f017_sampled find v(sampled_diff) at=8.67e-06
+meas tran f017_input find v(input_diff) at=8.67e-06
+meas tran f017_tcomplete when v(complete)=1.65 rise=18
+meas tran f018_d7 find v(dout7_rx) at=9.48e-06
+meas tran f018_d6 find v(dout6_rx) at=9.48e-06
+meas tran f018_d5 find v(dout5_rx) at=9.48e-06
+meas tran f018_d4 find v(dout4_rx) at=9.48e-06
+meas tran f018_d3 find v(dout3_rx) at=9.48e-06
+meas tran f018_d2 find v(dout2_rx) at=9.48e-06
+meas tran f018_d1 find v(dout1_rx) at=9.48e-06
+meas tran f018_d0 find v(dout0_rx) at=9.48e-06
+meas tran f018_complete find v(complete) at=9.48e-06
+meas tran f018_invalid find v(invalid0) at=9.48e-06
+meas tran f018_timeout find v(timeout0) at=9.48e-06
+meas tran f018_sampled find v(sampled_diff) at=9.17e-06
+meas tran f018_input find v(input_diff) at=9.17e-06
+meas tran f018_tcomplete when v(complete)=1.65 rise=19
+meas tran f019_d7 find v(dout7_rx) at=9.98e-06
+meas tran f019_d6 find v(dout6_rx) at=9.98e-06
+meas tran f019_d5 find v(dout5_rx) at=9.98e-06
+meas tran f019_d4 find v(dout4_rx) at=9.98e-06
+meas tran f019_d3 find v(dout3_rx) at=9.98e-06
+meas tran f019_d2 find v(dout2_rx) at=9.98e-06
+meas tran f019_d1 find v(dout1_rx) at=9.98e-06
+meas tran f019_d0 find v(dout0_rx) at=9.98e-06
+meas tran f019_complete find v(complete) at=9.98e-06
+meas tran f019_invalid find v(invalid0) at=9.98e-06
+meas tran f019_timeout find v(timeout0) at=9.98e-06
+meas tran f019_sampled find v(sampled_diff) at=9.67e-06
+meas tran f019_input find v(input_diff) at=9.67e-06
+meas tran f019_tcomplete when v(complete)=1.65 rise=20
+meas tran f020_d7 find v(dout7_rx) at=1.048e-05
+meas tran f020_d6 find v(dout6_rx) at=1.048e-05
+meas tran f020_d5 find v(dout5_rx) at=1.048e-05
+meas tran f020_d4 find v(dout4_rx) at=1.048e-05
+meas tran f020_d3 find v(dout3_rx) at=1.048e-05
+meas tran f020_d2 find v(dout2_rx) at=1.048e-05
+meas tran f020_d1 find v(dout1_rx) at=1.048e-05
+meas tran f020_d0 find v(dout0_rx) at=1.048e-05
+meas tran f020_complete find v(complete) at=1.048e-05
+meas tran f020_invalid find v(invalid0) at=1.048e-05
+meas tran f020_timeout find v(timeout0) at=1.048e-05
+meas tran f020_sampled find v(sampled_diff) at=1.017e-05
+meas tran f020_input find v(input_diff) at=1.017e-05
+meas tran f020_tcomplete when v(complete)=1.65 rise=21
+meas tran f021_d7 find v(dout7_rx) at=1.098e-05
+meas tran f021_d6 find v(dout6_rx) at=1.098e-05
+meas tran f021_d5 find v(dout5_rx) at=1.098e-05
+meas tran f021_d4 find v(dout4_rx) at=1.098e-05
+meas tran f021_d3 find v(dout3_rx) at=1.098e-05
+meas tran f021_d2 find v(dout2_rx) at=1.098e-05
+meas tran f021_d1 find v(dout1_rx) at=1.098e-05
+meas tran f021_d0 find v(dout0_rx) at=1.098e-05
+meas tran f021_complete find v(complete) at=1.098e-05
+meas tran f021_invalid find v(invalid0) at=1.098e-05
+meas tran f021_timeout find v(timeout0) at=1.098e-05
+meas tran f021_sampled find v(sampled_diff) at=1.067e-05
+meas tran f021_input find v(input_diff) at=1.067e-05
+meas tran f021_tcomplete when v(complete)=1.65 rise=22
+meas tran f022_d7 find v(dout7_rx) at=1.148e-05
+meas tran f022_d6 find v(dout6_rx) at=1.148e-05
+meas tran f022_d5 find v(dout5_rx) at=1.148e-05
+meas tran f022_d4 find v(dout4_rx) at=1.148e-05
+meas tran f022_d3 find v(dout3_rx) at=1.148e-05
+meas tran f022_d2 find v(dout2_rx) at=1.148e-05
+meas tran f022_d1 find v(dout1_rx) at=1.148e-05
+meas tran f022_d0 find v(dout0_rx) at=1.148e-05
+meas tran f022_complete find v(complete) at=1.148e-05
+meas tran f022_invalid find v(invalid0) at=1.148e-05
+meas tran f022_timeout find v(timeout0) at=1.148e-05
+meas tran f022_sampled find v(sampled_diff) at=1.117e-05
+meas tran f022_input find v(input_diff) at=1.117e-05
+meas tran f022_tcomplete when v(complete)=1.65 rise=23
+meas tran f023_d7 find v(dout7_rx) at=1.198e-05
+meas tran f023_d6 find v(dout6_rx) at=1.198e-05
+meas tran f023_d5 find v(dout5_rx) at=1.198e-05
+meas tran f023_d4 find v(dout4_rx) at=1.198e-05
+meas tran f023_d3 find v(dout3_rx) at=1.198e-05
+meas tran f023_d2 find v(dout2_rx) at=1.198e-05
+meas tran f023_d1 find v(dout1_rx) at=1.198e-05
+meas tran f023_d0 find v(dout0_rx) at=1.198e-05
+meas tran f023_complete find v(complete) at=1.198e-05
+meas tran f023_invalid find v(invalid0) at=1.198e-05
+meas tran f023_timeout find v(timeout0) at=1.198e-05
+meas tran f023_sampled find v(sampled_diff) at=1.167e-05
+meas tran f023_input find v(input_diff) at=1.167e-05
+meas tran f023_tcomplete when v(complete)=1.65 rise=24
+meas tran f024_d7 find v(dout7_rx) at=1.248e-05
+meas tran f024_d6 find v(dout6_rx) at=1.248e-05
+meas tran f024_d5 find v(dout5_rx) at=1.248e-05
+meas tran f024_d4 find v(dout4_rx) at=1.248e-05
+meas tran f024_d3 find v(dout3_rx) at=1.248e-05
+meas tran f024_d2 find v(dout2_rx) at=1.248e-05
+meas tran f024_d1 find v(dout1_rx) at=1.248e-05
+meas tran f024_d0 find v(dout0_rx) at=1.248e-05
+meas tran f024_complete find v(complete) at=1.248e-05
+meas tran f024_invalid find v(invalid0) at=1.248e-05
+meas tran f024_timeout find v(timeout0) at=1.248e-05
+meas tran f024_sampled find v(sampled_diff) at=1.217e-05
+meas tran f024_input find v(input_diff) at=1.217e-05
+meas tran f024_tcomplete when v(complete)=1.65 rise=25
+meas tran f025_d7 find v(dout7_rx) at=1.298e-05
+meas tran f025_d6 find v(dout6_rx) at=1.298e-05
+meas tran f025_d5 find v(dout5_rx) at=1.298e-05
+meas tran f025_d4 find v(dout4_rx) at=1.298e-05
+meas tran f025_d3 find v(dout3_rx) at=1.298e-05
+meas tran f025_d2 find v(dout2_rx) at=1.298e-05
+meas tran f025_d1 find v(dout1_rx) at=1.298e-05
+meas tran f025_d0 find v(dout0_rx) at=1.298e-05
+meas tran f025_complete find v(complete) at=1.298e-05
+meas tran f025_invalid find v(invalid0) at=1.298e-05
+meas tran f025_timeout find v(timeout0) at=1.298e-05
+meas tran f025_sampled find v(sampled_diff) at=1.267e-05
+meas tran f025_input find v(input_diff) at=1.267e-05
+meas tran f025_tcomplete when v(complete)=1.65 rise=26
+meas tran f026_d7 find v(dout7_rx) at=1.348e-05
+meas tran f026_d6 find v(dout6_rx) at=1.348e-05
+meas tran f026_d5 find v(dout5_rx) at=1.348e-05
+meas tran f026_d4 find v(dout4_rx) at=1.348e-05
+meas tran f026_d3 find v(dout3_rx) at=1.348e-05
+meas tran f026_d2 find v(dout2_rx) at=1.348e-05
+meas tran f026_d1 find v(dout1_rx) at=1.348e-05
+meas tran f026_d0 find v(dout0_rx) at=1.348e-05
+meas tran f026_complete find v(complete) at=1.348e-05
+meas tran f026_invalid find v(invalid0) at=1.348e-05
+meas tran f026_timeout find v(timeout0) at=1.348e-05
+meas tran f026_sampled find v(sampled_diff) at=1.317e-05
+meas tran f026_input find v(input_diff) at=1.317e-05
+meas tran f026_tcomplete when v(complete)=1.65 rise=27
+meas tran f027_d7 find v(dout7_rx) at=1.398e-05
+meas tran f027_d6 find v(dout6_rx) at=1.398e-05
+meas tran f027_d5 find v(dout5_rx) at=1.398e-05
+meas tran f027_d4 find v(dout4_rx) at=1.398e-05
+meas tran f027_d3 find v(dout3_rx) at=1.398e-05
+meas tran f027_d2 find v(dout2_rx) at=1.398e-05
+meas tran f027_d1 find v(dout1_rx) at=1.398e-05
+meas tran f027_d0 find v(dout0_rx) at=1.398e-05
+meas tran f027_complete find v(complete) at=1.398e-05
+meas tran f027_invalid find v(invalid0) at=1.398e-05
+meas tran f027_timeout find v(timeout0) at=1.398e-05
+meas tran f027_sampled find v(sampled_diff) at=1.367e-05
+meas tran f027_input find v(input_diff) at=1.367e-05
+meas tran f027_tcomplete when v(complete)=1.65 rise=28
+meas tran f028_d7 find v(dout7_rx) at=1.448e-05
+meas tran f028_d6 find v(dout6_rx) at=1.448e-05
+meas tran f028_d5 find v(dout5_rx) at=1.448e-05
+meas tran f028_d4 find v(dout4_rx) at=1.448e-05
+meas tran f028_d3 find v(dout3_rx) at=1.448e-05
+meas tran f028_d2 find v(dout2_rx) at=1.448e-05
+meas tran f028_d1 find v(dout1_rx) at=1.448e-05
+meas tran f028_d0 find v(dout0_rx) at=1.448e-05
+meas tran f028_complete find v(complete) at=1.448e-05
+meas tran f028_invalid find v(invalid0) at=1.448e-05
+meas tran f028_timeout find v(timeout0) at=1.448e-05
+meas tran f028_sampled find v(sampled_diff) at=1.417e-05
+meas tran f028_input find v(input_diff) at=1.417e-05
+meas tran f028_tcomplete when v(complete)=1.65 rise=29
+meas tran f029_d7 find v(dout7_rx) at=1.498e-05
+meas tran f029_d6 find v(dout6_rx) at=1.498e-05
+meas tran f029_d5 find v(dout5_rx) at=1.498e-05
+meas tran f029_d4 find v(dout4_rx) at=1.498e-05
+meas tran f029_d3 find v(dout3_rx) at=1.498e-05
+meas tran f029_d2 find v(dout2_rx) at=1.498e-05
+meas tran f029_d1 find v(dout1_rx) at=1.498e-05
+meas tran f029_d0 find v(dout0_rx) at=1.498e-05
+meas tran f029_complete find v(complete) at=1.498e-05
+meas tran f029_invalid find v(invalid0) at=1.498e-05
+meas tran f029_timeout find v(timeout0) at=1.498e-05
+meas tran f029_sampled find v(sampled_diff) at=1.467e-05
+meas tran f029_input find v(input_diff) at=1.467e-05
+meas tran f029_tcomplete when v(complete)=1.65 rise=30
+meas tran f030_d7 find v(dout7_rx) at=1.548e-05
+meas tran f030_d6 find v(dout6_rx) at=1.548e-05
+meas tran f030_d5 find v(dout5_rx) at=1.548e-05
+meas tran f030_d4 find v(dout4_rx) at=1.548e-05
+meas tran f030_d3 find v(dout3_rx) at=1.548e-05
+meas tran f030_d2 find v(dout2_rx) at=1.548e-05
+meas tran f030_d1 find v(dout1_rx) at=1.548e-05
+meas tran f030_d0 find v(dout0_rx) at=1.548e-05
+meas tran f030_complete find v(complete) at=1.548e-05
+meas tran f030_invalid find v(invalid0) at=1.548e-05
+meas tran f030_timeout find v(timeout0) at=1.548e-05
+meas tran f030_sampled find v(sampled_diff) at=1.517e-05
+meas tran f030_input find v(input_diff) at=1.517e-05
+meas tran f030_tcomplete when v(complete)=1.65 rise=31
+meas tran f031_d7 find v(dout7_rx) at=1.598e-05
+meas tran f031_d6 find v(dout6_rx) at=1.598e-05
+meas tran f031_d5 find v(dout5_rx) at=1.598e-05
+meas tran f031_d4 find v(dout4_rx) at=1.598e-05
+meas tran f031_d3 find v(dout3_rx) at=1.598e-05
+meas tran f031_d2 find v(dout2_rx) at=1.598e-05
+meas tran f031_d1 find v(dout1_rx) at=1.598e-05
+meas tran f031_d0 find v(dout0_rx) at=1.598e-05
+meas tran f031_complete find v(complete) at=1.598e-05
+meas tran f031_invalid find v(invalid0) at=1.598e-05
+meas tran f031_timeout find v(timeout0) at=1.598e-05
+meas tran f031_sampled find v(sampled_diff) at=1.567e-05
+meas tran f031_input find v(input_diff) at=1.567e-05
+meas tran f031_tcomplete when v(complete)=1.65 rise=32
+meas tran f032_d7 find v(dout7_rx) at=1.648e-05
+meas tran f032_d6 find v(dout6_rx) at=1.648e-05
+meas tran f032_d5 find v(dout5_rx) at=1.648e-05
+meas tran f032_d4 find v(dout4_rx) at=1.648e-05
+meas tran f032_d3 find v(dout3_rx) at=1.648e-05
+meas tran f032_d2 find v(dout2_rx) at=1.648e-05
+meas tran f032_d1 find v(dout1_rx) at=1.648e-05
+meas tran f032_d0 find v(dout0_rx) at=1.648e-05
+meas tran f032_complete find v(complete) at=1.648e-05
+meas tran f032_invalid find v(invalid0) at=1.648e-05
+meas tran f032_timeout find v(timeout0) at=1.648e-05
+meas tran f032_sampled find v(sampled_diff) at=1.617e-05
+meas tran f032_input find v(input_diff) at=1.617e-05
+meas tran f032_tcomplete when v(complete)=1.65 rise=33
+meas tran f033_d7 find v(dout7_rx) at=1.698e-05
+meas tran f033_d6 find v(dout6_rx) at=1.698e-05
+meas tran f033_d5 find v(dout5_rx) at=1.698e-05
+meas tran f033_d4 find v(dout4_rx) at=1.698e-05
+meas tran f033_d3 find v(dout3_rx) at=1.698e-05
+meas tran f033_d2 find v(dout2_rx) at=1.698e-05
+meas tran f033_d1 find v(dout1_rx) at=1.698e-05
+meas tran f033_d0 find v(dout0_rx) at=1.698e-05
+meas tran f033_complete find v(complete) at=1.698e-05
+meas tran f033_invalid find v(invalid0) at=1.698e-05
+meas tran f033_timeout find v(timeout0) at=1.698e-05
+meas tran f033_sampled find v(sampled_diff) at=1.667e-05
+meas tran f033_input find v(input_diff) at=1.667e-05
+meas tran f033_tcomplete when v(complete)=1.65 rise=34
+meas tran f034_d7 find v(dout7_rx) at=1.748e-05
+meas tran f034_d6 find v(dout6_rx) at=1.748e-05
+meas tran f034_d5 find v(dout5_rx) at=1.748e-05
+meas tran f034_d4 find v(dout4_rx) at=1.748e-05
+meas tran f034_d3 find v(dout3_rx) at=1.748e-05
+meas tran f034_d2 find v(dout2_rx) at=1.748e-05
+meas tran f034_d1 find v(dout1_rx) at=1.748e-05
+meas tran f034_d0 find v(dout0_rx) at=1.748e-05
+meas tran f034_complete find v(complete) at=1.748e-05
+meas tran f034_invalid find v(invalid0) at=1.748e-05
+meas tran f034_timeout find v(timeout0) at=1.748e-05
+meas tran f034_sampled find v(sampled_diff) at=1.717e-05
+meas tran f034_input find v(input_diff) at=1.717e-05
+meas tran f034_tcomplete when v(complete)=1.65 rise=35
+meas tran f035_d7 find v(dout7_rx) at=1.798e-05
+meas tran f035_d6 find v(dout6_rx) at=1.798e-05
+meas tran f035_d5 find v(dout5_rx) at=1.798e-05
+meas tran f035_d4 find v(dout4_rx) at=1.798e-05
+meas tran f035_d3 find v(dout3_rx) at=1.798e-05
+meas tran f035_d2 find v(dout2_rx) at=1.798e-05
+meas tran f035_d1 find v(dout1_rx) at=1.798e-05
+meas tran f035_d0 find v(dout0_rx) at=1.798e-05
+meas tran f035_complete find v(complete) at=1.798e-05
+meas tran f035_invalid find v(invalid0) at=1.798e-05
+meas tran f035_timeout find v(timeout0) at=1.798e-05
+meas tran f035_sampled find v(sampled_diff) at=1.767e-05
+meas tran f035_input find v(input_diff) at=1.767e-05
+meas tran f035_tcomplete when v(complete)=1.65 rise=36
+meas tran f036_d7 find v(dout7_rx) at=1.848e-05
+meas tran f036_d6 find v(dout6_rx) at=1.848e-05
+meas tran f036_d5 find v(dout5_rx) at=1.848e-05
+meas tran f036_d4 find v(dout4_rx) at=1.848e-05
+meas tran f036_d3 find v(dout3_rx) at=1.848e-05
+meas tran f036_d2 find v(dout2_rx) at=1.848e-05
+meas tran f036_d1 find v(dout1_rx) at=1.848e-05
+meas tran f036_d0 find v(dout0_rx) at=1.848e-05
+meas tran f036_complete find v(complete) at=1.848e-05
+meas tran f036_invalid find v(invalid0) at=1.848e-05
+meas tran f036_timeout find v(timeout0) at=1.848e-05
+meas tran f036_sampled find v(sampled_diff) at=1.817e-05
+meas tran f036_input find v(input_diff) at=1.817e-05
+meas tran f036_tcomplete when v(complete)=1.65 rise=37
+meas tran f037_d7 find v(dout7_rx) at=1.898e-05
+meas tran f037_d6 find v(dout6_rx) at=1.898e-05
+meas tran f037_d5 find v(dout5_rx) at=1.898e-05
+meas tran f037_d4 find v(dout4_rx) at=1.898e-05
+meas tran f037_d3 find v(dout3_rx) at=1.898e-05
+meas tran f037_d2 find v(dout2_rx) at=1.898e-05
+meas tran f037_d1 find v(dout1_rx) at=1.898e-05
+meas tran f037_d0 find v(dout0_rx) at=1.898e-05
+meas tran f037_complete find v(complete) at=1.898e-05
+meas tran f037_invalid find v(invalid0) at=1.898e-05
+meas tran f037_timeout find v(timeout0) at=1.898e-05
+meas tran f037_sampled find v(sampled_diff) at=1.867e-05
+meas tran f037_input find v(input_diff) at=1.867e-05
+meas tran f037_tcomplete when v(complete)=1.65 rise=38
+meas tran f038_d7 find v(dout7_rx) at=1.948e-05
+meas tran f038_d6 find v(dout6_rx) at=1.948e-05
+meas tran f038_d5 find v(dout5_rx) at=1.948e-05
+meas tran f038_d4 find v(dout4_rx) at=1.948e-05
+meas tran f038_d3 find v(dout3_rx) at=1.948e-05
+meas tran f038_d2 find v(dout2_rx) at=1.948e-05
+meas tran f038_d1 find v(dout1_rx) at=1.948e-05
+meas tran f038_d0 find v(dout0_rx) at=1.948e-05
+meas tran f038_complete find v(complete) at=1.948e-05
+meas tran f038_invalid find v(invalid0) at=1.948e-05
+meas tran f038_timeout find v(timeout0) at=1.948e-05
+meas tran f038_sampled find v(sampled_diff) at=1.917e-05
+meas tran f038_input find v(input_diff) at=1.917e-05
+meas tran f038_tcomplete when v(complete)=1.65 rise=39
+meas tran f039_d7 find v(dout7_rx) at=1.998e-05
+meas tran f039_d6 find v(dout6_rx) at=1.998e-05
+meas tran f039_d5 find v(dout5_rx) at=1.998e-05
+meas tran f039_d4 find v(dout4_rx) at=1.998e-05
+meas tran f039_d3 find v(dout3_rx) at=1.998e-05
+meas tran f039_d2 find v(dout2_rx) at=1.998e-05
+meas tran f039_d1 find v(dout1_rx) at=1.998e-05
+meas tran f039_d0 find v(dout0_rx) at=1.998e-05
+meas tran f039_complete find v(complete) at=1.998e-05
+meas tran f039_invalid find v(invalid0) at=1.998e-05
+meas tran f039_timeout find v(timeout0) at=1.998e-05
+meas tran f039_sampled find v(sampled_diff) at=1.967e-05
+meas tran f039_input find v(input_diff) at=1.967e-05
+meas tran f039_tcomplete when v(complete)=1.65 rise=40
+meas tran f040_d7 find v(dout7_rx) at=2.048e-05
+meas tran f040_d6 find v(dout6_rx) at=2.048e-05
+meas tran f040_d5 find v(dout5_rx) at=2.048e-05
+meas tran f040_d4 find v(dout4_rx) at=2.048e-05
+meas tran f040_d3 find v(dout3_rx) at=2.048e-05
+meas tran f040_d2 find v(dout2_rx) at=2.048e-05
+meas tran f040_d1 find v(dout1_rx) at=2.048e-05
+meas tran f040_d0 find v(dout0_rx) at=2.048e-05
+meas tran f040_complete find v(complete) at=2.048e-05
+meas tran f040_invalid find v(invalid0) at=2.048e-05
+meas tran f040_timeout find v(timeout0) at=2.048e-05
+meas tran f040_sampled find v(sampled_diff) at=2.017e-05
+meas tran f040_input find v(input_diff) at=2.017e-05
+meas tran f040_tcomplete when v(complete)=1.65 rise=41
+meas tran f041_d7 find v(dout7_rx) at=2.098e-05
+meas tran f041_d6 find v(dout6_rx) at=2.098e-05
+meas tran f041_d5 find v(dout5_rx) at=2.098e-05
+meas tran f041_d4 find v(dout4_rx) at=2.098e-05
+meas tran f041_d3 find v(dout3_rx) at=2.098e-05
+meas tran f041_d2 find v(dout2_rx) at=2.098e-05
+meas tran f041_d1 find v(dout1_rx) at=2.098e-05
+meas tran f041_d0 find v(dout0_rx) at=2.098e-05
+meas tran f041_complete find v(complete) at=2.098e-05
+meas tran f041_invalid find v(invalid0) at=2.098e-05
+meas tran f041_timeout find v(timeout0) at=2.098e-05
+meas tran f041_sampled find v(sampled_diff) at=2.067e-05
+meas tran f041_input find v(input_diff) at=2.067e-05
+meas tran f041_tcomplete when v(complete)=1.65 rise=42
+meas tran f042_d7 find v(dout7_rx) at=2.148e-05
+meas tran f042_d6 find v(dout6_rx) at=2.148e-05
+meas tran f042_d5 find v(dout5_rx) at=2.148e-05
+meas tran f042_d4 find v(dout4_rx) at=2.148e-05
+meas tran f042_d3 find v(dout3_rx) at=2.148e-05
+meas tran f042_d2 find v(dout2_rx) at=2.148e-05
+meas tran f042_d1 find v(dout1_rx) at=2.148e-05
+meas tran f042_d0 find v(dout0_rx) at=2.148e-05
+meas tran f042_complete find v(complete) at=2.148e-05
+meas tran f042_invalid find v(invalid0) at=2.148e-05
+meas tran f042_timeout find v(timeout0) at=2.148e-05
+meas tran f042_sampled find v(sampled_diff) at=2.117e-05
+meas tran f042_input find v(input_diff) at=2.117e-05
+meas tran f042_tcomplete when v(complete)=1.65 rise=43
+meas tran f043_d7 find v(dout7_rx) at=2.198e-05
+meas tran f043_d6 find v(dout6_rx) at=2.198e-05
+meas tran f043_d5 find v(dout5_rx) at=2.198e-05
+meas tran f043_d4 find v(dout4_rx) at=2.198e-05
+meas tran f043_d3 find v(dout3_rx) at=2.198e-05
+meas tran f043_d2 find v(dout2_rx) at=2.198e-05
+meas tran f043_d1 find v(dout1_rx) at=2.198e-05
+meas tran f043_d0 find v(dout0_rx) at=2.198e-05
+meas tran f043_complete find v(complete) at=2.198e-05
+meas tran f043_invalid find v(invalid0) at=2.198e-05
+meas tran f043_timeout find v(timeout0) at=2.198e-05
+meas tran f043_sampled find v(sampled_diff) at=2.167e-05
+meas tran f043_input find v(input_diff) at=2.167e-05
+meas tran f043_tcomplete when v(complete)=1.65 rise=44
+meas tran f044_d7 find v(dout7_rx) at=2.248e-05
+meas tran f044_d6 find v(dout6_rx) at=2.248e-05
+meas tran f044_d5 find v(dout5_rx) at=2.248e-05
+meas tran f044_d4 find v(dout4_rx) at=2.248e-05
+meas tran f044_d3 find v(dout3_rx) at=2.248e-05
+meas tran f044_d2 find v(dout2_rx) at=2.248e-05
+meas tran f044_d1 find v(dout1_rx) at=2.248e-05
+meas tran f044_d0 find v(dout0_rx) at=2.248e-05
+meas tran f044_complete find v(complete) at=2.248e-05
+meas tran f044_invalid find v(invalid0) at=2.248e-05
+meas tran f044_timeout find v(timeout0) at=2.248e-05
+meas tran f044_sampled find v(sampled_diff) at=2.217e-05
+meas tran f044_input find v(input_diff) at=2.217e-05
+meas tran f044_tcomplete when v(complete)=1.65 rise=45
+meas tran f045_d7 find v(dout7_rx) at=2.298e-05
+meas tran f045_d6 find v(dout6_rx) at=2.298e-05
+meas tran f045_d5 find v(dout5_rx) at=2.298e-05
+meas tran f045_d4 find v(dout4_rx) at=2.298e-05
+meas tran f045_d3 find v(dout3_rx) at=2.298e-05
+meas tran f045_d2 find v(dout2_rx) at=2.298e-05
+meas tran f045_d1 find v(dout1_rx) at=2.298e-05
+meas tran f045_d0 find v(dout0_rx) at=2.298e-05
+meas tran f045_complete find v(complete) at=2.298e-05
+meas tran f045_invalid find v(invalid0) at=2.298e-05
+meas tran f045_timeout find v(timeout0) at=2.298e-05
+meas tran f045_sampled find v(sampled_diff) at=2.267e-05
+meas tran f045_input find v(input_diff) at=2.267e-05
+meas tran f045_tcomplete when v(complete)=1.65 rise=46
+meas tran f046_d7 find v(dout7_rx) at=2.348e-05
+meas tran f046_d6 find v(dout6_rx) at=2.348e-05
+meas tran f046_d5 find v(dout5_rx) at=2.348e-05
+meas tran f046_d4 find v(dout4_rx) at=2.348e-05
+meas tran f046_d3 find v(dout3_rx) at=2.348e-05
+meas tran f046_d2 find v(dout2_rx) at=2.348e-05
+meas tran f046_d1 find v(dout1_rx) at=2.348e-05
+meas tran f046_d0 find v(dout0_rx) at=2.348e-05
+meas tran f046_complete find v(complete) at=2.348e-05
+meas tran f046_invalid find v(invalid0) at=2.348e-05
+meas tran f046_timeout find v(timeout0) at=2.348e-05
+meas tran f046_sampled find v(sampled_diff) at=2.317e-05
+meas tran f046_input find v(input_diff) at=2.317e-05
+meas tran f046_tcomplete when v(complete)=1.65 rise=47
+meas tran f047_d7 find v(dout7_rx) at=2.398e-05
+meas tran f047_d6 find v(dout6_rx) at=2.398e-05
+meas tran f047_d5 find v(dout5_rx) at=2.398e-05
+meas tran f047_d4 find v(dout4_rx) at=2.398e-05
+meas tran f047_d3 find v(dout3_rx) at=2.398e-05
+meas tran f047_d2 find v(dout2_rx) at=2.398e-05
+meas tran f047_d1 find v(dout1_rx) at=2.398e-05
+meas tran f047_d0 find v(dout0_rx) at=2.398e-05
+meas tran f047_complete find v(complete) at=2.398e-05
+meas tran f047_invalid find v(invalid0) at=2.398e-05
+meas tran f047_timeout find v(timeout0) at=2.398e-05
+meas tran f047_sampled find v(sampled_diff) at=2.367e-05
+meas tran f047_input find v(input_diff) at=2.367e-05
+meas tran f047_tcomplete when v(complete)=1.65 rise=48
+meas tran f048_d7 find v(dout7_rx) at=2.448e-05
+meas tran f048_d6 find v(dout6_rx) at=2.448e-05
+meas tran f048_d5 find v(dout5_rx) at=2.448e-05
+meas tran f048_d4 find v(dout4_rx) at=2.448e-05
+meas tran f048_d3 find v(dout3_rx) at=2.448e-05
+meas tran f048_d2 find v(dout2_rx) at=2.448e-05
+meas tran f048_d1 find v(dout1_rx) at=2.448e-05
+meas tran f048_d0 find v(dout0_rx) at=2.448e-05
+meas tran f048_complete find v(complete) at=2.448e-05
+meas tran f048_invalid find v(invalid0) at=2.448e-05
+meas tran f048_timeout find v(timeout0) at=2.448e-05
+meas tran f048_sampled find v(sampled_diff) at=2.417e-05
+meas tran f048_input find v(input_diff) at=2.417e-05
+meas tran f048_tcomplete when v(complete)=1.65 rise=49
+meas tran f049_d7 find v(dout7_rx) at=2.498e-05
+meas tran f049_d6 find v(dout6_rx) at=2.498e-05
+meas tran f049_d5 find v(dout5_rx) at=2.498e-05
+meas tran f049_d4 find v(dout4_rx) at=2.498e-05
+meas tran f049_d3 find v(dout3_rx) at=2.498e-05
+meas tran f049_d2 find v(dout2_rx) at=2.498e-05
+meas tran f049_d1 find v(dout1_rx) at=2.498e-05
+meas tran f049_d0 find v(dout0_rx) at=2.498e-05
+meas tran f049_complete find v(complete) at=2.498e-05
+meas tran f049_invalid find v(invalid0) at=2.498e-05
+meas tran f049_timeout find v(timeout0) at=2.498e-05
+meas tran f049_sampled find v(sampled_diff) at=2.467e-05
+meas tran f049_input find v(input_diff) at=2.467e-05
+meas tran f049_tcomplete when v(complete)=1.65 rise=50
+meas tran f050_d7 find v(dout7_rx) at=2.548e-05
+meas tran f050_d6 find v(dout6_rx) at=2.548e-05
+meas tran f050_d5 find v(dout5_rx) at=2.548e-05
+meas tran f050_d4 find v(dout4_rx) at=2.548e-05
+meas tran f050_d3 find v(dout3_rx) at=2.548e-05
+meas tran f050_d2 find v(dout2_rx) at=2.548e-05
+meas tran f050_d1 find v(dout1_rx) at=2.548e-05
+meas tran f050_d0 find v(dout0_rx) at=2.548e-05
+meas tran f050_complete find v(complete) at=2.548e-05
+meas tran f050_invalid find v(invalid0) at=2.548e-05
+meas tran f050_timeout find v(timeout0) at=2.548e-05
+meas tran f050_sampled find v(sampled_diff) at=2.517e-05
+meas tran f050_input find v(input_diff) at=2.517e-05
+meas tran f050_tcomplete when v(complete)=1.65 rise=51
+meas tran f051_d7 find v(dout7_rx) at=2.598e-05
+meas tran f051_d6 find v(dout6_rx) at=2.598e-05
+meas tran f051_d5 find v(dout5_rx) at=2.598e-05
+meas tran f051_d4 find v(dout4_rx) at=2.598e-05
+meas tran f051_d3 find v(dout3_rx) at=2.598e-05
+meas tran f051_d2 find v(dout2_rx) at=2.598e-05
+meas tran f051_d1 find v(dout1_rx) at=2.598e-05
+meas tran f051_d0 find v(dout0_rx) at=2.598e-05
+meas tran f051_complete find v(complete) at=2.598e-05
+meas tran f051_invalid find v(invalid0) at=2.598e-05
+meas tran f051_timeout find v(timeout0) at=2.598e-05
+meas tran f051_sampled find v(sampled_diff) at=2.567e-05
+meas tran f051_input find v(input_diff) at=2.567e-05
+meas tran f051_tcomplete when v(complete)=1.65 rise=52
+meas tran f052_d7 find v(dout7_rx) at=2.648e-05
+meas tran f052_d6 find v(dout6_rx) at=2.648e-05
+meas tran f052_d5 find v(dout5_rx) at=2.648e-05
+meas tran f052_d4 find v(dout4_rx) at=2.648e-05
+meas tran f052_d3 find v(dout3_rx) at=2.648e-05
+meas tran f052_d2 find v(dout2_rx) at=2.648e-05
+meas tran f052_d1 find v(dout1_rx) at=2.648e-05
+meas tran f052_d0 find v(dout0_rx) at=2.648e-05
+meas tran f052_complete find v(complete) at=2.648e-05
+meas tran f052_invalid find v(invalid0) at=2.648e-05
+meas tran f052_timeout find v(timeout0) at=2.648e-05
+meas tran f052_sampled find v(sampled_diff) at=2.617e-05
+meas tran f052_input find v(input_diff) at=2.617e-05
+meas tran f052_tcomplete when v(complete)=1.65 rise=53
+meas tran f053_d7 find v(dout7_rx) at=2.698e-05
+meas tran f053_d6 find v(dout6_rx) at=2.698e-05
+meas tran f053_d5 find v(dout5_rx) at=2.698e-05
+meas tran f053_d4 find v(dout4_rx) at=2.698e-05
+meas tran f053_d3 find v(dout3_rx) at=2.698e-05
+meas tran f053_d2 find v(dout2_rx) at=2.698e-05
+meas tran f053_d1 find v(dout1_rx) at=2.698e-05
+meas tran f053_d0 find v(dout0_rx) at=2.698e-05
+meas tran f053_complete find v(complete) at=2.698e-05
+meas tran f053_invalid find v(invalid0) at=2.698e-05
+meas tran f053_timeout find v(timeout0) at=2.698e-05
+meas tran f053_sampled find v(sampled_diff) at=2.667e-05
+meas tran f053_input find v(input_diff) at=2.667e-05
+meas tran f053_tcomplete when v(complete)=1.65 rise=54
+meas tran f054_d7 find v(dout7_rx) at=2.748e-05
+meas tran f054_d6 find v(dout6_rx) at=2.748e-05
+meas tran f054_d5 find v(dout5_rx) at=2.748e-05
+meas tran f054_d4 find v(dout4_rx) at=2.748e-05
+meas tran f054_d3 find v(dout3_rx) at=2.748e-05
+meas tran f054_d2 find v(dout2_rx) at=2.748e-05
+meas tran f054_d1 find v(dout1_rx) at=2.748e-05
+meas tran f054_d0 find v(dout0_rx) at=2.748e-05
+meas tran f054_complete find v(complete) at=2.748e-05
+meas tran f054_invalid find v(invalid0) at=2.748e-05
+meas tran f054_timeout find v(timeout0) at=2.748e-05
+meas tran f054_sampled find v(sampled_diff) at=2.717e-05
+meas tran f054_input find v(input_diff) at=2.717e-05
+meas tran f054_tcomplete when v(complete)=1.65 rise=55
+meas tran f055_d7 find v(dout7_rx) at=2.798e-05
+meas tran f055_d6 find v(dout6_rx) at=2.798e-05
+meas tran f055_d5 find v(dout5_rx) at=2.798e-05
+meas tran f055_d4 find v(dout4_rx) at=2.798e-05
+meas tran f055_d3 find v(dout3_rx) at=2.798e-05
+meas tran f055_d2 find v(dout2_rx) at=2.798e-05
+meas tran f055_d1 find v(dout1_rx) at=2.798e-05
+meas tran f055_d0 find v(dout0_rx) at=2.798e-05
+meas tran f055_complete find v(complete) at=2.798e-05
+meas tran f055_invalid find v(invalid0) at=2.798e-05
+meas tran f055_timeout find v(timeout0) at=2.798e-05
+meas tran f055_sampled find v(sampled_diff) at=2.767e-05
+meas tran f055_input find v(input_diff) at=2.767e-05
+meas tran f055_tcomplete when v(complete)=1.65 rise=56
+meas tran f056_d7 find v(dout7_rx) at=2.848e-05
+meas tran f056_d6 find v(dout6_rx) at=2.848e-05
+meas tran f056_d5 find v(dout5_rx) at=2.848e-05
+meas tran f056_d4 find v(dout4_rx) at=2.848e-05
+meas tran f056_d3 find v(dout3_rx) at=2.848e-05
+meas tran f056_d2 find v(dout2_rx) at=2.848e-05
+meas tran f056_d1 find v(dout1_rx) at=2.848e-05
+meas tran f056_d0 find v(dout0_rx) at=2.848e-05
+meas tran f056_complete find v(complete) at=2.848e-05
+meas tran f056_invalid find v(invalid0) at=2.848e-05
+meas tran f056_timeout find v(timeout0) at=2.848e-05
+meas tran f056_sampled find v(sampled_diff) at=2.817e-05
+meas tran f056_input find v(input_diff) at=2.817e-05
+meas tran f056_tcomplete when v(complete)=1.65 rise=57
+meas tran f057_d7 find v(dout7_rx) at=2.898e-05
+meas tran f057_d6 find v(dout6_rx) at=2.898e-05
+meas tran f057_d5 find v(dout5_rx) at=2.898e-05
+meas tran f057_d4 find v(dout4_rx) at=2.898e-05
+meas tran f057_d3 find v(dout3_rx) at=2.898e-05
+meas tran f057_d2 find v(dout2_rx) at=2.898e-05
+meas tran f057_d1 find v(dout1_rx) at=2.898e-05
+meas tran f057_d0 find v(dout0_rx) at=2.898e-05
+meas tran f057_complete find v(complete) at=2.898e-05
+meas tran f057_invalid find v(invalid0) at=2.898e-05
+meas tran f057_timeout find v(timeout0) at=2.898e-05
+meas tran f057_sampled find v(sampled_diff) at=2.867e-05
+meas tran f057_input find v(input_diff) at=2.867e-05
+meas tran f057_tcomplete when v(complete)=1.65 rise=58
+meas tran f058_d7 find v(dout7_rx) at=2.948e-05
+meas tran f058_d6 find v(dout6_rx) at=2.948e-05
+meas tran f058_d5 find v(dout5_rx) at=2.948e-05
+meas tran f058_d4 find v(dout4_rx) at=2.948e-05
+meas tran f058_d3 find v(dout3_rx) at=2.948e-05
+meas tran f058_d2 find v(dout2_rx) at=2.948e-05
+meas tran f058_d1 find v(dout1_rx) at=2.948e-05
+meas tran f058_d0 find v(dout0_rx) at=2.948e-05
+meas tran f058_complete find v(complete) at=2.948e-05
+meas tran f058_invalid find v(invalid0) at=2.948e-05
+meas tran f058_timeout find v(timeout0) at=2.948e-05
+meas tran f058_sampled find v(sampled_diff) at=2.917e-05
+meas tran f058_input find v(input_diff) at=2.917e-05
+meas tran f058_tcomplete when v(complete)=1.65 rise=59
+meas tran f059_d7 find v(dout7_rx) at=2.998e-05
+meas tran f059_d6 find v(dout6_rx) at=2.998e-05
+meas tran f059_d5 find v(dout5_rx) at=2.998e-05
+meas tran f059_d4 find v(dout4_rx) at=2.998e-05
+meas tran f059_d3 find v(dout3_rx) at=2.998e-05
+meas tran f059_d2 find v(dout2_rx) at=2.998e-05
+meas tran f059_d1 find v(dout1_rx) at=2.998e-05
+meas tran f059_d0 find v(dout0_rx) at=2.998e-05
+meas tran f059_complete find v(complete) at=2.998e-05
+meas tran f059_invalid find v(invalid0) at=2.998e-05
+meas tran f059_timeout find v(timeout0) at=2.998e-05
+meas tran f059_sampled find v(sampled_diff) at=2.967e-05
+meas tran f059_input find v(input_diff) at=2.967e-05
+meas tran f059_tcomplete when v(complete)=1.65 rise=60
+meas tran f060_d7 find v(dout7_rx) at=3.048e-05
+meas tran f060_d6 find v(dout6_rx) at=3.048e-05
+meas tran f060_d5 find v(dout5_rx) at=3.048e-05
+meas tran f060_d4 find v(dout4_rx) at=3.048e-05
+meas tran f060_d3 find v(dout3_rx) at=3.048e-05
+meas tran f060_d2 find v(dout2_rx) at=3.048e-05
+meas tran f060_d1 find v(dout1_rx) at=3.048e-05
+meas tran f060_d0 find v(dout0_rx) at=3.048e-05
+meas tran f060_complete find v(complete) at=3.048e-05
+meas tran f060_invalid find v(invalid0) at=3.048e-05
+meas tran f060_timeout find v(timeout0) at=3.048e-05
+meas tran f060_sampled find v(sampled_diff) at=3.017e-05
+meas tran f060_input find v(input_diff) at=3.017e-05
+meas tran f060_tcomplete when v(complete)=1.65 rise=61
+meas tran f061_d7 find v(dout7_rx) at=3.098e-05
+meas tran f061_d6 find v(dout6_rx) at=3.098e-05
+meas tran f061_d5 find v(dout5_rx) at=3.098e-05
+meas tran f061_d4 find v(dout4_rx) at=3.098e-05
+meas tran f061_d3 find v(dout3_rx) at=3.098e-05
+meas tran f061_d2 find v(dout2_rx) at=3.098e-05
+meas tran f061_d1 find v(dout1_rx) at=3.098e-05
+meas tran f061_d0 find v(dout0_rx) at=3.098e-05
+meas tran f061_complete find v(complete) at=3.098e-05
+meas tran f061_invalid find v(invalid0) at=3.098e-05
+meas tran f061_timeout find v(timeout0) at=3.098e-05
+meas tran f061_sampled find v(sampled_diff) at=3.067e-05
+meas tran f061_input find v(input_diff) at=3.067e-05
+meas tran f061_tcomplete when v(complete)=1.65 rise=62
+meas tran f062_d7 find v(dout7_rx) at=3.148e-05
+meas tran f062_d6 find v(dout6_rx) at=3.148e-05
+meas tran f062_d5 find v(dout5_rx) at=3.148e-05
+meas tran f062_d4 find v(dout4_rx) at=3.148e-05
+meas tran f062_d3 find v(dout3_rx) at=3.148e-05
+meas tran f062_d2 find v(dout2_rx) at=3.148e-05
+meas tran f062_d1 find v(dout1_rx) at=3.148e-05
+meas tran f062_d0 find v(dout0_rx) at=3.148e-05
+meas tran f062_complete find v(complete) at=3.148e-05
+meas tran f062_invalid find v(invalid0) at=3.148e-05
+meas tran f062_timeout find v(timeout0) at=3.148e-05
+meas tran f062_sampled find v(sampled_diff) at=3.117e-05
+meas tran f062_input find v(input_diff) at=3.117e-05
+meas tran f062_tcomplete when v(complete)=1.65 rise=63
+meas tran f063_d7 find v(dout7_rx) at=3.198e-05
+meas tran f063_d6 find v(dout6_rx) at=3.198e-05
+meas tran f063_d5 find v(dout5_rx) at=3.198e-05
+meas tran f063_d4 find v(dout4_rx) at=3.198e-05
+meas tran f063_d3 find v(dout3_rx) at=3.198e-05
+meas tran f063_d2 find v(dout2_rx) at=3.198e-05
+meas tran f063_d1 find v(dout1_rx) at=3.198e-05
+meas tran f063_d0 find v(dout0_rx) at=3.198e-05
+meas tran f063_complete find v(complete) at=3.198e-05
+meas tran f063_invalid find v(invalid0) at=3.198e-05
+meas tran f063_timeout find v(timeout0) at=3.198e-05
+meas tran f063_sampled find v(sampled_diff) at=3.167e-05
+meas tran f063_input find v(input_diff) at=3.167e-05
+meas tran f063_tcomplete when v(complete)=1.65 rise=64
+quit
+.endc
+.end

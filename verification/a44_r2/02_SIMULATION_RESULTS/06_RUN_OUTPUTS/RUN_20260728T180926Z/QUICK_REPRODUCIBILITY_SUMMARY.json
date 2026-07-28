@@ -1,0 +1,171 @@
+{
+  "commands": [
+    {
+      "name": "mc200",
+      "returncode": 2
+    },
+    {
+      "name": "pvt3_mc20",
+      "returncode": 2
+    },
+    {
+      "name": "static_S116_TT",
+      "returncode": 2
+    },
+    {
+      "name": "static_S044_TT",
+      "returncode": 2
+    },
+    {
+      "name": "static_S180_TT",
+      "returncode": 2
+    },
+    {
+      "name": "static_S106_TT",
+      "returncode": 2
+    },
+    {
+      "name": "static_S044_FF",
+      "returncode": 2
+    },
+    {
+      "name": "static_S044_SS",
+      "returncode": 2
+    }
+  ],
+  "comparison_record_count": 130,
+  "completed_utc": "2026-07-28T18:09:32.883029+00:00",
+  "dynamic_campaign_count": 2,
+  "early_stop_boundary": "Dynamic jobs stop after the identical first five-frame prefix. Static cases stop after the first five historical transition lower/upper brackets match. Unscheduled suffix work makes this a quick reproducibility audit, not a replacement full campaign.",
+  "expected_comparison_record_count": 130,
+  "matching_record_count": 0,
+  "mode": "CACE_PREFLIGHT_PLUS_PREFIX5_DYNAMIC_AND_BRACKET5_STATIC",
+  "pass": false,
+  "preflight_pass": true,
+  "source_campaign_performance_status": "COMPLETE_AS_EXECUTED_PERFORMANCE_FAIL_NO_PROMOTION",
+  "static_unique_case_count": 6,
+  "status": "FAIL_QUICK_REPRODUCIBILITY",
+  "summaries": [
+    {
+      "campaign": "01_MC200_TT_LOW_W4",
+      "comparison_record_count": 25,
+      "completed_job_count": 5,
+      "completed_utc": "2026-07-28T18:09:28.383084+00:00",
+      "early_stop_method": "Each job uses the identical deterministic prefix and terminates after frame 4; frames 5-67 are not scheduled after the first five records match.",
+      "exceptions": [],
+      "frames_per_job": 5,
+      "jobs_per_phase": 5,
+      "matching_record_count": 0,
+      "pass": false,
+      "phases": [
+        "P4_EVENT_NOISE_MC200_LOW"
+      ],
+      "selected_job_count": 5,
+      "status": "FAIL_DYNAMIC_FIRST5_REPRODUCIBILITY"
+    },
+    {
+      "campaign": "02_PVT3_MC20_LOW_W4",
+      "comparison_record_count": 75,
+      "completed_job_count": 15,
+      "completed_utc": "2026-07-28T18:09:29.580621+00:00",
+      "early_stop_method": "Each job uses the identical deterministic prefix and terminates after frame 4; frames 5-67 are not scheduled after the first five records match.",
+      "exceptions": [],
+      "frames_per_job": 5,
+      "jobs_per_phase": 5,
+      "matching_record_count": 0,
+      "pass": false,
+      "phases": [
+        "P4_PVT_TT_MC20_LOW",
+        "P5_PVT_SS_MC20_LOW",
+        "P6_PVT_FF_MC20_LOW"
+      ],
+      "selected_job_count": 15,
+      "status": "FAIL_DYNAMIC_FIRST5_REPRODUCIBILITY"
+    },
+    {
+      "case": "S044_FF",
+      "completed_utc": "2026-07-28T18:09:31.616122+00:00",
+      "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+      "elapsed_s": 0.20236276800278574,
+      "frames_per_bracket_point": 2,
+      "matching_transition_count": 0,
+      "mismatch_seed": 44,
+      "pass": false,
+      "pvt": "FF_3P6_M40C",
+      "returncode": 1,
+      "status": "FAIL_STATIC_FIRST5_REPRODUCIBILITY",
+      "transition_count": 5
+    },
+    {
+      "case": "S044_SS",
+      "completed_utc": "2026-07-28T18:09:31.616205+00:00",
+      "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+      "elapsed_s": 0.202159543056041,
+      "frames_per_bracket_point": 2,
+      "matching_transition_count": 0,
+      "mismatch_seed": 44,
+      "pass": false,
+      "pvt": "SS_3P0_125C",
+      "returncode": 1,
+      "status": "FAIL_STATIC_FIRST5_REPRODUCIBILITY",
+      "transition_count": 5
+    },
+    {
+      "case": "S044_TT",
+      "completed_utc": "2026-07-28T18:09:30.310026+00:00",
+      "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+      "elapsed_s": 0.202819395926781,
+      "frames_per_bracket_point": 2,
+      "matching_transition_count": 0,
+      "mismatch_seed": 44,
+      "pass": false,
+      "pvt": "TT_3P3_27C",
+      "returncode": 1,
+      "status": "FAIL_STATIC_FIRST5_REPRODUCIBILITY",
+      "transition_count": 5
+    },
+    {
+      "case": "S106_TT",
+      "completed_utc": "2026-07-28T18:09:30.958037+00:00",
+      "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+      "elapsed_s": 0.2021255569998175,
+      "frames_per_bracket_point": 2,
+      "matching_transition_count": 0,
+      "mismatch_seed": 106,
+      "pass": false,
+      "pvt": "TT_3P3_27C",
+      "returncode": 1,
+      "status": "FAIL_STATIC_FIRST5_REPRODUCIBILITY",
+      "transition_count": 5
+    },
+    {
+      "case": "S116_TT",
+      "completed_utc": "2026-07-28T18:09:30.310892+00:00",
+      "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+      "elapsed_s": 0.20305999903939664,
+      "frames_per_bracket_point": 2,
+      "matching_transition_count": 0,
+      "mismatch_seed": 116,
+      "pass": false,
+      "pvt": "TT_3P3_27C",
+      "returncode": 1,
+      "status": "FAIL_STATIC_FIRST5_REPRODUCIBILITY",
+      "transition_count": 5
+    },
+    {
+      "case": "S180_TT",
+      "completed_utc": "2026-07-28T18:09:30.958107+00:00",
+      "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+      "elapsed_s": 0.20240486797410995,
+      "frames_per_bracket_point": 2,
+      "matching_transition_count": 0,
+      "mismatch_seed": 180,
+      "pass": false,
+      "pvt": "TT_3P3_27C",
+      "returncode": 1,
+      "status": "FAIL_STATIC_FIRST5_REPRODUCIBILITY",
+      "transition_count": 5
+    }
+  ],
+  "summary_count": 8
+}

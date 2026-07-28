@@ -1,0 +1,28 @@
+* Actual sampler plus CDAC track-state noise-bandwidth probe.
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.include /foss/designs/manual_goal/verification/A44_TT_BEH_NO_R6_MC200_FAST64_SIGNOFF_20260718/netlists/core/subckts/SWITCH_BOOT_SP_native_extracted.subckt.spice
+.include /foss/designs/manual_goal/verification/A44_TT_BEH_NO_R6_MC200_FAST64_SIGNOFF_20260718/netlists/core/subckts/CDAC_native_extracted.subckt.spice
+.temp 27
+VVDD vdd 0 3.3
+VREFP vrefp 0 2.5
+VREFN vrefn 0 0.8
+VCLKS clks 0 3.3
+VDCTRL dctrl 0 3.3
+VVIN src 0 DC 1.65 AC 1
+RDRV src vin 105
+CIN vin 0 1.7p
+XCDAC vin clks vtop dctrl dctrl dctrl dctrl dctrl dctrl dctrl vrefp vdd 0 vrefn CDAC
+CLOAD vtop 0 20f
+.noise v(vtop) VVIN dec 80 1 1e12
+.control
+set noaskquit
+run
+setplot noise1
+wrdata /foss/designs/manual_goal/verification/A44_TT_BEH_NO_R6_MC200_FAST64_SIGNOFF_20260718/results/sample_noise_bandwidth_probe.csv frequency onoise_spectrum
+setplot noise2
+print inoise_total onoise_total
+quit
+.endc
+.end

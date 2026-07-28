@@ -1,0 +1,98 @@
+campaign:
+  id: A44_CODEX_FAST64_D3_ONLY_32GB_ONE_DAY_PLAN_V7
+  dynamic_only: true
+  performance_early_stop: false
+  formal_categories:
+  - D3_ONLY
+  dynamic_method: FAST64_ONLY
+  primary_lane: TT_TIMED_BEHAVIORAL_SAR_NO_R6
+  evidence_class: FAST64_D3_ONLY_MC200_MODEL_CONDITIONAL
+system:
+  resolution_bit: 8
+  sample_rate_hz: 2000000
+  frame_period_ns: 500
+  startup_frames: 0
+  dout_aperture_ns: 480
+  vcm_v: 1.65
+  vrefp_v: 2.5
+  vrefn_v: 0.8
+  nominal_full_scale_vpp_diff: 3.4
+  input_vpp_diff: 3.0
+  input_phase_rad: 0.7853981633974483
+numerical:
+  formal_maxstep_ns_if_cache_valid: 0.1
+  strict_maxstep_ns: 0.05
+  rescan_frame: false
+  rescan_startup: false
+  rescan_aperture: false
+  rescan_phase: false
+  rescan_fft_length: false
+fast64:
+  nfft: 64
+  window: rectangular
+  bands:
+    LOW:
+      bin: 7
+      fin_hz: 218750.0
+    NEAR_NYQUIST:
+      bin: 29
+      fin_hz: 906250.0
+  harmonics:
+  - 2
+  - 3
+  - 4
+  - 5
+  require_parseval_check: true
+noise_model:
+  sample_sigma_v_rms_diff: 6.4681023032e-05
+  comparator_sigma_v_rms_diff: 0.0015
+  sample_draws_per_frame: 1
+  comparator_draws_per_decision: 1
+  qualification_required: true
+  claim: T2_TARGET_CALIBRATED_EVENT_NOISE_NOT_NATIVE_MOS_TRANSIENT_NOISE
+matrix:
+  D3:
+    category: NOISE_PLUS_MISMATCH_MC200
+    pvt: TT_3P3_27C
+    mismatch_seeds: 200
+    noise_seed_rule: 100000_plus_mismatch_seed
+    records_per_die: 2
+metrics:
+  mandatory:
+  - SNR
+  - SNDR
+  - ENOB_RAW
+  - SFDR
+  - THD
+  - HD2
+  - HD3
+  snr_budget_target_db: 48.14
+  sndr_hard_min_db: 46.91
+  enob_raw_hard_min_bit: 7.5
+  sndr_preferred_nominal_db: 47.75
+  enob_raw_preferred_nominal_bit: 7.64
+acceptance:
+  D3_required_valid_dies: 200
+  D3_minimum_pass_count: 190
+  D3_minimum_observed_pass_rate: 0.95
+  require_both_bands: true
+  require_clean_protocol_flags: true
+  snr_budget_is_separate_gate: true
+execution:
+  session_mode: SEPARATE_PROCESS_FALLBACK
+  solver_profile: ROBUST_GEAR
+  one_die_per_scheduler_task: true
+  destroy_vectors_after_each_record: true
+  infrastructure_retry_max: 1
+  performance_retry: false
+memory_32gb:
+  physical_ram_gb_nominal: 32
+  ngspice_token_budget_gb_nominal: 22
+  token_quantum_gb: 0.5
+  token_rss_margin: 1.25
+  memavailable_pause_gb: 5
+  swap_pause_mb: 512
+  threads_per_process: 1
+completion:
+  no_failed_job_dropping: true
+  unresolved_required_job_means_blocked: true

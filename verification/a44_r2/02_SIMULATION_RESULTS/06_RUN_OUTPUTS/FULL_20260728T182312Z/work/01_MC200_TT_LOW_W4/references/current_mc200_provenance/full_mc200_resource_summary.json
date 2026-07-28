@@ -1,0 +1,9 @@
+{
+  "status": "RESOURCE_TRACE_COMPLETE",
+  "samples": 3140,
+  "max_ngspice_processes": 4,
+  "max_total_threads": 16,
+  "max_total_rss_kb": 500692,
+  "first_sample_utc": "2026-07-25T14:30:38.807150+00:00",
+  "last_sample_utc": "2026-07-25T16:15:28.014002+00:00"
+}

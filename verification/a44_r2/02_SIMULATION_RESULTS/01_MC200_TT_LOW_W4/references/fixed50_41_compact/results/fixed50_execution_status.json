@@ -1,0 +1,50 @@
+{
+  "checks": {
+    "all_2624_codes_present": true,
+    "all_41_records_valid": true,
+    "all_41_target_keys_present": true,
+    "all_noise_checksums_match": true,
+    "all_records_50ps": true,
+    "all_records_robust_gear": true,
+    "max_four_ngspice_processes": true,
+    "no_simulation_aborts": true,
+    "no_timeouts": true
+  },
+  "code_rows": 2624,
+  "codes_sha256": "5d7f65d5bcfd09c9333113b25235ccb03e851a7428c51f6d6ec4b6a17ee92393",
+  "elapsed_s": 752.9922866820125,
+  "finished_utc": "2026-07-25T13:49:09.920639+00:00",
+  "master_sha256": "b5fae7961ac9928f13fff21cd61b2129a22833d8d91a73b7991c0bab212618a4",
+  "max_ngspice_processes": 4,
+  "maxstep_ps": 50,
+  "pass": true,
+  "preflight": {
+    "checks": {
+      "admitted_workers_at_least_4": true,
+      "no_active_ngspice_at_start": true,
+      "qualification_complete": true,
+      "selected_formal_maxstep_50ps": true,
+      "separate_process_fallback": true
+    },
+    "dependencies": {
+      "declared": 20,
+      "failures": [],
+      "matching": 20,
+      "pass": true
+    },
+    "pass": true,
+    "production_source": {
+      "declared": 113,
+      "failures": [],
+      "matching": 113,
+      "pass": true
+    },
+    "target_records": 41
+  },
+  "requested_target_records": 41,
+  "solver_profile": "ROBUST_GEAR",
+  "started_utc": "2026-07-25T13:36:36.941688+00:00",
+  "status": "PASS_FIXED50_EXECUTION",
+  "valid_records": 41,
+  "workers": 4
+}

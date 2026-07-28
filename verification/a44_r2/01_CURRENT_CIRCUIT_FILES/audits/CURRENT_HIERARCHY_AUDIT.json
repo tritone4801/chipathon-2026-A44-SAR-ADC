@@ -1,0 +1,75 @@
+{
+  "status": "PASS_CURRENT_LATEST_FILE_SET_WITH_PATH_REBINDING_NOTE",
+  "audit_date": "2026-07-28",
+  "package_root": "D:\\PICO\\A44_SAR_ADC_CURRENT_LATEST_CIRCUIT_FILES_20260728_R1",
+  "selection": {
+    "design_file_count": 17,
+    "design_file_bytes": 5100010,
+    "source_to_bundle_exact_copy_pass_count": 17,
+    "source_to_bundle_exact_copy_fail_count": 0,
+    "counts": {
+      "xschem_sch": 4,
+      "xschem_sym": 5,
+      "xschemrc": 1,
+      "rtl_sv": 1,
+      "spice": 6
+    }
+  },
+  "top_level": {
+    "subckt": "SAR_ADC_TOP_FIXED",
+    "spice_file": "spice/SAR_ADC_TOP_FIXED.spice",
+    "called_subckts": [
+      "CDAC",
+      "Comparator_StrongARM",
+      "SAR_LOGIC_ACTUAL_RTL"
+    ],
+    "called_subckt_definitions_present": true
+  },
+  "subckt_definitions": {
+    "CDAC": "spice/subckts/CDAC_native_extracted.subckt.spice",
+    "Comparator_StrongARM": "spice/subckts/Comparator_StrongARM_extracted.subckt.spice",
+    "SAR_LOGIC_ACTUAL_RTL": "spice/subckts/SAR_LOGIC_ACTUAL_RTL_SS_pex_wrapper_local.spice",
+    "SAR_LOGIC_ACTUAL_RTL_SS_PEX_CORE": "spice/subckts/SAR_LOGIC_ACTUAL_RTL_SS_pex_core.spice",
+    "SWITCH_BOOT_SP": "spice/subckts/SWITCH_BOOT_SP_native_extracted.subckt.spice"
+  },
+  "current_resized_comparator": {
+    "schematic": "xschem/Comparator_StrongARM.sch",
+    "schematic_sha256": "20e713782714df7d063eef39b79e82f492775cf2fc71beb8895e871b7deeec5a",
+    "symbol": "xschem/A44_Comparator_StrongARM.sym",
+    "symbol_sha256": "36ea29c9789f2221cf798bb270ebaea509ba9249c717107de825a549e64975a7",
+    "formal_spice": "spice/subckts/Comparator_StrongARM_extracted.subckt.spice",
+    "formal_spice_sha256": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+    "width_um": {
+      "M3_M4": 3.51,
+      "M5_M6": 8.2524,
+      "M7_M11": 16.8587
+    },
+    "formal_device_count": 15,
+    "schematic_device_block_matches_formal": true,
+    "symbol_pin_order_matches_formal": true,
+    "binding_audit_status": "PASS_CURRENT_RESIZED_XSCHEM_DEVICE_BINDING"
+  },
+  "path_rebinding": {
+    "required_before_portable_simulation": true,
+    "file": "spice/subckts/SAR_LOGIC_ACTUAL_RTL_SS_pex_wrapper_local.spice",
+    "preserved_original_include": "/foss/designs/manual_goal/analog/SAR_CURRENT/netlists/accepted/core/subckts/SAR_LOGIC_ACTUAL_RTL_SS_pex_core.spice",
+    "bundle_target": "spice/subckts/SAR_LOGIC_ACTUAL_RTL_SS_pex_core.spice",
+    "reason_not_rewritten": "The selected circuit files are preserved as exact byte copies; rebinding belongs in a run workspace or simulation deck."
+  },
+  "scope_boundaries": {
+    "file_set_complete": true,
+    "performance_pass_claim": false,
+    "pvt_signoff_claim": false,
+    "tapeout_signoff_claim": false,
+    "sar_logic_scope": "SS PEX candidate only",
+    "excluded": [
+      "historical circuit versions",
+      "older comparator sizing",
+      "simulation decks and results",
+      "waveforms and logs",
+      "behavioral build products",
+      "external PDK models"
+    ]
+  },
+  "pass": true
+}

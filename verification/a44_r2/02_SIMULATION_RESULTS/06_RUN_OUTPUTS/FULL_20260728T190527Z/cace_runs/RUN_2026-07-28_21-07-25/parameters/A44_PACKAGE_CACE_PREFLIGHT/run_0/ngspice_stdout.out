@@ -1,0 +1,21 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path: /foss/designs/a44_sar_adc_current_cace_reproducible_20260728_r2/02_simulation_results/06_run_outputs/full_20260728t190527z/cace_runs/run_2026-07-28_21-07-25/parameters/a44_package_cace_preflight/run_0/tb_package_preflight.sch
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+out                                       1.25
+v1#branch                             -0.00125
+
+
+No. of Data Rows : 59
+ngspice-46 done

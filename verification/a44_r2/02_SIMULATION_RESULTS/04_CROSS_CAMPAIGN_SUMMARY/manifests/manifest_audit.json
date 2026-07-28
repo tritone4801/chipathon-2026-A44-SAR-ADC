@@ -1,0 +1,14 @@
+{
+  "all_files_hashed": true,
+  "completed_utc": "2026-07-28T08:05:00.885093+00:00",
+  "duplicate_relative_paths": 0,
+  "excluded_self_referential_files": [
+    "04_CROSS_CAMPAIGN_SUMMARY/manifests/package_manifest_sha256.csv",
+    "04_CROSS_CAMPAIGN_SUMMARY/manifests/manifest_audit.json"
+  ],
+  "manifest_sha256": "174bc7fbddbbe11fe7667cabeb268207200935d5136e0d46376157690e0a6e0e",
+  "pass": true,
+  "readback_mismatch_count": 0,
+  "readback_mismatches": [],
+  "record_count": 3100
+}

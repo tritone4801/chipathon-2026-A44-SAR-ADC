@@ -1,0 +1,75 @@
+{
+  "compact_manifest_audit": {
+    "declared_files": 239,
+    "excluded_mutable_metadata": [
+      "logs/runtime_validation_v10_console.log",
+      "manifests/compact_manifest_sha256.csv",
+      "reports/FINAL_MC10_ONE_HOUR_REPORT.md",
+      "results/compact_manifest_audit.json",
+      "results/final_metadata_sha256.json",
+      "results/quick_status.json",
+      "results/runtime_validation_timing.json",
+      "results/runtime_validation_v10.exit"
+    ],
+    "failures": [],
+    "manifest_sha256": "14961c8e8953b8797afa6dc61b2a5f82098aa368e6c62cfa0360755acbd4c21c",
+    "matching_files": 239,
+    "pass": true
+  },
+  "compact_seal_elapsed_s": 2.159942,
+  "copy_elapsed_s": 0.1490546,
+  "core_phase": {
+    "command": [
+      "/foss/tools/bin/python3",
+      "/foss/designs/manual_goal/verification/A44_FAST64_D3_MC10_1H_V10/scripts/run_v7.py",
+      "--stage",
+      "formal",
+      "--seeds",
+      "1,21,44,48,64,115,129,166,170,183",
+      "--workers",
+      "4"
+    ],
+    "elapsed_s": 1208.097166,
+    "finished_utc": "2026-07-24T05:20:36.513693+00:00",
+    "label": "CORE_MC10",
+    "launched": true,
+    "log": "logs/runtime_validation_core_mc10.log",
+    "returncode": 0,
+    "seeds": [
+      1,
+      21,
+      44,
+      48,
+      64,
+      115,
+      129,
+      166,
+      170,
+      183
+    ],
+    "started_utc": "2026-07-24T05:00:28.416527+00:00",
+    "timed_out": false,
+    "workers": 4
+  },
+  "core_valid_records": 20,
+  "end_to_end_elapsed_min": 20.21902936,
+  "end_to_end_elapsed_s": 1213.1417616,
+  "operational_preflight_elapsed_s": 1.1516056,
+  "preflight_audit_elapsed_s": 1.002551,
+  "quick_finalize_elapsed_s": 1.476203,
+  "quick_finalize_returncode": 1,
+  "regression_gate_self_test_pass": true,
+  "resource_summary": {
+    "concurrency_limit_respected": true,
+    "max_process_count": 4,
+    "max_threads_per_process": 8,
+    "max_total_rss_kb": 446036,
+    "max_total_threads": 32,
+    "sample_count": 604
+  },
+  "time_validation_pass": true,
+  "under_60_minutes": true,
+  "validation_finished_utc": "2026-07-24T05:20:40.169318+00:00",
+  "validation_id": "A44_FAST64_D3_MC10_1H_V10",
+  "validation_started_utc": "2026-07-24T05:00:27.176611+00:00"
+}

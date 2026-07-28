@@ -1,0 +1,24 @@
+DYNAMIC_PREFIX5 MC200_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_S002_LOW_W4 pass=True elapsed_s=10.445
+DYNAMIC_PREFIX5 MC200_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_S003_LOW_W4 pass=True elapsed_s=10.540
+DYNAMIC_PREFIX5 MC200_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_S001_LOW_W4 pass=True elapsed_s=10.543
+DYNAMIC_PREFIX5 MC200_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_S004_LOW_W4 pass=True elapsed_s=10.545
+DYNAMIC_PREFIX5 MC200_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_S005_LOW_W4 pass=True elapsed_s=9.330
+{
+  "status": "PASS_DYNAMIC_FIRST5_REPRODUCIBLE",
+  "pass": true,
+  "campaign": "01_MC200_TT_LOW_W4",
+  "phases": [
+    "P4_EVENT_NOISE_MC200_LOW"
+  ],
+  "jobs_per_phase": 5,
+  "retained_records_per_job": 5,
+  "warmup_frames_per_job": 4,
+  "simulation_frames_per_job": 9,
+  "selected_job_count": 5,
+  "completed_job_count": 5,
+  "comparison_record_count": 25,
+  "matching_record_count": 25,
+  "exceptions": [],
+  "early_stop_method": "Each job runs the four diagnostic warm-up frames and compares the first five formal W4 retained records (frames 4-8). Frames 9-67 are not scheduled after those five retained records match.",
+  "completed_utc": "2026-07-28T19:03:20.709818+00:00"
+}

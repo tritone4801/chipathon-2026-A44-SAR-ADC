@@ -1,25 +1,56 @@
-# chipathon-2026-gf180mcu-padring
+# Chipathon 2026 A44 SAR ADC
 
-Chipathon 2026 workshop fork of the wafer-space `gf180mcu-project-template`.
-Adds a new LibreLane slot, `workshop`, that mirrors Juan Moya's
-standalone workshop padring as a native LibreLane slot definition so
-participants can take the flow all the way to GDS with the stock
-template Makefile.
+This repository combines the Chipathon 2026 workshop padring fork of the
+wafer-space `gf180mcu-project-template` with the current Team A44 8-bit,
+2 MS/s, 3.3 V fully differential capacitive SAR ADC design and verification
+evidence.
 
 No PRs are planned against upstream; all chipathon-specific material
 stays in this fork.
 
-## A44 SAR ADC Review Package
+## Current A44 SAR ADC package
 
-This branch adds the current Team A44 JST SAR ADC schematic-review update
-without publishing runnable verification scripts, testbenches, generated decks,
-or rerun configuration files.
+The current transistor-level/electrical handoff is:
+
+[`verification/a44_r2`](verification/a44_r2)
+
+It contains the current resized `.sch`/`.sym` circuit set, SPICE and RTL
+bindings, frozen simulation results, CACE and simulation tooling, one-click
+launchers, method documentation, and SHA-256 audits.
+
+Current disposition:
+
+```text
+COMPLETE_AS_EXECUTED_PERFORMANCE_FAIL_NO_PROMOTION
+```
+
+Execution, package integrity, and reproducibility are complete. Promotion
+remains blocked by three MC200 hard-dynamic failures; this is not a layout,
+PEX, silicon, tapeout, production-yield, or full-signoff claim.
+
+### Governing performance summary
+
+| Evidence set | Completion | Current interpretation |
+|---|---:|---|
+| MC200 TT LOW/W4 | 200/200 | 197 hard-dynamic PASS; 3 FAIL: Seeds 65, 68, 141 |
+| FULL255 static | 6 unique curves | **PASS based only on Seed 44 TT (`S044_TT`)** |
+| PVT3 selected MC20 LOW/W4 | 60/60 | Diagnostic-only; not a PASS, yield, promotion, or signoff basis |
+| CACE package preflight | 1/1 | PASS, `final_v = 1.250 V` |
+| Quick reproducibility | 130/130 | PASS |
+| Package manifest readback | 4,846 records | PASS, zero mismatches |
+
+For FULL255 qualification, `S044_TT` is the sole governing case:
+maximum `|DNL| = 0.610351 LSB`, maximum `|INL| = 0.686645 LSB`,
+zero missing codes, and zero reversals. Other TT seeds and the Seed 44 SS/FF
+curves are diagnostic-only. PVT cannot establish or overturn FULL255 PASS.
 
 Review entry points:
 
 | Artifact | Purpose |
 |---|---|
 | [`current_goal.md`](current_goal.md) | Frozen A44 SAR ADC project target, interface, timing contract, and pad plan |
+| [`docs/A44_SAR_ADC_R2_PROGRESS_AND_PERFORMANCE.md`](docs/A44_SAR_ADC_R2_PROGRESS_AND_PERFORMANCE.md) | Current fixed methods, progress, metrics, evidence paths, and claim boundaries |
+| [`docs/A44_SAR_ADC_Project_Tracker_20260728_R2.xlsx`](docs/A44_SAR_ADC_Project_Tracker_20260728_R2.xlsx) | English project tracker with dashboard and governing verification-status sheet |
 | [`docs/reviews/a44_ppt_progress_summary_20260703.md`](docs/reviews/a44_ppt_progress_summary_20260703.md) | GitHub table summary extracted from the schematic-review PPT |
 | [`docs/reviews/a44_issue_114_update_20260704.md`](docs/reviews/a44_issue_114_update_20260704.md) | Issue-ready update text for official Chipathon issue #114 |
 | [`docs/reviews/a44_schematic_review_update_20260703.md`](docs/reviews/a44_schematic_review_update_20260703.md) | Schematic-review status and design boundary |
@@ -27,9 +58,23 @@ Review entry points:
 | [`verification/reports/verification_summary.md`](verification/reports/verification_summary.md) | Compact actual CDAC + comparator integrated result summary |
 | [`docs/reviews/a44_time_frequency_result_plot_scope_20260703.md`](docs/reviews/a44_time_frequency_result_plot_scope_20260703.md) | Explicit time-domain and frequency-domain plot/result scope |
 
-Promoted result files are compact Markdown, CSV, JSON, and PNG artifacts only.
-Full PVT, Monte Carlo, layout/PEX/yield, and production-source signoff are not
-claimed by this update.
+### One-click package entry points
+
+From `verification/a44_r2` on Windows:
+
+```powershell
+.\RUN_QUICK_VERIFY.ps1
+```
+
+The complete campaign launcher is long-running:
+
+```powershell
+.\RUN_FULL_CAMPAIGN.ps1
+```
+
+The earlier review reports and plots remain historical review artifacts. The
+R2 report and package are the current authority for simulation methods,
+metrics, qualification scope, and result locations.
 
 ## Credits
 
@@ -47,9 +92,9 @@ contributors; the workshop pad layout is a port of Juan Moya's
 See `CREDITS.md` for the per-artifact attribution and `NOTICE` for
 the formal Apache-2.0 notice.
 
-## What this fork changes vs upstream
+## Workshop infrastructure changes vs upstream
 
-Exactly 6 files (one commit on top of pinned upstream):
+The workshop padring infrastructure originally changed these six files:
 
 | File | Change |
 |------|--------|

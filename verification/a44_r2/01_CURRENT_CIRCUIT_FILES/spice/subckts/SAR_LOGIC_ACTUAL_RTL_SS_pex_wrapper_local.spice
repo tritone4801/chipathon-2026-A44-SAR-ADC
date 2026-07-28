@@ -1,0 +1,17 @@
+* Stable Path B wrapper for SAR_LOGIC_ACTUAL_RTL_SS PEX.
+* Generated from regenerated SS GDS by Magic PEX.
+* Top-compatible alias subckt name is SAR_LOGIC_ACTUAL_RTL for current ADC TOP binding.
+* Active-low CDAC controls: 0 selects VREFP, 1 selects VREFN.
+.include "/foss/designs/manual_goal/analog/SAR_CURRENT/netlists/accepted/core/subckts/SAR_LOGIC_ACTUAL_RTL_SS_pex_core.spice"
+.subckt SAR_LOGIC_ACTUAL_RTL CLKS DCMPP DCMPN CMPCK DCTRLP_7 DCTRLP_6 DCTRLP_5 DCTRLP_4
++ DCTRLP_3 DCTRLP_2 DCTRLP_1 DCTRLN_7 DCTRLN_6 DCTRLN_5 DCTRLN_4 DCTRLN_3
++ DCTRLN_2 DCTRLN_1 DOUT_7 DOUT_6 DOUT_5 DOUT_4 DOUT_3 DOUT_2
++ DOUT_1 DOUT_0 VDD GND
+
+* Xcore pin order generated from raw Magic PEX header.
+Xcore DCTRLN_1 DCTRLN_2 DCTRLN_3 DCTRLN_4 DCTRLN_5 DCTRLN_6 DCTRLN_7 DCTRLP_1
++ DCTRLP_2 DCTRLP_3 DCTRLP_4 DCTRLP_5 DCTRLP_6 DCTRLP_7 CLKS CMPCK
++ DCMPN DCMPP DOUT_0 DOUT_1 DOUT_2 DOUT_3 DOUT_4 DOUT_5
++ DOUT_6 DOUT_7 VDD GND SAR_LOGIC_ACTUAL_RTL_SS_PEX_CORE
+
+.ends SAR_LOGIC_ACTUAL_RTL

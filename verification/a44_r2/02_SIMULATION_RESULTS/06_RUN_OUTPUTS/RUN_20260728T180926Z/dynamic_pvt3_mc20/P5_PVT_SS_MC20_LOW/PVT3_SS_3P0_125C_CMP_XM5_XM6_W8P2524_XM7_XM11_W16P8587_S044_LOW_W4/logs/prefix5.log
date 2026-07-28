@@ -1,0 +1,4 @@
+Error: Could not find library file sm141064_mim.ngspice
+ERROR, library file sm141064_mim.ngspice not found
+
+ERROR: fatal error in ngspice, exit(1)

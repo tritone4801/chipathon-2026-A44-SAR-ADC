@@ -1,0 +1,67 @@
+status: PASS_CALIBRATED_EQUIVALENT_NOISE
+evidence_tier: T2
+event_model_enabled_for_signoff: true
+intrinsic_mos_transient_noise_claimed: false
+
+comparator_decision_noise:
+  classification: T2_TARGET_CALIBRATED_EQUIVALENT_NOISE
+  sigma_rms_diff_v: 1.5e-3
+  draw_schedule: one_independent_gaussian_draw_per_comparator_decision
+  hold_rule: frozen_through_evaluate_aperture
+  injection: differential_input_referred
+  calibration_block: actual_gf180_strongarm_with_20fF_output_loads
+  calibration_pvt:
+    - TT_3P3_27C_VICM_1P6500
+    - TT_3P3_27C_VICM_1P8625
+    - TT_3P3_27C_VICM_2P0750
+    - SS_3P0_125C_VICM_2P0750_COMBINED384
+  recovered_sigma_error_max_fraction: 0.1029508849
+  timeout_count: 0
+  same_seed_exact_replay: true
+  report: reports/comparator_noise_calibration.md
+
+sample_hold_noise:
+  classification: T2_BLOCK_CALIBRATED_EQUIVALENT_NOISE
+  calibration_block: actual_bootstrapped_sampler_plus_actual_128_unit_cdac
+  calibration_band_hz: [1.0, 1.0e10]
+  signoff_sigma_rms_diff_v: 6.4681023032e-5
+  signoff_sigma_selection: worst_across_tt_ss_and_three_input_levels
+  draw_schedule: one_independent_gaussian_draw_per_sample_frame
+  hold_rule: frozen_through_conversion
+  injection: differential_sample_referred
+  event_transfer_error_max_fraction: 0.00394
+  same_seed_exact_replay: true
+  ktc_check: T1_FIRST_ORDER
+  bandwidth_endpoint_status: OPEN_MODEL_BANDWIDTH_SENSITIVITY
+  ultrawide_model_sensitivity:
+    fmax_hz: 1.0e12
+    worst_sigma_rms_diff_v: 1.03607760e-4
+    classification: CONSERVATIVE_COMPACT_MODEL_EXTRAPOLATION_NOT_NOMINAL
+  report: reports/sample_noise_calibration.md
+
+reference_noise:
+  classification: EXCLUDED_FROM_TEMPORAL_NOISE_MODEL
+  sources: ideal_with_recorded_deterministic_impedance_and_decoupling
+  temporal_noise_enabled: false
+
+combined_budget:
+  correlation_assumption: comparator_and_sample_draws_independent
+  nominal_worst_sigma_rms_diff_v: 1.5013938e-3
+  ultrawide_sensitivity_sigma_rms_diff_v: 1.5035741e-3
+  target_sigma_rms_diff_v: 2.0e-3
+  engineering_stress_sigma_rms_diff_v: 2.5e-3
+  status: PASS
+
+rng:
+  generator: numpy_PCG64
+  derivation: numpy_SeedSequence_with_fixed_domain_tags_and_recorded_integer_seed
+  bulk_seed_table: config/noise_seeds.csv
+  comparator_calibration_seed_range: [310001, 310204]
+  sample_calibration_seed_range: [320001, 320002]
+  exact_replay_required: true
+
+claim_boundary: >
+  This is calibrated equivalent-noise evidence applied to actual transistor-level
+  blocks. ngspice v46 compact devices do not generate native transient noise, so
+  this configuration is not intrinsic StrongARM or native MOS transient-noise
+  signoff. The 1 THz result is a retained model-bandwidth sensitivity only.

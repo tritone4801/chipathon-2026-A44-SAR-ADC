@@ -1,0 +1,135 @@
+{
+  "cache_key_sha256": "df7461654e46f98dd9a71396552628b813950fa6147f234a958bc5e18e711266",
+  "dependencies": [
+    {
+      "path": "/foss/designs/manual_goal/analog/SAR_CURRENT/manifests/package_manifest_sha256.csv",
+      "role": "production_analog_package_manifest",
+      "sha256": "0f2c184678ee1c7fc142d8e9fb29689b3df281f369aa5a74a9e68867fdb05904",
+      "size_bytes": 14602
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/netlists/SAR_ADC_ANALOG_CORE_TT_BEH_NO_R6.spice",
+      "role": "campaign_analog_netlist",
+      "sha256": "2742f5c503999fa816b5aafdf10d0716ab0ba124c977d0d47a3ddc1de8ddc9a8",
+      "size_bytes": 705
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/netlists/core/subckts/SWITCH_BOOT_SP_native_extracted.subckt.spice",
+      "role": "campaign_analog_netlist",
+      "sha256": "3ef9735c56374250575394bbc2dbbf4e33ad4cc4c02af0055205160908e0daf1",
+      "size_bytes": 3195
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/netlists/core/subckts/CDAC_native_extracted.subckt.spice",
+      "role": "campaign_analog_netlist",
+      "sha256": "6e98da540b1c765b0dcec4d1e10399142dc37b7f1c21960d289a83f07ec10ada",
+      "size_bytes": 4365
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/netlists/core/subckts/Comparator_StrongARM_extracted.subckt.spice",
+      "role": "campaign_analog_netlist",
+      "sha256": "27da9f627ade204e4481ae399e1fb606002fad24a7cfe581e518dc0e5813cba8",
+      "size_bytes": 3896
+    },
+    {
+      "path": "/foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice",
+      "role": "pdk_model",
+      "sha256": "091cb530bf85160a1f07878fb81f789ca367d018991c8ab41a584cd1a85c6692",
+      "size_bytes": 3173
+    },
+    {
+      "path": "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice",
+      "role": "pdk_model",
+      "sha256": "677822db50bf8968f77854bb455006ac5c245deb46ecfc8b352934e752135c46",
+      "size_bytes": 1307272
+    },
+    {
+      "path": "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064_mim.ngspice",
+      "role": "pdk_model",
+      "sha256": "b7918b5ad4f4dad0ce5cb2fc08114e25b10ff5f9f827754334bb0bdfe2a89767",
+      "size_bytes": 14763
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/models/SAR_LOGIC_BEH_TT_3P3_27C.v",
+      "role": "behavioral_sar_controller",
+      "sha256": "6df2fd07da2cf65f21f4c8f514cdaf2f2d5ca84a4fb61d5df54a66738420ded3",
+      "size_bytes": 8528
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/models/SAR_LOGIC_BEH_TT_3P3_27C.so",
+      "role": "behavioral_sar_controller",
+      "sha256": "e6f8341531b50a0d59e1f2f2be60f501a43d84e887b7e6226f5cd4d9c431ea0c",
+      "size_bytes": 286040
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/scripts/sar_event_noise.py",
+      "role": "noise_adapter",
+      "sha256": "0ebaab2b2a6d3caec8b12a0b2857f8e6e8c3b8f17c6bcd93c88d3dae8b0776f3",
+      "size_bytes": 18387
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/scripts/sar_campaign_common.py",
+      "role": "testbench_template_and_solver",
+      "sha256": "5f1f4089866fc77b7bd86245b54a72a24bc780d60dc3c47410d642f5f60b4f26",
+      "size_bytes": 25879
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/scripts/dynamic_analysis.py",
+      "role": "fft_analyzer",
+      "sha256": "327628f51fdc0b88ee72ee14dc0c33ceb2d93a56a17c61093db9053990e0a90a",
+      "size_bytes": 8050
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/scripts/v7_common.py",
+      "role": "v7_seed_and_io_contract",
+      "sha256": "2832b0a9a3f75ae6692bc63754732fdc8aceceeb7cc1e988b6fd9e1b8cf9db40",
+      "size_bytes": 5552
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/scripts/run_v7.py",
+      "role": "v7_runner",
+      "sha256": "96ed74fa5c9d9c97d72fcd91c108c676ab20e6e59462e82a22712dc3e51ece2c",
+      "size_bytes": 32753
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/config/timing_tt_3p3_27c.json",
+      "role": "timing_model",
+      "sha256": "b47114c90c2ea957e3f5f80eaeb2dd04e344646d29d49eb5fb8811273790ebee",
+      "size_bytes": 1664
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/csv/cdac_mismatch_weights.csv",
+      "role": "mismatch_model",
+      "sha256": "db6195e8cf650819603c0aba6e7d08d6bb03830e512a598fbe05699bfa36b824",
+      "size_bytes": 549745
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/config/noise_model.yaml",
+      "role": "noise_model_config",
+      "sha256": "5e96592de86c239db9334c98f5c5d4d4c6b000eece41673de3c58ab148897f6e",
+      "size_bytes": 2679
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/source_snapshot/prior_model_audits/solver_profile_equivalence.md",
+      "role": "solver_profile_prior_equivalence",
+      "sha256": "bb5ba8a8b5dfb9de2b047f0b2b7dbc3f50dc1b29c52f7e258145d6c21db4bf20",
+      "size_bytes": 331
+    },
+    {
+      "path": "/foss/designs/manual_goal/verification/A44_FAST64_D3_ONLY_MC200_V7/references/v7_inputs/A44_CODEX_FAST64_D3_ONLY_32GB_ONE_DAY_PLAN_V7.md",
+      "role": "measurement_plan",
+      "sha256": "d7d90f3d7e7884ad5d38e65a2a5bd6684a1160dff56c1946094e2245c93e22e0",
+      "size_bytes": 24462
+    }
+  ],
+  "ngspice_version": "******\n** ngspice-46 : Circuit level simulation program\n** Compiled with KLU Direct Linear Solver\n** The U. C. Berkeley CAD Group\n** Copyright 1985-1994, Regents of the University of California.\n** Copyright 2001-2025, The ngspice team.\n** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html\n** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html\n** Creation Date: Thu Apr 16 19:53:00 UTC 2026\n******",
+  "solver_profile": "ROBUST_GEAR_FIXED",
+  "source_integrity": {
+    "all_match": true,
+    "declared_files": 113,
+    "manifest_path": "/foss/designs/manual_goal/analog/SAR_CURRENT/manifests/package_manifest_sha256.csv",
+    "manifest_sha256": "0f2c184678ee1c7fc142d8e9fb29689b3df281f369aa5a74a9e68867fdb05904",
+    "matching_files": 113
+  },
+  "source_manifest_sha256": "0f2c184678ee1c7fc142d8e9fb29689b3df281f369aa5a74a9e68867fdb05904"
+}

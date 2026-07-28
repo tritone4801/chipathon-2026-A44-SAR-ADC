@@ -1,0 +1,356 @@
+* A44 actual analog core with fixed TT timed behavioral SAR control.
+.options method=gear reltol=1e-4 abstol=1e-13 vntol=1e-7 trtol=7 chgtol=1e-15 rshunt=1e12
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.option seed=44
+.param sw_stat_global=0 sw_stat_mismatch=1 mc_skew=3 res_mc_skew=3 cap_mc_skew=3 fnoicor=0
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice statistical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.include /foss/designs/A44_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_MC200_PVT_FULLSTATIC_20260728_R1/03_FULL255_STATIC/cases/S044_TT/netlists/core/subckts/SWITCH_BOOT_SP_native_extracted.subckt.spice
+.include /foss/designs/A44_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_MC200_PVT_FULLSTATIC_20260728_R1/03_FULL255_STATIC/cases/S044_TT/netlists/candidate/Comparator_StrongARM_CURRENT.subckt.spice
+.include /foss/designs/A44_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_MC200_PVT_FULLSTATIC_20260728_R1/03_FULL255_STATIC/cases/S044_TT/models/no_r6_equivalent_loads.inc
+.subckt CDAC_P_S044 VIN CLKS VTOP DCTRL7 DCTRL6 DCTRL5 DCTRL4 DCTRL3 DCTRL2 DCTRL1 VREFP VDD GND VREFN
+XM1 VBOT1 DCTRL1 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2 VBOT1 DCTRL1 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XC1 VTOP VBOT1 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=1.0209602299787097
+XM3 VBOT2 DCTRL2 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM4 VBOT2 DCTRL2 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XC2 VTOP VBOT2 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=2.0078119820407347
+XM5 VBOT3 DCTRL3 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=8
+XM6 VBOT3 DCTRL3 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=8
+XC3 VTOP VBOT3 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=3.9970607298354279
+XM7 VBOT4 DCTRL4 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=16
+XM8 VBOT4 DCTRL4 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=16
+XC4 VTOP VBOT4 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=8.0009565491446946
+XM9 VBOT5 DCTRL5 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=32
+XM10 VBOT5 DCTRL5 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=32
+XC5 VTOP VBOT5 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=15.993899203404311
+XM11 VBOT6 DCTRL6 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=64
+XM12 VBOT6 DCTRL6 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=64
+XC6 VTOP VBOT6 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=32.058978234500231
+XM13 VBOT7 DCTRL7 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=128
+XM14 VBOT7 DCTRL7 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=128
+XC7 VTOP VBOT7 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=63.924429985488672
+XC8 VTOP GND cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=1.0061334225130438
+x1 CLKS VDD GND VTOP VIN SWITCH_BOOT_SP
+.ends CDAC_P_S044
+.subckt CDAC_N_S044 VIN CLKS VTOP DCTRL7 DCTRL6 DCTRL5 DCTRL4 DCTRL3 DCTRL2 DCTRL1 VREFP VDD GND VREFN
+XM1 VBOT1 DCTRL1 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2 VBOT1 DCTRL1 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XC1 VTOP VBOT1 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=1.0104378934227838
+XM3 VBOT2 DCTRL2 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XM4 VBOT2 DCTRL2 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=4
+XC2 VTOP VBOT2 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=2.0104987477597085
+XM5 VBOT3 DCTRL3 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=8
+XM6 VBOT3 DCTRL3 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=8
+XC3 VTOP VBOT3 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=3.9988763885788936
+XM7 VBOT4 DCTRL4 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=16
+XM8 VBOT4 DCTRL4 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=16
+XC4 VTOP VBOT4 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=7.9851913725612373
+XM9 VBOT5 DCTRL5 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=32
+XM10 VBOT5 DCTRL5 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=32
+XC5 VTOP VBOT5 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=16.029745883576751
+XM11 VBOT6 DCTRL6 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=64
+XM12 VBOT6 DCTRL6 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=64
+XC6 VTOP VBOT6 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=31.995831189523056
+XM13 VBOT7 DCTRL7 VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=128
+XM14 VBOT7 DCTRL7 VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=128
+XC7 VTOP VBOT7 cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=63.903812644833359
+XC8 VTOP GND cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=0.999069802895585
+x1 CLKS VDD GND VTOP VIN SWITCH_BOOT_SP
+.ends CDAC_N_S044
+
+.subckt SAR_ADC_ACTIVE VDD GND VREFP VREFN VINP VINN CLKS CMPCK
++ DCTRLP7 DCTRLP6 DCTRLP5 DCTRLP4 DCTRLP3 DCTRLP2 DCTRLP1
++ DCTRLN7 DCTRLN6 DCTRLN5 DCTRLN4 DCTRLN3 DCTRLN2 DCTRLN1
++ DCMPP DCMPN VRESP VRESN
+XCDACP VINP CLKS VRESP DCTRLP7 DCTRLP6 DCTRLP5 DCTRLP4 DCTRLP3 DCTRLP2 DCTRLP1 VREFP VDD GND VREFN CDAC_P_S044
+XCDACN VINN CLKS VRESN DCTRLN7 DCTRLN6 DCTRLN5 DCTRLN4 DCTRLN3 DCTRLN2 DCTRLN1 VREFP VDD GND VREFN CDAC_N_S044
+XCMP CMPCK DCMPP VRESP DCMPN VRESN VDD GND Comparator_StrongARM
+.ends SAR_ADC_ACTIVE
+
+.temp 27
+VVDD vdd 0 3.3
+VVREFP_ID vrefp_src 0 2.5
+RVREFP vrefp_src vrefp {REF_R_EQ}
+RVREFP_ESR vrefp vrefp_cap {REF_ESR_EQ}
+CVREFP_LOCAL vrefp_cap 0 {REF_CLOCAL_EQ}
+CVREFP_LINE vrefp 0 {REF_CLINE_EQ}
+VVREFN_ID vrefn_src 0 0.8
+RVREFN vrefn_src vrefn {REF_R_EQ}
+RVREFN_ESR vrefn vrefn_cap {REF_ESR_EQ}
+CVREFN_LOCAL vrefn_cap 0 {REF_CLOCAL_EQ}
+CVREFN_LINE vrefn 0 {REF_CLINE_EQ}
+
+VVINP_ID vinp_src 0 PWL(
++ 0 0.799486201172 4.99999e-07 0.799486201172 5e-07 0.799486201172 9.99999e-07 0.799486201172
++ 1e-06 1.21369518555 1.499999e-06 1.21369518555 1.5e-06 1.21369518555 1.999999e-06 1.21369518555
++ 2e-06 1.64139293945 2.499999e-06 1.64139293945 2.5e-06 1.64139293945 2.999999e-06 1.64139293945
++ 3e-06 2.06110119141 3.499999e-06 2.06110119141 3.5e-06 2.06110119141 3.999999e-06 2.06110119141
++ 4e-06 2.48350719727 4.499999e-06 2.48350719727 4.5e-06 2.48350719727
++ )
+VVINN_ID vinn_src 0 PWL(
++ 0 2.50051379883 4.99999e-07 2.50051379883 5e-07 2.50051379883 9.99999e-07 2.50051379883
++ 1e-06 2.08630481445 1.499999e-06 2.08630481445 1.5e-06 2.08630481445 1.999999e-06 2.08630481445
++ 2e-06 1.65860706055 2.499999e-06 1.65860706055 2.5e-06 1.65860706055 2.999999e-06 1.65860706055
++ 3e-06 1.23889880859 3.499999e-06 1.23889880859 3.5e-06 1.23889880859 3.999999e-06 1.23889880859
++ 4e-06 0.816492802734 4.499999e-06 0.816492802734 4.5e-06 0.816492802734
++ )
+RVINP vinp_src vinp {VIN_R_EQ}
+CVINP vinp 0 {VIN_CP_EQ+VIN_CCM_EQ}
+RVINN vinn_src vinn {VIN_R_EQ}
+CVINN vinn 0 {VIN_CN_EQ+VIN_CCM_EQ}
+CVIN_DIFF vinp vinn {VIN_CDM_EQ}
+
+VCLKS_ID clks_src 0 PULSE(0 3.3 5e-08 {CLK_TR_EQ} {CLK_TF_EQ} 125n 5e-07)
+RCLKS clks_src clks {CLK_R_EQ}
+CCLKS clks 0 {CLK_C_EQ}
+
+XCORE vdd 0 vrefp vrefn vinp vinn clks cmpck
++ dctrlp7 dctrlp6 dctrlp5 dctrlp4 dctrlp3 dctrlp2 dctrlp1
++ dctrln7 dctrln6 dctrln5 dctrln4 dctrln3 dctrln2 dctrln1
++ dcmpp dcmpn vresp vresn SAR_ADC_ACTIVE
+E_SAMPLE_DIFF sampled_diff 0 vresp vresn 1
+E_INPUT_DIFF input_diff 0 vinp vinn 1
+
+CLOGIC_P dcmpp 0 {CLOGIC_IN_P}
+CLOGIC_N dcmpn 0 {CLOGIC_IN_N}
+A_CLKS [clks] [clks_d] adc_logic_in
+A_DCMPP [dcmpp] [dcmpp_d] adc_logic_in
+A_DCMPN [dcmpn] [dcmpn_d] adc_logic_in
+ABEH [clks_d dcmpp_d dcmpn_d]
++ [cmpck_d
++ dctrlp7_d dctrlp6_d dctrlp5_d dctrlp4_d dctrlp3_d dctrlp2_d dctrlp1_d
++ dctrln7_d dctrln6_d dctrln5_d dctrln4_d dctrln3_d dctrln2_d dctrln1_d
++ dout7_d dout6_d dout5_d dout4_d dout3_d dout2_d dout1_d dout0_d
++ eoc_d
++ invalid7_d invalid6_d invalid5_d invalid4_d invalid3_d invalid2_d invalid1_d invalid0_d
++ timeout7_d timeout6_d timeout5_d timeout4_d timeout3_d timeout2_d timeout1_d timeout0_d
++ complete_d] sar_logic_beh
+
+A_CMPCK [cmpck_d] [cmpck_drv] dac_cmpck
+A_DCTRLP [dctrlp7_d dctrlp6_d dctrlp5_d dctrlp4_d dctrlp3_d dctrlp2_d dctrlp1_d]
++ [dctrlp7_drv dctrlp6_drv dctrlp5_drv dctrlp4_drv dctrlp3_drv dctrlp2_drv dctrlp1_drv] dac_dctrl
+A_DCTRLN [dctrln7_d dctrln6_d dctrln5_d dctrln4_d dctrln3_d dctrln2_d dctrln1_d]
++ [dctrln7_drv dctrln6_drv dctrln5_drv dctrln4_drv dctrln3_drv dctrln2_drv dctrln1_drv] dac_dctrl
+A_DOUT [dout7_d dout6_d dout5_d dout4_d dout3_d dout2_d dout1_d dout0_d]
++ [dout7_drv dout6_drv dout5_drv dout4_drv dout3_drv dout2_drv dout1_drv dout0_drv] dac_dout
+A_STATUS [eoc_d invalid0_d timeout0_d complete_d] [eoc invalid0 timeout0 complete] dac_status
+
+R_CMPCK cmpck_drv cmpck {CMPCK_R_EQ}
+R_DCTRLP7 dctrlp7_drv dctrlp7 {DCTRL_R_EQ}
+R_DCTRLP6 dctrlp6_drv dctrlp6 {DCTRL_R_EQ}
+R_DCTRLP5 dctrlp5_drv dctrlp5 {DCTRL_R_EQ}
+R_DCTRLP4 dctrlp4_drv dctrlp4 {DCTRL_R_EQ}
+R_DCTRLP3 dctrlp3_drv dctrlp3 {DCTRL_R_EQ}
+R_DCTRLP2 dctrlp2_drv dctrlp2 {DCTRL_R_EQ}
+R_DCTRLP1 dctrlp1_drv dctrlp1 {DCTRL_R_EQ}
+R_DCTRLN7 dctrln7_drv dctrln7 {DCTRL_R_EQ}
+R_DCTRLN6 dctrln6_drv dctrln6 {DCTRL_R_EQ}
+R_DCTRLN5 dctrln5_drv dctrln5 {DCTRL_R_EQ}
+R_DCTRLN4 dctrln4_drv dctrln4 {DCTRL_R_EQ}
+R_DCTRLN3 dctrln3_drv dctrln3 {DCTRL_R_EQ}
+R_DCTRLN2 dctrln2_drv dctrln2 {DCTRL_R_EQ}
+R_DCTRLN1 dctrln1_drv dctrln1 {DCTRL_R_EQ}
+
+R_DOUT7 dout7_drv dout7_rx {DOUT_R_EQ}
+R_DOUT6 dout6_drv dout6_rx {DOUT_R_EQ}
+R_DOUT5 dout5_drv dout5_rx {DOUT_R_EQ}
+R_DOUT4 dout4_drv dout4_rx {DOUT_R_EQ}
+R_DOUT3 dout3_drv dout3_rx {DOUT_R_EQ}
+R_DOUT2 dout2_drv dout2_rx {DOUT_R_EQ}
+R_DOUT1 dout1_drv dout1_rx {DOUT_R_EQ}
+R_DOUT0 dout0_drv dout0_rx {DOUT_R_EQ}
+C_DOUT7 dout7_rx 0 {DOUT_C_EQ}
+C_DOUT6 dout6_rx 0 {DOUT_C_EQ}
+C_DOUT5 dout5_rx 0 {DOUT_C_EQ}
+C_DOUT4 dout4_rx 0 {DOUT_C_EQ}
+C_DOUT3 dout3_rx 0 {DOUT_C_EQ}
+C_DOUT2 dout2_rx 0 {DOUT_C_EQ}
+C_DOUT1 dout1_rx 0 {DOUT_C_EQ}
+C_DOUT0 dout0_rx 0 {DOUT_C_EQ}
+
+.model adc_logic_in adc_bridge in_low=0.99 in_high=2.31 rise_delay=1p fall_delay=1p
+.model dac_cmpck dac_bridge input_load=10f t_rise={CMPCK_TR_EQ} t_fall={CMPCK_TF_EQ} out_low=0 out_high=3.3
+.model dac_dctrl dac_bridge input_load=10f t_rise={DCTRL_TR_EQ} t_fall={DCTRL_TF_EQ} out_low=0 out_high=3.3
+.model dac_dout dac_bridge input_load=10f t_rise={DOUT_TR_EQ} t_fall={DOUT_TF_EQ} out_low=0 out_high=3.3
+.model dac_status dac_bridge input_load=1f t_rise=0.05n t_fall=0.05n out_low=0 out_high=3.3
+.model sar_logic_beh d_cosim simulation="/foss/designs/A44_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_MC200_PVT_FULLSTATIC_20260728_R1/03_FULL255_STATIC/cases/S044_TT/models/SAR_LOGIC_BEH_TT_3P3_27C.so" delay=1p
+
+.save v(cmpck) v(vresp) v(vresn) v(vinp) v(vinn) v(sampled_diff) v(input_diff)
++ v(dout7_rx) v(dout6_rx) v(dout5_rx) v(dout4_rx) v(dout3_rx) v(dout2_rx) v(dout1_rx) v(dout0_rx)
++ v(complete) v(invalid0) v(timeout0)
+.control
+set noaskquit
+set plotwinsize=0
+tran 5e-10 4.995e-06 0 5e-11
+meas tran f000_d7 find v(dout7_rx) at=4.8e-07
+meas tran f000_d6 find v(dout6_rx) at=4.8e-07
+meas tran f000_d5 find v(dout5_rx) at=4.8e-07
+meas tran f000_d4 find v(dout4_rx) at=4.8e-07
+meas tran f000_d3 find v(dout3_rx) at=4.8e-07
+meas tran f000_d2 find v(dout2_rx) at=4.8e-07
+meas tran f000_d1 find v(dout1_rx) at=4.8e-07
+meas tran f000_d0 find v(dout0_rx) at=4.8e-07
+meas tran f000_complete find v(complete) at=4.8e-07
+meas tran f000_invalid find v(invalid0) at=4.8e-07
+meas tran f000_timeout find v(timeout0) at=4.8e-07
+meas tran f000_sampled find v(sampled_diff) at=1.7e-07
+meas tran f000_input find v(input_diff) at=1.7e-07
+meas tran f000_tcomplete when v(complete)=1.65 rise=1
+meas tran f001_d7 find v(dout7_rx) at=9.8e-07
+meas tran f001_d6 find v(dout6_rx) at=9.8e-07
+meas tran f001_d5 find v(dout5_rx) at=9.8e-07
+meas tran f001_d4 find v(dout4_rx) at=9.8e-07
+meas tran f001_d3 find v(dout3_rx) at=9.8e-07
+meas tran f001_d2 find v(dout2_rx) at=9.8e-07
+meas tran f001_d1 find v(dout1_rx) at=9.8e-07
+meas tran f001_d0 find v(dout0_rx) at=9.8e-07
+meas tran f001_complete find v(complete) at=9.8e-07
+meas tran f001_invalid find v(invalid0) at=9.8e-07
+meas tran f001_timeout find v(timeout0) at=9.8e-07
+meas tran f001_sampled find v(sampled_diff) at=6.7e-07
+meas tran f001_input find v(input_diff) at=6.7e-07
+meas tran f001_tcomplete when v(complete)=1.65 rise=2
+meas tran f002_d7 find v(dout7_rx) at=1.48e-06
+meas tran f002_d6 find v(dout6_rx) at=1.48e-06
+meas tran f002_d5 find v(dout5_rx) at=1.48e-06
+meas tran f002_d4 find v(dout4_rx) at=1.48e-06
+meas tran f002_d3 find v(dout3_rx) at=1.48e-06
+meas tran f002_d2 find v(dout2_rx) at=1.48e-06
+meas tran f002_d1 find v(dout1_rx) at=1.48e-06
+meas tran f002_d0 find v(dout0_rx) at=1.48e-06
+meas tran f002_complete find v(complete) at=1.48e-06
+meas tran f002_invalid find v(invalid0) at=1.48e-06
+meas tran f002_timeout find v(timeout0) at=1.48e-06
+meas tran f002_sampled find v(sampled_diff) at=1.17e-06
+meas tran f002_input find v(input_diff) at=1.17e-06
+meas tran f002_tcomplete when v(complete)=1.65 rise=3
+meas tran f003_d7 find v(dout7_rx) at=1.98e-06
+meas tran f003_d6 find v(dout6_rx) at=1.98e-06
+meas tran f003_d5 find v(dout5_rx) at=1.98e-06
+meas tran f003_d4 find v(dout4_rx) at=1.98e-06
+meas tran f003_d3 find v(dout3_rx) at=1.98e-06
+meas tran f003_d2 find v(dout2_rx) at=1.98e-06
+meas tran f003_d1 find v(dout1_rx) at=1.98e-06
+meas tran f003_d0 find v(dout0_rx) at=1.98e-06
+meas tran f003_complete find v(complete) at=1.98e-06
+meas tran f003_invalid find v(invalid0) at=1.98e-06
+meas tran f003_timeout find v(timeout0) at=1.98e-06
+meas tran f003_sampled find v(sampled_diff) at=1.67e-06
+meas tran f003_input find v(input_diff) at=1.67e-06
+meas tran f003_tcomplete when v(complete)=1.65 rise=4
+meas tran f004_d7 find v(dout7_rx) at=2.48e-06
+meas tran f004_d6 find v(dout6_rx) at=2.48e-06
+meas tran f004_d5 find v(dout5_rx) at=2.48e-06
+meas tran f004_d4 find v(dout4_rx) at=2.48e-06
+meas tran f004_d3 find v(dout3_rx) at=2.48e-06
+meas tran f004_d2 find v(dout2_rx) at=2.48e-06
+meas tran f004_d1 find v(dout1_rx) at=2.48e-06
+meas tran f004_d0 find v(dout0_rx) at=2.48e-06
+meas tran f004_complete find v(complete) at=2.48e-06
+meas tran f004_invalid find v(invalid0) at=2.48e-06
+meas tran f004_timeout find v(timeout0) at=2.48e-06
+meas tran f004_sampled find v(sampled_diff) at=2.17e-06
+meas tran f004_input find v(input_diff) at=2.17e-06
+meas tran f004_tcomplete when v(complete)=1.65 rise=5
+meas tran f005_d7 find v(dout7_rx) at=2.98e-06
+meas tran f005_d6 find v(dout6_rx) at=2.98e-06
+meas tran f005_d5 find v(dout5_rx) at=2.98e-06
+meas tran f005_d4 find v(dout4_rx) at=2.98e-06
+meas tran f005_d3 find v(dout3_rx) at=2.98e-06
+meas tran f005_d2 find v(dout2_rx) at=2.98e-06
+meas tran f005_d1 find v(dout1_rx) at=2.98e-06
+meas tran f005_d0 find v(dout0_rx) at=2.98e-06
+meas tran f005_complete find v(complete) at=2.98e-06
+meas tran f005_invalid find v(invalid0) at=2.98e-06
+meas tran f005_timeout find v(timeout0) at=2.98e-06
+meas tran f005_sampled find v(sampled_diff) at=2.67e-06
+meas tran f005_input find v(input_diff) at=2.67e-06
+meas tran f005_tcomplete when v(complete)=1.65 rise=6
+meas tran f006_d7 find v(dout7_rx) at=3.48e-06
+meas tran f006_d6 find v(dout6_rx) at=3.48e-06
+meas tran f006_d5 find v(dout5_rx) at=3.48e-06
+meas tran f006_d4 find v(dout4_rx) at=3.48e-06
+meas tran f006_d3 find v(dout3_rx) at=3.48e-06
+meas tran f006_d2 find v(dout2_rx) at=3.48e-06
+meas tran f006_d1 find v(dout1_rx) at=3.48e-06
+meas tran f006_d0 find v(dout0_rx) at=3.48e-06
+meas tran f006_complete find v(complete) at=3.48e-06
+meas tran f006_invalid find v(invalid0) at=3.48e-06
+meas tran f006_timeout find v(timeout0) at=3.48e-06
+meas tran f006_sampled find v(sampled_diff) at=3.17e-06
+meas tran f006_input find v(input_diff) at=3.17e-06
+meas tran f006_tcomplete when v(complete)=1.65 rise=7
+meas tran f007_d7 find v(dout7_rx) at=3.98e-06
+meas tran f007_d6 find v(dout6_rx) at=3.98e-06
+meas tran f007_d5 find v(dout5_rx) at=3.98e-06
+meas tran f007_d4 find v(dout4_rx) at=3.98e-06
+meas tran f007_d3 find v(dout3_rx) at=3.98e-06
+meas tran f007_d2 find v(dout2_rx) at=3.98e-06
+meas tran f007_d1 find v(dout1_rx) at=3.98e-06
+meas tran f007_d0 find v(dout0_rx) at=3.98e-06
+meas tran f007_complete find v(complete) at=3.98e-06
+meas tran f007_invalid find v(invalid0) at=3.98e-06
+meas tran f007_timeout find v(timeout0) at=3.98e-06
+meas tran f007_sampled find v(sampled_diff) at=3.67e-06
+meas tran f007_input find v(input_diff) at=3.67e-06
+meas tran f007_tcomplete when v(complete)=1.65 rise=8
+meas tran f008_d7 find v(dout7_rx) at=4.48e-06
+meas tran f008_d6 find v(dout6_rx) at=4.48e-06
+meas tran f008_d5 find v(dout5_rx) at=4.48e-06
+meas tran f008_d4 find v(dout4_rx) at=4.48e-06
+meas tran f008_d3 find v(dout3_rx) at=4.48e-06
+meas tran f008_d2 find v(dout2_rx) at=4.48e-06
+meas tran f008_d1 find v(dout1_rx) at=4.48e-06
+meas tran f008_d0 find v(dout0_rx) at=4.48e-06
+meas tran f008_complete find v(complete) at=4.48e-06
+meas tran f008_invalid find v(invalid0) at=4.48e-06
+meas tran f008_timeout find v(timeout0) at=4.48e-06
+meas tran f008_sampled find v(sampled_diff) at=4.17e-06
+meas tran f008_input find v(input_diff) at=4.17e-06
+meas tran f008_tcomplete when v(complete)=1.65 rise=9
+meas tran f009_d7 find v(dout7_rx) at=4.98e-06
+meas tran f009_d6 find v(dout6_rx) at=4.98e-06
+meas tran f009_d5 find v(dout5_rx) at=4.98e-06
+meas tran f009_d4 find v(dout4_rx) at=4.98e-06
+meas tran f009_d3 find v(dout3_rx) at=4.98e-06
+meas tran f009_d2 find v(dout2_rx) at=4.98e-06
+meas tran f009_d1 find v(dout1_rx) at=4.98e-06
+meas tran f009_d0 find v(dout0_rx) at=4.98e-06
+meas tran f009_complete find v(complete) at=4.98e-06
+meas tran f009_invalid find v(invalid0) at=4.98e-06
+meas tran f009_timeout find v(timeout0) at=4.98e-06
+meas tran f009_sampled find v(sampled_diff) at=4.67e-06
+meas tran f009_input find v(input_diff) at=4.67e-06
+meas tran f009_tcomplete when v(complete)=1.65 rise=10
+quit
+.endc
+.end

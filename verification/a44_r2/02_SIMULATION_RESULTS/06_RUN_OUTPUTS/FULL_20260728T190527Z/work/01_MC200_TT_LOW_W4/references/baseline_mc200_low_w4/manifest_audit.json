@@ -1,0 +1,15 @@
+{
+  "status": "PASS_MANIFEST_AUDIT",
+  "pass": true,
+  "root": "/foss/designs/A44_MC200_LOW_FAST64_V2_SS_W4_RETEST_20260725_R1",
+  "manifest_entries": 1314,
+  "manifest_sha256": "ad2975531814a181dc6d1b034a9ff25f41e963053a9d86c5a81647f364244eb1",
+  "failures": [],
+  "excluded": [
+    "manifest_sha256.csv",
+    "manifest_audit.json",
+    "tmp/",
+    "__pycache__/",
+    "*.pyc"
+  ]
+}

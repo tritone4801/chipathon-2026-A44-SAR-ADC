@@ -1,0 +1,21 @@
+name: A44_SAR_ADC_CURRENT_REPRODUCIBLE
+description: Registry of frozen A44 matrices stored under 02_SIMULATION_RESULTS and orchestrated by 03_CACE_AND_SIMULATION_TOOLS
+PDK: gf180mcuD
+cace_format: 5.2
+parameters:
+  MC200_TT_LOW_W4:
+    display: TT 3.3 V 27 C LOW FAST64 W4 mismatch plus event-noise seeds 1-200
+  PVT3_MC20_LOW_W4:
+    display: TT SS FF selected diagnostic MC20 LOW FAST64 W4
+  FULL255_STATIC_TT_S044:
+    display: FULL255 static TT seed44
+  FULL255_STATIC_TT_S116:
+    display: FULL255 static TT seed116
+  FULL255_STATIC_TT_S180:
+    display: FULL255 static TT seed180
+  FULL255_STATIC_TT_S106:
+    display: FULL255 static TT seed106
+  FULL255_STATIC_SS_S044:
+    display: FULL255 static SS seed44
+  FULL255_STATIC_FF_S044:
+    display: FULL255 static FF seed44

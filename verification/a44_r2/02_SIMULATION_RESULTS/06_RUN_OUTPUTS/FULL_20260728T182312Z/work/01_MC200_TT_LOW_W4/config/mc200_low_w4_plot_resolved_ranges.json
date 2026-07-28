@@ -1,0 +1,21 @@
+{
+  "exact_zero_bins_rendered_as_negative_infinity_markers": true,
+  "histogram_sndr_edges_db": [
+    41.0,
+    42.0,
+    43.0,
+    44.0,
+    45.0,
+    46.0,
+    47.0,
+    48.0,
+    49.0,
+    50.0
+  ],
+  "no_tail_clipping": true,
+  "population_count": 200,
+  "population_master": "csv/steady_state_master_mc200_low_w4.csv",
+  "representative_spectrum_exact_zero_bin_count": 1,
+  "representative_spectrum_global_min_dbfs_per_bin": -82.39188679583187,
+  "status": "RESOLVED_FROM_COMPLETE_W4_LOW_POPULATION"
+}

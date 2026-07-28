@@ -1,0 +1,24 @@
+{
+  "campaign": "S180_TT",
+  "excluded_by_user": [
+    "symmetric strict replay",
+    "dense scan"
+  ],
+  "full_curve_execution_complete": true,
+  "nonclaims": [
+    "nominal performance",
+    "current population P95",
+    "Monte Carlo pass rate",
+    "production yield"
+  ],
+  "paired_effect_status": "NOT_EVALUATED",
+  "stages": {
+    "midpoint_overrange": "NOT_RUN",
+    "pilot": "PASS",
+    "qualification": "NOT_RUN",
+    "ramp": "NOT_RUN",
+    "transitions": "PASS"
+  },
+  "state": "SIMULATION_EXECUTION_IN_PROGRESS",
+  "updated_utc": "2026-07-28T07:08:47.611658+00:00"
+}

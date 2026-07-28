@@ -1,0 +1,19 @@
+{
+  "campaign": "02_PVT3_MC20_LOW_W4",
+  "comparison_record_count": 75,
+  "completed_job_count": 15,
+  "completed_utc": "2026-07-28T18:11:26.995853+00:00",
+  "early_stop_method": "Each job uses the identical deterministic prefix and terminates after frame 4; frames 5-67 are not scheduled after the first five records match.",
+  "exceptions": [],
+  "frames_per_job": 5,
+  "jobs_per_phase": 5,
+  "matching_record_count": 73,
+  "pass": false,
+  "phases": [
+    "P4_PVT_TT_MC20_LOW",
+    "P5_PVT_SS_MC20_LOW",
+    "P6_PVT_FF_MC20_LOW"
+  ],
+  "selected_job_count": 15,
+  "status": "FAIL_DYNAMIC_FIRST5_REPRODUCIBILITY"
+}

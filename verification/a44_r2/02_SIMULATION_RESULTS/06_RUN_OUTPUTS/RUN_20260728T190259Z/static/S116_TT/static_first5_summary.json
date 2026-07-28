@@ -1,0 +1,14 @@
+{
+  "case": "S116_TT",
+  "completed_utc": "2026-07-28T19:04:28.091834+00:00",
+  "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+  "elapsed_s": 23.76948583102785,
+  "frames_per_bracket_point": 2,
+  "matching_transition_count": 5,
+  "mismatch_seed": 116,
+  "pass": true,
+  "pvt": "TT_3P3_27C",
+  "returncode": 0,
+  "status": "PASS_STATIC_FIRST5_REPRODUCIBLE",
+  "transition_count": 5
+}

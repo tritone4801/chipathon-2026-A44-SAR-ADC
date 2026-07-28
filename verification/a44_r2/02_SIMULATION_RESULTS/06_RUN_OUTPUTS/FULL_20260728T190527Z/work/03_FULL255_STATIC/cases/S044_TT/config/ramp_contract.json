@@ -1,0 +1,13 @@
+{
+  "campaign": "A44_CMP_IN_BASE_VS_A2P25_W_STATIC_TT_HISTP95_DNLREP_S116_PAIRED_R1",
+  "correlation_tolerance": "ramp step plus exact transition bracket uncertainty",
+  "direction": "UPWARD_ONLY",
+  "dout_aperture_ns": 480,
+  "formal_dnl_inl_source": false,
+  "noise": "OFF",
+  "per_point_frames": "FRAME0_CONDITIONING_FRAME1_FORMAL",
+  "points": 1089,
+  "role": "UPWARD_SEQUENCE_AND_COVERAGE_CORRELATION",
+  "startup": "one cold-start frame at -1.8 V",
+  "vid_formula": "-1.8 + j*(3.6/1088), j=0..1088"
+}

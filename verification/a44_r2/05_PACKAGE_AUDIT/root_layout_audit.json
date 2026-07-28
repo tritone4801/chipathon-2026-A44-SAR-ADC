@@ -1,0 +1,20 @@
+{
+  "completed_utc": "2026-07-28T19:15:29.717558+00:00",
+  "pass": true,
+  "root_directories": [
+    "01_CURRENT_CIRCUIT_FILES",
+    "02_SIMULATION_RESULTS",
+    "03_CACE_AND_SIMULATION_TOOLS",
+    "04_PACKAGE_DOCS",
+    "05_PACKAGE_AUDIT"
+  ],
+  "root_loose_files": [
+    "RUN_FULL_CAMPAIGN.bat",
+    "RUN_FULL_CAMPAIGN.ps1",
+    "RUN_QUICK_VERIFY.bat",
+    "RUN_QUICK_VERIFY.ps1"
+  ],
+  "status": "PASS_ROOT_LAUNCHERS_ONLY_RESULTS_UNIFIED",
+  "unexpected_result_directories_under_tools": [],
+  "unified_result_root": "D:\\PICO\\A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2\\02_SIMULATION_RESULTS"
+}

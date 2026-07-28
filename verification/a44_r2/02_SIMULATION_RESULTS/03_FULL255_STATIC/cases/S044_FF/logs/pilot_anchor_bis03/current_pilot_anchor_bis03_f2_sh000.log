@@ -1,0 +1,279 @@
+
+Note: Compatibility modes selected: hs a
+
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Circuit: * a44 actual analog core with fixed tt timed behavioral sar control.
+
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                        3.6
+vrefp_src                                  2.5
+vrefp                                      2.5
+vrefp_cap                                  2.5
+vrefn_src                                  0.8
+vrefn                                      0.8
+vrefn_cap                                  0.8
+vinp_src                              0.801665
+vinn_src                               2.49833
+vinp                                  0.801665
+vinn                                   2.49833
+clks_src                                     0
+clks                                         0
+xcore.xcdacp.vbot1                         2.5
+dctrlp1                                      0
+vresp                                0.0023737
+xcore.xcdacp.vbot2                         2.5
+dctrlp2                                      0
+xcore.xcdacp.vbot3                         2.5
+dctrlp3                                      0
+xcore.xcdacp.vbot4                         2.5
+dctrlp4                                      0
+xcore.xcdacp.vbot5                         2.5
+dctrlp5                                      0
+xcore.xcdacp.vbot6                         2.5
+dctrlp6                                      0
+xcore.xcdacp.vbot7                         2.5
+dctrlp7                                      0
+xcore.xcdacp.x1.clksb                      3.6
+xcore.xcdacp.x1.net2               2.34548e-12
+xcore.xcdacp.x1.net1                       3.6
+xcore.xcdacp.x1.bottom_gate        4.81133e-09
+xcore.xcdacp.x1.net4               2.40204e-09
+xcore.xcdacp.x1.net3                       3.6
+xcore.xcdacn.vbot1                         2.5
+dctrln1                                      0
+vresn                               0.00237505
+xcore.xcdacn.vbot2                         2.5
+dctrln2                                      0
+xcore.xcdacn.vbot3                         2.5
+dctrln3                                      0
+xcore.xcdacn.vbot4                         2.5
+dctrln4                                      0
+xcore.xcdacn.vbot5                         2.5
+dctrln5                                      0
+xcore.xcdacn.vbot6                         2.5
+dctrln6                                      0
+xcore.xcdacn.vbot7                         2.5
+dctrln7                                      0
+xcore.xcdacn.x1.clksb                      3.6
+xcore.xcdacn.x1.net2               2.36536e-12
+xcore.xcdacn.x1.net1                       3.6
+xcore.xcdacn.x1.bottom_gate        4.82456e-09
+xcore.xcdacn.x1.net4               2.43038e-09
+xcore.xcdacn.x1.net3                       3.6
+xcore.xcmp.net1                     0.00219155
+cmpck                                        0
+xcore.xcmp.xp                              3.6
+xcore.xcmp.xn                              3.6
+xcore.xcmp.ln                              3.6
+xcore.xcmp.lp                              3.6
+dcmpn                              3.50999e-09
+dcmpp                              3.50505e-09
+sampled_diff                      -1.34611e-06
+input_diff                            -1.69667
+cmpck_drv                                    0
+dctrlp7_drv                                  0
+dctrlp6_drv                                  0
+dctrlp5_drv                                  0
+dctrlp4_drv                                  0
+dctrlp3_drv                                  0
+dctrlp2_drv                                  0
+dctrlp1_drv                                  0
+dctrln7_drv                                  0
+dctrln6_drv                                  0
+dctrln5_drv                                  0
+dctrln4_drv                                  0
+dctrln3_drv                                  0
+dctrln2_drv                                  0
+dctrln1_drv                                  0
+dout7_drv                                    0
+dout6_drv                                    0
+dout5_drv                                    0
+dout4_drv                                    0
+dout3_drv                                    0
+dout2_drv                                    0
+dout1_drv                                    0
+dout0_drv                                    0
+eoc                                          0
+invalid0                                     0
+timeout0                                     0
+complete                                     0
+dout7_rx                                     0
+dout6_rx                                     0
+dout5_rx                                     0
+dout4_rx                                     0
+dout3_rx                                     0
+dout2_rx                                     0
+dout1_rx                                     0
+dout0_rx                                     0
+e_input_diff#branch                1.69667e-12
+e_sample_diff#branch               1.34611e-18
+vclks_id#branch                              0
+vvinn_id#branch                   -3.99714e-11
+vvinp_id#branch                   -1.28263e-11
+vvrefn_id#branch                  -4.20154e-10
+vvrefp_id#branch                   -2.9987e-10
+vvdd#branch                       -1.41091e-09
+a_status#branch_1_0                          0
+a_status#branch_1_1                          0
+a_status#branch_1_2                          0
+a_status#branch_1_3                          0
+a_dout#branch_1_0                            0
+a_dout#branch_1_1                            0
+a_dout#branch_1_2                            0
+a_dout#branch_1_3                            0
+a_dout#branch_1_4                            0
+a_dout#branch_1_5                            0
+a_dout#branch_1_6                            0
+a_dout#branch_1_7                            0
+a_dctrln#branch_1_0                          0
+a_dctrln#branch_1_1                          0
+a_dctrln#branch_1_2                          0
+a_dctrln#branch_1_3                          0
+a_dctrln#branch_1_4                          0
+a_dctrln#branch_1_5                          0
+a_dctrln#branch_1_6                          0
+a_dctrlp#branch_1_0                          0
+a_dctrlp#branch_1_1                          0
+a_dctrlp#branch_1_2                          0
+a_dctrlp#branch_1_3                          0
+a_dctrlp#branch_1_4                          0
+a_dctrlp#branch_1_5                          0
+a_dctrlp#branch_1_6                          0
+a_cmpck#branch_1_0                           0
+
+
+Instance: abeh   Message: WARNING: output scheduled with impossible delay (-4.01e-12) at 5.01e-12/0.
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 5.503437810138546e-07
+Cosim  5.503441651012275e-07
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.050343554012213e-06
+Cosim  1.050343950132454e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.550343780898792e-06
+Cosim  1.550344164758722e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.050343783281707e-06
+Cosim  2.050344166982412e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.194540915458576e-06
+Cosim  2.194552e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.200526437296735e-06
+Cosim  2.200531e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.550343779689171e-06
+Cosim  2.550344163456175e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.694540084653866e-06
+Cosim  2.694551e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.700525346403549e-06
+Cosim  2.70053e-06
+
+No. of Data Rows : 74851
+f000_d7             =  0.00000e+00
+f000_d6             =  0.00000e+00
+f000_d5             =  0.00000e+00
+f000_d4             =  0.00000e+00
+f000_d3             =  0.00000e+00
+f000_d2             =  0.00000e+00
+f000_d1             =  0.00000e+00
+f000_d0             =  3.60000e+00
+f000_complete       =  3.60000e+00
+f000_invalid        =  0.00000e+00
+f000_timeout        =  0.00000e+00
+f000_sampled        =  -1.69667e+00
+f000_input          =  -1.69667e+00
+f000_tcomplete      =  3.75478e-07
+f001_d7             =  0.00000e+00
+f001_d6             =  0.00000e+00
+f001_d5             =  0.00000e+00
+f001_d4             =  0.00000e+00
+f001_d3             =  0.00000e+00
+f001_d2             =  0.00000e+00
+f001_d1             =  0.00000e+00
+f001_d0             =  3.60000e+00
+f001_complete       =  3.60000e+00
+f001_invalid        =  0.00000e+00
+f001_timeout        =  0.00000e+00
+f001_sampled        =  -1.69667e+00
+f001_input          =  -1.69667e+00
+f001_tcomplete      =  8.75482e-07
+f002_d7             =  0.00000e+00
+f002_d6             =  3.60000e+00
+f002_d5             =  3.60000e+00
+f002_d4             =  3.60000e+00
+f002_d3             =  3.60000e+00
+f002_d2             =  3.60000e+00
+f002_d1             =  3.60000e+00
+f002_d0             =  3.60000e+00
+f002_complete       =  3.60000e+00
+f002_invalid        =  0.00000e+00
+f002_timeout        =  0.00000e+00
+f002_sampled        =  -1.65916e-02
+f002_input          =  -1.65916e-02
+f002_tcomplete      =  1.37548e-06
+f003_d7             =  0.00000e+00
+f003_d6             =  3.60000e+00
+f003_d5             =  3.60000e+00
+f003_d4             =  3.60000e+00
+f003_d3             =  3.60000e+00
+f003_d2             =  3.60000e+00
+f003_d1             =  3.60000e+00
+f003_d0             =  3.60000e+00
+f003_complete       =  3.60000e+00
+f003_invalid        =  0.00000e+00
+f003_timeout        =  0.00000e+00
+f003_sampled        =  -1.65916e-02
+f003_input          =  -1.65916e-02
+f003_tcomplete      =  1.87548e-06
+f004_d7             =  3.60000e+00
+f004_d6             =  3.60000e+00
+f004_d5             =  3.60000e+00
+f004_d4             =  3.60000e+00
+f004_d3             =  3.60000e+00
+f004_d2             =  3.60000e+00
+f004_d1             =  3.60000e+00
+f004_d0             =  3.60000e+00
+f004_complete       =  3.60000e+00
+f004_invalid        =  0.00000e+00
+f004_timeout        =  0.00000e+00
+f004_sampled        =  1.67013e+00
+f004_input          =  1.67013e+00
+f004_tcomplete      =  2.37548e-06
+f005_d7             =  3.60000e+00
+f005_d6             =  3.60000e+00
+f005_d5             =  3.60000e+00
+f005_d4             =  3.60000e+00
+f005_d3             =  3.60000e+00
+f005_d2             =  3.60000e+00
+f005_d1             =  3.60000e+00
+f005_d0             =  3.60000e+00
+f005_complete       =  3.60000e+00
+f005_invalid        =  0.00000e+00
+f005_timeout        =  0.00000e+00
+f005_sampled        =  1.67013e+00
+f005_input          =  1.67013e+00
+f005_tcomplete      =  2.87548e-06
+ngspice-46 done

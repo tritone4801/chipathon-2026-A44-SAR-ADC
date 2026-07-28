@@ -1,0 +1,12 @@
+{
+  "status": "PASS_MANIFEST_AUDIT",
+  "pass": true,
+  "root": "C:\\Users\\15031\\eda\\designs\\manual_goal\\verification\\A44_MC200_FIXED50PS_FULL_RETEST_20260725_R1",
+  "manifest_entries": 1201,
+  "manifest_sha256": "a31f1ef5482b841717ad0e4f3062523886083177bc07d3ebc7d95f41b54dd48c",
+  "failures": [],
+  "excluded": [
+    "manifest_sha256.csv",
+    "manifest_audit.json"
+  ]
+}

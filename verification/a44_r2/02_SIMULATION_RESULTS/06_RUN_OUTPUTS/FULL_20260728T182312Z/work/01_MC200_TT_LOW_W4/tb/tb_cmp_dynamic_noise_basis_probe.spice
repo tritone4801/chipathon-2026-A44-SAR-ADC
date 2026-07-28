@@ -1,0 +1,22 @@
+* StrongARM transient operating-point and decision-aperture probe.
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /foss/designs/manual_goal/verification/A44_TT_BEH_NO_R6_MC200_FAST64_SIGNOFF_20260718/netlists/core/subckts/Comparator_StrongARM_extracted.subckt.spice
+.temp 27
+.options method=gear reltol=1e-4 abstol=1e-12 vntol=1e-6 trtol=7
+VVDD vdd 0 3.3
+VCLK clk 0 PULSE(0 3.3 20n 50p 50p 20n 80n)
+VINP vinp 0 1.65075
+VINN vinn 0 1.64925
+XCMP clk dcmpp vinp dcmpn vinn vdd 0 Comparator_StrongARM
+COUTP dcmpp 0 20f
+COUTN dcmpn 0 20f
+.tran 50p 50n 0 50p
+.control
+set noaskquit
+run
+set wr_singlescale
+wrdata ../raw/tb_cmp_dynamic_noise_basis_probe.txt v(clk) v(dcmpp) v(dcmpn) v(xcmp.xp) v(xcmp.xn) v(xcmp.lp) v(xcmp.ln) @m.xcmp.xm3.m0[gm] @m.xcmp.xm4.m0[gm] @m.xcmp.xm3.m0[id] @m.xcmp.xm4.m0[id]
+quit
+.endc
+.end

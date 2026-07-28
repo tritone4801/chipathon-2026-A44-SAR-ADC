@@ -1,0 +1,328 @@
+`include "discipline.h"
+
+module SAR_LOGIC_BEH_TT_3P3_27C(
+    input clks, dcmpp, dcmpn, vdd, gnd,
+    output cmpck,
+    output dctrlp7, dctrlp6, dctrlp5, dctrlp4, dctrlp3, dctrlp2, dctrlp1,
+    output dctrln7, dctrln6, dctrln5, dctrln4, dctrln3, dctrln2, dctrln1,
+    output dout7, dout6, dout5, dout4, dout3, dout2, dout1, dout0,
+    output eoc_int, invalid_decision_count, timeout_count, conversion_complete
+);
+    electrical clks, dcmpp, dcmpn, vdd, gnd, cmpck;
+    electrical dctrlp7, dctrlp6, dctrlp5, dctrlp4, dctrlp3, dctrlp2, dctrlp1;
+    electrical dctrln7, dctrln6, dctrln5, dctrln4, dctrln3, dctrln2, dctrln1;
+    electrical dout7, dout6, dout5, dout4, dout3, dout2, dout1, dout0;
+    electrical eoc_int, invalid_decision_count, timeout_count, conversion_complete;
+
+    parameter real t_first = 11.050n from (0:inf);
+    parameter real t_timeout_guard = 5.000n from (0:inf);
+    parameter real t_last_rise_to_dout = 10.633n from (0:inf);
+    parameter real tr_cmpck = 0.250n from (0:inf);
+    parameter real tf_cmpck = 0.250n from (0:inf);
+    parameter real tr_dctrl = 0.250n from (0:inf);
+    parameter real tf_dctrl = 0.250n from (0:inf);
+    parameter real tr_dout = 0.250n from (0:inf);
+    parameter real tf_dout = 0.250n from (0:inf);
+
+    integer phase;
+    integer active;
+    integer bit_index;
+    integer decision_bit;
+    integer code_work;
+    integer code_out;
+    integer cmpck_q;
+    integer eoc_q;
+    integer complete_q;
+    integer invalid_count_i;
+    integer timeout_count_i;
+    integer dctrlp_q[1:7];
+    integer dctrln_q[1:7];
+    real next_event;
+    real cmp_rise_time;
+
+    analog function real cmp_high_time;
+        input bit_no;
+        integer bit_no;
+        begin
+            case (bit_no)
+                7: cmp_high_time = 13.890n;
+                6: cmp_high_time = 13.878n;
+                5: cmp_high_time = 13.891n;
+                4: cmp_high_time = 13.891n;
+                3: cmp_high_time = 13.878n;
+                2: cmp_high_time = 13.879n;
+                1: cmp_high_time = 13.892n;
+                default: cmp_high_time = 13.878n;
+            endcase
+        end
+    endfunction
+
+    analog function real decision_aperture;
+        input bit_no;
+        integer bit_no;
+        begin
+            case (bit_no)
+                7: decision_aperture = 0.914n;
+                6: decision_aperture = 0.824n;
+                5: decision_aperture = 0.914n;
+                4: decision_aperture = 0.914n;
+                3: decision_aperture = 0.825n;
+                2: decision_aperture = 0.825n;
+                1: decision_aperture = 0.914n;
+                default: decision_aperture = 0.824n;
+            endcase
+        end
+    endfunction
+
+    analog function real dctrl_from_rise;
+        input bit_no;
+        integer bit_no;
+        begin
+            case (bit_no)
+                7: dctrl_from_rise = 7.911n;
+                6: dctrl_from_rise = 7.931n;
+                5: dctrl_from_rise = 8.022n;
+                4: dctrl_from_rise = 8.023n;
+                3: dctrl_from_rise = 7.934n;
+                2: dctrl_from_rise = 7.935n;
+                default: dctrl_from_rise = 8.025n;
+            endcase
+        end
+    endfunction
+
+    analog function real low_guard_time;
+        input bit_no;
+        integer bit_no;
+        begin
+            case (bit_no)
+                7: low_guard_time = 11.560n;
+                6: low_guard_time = 11.575n;
+                5: low_guard_time = 11.576n;
+                4: low_guard_time = 11.560n;
+                3: low_guard_time = 11.560n;
+                2: low_guard_time = 11.577n;
+                default: low_guard_time = 11.574n;
+            endcase
+        end
+    endfunction
+
+    analog begin
+        @(initial_step) begin
+            phase = 0;
+            active = 0;
+            bit_index = 7;
+            decision_bit = 0;
+            code_work = 0;
+            code_out = 0;
+            cmpck_q = 0;
+            eoc_q = 0;
+            complete_q = 0;
+            invalid_count_i = 0;
+            timeout_count_i = 0;
+            dctrlp_q[7] = 1;
+            dctrln_q[7] = 1;
+            dctrlp_q[6] = 0;
+            dctrln_q[6] = 0;
+            dctrlp_q[5] = 0;
+            dctrln_q[5] = 0;
+            dctrlp_q[4] = 0;
+            dctrln_q[4] = 0;
+            dctrlp_q[3] = 0;
+            dctrln_q[3] = 0;
+            dctrlp_q[2] = 0;
+            dctrln_q[2] = 0;
+            dctrlp_q[1] = 0;
+            dctrln_q[1] = 0;
+            next_event = 1.0;
+            cmp_rise_time = 0.0;
+        end
+
+        @(cross(V(clks, gnd) - 0.5 * V(vdd, gnd), -1)) begin
+            active = 1;
+            phase = 1;
+            bit_index = 7;
+            decision_bit = 0;
+            code_work = 0;
+            cmpck_q = 0;
+            eoc_q = 0;
+            complete_q = 0;
+            invalid_count_i = 0;
+            timeout_count_i = 0;
+            dctrlp_q[7] = 1;
+            dctrln_q[7] = 1;
+            dctrlp_q[6] = 0;
+            dctrln_q[6] = 0;
+            dctrlp_q[5] = 0;
+            dctrln_q[5] = 0;
+            dctrlp_q[4] = 0;
+            dctrln_q[4] = 0;
+            dctrlp_q[3] = 0;
+            dctrln_q[3] = 0;
+            dctrlp_q[2] = 0;
+            dctrln_q[2] = 0;
+            dctrlp_q[1] = 0;
+            dctrln_q[1] = 0;
+            next_event = $abstime + t_first;
+        end
+
+        @(cross(V(clks, gnd) - 0.5 * V(vdd, gnd), +1)) begin
+            if (active != 0) begin
+                timeout_count_i = timeout_count_i + 1;
+            end
+            active = 0;
+            phase = 0;
+            cmpck_q = 0;
+            eoc_q = 0;
+            complete_q = 0;
+            dctrlp_q[7] = 1;
+            dctrln_q[7] = 1;
+            dctrlp_q[6] = 0;
+            dctrln_q[6] = 0;
+            dctrlp_q[5] = 0;
+            dctrln_q[5] = 0;
+            dctrlp_q[4] = 0;
+            dctrln_q[4] = 0;
+            dctrlp_q[3] = 0;
+            dctrln_q[3] = 0;
+            dctrlp_q[2] = 0;
+            dctrln_q[2] = 0;
+            dctrlp_q[1] = 0;
+            dctrln_q[1] = 0;
+            next_event = $abstime + 1.0;
+        end
+
+        @(timer(next_event)) begin
+            if (active != 0) begin
+                case (phase)
+                    1: begin
+                        cmpck_q = 1;
+                        cmp_rise_time = $abstime;
+                        phase = 2;
+                        next_event = $abstime + decision_aperture(bit_index);
+                    end
+                    2: begin
+                        if ((V(dcmpp, gnd) > 0.7 * V(vdd, gnd)) &&
+                            (V(dcmpn, gnd) < 0.3 * V(vdd, gnd))) begin
+                            decision_bit = 1;
+                            code_work = code_work + (1 << bit_index);
+                            if (bit_index > 0) begin
+                                phase = 3;
+                                next_event = cmp_rise_time + dctrl_from_rise(bit_index);
+                            end else begin
+                                phase = 6;
+                                next_event = cmp_rise_time + t_last_rise_to_dout;
+                            end
+                        end else if ((V(dcmpp, gnd) < 0.3 * V(vdd, gnd)) &&
+                                     (V(dcmpn, gnd) > 0.7 * V(vdd, gnd))) begin
+                            decision_bit = 0;
+                            if (bit_index > 0) begin
+                                phase = 3;
+                                next_event = cmp_rise_time + dctrl_from_rise(bit_index);
+                            end else begin
+                                phase = 6;
+                                next_event = cmp_rise_time + t_last_rise_to_dout;
+                            end
+                        end else begin
+                            phase = 7;
+                            next_event = $abstime + t_timeout_guard;
+                        end
+                    end
+                    3: begin
+                        dctrln_q[bit_index] = decision_bit;
+                        dctrlp_q[bit_index] = 1 - decision_bit;
+                        phase = 4;
+                        next_event = cmp_rise_time + cmp_high_time(bit_index);
+                    end
+                    4: begin
+                        cmpck_q = 0;
+                        if (bit_index > 0) begin
+                            phase = 5;
+                            next_event = $abstime + low_guard_time(bit_index);
+                        end else begin
+                            active = 0;
+                            phase = 0;
+                            next_event = $abstime + 1.0;
+                        end
+                    end
+                    5: begin
+                        bit_index = bit_index - 1;
+                        phase = 1;
+                        next_event = $abstime;
+                    end
+                    6: begin
+                        code_out = code_work;
+                        eoc_q = 1;
+                        complete_q = 1;
+                        phase = 4;
+                        next_event = cmp_rise_time + cmp_high_time(bit_index);
+                    end
+                    7: begin
+                        if ((V(dcmpp, gnd) > 0.7 * V(vdd, gnd)) &&
+                            (V(dcmpn, gnd) < 0.3 * V(vdd, gnd))) begin
+                            decision_bit = 1;
+                            code_work = code_work + (1 << bit_index);
+                            if (bit_index > 0) begin
+                                phase = 3;
+                                next_event = $abstime;
+                            end else begin
+                                phase = 6;
+                                next_event = $abstime;
+                            end
+                        end else if ((V(dcmpp, gnd) < 0.3 * V(vdd, gnd)) &&
+                                     (V(dcmpn, gnd) > 0.7 * V(vdd, gnd))) begin
+                            decision_bit = 0;
+                            if (bit_index > 0) begin
+                                phase = 3;
+                                next_event = $abstime;
+                            end else begin
+                                phase = 6;
+                                next_event = $abstime;
+                            end
+                        end else begin
+                            if ((V(dcmpp, gnd) > 0.7 * V(vdd, gnd)) &&
+                                (V(dcmpn, gnd) > 0.7 * V(vdd, gnd))) begin
+                                invalid_count_i = invalid_count_i + 1;
+                            end else begin
+                                timeout_count_i = timeout_count_i + 1;
+                            end
+                            active = 0;
+                            phase = 0;
+                            cmpck_q = 0;
+                            eoc_q = 0;
+                            complete_q = 0;
+                            next_event = $abstime + 1.0;
+                        end
+                    end
+                endcase
+            end
+        end
+
+        V(cmpck, gnd) <+ transition(cmpck_q * V(vdd, gnd), 0.0, tr_cmpck, tf_cmpck);
+        V(dctrlp7, gnd) <+ transition(dctrlp_q[7] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dctrlp6, gnd) <+ transition(dctrlp_q[6] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dctrlp5, gnd) <+ transition(dctrlp_q[5] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dctrlp4, gnd) <+ transition(dctrlp_q[4] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dctrlp3, gnd) <+ transition(dctrlp_q[3] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dctrlp2, gnd) <+ transition(dctrlp_q[2] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dctrlp1, gnd) <+ transition(dctrlp_q[1] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dctrln7, gnd) <+ transition(dctrln_q[7] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dctrln6, gnd) <+ transition(dctrln_q[6] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dctrln5, gnd) <+ transition(dctrln_q[5] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dctrln4, gnd) <+ transition(dctrln_q[4] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dctrln3, gnd) <+ transition(dctrln_q[3] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dctrln2, gnd) <+ transition(dctrln_q[2] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dctrln1, gnd) <+ transition(dctrln_q[1] * V(vdd, gnd), 0.0, tr_dctrl, tf_dctrl);
+        V(dout7, gnd) <+ transition(((code_out >> 7) & 1) * V(vdd, gnd), 0.0, tr_dout, tf_dout);
+        V(dout6, gnd) <+ transition(((code_out >> 6) & 1) * V(vdd, gnd), 0.0, tr_dout, tf_dout);
+        V(dout5, gnd) <+ transition(((code_out >> 5) & 1) * V(vdd, gnd), 0.0, tr_dout, tf_dout);
+        V(dout4, gnd) <+ transition(((code_out >> 4) & 1) * V(vdd, gnd), 0.0, tr_dout, tf_dout);
+        V(dout3, gnd) <+ transition(((code_out >> 3) & 1) * V(vdd, gnd), 0.0, tr_dout, tf_dout);
+        V(dout2, gnd) <+ transition(((code_out >> 2) & 1) * V(vdd, gnd), 0.0, tr_dout, tf_dout);
+        V(dout1, gnd) <+ transition(((code_out >> 1) & 1) * V(vdd, gnd), 0.0, tr_dout, tf_dout);
+        V(dout0, gnd) <+ transition((code_out & 1) * V(vdd, gnd), 0.0, tr_dout, tf_dout);
+        V(eoc_int, gnd) <+ transition(eoc_q * V(vdd, gnd), 0.0, tr_dout, tf_dout);
+        V(conversion_complete, gnd) <+ transition(complete_q * V(vdd, gnd), 0.0, tr_dout, tf_dout);
+        V(invalid_decision_count, gnd) <+ transition(1.0 * invalid_count_i, 0.0, tr_dout, tf_dout);
+        V(timeout_count, gnd) <+ transition(1.0 * timeout_count_i, 0.0, tr_dout, tf_dout);
+    end
+endmodule

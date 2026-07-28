@@ -1,0 +1,17 @@
+field,value
+figure_size_in,10.0 x 6.2
+figure_background,light gray
+axes_background,light gray or near-light-gray
+font_family,Times New Roman preferred; fallback DejaVu Serif
+line_color,blue
+line_width_pt,2.0
+markers,none
+x_axis_label,Frequency (Hz)
+y_axis_label,Magnitude (dB)
+x_range,0 ... 1.0 MHz
+major_x_ticks,0; 250 kHz; 500 kHz; 750 kHz; 1.0 MHz
+recommended_y_range,-100 dB ... +10 dB
+grid,major grid only; light-gray dotted lines
+annotation_box,top-right; white fill; black border
+annotation_lines,SNR; SNDR; ENOB; SFDR; optional THD
+source_csv_columns,"freq_hz,magnitude_db,is_fundamental,is_hd2,is_hd3,is_largest_spur"

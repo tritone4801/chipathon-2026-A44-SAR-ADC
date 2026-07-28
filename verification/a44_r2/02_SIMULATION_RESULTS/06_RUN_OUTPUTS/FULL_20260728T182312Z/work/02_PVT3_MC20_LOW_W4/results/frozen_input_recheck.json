@@ -1,0 +1,101 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "expected_sha256": "327628f51fdc0b88ee72ee14dc0c33ceb2d93a56a17c61093db9053990e0a90a",
+      "observed_sha256": "327628f51fdc0b88ee72ee14dc0c33ceb2d93a56a17c61093db9053990e0a90a",
+      "pass": true,
+      "relative_path": "scripts/dynamic_analysis.py"
+    },
+    {
+      "expected_sha256": "3a5a9fc4967d141ca337f2280ead34e4ab7d935b46f2508cfde4fa74db1de198",
+      "observed_sha256": "3a5a9fc4967d141ca337f2280ead34e4ab7d935b46f2508cfde4fa74db1de198",
+      "pass": true,
+      "relative_path": "scripts/fast64_v2_common.py"
+    },
+    {
+      "expected_sha256": "57b82e2a458fd05dab6bd756c3496044cf1f610d6b94f39a7bec9dbf0257c268",
+      "observed_sha256": "57b82e2a458fd05dab6bd756c3496044cf1f610d6b94f39a7bec9dbf0257c268",
+      "pass": true,
+      "relative_path": "scripts/run_fast64_v2.py"
+    },
+    {
+      "expected_sha256": "3ddf3e44f0f4849a46c2756351319dad574ddbed1cc5e55677c815998c1757d7",
+      "observed_sha256": "3ddf3e44f0f4849a46c2756351319dad574ddbed1cc5e55677c815998c1757d7",
+      "pass": true,
+      "relative_path": "scripts/sar_campaign_common.py"
+    },
+    {
+      "expected_sha256": "0ebaab2b2a6d3caec8b12a0b2857f8e6e8c3b8f17c6bcd93c88d3dae8b0776f3",
+      "observed_sha256": "0ebaab2b2a6d3caec8b12a0b2857f8e6e8c3b8f17c6bcd93c88d3dae8b0776f3",
+      "pass": true,
+      "relative_path": "scripts/sar_event_noise.py"
+    },
+    {
+      "expected_sha256": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+      "observed_sha256": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+      "pass": true,
+      "relative_path": "netlists/core/subckts/Comparator_StrongARM_extracted.subckt.spice"
+    },
+    {
+      "expected_sha256": "6e98da540b1c765b0dcec4d1e10399142dc37b7f1c21960d289a83f07ec10ada",
+      "observed_sha256": "6e98da540b1c765b0dcec4d1e10399142dc37b7f1c21960d289a83f07ec10ada",
+      "pass": true,
+      "relative_path": "netlists/core/subckts/CDAC_native_extracted.subckt.spice"
+    },
+    {
+      "expected_sha256": "3ef9735c56374250575394bbc2dbbf4e33ad4cc4c02af0055205160908e0daf1",
+      "observed_sha256": "3ef9735c56374250575394bbc2dbbf4e33ad4cc4c02af0055205160908e0daf1",
+      "pass": true,
+      "relative_path": "netlists/core/subckts/SWITCH_BOOT_SP_native_extracted.subckt.spice"
+    },
+    {
+      "expected_sha256": "e6f8341531b50a0d59e1f2f2be60f501a43d84e887b7e6226f5cd4d9c431ea0c",
+      "observed_sha256": "e6f8341531b50a0d59e1f2f2be60f501a43d84e887b7e6226f5cd4d9c431ea0c",
+      "pass": true,
+      "relative_path": "models/SAR_LOGIC_BEH_TT_3P3_27C.so"
+    },
+    {
+      "expected_sha256": "e9a41dab2e5e52b4f6ecc1d8d0d0b17eca88e8854b1ef7e24f8d62578b76dda3",
+      "observed_sha256": "e9a41dab2e5e52b4f6ecc1d8d0d0b17eca88e8854b1ef7e24f8d62578b76dda3",
+      "pass": true,
+      "relative_path": "models/no_r6_equivalent_loads.inc"
+    },
+    {
+      "expected_sha256": "b47114c90c2ea957e3f5f80eaeb2dd04e344646d29d49eb5fb8811273790ebee",
+      "observed_sha256": "b47114c90c2ea957e3f5f80eaeb2dd04e344646d29d49eb5fb8811273790ebee",
+      "pass": true,
+      "relative_path": "config/timing_tt_3p3_27c.json"
+    },
+    {
+      "expected_sha256": "5e96592de86c239db9334c98f5c5d4d4c6b000eece41673de3c58ab148897f6e",
+      "observed_sha256": "5e96592de86c239db9334c98f5c5d4d4c6b000eece41673de3c58ab148897f6e",
+      "pass": true,
+      "relative_path": "config/noise_model.yaml"
+    },
+    {
+      "expected_sha256": "404c6c93d79a903aca609fd6f5fd873c73cb3a2150b240f5763d61a1684c98e7",
+      "observed_sha256": "404c6c93d79a903aca609fd6f5fd873c73cb3a2150b240f5763d61a1684c98e7",
+      "pass": true,
+      "relative_path": "config/plot_contract.json"
+    },
+    {
+      "expected_sha256": "6ad9e1aa57f508075547673cbee45c9af9c2d86742f804e8045631cffa7ff676",
+      "observed_sha256": "6ad9e1aa57f508075547673cbee45c9af9c2d86742f804e8045631cffa7ff676",
+      "pass": true,
+      "relative_path": "config/plot_style.yaml"
+    },
+    {
+      "expected_sha256": "e4fedb09e98dc2f3df539fe215df79f4977d8fb3f7bcdd61c606d8bb90da1325",
+      "observed_sha256": "e4fedb09e98dc2f3df539fe215df79f4977d8fb3f7bcdd61c606d8bb90da1325",
+      "pass": true,
+      "relative_path": "config/ngspice_userinit/.spiceinit"
+    },
+    {
+      "expected_sha256": "db6195e8cf650819603c0aba6e7d08d6bb03830e512a598fbe05699bfa36b824",
+      "observed_sha256": "db6195e8cf650819603c0aba6e7d08d6bb03830e512a598fbe05699bfa36b824",
+      "pass": true,
+      "relative_path": "csv/cdac_mismatch_weights.csv"
+    }
+  ]
+}

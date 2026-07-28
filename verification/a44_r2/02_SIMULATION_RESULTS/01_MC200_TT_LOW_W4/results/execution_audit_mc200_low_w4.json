@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "all_matrix_numerics_frozen": true,
+    "all_mismatch_checksums_match_historical": true,
+    "all_ngspice_compatibility_hsa": true,
+    "all_noise_prefix_checksums_match_historical": true,
+    "all_parseval_pass": true,
+    "all_protocol_clean": true,
+    "all_retained_checksums_match": true,
+    "all_returncode_zero": true,
+    "codes_all_13600": true,
+    "codes_retained_12800": true,
+    "first_conversion_path_1600": true,
+    "job_matrix_200": true,
+    "job_matrix_ids_unique": true,
+    "master_200": true,
+    "no_analysis_failures": true,
+    "seed_set_1_to_200": true,
+    "startup_pairs_800": true
+  },
+  "failures": [],
+  "pass": true,
+  "status": "PASS_MC200_LOW_W4_EXECUTION"
+}

@@ -1,0 +1,42 @@
+{
+  "claim_boundary": [
+    "Package integrity and quick reproduction PASS are not performance PASS.",
+    "PVT3 MC20 is diagnostic, not yield or signoff evidence.",
+    "Seed44 SS FULL255 failure prevents promotion.",
+    "No layout, PEX, silicon, production-yield, tapeout, or signoff claim."
+  ],
+  "completed_utc": "2026-07-28T19:15:29.784560+00:00",
+  "current_circuit": {
+    "comparator_hash_match": true,
+    "comparator_sha256": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+    "indexed_file_count": 17,
+    "schematic_count": 4,
+    "symbol_count": 5
+  },
+  "full_dry_run": {
+    "preflight_pass": true,
+    "run": "FULL_20260728T190527Z",
+    "status": "STAGED_DRY_RUN_PASS"
+  },
+  "full_run_entry_staged": true,
+  "indexes": {
+    "baseline_verification_record_count": 130,
+    "cace_and_tools_file_count": 14,
+    "simulation_matrix_record_count": 5,
+    "simulation_result_file_count": 4787,
+    "source_copy_record_count": 3094
+  },
+  "pass_package_integrity": true,
+  "pass_quick_reproduction": true,
+  "quick_verification": {
+    "comparison_record_count": 130,
+    "matching_record_count": 130,
+    "run": "RUN_20260728T190259Z",
+    "status": "PASS_QUICK_REPRODUCIBILITY_ALL_LANES"
+  },
+  "root": "D:\\PICO\\A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2",
+  "source_campaign_performance_status": "COMPLETE_AS_EXECUTED_PERFORMANCE_FAIL_NO_PROMOTION",
+  "status": "COMPLETE_R2_UNIFIED_RESULTS_ROOT_LAUNCHERS_ONLY_QUICK_REPRO_PASS_PERFORMANCE_FAIL_NO_PROMOTION",
+  "tools_root": "D:\\PICO\\A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2\\03_CACE_AND_SIMULATION_TOOLS",
+  "unified_result_root": "D:\\PICO\\A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2\\02_SIMULATION_RESULTS"
+}

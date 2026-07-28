@@ -1,0 +1,822 @@
+# FAST64 修正版：将 first-conversion 与稳态频谱彻底分离
+
+当前 FAST64 把 `startup=0` 的第一次冷启动转换直接纳入 64 点 FFT。J4 已证明，这会让一个仅存在于 frame 0 的 16-code 离群码把 SNDR 从约 48.8 dB 拉低到约 32.8 dB，而其余 63 帧实际上完全一致。
+
+因此，FAST64 不应再用一个 SNDR 数字同时表示：
+
+```text
+第一次转换是否可靠
++
+稳态噪声和失真性能
+```
+
+修正后的方法应同时保留这两项测试，但分别生成独立结果。
+
+---
+
+## 一、核心修正
+
+原方法：
+
+```text
+simulate frames 0 ... 63
+FFT frames     0 ... 63
+startup        = 0
+```
+
+修正为：
+
+```text
+simulate frames 0 ... 67
+warm-up frames = 4
+FFT frames     = 4 ... 67
+NFFT           = 64
+```
+
+同时：
+
+```text
+frame 0:
+    仍作为 first-conversion 功能测试
+    不进入 FFT
+
+frames 1 ... 3:
+    startup / conditioning diagnostics
+    不进入 FFT
+
+frames 4 ... 67:
+    稳态 FAST64 频谱记录
+```
+
+新方法建议命名为：
+
+```text
+FAST64_SS_W4
+```
+
+而旧方法标记为：
+
+```text
+FAST64_STARTUP_INCLUSIVE_W0
+```
+
+旧、新两类结果不得混在同一个 candidate ranking 或 MC 分布中。
+
+---
+
+# 二、修正后的冻结配置
+
+| 参数                      |                     修正值 |
+| ----------------------- | ----------------------: |
+| `Fs`                    |                  2 MS/s |
+| frame period            |                  500 ns |
+| FFT size                |                      64 |
+| LOW bin                 |                       7 |
+| NEAR_NYQUIST bin        |                      29 |
+| warm-up frames          |                   **4** |
+| total converted frames  |                  **68** |
+| FFT retained frames     |                **4–67** |
+| first-conversion frame  |                   **0** |
+| periodic warm reference |                  **64** |
+| DOUT aperture           |                  480 ns |
+| input                   |            3.0 Vpp,diff |
+| window                  |             rectangular |
+| bulk maxstep            |        0.10 ns，仅在重新资格化后 |
+| strict maxstep          |                 0.05 ns |
+| ENOB                    | raw ENOB，不补偿 −1.09 dBFS |
+
+原计划固定了 `startup=0`、64 点、bin 7/29、480 ns aperture 和 0.10/0.05 ns 两套数值 profile；修正后除 startup/记录长度之外，其余条件全部保持不变。
+
+---
+
+# 三、为什么选择 4 个 warm-up frames
+
+J4 的现有结果表明，至少 frame 0 具有特殊的初始状态敏感性，但不能由此推导出所有 candidate 只需要丢弃一帧。
+
+选择 4 帧的依据是：
+
+```text
+1 frame:
+    很可能足以解决当前 J4 的具体问题，
+    但不足以作为整个 resizing campaign 的通用规则
+
+4 frames:
+    允许 sampler、bootstrap、CDAC、StrongARM、
+    SAR state 和 DOUT register 经历多次完整周期
+
+额外仿真长度:
+    4 × 500 ns = 2 us
+
+相对于 64 帧的 32 us:
+    仅增加 6.25%
+```
+
+因此，4 帧能够显著提高测量语义的可靠性，而仿真成本增加较小。
+
+但 `warmup=4` 必须经过一次 `W4/W8` 资格化，不能只凭经验永久冻结。
+
+---
+
+# 四、FFT coherence 不会因为丢弃四帧而被破坏
+
+输入仍然为：
+
+[
+f_{\mathrm{in}}=\frac{k}{64}F_s
+]
+
+其中：
+
+```text
+LOW: k = 7
+NEAR_NYQUIST: k = 29
+```
+
+保留 frames 4–67 等价于对原 64 点相干序列进行循环时移：
+
+[
+x[n+4]
+======
+
+A\sin\left(
+2\pi\frac{k}{64}n+
+\phi+
+2\pi\frac{4k}{64}
+\right)
+]
+
+它只改变记录的初相位，不改变：
+
+```text
+输入频率
+coherent bin
+频率分辨率
+FFT leakage
+64 个输入相位的完整覆盖
+```
+
+由于 7、29 都与 64 互质，任意连续 64 个采样仍覆盖同一组 64 个不同输入相位。现有计划已经使用这一互质性质保证完整 phase coverage。
+
+必须注意：
+
+```text
+正确：
+    仿真 68 帧，FFT 使用连续的 frames 4...67
+
+错误：
+    从原 64 帧中删除 frame 0，
+    然后对剩余 63 帧做 FFT
+
+错误：
+    对全部 68 帧做 68-point FFT
+```
+
+---
+
+# 五、利用 frame 64 建立同相位 cold/warm 对照
+
+由于输入序列每 64 个采样重复一次：
+
+```text
+frame 0 与 frame 64:
+    输入相位完全相同
+
+frame 1 与 frame 65:
+    输入相位完全相同
+
+frame 2 与 frame 66:
+    输入相位完全相同
+
+frame 3 与 frame 67:
+    输入相位完全相同
+```
+
+因此，一次 68-frame FAST64 仿真可同时完成：
+
+```text
+first-conversion test
+startup-history diagnosis
+steady-state FFT
+```
+
+而不需要额外的单独 cold/warm job。
+
+对 noise-OFF、固定 mismatch realization 的确定性仿真，必须生成：
+
+```text
+frame 0  vs frame 64
+frame 1  vs frame 65
+frame 2  vs frame 66
+frame 3  vs frame 67
+```
+
+逐层比较：
+
+```text
+sampled VID
+8-bit comparator decision vector
+DCTRL trajectory
+digital DOUT
+driver DOUT
+analog DOUT
+completion status
+conversion time
+```
+
+这比仅比较最终 code 更有判别力。
+
+---
+
+# 六、first-conversion 独立 Gate
+
+## 6.1 协议完整性
+
+frame 0 必须满足：
+
+```text
+decision_count = 8
+update_count   = 7
+COMPLETE       = 1
+INVALID        = 0
+TIMEOUT        = 0
+clipping       = 0
+DOUT 在 480 ns aperture 前稳定
+```
+
+还必须满足：
+
+```text
+comparator code
+=
+DCTRL code
+=
+digital DOUT
+=
+analog DOUT
+```
+
+## 6.2 noise-OFF 的同相位代码检查
+
+对于 nominal 和 mismatch-only FAST64：
+
+```text
+code[0] == code[64]
+```
+
+并且：
+
+```text
+comparator_decisions[0]
+==
+comparator_decisions[64]
+```
+
+若不相同，则分类为：
+
+```text
+FIRST_CONVERSION_HISTORY_DIVERGENCE
+```
+
+若 bulk/strict 在 frame 0 不同，则分类为：
+
+```text
+FIRST_CONVERSION_NUMERICAL_DIVERGENCE
+```
+
+如果 frame 0 的 comparator decision 相同、但最终 DOUT 不同，则继续定位为：
+
+```text
+SAR_CAPTURE_OR_DOUT_COMMIT_DIVERGENCE
+```
+
+## 6.3 为什么不能直接忽略 first conversion
+
+A44 没有正常工作用的 `READY` pin；外部 DOUT 必须在下一次 CLKS 上升沿之前形成完整结果，而且正常工作不能依赖外部初始化握手。
+
+因此：
+
+```text
+first conversion 不进入稳态 FFT
+```
+
+不等于：
+
+```text
+first conversion 可以失败
+```
+
+它仍然是独立且必须通过的系统功能 Gate。
+
+---
+
+# 七、稳态 FAST64 Gate
+
+频谱只使用：
+
+```text
+codes[4:68]
+```
+
+即：
+
+```text
+frame 4 ... frame 67
+```
+
+共 64 个 code。
+
+所有 retained frame 必须满足：
+
+```text
+64/64 valid
+64/64 complete
+0 invalid
+0 timeout
+0 clipping
+0 missing frame
+0 duplicate frame
+DOUT stable at aperture
+```
+
+然后计算：
+
+```text
+SNR
+SNDR
+ENOBraw
+SFDR
+THD
+HD2
+HD3
+largest spur
+Pfund
+Pnoise
+Pharm
+Perror
+DC code offset
+```
+
+正式结果名称应为：
+
+```text
+steady_state_sndr_db
+steady_state_enob_raw
+steady_state_snr_db
+steady_state_sfdr_dbc
+steady_state_thd_db
+```
+
+不得继续只使用不带语义限定的：
+
+```text
+sndr_db
+enob
+```
+
+以免与 startup-inclusive 结果混淆。
+
+---
+
+# 八、bulk/strict 数值审计必须拆成两个 Gate
+
+原 N1 只比较完整 64 点码流，结果会把 first-conversion 问题和稳态数值问题混成同一个 FAIL。
+
+修正后分成：
+
+## N1-F0：first-conversion numerical equivalence
+
+比较：
+
+```text
+bulk frame 0
+vs
+strict frame 0
+```
+
+以及必要时：
+
+```text
+frames 0...3
+```
+
+输出：
+
+```text
+N1_F0_PASS
+N1_F0_FAIL
+```
+
+## N1-SS：steady-state numerical equivalence
+
+比较：
+
+```text
+bulk frames 4...67
+vs
+strict frames 4...67
+```
+
+硬要求：
+
+```text
+64/64 code exact match
+completion flags exact match
+```
+
+输出：
+
+```text
+N1_SS_PASS
+N1_SS_FAIL
+```
+
+最终有四种状态：
+
+| F0   | SS   | 解释                                              |
+| ---- | ---- | ----------------------------------------------- |
+| PASS | PASS | 数值闭包通过                                          |
+| FAIL | PASS | first-conversion 数值敏感；稳态指标有效，但整体 candidate 不能通过 |
+| PASS | FAIL | 稳态结果数值不收敛，FAST64 指标不可用于排名                       |
+| FAIL | FAIL | 启动和稳态均未闭合                                       |
+
+J4 当前应暂时写成：
+
+```text
+N1_F0:
+    FAIL
+
+N1_SS:
+    NOT_YET_MEASURED_WITH_FULL_64_POST_WARMUP_CODES
+```
+
+虽然现有 frame 1–63 已完全一致，但只有 63 个 post-first-conversion samples，仍缺少新的 frame 64；因此必须用 68-frame deck 重跑后才能正式生成稳态 FAST64。J4 当前的首帧 DOUT[4] 差异及其对 FFT 的污染已有明确证据。
+
+---
+
+# 九、warm-up 数量资格化
+
+以前曾在某一旧 closure 上比较 startup 0、1、2、4，并因 code stream 与指标相同而选择 startup 0；J4 表明该结论不能无条件继承到新的 resizing candidate、PVT 或数值 profile。
+
+修正后采用以下资格化。
+
+## W4 run
+
+```text
+warmup = 4
+total  = 68
+FFT    = frames 4...67
+```
+
+## W8 run
+
+```text
+warmup = 8
+total  = 72
+FFT    = frames 8...71
+```
+
+由于两个 retained record 的起始输入相位不同，比较前将码流循环旋转到相同 phase origin。
+
+若：
+
+```text
+W4 与 W8 的 64 个 canonical codes 完全一致
+```
+
+则：
+
+```text
+WARMUP4_QUALIFIED
+```
+
+若不一致：
+
+```text
+WARMUP4_NOT_QUALIFIED
+STEADY_STATE_NOT_REACHED_OR_HISTORY_SENSITIVE
+```
+
+此时不能只把该 candidate 改成 `warmup=8` 后当作通过；必须保留其较慢 startup convergence 的事实。
+
+资格化至少覆盖：
+
+```text
+baseline:
+    TT LOW
+    TT NEAR
+
+promoted candidate:
+    TT LOW
+    TT NEAR
+    SS NEAR
+
+代表 mismatch seeds:
+    44
+    96
+```
+
+普通 candidate 不需要每次运行 W8；只有晋级候选或出现 startup signature 时执行。
+
+---
+
+# 十、noise-ON 的特殊处理
+
+对 event-noise FAST64：
+
+```text
+frame 0
+vs
+frame 64
+```
+
+可能因为 noise draw 不同而产生正常随机差异，因此不能使用：
+
+```text
+code[0] == code[64]
+```
+
+作为 first-conversion 硬判据。
+
+noise-ON FAST64 中：
+
+```text
+frame 0:
+    只检查 completion、protocol、path 和 DOUT timing
+
+frames 4...67:
+    用于 steady-state noise-inclusive FFT
+```
+
+若要测量“第一次转换在噪声下的错误概率”，应另设：
+
+```text
+F0_NOISE_COLD_START_REPEAT
+```
+
+在相同 mismatch die 和相同输入相位下执行多次独立 cold start，并使用多个预注册 noise seed。不能从一个 64 点 FFT 中同时推断 first-conversion BER 和稳态 SNDR。
+
+---
+
+# 十一、对 MC12 和未来 MC200 的处理
+
+## MC12 mismatch-only
+
+每个 seed 都运行 68 帧：
+
+```text
+frame 0 vs 64:
+    deterministic first-conversion check
+
+frames 4...67:
+    steady-state FAST64
+```
+
+晋级要求建议改为：
+
+```text
+所有 12 个 seed:
+    first-conversion protocol PASS
+
+所有 12 个 seed:
+    frame 0 == frame 64
+
+历史 seeds 2/44/96/189:
+    first-conversion PASS
+    steady-state 双频均按原规则判定
+```
+
+## 未来完整 MC200
+
+必须分别报告：
+
+```text
+first_conversion_pass_count
+first_conversion_failure_seed_list
+
+steady_state_sndr_distribution
+steady_state_enob_distribution
+
+combined_system_pass =
+    first_conversion_pass
+    AND
+    steady_state_dynamic_pass
+```
+
+不能再让一个 first-conversion 离群码通过 FFT 转化成“该 die 的稳态 SNDR 只有 32 dB”。
+
+---
+
+# 十二、Matrix A/B 的具体修改
+
+## 修正版 Matrix A
+
+```text
+A0  三点 first-conversion 功能检查
+
+A1  TT nominal S31 selected-transition static
+
+A2  TT nominal FAST64_SS_W4，noise OFF，LOW/NEAR
+    - 68 frames
+    - frame 0 first-conversion Gate
+    - frame 0:3 vs 64:67 startup pairs
+    - FFT frames 4:67
+
+A3  固定 MC12 mismatch cohort，FAST64_SS_W4，LOW/NEAR
+    - 同样执行 first-conversion pair check
+
+A4  同一 MC12 cohort 的 S31 selected-transition static
+```
+
+## 修正版 Matrix B
+
+```text
+B0  warm-up qualification:
+    W4 vs W8
+
+B1  strict numerical audit:
+    N1_F0 + N1_SS 分开判定
+
+B2  TT / SS / FF nominal FAST64_SS_W4
+
+B3  event-noise FAST64_SS_W4
+    first-conversion code equivalence 不适用
+
+B4  candidate-specific comparator/sample noise update
+
+B5  actual-SAR FAST64_SS_W4 integration audit
+    first-conversion Gate 必须启用
+```
+
+---
+
+# 十三、状态和排名规则修正
+
+原 ranking 的第一项是“无 protocol、frame、clipping、timeout 错误”，并随后按照 ENOB、静态指标和 MC12 进行排序。
+
+修正后应改成：
+
+```text
+1. first-conversion protocol PASS
+2. first-conversion deterministic same-phase PASS
+3. N1_SS numerical closure PASS
+4. retained 64-frame protocol PASS
+5. nominal LOW/NEAR steady-state ENOB >= 7.5
+6. selected static hard gate
+7. MC12 steady-state paired ranking
+8. energy / area / loading trade-off
+```
+
+最终状态使用：
+
+```text
+PASS_FAST64_COMPLETE
+
+FAIL_FIRST_CONVERSION_ONLY
+
+FAIL_FIRST_CONVERSION_NUMERICAL
+
+FAIL_STEADY_STATE_DYNAMIC
+
+FAIL_STEADY_STATE_NUMERICAL
+
+FAIL_PROTOCOL_OR_COMPLETION
+
+NOISE_RESULT_DIAGNOSTIC_ONLY
+```
+
+若：
+
+```text
+steady-state PASS
+first-conversion FAIL
+```
+
+则稳态指标仍可用于定位模拟性能，但 candidate 的总体状态必须是：
+
+```text
+FAIL_FIRST_CONVERSION_ONLY
+```
+
+不能晋级。
+
+---
+
+# 十四、必须新增的输出文件
+
+```text
+csv/codes_all_68.csv
+csv/codes_fft_retained_64.csv
+csv/startup_periodic_pairs.csv
+csv/first_conversion_path.csv
+
+results/first_conversion_status.json
+results/fast64_steady_state_metrics.json
+results/warmup_qualification.json
+results/numerical_split_audit.json
+```
+
+`fast64_steady_state_metrics.json` 至少记录：
+
+```text
+method_id
+warmup_frames
+total_frames
+retained_frame_start
+retained_frame_end
+nfft
+bin
+fin_hz
+phase
+aperture_ns
+maxstep_ns
+
+first_conversion_status
+startup_pair_mismatch_count
+warmup_qualified
+
+steady_state_snr_db
+steady_state_sndr_db
+steady_state_enob_raw
+steady_state_sfdr_dbc
+steady_state_thd_db
+
+n1_f0_status
+n1_ss_status
+overall_status
+```
+
+FFT 图标题应明确写：
+
+```text
+FAST64 steady-state screen
+warm-up = 4 frames
+FFT record = frames 4–67
+```
+
+不得再把旧 `startup=0` 指标与新结果使用同一个图例。
+
+---
+
+# 最终修正版方法
+
+```text
+FAST64_V2_FIRST_CONVERSION_SEPARATED
+
+Fs:
+    2 MS/s
+
+Frame:
+    500 ns
+
+Input:
+    3.0 Vpp,diff
+
+Bins:
+    LOW = 7
+    NEAR_NYQUIST = 29
+
+Simulation:
+    total frames = 68
+
+Startup diagnostics:
+    frames 0...3
+
+First-conversion frame:
+    frame 0
+
+Same-phase steady reference:
+    frame 64
+
+FFT retained record:
+    frames 4...67
+
+FFT size:
+    64
+
+DOUT aperture:
+    480 ns
+
+First-conversion result:
+    reported independently
+    excluded from FFT
+    required for overall PASS
+
+Steady-state result:
+    computed only from retained 64 frames
+
+Numerical audit:
+    N1_F0 and N1_SS separated
+
+Warm-up qualification:
+    W4 versus W8 exact canonical-code comparison
+
+Event-noise:
+    first-conversion code equality not inferred from one FAST64 run
+
+Overall PASS:
+    FIRST_CONVERSION_PASS
+    AND STEADY_STATE_FAST64_PASS
+    AND NUMERICAL_CLOSURE_PASS
+```
+
+这一修正既不会用 warm-up 隐藏 first-conversion 失效，也不会再让一次冷启动离群码冒充整个 ADC 的稳态噪声和失真性能。

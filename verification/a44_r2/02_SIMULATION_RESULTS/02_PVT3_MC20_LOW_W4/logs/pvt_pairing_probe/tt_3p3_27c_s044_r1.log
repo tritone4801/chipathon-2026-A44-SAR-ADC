@@ -1,0 +1,24 @@
+
+Note: Compatibility modes selected: hs a
+
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Circuit: * pvt local mismatch pairing probe.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+PVT_PAIRING_PROBE_BEGIN
+@m.xcmp.xm3.m0[delvto] = -1.20242e-03
+@m.xcmp.xm3.m0[mulu0] = 9.975109e-01
+@m.xcmp.xm4.m0[delvto] = -1.15033e-02
+@m.xcmp.xm4.m0[mulu0] = 1.011781e+00
+@m.xcmp.xm5.m0[delvto] = -3.92451e-03
+@m.xcmp.xm5.m0[mulu0] = 1.006276e+00
+@m.xcmp.xm6.m0[delvto] = 4.083494e-04
+@m.xcmp.xm6.m0[mulu0] = 9.959417e-01
+PVT_PAIRING_PROBE_END
+ngspice-46 done

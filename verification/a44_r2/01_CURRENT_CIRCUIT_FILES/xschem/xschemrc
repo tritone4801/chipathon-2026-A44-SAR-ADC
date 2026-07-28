@@ -1,0 +1,5 @@
+if {![info exists PDK]} {
+    set PDK gf180mcuD
+}
+source $env(PDK_ROOT)/$PDK/libs.tech/xschem/xschemrc
+append XSCHEM_LIBRARY_PATH :[file dirname [info script]]

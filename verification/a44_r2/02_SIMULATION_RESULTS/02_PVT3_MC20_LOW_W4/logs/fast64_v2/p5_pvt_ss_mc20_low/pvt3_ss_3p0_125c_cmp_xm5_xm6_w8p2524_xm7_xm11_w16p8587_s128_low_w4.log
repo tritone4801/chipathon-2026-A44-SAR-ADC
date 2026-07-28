@@ -1,0 +1,1916 @@
+
+Note: Compatibility modes selected: hs a
+
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Circuit: * a44 actual analog core with fixed tt timed behavioral sar control.
+
+Reducing trtol to 1 for xspice 'A' devices
+Doing analysis at TEMP = 125.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+legacy_rng_burn_01                           0
+legacy_rng_burn_02                           0
+legacy_rng_burn_03                           0
+legacy_rng_burn_04                           0
+legacy_rng_burn_05                           0
+legacy_rng_burn_06                           0
+legacy_rng_burn_07                           0
+legacy_rng_burn_08                           0
+legacy_rng_burn_09                           0
+legacy_rng_burn_10                           0
+legacy_rng_burn_11                           0
+legacy_rng_burn_12                           0
+legacy_rng_burn_13                           0
+legacy_rng_burn_14                           0
+legacy_rng_burn_15                           0
+legacy_rng_burn_16                           0
+legacy_rng_burn_17                           0
+legacy_rng_burn_18                           0
+legacy_rng_burn_19                           0
+vdd                                          3
+vrefp_src                                  2.5
+vrefp                                      2.5
+vrefp_cap                                  2.5
+vrefn_src                                  0.8
+vrefn                                      0.8
+vrefn_cap                                  0.8
+vinp_src                                2.2914
+vinn_src                                1.0086
+vinp                                    2.2914
+vinn                                    1.0086
+clks_src                                     0
+clks                                         0
+cmp_noise                          -0.00183127
+xcore.xcdacp.vbot1                         2.5
+dctrlp1                                      0
+xcore.vresp_raw                      0.0191324
+xcore.xcdacp.vbot2                         2.5
+dctrlp2                                      0
+xcore.xcdacp.vbot3                         2.5
+dctrlp3                                      0
+xcore.xcdacp.vbot4                         2.5
+dctrlp4                                      0
+xcore.xcdacp.vbot5                         2.5
+dctrlp5                                      0
+xcore.xcdacp.vbot6                         2.5
+dctrlp6                                      0
+xcore.xcdacp.vbot7                         2.5
+dctrlp7                                      0
+xcore.xcdacp.x1.clksb                        3
+xcore.xcdacp.x1.net2                1.4567e-08
+xcore.xcdacp.x1.net1                         3
+xcore.xcdacp.x1.bottom_gate        1.18677e-08
+xcore.xcdacp.x1.net4               5.93113e-09
+xcore.xcdacp.x1.net3                         3
+xcore.xcdacn.vbot1                         2.5
+dctrln1                                      0
+xcore.vresn_raw                      0.0146864
+xcore.xcdacn.vbot2                         2.5
+dctrln2                                      0
+xcore.xcdacn.vbot3                         2.5
+dctrln3                                      0
+xcore.xcdacn.vbot4                         2.5
+dctrln4                                      0
+xcore.xcdacn.vbot5                         2.5
+dctrln5                                      0
+xcore.xcdacn.vbot6                         2.5
+dctrln6                                      0
+xcore.xcdacn.vbot7                         2.5
+dctrln7                                      0
+xcore.xcdacn.x1.clksb                        3
+xcore.xcdacn.x1.net2               1.06959e-08
+xcore.xcdacn.x1.net1                         3
+xcore.xcdacn.x1.bottom_gate        1.20114e-08
+xcore.xcdacn.x1.net4               5.99166e-09
+xcore.xcdacn.x1.net3                         3
+vresp                                0.0182168
+vresn                                 0.015602
+xcore.xcmp.net1                       0.087748
+cmpck                                        0
+xcore.xcmp.xp                          2.99999
+xcore.xcmp.xn                          2.99999
+xcore.xcmp.ln                                3
+xcore.xcmp.lp                                3
+dcmpn                              9.67987e-09
+dcmpp                              9.35224e-09
+sampled_diff                        0.00261478
+input_diff                             1.28279
+cmpck_drv                                    0
+dctrlp7_drv                                  0
+dctrlp6_drv                                  0
+dctrlp5_drv                                  0
+dctrlp4_drv                                  0
+dctrlp3_drv                                  0
+dctrlp2_drv                                  0
+dctrlp1_drv                                  0
+dctrln7_drv                                  0
+dctrln6_drv                                  0
+dctrln5_drv                                  0
+dctrln4_drv                                  0
+dctrln3_drv                                  0
+dctrln2_drv                                  0
+dctrln1_drv                                  0
+dout7_drv                                    0
+dout6_drv                                    0
+dout5_drv                                    0
+dout4_drv                                    0
+dout3_drv                                    0
+dout2_drv                                    0
+dout1_drv                                    0
+dout0_drv                                    0
+eoc                                          0
+invalid0                                     0
+timeout0                                     0
+complete                                     0
+dout7_rx                                     0
+dout6_rx                                     0
+dout5_rx                                     0
+dout4_rx                                     0
+dout3_rx                                     0
+dout2_rx                                     0
+dout1_rx                                     0
+dout0_rx                                     0
+e_input_diff#branch               -1.28279e-10
+e_sample_diff#branch              -2.61478e-13
+e.xcore.e_cmp_noise_n#branch      -1.56018e-12
+e.xcore.e_cmp_noise_p#branch      -1.82171e-12
+vcmp_noise#branch                  1.83127e-13
+vclks_id#branch                              0
+vvinn_id#branch                   -4.26043e-10
+vvinp_id#branch                   -9.56852e-10
+vvrefn_id#branch                  -1.83177e-09
+vvrefp_id#branch                  -1.54352e-08
+vvdd#branch                       -1.61573e-08
+a_status#branch_1_0                          0
+a_status#branch_1_1                          0
+a_status#branch_1_2                          0
+a_status#branch_1_3                          0
+a_dout#branch_1_0                            0
+a_dout#branch_1_1                            0
+a_dout#branch_1_2                            0
+a_dout#branch_1_3                            0
+a_dout#branch_1_4                            0
+a_dout#branch_1_5                            0
+a_dout#branch_1_6                            0
+a_dout#branch_1_7                            0
+a_dctrln#branch_1_0                          0
+a_dctrln#branch_1_1                          0
+a_dctrln#branch_1_2                          0
+a_dctrln#branch_1_3                          0
+a_dctrln#branch_1_4                          0
+a_dctrln#branch_1_5                          0
+a_dctrln#branch_1_6                          0
+a_dctrlp#branch_1_0                          0
+a_dctrlp#branch_1_1                          0
+a_dctrlp#branch_1_2                          0
+a_dctrlp#branch_1_3                          0
+a_dctrlp#branch_1_4                          0
+a_dctrlp#branch_1_5                          0
+a_dctrlp#branch_1_6                          0
+a_cmpck#branch_1_0                           0
+
+
+Instance: abeh   Message: WARNING: output scheduled with impossible delay (-4.01e-12) at 5.01e-12/0.
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.005096474919563e-07
+Cosim  2.00539e-07
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 7.005266475327071e-07
+Cosim  7.00556e-07
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.200531001961346e-06
+Cosim  1.200539e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.700525794555011e-06
+Cosim  2.700555e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 3.200509794524779e-06
+Cosim  3.200539e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 4.700515870728738e-06
+Cosim  4.700539e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 5.200529647537758e-06
+Cosim  5.200559e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 5.700522651905284e-06
+Cosim  5.700539e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 7.2005057945375e-06
+Cosim  7.200535e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 7.700504794540994e-06
+Cosim  7.700534e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 9.200523453238293e-06
+Cosim  9.200538999999999e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 9.700529647534371e-06
+Cosim  9.700558999999999e-06
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.0200514162655e-05
+Cosim  1.0200538e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.17005107945241e-05
+Cosim  1.170054e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.220052579455269e-05
+Cosim  1.2200555e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.370053187648923e-05
+Cosim  1.3700539e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.420052664752946e-05
+Cosim  1.4200556e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.470050964749139e-05
+Cosim  1.4700539e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.620051088395936e-05
+Cosim  1.6200539e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.670052779456562e-05
+Cosim  1.6700557e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.720053486472141e-05
+Cosim  1.7200541e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.87005036475207e-05
+Cosim  1.8700533e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 1.920051064750078e-05
+Cosim  1.920054e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.07005175890009e-05
+Cosim  2.0700539e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.120052779457007e-05
+Cosim  2.1200557e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.170052643118879e-05
+Cosim  2.1700541e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.320050764751044e-05
+Cosim  2.3200537e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.370050664751383e-05
+Cosim  2.3700536e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.520052722955275e-05
+Cosim  2.5200541e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.570052779457046e-05
+Cosim  2.5700557e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.620051687018431e-05
+Cosim  2.6200539e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.770051064749884e-05
+Cosim  2.770054e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.820050364752367e-05
+Cosim  2.8200533e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 2.970053673999801e-05
+Cosim  2.9700542e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 3.020052779456198e-05
+Cosim  3.0200557e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 3.07005102555024e-05
+Cosim  3.0700539e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 3.220050964749066e-05
+Cosim  3.2200539e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 3.270052664753181e-05
+Cosim  3.2700556e-05
+
+Instance: abeh   Message: XSPICE time is behind vtime:
+XSPICE 3.320053100276682e-05
+Cosim  3.3200539e-05
+
+No. of Data Rows : 725368
+f000_d7             =  3.00000e+00
+f000_d6             =  3.00000e+00
+f000_d5             =  0.00000e+00
+f000_d4             =  3.00000e+00
+f000_d3             =  3.00000e+00
+f000_d2             =  3.00000e+00
+f000_d1             =  3.00000e+00
+f000_d0             =  3.00000e+00
+f000_complete       =  3.00000e+00
+f000_invalid        =  0.00000e+00
+f000_timeout        =  0.00000e+00
+f000_sampled        =  1.28095e+00
+f000_input          =  1.28279e+00
+f000_tcomplete      =  3.75491e-07
+f001_d7             =  3.00000e+00
+f001_d6             =  3.00000e+00
+f001_d5             =  3.00000e+00
+f001_d4             =  4.88406e-297
+f001_d3             =  3.00000e+00
+f001_d2             =  3.00000e+00
+f001_d1             =  3.00000e+00
+f001_d0             =  3.00000e+00
+f001_complete       =  3.00000e+00
+f001_invalid        =  0.00000e+00
+f001_timeout        =  0.00000e+00
+f001_sampled        =  1.48425e+00
+f001_input          =  1.48491e+00
+f001_tcomplete      =  8.75509e-07
+f002_d7             =  3.00000e+00
+f002_d6             =  3.00000e+00
+f002_d5             =  4.41030e-297
+f002_d4             =  4.08882e-312
+f002_d3             =  3.00000e+00
+f002_d2             =  4.41030e-297
+f002_d1             =  3.00000e+00
+f002_d0             =  3.00000e+00
+f002_complete       =  3.00000e+00
+f002_invalid        =  0.00000e+00
+f002_timeout        =  0.00000e+00
+f002_sampled        =  1.01205e+00
+f002_input          =  1.01275e+00
+f002_tcomplete      =  1.37549e-06
+f003_d7             =  3.00000e+00
+f003_d6             =  4.47210e-297
+f003_d5             =  4.08882e-312
+f003_d4             =  4.08882e-312
+f003_d3             =  4.47210e-297
+f003_d2             =  3.00000e+00
+f003_d1             =  4.47210e-297
+f003_d0             =  3.00000e+00
+f003_complete       =  3.00000e+00
+f003_invalid        =  0.00000e+00
+f003_timeout        =  0.00000e+00
+f003_sampled        =  7.79823e-02
+f003_input          =  8.09416e-02
+f003_tcomplete      =  1.87549e-06
+f004_d7             =  4.38491e-297
+f004_d6             =  4.08882e-312
+f004_d5             =  3.00000e+00
+f004_d4             =  3.00000e+00
+f004_d3             =  3.00000e+00
+f004_d2             =  3.00000e+00
+f004_d1             =  4.08882e-312
+f004_d0             =  4.38491e-297
+f004_complete       =  3.00000e+00
+f004_invalid        =  0.00000e+00
+f004_timeout        =  0.00000e+00
+f004_sampled        =  -8.86248e-01
+f004_input          =  -8.87475e-01
+f004_tcomplete      =  2.37549e-06
+f005_d7             =  4.08882e-312
+f005_d6             =  4.08882e-312
+f005_d5             =  4.82906e-297
+f005_d4             =  3.00000e+00
+f005_d3             =  4.82906e-297
+f005_d2             =  4.82906e-297
+f005_d1             =  4.08882e-312
+f005_d0             =  3.00000e+00
+f005_complete       =  3.00000e+00
+f005_invalid        =  0.00000e+00
+f005_timeout        =  0.00000e+00
+f005_sampled        =  -1.45271e+00
+f005_input          =  -1.45323e+00
+f005_tcomplete      =  2.87551e-06
+f006_d7             =  4.08882e-312
+f006_d6             =  4.08882e-312
+f006_d5             =  4.08882e-312
+f006_d4             =  3.00000e+00
+f006_d3             =  3.00000e+00
+f006_d2             =  4.08882e-312
+f006_d1             =  4.08882e-312
+f006_d0             =  4.41844e-297
+f006_complete       =  3.00000e+00
+f006_invalid        =  0.00000e+00
+f006_timeout        =  0.00000e+00
+f006_sampled        =  -1.36251e+00
+f006_input          =  -1.35915e+00
+f006_tcomplete      =  3.37549e-06
+f007_d7             =  4.08882e-312
+f007_d6             =  3.00000e+00
+f007_d5             =  4.08882e-312
+f007_d4             =  4.44957e-297
+f007_d3             =  3.00000e+00
+f007_d2             =  3.00000e+00
+f007_d1             =  4.08882e-312
+f007_d0             =  3.00000e+00
+f007_complete       =  3.00000e+00
+f007_invalid        =  0.00000e+00
+f007_timeout        =  0.00000e+00
+f007_sampled        =  -6.47683e-01
+f007_input          =  -6.47902e-01
+f007_tcomplete      =  3.87549e-06
+f008_d7             =  3.00000e+00
+f008_d6             =  4.46598e-297
+f008_d5             =  4.08882e-312
+f008_d4             =  3.00000e+00
+f008_d3             =  3.00000e+00
+f008_d2             =  4.46598e-297
+f008_d1             =  3.00000e+00
+f008_d0             =  4.46598e-297
+f008_complete       =  3.00000e+00
+f008_invalid        =  0.00000e+00
+f008_timeout        =  0.00000e+00
+f008_sampled        =  3.59119e-01
+f008_input          =  3.57364e-01
+f008_tcomplete      =  4.37550e-06
+f009_d7             =  3.00000e+00
+f009_d6             =  3.00000e+00
+f009_d5             =  4.08882e-312
+f009_d4             =  3.00000e+00
+f009_d3             =  3.00000e+00
+f009_d2             =  4.08882e-312
+f009_d1             =  4.36641e-297
+f009_d0             =  3.00000e+00
+f009_complete       =  3.00000e+00
+f009_invalid        =  0.00000e+00
+f009_timeout        =  0.00000e+00
+f009_sampled        =  1.20260e+00
+f009_input          =  1.20044e+00
+f009_tcomplete      =  4.87549e-06
+f010_d7             =  3.00000e+00
+f010_d6             =  3.00000e+00
+f010_d5             =  3.00000e+00
+f010_d4             =  4.94353e-297
+f010_d3             =  3.00000e+00
+f010_d2             =  3.00000e+00
+f010_d1             =  3.00000e+00
+f010_d0             =  3.00000e+00
+f010_complete       =  3.00000e+00
+f010_invalid        =  0.00000e+00
+f010_timeout        =  0.00000e+00
+f010_sampled        =  1.49789e+00
+f010_input          =  1.49848e+00
+f010_tcomplete      =  5.37551e-06
+f011_d7             =  3.00000e+00
+f011_d6             =  3.00000e+00
+f011_d5             =  4.38454e-297
+f011_d4             =  3.00000e+00
+f011_d3             =  4.38454e-297
+f011_d2             =  4.38454e-297
+f011_d1             =  3.00000e+00
+f011_d0             =  3.00000e+00
+f011_complete       =  3.00000e+00
+f011_invalid        =  0.00000e+00
+f011_timeout        =  0.00000e+00
+f011_sampled        =  1.11755e+00
+f011_input          =  1.11632e+00
+f011_tcomplete      =  5.87549e-06
+f012_d7             =  3.00000e+00
+f012_d6             =  4.46382e-297
+f012_d5             =  4.08882e-312
+f012_d4             =  3.00000e+00
+f012_d3             =  4.08882e-312
+f012_d2             =  4.08882e-312
+f012_d1             =  4.46382e-297
+f012_d0             =  4.46382e-297
+f012_complete       =  3.00000e+00
+f012_invalid        =  0.00000e+00
+f012_timeout        =  0.00000e+00
+f012_sampled        =  2.29335e-01
+f012_input          =  2.27290e-01
+f012_tcomplete      =  6.37549e-06
+f013_d7             =  4.44271e-297
+f013_d6             =  3.00000e+00
+f013_d5             =  4.08882e-312
+f013_d4             =  4.44271e-297
+f013_d3             =  4.08882e-312
+f013_d2             =  3.00000e+00
+f013_d1             =  4.08882e-312
+f013_d0             =  3.00000e+00
+f013_complete       =  3.00000e+00
+f013_invalid        =  0.00000e+00
+f013_timeout        =  0.00000e+00
+f013_sampled        =  -7.66789e-01
+f013_input          =  -7.64722e-01
+f013_tcomplete      =  6.87549e-06
+f014_d7             =  4.08882e-312
+f014_d6             =  4.22549e-297
+f014_d5             =  4.08882e-312
+f014_d4             =  3.00000e+00
+f014_d3             =  4.08882e-312
+f014_d2             =  3.00000e+00
+f014_d1             =  4.08882e-312
+f014_d0             =  4.22549e-297
+f014_complete       =  3.00000e+00
+f014_invalid        =  0.00000e+00
+f014_timeout        =  0.00000e+00
+f014_sampled        =  -1.41166e+00
+f014_input          =  -1.40983e+00
+f014_tcomplete      =  7.37549e-06
+f015_d7             =  4.08882e-312
+f015_d6             =  4.08882e-312
+f015_d5             =  4.08882e-312
+f015_d4             =  3.00000e+00
+f015_d3             =  4.08882e-312
+f015_d2             =  3.00000e+00
+f015_d1             =  4.08882e-312
+f015_d0             =  4.08882e-312
+f015_complete       =  3.00000e+00
+f015_invalid        =  0.00000e+00
+f015_timeout        =  0.00000e+00
+f015_sampled        =  -1.41633e+00
+f015_input          =  -1.41464e+00
+f015_tcomplete      =  7.87549e-06
+f016_d7             =  4.08882e-312
+f016_d6             =  3.00000e+00
+f016_d5             =  4.08882e-312
+f016_d4             =  4.40787e-297
+f016_d3             =  4.08882e-312
+f016_d2             =  3.00000e+00
+f016_d1             =  4.08882e-312
+f016_d0             =  4.08882e-312
+f016_complete       =  3.00000e+00
+f016_invalid        =  0.00000e+00
+f016_timeout        =  0.00000e+00
+f016_sampled        =  -7.77862e-01
+f016_input          =  -7.77545e-01
+f016_tcomplete      =  8.37549e-06
+f017_d7             =  3.00000e+00
+f017_d6             =  4.41358e-297
+f017_d5             =  4.08882e-312
+f017_d4             =  4.08882e-312
+f017_d3             =  3.00000e+00
+f017_d2             =  3.00000e+00
+f017_d1             =  3.00000e+00
+f017_d0             =  3.00000e+00
+f017_complete       =  3.00000e+00
+f017_invalid        =  0.00000e+00
+f017_timeout        =  0.00000e+00
+f017_sampled        =  2.15334e-01
+f017_input          =  2.12930e-01
+f017_tcomplete      =  8.87549e-06
+f018_d7             =  3.00000e+00
+f018_d6             =  3.00000e+00
+f018_d5             =  4.08882e-312
+f018_d4             =  3.00000e+00
+f018_d3             =  4.28294e-297
+f018_d2             =  4.28294e-297
+f018_d1             =  3.00000e+00
+f018_d0             =  4.28294e-297
+f018_complete       =  3.00000e+00
+f018_invalid        =  0.00000e+00
+f018_timeout        =  0.00000e+00
+f018_sampled        =  1.10597e+00
+f018_input          =  1.10640e+00
+f018_tcomplete      =  9.37549e-06
+f019_d7             =  3.00000e+00
+f019_d6             =  3.00000e+00
+f019_d5             =  3.00000e+00
+f019_d4             =  4.91668e-297
+f019_d3             =  3.00000e+00
+f019_d2             =  3.00000e+00
+f019_d1             =  3.00000e+00
+f019_d0             =  3.00000e+00
+f019_complete       =  3.00000e+00
+f019_invalid        =  0.00000e+00
+f019_timeout        =  0.00000e+00
+f019_sampled        =  1.49853e+00
+f019_input          =  1.49783e+00
+f019_tcomplete      =  9.87551e-06
+f020_d7             =  3.00000e+00
+f020_d6             =  3.00000e+00
+f020_d5             =  4.28138e-297
+f020_d4             =  3.00000e+00
+f020_d3             =  3.00000e+00
+f020_d2             =  4.28138e-297
+f020_d1             =  3.00000e+00
+f020_d0             =  4.28138e-297
+f020_complete       =  3.00000e+00
+f020_invalid        =  0.00000e+00
+f020_timeout        =  0.00000e+00
+f020_sampled        =  1.21083e+00
+f020_input          =  1.20921e+00
+f020_tcomplete      =  1.03755e-05
+f021_d7             =  3.00000e+00
+f021_d6             =  4.41901e-297
+f021_d5             =  4.08882e-312
+f021_d4             =  3.00000e+00
+f021_d3             =  3.00000e+00
+f021_d2             =  4.08882e-312
+f021_d1             =  3.00000e+00
+f021_d0             =  3.00000e+00
+f021_complete       =  3.00000e+00
+f021_invalid        =  0.00000e+00
+f021_timeout        =  0.00000e+00
+f021_sampled        =  3.71612e-01
+f021_input          =  3.71676e-01
+f021_tcomplete      =  1.08755e-05
+f022_d7             =  4.44283e-297
+f022_d6             =  3.00000e+00
+f022_d5             =  4.08882e-312
+f022_d4             =  4.44283e-297
+f022_d3             =  3.00000e+00
+f022_d2             =  3.00000e+00
+f022_d1             =  3.00000e+00
+f022_d0             =  3.00000e+00
+f022_complete       =  3.00000e+00
+f022_invalid        =  0.00000e+00
+f022_timeout        =  0.00000e+00
+f022_sampled        =  -6.34641e-01
+f022_input          =  -6.34644e-01
+f022_tcomplete      =  1.13755e-05
+f023_d7             =  4.08882e-312
+f023_d6             =  4.41327e-297
+f023_d5             =  4.08882e-312
+f023_d4             =  3.00000e+00
+f023_d3             =  3.00000e+00
+f023_d2             =  4.41327e-297
+f023_d1             =  4.41327e-297
+f023_d0             =  3.00000e+00
+f023_complete       =  3.00000e+00
+f023_invalid        =  0.00000e+00
+f023_timeout        =  0.00000e+00
+f023_sampled        =  -1.35230e+00
+f023_input          =  -1.35288e+00
+f023_tcomplete      =  1.18755e-05
+f024_d7             =  4.08882e-312
+f024_d6             =  4.08882e-312
+f024_d5             =  4.08882e-312
+f024_d4             =  3.00000e+00
+f024_d3             =  4.88426e-297
+f024_d2             =  4.08882e-312
+f024_d1             =  4.08882e-312
+f024_d0             =  3.00000e+00
+f024_complete       =  3.00000e+00
+f024_invalid        =  0.00000e+00
+f024_timeout        =  0.00000e+00
+f024_sampled        =  -1.45718e+00
+f024_input          =  -1.45674e+00
+f024_tcomplete      =  1.23755e-05
+f025_d7             =  4.08882e-312
+f025_d6             =  4.08882e-312
+f025_d5             =  3.00000e+00
+f025_d4             =  3.00000e+00
+f025_d3             =  3.00000e+00
+f025_d2             =  4.08882e-312
+f025_d1             =  3.00000e+00
+f025_d0             =  3.00000e+00
+f025_complete       =  3.00000e+00
+f025_invalid        =  0.00000e+00
+f025_timeout        =  0.00000e+00
+f025_sampled        =  -9.02878e-01
+f025_input          =  -8.99432e-01
+f025_tcomplete      =  1.28755e-05
+f026_d7             =  3.00000e+00
+f026_d6             =  4.08882e-312
+f026_d5             =  4.38295e-297
+f026_d4             =  4.38295e-297
+f026_d3             =  4.38295e-297
+f026_d2             =  3.00000e+00
+f026_d1             =  4.38295e-297
+f026_d0             =  4.38295e-297
+f026_complete       =  3.00000e+00
+f026_invalid        =  0.00000e+00
+f026_timeout        =  0.00000e+00
+f026_sampled        =  6.70105e-02
+f026_input          =  6.63375e-02
+f026_tcomplete      =  1.33755e-05
+f027_d7             =  3.00000e+00
+f027_d6             =  3.00000e+00
+f027_d5             =  4.08882e-312
+f027_d4             =  4.08882e-312
+f027_d3             =  3.00000e+00
+f027_d2             =  4.34358e-297
+f027_d1             =  3.00000e+00
+f027_d0             =  4.08882e-312
+f027_complete       =  3.00000e+00
+f027_invalid        =  0.00000e+00
+f027_timeout        =  0.00000e+00
+f027_sampled        =  1.00184e+00
+f027_input          =  1.00193e+00
+f027_tcomplete      =  1.38755e-05
+f028_d7             =  3.00000e+00
+f028_d6             =  3.00000e+00
+f028_d5             =  3.00000e+00
+f028_d4             =  4.08882e-312
+f028_d3             =  3.00000e+00
+f028_d2             =  3.00000e+00
+f028_d1             =  3.00000e+00
+f028_d0             =  4.08882e-312
+f028_complete       =  3.00000e+00
+f028_invalid        =  0.00000e+00
+f028_timeout        =  0.00000e+00
+f028_sampled        =  1.48270e+00
+f028_input          =  1.48262e+00
+f028_tcomplete      =  1.43755e-05
+f029_d7             =  3.00000e+00
+f029_d6             =  3.00000e+00
+f029_d5             =  3.00000e+00
+f029_d4             =  4.08882e-312
+f029_d3             =  4.37899e-297
+f029_d2             =  4.37899e-297
+f029_d1             =  4.37899e-297
+f029_d0             =  4.08882e-312
+f029_complete       =  3.00000e+00
+f029_invalid        =  0.00000e+00
+f029_timeout        =  0.00000e+00
+f029_sampled        =  1.28902e+00
+f029_input          =  1.29044e+00
+f029_tcomplete      =  1.48755e-05
+f030_d7             =  3.00000e+00
+f030_d6             =  4.29498e-297
+f030_d5             =  3.00000e+00
+f030_d4             =  4.08882e-312
+f030_d3             =  4.08882e-312
+f030_d2             =  3.00000e+00
+f030_d1             =  4.08882e-312
+f030_d0             =  3.00000e+00
+f030_complete       =  3.00000e+00
+f030_invalid        =  0.00000e+00
+f030_timeout        =  0.00000e+00
+f030_sampled        =  5.11625e-01
+f030_input          =  5.12157e-01
+f030_tcomplete      =  1.53755e-05
+f031_d7             =  4.41365e-297
+f031_d6             =  3.00000e+00
+f031_d5             =  4.41365e-297
+f031_d4             =  3.00000e+00
+f031_d3             =  3.00000e+00
+f031_d2             =  4.41365e-297
+f031_d1             =  4.08882e-312
+f031_d0             =  3.00000e+00
+f031_complete       =  3.00000e+00
+f031_invalid        =  0.00000e+00
+f031_timeout        =  0.00000e+00
+f031_sampled        =  -4.99010e-01
+f031_input          =  -4.98466e-01
+f031_tcomplete      =  1.58755e-05
+f032_d7             =  4.08882e-312
+f032_d6             =  4.35305e-297
+f032_d5             =  4.08882e-312
+f032_d4             =  3.00000e+00
+f032_d3             =  3.00000e+00
+f032_d2             =  3.00000e+00
+f032_d1             =  3.00000e+00
+f032_d0             =  4.35305e-297
+f032_complete       =  3.00000e+00
+f032_invalid        =  0.00000e+00
+f032_timeout        =  0.00000e+00
+f032_sampled        =  -1.28476e+00
+f032_input          =  -1.28268e+00
+f032_tcomplete      =  1.63755e-05
+f033_d7             =  4.08882e-312
+f033_d6             =  4.08882e-312
+f033_d5             =  4.08882e-312
+f033_d4             =  4.91086e-297
+f033_d3             =  3.00000e+00
+f033_d2             =  3.00000e+00
+f033_d1             =  3.00000e+00
+f033_d0             =  3.00000e+00
+f033_complete       =  3.00000e+00
+f033_invalid        =  0.00000e+00
+f033_timeout        =  0.00000e+00
+f033_sampled        =  -1.48335e+00
+f033_input          =  -1.48477e+00
+f033_tcomplete      =  1.68755e-05
+f034_d7             =  4.08882e-312
+f034_d6             =  4.08882e-312
+f034_d5             =  3.00000e+00
+f034_d4             =  3.00000e+00
+f034_d3             =  4.41145e-297
+f034_d2             =  4.41145e-297
+f034_d1             =  3.00000e+00
+f034_d0             =  4.41145e-297
+f034_complete       =  3.00000e+00
+f034_invalid        =  0.00000e+00
+f034_timeout        =  0.00000e+00
+f034_sampled        =  -1.01373e+00
+f034_input          =  -1.01274e+00
+f034_tcomplete      =  1.73755e-05
+f035_d7             =  4.08882e-312
+f035_d6             =  3.00000e+00
+f035_d5             =  3.00000e+00
+f035_d4             =  3.00000e+00
+f035_d3             =  3.00000e+00
+f035_d2             =  4.08882e-312
+f035_d1             =  4.45630e-297
+f035_d0             =  4.08882e-312
+f035_complete       =  3.00000e+00
+f035_invalid        =  0.00000e+00
+f035_timeout        =  0.00000e+00
+f035_sampled        =  -7.98017e-02
+f035_input          =  -8.10056e-02
+f035_tcomplete      =  1.78755e-05
+f036_d7             =  3.00000e+00
+f036_d6             =  3.00000e+00
+f036_d5             =  4.42572e-297
+f036_d4             =  4.42572e-297
+f036_d3             =  4.42572e-297
+f036_d2             =  4.08882e-312
+f036_d1             =  4.08882e-312
+f036_d0             =  3.00000e+00
+f036_complete       =  3.00000e+00
+f036_invalid        =  0.00000e+00
+f036_timeout        =  0.00000e+00
+f036_sampled        =  8.86962e-01
+f036_input          =  8.87725e-01
+f036_tcomplete      =  1.83755e-05
+f037_d7             =  3.00000e+00
+f037_d6             =  3.00000e+00
+f037_d5             =  3.00000e+00
+f037_d4             =  4.08882e-312
+f037_d3             =  3.00000e+00
+f037_d2             =  3.00000e+00
+f037_d1             =  4.08882e-312
+f037_d0             =  4.20297e-297
+f037_complete       =  3.00000e+00
+f037_invalid        =  0.00000e+00
+f037_timeout        =  0.00000e+00
+f037_sampled        =  1.45581e+00
+f037_input          =  1.45318e+00
+f037_tcomplete      =  1.88755e-05
+f038_d7             =  3.00000e+00
+f038_d6             =  3.00000e+00
+f038_d5             =  3.00000e+00
+f038_d4             =  4.08882e-312
+f038_d3             =  4.39406e-297
+f038_d2             =  3.00000e+00
+f038_d1             =  4.08882e-312
+f038_d0             =  3.00000e+00
+f038_complete       =  3.00000e+00
+f038_invalid        =  0.00000e+00
+f038_timeout        =  0.00000e+00
+f038_sampled        =  1.36004e+00
+f038_input          =  1.35910e+00
+f038_tcomplete      =  1.93755e-05
+f039_d7             =  3.00000e+00
+f039_d6             =  4.39707e-297
+f039_d5             =  3.00000e+00
+f039_d4             =  4.08882e-312
+f039_d3             =  3.00000e+00
+f039_d2             =  3.00000e+00
+f039_d1             =  3.00000e+00
+f039_d0             =  3.00000e+00
+f039_complete       =  3.00000e+00
+f039_invalid        =  0.00000e+00
+f039_timeout        =  0.00000e+00
+f039_sampled        =  6.47855e-01
+f039_input          =  6.48031e-01
+f039_tcomplete      =  1.98755e-05
+f040_d7             =  4.40635e-297
+f040_d6             =  3.00000e+00
+f040_d5             =  3.00000e+00
+f040_d4             =  4.08882e-312
+f040_d3             =  4.40635e-297
+f040_d2             =  3.00000e+00
+f040_d1             =  4.40635e-297
+f040_d0             =  4.40635e-297
+f040_complete       =  3.00000e+00
+f040_invalid        =  0.00000e+00
+f040_timeout        =  0.00000e+00
+f040_sampled        =  -3.55674e-01
+f040_input          =  -3.57237e-01
+f040_tcomplete      =  2.03755e-05
+f041_d7             =  4.08882e-312
+f041_d6             =  4.37500e-297
+f041_d5             =  3.00000e+00
+f041_d4             =  4.08882e-312
+f041_d3             =  4.08882e-312
+f041_d2             =  3.00000e+00
+f041_d1             =  4.08882e-312
+f041_d0             =  4.08882e-312
+f041_complete       =  3.00000e+00
+f041_invalid        =  0.00000e+00
+f041_timeout        =  0.00000e+00
+f041_sampled        =  -1.20110e+00
+f041_input          =  -1.20034e+00
+f041_tcomplete      =  2.08755e-05
+f042_d7             =  4.08882e-312
+f042_d6             =  4.08882e-312
+f042_d5             =  4.86185e-297
+f042_d4             =  4.08882e-312
+f042_d3             =  3.00000e+00
+f042_d2             =  3.00000e+00
+f042_d1             =  4.08882e-312
+f042_d0             =  3.00000e+00
+f042_complete       =  3.00000e+00
+f042_invalid        =  0.00000e+00
+f042_timeout        =  0.00000e+00
+f042_sampled        =  -1.49834e+00
+f042_input          =  -1.49849e+00
+f042_tcomplete      =  2.13755e-05
+f043_d7             =  4.08882e-312
+f043_d6             =  4.08882e-312
+f043_d5             =  3.00000e+00
+f043_d4             =  4.08882e-312
+f043_d3             =  3.00000e+00
+f043_d2             =  4.40886e-297
+f043_d1             =  3.00000e+00
+f043_d0             =  4.40886e-297
+f043_complete       =  3.00000e+00
+f043_invalid        =  0.00000e+00
+f043_timeout        =  0.00000e+00
+f043_sampled        =  -1.11573e+00
+f043_input          =  -1.11630e+00
+f043_tcomplete      =  2.18755e-05
+f044_d7             =  4.08882e-312
+f044_d6             =  3.00000e+00
+f044_d5             =  3.00000e+00
+f044_d4             =  4.08882e-312
+f044_d3             =  3.00000e+00
+f044_d2             =  3.00000e+00
+f044_d1             =  3.00000e+00
+f044_d0             =  4.08882e-312
+f044_complete       =  3.00000e+00
+f044_invalid        =  0.00000e+00
+f044_timeout        =  0.00000e+00
+f044_sampled        =  -2.27836e-01
+f044_input          =  -2.27268e-01
+f044_tcomplete      =  2.23755e-05
+f045_d7             =  3.00000e+00
+f045_d6             =  4.34900e-297
+f045_d5             =  3.00000e+00
+f045_d4             =  3.00000e+00
+f045_d3             =  3.00000e+00
+f045_d2             =  4.34900e-297
+f045_d1             =  4.34900e-297
+f045_d0             =  4.08882e-312
+f045_complete       =  3.00000e+00
+f045_invalid        =  0.00000e+00
+f045_timeout        =  0.00000e+00
+f045_sampled        =  7.65365e-01
+f045_input          =  7.64920e-01
+f045_tcomplete      =  2.28755e-05
+f046_d7             =  3.00000e+00
+f046_d6             =  3.00000e+00
+f046_d5             =  3.00000e+00
+f046_d4             =  4.32618e-297
+f046_d3             =  3.00000e+00
+f046_d2             =  4.08882e-312
+f046_d1             =  4.08882e-312
+f046_d0             =  3.00000e+00
+f046_complete       =  3.00000e+00
+f046_invalid        =  0.00000e+00
+f046_timeout        =  0.00000e+00
+f046_sampled        =  1.40813e+00
+f046_input          =  1.40985e+00
+f046_tcomplete      =  2.33755e-05
+f047_d7             =  3.00000e+00
+f047_d6             =  3.00000e+00
+f047_d5             =  3.00000e+00
+f047_d4             =  4.08882e-312
+f047_d3             =  3.00000e+00
+f047_d2             =  4.08882e-312
+f047_d1             =  4.08882e-312
+f047_d0             =  3.00000e+00
+f047_complete       =  3.00000e+00
+f047_invalid        =  0.00000e+00
+f047_timeout        =  0.00000e+00
+f047_sampled        =  1.41549e+00
+f047_input          =  1.41478e+00
+f047_tcomplete      =  2.38755e-05
+f048_d7             =  3.00000e+00
+f048_d6             =  4.39317e-297
+f048_d5             =  3.00000e+00
+f048_d4             =  3.00000e+00
+f048_d3             =  3.00000e+00
+f048_d2             =  4.08882e-312
+f048_d1             =  4.08882e-312
+f048_d0             =  3.00000e+00
+f048_complete       =  3.00000e+00
+f048_invalid        =  0.00000e+00
+f048_timeout        =  0.00000e+00
+f048_sampled        =  7.75334e-01
+f048_input          =  7.77486e-01
+f048_tcomplete      =  2.43755e-05
+f049_d7             =  4.42127e-297
+f049_d6             =  3.00000e+00
+f049_d5             =  3.00000e+00
+f049_d4             =  4.42127e-297
+f049_d3             =  3.00000e+00
+f049_d2             =  3.00000e+00
+f049_d1             =  3.00000e+00
+f049_d0             =  4.42127e-297
+f049_complete       =  3.00000e+00
+f049_invalid        =  0.00000e+00
+f049_timeout        =  0.00000e+00
+f049_sampled        =  -2.12168e-01
+f049_input          =  -2.12794e-01
+f049_tcomplete      =  2.48755e-05
+f050_d7             =  4.08882e-312
+f050_d6             =  4.42134e-297
+f050_d5             =  3.00000e+00
+f050_d4             =  4.08882e-312
+f050_d3             =  3.00000e+00
+f050_d2             =  4.42134e-297
+f050_d1             =  3.00000e+00
+f050_d0             =  3.00000e+00
+f050_complete       =  3.00000e+00
+f050_invalid        =  0.00000e+00
+f050_timeout        =  0.00000e+00
+f050_sampled        =  -1.10697e+00
+f050_input          =  -1.10652e+00
+f050_tcomplete      =  2.53755e-05
+f051_d7             =  4.08882e-312
+f051_d6             =  4.08882e-312
+f051_d5             =  4.84863e-297
+f051_d4             =  4.08882e-312
+f051_d3             =  3.00000e+00
+f051_d2             =  3.00000e+00
+f051_d1             =  3.00000e+00
+f051_d0             =  4.84863e-297
+f051_complete       =  3.00000e+00
+f051_invalid        =  0.00000e+00
+f051_timeout        =  0.00000e+00
+f051_sampled        =  -1.49798e+00
+f051_input          =  -1.49777e+00
+f051_tcomplete      =  2.58755e-05
+f052_d7             =  4.08882e-312
+f052_d6             =  4.08882e-312
+f052_d5             =  3.00000e+00
+f052_d4             =  4.08882e-312
+f052_d3             =  4.36543e-297
+f052_d2             =  4.36543e-297
+f052_d1             =  3.00000e+00
+f052_d0             =  3.00000e+00
+f052_complete       =  3.00000e+00
+f052_invalid        =  0.00000e+00
+f052_timeout        =  0.00000e+00
+f052_sampled        =  -1.20914e+00
+f052_input          =  -1.20916e+00
+f052_tcomplete      =  2.63755e-05
+f053_d7             =  4.08882e-312
+f053_d6             =  3.00000e+00
+f053_d5             =  3.00000e+00
+f053_d4             =  4.08882e-312
+f053_d3             =  4.08882e-312
+f053_d2             =  4.08882e-312
+f053_d1             =  3.00000e+00
+f053_d0             =  4.43804e-297
+f053_complete       =  3.00000e+00
+f053_invalid        =  0.00000e+00
+f053_timeout        =  0.00000e+00
+f053_sampled        =  -3.71895e-01
+f053_input          =  -3.71531e-01
+f053_tcomplete      =  2.68755e-05
+f054_d7             =  3.00000e+00
+f054_d6             =  4.44264e-297
+f054_d5             =  3.00000e+00
+f054_d4             =  4.08882e-312
+f054_d3             =  3.00000e+00
+f054_d2             =  3.00000e+00
+f054_d1             =  3.00000e+00
+f054_d0             =  3.00000e+00
+f054_complete       =  3.00000e+00
+f054_invalid        =  0.00000e+00
+f054_timeout        =  0.00000e+00
+f054_sampled        =  6.34476e-01
+f054_input          =  6.34707e-01
+f054_tcomplete      =  2.73755e-05
+f055_d7             =  3.00000e+00
+f055_d6             =  3.00000e+00
+f055_d5             =  3.00000e+00
+f055_d4             =  4.08882e-312
+f055_d3             =  4.41359e-297
+f055_d2             =  3.00000e+00
+f055_d1             =  4.41359e-297
+f055_d0             =  3.00000e+00
+f055_complete       =  3.00000e+00
+f055_invalid        =  0.00000e+00
+f055_timeout        =  0.00000e+00
+f055_sampled        =  1.35619e+00
+f055_input          =  1.35284e+00
+f055_tcomplete      =  2.78755e-05
+f056_d7             =  3.00000e+00
+f056_d6             =  3.00000e+00
+f056_d5             =  3.00000e+00
+f056_d4             =  4.08882e-312
+f056_d3             =  3.00000e+00
+f056_d2             =  3.00000e+00
+f056_d1             =  4.08882e-312
+f056_d0             =  4.19353e-297
+f056_complete       =  3.00000e+00
+f056_invalid        =  0.00000e+00
+f056_timeout        =  0.00000e+00
+f056_sampled        =  1.45388e+00
+f056_input          =  1.45686e+00
+f056_tcomplete      =  2.83755e-05
+f057_d7             =  3.00000e+00
+f057_d6             =  3.00000e+00
+f057_d5             =  4.38839e-297
+f057_d4             =  4.08882e-312
+f057_d3             =  4.38839e-297
+f057_d2             =  4.38839e-297
+f057_d1             =  3.00000e+00
+f057_d0             =  4.08882e-312
+f057_complete       =  3.00000e+00
+f057_invalid        =  0.00000e+00
+f057_timeout        =  0.00000e+00
+f057_sampled        =  9.00303e-01
+f057_input          =  8.99471e-01
+f057_tcomplete      =  2.88755e-05
+f058_d7             =  4.42143e-297
+f058_d6             =  3.00000e+00
+f058_d5             =  3.00000e+00
+f058_d4             =  3.00000e+00
+f058_d3             =  3.00000e+00
+f058_d2             =  4.08882e-312
+f058_d1             =  4.42143e-297
+f058_d0             =  3.00000e+00
+f058_complete       =  3.00000e+00
+f058_invalid        =  0.00000e+00
+f058_timeout        =  0.00000e+00
+f058_sampled        =  -6.51300e-02
+f058_input          =  -6.63229e-02
+f058_tcomplete      =  2.93755e-05
+f059_d7             =  4.08882e-312
+f059_d6             =  4.47202e-297
+f059_d5             =  3.00000e+00
+f059_d4             =  3.00000e+00
+f059_d3             =  4.47202e-297
+f059_d2             =  4.08882e-312
+f059_d1             =  3.00000e+00
+f059_d0             =  3.00000e+00
+f059_complete       =  3.00000e+00
+f059_invalid        =  0.00000e+00
+f059_timeout        =  0.00000e+00
+f059_sampled        =  -1.00355e+00
+f059_input          =  -1.00201e+00
+f059_tcomplete      =  2.98755e-05
+f060_d7             =  4.08882e-312
+f060_d6             =  4.08882e-312
+f060_d5             =  5.02859e-297
+f060_d4             =  5.02859e-297
+f060_d3             =  3.00000e+00
+f060_d2             =  3.00000e+00
+f060_d1             =  3.00000e+00
+f060_d0             =  3.00000e+00
+f060_complete       =  3.00000e+00
+f060_invalid        =  0.00000e+00
+f060_timeout        =  0.00000e+00
+f060_sampled        =  -1.48476e+00
+f060_input          =  -1.48280e+00
+f060_tcomplete      =  3.03755e-05
+f061_d7             =  4.08882e-312
+f061_d6             =  4.08882e-312
+f061_d5             =  4.08882e-312
+f061_d4             =  3.00000e+00
+f061_d3             =  3.00000e+00
+f061_d2             =  3.00000e+00
+f061_d1             =  4.36602e-297
+f061_d0             =  3.00000e+00
+f061_complete       =  3.00000e+00
+f061_invalid        =  0.00000e+00
+f061_timeout        =  0.00000e+00
+f061_sampled        =  -1.29153e+00
+f061_input          =  -1.29039e+00
+f061_tcomplete      =  3.08755e-05
+f062_d7             =  4.08882e-312
+f062_d6             =  3.00000e+00
+f062_d5             =  4.08882e-312
+f062_d4             =  3.00000e+00
+f062_d3             =  3.00000e+00
+f062_d2             =  4.43974e-297
+f062_d1             =  4.08882e-312
+f062_d0             =  4.43974e-297
+f062_complete       =  3.00000e+00
+f062_invalid        =  0.00000e+00
+f062_timeout        =  0.00000e+00
+f062_sampled        =  -5.11874e-01
+f062_input          =  -5.12194e-01
+f062_tcomplete      =  3.13755e-05
+f063_d7             =  3.00000e+00
+f063_d6             =  4.22090e-297
+f063_d5             =  3.00000e+00
+f063_d4             =  4.22090e-297
+f063_d3             =  4.22090e-297
+f063_d2             =  3.00000e+00
+f063_d1             =  4.08882e-312
+f063_d0             =  4.08882e-312
+f063_complete       =  3.00000e+00
+f063_invalid        =  0.00000e+00
+f063_timeout        =  0.00000e+00
+f063_sampled        =  4.97645e-01
+f063_input          =  4.98401e-01
+f063_tcomplete      =  3.18755e-05
+f064_d7             =  3.00000e+00
+f064_d6             =  3.00000e+00
+f064_d5             =  4.36594e-297
+f064_d4             =  3.00000e+00
+f064_d3             =  3.00000e+00
+f064_d2             =  3.00000e+00
+f064_d1             =  3.00000e+00
+f064_d0             =  3.00000e+00
+f064_complete       =  3.00000e+00
+f064_invalid        =  0.00000e+00
+f064_timeout        =  0.00000e+00
+f064_sampled        =  1.28649e+00
+f064_input          =  1.28279e+00
+f064_tcomplete      =  3.23755e-05
+f065_d7             =  3.00000e+00
+f065_d6             =  3.00000e+00
+f065_d5             =  3.00000e+00
+f065_d4             =  4.88482e-297
+f065_d3             =  3.00000e+00
+f065_d2             =  3.00000e+00
+f065_d1             =  3.00000e+00
+f065_d0             =  3.00000e+00
+f065_complete       =  3.00000e+00
+f065_invalid        =  0.00000e+00
+f065_timeout        =  0.00000e+00
+f065_sampled        =  1.48565e+00
+f065_input          =  1.48482e+00
+f065_tcomplete      =  3.28755e-05
+f066_d7             =  3.00000e+00
+f066_d6             =  3.00000e+00
+f066_d5             =  4.39205e-297
+f066_d4             =  4.08882e-312
+f066_d3             =  3.00000e+00
+f066_d2             =  4.39205e-297
+f066_d1             =  3.00000e+00
+f066_d0             =  3.00000e+00
+f066_complete       =  3.00000e+00
+f066_invalid        =  0.00000e+00
+f066_timeout        =  0.00000e+00
+f066_sampled        =  1.01417e+00
+f066_input          =  1.01274e+00
+f066_tcomplete      =  3.33755e-05
+f067_d7             =  3.00000e+00
+f067_d6             =  4.44996e-297
+f067_d5             =  4.08882e-312
+f067_d4             =  4.08882e-312
+f067_d3             =  4.44996e-297
+f067_d2             =  3.00000e+00
+f067_d1             =  4.44996e-297
+f067_d0             =  3.00000e+00
+f067_complete       =  3.00000e+00
+f067_invalid        =  0.00000e+00
+f067_timeout        =  0.00000e+00
+f067_sampled        =  8.17444e-02
+f067_input          =  8.09155e-02
+f067_tcomplete      =  3.38755e-05
+p_f000_cmp7_p0      =  -6.77041e-06
+p_f000_cmp7_n0      =  -6.80039e-06
+p_f000_cmp7_p5      =  2.99999e+00
+p_f000_cmp7_n5      =  -3.41832e-06
+p_f000_cmp6_p0      =  -2.33680e-06
+p_f000_cmp6_n0      =  -1.91634e-06
+p_f000_cmp6_p5      =  2.99999e+00
+p_f000_cmp6_n5      =  -3.73935e-06
+p_f000_cmp5_p0      =  -6.63613e-06
+p_f000_cmp5_n0      =  -6.64739e-06
+p_f000_cmp5_p5      =  -3.29882e-06
+p_f000_cmp5_n5      =  2.99999e+00
+p_f000_cmp4_p0      =  -6.70164e-06
+p_f000_cmp4_n0      =  -6.70734e-06
+p_f000_cmp4_p5      =  2.99999e+00
+p_f000_cmp4_n5      =  -3.25298e-06
+p_f000_cmp3_p0      =  -2.64017e-06
+p_f000_cmp3_n0      =  -2.24512e-06
+p_f000_cmp3_p5      =  2.99999e+00
+p_f000_cmp3_n5      =  -3.65778e-06
+p_f000_cmp2_p0      =  -2.63392e-06
+p_f000_cmp2_n0      =  -2.24568e-06
+p_f000_cmp2_p5      =  2.99999e+00
+p_f000_cmp2_n5      =  -3.64775e-06
+p_f000_cmp1_p0      =  -6.68133e-06
+p_f000_cmp1_n0      =  -6.70179e-06
+p_f000_cmp1_p5      =  2.99999e+00
+p_f000_cmp1_n5      =  -3.22957e-06
+p_f000_cmp0_p0      =  -2.29925e-06
+p_f000_cmp0_n0      =  -1.90793e-06
+p_f000_cmp0_p5      =  2.99999e+00
+p_f000_cmp0_n5      =  -3.63935e-06
+p_f000_dctrl7_p     =  3.00001e+00
+p_f000_dctrl7_n     =  3.57405e-01
+p_f000_dctrl6_p     =  2.95926e+00
+p_f000_dctrl6_n     =  6.75999e-06
+p_f000_dctrl5_p     =  -1.47514e-06
+p_f000_dctrl5_n     =  2.99946e+00
+p_f000_dctrl4_p     =  3.00000e+00
+p_f000_dctrl4_n     =  -1.83170e-07
+p_f000_dctrl3_p     =  3.00000e+00
+p_f000_dctrl3_n     =  -4.63294e-08
+p_f000_dctrl2_p     =  3.00000e+00
+p_f000_dctrl2_n     =  -2.21164e-08
+p_f000_dctrl1_p     =  3.00000e+00
+p_f000_dctrl1_n     =  -1.13813e-08
+p_f000_do7_drv_470  =  3.00000e+00
+p_f000_do7_rx_470   =  3.00000e+00
+p_f000_do6_drv_470  =  3.00000e+00
+p_f000_do6_rx_470   =  3.00000e+00
+p_f000_do5_drv_470  =  0.00000e+00
+p_f000_do5_rx_470   =  0.00000e+00
+p_f000_do4_drv_470  =  3.00000e+00
+p_f000_do4_rx_470   =  3.00000e+00
+p_f000_do3_drv_470  =  3.00000e+00
+p_f000_do3_rx_470   =  3.00000e+00
+p_f000_do2_drv_470  =  3.00000e+00
+p_f000_do2_rx_470   =  3.00000e+00
+p_f000_do1_drv_470  =  3.00000e+00
+p_f000_do1_rx_470   =  3.00000e+00
+p_f000_do0_drv_470  =  3.00000e+00
+p_f000_do0_rx_470   =  3.00000e+00
+p_f000_do7_drv_480  =  3.00000e+00
+p_f000_do7_rx_480   =  3.00000e+00
+p_f000_do6_drv_480  =  3.00000e+00
+p_f000_do6_rx_480   =  3.00000e+00
+p_f000_do5_drv_480  =  0.00000e+00
+p_f000_do5_rx_480   =  0.00000e+00
+p_f000_do4_drv_480  =  3.00000e+00
+p_f000_do4_rx_480   =  3.00000e+00
+p_f000_do3_drv_480  =  3.00000e+00
+p_f000_do3_rx_480   =  3.00000e+00
+p_f000_do2_drv_480  =  3.00000e+00
+p_f000_do2_rx_480   =  3.00000e+00
+p_f000_do1_drv_480  =  3.00000e+00
+p_f000_do1_rx_480   =  3.00000e+00
+p_f000_do0_drv_480  =  3.00000e+00
+p_f000_do0_rx_480   =  3.00000e+00
+p_f001_cmp7_p0      =  -7.56758e-06
+p_f001_cmp7_n0      =  -7.57133e-06
+p_f001_cmp7_p5      =  2.99999e+00
+p_f001_cmp7_n5      =  -3.53466e-06
+p_f001_cmp6_p0      =  3.30711e-06
+p_f001_cmp6_n0      =  3.89954e-06
+p_f001_cmp6_p5      =  2.99999e+00
+p_f001_cmp6_n5      =  -3.84204e-06
+p_f001_cmp5_p0      =  -7.90500e-06
+p_f001_cmp5_n0      =  -7.91186e-06
+p_f001_cmp5_p5      =  2.99999e+00
+p_f001_cmp5_n5      =  -3.33574e-06
+p_f001_cmp4_p0      =  -7.68603e-06
+p_f001_cmp4_n0      =  -7.68907e-06
+p_f001_cmp4_p5      =  -3.35353e-06
+p_f001_cmp4_n5      =  2.99999e+00
+p_f001_cmp3_p0      =  2.98842e-06
+p_f001_cmp3_n0      =  3.54874e-06
+p_f001_cmp3_p5      =  2.99999e+00
+p_f001_cmp3_n5      =  -3.74145e-06
+p_f001_cmp2_p0      =  2.99247e-06
+p_f001_cmp2_n0      =  3.54411e-06
+p_f001_cmp2_p5      =  2.99999e+00
+p_f001_cmp2_n5      =  -3.73288e-06
+p_f001_cmp1_p0      =  -7.68297e-06
+p_f001_cmp1_n0      =  -7.68492e-06
+p_f001_cmp1_p5      =  2.99999e+00
+p_f001_cmp1_n5      =  -3.30020e-06
+p_f001_cmp0_p0      =  3.32545e-06
+p_f001_cmp0_n0      =  3.87852e-06
+p_f001_cmp0_p5      =  2.99999e+00
+p_f001_cmp0_n5      =  -3.71078e-06
+p_f001_dctrl7_p     =  3.00001e+00
+p_f001_dctrl7_n     =  3.58339e-01
+p_f001_dctrl6_p     =  2.95907e+00
+p_f001_dctrl6_n     =  7.28093e-06
+p_f001_dctrl5_p     =  2.99946e+00
+p_f001_dctrl5_n     =  -2.14361e-06
+p_f001_dctrl4_p     =  -2.49080e-07
+p_f001_dctrl4_n     =  3.00000e+00
+p_f001_dctrl3_p     =  3.00000e+00
+p_f001_dctrl3_n     =  -4.68843e-08
+p_f001_dctrl2_p     =  3.00000e+00
+p_f001_dctrl2_n     =  -2.20087e-08
+p_f001_dctrl1_p     =  3.00000e+00
+p_f001_dctrl1_n     =  -1.15200e-08
+p_f001_do7_drv_470  =  3.00000e+00
+p_f001_do7_rx_470   =  3.00000e+00
+p_f001_do6_drv_470  =  3.00000e+00
+p_f001_do6_rx_470   =  3.00000e+00
+p_f001_do5_drv_470  =  3.00000e+00
+p_f001_do5_rx_470   =  3.00000e+00
+p_f001_do4_drv_470  =  0.00000e+00
+p_f001_do4_rx_470   =  1.39112e-268
+p_f001_do3_drv_470  =  3.00000e+00
+p_f001_do3_rx_470   =  3.00000e+00
+p_f001_do2_drv_470  =  3.00000e+00
+p_f001_do2_rx_470   =  3.00000e+00
+p_f001_do1_drv_470  =  3.00000e+00
+p_f001_do1_rx_470   =  3.00000e+00
+p_f001_do0_drv_470  =  3.00000e+00
+p_f001_do0_rx_470   =  3.00000e+00
+p_f001_do7_drv_480  =  3.00000e+00
+p_f001_do7_rx_480   =  3.00000e+00
+p_f001_do6_drv_480  =  3.00000e+00
+p_f001_do6_rx_480   =  3.00000e+00
+p_f001_do5_drv_480  =  3.00000e+00
+p_f001_do5_rx_480   =  3.00000e+00
+p_f001_do4_drv_480  =  0.00000e+00
+p_f001_do4_rx_480   =  4.88406e-297
+p_f001_do3_drv_480  =  3.00000e+00
+p_f001_do3_rx_480   =  3.00000e+00
+p_f001_do2_drv_480  =  3.00000e+00
+p_f001_do2_rx_480   =  3.00000e+00
+p_f001_do1_drv_480  =  3.00000e+00
+p_f001_do1_rx_480   =  3.00000e+00
+p_f001_do0_drv_480  =  3.00000e+00
+p_f001_do0_rx_480   =  3.00000e+00
+p_f002_cmp7_p0      =  -6.62606e-06
+p_f002_cmp7_n0      =  -6.65701e-06
+p_f002_cmp7_p5      =  2.99999e+00
+p_f002_cmp7_n5      =  -3.40856e-06
+p_f002_cmp6_p0      =  -7.22233e-07
+p_f002_cmp6_n0      =  -2.85238e-07
+p_f002_cmp6_p5      =  2.99999e+00
+p_f002_cmp6_n5      =  -3.74002e-06
+p_f002_cmp5_p0      =  -6.70111e-06
+p_f002_cmp5_n0      =  -6.73165e-06
+p_f002_cmp5_p5      =  -3.30912e-06
+p_f002_cmp5_n5      =  2.99999e+00
+p_f002_cmp4_p0      =  -6.68594e-06
+p_f002_cmp4_n0      =  -6.70869e-06
+p_f002_cmp4_p5      =  -3.28513e-06
+p_f002_cmp4_n5      =  2.99999e+00
+p_f002_cmp3_p0      =  -2.63284e-06
+p_f002_cmp3_n0      =  -2.24595e-06
+p_f002_cmp3_p5      =  2.99999e+00
+p_f002_cmp3_n5      =  -3.65097e-06
+p_f002_cmp2_p0      =  -2.62829e-06
+p_f002_cmp2_n0      =  -2.24992e-06
+p_f002_cmp2_p5      =  -3.67993e-06
+p_f002_cmp2_n5      =  2.99999e+00
+p_f002_cmp1_p0      =  -6.62564e-06
+p_f002_cmp1_n0      =  -6.63614e-06
+p_f002_cmp1_p5      =  2.99999e+00
+p_f002_cmp1_n5      =  -3.23757e-06
+p_f002_cmp0_p0      =  -2.29873e-06
+p_f002_cmp0_n0      =  -1.90838e-06
+p_f002_cmp0_p5      =  2.99999e+00
+p_f002_cmp0_n5      =  -3.63597e-06
+p_f002_dctrl7_p     =  3.00001e+00
+p_f002_dctrl7_n     =  3.57403e-01
+p_f002_dctrl6_p     =  2.95926e+00
+p_f002_dctrl6_n     =  5.88158e-06
+p_f002_dctrl5_p     =  -1.20054e-06
+p_f002_dctrl5_n     =  2.99946e+00
+p_f002_dctrl4_p     =  -2.34838e-07
+p_f002_dctrl4_n     =  3.00000e+00
+p_f002_dctrl3_p     =  3.00000e+00
+p_f002_dctrl3_n     =  -5.00994e-08
+p_f002_dctrl2_p     =  -2.35540e-08
+p_f002_dctrl2_n     =  3.00000e+00
+p_f002_dctrl1_p     =  3.00000e+00
+p_f002_dctrl1_n     =  -1.15464e-08
+p_f002_do7_drv_470  =  3.00000e+00
+p_f002_do7_rx_470   =  3.00000e+00
+p_f002_do6_drv_470  =  3.00000e+00
+p_f002_do6_rx_470   =  3.00000e+00
+p_f002_do5_drv_470  =  0.00000e+00
+p_f002_do5_rx_470   =  1.25618e-268
+p_f002_do4_drv_470  =  0.00000e+00
+p_f002_do4_rx_470   =  4.08882e-312
+p_f002_do3_drv_470  =  3.00000e+00
+p_f002_do3_rx_470   =  3.00000e+00
+p_f002_do2_drv_470  =  0.00000e+00
+p_f002_do2_rx_470   =  1.25618e-268
+p_f002_do1_drv_470  =  3.00000e+00
+p_f002_do1_rx_470   =  3.00000e+00
+p_f002_do0_drv_470  =  3.00000e+00
+p_f002_do0_rx_470   =  3.00000e+00
+p_f002_do7_drv_480  =  3.00000e+00
+p_f002_do7_rx_480   =  3.00000e+00
+p_f002_do6_drv_480  =  3.00000e+00
+p_f002_do6_rx_480   =  3.00000e+00
+p_f002_do5_drv_480  =  0.00000e+00
+p_f002_do5_rx_480   =  4.41030e-297
+p_f002_do4_drv_480  =  0.00000e+00
+p_f002_do4_rx_480   =  4.08882e-312
+p_f002_do3_drv_480  =  3.00000e+00
+p_f002_do3_rx_480   =  3.00000e+00
+p_f002_do2_drv_480  =  0.00000e+00
+p_f002_do2_rx_480   =  4.41030e-297
+p_f002_do1_drv_480  =  3.00000e+00
+p_f002_do1_rx_480   =  3.00000e+00
+p_f002_do0_drv_480  =  3.00000e+00
+p_f002_do0_rx_480   =  3.00000e+00
+p_f003_cmp7_p0      =  -6.69328e-06
+p_f003_cmp7_n0      =  -6.70668e-06
+p_f003_cmp7_p5      =  2.99999e+00
+p_f003_cmp7_n5      =  -3.38648e-06
+p_f003_cmp6_p0      =  -5.08926e-07
+p_f003_cmp6_n0      =  -1.18028e-07
+p_f003_cmp6_p5      =  -3.83384e-06
+p_f003_cmp6_n5      =  2.99999e+00
+p_f003_cmp5_p0      =  -7.11509e-06
+p_f003_cmp5_n0      =  -7.15394e-06
+p_f003_cmp5_p5      =  -3.31553e-06
+p_f003_cmp5_n5      =  2.99999e+00
+p_f003_cmp4_p0      =  -6.86342e-06
+p_f003_cmp4_n0      =  -6.88785e-06
+p_f003_cmp4_p5      =  -3.30305e-06
+p_f003_cmp4_n5      =  2.99999e+00
+p_f003_cmp3_p0      =  -4.29529e-06
+p_f003_cmp3_n0      =  -3.91161e-06
+p_f003_cmp3_p5      =  -3.70716e-06
+p_f003_cmp3_n5      =  2.99999e+00
+p_f003_cmp2_p0      =  -1.63768e-06
+p_f003_cmp2_n0      =  -1.22625e-06
+p_f003_cmp2_p5      =  2.99999e+00
+p_f003_cmp2_n5      =  -3.65426e-06
+p_f003_cmp1_p0      =  -6.85749e-06
+p_f003_cmp1_n0      =  -6.87549e-06
+p_f003_cmp1_p5      =  -3.27591e-06
+p_f003_cmp1_n5      =  2.99999e+00
+p_f003_cmp0_p0      =  -2.37815e-07
+p_f003_cmp0_n0      =  1.98759e-07
+p_f003_cmp0_p5      =  2.99999e+00
+p_f003_cmp0_n5      =  -3.65155e-06
+p_f003_dctrl7_p     =  3.00001e+00
+p_f003_dctrl7_n     =  3.57560e-01
+p_f003_dctrl6_p     =  5.15073e-05
+p_f003_dctrl6_n     =  2.95924e+00
+p_f003_dctrl5_p     =  -1.43638e-06
+p_f003_dctrl5_n     =  2.99946e+00
+p_f003_dctrl4_p     =  -2.14869e-07
+p_f003_dctrl4_n     =  3.00000e+00
+p_f003_dctrl3_p     =  -5.23000e-08
+p_f003_dctrl3_n     =  3.00000e+00
+p_f003_dctrl2_p     =  3.00000e+00
+p_f003_dctrl2_n     =  -2.22755e-08
+p_f003_dctrl1_p     =  -1.21131e-08
+p_f003_dctrl1_n     =  3.00000e+00
+p_f003_do7_drv_470  =  3.00000e+00
+p_f003_do7_rx_470   =  3.00000e+00
+p_f003_do6_drv_470  =  0.00000e+00
+p_f003_do6_rx_470   =  1.27378e-268
+p_f003_do5_drv_470  =  0.00000e+00
+p_f003_do5_rx_470   =  4.08882e-312
+p_f003_do4_drv_470  =  0.00000e+00
+p_f003_do4_rx_470   =  4.08882e-312
+p_f003_do3_drv_470  =  0.00000e+00
+p_f003_do3_rx_470   =  1.27378e-268
+p_f003_do2_drv_470  =  3.00000e+00
+p_f003_do2_rx_470   =  3.00000e+00
+p_f003_do1_drv_470  =  0.00000e+00
+p_f003_do1_rx_470   =  1.27378e-268
+p_f003_do0_drv_470  =  3.00000e+00
+p_f003_do0_rx_470   =  3.00000e+00
+p_f003_do7_drv_480  =  3.00000e+00
+p_f003_do7_rx_480   =  3.00000e+00
+p_f003_do6_drv_480  =  0.00000e+00
+p_f003_do6_rx_480   =  4.47210e-297
+p_f003_do5_drv_480  =  0.00000e+00
+p_f003_do5_rx_480   =  4.08882e-312
+p_f003_do4_drv_480  =  0.00000e+00
+p_f003_do4_rx_480   =  4.08882e-312
+p_f003_do3_drv_480  =  0.00000e+00
+p_f003_do3_rx_480   =  4.47210e-297
+p_f003_do2_drv_480  =  3.00000e+00
+p_f003_do2_rx_480   =  3.00000e+00
+p_f003_do1_drv_480  =  0.00000e+00
+p_f003_do1_rx_480   =  4.47210e-297
+p_f003_do0_drv_480  =  3.00000e+00
+p_f003_do0_rx_480   =  3.00000e+00
+p_f064_cmp7_p0      =  -6.79026e-06
+p_f064_cmp7_n0      =  -6.80118e-06
+p_f064_cmp7_p5      =  2.99999e+00
+p_f064_cmp7_n5      =  -3.44682e-06
+p_f064_cmp6_p0      =  -1.00790e-06
+p_f064_cmp6_n0      =  -5.47743e-07
+p_f064_cmp6_p5      =  2.99999e+00
+p_f064_cmp6_n5      =  -3.75953e-06
+p_f064_cmp5_p0      =  -6.51729e-06
+p_f064_cmp5_n0      =  -6.54175e-06
+p_f064_cmp5_p5      =  -3.27485e-06
+p_f064_cmp5_n5      =  2.99999e+00
+p_f064_cmp4_p0      =  -6.93756e-06
+p_f064_cmp4_n0      =  -6.93775e-06
+p_f064_cmp4_p5      =  2.99999e+00
+p_f064_cmp4_n5      =  -3.27035e-06
+p_f064_cmp3_p0      =  -3.96436e-06
+p_f064_cmp3_n0      =  -3.60855e-06
+p_f064_cmp3_p5      =  2.99999e+00
+p_f064_cmp3_n5      =  -3.63796e-06
+p_f064_cmp2_p0      =  -1.31023e-06
+p_f064_cmp2_n0      =  -8.83191e-07
+p_f064_cmp2_p5      =  2.99999e+00
+p_f064_cmp2_n5      =  -3.66820e-06
+p_f064_cmp1_p0      =  -6.62239e-06
+p_f064_cmp1_n0      =  -6.64397e-06
+p_f064_cmp1_p5      =  2.99999e+00
+p_f064_cmp1_n5      =  -3.22434e-06
+p_f064_cmp0_p0      =  -3.95324e-06
+p_f064_cmp0_n0      =  -3.61017e-06
+p_f064_cmp0_p5      =  2.99999e+00
+p_f064_cmp0_n5      =  -3.61601e-06
+p_f064_dctrl7_p     =  3.00001e+00
+p_f064_dctrl7_n     =  3.57405e-01
+p_f064_dctrl6_p     =  2.95923e+00
+p_f064_dctrl6_n     =  6.76890e-06
+p_f064_dctrl5_p     =  -1.47639e-06
+p_f064_dctrl5_n     =  2.99946e+00
+p_f064_dctrl4_p     =  3.00000e+00
+p_f064_dctrl4_n     =  -1.83290e-07
+p_f064_dctrl3_p     =  3.00000e+00
+p_f064_dctrl3_n     =  -4.63546e-08
+p_f064_dctrl2_p     =  3.00000e+00
+p_f064_dctrl2_n     =  -2.21291e-08
+p_f064_dctrl1_p     =  3.00000e+00
+p_f064_dctrl1_n     =  -1.13909e-08
+p_f064_do7_drv_470  =  3.00000e+00
+p_f064_do7_rx_470   =  3.00000e+00
+p_f064_do6_drv_470  =  3.00000e+00
+p_f064_do6_rx_470   =  3.00000e+00
+p_f064_do5_drv_470  =  0.00000e+00
+p_f064_do5_rx_470   =  1.24354e-268
+p_f064_do4_drv_470  =  3.00000e+00
+p_f064_do4_rx_470   =  3.00000e+00
+p_f064_do3_drv_470  =  3.00000e+00
+p_f064_do3_rx_470   =  3.00000e+00
+p_f064_do2_drv_470  =  3.00000e+00
+p_f064_do2_rx_470   =  3.00000e+00
+p_f064_do1_drv_470  =  3.00000e+00
+p_f064_do1_rx_470   =  3.00000e+00
+p_f064_do0_drv_470  =  3.00000e+00
+p_f064_do0_rx_470   =  3.00000e+00
+p_f064_do7_drv_480  =  3.00000e+00
+p_f064_do7_rx_480   =  3.00000e+00
+p_f064_do6_drv_480  =  3.00000e+00
+p_f064_do6_rx_480   =  3.00000e+00
+p_f064_do5_drv_480  =  0.00000e+00
+p_f064_do5_rx_480   =  4.36594e-297
+p_f064_do4_drv_480  =  3.00000e+00
+p_f064_do4_rx_480   =  3.00000e+00
+p_f064_do3_drv_480  =  3.00000e+00
+p_f064_do3_rx_480   =  3.00000e+00
+p_f064_do2_drv_480  =  3.00000e+00
+p_f064_do2_rx_480   =  3.00000e+00
+p_f064_do1_drv_480  =  3.00000e+00
+p_f064_do1_rx_480   =  3.00000e+00
+p_f064_do0_drv_480  =  3.00000e+00
+p_f064_do0_rx_480   =  3.00000e+00
+p_f065_cmp7_p0      =  -7.80437e-06
+p_f065_cmp7_n0      =  -7.80357e-06
+p_f065_cmp7_p5      =  2.99999e+00
+p_f065_cmp7_n5      =  -3.55484e-06
+p_f065_cmp6_p0      =  4.63673e-06
+p_f065_cmp6_n0      =  5.26898e-06
+p_f065_cmp6_p5      =  2.99999e+00
+p_f065_cmp6_n5      =  -3.86253e-06
+p_f065_cmp5_p0      =  -7.64226e-06
+p_f065_cmp5_n0      =  -7.64702e-06
+p_f065_cmp5_p5      =  2.99999e+00
+p_f065_cmp5_n5      =  -3.32650e-06
+p_f065_cmp4_p0      =  -7.92142e-06
+p_f065_cmp4_n0      =  -7.92012e-06
+p_f065_cmp4_p5      =  -3.37172e-06
+p_f065_cmp4_n5      =  2.99999e+00
+p_f065_cmp3_p0      =  1.66444e-06
+p_f065_cmp3_n0      =  2.18542e-06
+p_f065_cmp3_p5      =  2.99999e+00
+p_f065_cmp3_n5      =  -3.72177e-06
+p_f065_cmp2_p0      =  4.31605e-06
+p_f065_cmp2_n0      =  4.90662e-06
+p_f065_cmp2_p5      =  2.99999e+00
+p_f065_cmp2_n5      =  -3.75274e-06
+p_f065_cmp1_p0      =  -7.62404e-06
+p_f065_cmp1_n0      =  -7.62709e-06
+p_f065_cmp1_p5      =  2.99999e+00
+p_f065_cmp1_n5      =  -3.29572e-06
+p_f065_cmp0_p0      =  1.67146e-06
+p_f065_cmp0_n0      =  2.17632e-06
+p_f065_cmp0_p5      =  2.99999e+00
+p_f065_cmp0_n5      =  -3.73269e-06
+p_f065_dctrl7_p     =  3.00001e+00
+p_f065_dctrl7_n     =  3.58339e-01
+p_f065_dctrl6_p     =  2.95903e+00
+p_f065_dctrl6_n     =  7.28307e-06
+p_f065_dctrl5_p     =  2.99946e+00
+p_f065_dctrl5_n     =  -2.14327e-06
+p_f065_dctrl4_p     =  -2.49126e-07
+p_f065_dctrl4_n     =  3.00000e+00
+p_f065_dctrl3_p     =  3.00000e+00
+p_f065_dctrl3_n     =  -4.68427e-08
+p_f065_dctrl2_p     =  3.00000e+00
+p_f065_dctrl2_n     =  -2.19997e-08
+p_f065_dctrl1_p     =  3.00000e+00
+p_f065_dctrl1_n     =  -1.15344e-08
+p_f065_do7_drv_470  =  3.00000e+00
+p_f065_do7_rx_470   =  3.00000e+00
+p_f065_do6_drv_470  =  3.00000e+00
+p_f065_do6_rx_470   =  3.00000e+00
+p_f065_do5_drv_470  =  3.00000e+00
+p_f065_do5_rx_470   =  3.00000e+00
+p_f065_do4_drv_470  =  0.00000e+00
+p_f065_do4_rx_470   =  1.39134e-268
+p_f065_do3_drv_470  =  3.00000e+00
+p_f065_do3_rx_470   =  3.00000e+00
+p_f065_do2_drv_470  =  3.00000e+00
+p_f065_do2_rx_470   =  3.00000e+00
+p_f065_do1_drv_470  =  3.00000e+00
+p_f065_do1_rx_470   =  3.00000e+00
+p_f065_do0_drv_470  =  3.00000e+00
+p_f065_do0_rx_470   =  3.00000e+00
+p_f065_do7_drv_480  =  3.00000e+00
+p_f065_do7_rx_480   =  3.00000e+00
+p_f065_do6_drv_480  =  3.00000e+00
+p_f065_do6_rx_480   =  3.00000e+00
+p_f065_do5_drv_480  =  3.00000e+00
+p_f065_do5_rx_480   =  3.00000e+00
+p_f065_do4_drv_480  =  0.00000e+00
+p_f065_do4_rx_480   =  4.88482e-297
+p_f065_do3_drv_480  =  3.00000e+00
+p_f065_do3_rx_480   =  3.00000e+00
+p_f065_do2_drv_480  =  3.00000e+00
+p_f065_do2_rx_480   =  3.00000e+00
+p_f065_do1_drv_480  =  3.00000e+00
+p_f065_do1_rx_480   =  3.00000e+00
+p_f065_do0_drv_480  =  3.00000e+00
+p_f065_do0_rx_480   =  3.00000e+00
+p_f066_cmp7_p0      =  -6.83587e-06
+p_f066_cmp7_n0      =  -6.85711e-06
+p_f066_cmp7_p5      =  2.99999e+00
+p_f066_cmp7_n5      =  -3.42840e-06
+p_f066_cmp6_p0      =  6.34096e-07
+p_f066_cmp6_n0      =  1.10572e-06
+p_f066_cmp6_p5      =  2.99999e+00
+p_f066_cmp6_n5      =  -3.75853e-06
+p_f066_cmp5_p0      =  -6.52527e-06
+p_f066_cmp5_n0      =  -6.55825e-06
+p_f066_cmp5_p5      =  -3.29567e-06
+p_f066_cmp5_n5      =  2.99999e+00
+p_f066_cmp4_p0      =  -6.92127e-06
+p_f066_cmp4_n0      =  -6.93992e-06
+p_f066_cmp4_p5      =  -3.30464e-06
+p_f066_cmp4_n5      =  2.99999e+00
+p_f066_cmp3_p0      =  -3.95717e-06
+p_f066_cmp3_n0      =  -3.60845e-06
+p_f066_cmp3_p5      =  2.99999e+00
+p_f066_cmp3_n5      =  -3.63217e-06
+p_f066_cmp2_p0      =  -1.30434e-06
+p_f066_cmp2_n0      =  -8.87939e-07
+p_f066_cmp2_p5      =  -3.70245e-06
+p_f066_cmp2_n5      =  2.99999e+00
+p_f066_cmp1_p0      =  -6.62226e-06
+p_f066_cmp1_n0      =  -6.64394e-06
+p_f066_cmp1_p5      =  2.99999e+00
+p_f066_cmp1_n5      =  -3.22306e-06
+p_f066_cmp0_p0      =  -3.95288e-06
+p_f066_cmp0_n0      =  -3.61047e-06
+p_f066_cmp0_p5      =  2.99999e+00
+p_f066_cmp0_n5      =  -3.61280e-06
+p_f066_dctrl7_p     =  3.00001e+00
+p_f066_dctrl7_n     =  3.57403e-01
+p_f066_dctrl6_p     =  2.95923e+00
+p_f066_dctrl6_n     =  5.89395e-06
+p_f066_dctrl5_p     =  -1.19855e-06
+p_f066_dctrl5_n     =  2.99946e+00
+p_f066_dctrl4_p     =  -2.35941e-07
+p_f066_dctrl4_n     =  3.00000e+00
+p_f066_dctrl3_p     =  3.00000e+00
+p_f066_dctrl3_n     =  -5.01870e-08
+p_f066_dctrl2_p     =  -2.34701e-08
+p_f066_dctrl2_n     =  3.00000e+00
+p_f066_dctrl1_p     =  3.00000e+00
+p_f066_dctrl1_n     =  -1.15351e-08
+p_f066_do7_drv_470  =  3.00000e+00
+p_f066_do7_rx_470   =  3.00000e+00
+p_f066_do6_drv_470  =  3.00000e+00
+p_f066_do6_rx_470   =  3.00000e+00
+p_f066_do5_drv_470  =  0.00000e+00
+p_f066_do5_rx_470   =  1.25098e-268
+p_f066_do4_drv_470  =  0.00000e+00
+p_f066_do4_rx_470   =  4.08882e-312
+p_f066_do3_drv_470  =  3.00000e+00
+p_f066_do3_rx_470   =  3.00000e+00
+p_f066_do2_drv_470  =  0.00000e+00
+p_f066_do2_rx_470   =  1.25098e-268
+p_f066_do1_drv_470  =  3.00000e+00
+p_f066_do1_rx_470   =  3.00000e+00
+p_f066_do0_drv_470  =  3.00000e+00
+p_f066_do0_rx_470   =  3.00000e+00
+p_f066_do7_drv_480  =  3.00000e+00
+p_f066_do7_rx_480   =  3.00000e+00
+p_f066_do6_drv_480  =  3.00000e+00
+p_f066_do6_rx_480   =  3.00000e+00
+p_f066_do5_drv_480  =  0.00000e+00
+p_f066_do5_rx_480   =  4.39205e-297
+p_f066_do4_drv_480  =  0.00000e+00
+p_f066_do4_rx_480   =  4.08882e-312
+p_f066_do3_drv_480  =  3.00000e+00
+p_f066_do3_rx_480   =  3.00000e+00
+p_f066_do2_drv_480  =  0.00000e+00
+p_f066_do2_rx_480   =  4.39205e-297
+p_f066_do1_drv_480  =  3.00000e+00
+p_f066_do1_rx_480   =  3.00000e+00
+p_f066_do0_drv_480  =  3.00000e+00
+p_f066_do0_rx_480   =  3.00000e+00
+p_f067_cmp7_p0      =  -6.93198e-06
+p_f067_cmp7_n0      =  -6.94117e-06
+p_f067_cmp7_p5      =  2.99999e+00
+p_f067_cmp7_n5      =  -3.40541e-06
+p_f067_cmp6_p0      =  2.12866e-08
+p_f067_cmp6_n0      =  4.30203e-07
+p_f067_cmp6_p5      =  -3.84987e-06
+p_f067_cmp6_n5      =  2.99999e+00
+p_f067_cmp5_p0      =  -6.74946e-06
+p_f067_cmp5_n0      =  -6.78098e-06
+p_f067_cmp5_p5      =  -3.30878e-06
+p_f067_cmp5_n5      =  2.99999e+00
+p_f067_cmp4_p0      =  -7.09887e-06
+p_f067_cmp4_n0      =  -7.11882e-06
+p_f067_cmp4_p5      =  -3.32235e-06
+p_f067_cmp4_n5      =  2.99999e+00
+p_f067_cmp3_p0      =  -4.79571e-06
+p_f067_cmp3_n0      =  -4.44030e-06
+p_f067_cmp3_p5      =  -3.69413e-06
+p_f067_cmp3_n5      =  2.99999e+00
+p_f067_cmp2_p0      =  -3.14450e-07
+p_f067_cmp2_n0      =  1.36437e-07
+p_f067_cmp2_p5      =  2.99999e+00
+p_f067_cmp2_n5      =  -3.67708e-06
+p_f067_cmp1_p0      =  -6.79852e-06
+p_f067_cmp1_n0      =  -6.81771e-06
+p_f067_cmp1_p5      =  -3.27380e-06
+p_f067_cmp1_n5      =  2.99999e+00
+p_f067_cmp0_p0      =  -4.88101e-06
+p_f067_cmp0_n0      =  -4.51991e-06
+p_f067_cmp0_p5      =  2.99999e+00
+p_f067_cmp0_n5      =  -3.63015e-06
+p_f067_dctrl7_p     =  3.00001e+00
+p_f067_dctrl7_n     =  3.57560e-01
+p_f067_dctrl6_p     =  5.15434e-05
+p_f067_dctrl6_n     =  2.95920e+00
+p_f067_dctrl5_p     =  -1.43475e-06
+p_f067_dctrl5_n     =  2.99946e+00
+p_f067_dctrl4_p     =  -2.15212e-07
+p_f067_dctrl4_n     =  3.00000e+00
+p_f067_dctrl3_p     =  -5.25220e-08
+p_f067_dctrl3_n     =  3.00000e+00
+p_f067_dctrl2_p     =  3.00000e+00
+p_f067_dctrl2_n     =  -2.23147e-08
+p_f067_dctrl1_p     =  -1.21836e-08
+p_f067_dctrl1_n     =  3.00000e+00
+p_f067_do7_drv_470  =  3.00000e+00
+p_f067_do7_rx_470   =  3.00000e+00
+p_f067_do6_drv_470  =  0.00000e+00
+p_f067_do6_rx_470   =  1.26748e-268
+p_f067_do5_drv_470  =  0.00000e+00
+p_f067_do5_rx_470   =  4.08882e-312
+p_f067_do4_drv_470  =  0.00000e+00
+p_f067_do4_rx_470   =  4.08882e-312
+p_f067_do3_drv_470  =  0.00000e+00
+p_f067_do3_rx_470   =  1.26748e-268
+p_f067_do2_drv_470  =  3.00000e+00
+p_f067_do2_rx_470   =  3.00000e+00
+p_f067_do1_drv_470  =  0.00000e+00
+p_f067_do1_rx_470   =  1.26748e-268
+p_f067_do0_drv_470  =  3.00000e+00
+p_f067_do0_rx_470   =  3.00000e+00
+p_f067_do7_drv_480  =  3.00000e+00
+p_f067_do7_rx_480   =  3.00000e+00
+p_f067_do6_drv_480  =  0.00000e+00
+p_f067_do6_rx_480   =  4.44996e-297
+p_f067_do5_drv_480  =  0.00000e+00
+p_f067_do5_rx_480   =  4.08882e-312
+p_f067_do4_drv_480  =  0.00000e+00
+p_f067_do4_rx_480   =  4.08882e-312
+p_f067_do3_drv_480  =  0.00000e+00
+p_f067_do3_rx_480   =  4.44996e-297
+p_f067_do2_drv_480  =  3.00000e+00
+p_f067_do2_rx_480   =  3.00000e+00
+p_f067_do1_drv_480  =  0.00000e+00
+p_f067_do1_rx_480   =  4.44996e-297
+p_f067_do0_drv_480  =  3.00000e+00
+p_f067_do0_rx_480   =  3.00000e+00
+ngspice-46 done

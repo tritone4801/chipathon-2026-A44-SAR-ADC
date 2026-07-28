@@ -1,0 +1,12 @@
+﻿{
+    "status":  "PASS_PACKAGE_MANIFEST_READBACK",
+    "audited_date":  "2026-07-28",
+    "manifest":  "manifests/package_manifest_sha256.csv",
+    "manifest_sha256":  "534542afca9931f86c1d78efd552a597fa0174e5448bd84a66c6253b2905b83b",
+    "record_count":  21,
+    "missing_or_mismatch_count":  0,
+    "source_to_bundle_index_record_count":  17,
+    "source_to_bundle_mismatch_count":  0,
+    "design_membership_difference_count":  0,
+    "pass":  true
+}

@@ -1,0 +1,20 @@
+{
+  "package": "A44_MC200_FIXED50PS_NONREPRO_SUBSET_RERUN_20260725_R1",
+  "status": "PASS_TARGETED_FIXED50_REPRODUCTION",
+  "execution_status": "PASS_FIXED50_EXECUTION",
+  "target_records": 41,
+  "valid_records": 41,
+  "code_rows": 2624,
+  "maxstep_ps": 50,
+  "solver_profile": "ROBUST_GEAR",
+  "later_mc10_unique_targets": 8,
+  "later_mc10_exact_targets": 8,
+  "early_mc200_vs_v7_mismatches": 33,
+  "fixed50_matches_early": 9,
+  "fixed50_matches_v7": 24,
+  "r1_tail_target_frames": 17,
+  "r1_tail_frames_matching_r1_replay": 17,
+  "r1_tail_frames_matching_v7_formal": 0,
+  "full_mc200_rerun": false,
+  "signoff_claim": false
+}

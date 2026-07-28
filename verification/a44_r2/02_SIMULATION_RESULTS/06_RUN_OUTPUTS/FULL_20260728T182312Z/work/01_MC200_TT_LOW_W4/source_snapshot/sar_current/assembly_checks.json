@@ -1,0 +1,132 @@
+﻿[
+    {
+        "check_id":  "required_project_files",
+        "status":  "PASS",
+        "detail":  "28 required files present"
+    },
+    {
+        "check_id":  "a44_symbol_filename_inventory",
+        "status":  "PASS",
+        "detail":  "Root and project_templates each contain exactly five A44_-prefixed project symbols"
+    },
+    {
+        "check_id":  "a44_symbol_internal_names",
+        "status":  "PASS",
+        "detail":  "5/5 symname and visible-name fields carry the A44_ prefix"
+    },
+    {
+        "check_id":  "a44_symbol_electrical_mapping",
+        "status":  "PASS",
+        "detail":  "5/5 symbols retain their original electrical cell names; subcircuit aliases suppress basename descent"
+    },
+    {
+        "check_id":  "reproducible_symbol_templates",
+        "status":  "PASS",
+        "detail":  "5/5 root symbols match package-local A44_ templates byte-for-byte"
+    },
+    {
+        "check_id":  "authoritative_source_hashes",
+        "status":  "PASS",
+        "detail":  "17 fixed source hashes match"
+    },
+    {
+        "check_id":  "top_local_symbol_binding",
+        "status":  "PASS",
+        "detail":  "TOP resolves one A44_ comparator symbol, two A44_ CDAC symbols, and the A44_ logic symbol while selecting original schematic cells"
+    },
+    {
+        "check_id":  "cdac_local_switch_binding",
+        "status":  "PASS",
+        "detail":  "CDAC resolves the A44_SWITCH_BOOT_SP symbol from the package root"
+    },
+    {
+        "check_id":  "a44_active_schematic_references",
+        "status":  "PASS",
+        "detail":  "12/12 project-symbol placements use A44_ names; no active legacy symbol reference remains"
+    },
+    {
+        "check_id":  "top_symbol_pin_order",
+        "status":  "PASS",
+        "detail":  "VDD GND VREFP VREFN VINP VINN CLKS DOUT[7:0]"
+    },
+    {
+        "check_id":  "logic_symbol_straight_leads",
+        "status":  "PASS",
+        "detail":  "9/9 pins are grid-aligned and have exact orthogonal body leads"
+    },
+    {
+        "check_id":  "top_symbol_straight_leads",
+        "status":  "PASS",
+        "detail":  "8/8 pins are grid-aligned and have exact orthogonal body leads"
+    },
+    {
+        "check_id":  "logic_symbol_external_wire_alignment",
+        "status":  "PASS",
+        "detail":  "9/9 external wires terminate exactly at the symbol pin centers"
+    },
+    {
+        "check_id":  "top_symbol_external_wire_alignment",
+        "status":  "PASS",
+        "detail":  "8/8 external wires terminate exactly at the symbol pin centers"
+    },
+    {
+        "check_id":  "logic_symbol_frozen_subckt_binding",
+        "status":  "PASS",
+        "detail":  "Explicit flattened SAR_LOGIC_ACTUAL_RTL instance order is unchanged"
+    },
+    {
+        "check_id":  "accepted_top_pin_order",
+        "status":  "PASS",
+        "detail":  ".subckt SAR_ADC_TOP_FIXED VDD GND VREFP VREFN VINP VINN CLKS DOUT[7] DOUT[6] DOUT[5] DOUT[4] DOUT[3] DOUT[2] DOUT[1] DOUT[0]"
+    },
+    {
+        "check_id":  "accepted_top_hierarchy",
+        "status":  "PASS",
+        "detail":  "Two CDAC instances, production Comparator_StrongARM, and current SAR_LOGIC_ACTUAL_RTL are present"
+    },
+    {
+        "check_id":  "accepted_include_closure",
+        "status":  "PASS",
+        "detail":  "27 includes resolve to package files or the GF180 PDK; old-root hits=0"
+    },
+    {
+        "check_id":  "xschem_batch_netlist",
+        "status":  "PASS",
+        "detail":  "4/4 schematic views netlisted without missing-symbol or error diagnostics"
+    },
+    {
+        "check_id":  "xschem_top_symbol_resolution",
+        "status":  "PASS",
+        "detail":  "TOP smoke netlist resolves package-local A44_ comparator and CDAC symbol paths"
+    },
+    {
+        "check_id":  "a44_symbol_harness_netlist",
+        "status":  "PASS",
+        "detail":  "2/2 A44_ harness netlists are non-empty and diagnostic-clean; recorded command exits=10,10"
+    },
+    {
+        "check_id":  "straight_wire_harness_netlist_order",
+        "status":  "PASS",
+        "detail":  "Harness netlists preserve the frozen flattened logic and TOP instance orders"
+    },
+    {
+        "check_id":  "a44_prefix_is_symbol_only",
+        "status":  "PASS",
+        "detail":  "No generated .subckt uses A44_; original electrical cell names remain active"
+    },
+    {
+        "check_id":  "xschem_visual_evidence",
+        "status":  "PASS",
+        "detail":  "Actual Xschem GUI captures exist for both straight-wire harnesses and the five-symbol A44_ catalog"
+    },
+    {
+        "check_id":  "a44_symbol_visual_catalog",
+        "status":  "PASS",
+        "detail":  "5/5 active A44_ symbols are placed in the visual catalog"
+    },
+    {
+        "check_id":  "ngspice_accepted_hierarchy_parse",
+        "status":  "PASS",
+        "detail":  "Accepted Heavy LOAD -\u003e TOP -\u003e component -\u003e SS RTL/PEX include closure parsed"
+    }
+]

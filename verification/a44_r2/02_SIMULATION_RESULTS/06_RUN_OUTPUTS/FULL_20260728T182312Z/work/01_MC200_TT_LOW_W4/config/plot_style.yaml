@@ -1,0 +1,11 @@
+
+status: FROZEN_NOT_APPLIED_GATED
+vector_format: pdf
+raster_format: png
+raster_dpi: 300
+axis_label_pt: 10
+tick_label_pt: 9
+line_width_pt: 1.2
+marker_size_pt: 2.5
+smoothing: disabled
+color_blind_safe: true
