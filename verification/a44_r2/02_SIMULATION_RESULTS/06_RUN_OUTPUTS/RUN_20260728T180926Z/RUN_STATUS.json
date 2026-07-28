@@ -1,0 +1,9 @@
+{
+  "comparison": "FIRST5_COMPARISON_ALL.csv",
+  "completed_utc": "2026-07-28T18:09:32.890308+00:00",
+  "mode": "QUICK_FIRST5_REPRODUCIBILITY",
+  "preflight": "preflight.json",
+  "state": "FAILED",
+  "status": "FAIL_QUICK_REPRODUCIBILITY",
+  "summary": "QUICK_REPRODUCIBILITY_SUMMARY.json"
+}

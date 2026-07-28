@@ -1,0 +1,22 @@
+{
+  "authorized_change": "W=1.56u to W=3.51u",
+  "authorized_devices": [
+    "XM3",
+    "XM4"
+  ],
+  "baseline_path": "netlists/baseline/Comparator_StrongARM_extracted.subckt.spice",
+  "baseline_sha256": "27da9f627ade204e4481ae399e1fb606002fad24a7cfe581e518dc0e5813cba8",
+  "candidate_path": "netlists/candidate/Comparator_StrongARM_CMP_IN_A2P25_W.subckt.spice",
+  "candidate_sha256": "e30b2055a880b83176f9389c8b79a13201fdd0e689ca46f3dc3f32b19436f303",
+  "changed_devices": [
+    "XM3",
+    "XM4"
+  ],
+  "diff_path": "reports/cmp_in_a2p25_w_candidate.diff",
+  "mos_statement_count": 15,
+  "other_mos_byte_identical_count": 13,
+  "pass": true,
+  "status": "PASS",
+  "subckt_pin_order_unchanged": true,
+  "unexpected_changes": []
+}

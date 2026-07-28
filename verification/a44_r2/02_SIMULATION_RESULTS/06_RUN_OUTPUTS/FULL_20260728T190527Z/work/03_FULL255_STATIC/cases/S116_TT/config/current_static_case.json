@@ -1,0 +1,9 @@
+{
+  "case_id": "S116_TT",
+  "mismatch_seed": 116,
+  "pvt": "TT_3P3_27C",
+  "candidate_id": "CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587",
+  "candidate_comparator_sha256": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+  "method": "FULL_STATIC_FULL255_UPWARD_TWO_FRAME_50PS_BRACKET_0P02LSB",
+  "targets": "T1_THROUGH_T255"
+}

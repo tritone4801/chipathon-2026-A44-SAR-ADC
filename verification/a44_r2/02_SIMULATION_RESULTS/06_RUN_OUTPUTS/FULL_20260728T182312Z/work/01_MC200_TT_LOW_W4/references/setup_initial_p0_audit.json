@@ -1,0 +1,52 @@
+{
+  "base_manifest_sha256": "3c2130f305e70968e7a2651b6c5ec445b973c0b27d0e5a8c466ce09b4817d0a7",
+  "binding_checks": [
+    {
+      "exists": true,
+      "expected_signature": ".subckt CDAC",
+      "pass": true,
+      "relative_path": "netlists/core/subckts/CDAC_native_extracted.subckt.spice",
+      "sha256": "6e98da540b1c765b0dcec4d1e10399142dc37b7f1c21960d289a83f07ec10ada",
+      "subckt_lines": [
+        ".subckt CDAC VIN CLKS VTOP DCTRL7 DCTRL6 DCTRL5 DCTRL4 DCTRL3 DCTRL2 DCTRL1 VREFP VDD GND VREFN"
+      ]
+    },
+    {
+      "exists": true,
+      "expected_signature": ".subckt Comparator_StrongARM",
+      "pass": true,
+      "relative_path": "netlists/core/subckts/Comparator_StrongARM_extracted.subckt.spice",
+      "sha256": "27da9f627ade204e4481ae399e1fb606002fad24a7cfe581e518dc0e5813cba8",
+      "subckt_lines": [
+        ".subckt Comparator_StrongARM CLK DCMPP VINP DCMPN VINN VDD GND"
+      ]
+    },
+    {
+      "exists": true,
+      "expected_signature": ".subckt SWITCH_BOOT_SP",
+      "pass": true,
+      "relative_path": "netlists/core/subckts/SWITCH_BOOT_SP_native_extracted.subckt.spice",
+      "sha256": "3ef9735c56374250575394bbc2dbbf4e33ad4cc4c02af0055205160908e0daf1",
+      "subckt_lines": [
+        ".subckt SWITCH_BOOT_SP CLKS VDD GND VOUT VIN"
+      ]
+    },
+    {
+      "exists": true,
+      "expected_signature": "ELF shared object, campaign-local behavioral logic",
+      "pass": true,
+      "relative_path": "models/SAR_LOGIC_BEH_TT_3P3_27C.so",
+      "sha256": "e6f8341531b50a0d59e1f2f2be60f501a43d84e887b7e6226f5cd4d9c431ea0c",
+      "subckt_lines": []
+    }
+  ],
+  "checked_utc": "2026-07-25T19:26:58.639177+00:00",
+  "failures": [],
+  "formal_job_count": 68,
+  "input_manifest_entries": 228,
+  "input_manifest_sha256": "2d1f574d1d57a2ce052010741b924458d1f76293664d43edd02bea9aa9acc694",
+  "method_contract_sha256": "12c4936f8039daeb28a472ed8f9cbf4193cf05e163e7357f1d17c61c3f238afe",
+  "pass": true,
+  "pending_job_count": 68,
+  "status": "PASS_P0_PACKAGE_FREEZE"
+}

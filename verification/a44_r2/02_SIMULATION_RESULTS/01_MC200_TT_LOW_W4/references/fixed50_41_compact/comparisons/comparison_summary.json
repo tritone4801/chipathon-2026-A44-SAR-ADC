@@ -1,0 +1,100 @@
+{
+  "status": "COMPARISON_COMPLETE",
+  "target_records": 41,
+  "reference_summary": {
+    "EARLY_MC200": {
+      "comparable_records": 34,
+      "code_exact_records": 9,
+      "code_different_records": 25,
+      "exact_frames": 2149,
+      "different_frames": 27,
+      "metric_exact_records": 9,
+      "same_execution_profile_records": 11
+    },
+    "V7_MC200": {
+      "comparable_records": 41,
+      "code_exact_records": 24,
+      "code_different_records": 17,
+      "exact_frames": 2607,
+      "different_frames": 17,
+      "metric_exact_records": 24,
+      "same_execution_profile_records": 41
+    },
+    "V10_MC10": {
+      "comparable_records": 5,
+      "code_exact_records": 5,
+      "code_different_records": 0,
+      "exact_frames": 320,
+      "different_frames": 0,
+      "metric_exact_records": 5,
+      "same_execution_profile_records": 5
+    },
+    "V11_MC10": {
+      "comparable_records": 4,
+      "code_exact_records": 4,
+      "code_different_records": 0,
+      "exact_frames": 256,
+      "different_frames": 0,
+      "metric_exact_records": 4,
+      "same_execution_profile_records": 4
+    }
+  },
+  "reason_summary": {
+    "EARLY_MC200_VS_V7_LOW_CODE_MISMATCH": {
+      "records": 33,
+      "matches_early_mc200": 9,
+      "matches_v7_mc200": 24,
+      "later_mc10_available": 6,
+      "matches_later_mc10": 6,
+      "matches_no_full_reference": 0
+    },
+    "MC10_VS_V7_CODE_MISMATCH": {
+      "records": 6,
+      "matches_early_mc200": 4,
+      "matches_v7_mc200": 0,
+      "later_mc10_available": 6,
+      "matches_later_mc10": 6,
+      "matches_no_full_reference": 0
+    },
+    "EXTREME_TAIL_HISTORICAL_CODE_NOT_REPRODUCED": {
+      "records": 17,
+      "matches_early_mc200": 9,
+      "matches_v7_mc200": 0,
+      "later_mc10_available": 6,
+      "matches_later_mc10": 6,
+      "matches_no_full_reference": 6
+    }
+  },
+  "early_mismatch_profile_partition": [
+    {
+      "early_maxstep_ps": 50.0,
+      "early_solver_profile": "DEFAULT",
+      "records": 6,
+      "fixed50_matches_early": 0,
+      "fixed50_matches_v7": 6
+    },
+    {
+      "early_maxstep_ps": 50.0,
+      "early_solver_profile": "ROBUST_GEAR",
+      "records": 10,
+      "fixed50_matches_early": 5,
+      "fixed50_matches_v7": 5
+    },
+    {
+      "early_maxstep_ps": 100.0,
+      "early_solver_profile": "DEFAULT",
+      "records": 17,
+      "fixed50_matches_early": 4,
+      "fixed50_matches_v7": 13
+    }
+  ],
+  "targets_with_early_reference": 34,
+  "targets_with_later_mc10_reference": 8,
+  "targets_matching_any_later_mc10": 8,
+  "targets_matching_v7": 24,
+  "targets_matching_early": 9,
+  "targets_matching_no_reference": 6,
+  "r1_tail_target_frames": 17,
+  "r1_target_frames_matching_fixed50_rerun": 17,
+  "v7_formal_target_frames_matching_fixed50_rerun": 0
+}

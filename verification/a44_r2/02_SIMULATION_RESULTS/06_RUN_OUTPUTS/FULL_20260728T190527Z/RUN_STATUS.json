@@ -1,0 +1,54 @@
+{
+  "commands": [
+    [
+      "/usr/bin/python3",
+      "scripts/run_fast64_v2.py",
+      "--phase",
+      "mc200-low",
+      "--workers",
+      "4"
+    ],
+    [
+      "/usr/bin/python3",
+      "scripts/analyze_mc200_low_w4.py"
+    ],
+    [
+      "/usr/bin/python3",
+      "scripts/run_fast64_v2.py",
+      "--phase",
+      "pvt-formal",
+      "--workers",
+      "4"
+    ],
+    [
+      "/usr/bin/python3",
+      "scripts/finalize_pvt3_mc20.py"
+    ],
+    [
+      "/usr/bin/python3",
+      "run_static_queue.py",
+      "--queue",
+      "tt_four_seeds",
+      "S044_TT",
+      "S116_TT",
+      "S180_TT",
+      "S106_TT"
+    ],
+    [
+      "/usr/bin/python3",
+      "run_static_queue.py",
+      "--queue",
+      "seed44_pvt_remaining",
+      "S044_SS",
+      "S044_FF"
+    ],
+    [
+      "/usr/bin/python3",
+      "build_final_summary.py"
+    ]
+  ],
+  "completed_utc": "2026-07-28T19:07:26.276074+00:00",
+  "mode": "FULL_DRY_RUN",
+  "preflight_pass": true,
+  "state": "STAGED_DRY_RUN_PASS"
+}

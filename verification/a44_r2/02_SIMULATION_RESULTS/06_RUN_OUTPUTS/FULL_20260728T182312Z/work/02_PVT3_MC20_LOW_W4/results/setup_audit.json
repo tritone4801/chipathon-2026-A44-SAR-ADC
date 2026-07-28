@@ -1,0 +1,21 @@
+{
+  "campaign": "02_PVT3_MC20_LOW_W4",
+  "checks": {
+    "baseline_comparator_hash": true,
+    "candidate_comparator_hash": true,
+    "exact_four_resize_changes_only": true,
+    "fixed_w4_50ps": true,
+    "formal_job_count_60": true,
+    "legacy_seed_mapping_19_draw_alignment": true,
+    "logic_so_hash": true,
+    "pdk_corner_sections_include_local_mismatch": true,
+    "pin_order": true,
+    "reference_row_count_60": true,
+    "seed_rule": true,
+    "smoke_job_count_9": true,
+    "unchanged_dynamic_sources_match_baseline": true,
+    "xm3_xm4_width": true
+  },
+  "completed_utc": "2026-07-28T03:56:56.308034+00:00",
+  "pass": true
+}

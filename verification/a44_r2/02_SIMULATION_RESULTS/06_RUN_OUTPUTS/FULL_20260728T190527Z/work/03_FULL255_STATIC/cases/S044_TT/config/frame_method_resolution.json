@@ -1,0 +1,8 @@
+{
+  "applies_symmetrically_to": [
+    "CURRENT"
+  ],
+  "frames_per_point": 2,
+  "source": "results/conditioning_method_qualification.json",
+  "status": "PASS_TWO_FRAME"
+}

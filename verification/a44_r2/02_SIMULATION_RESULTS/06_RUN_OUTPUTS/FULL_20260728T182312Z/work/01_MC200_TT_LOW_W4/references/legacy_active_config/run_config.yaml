@@ -1,0 +1,146 @@
+project: A44_8b_2MSps_GF180
+campaign: A44_TT_BEH_NO_R6_MC200_FAST64_SIGNOFF_20260718
+signoff_label: SCHEMATIC_ANALOG_CORE_WITH_TT_BEHAVIORAL_SAR
+campaign_status: FAIL
+execution_stop_phase: COMPLETE_DOCUMENT_SIMULATION_SCOPE
+current_phase: COMPLETE_AS_EXECUTED_PERFORMANCE_FAIL
+pass_label_issued: false
+workspace_container: /foss/designs/manual_goal/verification/A44_TT_BEH_NO_R6_MC200_FAST64_SIGNOFF_20260718
+adc:
+  bits: 8
+  fs_hz: 2000000
+  frame_s: 5.0e-07
+  vdd_nom_v: 3.3
+  vcm_v: 1.65
+  vrefp_v: 2.5
+  vrefn_v: 0.8
+  vfs_pp_diff_v: 3.4
+  dynamic_input_pp_diff_v: 3.0
+  lsb_diff_v: 0.01328125
+logic_model:
+  name: SAR_LOGIC_BEH_TT_3P3_27C
+  timing_file: config/timing_tt_3p3_27c.json
+  implementation: timed_event_driven_systemverilog_ngspice_d_cosim
+  source: models/SAR_LOGIC_BEH_TT_3P3_27C.v
+  compiled_model: models/SAR_LOGIC_BEH_TT_3P3_27C.so
+  logic_pvt_variation: disabled
+  actual_logic_signoff: disabled
+fixture:
+  r6_full_rc_heavy: disabled
+  source_load_file: config/source_load_model.yaml
+pvt:
+  cases:
+  - name: TT_3P3_27C
+    process: TT
+    vdd_v: 3.3
+    temp_c: 27
+  - name: SS_3P0_125C
+    process: SS
+    vdd_v: 3.0
+    temp_c: 125
+  - name: FF_3P6_M40C
+    process: FF
+    vdd_v: 3.6
+    temp_c: -40
+  static_screen_tied_candidates:
+  - TT_3P3_27C
+  - SS_3P0_125C
+  - FF_3P6_M40C
+  static_worst_selected: SS_3P0_125C
+  dynamic_worst_selected: SS_3P0_125C
+  status: PASS
+numerical:
+  bulk_maxstep_s: 1.0e-10
+  strict_maxstep_s: 5.0e-11
+  smoke_maxstep_s: 5.0e-11
+  numerical_tiebreak_diff_v: 1.0e-05
+  numerical_tiebreak_location: external_differential_input
+  static_frame_s: 5.0e-07
+  static_final_tolerance_lsb: 0.02
+  transition_pack_size: 32
+  status: PASS
+mc:
+  mismatch_seed_count: 200
+  exact_validation_initial: 8
+  exact_validation_expand: 16
+  status: COMPLETE_PERFORMANCE_FAIL
+  packed_screen_completed: 200
+  transfer_reconstruction_completed: 200
+  exact_failure_seed: 2
+  full_exact_validation_completed: 100
+  exact_simulated_seed_count: 102
+noise:
+  comparator_target_rms_diff_v: 0.0015
+  total_target_rms_diff_v: 0.002
+  stress_rms_diff_v: 0.0025
+  sample_hold_rms_diff_v: 6.4681023032e-05
+  combined_worst_rms_diff_v: 0.0015013938
+  status: COMPLETE_PERFORMANCE_FAIL
+dynamic_fast64:
+  retained: 64
+  startup_default: 0
+  low_bin: 7
+  low_fin_hz: 218750
+  near_nyquist_bin: 29
+  near_nyquist_fin_hz: 906250
+  window: rectangular
+  dout_aperture_s: 4.8e-07
+  status: COMPLETE_PERFORMANCE_FAIL
+dynamic_fast256:
+  retained: 256
+  low_bin: 29
+  low_fin_hz: 226562.5
+  near_nyquist_bin: 117
+  near_nyquist_fin_hz: 914062.5
+  window: rectangular
+  status: COMPLETE_PERFORMANCE_FAIL
+spec:
+  sndr_min_db: 44
+  enob_min_bit: 7.0
+  dnl_abs_max_lsb: 1.0
+  inl_abs_max_lsb: 1.5
+  missing_codes_max: 0
+exact_static:
+  tt_nominal_max_abs_dnl_lsb: 0.0169387127
+  tt_nominal_max_abs_inl_endpoint_lsb: 0.0189097629
+  pvt_worst: SS_3P0_125C
+  pvt_worst_max_abs_dnl_lsb: 0.0324567346
+  pvt_worst_max_abs_inl_endpoint_lsb: 0.0267906633
+  tt_full_up_down: true
+  pvt_full_up: true
+  pvt_full_down_triggered: false
+  ramp_code_coverage: 256
+  status: PASS
+blockers: []
+resolved_gate_issues:
+- MOS_MISMATCH_SAME_SEED_EXACT_REPLAY_PASS
+- CDAC_APPROVED_ENGINEERING_MODEL_PASS
+- COMPARATOR_EQUIVALENT_NOISE_CALIBRATION_PASS
+- SAMPLE_HOLD_EQUIVALENT_NOISE_CALIBRATION_PASS
+- PHASE_B_MODEL_GATES_PASS
+- NUMERICAL_CONVERGENCE_100PS_BULK_PASS
+- STRICT_MAXSTEP_50PS_FROZEN
+- STATIC_FRAME_500NS_FROZEN
+- STARTUP_ZERO_FRAMES_PASS
+- PHASE_C_NUMERICAL_RUNTIME_PILOT_PASS
+- PVT_PACKED_STATIC_SCREEN_PASS
+- PVT_FAST64_LOW_AND_NEAR_NYQUIST_PASS
+- PVT_STATIC_PROXY_TIE_RECORDED
+- PVT_WORST_SS_3P0_125C_SELECTED
+- PHASE_D_ANALOG_PVT_SCREEN_PASS
+- TT_EXACT_STATIC_255_UP_255_DOWN_PASS
+- SS_EXACT_STATIC_255_UP_PASS
+- STATIC_HYSTERESIS_SELECTED_PASS
+- TT_TRIANGULAR_RAMP_256_CODE_COVERAGE_PASS
+- PHASE_E_EXACT_STATIC_PASS
+failures:
+- status: FAIL_DNL
+  gate: E
+  mismatch_seed: 2
+  pvt: TT_3P3_27C
+  noise: 'OFF'
+  evidence: results/static_mc_failure_confirmation.json
+simulation_scope:
+  static_exact_replay_completed: true
+  dynamic_completed: true
+  document_completed: true

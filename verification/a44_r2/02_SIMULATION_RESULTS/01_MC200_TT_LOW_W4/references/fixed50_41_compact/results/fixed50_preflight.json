@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "admitted_workers_at_least_4": true,
+    "no_active_ngspice_at_start": true,
+    "qualification_complete": true,
+    "selected_formal_maxstep_50ps": true,
+    "separate_process_fallback": true
+  },
+  "dependencies": {
+    "declared": 20,
+    "failures": [],
+    "matching": 20,
+    "pass": true
+  },
+  "pass": true,
+  "production_source": {
+    "declared": 113,
+    "failures": [],
+    "matching": 113,
+    "pass": true
+  },
+  "target_records": 41
+}

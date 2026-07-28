@@ -1,0 +1,12 @@
+{
+  "completed_utc": "2026-07-28T07:08:47.600010+00:00",
+  "frames_per_point": 2,
+  "status": "PASS",
+  "variants": {
+    "CURRENT": {
+      "fail_targets": [],
+      "pass_count": 255,
+      "transition_count": 255
+    }
+  }
+}

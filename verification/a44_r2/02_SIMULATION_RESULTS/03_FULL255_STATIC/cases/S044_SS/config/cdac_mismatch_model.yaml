@@ -1,0 +1,57 @@
+classification: APPROVED_ENGINEERING_MODEL
+status: PASS
+evidence_tier: T2
+pdk_native_local_mim_mismatch: false
+approved_engineering_model: true
+claim_bearing_branch: CLAIM_BASELINE_3SIGMA_CONVERSION
+source:
+  title: GF180MCU PDK Electrical Specifications, 6.2 MIM Capacitor
+  documentation_url: https://gf180mcu-pdk.readthedocs.io/en/latest/analog/spice/elec_specs/elec_specs_6_4.html
+  raw_table_url: https://raw.githubusercontent.com/google/gf180mcu-pdk/de3240d7529a6970437ac3344820aaae7839f215/docs/analog/spice/elec_specs/tables_clear/6_Passive_Elements6.csv
+  repository_commit: de3240d7529a6970437ac3344820aaae7839f215
+  local_copy: references/GF180_6_Passive_Elements6_commit_de3240d.csv
+  local_copy_sha256: 7597c4460eb7ca9aa85241f922c04c7fa6a5baafce22efa86ae56000b6a46cd8
+  accessed: 2026-07-18
+  documented_device: 2fF_per_um2_single_MIM
+  documented_matching: 1_percent_max_adjacent_pair_at_1pF
+geometry:
+  unit_width_um: 6.855
+  unit_length_um: 6.855
+  unit_area_um2: 46.991025
+  nominal_density_f_per_um2: 2e-15
+  nominal_unit_cap_f: 9.398205e-14
+statistical_conversion:
+  documented_pair_matching_max_fraction: 0.01
+  baseline_interpretation: max_value_equals_3sigma_pair_difference
+  baseline_pair_sigma_at_1pF_fraction: 0.00333333333333
+  baseline_individual_sigma_at_1pF_fraction: 0.00235702260396
+  baseline_individual_unit_sigma_fraction: 0.00768849418957
+  baseline_Ac_um: 0.0527046276695
+  area_scaling: sigma_C_over_C_equals_Ac_over_sqrt_area_um2
+  sensitivity_interpretation: documented_value_equals_1sigma_pair_difference
+  sensitivity_pair_sigma_at_1pF_fraction: 0.01
+  sensitivity_individual_unit_sigma_fraction: 0.0230654825687
+  sensitivity_Ac_um: 0.158113883008
+correlation_assumptions:
+  p_side_n_side_local_correlation: 0.0
+  within_array_unit_local_correlation: 0.0
+  binary_groups: disjoint_sums_of_unit_capacitors
+  global_mim_process_variation: separate_PDK_native_global_term_not_duplicated_here
+systematic_gradient_assumption:
+  enabled: false
+  value: 0.0
+  reason: no_verified_physical_unit_placement_map_or_gradient_coefficient
+  residual_risk: layout_systematic_gradient_not_covered_by_claim_bearing_model
+rng:
+  algorithm: numpy_PCG64
+  seed_sequence_words: [0xA44, mismatch_seed, branch_index, side_index]
+  mismatch_seeds: 1_through_200
+  same_seed_reused_for_static_and_dynamic: true
+frozen_outputs:
+  unit_realizations: csv/cdac_mismatch_unit_realizations.csv
+  group_weights: csv/cdac_mismatch_weights.csv
+  statistical_audit: csv/cdac_mismatch_model_audit.csv
+  machine_report: results/cdac_mismatch_model.json
+claim_boundary:
+  permitted: T2_engineering_model_under_explicit_assumptions
+  prohibited: PDK_native_MIM_mismatch_or_production_yield_claim

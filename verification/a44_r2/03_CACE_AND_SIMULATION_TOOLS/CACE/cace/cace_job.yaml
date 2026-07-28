@@ -1,0 +1,36 @@
+name: cace_job
+description: A44 standalone package CACE 2.9 executable preflight
+PDK: gf180mcuD
+cace_format: 5.2
+paths:
+  root: ..
+  schematic: xschem
+  netlist: ../../02_SIMULATION_RESULTS/05_CACE_GENERATED/netlist
+  runs: runs
+  documentation: ../../02_SIMULATION_RESULTS/05_CACE_GENERATED/reports
+  templates: cace/templates
+parameters:
+  A44_PACKAGE_CACE_PREFLIGHT:
+    display: A44 package CACE and ngspice preflight
+    tool:
+      ngspice:
+        template: tb_package_preflight.sch
+        format: ascii
+        suffix: .data
+        variables:
+          - index
+          - final_v
+    spec:
+      final_v:
+        minimum:
+          value: 1.249
+        maximum:
+          value: 1.251
+authorship:
+  designer: OpenAI Codex packaging workflow
+  company: null
+  creation_date: 2026-07-28
+  modification_date: 2026-07-28
+  license: null
+pins: {}
+default_conditions: {}

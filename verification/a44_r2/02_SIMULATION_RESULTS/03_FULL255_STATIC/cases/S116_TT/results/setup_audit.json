@@ -1,0 +1,36 @@
+{
+  "candidate_comparator_sha256": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+  "candidate_path": "/foss/designs/A44_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_MC200_PVT_FULLSTATIC_20260728_R1/03_FULL255_STATIC/cases/S116_TT/netlists/candidate/Comparator_StrongARM_CURRENT.subckt.spice",
+  "case": {
+    "candidate_comparator_sha256": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+    "candidate_id": "CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587",
+    "case_id": "S116_TT",
+    "method": "FULL_STATIC_FULL255_UPWARD_TWO_FRAME_50PS_BRACKET_0P02LSB",
+    "mismatch_seed": 116,
+    "pvt": "TT_3P3_27C",
+    "targets": "T1_THROUGH_T255"
+  },
+  "checks": {
+    "all_declared_widths_match": true,
+    "candidate_hash_matches_declared": true,
+    "full255_method_frozen": true,
+    "pvt_is_supported": true,
+    "seed_is_positive_integer": true,
+    "targets_are_t1_through_t255": true
+  },
+  "claim_boundary": [
+    "This is one deterministic seed/corner FULL255 curve.",
+    "It is not a Monte Carlo yield population."
+  ],
+  "completed_utc": "2026-07-28T03:56:56.801616+00:00",
+  "pass": true,
+  "width_checks": {
+    "XM1": true,
+    "XM11": true,
+    "XM3": true,
+    "XM4": true,
+    "XM5": true,
+    "XM6": true,
+    "XM7": true
+  }
+}

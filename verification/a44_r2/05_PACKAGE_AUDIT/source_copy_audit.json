@@ -1,0 +1,14 @@
+{
+  "completed_utc": "2026-07-28T19:15:29.683439+00:00",
+  "declared_patch_count": 8,
+  "observed_patch_count": 8,
+  "pass": true,
+  "r1_reference": "D:\\PICO\\A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R1",
+  "r2_package": "D:\\PICO\\A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2",
+  "record_count": 3094,
+  "status": "PASS_R1_TO_R2_RELOCATION_WITH_8_DECLARED_PATH_PATCHES",
+  "status_counts": {
+    "EXACT_COPY": 3086,
+    "INTENTIONAL_PORTABILITY_PATCH": 8
+  }
+}

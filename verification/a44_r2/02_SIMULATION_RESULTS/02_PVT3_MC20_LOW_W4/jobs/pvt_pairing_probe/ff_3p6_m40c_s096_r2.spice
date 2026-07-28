@@ -1,0 +1,39 @@
+* PVT local mismatch pairing probe.
+.option seed=96
+.param sw_stat_global=0 sw_stat_mismatch=1 mc_skew=3 res_mc_skew=3 cap_mc_skew=3 fnoicor=0
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice ff
+.include /foss/designs/A44_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_MC200_PVT_FULLSTATIC_20260728_R1/02_PVT3_MC20_LOW_W4/netlists/core/subckts/Comparator_StrongARM_extracted.subckt.spice
+RLEGACY_RNG_BURN_01 legacy_rng_burn_01 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_02 legacy_rng_burn_02 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_03 legacy_rng_burn_03 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_04 legacy_rng_burn_04 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_05 legacy_rng_burn_05 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_06 legacy_rng_burn_06 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_07 legacy_rng_burn_07 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_08 legacy_rng_burn_08 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_09 legacy_rng_burn_09 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_10 legacy_rng_burn_10 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_11 legacy_rng_burn_11 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_12 legacy_rng_burn_12 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_13 legacy_rng_burn_13 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_14 legacy_rng_burn_14 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_15 legacy_rng_burn_15 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_16 legacy_rng_burn_16 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_17 legacy_rng_burn_17 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_18 legacy_rng_burn_18 0 r='1+0*agauss(0,1,3)'
+RLEGACY_RNG_BURN_19 legacy_rng_burn_19 0 r='1+0*agauss(0,1,3)'
+.temp -40
+VVDD vdd 0 3.6
+VCLK clk 0 0
+VINP inp 0 1.66
+VINN inn 0 1.64
+XCMP clk outp inp outn inn vdd 0 Comparator_StrongARM
+.control
+set noaskquit
+op
+echo PVT_PAIRING_PROBE_BEGIN
+print @m.xcmp.xm3.m0[delvto] @m.xcmp.xm3.m0[mulu0] @m.xcmp.xm4.m0[delvto] @m.xcmp.xm4.m0[mulu0] @m.xcmp.xm5.m0[delvto] @m.xcmp.xm5.m0[mulu0] @m.xcmp.xm6.m0[delvto] @m.xcmp.xm6.m0[mulu0]
+echo PVT_PAIRING_PROBE_END
+quit
+.endc
+.end

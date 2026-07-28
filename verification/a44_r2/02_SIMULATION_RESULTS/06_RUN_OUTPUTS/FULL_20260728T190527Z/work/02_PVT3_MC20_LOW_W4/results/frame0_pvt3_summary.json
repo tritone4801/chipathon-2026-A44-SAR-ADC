@@ -1,0 +1,21 @@
+{
+  "corners": {
+    "FF_3P6_M40C": {
+      "fail_count": 0,
+      "failure_seeds": [],
+      "pass_count": 20
+    },
+    "SS_3P0_125C": {
+      "fail_count": 0,
+      "failure_seeds": [],
+      "pass_count": 20
+    },
+    "TT_3P3_27C": {
+      "fail_count": 0,
+      "failure_seeds": [],
+      "pass_count": 20
+    }
+  },
+  "method": "FIRST_CONVERSION_SEPARATED",
+  "noise_on_frame0_frame64_code_equality_required": false
+}

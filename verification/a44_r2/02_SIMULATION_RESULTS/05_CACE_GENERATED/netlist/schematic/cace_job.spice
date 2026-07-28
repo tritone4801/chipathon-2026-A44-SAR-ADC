@@ -1,0 +1,4 @@
+** sch_path: /foss/designs/A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2/03_CACE_AND_SIMULATION_TOOLS/CACE/xschem/cace_job.sch
+.subckt cace_job
+
+.ends

@@ -1,0 +1,14 @@
+{
+  "status": "PASS_STATIC_FIRST5_REPRODUCIBLE",
+  "pass": true,
+  "case": "S180_TT",
+  "pvt": "TT_3P3_27C",
+  "mismatch_seed": 180,
+  "transition_count": 5,
+  "matching_transition_count": 5,
+  "frames_per_bracket_point": 2,
+  "returncode": 0,
+  "elapsed_s": 24.079994086991064,
+  "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+  "completed_utc": "2026-07-28T19:04:52.643994+00:00"
+}

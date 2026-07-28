@@ -1,0 +1,95 @@
+{
+  "campaign": "A44_CMP_IN_A2P25_W_T1P000_PVT3_MC20_LOW_FAST64_SS_W4_FIXED50PS_20260726_R1",
+  "candidate_id": "CMP_IN_A2P25_W_T1P000",
+  "completed_utc": "2026-07-27T03:33:45.830675+00:00",
+  "completion_checks": {
+    "all_code_rows_4080": true,
+    "all_parseval": true,
+    "all_protocol_clean": true,
+    "all_returncode_zero": true,
+    "all_terminal": true,
+    "all_valid_frames_68": true,
+    "all_w4_50ps": true,
+    "formal_job_matrix_60": true,
+    "formal_pvt_binding": true,
+    "formal_records_60": true,
+    "frozen_inputs_unchanged": true,
+    "manual_visual_review": true,
+    "pairing_gate": true,
+    "plot_pairs_5": true,
+    "smoke_gate": true,
+    "tt_w4_compatibility_20": true,
+    "w4_code_rows_3840": true
+  },
+  "completion_status": "COMPLETE_AS_EXECUTED",
+  "cross_pvt_classification_counts": {
+    "ALL_CORNER_PASS": 2,
+    "CORNER_RECOVERY": 4,
+    "PERSISTENT_FAIL": 2,
+    "PVT_INDUCED_REGRESSION": 12
+  },
+  "execution_status": "PASS_60_OF_60_COMPLETE",
+  "fixed_step_ps": 50,
+  "frame0_status_by_corner": {
+    "FF_3P6_M40C": "PASS_20_OF_20",
+    "SS_3P0_125C": "PASS_20_OF_20",
+    "TT_3P3_27C": "PASS_20_OF_20"
+  },
+  "method_id": "FAST64_V2_FIRST_CONVERSION_SEPARATED",
+  "non_claims": [
+    "The selected MC20 set is intentionally tail/edge/diagnostic biased and is not a yield population.",
+    "No MC200 190/200 requirement is applied to this MC20 screen.",
+    "Corner recovery does not compensate for failure at another corner.",
+    "This PVT MC20 evidence does not overwrite the completed 2.25x MC200 result.",
+    "No layout, PEX, silicon, production-yield, promotion, or signoff claim is made."
+  ],
+  "pairing_status": "PASS_PAIRED_LOCAL_MISMATCH_AND_HISTORICAL_SEED_MAPPING",
+  "performance_by_corner": {
+    "FF_3P6_M40C": {
+      "frame0_pass_count": 20,
+      "hard_dynamic_fail_count": 18,
+      "hard_dynamic_pass_count": 2,
+      "snr_budget_pass_count": 1
+    },
+    "SS_3P0_125C": {
+      "frame0_pass_count": 20,
+      "hard_dynamic_fail_count": 2,
+      "hard_dynamic_pass_count": 18,
+      "snr_budget_pass_count": 16
+    },
+    "TT_3P3_27C": {
+      "frame0_pass_count": 20,
+      "hard_dynamic_fail_count": 6,
+      "hard_dynamic_pass_count": 14,
+      "snr_budget_pass_count": 10
+    }
+  },
+  "promotion_status": "UNCHANGED_NOT_PROMOTED",
+  "scope": "SELECTED_DIAGNOSTIC_MC20_LOW_W4_AT_THREE_ANALOG_PVT_CORNERS",
+  "signoff_status": "SIGNOFF_NOT_CLAIMED",
+  "source_and_binding_status": "PASS",
+  "steady_state_method_id": "FAST64_SS_W4",
+  "tt_pass_count": 14,
+  "tt_pass_remaining_pass_at_both_ss_ff_count": 2,
+  "tt_pass_remaining_pass_at_both_ss_ff_seeds": [
+    96,
+    182
+  ],
+  "tt_pass_seeds": [
+    12,
+    45,
+    53,
+    65,
+    80,
+    86,
+    96,
+    116,
+    132,
+    142,
+    182,
+    188,
+    189,
+    190
+  ],
+  "width_multiplier": 2.25
+}

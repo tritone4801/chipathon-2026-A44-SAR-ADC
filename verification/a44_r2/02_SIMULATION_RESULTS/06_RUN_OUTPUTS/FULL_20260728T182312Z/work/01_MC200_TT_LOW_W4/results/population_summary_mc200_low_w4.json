@@ -1,0 +1,63 @@
+{
+  "combined_system_fail_count": 3,
+  "combined_system_failure_seeds": [
+    65,
+    68,
+    141
+  ],
+  "combined_system_pass_count": 197,
+  "first_conversion_failure_seeds": [],
+  "first_conversion_protocol_fail_count": 0,
+  "first_conversion_protocol_pass_count": 200,
+  "historical_w0_different_frame_count": 6971,
+  "historical_w0_different_record_count": 200,
+  "historical_w0_exact_record_count": 0,
+  "method_id": "FAST64_SS_W4",
+  "non_claims": [
+    "LOW-only results are not a two-band die-level MC200 yield.",
+    "W4 and W0 distributions use different measurement methods.",
+    "No production, layout, PEX, silicon, or tapeout signoff claim is made.",
+    "Noise-on frame0/frame64 code equality is diagnostic only."
+  ],
+  "percentile_method": "LINEAR_TYPE7",
+  "population_count": 200,
+  "status": "COMPLETE_POPULATION_SUMMARY",
+  "steady_state_hard_dynamic_fail_count": 3,
+  "steady_state_hard_dynamic_failure_seeds": [
+    65,
+    68,
+    141
+  ],
+  "steady_state_hard_dynamic_pass_count": 197,
+  "steady_state_snr_budget_fail_count": 27,
+  "steady_state_snr_budget_failure_seeds": [
+    9,
+    19,
+    33,
+    34,
+    40,
+    41,
+    65,
+    68,
+    82,
+    83,
+    88,
+    94,
+    98,
+    105,
+    106,
+    112,
+    118,
+    120,
+    128,
+    141,
+    146,
+    161,
+    172,
+    173,
+    192,
+    193,
+    199
+  ],
+  "steady_state_snr_budget_pass_count": 173
+}

@@ -1,0 +1,20 @@
+{
+  "reviewed_utc": "2026-07-28T05:48:00Z",
+  "reviewer": "Codex visual inspection",
+  "pass": true,
+  "files": {
+    "pvt3_mc20_seed_sndr.png": "PASS: labels, gate, legend, and all 20 seed traces are visible",
+    "pvt3_mc20_hard_status_map.png": "PASS: 20 by 3 status grid is legible and seed65 TT is the only FAIL cell",
+    "pvt3_mc20_paired_sndr_delta.png": "PASS: signed paired deltas, axes, and color scale are visible",
+    "pvt3_mc20_ecdf.png": "PASS: SNR, SNDR, and raw-ENOB panels are not clipped; selected-MC20 non-yield label is explicit",
+    "pvt3_mc20_representative_spectra.png": "PASS: TT, SS, and FF worst/near-median discrete spectra are legible without smoothing"
+  },
+  "checks": {
+    "no_title_or_axis_clipping": true,
+    "legends_and_colorbars_readable": true,
+    "gate_lines_visible": true,
+    "status_map_matches_numeric_summary": true,
+    "spectra_are_discrete_and_unsmoothed": true,
+    "no_visual_artifact_blocks_interpretation": true
+  }
+}

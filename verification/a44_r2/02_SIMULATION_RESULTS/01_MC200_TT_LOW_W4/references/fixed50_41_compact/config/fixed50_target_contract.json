@@ -1,0 +1,18 @@
+{
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "target_record_count": 41,
+  "unique_seed_count": 41,
+  "maxstep_ps": 50,
+  "solver_profile": "ROBUST_GEAR",
+  "nfft": 64,
+  "role_counts": {
+    "EARLY_MC200_VS_V7_LOW_CODE_MISMATCH": 33,
+    "MC10_VS_V7_CODE_MISMATCH": 6,
+    "EXTREME_TAIL_HISTORICAL_CODE_NOT_REPRODUCED": 17
+  },
+  "source_paths": {
+    "EARLY_MC200_VS_V7_LOW_CODE_MISMATCH": "D:\\PICO\\A44_MC200_CROSS_RUN_CONSISTENCY_AUDIT_V1\\data\\baseline_vs_v7_low_seed_comparison.csv",
+    "MC10_VS_V7_CODE_MISMATCH": "D:\\PICO\\A44_MC200_CROSS_RUN_CONSISTENCY_AUDIT_V1\\data\\selected_rerun_comparison_v10_v11.csv",
+    "EXTREME_TAIL_HISTORICAL_CODE_NOT_REPRODUCED": "D:\\PICO\\A44_MC200_CROSS_RUN_CONSISTENCY_AUDIT_V1\\data\\tail_r1_replay_consistency.csv"
+  }
+}

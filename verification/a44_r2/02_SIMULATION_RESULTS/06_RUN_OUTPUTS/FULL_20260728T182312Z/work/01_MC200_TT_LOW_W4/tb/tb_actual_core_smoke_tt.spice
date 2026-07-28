@@ -1,0 +1,142 @@
+* TT actual sampler/CDAC/comparator plus SAR_LOGIC_BEH_TT_3P3_27C smoke.
+.options method=gear reltol=1e-4 abstol=1e-13 vntol=1e-7 trtol=7 chgtol=1e-15 rshunt=1e12
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
+.include ../netlists/core/subckts/SWITCH_BOOT_SP_native_extracted.subckt.spice
+.include ../netlists/core/subckts/CDAC_native_extracted.subckt.spice
+.include ../netlists/core/subckts/Comparator_StrongARM_extracted.subckt.spice
+.include ../netlists/SAR_ADC_ANALOG_CORE_TT_BEH_NO_R6.spice
+.include ../models/no_r6_equivalent_loads.inc
+
+.temp 27
+.param VINP_DC=1.65 VINN_DC=1.65
+VVDD vdd 0 3.3
+
+VVREFP_ID vrefp_src 0 2.5
+RVREFP vrefp_src vrefp {REF_R_EQ}
+RVREFP_ESR vrefp vrefp_cap {REF_ESR_EQ}
+CVREFP_LOCAL vrefp_cap 0 {REF_CLOCAL_EQ}
+CVREFP_LINE vrefp 0 {REF_CLINE_EQ}
+VVREFN_ID vrefn_src 0 0.8
+RVREFN vrefn_src vrefn {REF_R_EQ}
+RVREFN_ESR vrefn vrefn_cap {REF_ESR_EQ}
+CVREFN_LOCAL vrefn_cap 0 {REF_CLOCAL_EQ}
+CVREFN_LINE vrefn 0 {REF_CLINE_EQ}
+
+VVINP_ID vinp_src 0 {VINP_DC}
+RVINP vinp_src vinp {VIN_R_EQ}
+CVINP vinp 0 {VIN_CP_EQ+VIN_CCM_EQ}
+VVINN_ID vinn_src 0 {VINN_DC}
+RVINN vinn_src vinn {VIN_R_EQ}
+CVINN vinn 0 {VIN_CN_EQ+VIN_CCM_EQ}
+CVIN_DIFF vinp vinn {VIN_CDM_EQ}
+
+VCLKS_ID clks_src 0 PULSE(0 3.3 50n {CLK_TR_EQ} {CLK_TF_EQ} 125n 500n)
+RCLKS clks_src clks {CLK_R_EQ}
+CCLKS clks 0 {CLK_C_EQ}
+
+XCORE vdd 0 vrefp vrefn vinp vinn clks cmpck
++ dctrlp7 dctrlp6 dctrlp5 dctrlp4 dctrlp3 dctrlp2 dctrlp1
++ dctrln7 dctrln6 dctrln5 dctrln4 dctrln3 dctrln2 dctrln1
++ dcmpp dcmpn vresp vresn SAR_ADC_ANALOG_CORE_TT_BEH_NO_R6
+
+CLOGIC_P dcmpp 0 {CLOGIC_IN_P}
+CLOGIC_N dcmpn 0 {CLOGIC_IN_N}
+RLEAK_RESP vresp 0 1G
+RLEAK_RESN vresn 0 1G
+
+A_CLKS [clks] [clks_d] adc_logic_in
+A_DCMPP [dcmpp] [dcmpp_d] adc_logic_in
+A_DCMPN [dcmpn] [dcmpn_d] adc_logic_in
+
+ABEH [clks_d dcmpp_d dcmpn_d]
++ [cmpck_d
++ dctrlp7_d dctrlp6_d dctrlp5_d dctrlp4_d dctrlp3_d dctrlp2_d dctrlp1_d
++ dctrln7_d dctrln6_d dctrln5_d dctrln4_d dctrln3_d dctrln2_d dctrln1_d
++ dout7_d dout6_d dout5_d dout4_d dout3_d dout2_d dout1_d dout0_d
++ eoc_d
++ invalid7_d invalid6_d invalid5_d invalid4_d invalid3_d invalid2_d invalid1_d invalid0_d
++ timeout7_d timeout6_d timeout5_d timeout4_d timeout3_d timeout2_d timeout1_d timeout0_d
++ complete_d] sar_logic_beh
+
+A_CMPCK [cmpck_d] [cmpck_drv] dac_cmpck
+A_DCTRLP
++ [dctrlp7_d dctrlp6_d dctrlp5_d dctrlp4_d dctrlp3_d dctrlp2_d dctrlp1_d]
++ [dctrlp7_drv dctrlp6_drv dctrlp5_drv dctrlp4_drv dctrlp3_drv dctrlp2_drv dctrlp1_drv]
++ dac_dctrl
+A_DCTRLN
++ [dctrln7_d dctrln6_d dctrln5_d dctrln4_d dctrln3_d dctrln2_d dctrln1_d]
++ [dctrln7_drv dctrln6_drv dctrln5_drv dctrln4_drv dctrln3_drv dctrln2_drv dctrln1_drv]
++ dac_dctrl
+A_DOUT
++ [dout7_d dout6_d dout5_d dout4_d dout3_d dout2_d dout1_d dout0_d]
++ [dout7_drv dout6_drv dout5_drv dout4_drv dout3_drv dout2_drv dout1_drv dout0_drv]
++ dac_dout
+A_STATUS [eoc_d invalid0_d timeout0_d complete_d]
++ [eoc invalid0 timeout0 complete] dac_status
+
+R_CMPCK cmpck_drv cmpck {CMPCK_R_EQ}
+R_DCTRLP7 dctrlp7_drv dctrlp7 {DCTRL_R_EQ}
+R_DCTRLP6 dctrlp6_drv dctrlp6 {DCTRL_R_EQ}
+R_DCTRLP5 dctrlp5_drv dctrlp5 {DCTRL_R_EQ}
+R_DCTRLP4 dctrlp4_drv dctrlp4 {DCTRL_R_EQ}
+R_DCTRLP3 dctrlp3_drv dctrlp3 {DCTRL_R_EQ}
+R_DCTRLP2 dctrlp2_drv dctrlp2 {DCTRL_R_EQ}
+R_DCTRLP1 dctrlp1_drv dctrlp1 {DCTRL_R_EQ}
+R_DCTRLN7 dctrln7_drv dctrln7 {DCTRL_R_EQ}
+R_DCTRLN6 dctrln6_drv dctrln6 {DCTRL_R_EQ}
+R_DCTRLN5 dctrln5_drv dctrln5 {DCTRL_R_EQ}
+R_DCTRLN4 dctrln4_drv dctrln4 {DCTRL_R_EQ}
+R_DCTRLN3 dctrln3_drv dctrln3 {DCTRL_R_EQ}
+R_DCTRLN2 dctrln2_drv dctrln2 {DCTRL_R_EQ}
+R_DCTRLN1 dctrln1_drv dctrln1 {DCTRL_R_EQ}
+
+R_DOUT7 dout7_drv dout7_rx {DOUT_R_EQ}
+R_DOUT6 dout6_drv dout6_rx {DOUT_R_EQ}
+R_DOUT5 dout5_drv dout5_rx {DOUT_R_EQ}
+R_DOUT4 dout4_drv dout4_rx {DOUT_R_EQ}
+R_DOUT3 dout3_drv dout3_rx {DOUT_R_EQ}
+R_DOUT2 dout2_drv dout2_rx {DOUT_R_EQ}
+R_DOUT1 dout1_drv dout1_rx {DOUT_R_EQ}
+R_DOUT0 dout0_drv dout0_rx {DOUT_R_EQ}
+C_DOUT7 dout7_rx 0 {DOUT_C_EQ}
+C_DOUT6 dout6_rx 0 {DOUT_C_EQ}
+C_DOUT5 dout5_rx 0 {DOUT_C_EQ}
+C_DOUT4 dout4_rx 0 {DOUT_C_EQ}
+C_DOUT3 dout3_rx 0 {DOUT_C_EQ}
+C_DOUT2 dout2_rx 0 {DOUT_C_EQ}
+C_DOUT1 dout1_rx 0 {DOUT_C_EQ}
+C_DOUT0 dout0_rx 0 {DOUT_C_EQ}
+
+.model adc_logic_in adc_bridge in_low=0.99 in_high=2.31 rise_delay=1p fall_delay=1p
+.model dac_cmpck dac_bridge input_load=10f t_rise={CMPCK_TR_EQ} t_fall={CMPCK_TF_EQ} out_low=0 out_high=3.3
+.model dac_dctrl dac_bridge input_load=10f t_rise={DCTRL_TR_EQ} t_fall={DCTRL_TF_EQ} out_low=0 out_high=3.3
+.model dac_dout dac_bridge input_load=10f t_rise={DOUT_TR_EQ} t_fall={DOUT_TF_EQ} out_low=0 out_high=3.3
+.model dac_status dac_bridge input_load=1f t_rise=0.05n t_fall=0.05n out_low=0 out_high=3.3
+.model sar_logic_beh d_cosim
++ simulation="/foss/designs/manual_goal/verification/A44_TT_BEH_NO_R6_MC200_FAST64_SIGNOFF_20260718/models/SAR_LOGIC_BEH_TT_3P3_27C.so" delay=1p
+
+.save v(clks) v(cmpck) v(dcmpp) v(dcmpn) v(vresp) v(vresn)
++ v(dctrlp7) v(dctrlp6) v(dctrlp5) v(dctrlp4) v(dctrlp3) v(dctrlp2) v(dctrlp1)
++ v(dctrln7) v(dctrln6) v(dctrln5) v(dctrln4) v(dctrln3) v(dctrln2) v(dctrln1)
++ v(dout7_rx) v(dout6_rx) v(dout5_rx) v(dout4_rx) v(dout3_rx) v(dout2_rx) v(dout1_rx) v(dout0_rx)
++ v(eoc) v(complete) v(invalid0) v(timeout0)
+
+.control
+set wr_singlescale
+set wr_vecnames
+tran 0.05n 430n 0 0.05n
+meas tran t_cmp1 when v(cmpck)=1.65 rise=1
+meas tran t_cmp8 when v(cmpck)=1.65 rise=8
+meas tran t_complete when v(complete)=1.65 rise=1
+meas tran invalid_final find v(invalid0) at=420n
+meas tran timeout_final find v(timeout0) at=420n
+wrdata ../raw/tb_actual_core_smoke_tt.csv time v(clks) v(cmpck) v(dcmpp) v(dcmpn) v(vresp) v(vresn)
++ v(dctrlp7) v(dctrlp6) v(dctrlp5) v(dctrlp4) v(dctrlp3) v(dctrlp2) v(dctrlp1)
++ v(dctrln7) v(dctrln6) v(dctrln5) v(dctrln4) v(dctrln3) v(dctrln2) v(dctrln1)
++ v(eoc) v(complete) v(invalid0) v(timeout0)
++ v(dout7_rx) v(dout6_rx) v(dout5_rx) v(dout4_rx) v(dout3_rx) v(dout2_rx) v(dout1_rx) v(dout0_rx)
+quit
+.endc
+.end

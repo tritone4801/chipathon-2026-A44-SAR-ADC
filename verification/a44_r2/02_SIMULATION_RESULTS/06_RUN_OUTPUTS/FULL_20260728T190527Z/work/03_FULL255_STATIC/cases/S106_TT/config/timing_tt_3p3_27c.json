@@ -1,0 +1,74 @@
+{
+  "model": "SAR_LOGIC_BEH_TT_3P3_27C",
+  "condition": "TT_3P3_27C",
+  "logic_pvt_variation": "DISABLED",
+  "time_unit": "ns",
+  "source_files_sha256": {
+    "sar_logic_async_core_RTL.sv": "be43ce73959afb150e9987401eccf6aecb38c8e29d4ad5b780525b6b5e90afb9",
+    "timing_model_parameters.csv": "c143c4a6f246a3f7f248d98ee7610fb25b60a4b4b54e3e18a09ca7dfaef9ac5d",
+    "unit_timing_metrics.csv": "2ccb95ae564eef737413e8ca4a52165d81994240e0d16c79feaed41202674b42",
+    "system_timing_actual_logic.csv": "452094c2261235d9d2cf0eb786e366fbb45c55a4b00ba9034f2260db33e3eafd",
+    "sar_bit_trial_trace_actual_logic.csv": "6a60bf3f5ad44f34108c4084135a3d86c7396cdbc284b53b3079edd2b883cb07"
+  },
+  "t_clks_fall_to_first_cmpck_rise": 11.05,
+  "bit_order": [
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "cmpck_high": [
+    13.89,
+    13.878,
+    13.891,
+    13.891,
+    13.878,
+    13.879,
+    13.892,
+    13.878
+  ],
+  "decision_aperture_from_cmpck_rise": [
+    0.914,
+    0.824,
+    0.914,
+    0.914,
+    0.825,
+    0.825,
+    0.914,
+    0.824
+  ],
+  "dctrl_event_from_cmpck_rise_bits_7_to_1": [
+    7.911,
+    7.931,
+    8.022,
+    8.023,
+    7.934,
+    7.935,
+    8.025
+  ],
+  "dctrl_event_from_decision_bits_7_to_1": [
+    6.997,
+    7.107,
+    7.108,
+    7.109,
+    7.109,
+    7.11,
+    7.111
+  ],
+  "cmpck_low_guard_bits_7_to_1": [
+    11.56,
+    11.575,
+    11.576,
+    11.56,
+    11.56,
+    11.577,
+    11.574
+  ],
+  "last_cmpck_rise_to_atomic_dout": 10.633,
+  "timing_rounding": "1_ps",
+  "claim_boundary": "TT timing evidence only; not actual logic signoff in this campaign"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS_HOST_PRODUCTION_SOURCE_AUDIT",
+  "pass": true,
+  "checked_utc": "2026-07-25T14:23:08.427224+00:00",
+  "production_root": "C:\\Users\\15031\\eda\\designs\\manual_goal\\analog\\SAR_CURRENT",
+  "declared_files": 113,
+  "matching_files": 113,
+  "receipt_sha256": "20e1ec8240369f29e33217be43b8882dec5fc6815903bcf430b2286b6df8e1f0",
+  "package_manifest_present": true,
+  "package_manifest_sha256": "0f2c184678ee1c7fc142d8e9fb29689b3df281f369aa5a74a9e68867fdb05904",
+  "failures": []
+}

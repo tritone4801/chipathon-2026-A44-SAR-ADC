@@ -1,0 +1,37 @@
+
+classification: ACCEPTED_FIXTURE_DERIVED_EQUIVALENT_LOADS
+status: FROZEN
+source_file: models/no_r6_equivalent_loads.inc
+input_each_leg:
+  resistance_ohm: 105
+  shunt_capacitance_f: 1.0e-12
+  common_mode_capacitance_f: 5.0e-13
+  differential_capacitance_f: 2.0e-13
+reference_each_rail:
+  source_resistance_ohm: 2
+  local_decoupling_f: 2.0e-10
+  decoupling_esr_ohm: 0.2
+  line_capacitance_f: 5.0e-13
+clks:
+  source_resistance_ohm: 105
+  load_capacitance_f: 1.5e-12
+  rise_time_s: 2.5e-10
+  fall_time_s: 2.5e-10
+comparator_logic_inputs:
+  dcmpp_capacitance_f: 2.0e-14
+  dcmpn_capacitance_f: 2.0e-14
+dctrl:
+  thevenin_resistance_ohm: 15000
+  intrinsic_rise_time_s: 5.0e-11
+  intrinsic_fall_time_s: 5.0e-11
+cmpck:
+  thevenin_resistance_ohm: 35000
+  intrinsic_rise_time_s: 5.0e-11
+  intrinsic_fall_time_s: 5.0e-11
+dout:
+  series_resistance_ohm: 160
+  load_capacitance_f: 1.0e-12
+  rise_time_s: 2.5e-10
+  fall_time_s: 2.5e-10
+r6_full_rc_heavy: disabled
+zero_load_assumption: false

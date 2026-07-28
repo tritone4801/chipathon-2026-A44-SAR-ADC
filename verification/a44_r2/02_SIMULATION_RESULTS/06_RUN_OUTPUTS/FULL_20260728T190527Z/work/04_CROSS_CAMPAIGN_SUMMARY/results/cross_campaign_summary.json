@@ -1,0 +1,306 @@
+{
+  "binding": {
+    "declared_hashes": {
+      "S044_FF": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+      "S044_SS": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+      "S044_TT": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+      "S106_TT": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+      "S116_TT": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+      "S180_TT": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+      "mc_setup": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+      "pvt_contract": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49"
+    },
+    "pass": true
+  },
+  "campaign": "A44_CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587_MC200_PVT_FULLSTATIC_20260728_R1",
+  "candidate": {
+    "comparator_sha256": "53f26155df31b8d1f50dd1bc99a17a6530de29233c11faabe63906debd1b5b49",
+    "id": "CMP_XM5_XM6_W8P2524_XM7_XM11_W16P8587",
+    "widths_um": {
+      "XM1": 1.56,
+      "XM3_XM4": 3.51,
+      "XM5_XM6": 8.2524,
+      "XM7_XM11": 16.8587
+    }
+  },
+  "claim_boundary": [
+    "MC200 is the fixed TT LOW/W4 population result.",
+    "PVT3 MC20 is a selected diagnostic sample and not a yield population.",
+    "FULL255 curves are deterministic seed/corner static results.",
+    "TT seed44 is computed once and reused only after exact hash/method audit.",
+    "Seed44 SS static failure prevents promotion.",
+    "No layout, PEX, silicon, production-yield, tapeout, or signoff claim."
+  ],
+  "completed_utc": "2026-07-28T08:03:42.547045+00:00",
+  "execution": {
+    "complete": true,
+    "full255_static": {
+      "queue_a": "COMPLETE",
+      "queue_b": "COMPLETE",
+      "reuse_source": "03_FULL255_STATIC/cases/S044_TT/results/current_full255_summary.json",
+      "transition_search_count": 1530,
+      "tt_seed44_reused_for_seed44_pvt_tt": true,
+      "unique_curve_count": 6
+    },
+    "mc200": {
+      "exceptions": 0,
+      "execution_audit_pass": true,
+      "formal_wall_elapsed_s": 4637.163384583895,
+      "records": 200
+    },
+    "pvt3_mc20": {
+      "completion_status": "COMPLETE_AS_EXECUTED",
+      "exceptions": 0,
+      "formal_wall_elapsed_s": 1320.3716390869813,
+      "manifest_pass": true,
+      "records": 60,
+      "smoke_wall_elapsed_s": 275.1564345289953
+    }
+  },
+  "overall_status": "COMPLETE_AS_EXECUTED_PERFORMANCE_FAIL_NO_PROMOTION",
+  "performance": {
+    "full255_static": {
+      "fail_count": 1,
+      "pass_count": 5,
+      "rows": [
+        {
+          "case": "S044_TT",
+          "max_abs_dnl_ep_lsb": 0.6103512014787864,
+          "max_abs_inl_ep_lsb": 0.6866451016635909,
+          "max_final_bracket_lsb": 0.01562500000000669,
+          "min_dnl_ep_lsb": -0.6103512014787533,
+          "min_width_code": 191,
+          "missing_code_count": 0,
+          "pvt": "TT_3P3_27C",
+          "reversal_count": 0,
+          "seed": 44,
+          "status": "PASS",
+          "transition_count": 255
+        },
+        {
+          "case": "S116_TT",
+          "max_abs_dnl_ep_lsb": 0.4225768685686033,
+          "max_abs_inl_ep_lsb": 0.35801651364840553,
+          "max_final_bracket_lsb": 0.011718750000013375,
+          "min_dnl_ep_lsb": -0.30519440507733253,
+          "min_width_code": 191,
+          "missing_code_count": 0,
+          "pvt": "TT_3P3_27C",
+          "reversal_count": 0,
+          "seed": 116,
+          "status": "PASS",
+          "transition_count": 255
+        },
+        {
+          "case": "S180_TT",
+          "max_abs_dnl_ep_lsb": 0.4695081563178495,
+          "max_abs_inl_ep_lsb": 0.4519016004559494,
+          "max_final_bracket_lsb": 0.011718750000013375,
+          "min_dnl_ep_lsb": -0.4695081563178495,
+          "min_width_code": 191,
+          "missing_code_count": 0,
+          "pvt": "TT_3P3_27C",
+          "reversal_count": 0,
+          "seed": 180,
+          "status": "PASS",
+          "transition_count": 255
+        },
+        {
+          "case": "S106_TT",
+          "max_abs_dnl_ep_lsb": 0.14671903881700876,
+          "max_abs_inl_ep_lsb": 0.09390018484288684,
+          "max_final_bracket_lsb": 0.01562500000000669,
+          "min_dnl_ep_lsb": -0.04108133086876509,
+          "min_width_code": 128,
+          "missing_code_count": 0,
+          "pvt": "TT_3P3_27C",
+          "reversal_count": 0,
+          "seed": 106,
+          "status": "PASS",
+          "transition_count": 255
+        },
+        {
+          "case": "S044_SS",
+          "max_abs_dnl_ep_lsb": 1.4963498028585356,
+          "max_abs_inl_ep_lsb": 1.5726343026121274,
+          "max_final_bracket_lsb": 0.015625000000000156,
+          "min_dnl_ep_lsb": -1.0034345736816053,
+          "min_width_code": 191,
+          "missing_code_count": 1,
+          "pvt": "SS_3P0_125C",
+          "reversal_count": 1,
+          "seed": 44,
+          "status": "FAIL",
+          "transition_count": 255
+        },
+        {
+          "case": "S044_FF",
+          "max_abs_dnl_ep_lsb": 0.32877218934911445,
+          "max_abs_inl_ep_lsb": 0.41683616863905154,
+          "max_final_bracket_lsb": 0.01562500000000669,
+          "min_dnl_ep_lsb": -0.328772189349107,
+          "min_width_code": 191,
+          "missing_code_count": 0,
+          "pvt": "FF_3P6_M40C",
+          "reversal_count": 0,
+          "seed": 44,
+          "status": "PASS",
+          "transition_count": 255
+        }
+      ]
+    },
+    "mc200_tt_low_w4": {
+      "failure_seeds": [
+        65,
+        68,
+        141
+      ],
+      "hard_dynamic_fail_count": 3,
+      "hard_dynamic_pass_count": 197,
+      "representative_records": [
+        {
+          "duplicate_representative_seed": "False",
+          "mismatch_seed": "141",
+          "observed_enob_raw": "5.952134533910242",
+          "observed_sfdr_dbc": "48.7150038871276",
+          "observed_sndr_db": "37.591849894139656",
+          "observed_snr_db": "38.075970084844776",
+          "overall_status": "FAIL_STEADY_STATE_DYNAMIC",
+          "role": "WORST",
+          "selection_rule": "NEAREST_OBSERVED_THEN_LOWEST_SEED",
+          "target_sndr_db": "37.591849894139656"
+        },
+        {
+          "duplicate_representative_seed": "False",
+          "mismatch_seed": "65",
+          "observed_enob_raw": "7.493939850876304",
+          "observed_sfdr_dbc": "54.12081424979209",
+          "observed_sndr_db": "46.873517902275346",
+          "observed_snr_db": "47.84927162467322",
+          "overall_status": "FAIL_STEADY_STATE_DYNAMIC",
+          "role": "P1",
+          "selection_rule": "NEAREST_OBSERVED_THEN_LOWEST_SEED",
+          "target_sndr_db": "46.872876915957455"
+        },
+        {
+          "duplicate_representative_seed": "False",
+          "mismatch_seed": "41",
+          "observed_enob_raw": "7.564200640689992",
+          "observed_sfdr_dbc": "56.95605997945708",
+          "observed_sndr_db": "47.296487856953746",
+          "observed_snr_db": "47.7896433222412",
+          "overall_status": "PASS_FAST64_COMPLETE",
+          "role": "P5",
+          "selection_rule": "NEAREST_OBSERVED_THEN_LOWEST_SEED",
+          "target_sndr_db": "47.296085171563654"
+        },
+        {
+          "duplicate_representative_seed": "False",
+          "mismatch_seed": "140",
+          "observed_enob_raw": "7.592014730941193",
+          "observed_sfdr_dbc": "55.29996134599527",
+          "observed_sndr_db": "47.46392868026597",
+          "observed_snr_db": "48.1440369913365",
+          "overall_status": "PASS_FAST64_COMPLETE",
+          "role": "P10",
+          "selection_rule": "NEAREST_OBSERVED_THEN_LOWEST_SEED",
+          "target_sndr_db": "47.46361188399405"
+        },
+        {
+          "duplicate_representative_seed": "False",
+          "mismatch_seed": "80",
+          "observed_enob_raw": "7.748842792938397",
+          "observed_sfdr_dbc": "57.026024934947294",
+          "observed_sndr_db": "48.408033613489145",
+          "observed_snr_db": "49.33652361350254",
+          "overall_status": "PASS_FAST64_COMPLETE",
+          "role": "P50",
+          "selection_rule": "NEAREST_OBSERVED_THEN_LOWEST_SEED",
+          "target_sndr_db": "48.40646992307261"
+        }
+      ],
+      "selected_static_seed_dynamic_records": {
+        "44": {
+          "enob_raw": 7.86774065640328,
+          "overall_status": "PASS_FAST64_COMPLETE",
+          "sndr_db": 49.12379875154774,
+          "snr_db": 50.17989886206937
+        },
+        "106": {
+          "enob_raw": 7.539446843087233,
+          "overall_status": "PASS_FAST64_COMPLETE",
+          "sndr_db": 47.14746999538514,
+          "snr_db": 48.04460522192825
+        },
+        "116": {
+          "enob_raw": 7.86375896582192,
+          "overall_status": "PASS_FAST64_COMPLETE",
+          "sndr_db": 49.099828974247956,
+          "snr_db": 50.31349779029223
+        },
+        "180": {
+          "enob_raw": 7.830442839430649,
+          "overall_status": "PASS_FAST64_COMPLETE",
+          "sndr_db": 48.8992658933725,
+          "snr_db": 50.11610062035317
+        }
+      },
+      "sndr_percentiles_db": {
+        "1": 46.872876915957455,
+        "10": 47.46361188399405,
+        "5": 47.296085171563654,
+        "50": 48.40646992307261
+      }
+    },
+    "selected_pvt3_mc20_not_yield": {
+      "FF_3P6_M40C": {
+        "baseline_hard_dynamic_pass_count": 2,
+        "baseline_sndr_p50_db": 44.146322948335744,
+        "baseline_snr_budget_pass_count": 1,
+        "frame0_pass_count": 20,
+        "hard_dynamic_fail_count": 0,
+        "hard_dynamic_pass_count": 20,
+        "hard_fail_to_pass_count": 18,
+        "hard_pass_to_fail_count": 0,
+        "paired_enob_delta_p50_bit": 0.7899750120586648,
+        "paired_sndr_delta_p50_db": 4.755649572593164,
+        "resized_sndr_p50_db": 48.60098099794225,
+        "snr_budget_pass_count": 18,
+        "snr_fail_to_pass_count": 17,
+        "snr_pass_to_fail_count": 0
+      },
+      "SS_3P0_125C": {
+        "baseline_hard_dynamic_pass_count": 18,
+        "baseline_sndr_p50_db": 48.24352054856624,
+        "baseline_snr_budget_pass_count": 16,
+        "frame0_pass_count": 20,
+        "hard_dynamic_fail_count": 0,
+        "hard_dynamic_pass_count": 20,
+        "hard_fail_to_pass_count": 2,
+        "hard_pass_to_fail_count": 0,
+        "paired_enob_delta_p50_bit": -0.02236205323191598,
+        "paired_sndr_delta_p50_db": -0.13461956045613377,
+        "resized_sndr_p50_db": 48.3026100067823,
+        "snr_budget_pass_count": 19,
+        "snr_fail_to_pass_count": 4,
+        "snr_pass_to_fail_count": 1
+      },
+      "TT_3P3_27C": {
+        "baseline_hard_dynamic_pass_count": 14,
+        "baseline_sndr_p50_db": 47.45592499888263,
+        "baseline_snr_budget_pass_count": 10,
+        "frame0_pass_count": 20,
+        "hard_dynamic_fail_count": 1,
+        "hard_dynamic_pass_count": 19,
+        "hard_fail_to_pass_count": 6,
+        "hard_pass_to_fail_count": 1,
+        "paired_enob_delta_p50_bit": 0.15310934926727127,
+        "paired_sndr_delta_p50_db": 0.9217182825889729,
+        "resized_sndr_p50_db": 48.40483182082449,
+        "snr_budget_pass_count": 18,
+        "snr_fail_to_pass_count": 8,
+        "snr_pass_to_fail_count": 0
+      }
+    }
+  }
+}

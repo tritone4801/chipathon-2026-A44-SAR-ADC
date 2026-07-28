@@ -1,0 +1,4 @@
+make: Entering directory '/foss/designs/A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2/03_CACE_AND_SIMULATION_TOOLS'
+python3 scripts/build_package_audit.py
+make: *** [Makefile:18: audit] Terminated
+make: Leaving directory '/foss/designs/A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2/03_CACE_AND_SIMULATION_TOOLS'

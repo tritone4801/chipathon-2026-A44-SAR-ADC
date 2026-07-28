@@ -1,0 +1,6 @@
+{
+  "frames_per_point": 2,
+  "method": "FROZEN_FULL_STATIC_TWO_FRAME_CONDITIONING",
+  "source": "previously fixed FULL STATIC method",
+  "requalification_required": false
+}

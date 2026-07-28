@@ -1,0 +1,26 @@
+{
+  "campaign": "A44_CMP_IN_A2P25_W_QUALIFICATION_20260726_R2",
+  "candidate_id": "CMP_IN_A2P25_W",
+  "candidate_mc20_job_count": 20,
+  "execution_complete": true,
+  "final_status": "COMPLETE_ALL_FIXED_SIMULATIONS_PERFORMANCE_NO_PROMOTION",
+  "fixed_four_phase_complete": true,
+  "fixed_four_phase_record_count": 56,
+  "four_phase_gate_pass": false,
+  "gate1_block_pass": false,
+  "input_manifest_sha256": "e0c3edb1b3446144dda2a981dd698cc44c7b7cb1117ece4a5bf6e1b4a11e5cd4",
+  "input_manifest_unchanged": true,
+  "mc20_complete": true,
+  "mc20_dynamic_pass": true,
+  "mc20_followup_complete": true,
+  "mc20_followup_logical_record_count": 160,
+  "mc20_followup_selected_seed_count": 20,
+  "non_claims": [
+    "The selected MC20 is diagnostic and is not a yield sample.",
+    "The MC20 four-phase follow-up is mechanism evidence, not MC200.",
+    "No layout, PEX, yield, MC200, or signoff closure is claimed."
+  ],
+  "performance_promotion_pass": false,
+  "valid_retained_frames": 1280,
+  "width_multiplier": 2.25
+}

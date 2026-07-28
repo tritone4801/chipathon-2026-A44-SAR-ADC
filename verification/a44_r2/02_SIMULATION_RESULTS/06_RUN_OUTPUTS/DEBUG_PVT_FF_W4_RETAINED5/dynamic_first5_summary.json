@@ -1,0 +1,19 @@
+{
+  "campaign": "02_PVT3_MC20_LOW_W4",
+  "comparison_record_count": 25,
+  "completed_job_count": 5,
+  "completed_utc": "2026-07-28T18:19:34.655103+00:00",
+  "early_stop_method": "Each job runs the four diagnostic warm-up frames and compares the first five formal W4 retained records (frames 4-8). Frames 9-67 are not scheduled after those five retained records match.",
+  "exceptions": [],
+  "jobs_per_phase": 5,
+  "matching_record_count": 25,
+  "pass": true,
+  "phases": [
+    "P6_PVT_FF_MC20_LOW"
+  ],
+  "retained_records_per_job": 5,
+  "selected_job_count": 5,
+  "simulation_frames_per_job": 9,
+  "status": "PASS_DYNAMIC_FIRST5_REPRODUCIBLE",
+  "warmup_frames_per_job": 4
+}

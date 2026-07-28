@@ -1,0 +1,17 @@
+{
+  "campaign": "01_MC200_TT_LOW_W4",
+  "comparison_record_count": 20,
+  "completed_job_count": 4,
+  "completed_utc": "2026-07-28T18:15:04.721740+00:00",
+  "early_stop_method": "Each job uses the identical deterministic prefix and terminates after frame 4; frames 5-67 are not scheduled after the first five records match.",
+  "exceptions": [],
+  "frames_per_job": 5,
+  "jobs_per_phase": 4,
+  "matching_record_count": 18,
+  "pass": false,
+  "phases": [
+    "P4_EVENT_NOISE_MC200_LOW"
+  ],
+  "selected_job_count": 4,
+  "status": "FAIL_DYNAMIC_FIRST5_REPRODUCIBILITY"
+}

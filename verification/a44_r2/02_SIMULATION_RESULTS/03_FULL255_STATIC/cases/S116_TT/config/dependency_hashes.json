@@ -1,0 +1,86 @@
+{
+  "file_count": 16,
+  "files": [
+    {
+      "bytes": 2700,
+      "path": "config/cdac_mismatch_model.yaml",
+      "sha256": "6e15822f9689ea72feb9bbe86b9146dec7ddbe282d37503a5eeb42f81a75e968"
+    },
+    {
+      "bytes": 154,
+      "path": "config/ngspice_userinit/.spiceinit",
+      "sha256": "e4fedb09e98dc2f3df539fe215df79f4977d8fb3f7bcdd61c606d8bb90da1325"
+    },
+    {
+      "bytes": 5439,
+      "path": "config/paired_static_contract.json",
+      "sha256": "d6fd97f6690abebe485d7a297c4488ab60482e5a15a70bfa13724ec0635a60ac"
+    },
+    {
+      "bytes": 507,
+      "path": "config/ramp_contract.json",
+      "sha256": "9db8775fe67344f09cd16492e69bd62d4a50b9df9c4ba91afb9a1f8f371b31ff"
+    },
+    {
+      "bytes": 1724,
+      "path": "config/seed116_selection_provenance.json",
+      "sha256": "c49e6aa871ac89baae52486a4691fe880798c3ea632d52678c9eb7683dfbe54c"
+    },
+    {
+      "bytes": 549745,
+      "path": "csv/cdac_mismatch_weights.csv",
+      "sha256": "db6195e8cf650819603c0aba6e7d08d6bb03830e512a598fbe05699bfa36b824"
+    },
+    {
+      "bytes": 286040,
+      "path": "models/SAR_LOGIC_BEH_TT_3P3_27C.so",
+      "sha256": "e6f8341531b50a0d59e1f2f2be60f501a43d84e887b7e6226f5cd4d9c431ea0c"
+    },
+    {
+      "bytes": 1176,
+      "path": "models/no_r6_equivalent_loads.inc",
+      "sha256": "e9a41dab2e5e52b4f6ecc1d8d0d0b17eca88e8854b1ef7e24f8d62578b76dda3"
+    },
+    {
+      "bytes": 3896,
+      "path": "netlists/baseline/Comparator_StrongARM_extracted.subckt.spice",
+      "sha256": "27da9f627ade204e4481ae399e1fb606002fad24a7cfe581e518dc0e5813cba8"
+    },
+    {
+      "bytes": 3896,
+      "path": "netlists/candidate/Comparator_StrongARM_CMP_IN_A2P25_W.subckt.spice",
+      "sha256": "e30b2055a880b83176f9389c8b79a13201fdd0e689ca46f3dc3f32b19436f303"
+    },
+    {
+      "bytes": 4365,
+      "path": "netlists/core/subckts/CDAC_native_extracted.subckt.spice",
+      "sha256": "6e98da540b1c765b0dcec4d1e10399142dc37b7f1c21960d289a83f07ec10ada"
+    },
+    {
+      "bytes": 3195,
+      "path": "netlists/core/subckts/SWITCH_BOOT_SP_native_extracted.subckt.spice",
+      "sha256": "3ef9735c56374250575394bbc2dbbf4e33ad4cc4c02af0055205160908e0daf1"
+    },
+    {
+      "bytes": 78694,
+      "path": "references/historical_selection/static_mc200_reconstructed_summary.csv",
+      "sha256": "d3a30841163a66cfc6fb935209bdc70d5ef5da70a23feb4e5637965d6e099d77"
+    },
+    {
+      "bytes": 34007,
+      "path": "references/historical_selection/static_mc_exact_validation.csv",
+      "sha256": "2d218ded08973148f108a77c7d5e6bbe32c1b9d25a624f47bba91fa7dcf18787"
+    },
+    {
+      "bytes": 26481,
+      "path": "scripts/sar_campaign_common.py",
+      "sha256": "d72644522460bc0771afd94901372b7e6ef3361f7bb4dd7129023ed4c6b7c4bf"
+    },
+    {
+      "bytes": 13519,
+      "path": "scripts/setup_paired_static.py",
+      "sha256": "d15e09844a18f0bf383dc1121e3e3a9f461438a32486d26b7c288457819fcad9"
+    }
+  ],
+  "generated_utc": "2026-07-26T20:17:59.358651+00:00"
+}

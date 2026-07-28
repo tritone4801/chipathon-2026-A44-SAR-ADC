@@ -1,0 +1,25 @@
+* StrongARM symmetric-state small-signal noise capability probe.
+.include /foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /foss/designs/manual_goal/verification/A44_TT_BEH_NO_R6_MC200_FAST64_SIGNOFF_20260718/netlists/core/subckts/Comparator_StrongARM_extracted.subckt.spice
+.param VCM=1.65 CLKDC=1.65
+.temp 27
+VVDD vdd 0 3.3
+VCLK clk 0 {CLKDC}
+VDIFF vd 0 DC 0 AC 1
+BVP vinp 0 v={VCM+0.5*v(vd)}
+BVN vinn 0 v={VCM-0.5*v(vd)}
+XCMP clk dcmpp vinp dcmpn vinn vdd 0 Comparator_StrongARM
+COUTP dcmpp 0 20f
+COUTN dcmpn 0 20f
+EOUT out 0 dcmpp dcmpn 1
+.noise v(out) VDIFF dec 20 1k 1G
+.control
+set noaskquit
+run
+print inoise_total onoise_total
+op
+print v(dcmpp) v(dcmpn) v(xcmp.xp) v(xcmp.xn) v(xcmp.lp) v(xcmp.ln)
+quit
+.endc
+.end

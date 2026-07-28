@@ -1,0 +1,63 @@
+{
+  "completed_utc": "2026-07-28T04:07:39.780029+00:00",
+  "protocol_results": [
+    {
+      "all_measurement_frames_valid": true,
+      "all_protocol_frames_pass": true,
+      "comparator_decisions_expected": 8,
+      "dctrl_updates_expected": 7,
+      "dout_stability_window_ns": [
+        470,
+        480
+      ],
+      "frame_count": 20,
+      "frames_per_point": 2,
+      "input_point_count": 10,
+      "log": "logs/conditioning_protocol/conditioning_protocol_current_f2.log",
+      "raw": "generated/raw/conditioning_protocol_current_f2.raw",
+      "variant": "CURRENT"
+    },
+    {
+      "all_measurement_frames_valid": true,
+      "all_protocol_frames_pass": true,
+      "comparator_decisions_expected": 8,
+      "dctrl_updates_expected": 7,
+      "dout_stability_window_ns": [
+        470,
+        480
+      ],
+      "frame_count": 30,
+      "frames_per_point": 3,
+      "input_point_count": 10,
+      "log": "logs/conditioning_protocol/conditioning_protocol_current_f3.log",
+      "raw": "generated/raw/conditioning_protocol_current_f3.raw",
+      "variant": "CURRENT"
+    }
+  ],
+  "qualification_targets": [
+    1,
+    64,
+    128,
+    192,
+    255
+  ],
+  "selected_frames_per_point": 2,
+  "shared_protocol_vids_v": [
+    -1.7044616699218753,
+    -1.6978210449218751,
+    -0.8758361816406249,
+    -0.869195556640625,
+    -0.020648193359375,
+    -0.014007568359375002,
+    0.8191833496093749,
+    0.8258239746093748,
+    1.663580322265625,
+    1.670220947265625
+  ],
+  "status": "PASS_TWO_FRAME",
+  "three_frame_protocol_pass": true,
+  "three_frame_search_pass": true,
+  "threshold_tolerance_lsb": 0.02,
+  "two_frame_protocol_pass": true,
+  "two_frame_threshold_pass": true
+}

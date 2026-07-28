@@ -1,0 +1,46 @@
+{
+  "case_status": {
+    "S044_FF": {
+      "absolute_static_status": "PASS",
+      "analysis": "PASS_COMPLETE",
+      "analysis_returncode": 0,
+      "completed_utc": "2026-07-28T07:57:57.778807+00:00",
+      "pilot": "PASS",
+      "pilot_returncode": 0,
+      "started_utc": "2026-07-28T07:26:37.591138+00:00",
+      "transition_returncode": 0,
+      "transitions": "PASS"
+    },
+    "S044_SS": {
+      "absolute_static_status": "FAIL",
+      "analysis": "PASS_COMPLETE",
+      "analysis_returncode": 0,
+      "completed_utc": "2026-07-28T07:26:37.588784+00:00",
+      "pilot": "PASS",
+      "pilot_returncode": 0,
+      "started_utc": "2026-07-28T06:38:37.285108+00:00",
+      "transition_returncode": 0,
+      "transitions": "PASS"
+    },
+    "S106_TT": {
+      "absolute_static_status": "PASS",
+      "analysis": "PASS_COMPLETE",
+      "analysis_returncode": 0,
+      "completed_utc": "2026-07-28T06:38:37.282895+00:00",
+      "pilot": "PASS",
+      "pilot_returncode": 0,
+      "started_utc": "2026-07-28T05:47:20.307600+00:00",
+      "transition_returncode": 0,
+      "transitions": "PASS"
+    }
+  },
+  "cases": [
+    "S106_TT",
+    "S044_SS",
+    "S044_FF"
+  ],
+  "completed_utc": "2026-07-28T07:57:57.784102+00:00",
+  "queue": "B",
+  "started_utc": "2026-07-28T05:47:20.304491+00:00",
+  "state": "COMPLETE"
+}

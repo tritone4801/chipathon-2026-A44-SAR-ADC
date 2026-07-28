@@ -1,0 +1,62 @@
+{
+  "campaign": "A44_MC10_FAST64_V2_SS_W4_RETEST_20260725_R1",
+  "created_utc": "2026-07-25T20:05:54.410590+00:00",
+  "historical_method_id": "FAST64_STARTUP_INCLUSIVE_W0",
+  "measurement": {
+    "bands": {
+      "LOW": {
+        "bin": 7,
+        "fin_hz": 218750.0
+      },
+      "NEAR_NYQUIST": {
+        "bin": 29,
+        "fin_hz": 906250.0
+      }
+    },
+    "bulk_maxstep_ps": 100,
+    "dout_aperture_ns": 480.0,
+    "formal_maxstep_ps": 50,
+    "frame_period_ns": 500.0,
+    "input_phase_rad": 0.7853981633974483,
+    "input_vpp_diff": 3.0,
+    "nfft": 64,
+    "retained_frames": [
+      4,
+      67
+    ],
+    "same_phase_reference_frame": 64,
+    "sample_rate_hz": 2000000.0,
+    "total_frames": 68,
+    "warmup_frames": 4,
+    "window": "rectangular"
+  },
+  "method_contract": {
+    "original_path": "C:\\Users\\15031\\.codex\\attachments\\1373a0b4-f441-42a4-bfdd-d655c8f01127\\pasted-text.txt",
+    "relative_path": "references/method_contract/FAST64_V2_FIRST_CONVERSION_SEPARATED_CN.txt",
+    "sha256": "12c4936f8039daeb28a472ed8f9cbf4193cf05e163e7357f1d17c61c3f238afe",
+    "size_bytes": 15878
+  },
+  "method_id": "FAST64_V2_FIRST_CONVERSION_SEPARATED",
+  "promoted_candidate": {
+    "binding_hashes": {
+      "models/SAR_LOGIC_BEH_TT_3P3_27C.so": "e6f8341531b50a0d59e1f2f2be60f501a43d84e887b7e6226f5cd4d9c431ea0c",
+      "netlists/core/subckts/CDAC_native_extracted.subckt.spice": "6e98da540b1c765b0dcec4d1e10399142dc37b7f1c21960d289a83f07ec10ada",
+      "netlists/core/subckts/Comparator_StrongARM_extracted.subckt.spice": "27da9f627ade204e4481ae399e1fb606002fad24a7cfe581e518dc0e5813cba8",
+      "netlists/core/subckts/SWITCH_BOOT_SP_native_extracted.subckt.spice": "3ef9735c56374250575394bbc2dbbf4e33ad4cc4c02af0055205160908e0daf1"
+    },
+    "reason": "The frozen MC10 binding contains one baseline DUT/netlist set and no distinct resizing candidate.",
+    "status": "NOT_APPLICABLE_NO_DISTINCT_PROMOTED_CANDIDATE"
+  },
+  "resource_contract": {
+    "affinity_core_count": 12,
+    "formal_workers_max": 4,
+    "total_ngspice_threads_max": 16
+  },
+  "source_boundary": {
+    "base_manifest_entries": 504,
+    "base_manifest_sha256": "3c2130f305e70968e7a2651b6c5ec445b973c0b27d0e5a8c466ce09b4817d0a7",
+    "base_package": "/foss/designs/A44_MC10_CURRENT_MC200_REPRO_20260725_R1",
+    "live_sar_current_used": false
+  },
+  "steady_state_method_id": "FAST64_SS_W4"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE_CURRENT_LATEST_SAR_ADC_CIRCUIT_FILE_SET",
+  "completed_date": "2026-07-28",
+  "package_root": "D:\\PICO\\A44_SAR_ADC_CURRENT_LATEST_CIRCUIT_FILES_20260728_R1",
+  "design_file_count": 17,
+  "design_file_bytes": 5100010,
+  "original_files_modified": false,
+  "source_to_bundle_exact_copy_pass": true,
+  "current_comparator_binding_pass": true,
+  "portable_simulation_path_rebinding_required": true,
+  "performance_claim": "none; file organization and integrity only",
+  "sar_logic_scope": "SS PEX candidate only"
+}

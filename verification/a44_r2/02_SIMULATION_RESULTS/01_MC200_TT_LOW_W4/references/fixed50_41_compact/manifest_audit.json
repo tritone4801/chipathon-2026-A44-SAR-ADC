@@ -1,0 +1,12 @@
+{
+  "status": "PASS_MANIFEST_AUDIT",
+  "pass": true,
+  "root": "D:\\PICO\\A44_MC200_FIXED50PS_NONREPRO_SUBSET_RERUN_20260725_R1",
+  "manifest_entries": 27,
+  "manifest_sha256": "5c2262226e0d03a386271bdc1d0fe17e535f1201c6089aab1a071ef3ba5fe258",
+  "failures": [],
+  "excluded": [
+    "manifest_audit.json",
+    "manifest_sha256.csv"
+  ]
+}

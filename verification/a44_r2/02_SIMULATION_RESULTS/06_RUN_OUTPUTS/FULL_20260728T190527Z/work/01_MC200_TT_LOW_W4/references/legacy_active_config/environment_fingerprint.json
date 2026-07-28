@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-07-25T14:23:28.642806+00:00",
+  "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "ngspice": [
+    "******",
+    "** ngspice-46 : Circuit level simulation program",
+    "** Compiled with KLU Direct Linear Solver",
+    "** The U. C. Berkeley CAD Group"
+  ],
+  "cpu_count": 24,
+  "container_meminfo": {
+    "MemTotal": "16080568 kB",
+    "MemAvailable": "14443388 kB",
+    "SwapTotal": "4194304 kB",
+    "SwapFree": "4192664 kB"
+  }
+}

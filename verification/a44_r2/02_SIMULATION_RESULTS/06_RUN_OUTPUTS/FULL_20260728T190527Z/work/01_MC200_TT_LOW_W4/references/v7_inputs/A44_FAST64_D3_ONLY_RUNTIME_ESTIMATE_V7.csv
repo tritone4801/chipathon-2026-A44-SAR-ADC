@@ -1,0 +1,6 @@
+profile,concurrent_sessions,formal_fast64_records,median_runtime_s_per_record,p95_runtime_s_per_record,median_bound_hours,p95_bound_hours,overhead_hours_note,practical_total_hours
+MINIMUM_32G,2,400,95.42,144.58,5.30,8.03,1.0...2.0,6.5...10.5
+SAFE_32G,3,400,95.42,144.58,3.53,5.35,1.0...2.0,5.0...8.0
+BASELINE_32G,4,400,95.42,144.58,2.65,4.02,1.0...2.0,4.0...6.5
+FAST_32G,5,400,95.42,144.58,2.12,3.21,1.0...2.0,3.5...5.5
+MAX_32G,6,400,95.42,144.58,1.77,2.68,1.0...2.0,3.0...5.0

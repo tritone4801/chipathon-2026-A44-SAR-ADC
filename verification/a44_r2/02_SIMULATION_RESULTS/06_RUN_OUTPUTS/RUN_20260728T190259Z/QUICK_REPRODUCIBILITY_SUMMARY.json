@@ -1,0 +1,175 @@
+{
+  "commands": [
+    {
+      "name": "mc200",
+      "returncode": 0
+    },
+    {
+      "name": "pvt3_mc20",
+      "returncode": 0
+    },
+    {
+      "name": "static_S116_TT",
+      "returncode": 0
+    },
+    {
+      "name": "static_S044_TT",
+      "returncode": 0
+    },
+    {
+      "name": "static_S106_TT",
+      "returncode": 0
+    },
+    {
+      "name": "static_S180_TT",
+      "returncode": 0
+    },
+    {
+      "name": "static_S044_SS",
+      "returncode": 0
+    },
+    {
+      "name": "static_S044_FF",
+      "returncode": 0
+    }
+  ],
+  "comparison_record_count": 130,
+  "completed_utc": "2026-07-28T19:05:19.266653+00:00",
+  "dynamic_campaign_count": 2,
+  "early_stop_boundary": "Dynamic jobs run diagnostic frames 0-3, compare the first five formal W4 retained records at frames 4-8, then stop. Static cases stop after the first five historical transition lower/upper brackets match. Unscheduled suffix work makes this a quick reproducibility audit, not a replacement full campaign.",
+  "expected_comparison_record_count": 130,
+  "matching_record_count": 130,
+  "mode": "CACE_PREFLIGHT_PLUS_W4_RETAINED5_DYNAMIC_AND_BRACKET5_STATIC",
+  "pass": true,
+  "preflight_pass": true,
+  "source_campaign_performance_status": "COMPLETE_AS_EXECUTED_PERFORMANCE_FAIL_NO_PROMOTION",
+  "static_unique_case_count": 6,
+  "status": "PASS_QUICK_REPRODUCIBILITY_ALL_LANES",
+  "summaries": [
+    {
+      "campaign": "01_MC200_TT_LOW_W4",
+      "comparison_record_count": 25,
+      "completed_job_count": 5,
+      "completed_utc": "2026-07-28T19:03:20.709818+00:00",
+      "early_stop_method": "Each job runs the four diagnostic warm-up frames and compares the first five formal W4 retained records (frames 4-8). Frames 9-67 are not scheduled after those five retained records match.",
+      "exceptions": [],
+      "jobs_per_phase": 5,
+      "matching_record_count": 25,
+      "pass": true,
+      "phases": [
+        "P4_EVENT_NOISE_MC200_LOW"
+      ],
+      "retained_records_per_job": 5,
+      "selected_job_count": 5,
+      "simulation_frames_per_job": 9,
+      "status": "PASS_DYNAMIC_FIRST5_REPRODUCIBLE",
+      "warmup_frames_per_job": 4
+    },
+    {
+      "campaign": "02_PVT3_MC20_LOW_W4",
+      "comparison_record_count": 75,
+      "completed_job_count": 15,
+      "completed_utc": "2026-07-28T19:04:03.766233+00:00",
+      "early_stop_method": "Each job runs the four diagnostic warm-up frames and compares the first five formal W4 retained records (frames 4-8). Frames 9-67 are not scheduled after those five retained records match.",
+      "exceptions": [],
+      "jobs_per_phase": 5,
+      "matching_record_count": 75,
+      "pass": true,
+      "phases": [
+        "P4_PVT_TT_MC20_LOW",
+        "P5_PVT_SS_MC20_LOW",
+        "P6_PVT_FF_MC20_LOW"
+      ],
+      "retained_records_per_job": 5,
+      "selected_job_count": 15,
+      "simulation_frames_per_job": 9,
+      "status": "PASS_DYNAMIC_FIRST5_REPRODUCIBLE",
+      "warmup_frames_per_job": 4
+    },
+    {
+      "case": "S044_FF",
+      "completed_utc": "2026-07-28T19:05:17.884680+00:00",
+      "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+      "elapsed_s": 24.672836562036537,
+      "frames_per_bracket_point": 2,
+      "matching_transition_count": 5,
+      "mismatch_seed": 44,
+      "pass": true,
+      "pvt": "FF_3P6_M40C",
+      "returncode": 0,
+      "status": "PASS_STATIC_FIRST5_REPRODUCIBLE",
+      "transition_count": 5
+    },
+    {
+      "case": "S044_SS",
+      "completed_utc": "2026-07-28T19:05:16.573811+00:00",
+      "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+      "elapsed_s": 23.36768885201309,
+      "frames_per_bracket_point": 2,
+      "matching_transition_count": 5,
+      "mismatch_seed": 44,
+      "pass": true,
+      "pvt": "SS_3P0_125C",
+      "returncode": 0,
+      "status": "PASS_STATIC_FIRST5_REPRODUCIBLE",
+      "transition_count": 5
+    },
+    {
+      "case": "S044_TT",
+      "completed_utc": "2026-07-28T19:04:28.500506+00:00",
+      "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+      "elapsed_s": 24.17341161693912,
+      "frames_per_bracket_point": 2,
+      "matching_transition_count": 5,
+      "mismatch_seed": 44,
+      "pass": true,
+      "pvt": "TT_3P3_27C",
+      "returncode": 0,
+      "status": "PASS_STATIC_FIRST5_REPRODUCIBLE",
+      "transition_count": 5
+    },
+    {
+      "case": "S106_TT",
+      "completed_utc": "2026-07-28T19:04:52.634392+00:00",
+      "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+      "elapsed_s": 23.67442527494859,
+      "frames_per_bracket_point": 2,
+      "matching_transition_count": 5,
+      "mismatch_seed": 106,
+      "pass": true,
+      "pvt": "TT_3P3_27C",
+      "returncode": 0,
+      "status": "PASS_STATIC_FIRST5_REPRODUCIBLE",
+      "transition_count": 5
+    },
+    {
+      "case": "S116_TT",
+      "completed_utc": "2026-07-28T19:04:28.091834+00:00",
+      "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+      "elapsed_s": 23.76948583102785,
+      "frames_per_bracket_point": 2,
+      "matching_transition_count": 5,
+      "mismatch_seed": 116,
+      "pass": true,
+      "pvt": "TT_3P3_27C",
+      "returncode": 0,
+      "status": "PASS_STATIC_FIRST5_REPRODUCIBLE",
+      "transition_count": 5
+    },
+    {
+      "case": "S180_TT",
+      "completed_utc": "2026-07-28T19:04:52.643994+00:00",
+      "early_stop_method": "The exact historical lower/upper bracket points for transitions 1-5 are replayed. Once both decision codes match, transitions 6-255 are not scheduled for quick verification.",
+      "elapsed_s": 24.079994086991064,
+      "frames_per_bracket_point": 2,
+      "matching_transition_count": 5,
+      "mismatch_seed": 180,
+      "pass": true,
+      "pvt": "TT_3P3_27C",
+      "returncode": 0,
+      "status": "PASS_STATIC_FIRST5_REPRODUCIBLE",
+      "transition_count": 5
+    }
+  ],
+  "summary_count": 8
+}

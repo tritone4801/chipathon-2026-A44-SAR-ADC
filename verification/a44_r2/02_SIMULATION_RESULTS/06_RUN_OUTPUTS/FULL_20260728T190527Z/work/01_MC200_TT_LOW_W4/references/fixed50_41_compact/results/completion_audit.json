@@ -1,0 +1,34 @@
+{
+  "status": "PASS_COMPLETION_AUDIT",
+  "pass": true,
+  "checks": {
+    "execution_pass": true,
+    "all_execution_checks_true": true,
+    "preflight_pass": true,
+    "contract_frozen_41": true,
+    "contract_fixed_profile": true,
+    "csv_row_counts": true,
+    "execution_file_hashes": true,
+    "comparison_complete": true,
+    "early_reference_counts": true,
+    "v7_reference_counts": true,
+    "v10_reference_exact": true,
+    "v11_reference_exact": true,
+    "later_mc10_unique_exact": true,
+    "early_v7_mismatch_partition": true,
+    "mc10_v7_mismatch_supports_mc10": true,
+    "tail_frames_support_r1": true,
+    "profile_partition_50_default": true,
+    "profile_partition_50_robust": true,
+    "profile_partition_100_default": true
+  },
+  "checked_root": "D:\\PICO\\A44_MC200_FIXED50PS_NONREPRO_SUBSET_RERUN_20260725_R1",
+  "target_records": 41,
+  "master_records": 41,
+  "code_rows": 2624,
+  "nonclaims": {
+    "full_mc200_rerun": false,
+    "full_mc200_dynamic_percentiles_recomputed": false,
+    "signoff": false
+  }
+}

@@ -1,0 +1,55 @@
+[20:20:26] INFO     Maximum number of jobs is 24.       parameter_manager.py:114
+[20:20:26] INFO     Working directory set to 'cace/..'  parameter_manager.py:162
+                    ('/foss/designs/A44_SAR_ADC_CURRENT                         
+                    _CACE_REPRODUCIBLE_20260728_R1/05_C                         
+                    ACE').                                                      
+[20:20:26] INFO     Starting a new run with tag         parameter_manager.py:630
+                    'RUN_2026-07-28_20-20-26'.                                  
+[20:20:26] INFO     Running parameters:                          cace_cli.py:331
+                    A44_PACKAGE_CACE_PREFLIGHT                                  
+[20:20:26] INFO     Generating simulation netlist from    cace_regenerate.py:597
+                    schematic…                                                  
+──────────────── Started A44 package CACE and ngspice preflight ────────────────
+[20:20:26] INFO     Parameter                           parameter_ngspice.py:164
+                    A44_PACKAGE_CACE_PREFLIGHT:                                 
+                    Generating simulation files…                                
+[20:20:26] INFO     Parameter                           parameter_ngspice.py:537
+                    A44_PACKAGE_CACE_PREFLIGHT: Running                         
+                    simulations…                                                
+[20:20:26] INFO     Parameter                           parameter_ngspice.py:640
+                    A44_PACKAGE_CACE_PREFLIGHT:                                 
+                    Collecting results…                                         
+[20:20:26] INFO     Parameter                           parameter_ngspice.py:836
+                    A44_PACKAGE_CACE_PREFLIGHT: Saving                          
+                    simulation summary as                                       
+                    '../06_RUN_OUTPUTS/RUN_20260728T182                         
+                    026Z/cace_runs/RUN_2026-07-28_20-20                         
+                    -26/parameters/A44_PACKAGE_CACE_PRE                         
+                    FLIGHT/simulation_summary.md'…                              
+         Simulation Summary for A44 package CACE and ngspice preflight          
+
+                       
+ run    index  final_v 
+ ───────────────────── 
+ run_0  0.000    1.250 
+                       
+────────── Completed A44 package CACE and ngspice preflight: Pass ✅ ───────────
+[20:20:26] INFO     Done with CACE simulations and evaluations   cace_cli.py:377
+                    in 0:00:00.                                                 
+                           CACE Summary for cace_job                            
+
+netlist source: schematic                                                       
+
+                                                                                
+                            Min     Min     Typ     Typ     Max     Max         
+ Param…  Tool    Result   Limit   Value  Target   Value   Limit   Value  Status 
+ ────────────────────────────────────────────────────────────────────────────── 
+ A44     ngspi…  final…   1.249    1.25        ​        ​   1.251    1.25   Pass  
+ packa…                                                                    ✅   
+ CACE                                                                           
+ and                                                                            
+ ngspi…                                                                         
+ prefl…                                                                         
+                                                                                
+[20:20:26] INFO     Generating documentation in         parameter_manager.py:268
+                    'reports'                                                   
