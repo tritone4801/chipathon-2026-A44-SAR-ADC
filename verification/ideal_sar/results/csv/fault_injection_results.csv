@@ -1,0 +1,14 @@
+id,fault,injection_method,measured,expected,tolerance,status,details
+FI-01,ADC offset,impaired_model,0.5,0.5,0.02,PASS,transition table shifted by +0.5 LSB
+FI-02,ADC gain error,impaired_model,0.01,0.01,0.0005,PASS,endpoint slope monitor detects non-unity gain
+FI-03,Single-code width distortion,impaired_model,0.5,0.5,0.01,PASS,code 100 +0.5 LSB and code 101 -0.5 LSB
+FI-04,Missing code,impaired_model,0.0,0.0,0.0,PASS,missing code 73
+FI-05,DAC bit-weight error,impaired_model,1.2800000000000011,1.28,1e-12,PASS,MSB weight is perturbed by +1% and the weight monitor measures the error.
+FI-06,Third harmonic,impaired_model,60.00000000000023,60.0,0.5,PASS,known coherent third harmonic
+FI-07,Known random noise,impaired_model,39.14006120558245,39.13842430055779,0.7,PASS,fixed seed white noise
+FI-08,EOC_INT latency +1 internal slot,timing_impairment,1.0,1.0,0.0,PASS,100-conversion EOC_INT schedule is delayed by one internal bit slot and the latency monitor measures the error.
+FI-09,Missing or duplicate EOC_INT event,timing_impairment,2,2.0,0.0,PASS,EOC_INT accounting detects one missing and one duplicate event in 100 conversions.
+FI-10,DOUT bit swap,impaired_model,512,0.0,0.0,PASS,bits 0 and 1 swapped
+FI-11,Comparator-polarity inversion,sar_comparator_impairment,1024,0.0,0.0,PASS,Inverted comparator polarity creates widespread code mismatches against the golden transfer.
+FI-12,Input-sampling time shift,sampling_time_impairment,65218,0.0,0.0,PASS,Near-Nyquist 0.25-sample timing shift produces detectable code mismatches.
+FI-13,Noise plus harmonic,impaired_model,6.750292265873014e-15,0.0,0.05,PASS,SQNR/SQDR/SQNDR power closure

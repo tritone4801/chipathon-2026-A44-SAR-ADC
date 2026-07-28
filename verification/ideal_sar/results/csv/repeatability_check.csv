@@ -1,0 +1,6 @@
+metric,run1,run2,abs_delta,tolerance,status
+static.max_abs_dnl_lsb,2.6867397195928788e-14,2.6867397195928788e-14,0.0,1e-12,PASS
+static.max_abs_endpoint_inl_lsb,0.0,0.0,0.0,1e-12,PASS
+dynamic.worst_sndr_db,48.80429130384699,48.80429130384699,0.0,1e-12,PASS
+dynamic.worst_enob_bit,7.81466632954269,7.81466632954269,0.0,1e-12,PASS
+dynamic.max_model_delta_db,1.2841676095831644e-06,1.2841676095831644e-06,0.0,1e-12,PASS

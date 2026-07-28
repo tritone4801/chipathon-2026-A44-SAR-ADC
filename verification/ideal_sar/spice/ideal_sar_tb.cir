@@ -1,0 +1,16 @@
+* Placeholder ngspice deck for ideal SAR harness preflight.
+* The core ideal SAR timing model is digital/SystemVerilog; ngspice is used
+* here as an analog-tool availability and waveform-chain check when installed.
+
+.param vcm=1.65
+.param amp=1.5
+.param fin=123e3
+Vinp vinp 0 SIN({vcm} {amp/2} {fin})
+Vinn vinn 0 SIN({vcm} {-amp/2} {fin})
+Bdiff vdiff 0 V = V(vinp)-V(vinn)
+.control
+tran 1n 2u
+wrdata ../results/raw/ideal_sar_spice_vdiff.csv time v(vdiff)
+quit
+.endc
+.end

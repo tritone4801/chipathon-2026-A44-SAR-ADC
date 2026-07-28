@@ -1,0 +1,5 @@
+module,status,version
+numpy,PASS,2.4.4
+matplotlib,PASS,3.10.8
+yaml,PASS,6.0.3
+cocotb,PASS,2.0.1

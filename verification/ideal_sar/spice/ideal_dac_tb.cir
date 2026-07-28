@@ -1,0 +1,14 @@
+* Ideal DAC/CDAC voltage-source smoke deck for ngspice availability checks.
+
+.param vmin=-1.7
+.param lsb=13.28125m
+.param code=128
+Bthresh vth 0 V = {vmin + code*lsb}
+Bcenter vc 0 V = {vmin + (code+0.5)*lsb}
+.op
+.control
+op
+print v(vth) v(vc)
+quit
+.endc
+.end

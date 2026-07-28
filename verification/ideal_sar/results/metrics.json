@@ -1,0 +1,880 @@
+{
+  "dac": {
+    "bit_weight_max_error_lsb": 7.105427357601002e-15,
+    "evidence": {
+      "bit_weights": "/work/verification/ideal_sar/results/csv/dac_bit_weights.csv",
+      "settling_glitch": "/work/verification/ideal_sar/results/csv/dac_settling_glitch.csv",
+      "transfer": "/work/verification/ideal_sar/results/csv/dac_transfer.csv",
+      "trial_trajectory": "/work/verification/ideal_sar/results/csv/sar_dac_trial_trajectory.csv"
+    },
+    "max_abs_dnl_lsb": 2.6867397195928788e-14,
+    "max_abs_inl_lsb": 0.0,
+    "settling_glitch_status": "PASS",
+    "status": "PASS"
+  },
+  "dynamic": {
+    "baseline_worst_sqdr_db": 66.11119264111052,
+    "baseline_worst_sqndr_db": 48.80429130384699,
+    "baseline_worst_sqnr_spectral_db": 48.88579228818422,
+    "baseline_worst_sqnr_total_td_db": 48.78590230327425,
+    "cases": {
+      "low_frequency": {
+        "direct": {
+          "ENOB_bit": 7.814666329542691,
+          "Pdc": 2.99048701585067e-34,
+          "Pqd": 2.7530630168540553e-07,
+          "Pqn": 1.453303058994998e-05,
+          "Pquant_error_total": 1.4878607669579905e-05,
+          "Psignal": 1.1244377475132563,
+          "SFDR_dB": 67.10506359001432,
+          "SNDR_dB": 48.804291303846995,
+          "SNR_dB": 48.88579228818423,
+          "SQDR_dB": 66.11119264111052,
+          "SQNDR_dB": 48.804291303846995,
+          "SQNR_spectral_dB": 48.88579228818423,
+          "SQNR_total_TD_dB": 48.785902303309626,
+          "THD_dB": -66.11119264111052,
+          "closure_error_db": 1.4464911998299308e-15,
+          "code_max": 240,
+          "code_min": 15,
+          "fundamental_bin": 997,
+          "harmonic_bins": [
+            1994,
+            2991,
+            3988,
+            4985,
+            5982,
+            6979,
+            7976,
+            8973,
+            9970
+          ],
+          "largest_spur_bin": 18011,
+          "model": "direct"
+        },
+        "oracle": {
+          "ENOB_bit": 7.814666329542691,
+          "Pdc": 2.99048701585067e-34,
+          "Pqd": 2.7530630168540553e-07,
+          "Pqn": 1.453303058994998e-05,
+          "Pquant_error_total": 1.4878607669579905e-05,
+          "Psignal": 1.1244377475132563,
+          "SFDR_dB": 67.10506359001432,
+          "SNDR_dB": 48.804291303846995,
+          "SNR_dB": 48.88579228818423,
+          "SQDR_dB": 66.11119264111052,
+          "SQNDR_dB": 48.804291303846995,
+          "SQNR_spectral_dB": 48.88579228818423,
+          "SQNR_total_TD_dB": 48.785902303309626,
+          "THD_dB": -66.11119264111052,
+          "closure_error_db": 1.4464911998299308e-15,
+          "code_max": 240,
+          "code_min": 15,
+          "fundamental_bin": 997,
+          "harmonic_bins": [
+            1994,
+            2991,
+            3988,
+            4985,
+            5982,
+            6979,
+            7976,
+            8973,
+            9970
+          ],
+          "largest_spur_bin": 18011,
+          "model": "oracle"
+        },
+        "sar": {
+          "ENOB_bit": 7.814666329542691,
+          "Pdc": 2.99048701585067e-34,
+          "Pqd": 2.7530630168540553e-07,
+          "Pqn": 1.453303058994998e-05,
+          "Pquant_error_total": 1.4878607669579905e-05,
+          "Psignal": 1.1244377475132563,
+          "SFDR_dB": 67.10506359001432,
+          "SNDR_dB": 48.804291303846995,
+          "SNR_dB": 48.88579228818423,
+          "SQDR_dB": 66.11119264111052,
+          "SQNDR_dB": 48.804291303846995,
+          "SQNR_spectral_dB": 48.88579228818423,
+          "SQNR_total_TD_dB": 48.785902303309626,
+          "THD_dB": -66.11119264111052,
+          "closure_error_db": 1.4464911998299308e-15,
+          "code_max": 240,
+          "code_min": 15,
+          "fundamental_bin": 997,
+          "harmonic_bins": [
+            1994,
+            2991,
+            3988,
+            4985,
+            5982,
+            6979,
+            7976,
+            8973,
+            9970
+          ],
+          "largest_spur_bin": 18011,
+          "model": "sar"
+        }
+      },
+      "near_nyquist": {
+        "direct": {
+          "ENOB_bit": 7.81466632954269,
+          "Pdc": 2.054975461672892e-34,
+          "Pqd": 2.7530630168540426e-07,
+          "Pqn": 1.4533030589950005e-05,
+          "Pquant_error_total": 1.4878607669701009e-05,
+          "Psignal": 1.124437747513256,
+          "SFDR_dB": 67.1050635900143,
+          "SNDR_dB": 48.80429130384699,
+          "SNR_dB": 48.88579228818422,
+          "SQDR_dB": 66.11119264111053,
+          "SQNDR_dB": 48.80429130384699,
+          "SQNR_spectral_dB": 48.88579228818422,
+          "SQNR_total_TD_dB": 48.78590230327425,
+          "THD_dB": -66.11119264111053,
+          "closure_error_db": 1.4464911998299308e-15,
+          "code_max": 240,
+          "code_min": 15,
+          "fundamental_bin": 32113,
+          "harmonic_bins": [
+            1310,
+            30803,
+            2620,
+            29493,
+            3930,
+            28183,
+            5240,
+            26873,
+            6550
+          ],
+          "largest_spur_bin": 29745,
+          "model": "direct"
+        },
+        "oracle": {
+          "ENOB_bit": 7.81466632954269,
+          "Pdc": 2.054975461672892e-34,
+          "Pqd": 2.7530630168540426e-07,
+          "Pqn": 1.4533030589950005e-05,
+          "Pquant_error_total": 1.4878607669701009e-05,
+          "Psignal": 1.124437747513256,
+          "SFDR_dB": 67.1050635900143,
+          "SNDR_dB": 48.80429130384699,
+          "SNR_dB": 48.88579228818422,
+          "SQDR_dB": 66.11119264111053,
+          "SQNDR_dB": 48.80429130384699,
+          "SQNR_spectral_dB": 48.88579228818422,
+          "SQNR_total_TD_dB": 48.78590230327425,
+          "THD_dB": -66.11119264111053,
+          "closure_error_db": 1.4464911998299308e-15,
+          "code_max": 240,
+          "code_min": 15,
+          "fundamental_bin": 32113,
+          "harmonic_bins": [
+            1310,
+            30803,
+            2620,
+            29493,
+            3930,
+            28183,
+            5240,
+            26873,
+            6550
+          ],
+          "largest_spur_bin": 29745,
+          "model": "oracle"
+        },
+        "sar": {
+          "ENOB_bit": 7.81466632954269,
+          "Pdc": 2.054975461672892e-34,
+          "Pqd": 2.7530630168540426e-07,
+          "Pqn": 1.4533030589950005e-05,
+          "Pquant_error_total": 1.4878607669701009e-05,
+          "Psignal": 1.124437747513256,
+          "SFDR_dB": 67.1050635900143,
+          "SNDR_dB": 48.80429130384699,
+          "SNR_dB": 48.88579228818422,
+          "SQDR_dB": 66.11119264111053,
+          "SQNDR_dB": 48.80429130384699,
+          "SQNR_spectral_dB": 48.88579228818422,
+          "SQNR_total_TD_dB": 48.78590230327425,
+          "THD_dB": -66.11119264111053,
+          "closure_error_db": 1.4464911998299308e-15,
+          "code_max": 240,
+          "code_min": 15,
+          "fundamental_bin": 32113,
+          "harmonic_bins": [
+            1310,
+            30803,
+            2620,
+            29493,
+            3930,
+            28183,
+            5240,
+            26873,
+            6550
+          ],
+          "largest_spur_bin": 29745,
+          "model": "sar"
+        }
+      }
+    },
+    "coherent_bin_audit": {
+      "low_frequency": {
+        "bin": 997,
+        "collisions": [],
+        "folded_harmonic_bins_2_to_H": [
+          1994,
+          2991,
+          3988,
+          4985,
+          5982,
+          6979,
+          7976,
+          8973,
+          9970
+        ],
+        "gcd_with_record": 1,
+        "is_odd": true,
+        "npts": 65536,
+        "status": "PASS"
+      },
+      "near_nyquist": {
+        "bin": 32113,
+        "collisions": [],
+        "folded_harmonic_bins_2_to_H": [
+          1310,
+          30803,
+          2620,
+          29493,
+          3930,
+          28183,
+          5240,
+          26873,
+          6550
+        ],
+        "gcd_with_record": 1,
+        "is_odd": true,
+        "npts": 65536,
+        "status": "PASS"
+      }
+    },
+    "evidence": {
+      "dac_reconstruction_low_frequency_csv": "/work/verification/ideal_sar/results/csv/adc_dac_reconstruction_low_frequency.csv",
+      "dac_reconstruction_low_frequency_plot": "/work/verification/ideal_sar/results/plots/adc_dac_reconstruction_low_frequency.png",
+      "dynamic_metrics": "/work/verification/ideal_sar/results/csv/dynamic_metrics.csv",
+      "fft_plots": [
+        "/work/verification/ideal_sar/results/plots/adc_fft_low_frequency.png",
+        "/work/verification/ideal_sar/results/plots/adc_fft_near_nyquist.png"
+      ],
+      "input_output_time_csv": [
+        "/work/verification/ideal_sar/results/csv/adc_input_output_time_low_frequency.csv",
+        "/work/verification/ideal_sar/results/csv/adc_input_output_time_near_nyquist.csv"
+      ],
+      "input_output_time_plots": [
+        "/work/verification/ideal_sar/results/plots/adc_input_output_time_low_frequency.png",
+        "/work/verification/ideal_sar/results/plots/adc_input_output_time_near_nyquist.png"
+      ],
+      "output_code_time_plots": [
+        "/work/verification/ideal_sar/results/plots/adc_output_code_time_low_frequency.png",
+        "/work/verification/ideal_sar/results/plots/adc_output_code_time_near_nyquist.png"
+      ],
+      "output_spectrum_csv": [
+        "/work/verification/ideal_sar/results/csv/adc_output_spectrum_low_frequency.csv",
+        "/work/verification/ideal_sar/results/csv/adc_output_spectrum_near_nyquist.csv"
+      ],
+      "output_spectrum_plots": [
+        "/work/verification/ideal_sar/results/plots/adc_output_spectrum_low_frequency.png",
+        "/work/verification/ideal_sar/results/plots/adc_output_spectrum_near_nyquist.png"
+      ],
+      "per_point_csv_dir": "/work/verification/ideal_sar/results/csv/dynamic_points",
+      "plots": "/work/verification/ideal_sar/results/plots",
+      "power_partition": "/work/verification/ideal_sar/results/csv/dynamic_power_partition.csv",
+      "sweep": "/work/verification/ideal_sar/results/csv/dynamic_sqnr_sqdr_sweep.csv"
+    },
+    "max_model_delta_db": 1.2841676095831644e-06,
+    "per_point_csv_count": 30,
+    "representative_phase_rad": 0.37,
+    "required_dynamic_plot_count": 30,
+    "spectrum_summary": {
+      "low_frequency": {
+        "fin_hz": 30426.025390625,
+        "fundamental_dbfs": -1.0893243059335778,
+        "largest_spur_dbfs": -68.1943878959479,
+        "noise_floor_dbfs_per_bin": -95.12815780122104,
+        "parseval_closure_error": 0.0,
+        "parseval_freq_power": 1.124452555850148,
+        "parseval_time_power": 1.124452555850148,
+        "pfs_sine": 1.4449999999999998,
+        "spectrum_csv": "/work/verification/ideal_sar/results/csv/adc_output_spectrum_low_frequency.csv"
+      },
+      "near_nyquist": {
+        "fin_hz": 980010.986328125,
+        "fundamental_dbfs": -1.0893243059335787,
+        "largest_spur_dbfs": -68.19438789594788,
+        "noise_floor_dbfs_per_bin": -95.12815780122102,
+        "parseval_closure_error": 0.0,
+        "parseval_freq_power": 1.1244525558501473,
+        "parseval_time_power": 1.1244525558501473,
+        "pfs_sine": 1.4449999999999998,
+        "spectrum_csv": "/work/verification/ideal_sar/results/csv/adc_output_spectrum_near_nyquist.csv"
+      }
+    },
+    "startup_conversions_to_discard": 16,
+    "status": "PASS",
+    "sweep_worst_enob_bit": 3.958510590651073,
+    "sweep_worst_sndr_db": 25.59023375571946,
+    "theory_sqnr_db_at_config_amplitude": 48.83284675354814,
+    "worst_enob_bit": 7.81466632954269,
+    "worst_sndr_db": 48.80429130384699,
+    "worst_sqdr_db": 31.690836409855443,
+    "worst_sqnr_spectral_db": 26.813277724659695,
+    "worst_sqnr_total_td_db": 25.314368453600785
+  },
+  "external_smoke": {
+    "cocotb": {
+      "log": "/work/verification/ideal_sar/results/logs/cocotb_smoke.log",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    "ngspice": {
+      "log": "/work/verification/ideal_sar/results/logs/ngspice_smoke.log",
+      "returncode": 0,
+      "status": "PASS"
+    },
+    "status": "PASS"
+  },
+  "fault_injection": {
+    "evidence": "/work/verification/ideal_sar/results/csv/fault_injection_results.csv",
+    "impaired_model_status": "PASS",
+    "rows": [
+      {
+        "details": "transition table shifted by +0.5 LSB",
+        "expected": 0.5,
+        "fault": "ADC offset",
+        "id": "FI-01",
+        "injection_method": "impaired_model",
+        "measured": 0.5,
+        "status": "PASS",
+        "tolerance": 0.02
+      },
+      {
+        "details": "endpoint slope monitor detects non-unity gain",
+        "expected": 0.01,
+        "fault": "ADC gain error",
+        "id": "FI-02",
+        "injection_method": "impaired_model",
+        "measured": 0.01,
+        "status": "PASS",
+        "tolerance": 0.0005
+      },
+      {
+        "details": "code 100 +0.5 LSB and code 101 -0.5 LSB",
+        "expected": 0.5,
+        "fault": "Single-code width distortion",
+        "id": "FI-03",
+        "injection_method": "impaired_model",
+        "measured": 0.5,
+        "status": "PASS",
+        "tolerance": 0.01
+      },
+      {
+        "details": "missing code 73",
+        "expected": 0.0,
+        "fault": "Missing code",
+        "id": "FI-04",
+        "injection_method": "impaired_model",
+        "measured": 0.0,
+        "status": "PASS",
+        "tolerance": 0.0
+      },
+      {
+        "details": "MSB weight is perturbed by +1% and the weight monitor measures the error.",
+        "expected": 1.28,
+        "fault": "DAC bit-weight error",
+        "id": "FI-05",
+        "injection_method": "impaired_model",
+        "measured": 1.2800000000000011,
+        "status": "PASS",
+        "tolerance": 1e-12
+      },
+      {
+        "details": "known coherent third harmonic",
+        "expected": 60.0,
+        "fault": "Third harmonic",
+        "id": "FI-06",
+        "injection_method": "impaired_model",
+        "measured": 60.00000000000023,
+        "status": "PASS",
+        "tolerance": 0.5
+      },
+      {
+        "details": "fixed seed white noise",
+        "expected": 39.13842430055779,
+        "fault": "Known random noise",
+        "id": "FI-07",
+        "injection_method": "impaired_model",
+        "measured": 39.14006120558245,
+        "status": "PASS",
+        "tolerance": 0.7
+      },
+      {
+        "details": "100-conversion EOC_INT schedule is delayed by one internal bit slot and the latency monitor measures the error.",
+        "expected": 1.0,
+        "fault": "EOC_INT latency +1 internal slot",
+        "id": "FI-08",
+        "injection_method": "timing_impairment",
+        "measured": 1.0,
+        "status": "PASS",
+        "tolerance": 0.0
+      },
+      {
+        "details": "EOC_INT accounting detects one missing and one duplicate event in 100 conversions.",
+        "expected": 2.0,
+        "fault": "Missing or duplicate EOC_INT event",
+        "id": "FI-09",
+        "injection_method": "timing_impairment",
+        "measured": 2,
+        "status": "PASS",
+        "tolerance": 0.0
+      },
+      {
+        "details": "bits 0 and 1 swapped",
+        "expected": 0.0,
+        "fault": "DOUT bit swap",
+        "id": "FI-10",
+        "injection_method": "impaired_model",
+        "measured": 512,
+        "status": "PASS",
+        "tolerance": 0.0
+      },
+      {
+        "details": "Inverted comparator polarity creates widespread code mismatches against the golden transfer.",
+        "expected": 0.0,
+        "fault": "Comparator-polarity inversion",
+        "id": "FI-11",
+        "injection_method": "sar_comparator_impairment",
+        "measured": 1024,
+        "status": "PASS",
+        "tolerance": 0.0
+      },
+      {
+        "details": "Near-Nyquist 0.25-sample timing shift produces detectable code mismatches.",
+        "expected": 0.0,
+        "fault": "Input-sampling time shift",
+        "id": "FI-12",
+        "injection_method": "sampling_time_impairment",
+        "measured": 65218,
+        "status": "PASS",
+        "tolerance": 0.0
+      },
+      {
+        "details": "SQNR/SQDR/SQNDR power closure",
+        "expected": 0.0,
+        "fault": "Noise plus harmonic",
+        "id": "FI-13",
+        "injection_method": "impaired_model",
+        "measured": 6.750292265873014e-15,
+        "status": "PASS",
+        "tolerance": 0.05
+      }
+    ],
+    "status": "PASS"
+  },
+  "functional": {
+    "code_centers_status": "PASS",
+    "common_mode_status": "PASS",
+    "evidence": {
+      "code_centers": "/work/verification/ideal_sar/results/csv/functional_code_centers.csv",
+      "common_mode": "/work/verification/ideal_sar/results/csv/common_mode_invariance.csv",
+      "overrange": "/work/verification/ideal_sar/results/csv/functional_overrange_saturation.csv",
+      "random_equivalence": "/work/verification/ideal_sar/results/csv/functional_random_equivalence_10000.csv",
+      "transition_boundaries": "/work/verification/ideal_sar/results/csv/functional_transition_boundaries.csv",
+      "vectors": "/work/verification/ideal_sar/results/csv/functional_vectors.csv"
+    },
+    "overrange_status": "PASS",
+    "random_equivalence_count": 10000,
+    "random_equivalence_status": "PASS",
+    "random_mismatch_count": 0,
+    "status": "PASS",
+    "transition_boundaries_status": "PASS",
+    "vector_count": 25
+  },
+  "last_updated_utc": "2026-06-25T01:08:21Z",
+  "power_harness": {
+    "avg_power_w": 0.0018939400000000002,
+    "energy_error_pct": 3.200000000536107e-05,
+    "energy_j": 1.89394e-09,
+    "evidence": "/work/verification/ideal_sar/results/csv/power_harness_selftest.csv",
+    "expected_energy_j": 1.893939393939394e-09,
+    "expected_power_w": 0.001893939393939394,
+    "ngspice_log": "/work/verification/ideal_sar/results/logs/power_proxy_ngspice.log",
+    "power_error_pct": 3.200000000536107e-05,
+    "spice_deck": "/work/verification/ideal_sar/spice/power_proxy_tb.cir",
+    "status": "PASS"
+  },
+  "preflight": {
+    "core_external_ready": true,
+    "derived": {
+      "bits": 8,
+      "cdac_adjustments_per_conversion": 7,
+      "clks_hz": 2000000.0,
+      "codes": 256,
+      "comparisons_per_conversion": 8,
+      "conversion_time_s": 3.75e-07,
+      "cycles_per_conversion": 8,
+      "fs_hz": 2000000.0,
+      "internal_bit_slot_hz": 21333333.333333332,
+      "internal_bit_slot_period_s": 4.6875e-08,
+      "internal_bit_slots": 8,
+      "lsb": 0.01328125,
+      "max_code": 255,
+      "sample_period_s": 5e-07,
+      "sample_rate_from_clock_hz": 2000000.0,
+      "sar_clock_hz": 21333333.333333332,
+      "sar_clock_period_s": 4.6875e-08,
+      "track_time_s": 1.25e-07,
+      "vcm": 1.65,
+      "vfs_diff_peak": 1.7,
+      "vfs_diff_pp": 3.4,
+      "vmax": 1.7,
+      "vmin": -1.7,
+      "vrefn": 0.8,
+      "vrefp": 2.5
+    },
+    "evidence": {
+      "imports_csv": "/work/verification/ideal_sar/results/csv/preflight_python_imports.csv",
+      "input_files_csv": "/work/verification/ideal_sar/results/csv/required_input_files.csv",
+      "log": "/work/verification/ideal_sar/results/logs/preflight.log",
+      "tools_csv": "/work/verification/ideal_sar/results/csv/preflight_tools.csv"
+    },
+    "python_imports": [
+      {
+        "module": "numpy",
+        "status": "PASS",
+        "version": "2.4.4"
+      },
+      {
+        "module": "matplotlib",
+        "status": "PASS",
+        "version": "3.10.8"
+      },
+      {
+        "module": "yaml",
+        "status": "PASS",
+        "version": "6.0.3"
+      },
+      {
+        "module": "cocotb",
+        "status": "PASS",
+        "version": "2.0.1"
+      }
+    ],
+    "required_input_files": [
+      {
+        "bytes": 0,
+        "path": "D:/PICO/current_goal.md",
+        "status": "MISSING"
+      },
+      {
+        "bytes": 1226,
+        "path": "/work/README.md",
+        "status": "READ"
+      },
+      {
+        "bytes": 884,
+        "path": "/work/Makefile",
+        "status": "READ"
+      },
+      {
+        "bytes": 0,
+        "path": "/work/docs/reproducing-docker.md",
+        "status": "MISSING"
+      },
+      {
+        "bytes": 0,
+        "path": "/work/docs/reproducing-native.md",
+        "status": "MISSING"
+      },
+      {
+        "bytes": 0,
+        "path": "/work/cocotb/chip_top_tb.py",
+        "status": "MISSING"
+      },
+      {
+        "bytes": 0,
+        "path": "/work/src/chip_core.sv",
+        "status": "MISSING"
+      },
+      {
+        "bytes": 0,
+        "path": "C:/Users/15031/eda/designs/sscs-chipathon-2026/resources/Analog/eda/README.md",
+        "status": "MISSING"
+      }
+    ],
+    "status": "PASS",
+    "tools": [
+      {
+        "path": "/foss/tools/bin/python",
+        "status": "PASS",
+        "tool": "python",
+        "version": "Python 3.12.3"
+      },
+      {
+        "path": "/foss/tools/bin/python3",
+        "status": "PASS",
+        "tool": "python3",
+        "version": "Python 3.12.3"
+      },
+      {
+        "path": "/foss/tools/bin/ngspice",
+        "status": "PASS",
+        "tool": "ngspice",
+        "version": "******"
+      },
+      {
+        "path": "/foss/tools/bin/xschem",
+        "status": "PASS",
+        "tool": "xschem",
+        "version": "XSCHEM V3.4.8RC"
+      },
+      {
+        "path": "/foss/tools/bin/iverilog",
+        "status": "PASS",
+        "tool": "iverilog",
+        "version": "Icarus Verilog version 14.0 (devel) (s20251012-145-g9b0d46b4-dirty)"
+      },
+      {
+        "path": "/foss/tools/bin/verilator",
+        "status": "PASS",
+        "tool": "verilator",
+        "version": "Verilator 5.046 2026-02-28 rev v5.046"
+      },
+      {
+        "path": "/foss/tools/bin/gtkwave",
+        "status": "PASS",
+        "tool": "gtkwave",
+        "version": "Could not initialize GTK!  Is DISPLAY env var/xhost set?"
+      },
+      {
+        "path": "/usr/bin/make",
+        "status": "PASS",
+        "tool": "make",
+        "version": "GNU Make 4.3"
+      }
+    ]
+  },
+  "repeatability": {
+    "evidence": "/work/verification/ideal_sar/results/csv/repeatability_check.csv",
+    "rows": [
+      {
+        "abs_delta": 0.0,
+        "metric": "static.max_abs_dnl_lsb",
+        "run1": 2.6867397195928788e-14,
+        "run2": 2.6867397195928788e-14,
+        "status": "PASS",
+        "tolerance": 1e-12
+      },
+      {
+        "abs_delta": 0.0,
+        "metric": "static.max_abs_endpoint_inl_lsb",
+        "run1": 0.0,
+        "run2": 0.0,
+        "status": "PASS",
+        "tolerance": 1e-12
+      },
+      {
+        "abs_delta": 0.0,
+        "metric": "dynamic.worst_sndr_db",
+        "run1": 48.80429130384699,
+        "run2": 48.80429130384699,
+        "status": "PASS",
+        "tolerance": 1e-12
+      },
+      {
+        "abs_delta": 0.0,
+        "metric": "dynamic.worst_enob_bit",
+        "run1": 7.81466632954269,
+        "run2": 7.81466632954269,
+        "status": "PASS",
+        "tolerance": 1e-12
+      },
+      {
+        "abs_delta": 0.0,
+        "metric": "dynamic.max_model_delta_db",
+        "run1": 1.2841676095831644e-06,
+        "run2": 1.2841676095831644e-06,
+        "status": "PASS",
+        "tolerance": 1e-12
+      }
+    ],
+    "status": "PASS"
+  },
+  "report": {
+    "external_ok": true,
+    "go_no_go": "GO",
+    "metrics_csv": "D:\\PICO\\simple_SAR_ADC_repo\\verification\\ideal_sar\\results\\csv\\metrics.csv",
+    "metrics_json": "D:\\PICO\\simple_SAR_ADC_repo\\verification\\ideal_sar\\results\\metrics.json",
+    "python_sections_ok": true,
+    "report": "D:\\PICO\\simple_SAR_ADC_repo\\verification\\ideal_sar\\report\\ideal_sar_adc_testbench_validation.md",
+    "status": "PASS"
+  },
+  "static": {
+    "evidence": {
+      "dnl": "/work/verification/ideal_sar/results/csv/static_dnl.csv",
+      "histogram": "/work/verification/ideal_sar/results/csv/histogram_counts.csv",
+      "histogram_linearity": "/work/verification/ideal_sar/results/csv/histogram_linearity_comparison.csv",
+      "inl": "/work/verification/ideal_sar/results/csv/static_inl.csv",
+      "qerr_raw": "/work/verification/ideal_sar/results/raw/quantization_error_lsb.csv",
+      "transitions": "/work/verification/ideal_sar/results/csv/static_transitions.csv"
+    },
+    "gain_error_lsb": 0.0,
+    "max_abs_bestfit_inl_lsb": 7.105427357601002e-14,
+    "max_abs_dnl_lsb": 2.6867397195928788e-14,
+    "max_abs_endpoint_inl_lsb": 0.0,
+    "missing_code_count": 0,
+    "offset_lsb": 0.0,
+    "quant_error_max_abs_lsb": 0.49999707462047005,
+    "quant_error_rms_lsb": 0.2888729004379287,
+    "quant_error_rms_target_lsb": 0.2886751345948129,
+    "ramp_histogram_linearity_status": "PASS",
+    "sine_histogram_cdf_status": "PASS",
+    "sine_histogram_max_abs_residual_sigma": 0.03965010337333216,
+    "status": "PASS"
+  },
+  "timing": {
+    "bit_sequence_status": "PASS",
+    "continuous_accounting_status": "PASS",
+    "continuous_conversion_count": 10000,
+    "dout_latency_stability_status": "PASS",
+    "eoc_signal": "EOC_INT",
+    "evidence": {
+      "continuous_accounting": "D:\\PICO\\simple_SAR_ADC_repo\\verification\\ideal_sar\\results\\csv\\continuous_conversion_accounting_10000.csv",
+      "dout_stability": "D:\\PICO\\simple_SAR_ADC_repo\\verification\\ideal_sar\\results\\csv\\dout_latency_stability.csv",
+      "timing_budget": "D:\\PICO\\simple_SAR_ADC_repo\\verification\\ideal_sar\\results\\csv\\timing_budget.csv",
+      "trace": "D:\\PICO\\simple_SAR_ADC_repo\\verification\\ideal_sar\\results\\csv\\sar_bit_trial_trace.csv"
+    },
+    "external_clock": "CLKS",
+    "external_ready": false,
+    "sample_rate_hz": 2000000.0,
+    "status": "PASS"
+  },
+  "unit": {
+    "evidence": "D:\\PICO\\simple_SAR_ADC_repo\\verification\\ideal_sar\\results\\csv\\unit_results.csv",
+    "rows": [
+      {
+        "details": "lsb=0.013281250000000",
+        "status": "PASS",
+        "test": "derived_lsb"
+      },
+      {
+        "details": "0",
+        "status": "PASS",
+        "test": "vmin_code"
+      },
+      {
+        "details": "255",
+        "status": "PASS",
+        "test": "vmax_saturation"
+      },
+      {
+        "details": "transition=-1.686718750000",
+        "status": "PASS",
+        "test": "tie_upper_code_1"
+      },
+      {
+        "details": "transition=-1.673437500000",
+        "status": "PASS",
+        "test": "tie_upper_code_2"
+      },
+      {
+        "details": "transition=-0.013281250000",
+        "status": "PASS",
+        "test": "tie_upper_code_127"
+      },
+      {
+        "details": "transition=0.000000000000",
+        "status": "PASS",
+        "test": "tie_upper_code_128"
+      },
+      {
+        "details": "transition=1.686718750000",
+        "status": "PASS",
+        "test": "tie_upper_code_255"
+      },
+      {
+        "details": "all 256 centers",
+        "status": "PASS",
+        "test": "centers_round_trip"
+      },
+      {
+        "details": "4096 random samples",
+        "status": "PASS",
+        "test": "direct_vs_sar_random"
+      },
+      {
+        "details": "4096 random samples",
+        "status": "PASS",
+        "test": "direct_vs_oracle_random"
+      },
+      {
+        "details": "max=0.499981 LSB",
+        "status": "PASS",
+        "test": "quant_error_bound"
+      },
+      {
+        "details": "measured=35.562, expected=35.558",
+        "status": "PASS",
+        "test": "known_white_noise_sqnr"
+      },
+      {
+        "details": "measured=50.000, expected=50.0",
+        "status": "PASS",
+        "test": "known_harmonic_sqdr"
+      },
+      {
+        "details": "SNDR=44 dB -> ENOB=7.0166",
+        "status": "PASS",
+        "test": "enob_formula"
+      },
+      {
+        "details": "linear/dB conversion",
+        "status": "PASS",
+        "test": "db10_linear_roundtrip"
+      },
+      {
+        "details": "folded=[38, 57, 76, 95]...",
+        "status": "PASS",
+        "test": "harmonic_folding_unique"
+      },
+      {
+        "details": "closure=6.75029e-15 dB",
+        "status": "PASS",
+        "test": "sqndr_power_closure"
+      },
+      {
+        "details": "known +/-0.25 LSB DNL",
+        "status": "PASS",
+        "test": "synthetic_dnl_known_widths"
+      },
+      {
+        "details": "endpoint INL preserves gain-like slope while best-fit INL removes it",
+        "status": "PASS",
+        "test": "endpoint_bestfit_inl_distinct"
+      },
+      {
+        "details": "zero denominator -> +inf",
+        "status": "PASS",
+        "test": "zero_power_ratio_inf"
+      },
+      {
+        "details": "direct MSE calculation",
+        "status": "PASS",
+        "test": "sqnr_total_td_mse"
+      }
+    ],
+    "status": "PASS"
+  }
+}

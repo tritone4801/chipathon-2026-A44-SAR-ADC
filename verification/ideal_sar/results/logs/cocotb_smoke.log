@@ -1,0 +1,33 @@
+rm -f /work/verification/ideal_sar/results/raw/cocotb_results.xml
+"make" -f /usr/local/lib/python3.12/dist-packages/cocotb_tools/makefiles/Makefile.sim /work/verification/ideal_sar/results/raw/cocotb_results.xml
+make[1]: Entering directory '/work/verification/ideal_sar'
+mkdir -p /work/verification/ideal_sar/results/raw/cocotb_build
+/foss/tools/bin/iverilog -o /work/verification/ideal_sar/results/raw/cocotb_build/sim.vvp -s ideal_sar_core -g2012 -g2012 -f /work/verification/ideal_sar/results/raw/cocotb_build/cmds.f -f /work/verification/ideal_sar/results/raw/cocotb_build/cmds.f  /work/verification/ideal_sar/models/ideal_sar_core.sv
+Command File: Warning: default timescale is being set multiple times.
+                     : using the last valid +timescale found.
+rm -f /work/verification/ideal_sar/results/raw/cocotb_results.xml
+COCOTB_TEST_MODULES=test_ideal_sar COCOTB_TESTCASE= COCOTB_TEST_FILTER= COCOTB_TOPLEVEL=ideal_sar_core TOPLEVEL_LANG=verilog \
+         /foss/tools/bin/vvp -M /usr/local/lib/python3.12/dist-packages/cocotb/libs -m libcocotbvpi_icarus   /work/verification/ideal_sar/results/raw/cocotb_build/sim.vvp   
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:93   in _embed_init_python              Using Python 3.12.4 interpreter at /usr/bin/python3
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:79   in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 14.0 (devel)
+     0.00ns INFO     cocotb                             Seeding Python random module with 1782348422
+     0.00ns INFO     cocotb                             Initialized cocotb v2.0.1 from /usr/local/lib/python3.12/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Running tests
+     0.00ns INFO     cocotb.regression                  running test_ideal_sar.reset_and_midscale_conversion (1/3)
+     6.00ns INFO     cocotb.regression                  test_ideal_sar.reset_and_midscale_conversion passed
+     6.00ns INFO     cocotb.regression                  running test_ideal_sar.dout_holds_during_sample_and_updates_at_eoc (2/3)
+    14.00ns INFO     cocotb.regression                  test_ideal_sar.dout_holds_during_sample_and_updates_at_eoc passed
+    14.00ns INFO     cocotb.regression                  running test_ideal_sar.reset_and_internal_observation_ports_are_clean (3/3)
+    22.00ns INFO     cocotb.regression                  test_ideal_sar.reset_and_internal_observation_ports_are_clean passed
+    22.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_ideal_sar.reset_and_midscale_conversion                    PASS           6.00           0.00      13486.51  **
+                                                        ** test_ideal_sar.dout_holds_during_sample_and_updates_at_eoc      PASS           8.00           0.00      36591.53  **
+                                                        ** test_ideal_sar.reset_and_internal_observation_ports_are_clean   PASS           8.00           0.00      39153.36  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=3 PASS=3 FAIL=0 SKIP=0                                                  22.00           0.01       2881.24  **
+                                                        ***********************************************************************************************************************
+make[1]: Leaving directory '/work/verification/ideal_sar'
+PASS: cocotb icarus ideal_sar_core smoke test

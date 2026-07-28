@@ -1,0 +1,5 @@
+case,vdiff_v,expected_code,direct_code,sar_code,oracle_code,status
+below_minus_10_lsb,-1.8328125,0,0,0,0,PASS
+below_minus_1_lsb,-1.7132812499999999,0,0,0,0,PASS
+above_plus_1_lsb,1.7132812499999999,255,255,255,255,PASS
+above_plus_10_lsb,1.8328125,255,255,255,255,PASS

@@ -1,0 +1,2 @@
+method,vdd_v,load_ohm,expected_current_a,measured_current_a,expected_power_w,measured_power_w,expected_energy_j,measured_energy_j,power_error_pct,energy_error_pct,duration_s,status
+ngspice_supply_branch_measurement,2.5,3300.0,0.0007575757575757576,0.000757576,0.001893939393939394,0.0018939400000000002,1.893939393939394e-09,1.89394e-09,3.200000000536107e-05,3.200000000536107e-05,1e-06,PASS

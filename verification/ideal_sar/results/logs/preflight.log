@@ -1,0 +1,32 @@
+Ideal SAR ADC preflight
+config=/work/verification/ideal_sar/config/sar_adc.yaml
+bits=8
+fs_hz=2000000.0
+vfs_diff_pp=3.4
+lsb=0.01328125
+
+Tools:
+- python: PASS /foss/tools/bin/python Python 3.12.3
+- python3: PASS /foss/tools/bin/python3 Python 3.12.3
+- ngspice: PASS /foss/tools/bin/ngspice ******
+- xschem: PASS /foss/tools/bin/xschem XSCHEM V3.4.8RC
+- iverilog: PASS /foss/tools/bin/iverilog Icarus Verilog version 14.0 (devel) (s20251012-145-g9b0d46b4-dirty)
+- verilator: PASS /foss/tools/bin/verilator Verilator 5.046 2026-02-28 rev v5.046
+- gtkwave: PASS /foss/tools/bin/gtkwave Could not initialize GTK!  Is DISPLAY env var/xhost set?
+- make: PASS /usr/bin/make GNU Make 4.3
+
+Python imports:
+- numpy: PASS 2.4.4
+- matplotlib: PASS 3.10.8
+- yaml: PASS 6.0.3
+- cocotb: PASS 2.0.1
+
+Required input files:
+- MISSING: D:/PICO/current_goal.md
+- READ: /work/README.md
+- READ: /work/Makefile
+- MISSING: /work/docs/reproducing-docker.md
+- MISSING: /work/docs/reproducing-native.md
+- MISSING: /work/cocotb/chip_top_tb.py
+- MISSING: /work/src/chip_core.sv
+- MISSING: C:/Users/15031/eda/designs/sscs-chipathon-2026/resources/Analog/eda/README.md

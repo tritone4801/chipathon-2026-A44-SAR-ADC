@@ -1,0 +1,22 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * known-current power measurement proxy for ideal sar harness.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+avdd                                       2.5
+vdd#branch                        -0.000757576
+
+
+No. of Data Rows : 1008
+iavg                =  -7.57576e-04 from=  0.00000e+00 to=  1.00000e-06
+ngspice-46 done

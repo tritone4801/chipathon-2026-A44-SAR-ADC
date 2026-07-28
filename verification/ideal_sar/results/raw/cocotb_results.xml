@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1782348422" />
+    <testcase name="reset_and_midscale_conversion" classname="test_ideal_sar" file="/work/verification/ideal_sar/cocotb/test_ideal_sar.py" lineno="40" time="0.0004448890686035156" sim_time_ns="6.0" ratio_time="13486.508038585209" />
+    <testcase name="dout_holds_during_sample_and_updates_at_eoc" classname="test_ideal_sar" file="/work/verification/ideal_sar/cocotb/test_ideal_sar.py" lineno="48" time="0.0002186298370361328" sim_time_ns="7.999999999999999" ratio_time="36591.52889858233" />
+    <testcase name="reset_and_internal_observation_ports_are_clean" classname="test_ideal_sar" file="/work/verification/ideal_sar/cocotb/test_ideal_sar.py" lineno="62" time="0.00020432472229003906" sim_time_ns="7.999999999999998" ratio_time="39153.362893815625" />
+  </testsuite>
+</testsuites>
