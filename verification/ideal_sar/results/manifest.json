@@ -1,0 +1,403 @@
+{
+  "config": {
+    "adc": {
+      "bits": 8,
+      "differential_input": true,
+      "fs_hz": "2.0e6",
+      "output_encoding": "straight_binary",
+      "saturation": true,
+      "transition_tie_rule": "upper_code",
+      "vcm_v": 1.65,
+      "vrefn_v": 0.8,
+      "vrefp_v": 2.5
+    },
+    "dynamic_test": {
+      "amplitude_fs_peak": 0.8823529411764706,
+      "coherent_bins": {
+        "low_frequency": 997,
+        "near_nyquist": 32113
+      },
+      "fft_points": 65536,
+      "harmonics": 10,
+      "quantization_metrics": {
+        "amplitude_sweep_fs_peak": [
+          0.8823529411764706,
+          0.5,
+          0.25,
+          0.125,
+          0.0625
+        ],
+        "closure_tolerance_db": 0.05,
+        "phase_sweep_rad": [
+          0.0,
+          0.37,
+          1.11
+        ],
+        "quantization_distortion_harmonics": 10,
+        "remove_dc_from_quantization_error": true,
+        "sqdr_spectral": true,
+        "sqnr_spectral": true,
+        "sqnr_total_time_domain": true
+      },
+      "random_seed": 2026,
+      "representative_stimuli": {
+        "display_phase_rad": 0.37,
+        "low_frequency": {
+          "coherent_bin": 997,
+          "display_samples": 192
+        },
+        "near_nyquist": {
+          "coherent_bin": 32113,
+          "display_samples": 64
+        }
+      },
+      "startup_conversions_to_discard": 16
+    },
+    "fault_injection": {
+      "distorted_code": 100,
+      "gain_error_fraction": 0.01,
+      "harmonic_dbc": -60.0,
+      "missing_code": 73,
+      "noise_rms_lsb": 0.5,
+      "offset_lsb": 0.5,
+      "random_seed": 2026
+    },
+    "interface": {
+      "dout_width": 8,
+      "eoc_signal": "EOC_INT",
+      "external_clock": "CLKS",
+      "external_convst": false,
+      "external_ready": false,
+      "test_reset_enabled": true
+    },
+    "static_test": {
+      "ramp_samples_per_code": 128,
+      "sine_histogram_samples": 262144,
+      "transition_search_resolution_lsb": 0.0001
+    },
+    "timing": {
+      "alternate_cases": [
+        {
+          "conversion_time_s": 4e-07,
+          "name": "min_track_max_conversion",
+          "track_time_s": 1e-07
+        }
+      ],
+      "cdac_adjustments_per_conversion": 7,
+      "clks_hz": "2.0e6",
+      "comparisons_per_conversion": 8,
+      "conversion_time_s": 3.75e-07,
+      "internal_bit_slots": 8,
+      "track_time_s": 1.25e-07
+    }
+  },
+  "files": [
+    {
+      "bytes": 1663,
+      "path": "config\\sar_adc.yaml",
+      "sha256": "642a9acdbf4ab9832c3263736fd5bfa64c6f466e38ef1a32a54d7c32fe134027"
+    },
+    {
+      "bytes": 884,
+      "path": "Makefile",
+      "sha256": "e0674c285e72883637fc7420612be86f13294161a4799f07f311362d89ec89fd"
+    },
+    {
+      "bytes": 2114,
+      "path": "README.md",
+      "sha256": "dc17d10da10d470fee55848adfb73775793054f15259b6c642b64a106109509f"
+    },
+    {
+      "bytes": 783,
+      "path": "Makefile",
+      "sha256": "4c16735d1d3e9aff021ae2e8e522a2d4240da395d699abfc6d5321f1cb27996a"
+    },
+    {
+      "bytes": 13946,
+      "path": "results\\README.md",
+      "sha256": "56dfe6c0978bfe8645954012c19c3d5bb1cbae5f6aca7d12696b46458c964291"
+    },
+    {
+      "bytes": 5887,
+      "path": "results\\README.zh-CN.md",
+      "sha256": "66765aeba3029cbb6c8c7b09a80c43b19c884e8cec78bd261ed96de92c02badd"
+    },
+    {
+      "bytes": 132243,
+      "path": "scripts\\run_all.py",
+      "sha256": "3bf3fa2427d061e2899d02d3069750b5ba6b409dd6f68ecb8889d45962cbf292"
+    },
+    {
+      "bytes": 16588,
+      "path": "scripts\\ideal_sar_lib.py",
+      "sha256": "72952aa123a89fe4f3e05678ba6a722047f9a498af7c989bac5ab6f17ff6e292"
+    },
+    {
+      "bytes": 2820,
+      "path": "models\\ideal_sar_core.sv",
+      "sha256": "00ca24bea72fc149823c94a91b88ed2ab85de145575ee5b2c7ed5e1d807d6b2a"
+    },
+    {
+      "bytes": 2238,
+      "path": "cocotb\\test_ideal_sar.py",
+      "sha256": "f1aeb48323668080ba81dc650746f54c258a2e9e2870c3d02c3d81562634ff37"
+    },
+    {
+      "bytes": 1865,
+      "path": "cocotb\\runner.py",
+      "sha256": "9670f91cdfe2b4bbcb86ebe665bbf4ace9d6708f914fbd0fd10793fd1a350843"
+    },
+    {
+      "bytes": 242,
+      "path": "spice\\power_proxy_tb.cir",
+      "sha256": "1cfd706ebae02af197fb26e62b75f0760864409448843be58021af62d1492616"
+    },
+    {
+      "bytes": 13099,
+      "path": "results\\csv\\metrics.csv",
+      "sha256": "7035d6fc5f114aca38034d7f0b60e0a3753499dd5a14b7ec652cf1c97420b0a3"
+    },
+    {
+      "bytes": 11464,
+      "path": "results\\csv\\coverage_matrix.csv",
+      "sha256": "81b718a064e352df64fa493b2674af5c34e6fe778736a98a809b75eab8d0de1a"
+    },
+    {
+      "bytes": 33800,
+      "path": "results\\csv\\adc_input_output_time_low_frequency.csv",
+      "sha256": "cb4e281822ffc49054f13310bd8713c27b8405f6837ec8448a60895076ce9a8c"
+    },
+    {
+      "bytes": 11287,
+      "path": "results\\csv\\adc_input_output_time_near_nyquist.csv",
+      "sha256": "b7d606e6d51f1c4a2185cb4591fdc23732ecd04a98331f0fe43c270ca9cc5171"
+    },
+    {
+      "bytes": 11050,
+      "path": "results\\csv\\adc_dac_reconstruction_low_frequency.csv",
+      "sha256": "120f134c10b354419ddcb9639166e16d04a1c65efe26104203b67ed30d440ffc"
+    },
+    {
+      "bytes": 2472374,
+      "path": "results\\csv\\adc_output_spectrum_low_frequency.csv",
+      "sha256": "1e5920508f5f3fde02a3b4b84fc146e17e59bc31dcdb6896b840394d28d1dd37"
+    },
+    {
+      "bytes": 2472290,
+      "path": "results\\csv\\adc_output_spectrum_near_nyquist.csv",
+      "sha256": "9e02ee5ddf01215ebe11943671e21176a550928ef90c279e8781c862d4e822e8"
+    },
+    {
+      "bytes": 2318,
+      "path": "results\\logs\\run_all_container.log",
+      "sha256": "a3becc9eaf60de2820801cc86a2dc766a59e5752af06aefb49f5a721148f7127"
+    },
+    {
+      "bytes": 29068,
+      "path": "results\\metrics.json",
+      "sha256": "8e1b33b83c96ce8169002e45ab2b4ae75f7f065fc40723ef8d9e0f893d4839ee"
+    },
+    {
+      "bytes": 295937,
+      "path": "results\\plots\\adc_input_output_time_low_frequency.png",
+      "sha256": "095f952e6f97819294d56340ba3741758e22a60ef5e071798b521181c9fb6b61"
+    },
+    {
+      "bytes": 417929,
+      "path": "results\\plots\\adc_input_output_time_near_nyquist.png",
+      "sha256": "3b644a1600f1e488fc0a64148f4a59eb6e16bbdee071a764e6008f6b42d4762b"
+    },
+    {
+      "bytes": 153810,
+      "path": "results\\plots\\adc_dac_reconstruction_low_frequency.png",
+      "sha256": "7e14aa05568dda09e2f7e370abf8c613423abf1a4e090ccb615a31b22b851641"
+    },
+    {
+      "bytes": 154554,
+      "path": "results\\plots\\adc_fft_low_frequency.png",
+      "sha256": "da112407e0f2e9e97ac89532e2afc6aaa05d97e44a02569a082ae72bd95fcac9"
+    },
+    {
+      "bytes": 146263,
+      "path": "results\\plots\\adc_fft_near_nyquist.png",
+      "sha256": "4227441888a17e0f56a7c22c4879382fc07762c68ebb9b94cd2645779ac9a75e"
+    },
+    {
+      "bytes": 63203,
+      "path": "results\\plots\\adc_output_code_time_low_frequency.png",
+      "sha256": "b88d7381d1781b540ad7b0b21b6d2e0f3bc4fe4898377b2350a3d94c38253dd3"
+    },
+    {
+      "bytes": 108711,
+      "path": "results\\plots\\adc_output_code_time_near_nyquist.png",
+      "sha256": "f07f86151b219e0dd0160799b978fe45ba2247caed07c74e81d31b235306ba22"
+    },
+    {
+      "bytes": 154554,
+      "path": "results\\plots\\adc_output_spectrum_low_frequency.png",
+      "sha256": "da112407e0f2e9e97ac89532e2afc6aaa05d97e44a02569a082ae72bd95fcac9"
+    },
+    {
+      "bytes": 146263,
+      "path": "results\\plots\\adc_output_spectrum_near_nyquist.png",
+      "sha256": "4227441888a17e0f56a7c22c4879382fc07762c68ebb9b94cd2645779ac9a75e"
+    },
+    {
+      "bytes": 12855,
+      "path": "report\\ideal_sar_adc_testbench_validation.md",
+      "sha256": "612f49d65bcd23e417ec0c79afab3c95c9fa28c270417add725ec87aeeadc22a"
+    }
+  ],
+  "git_commit": "ecbe24d4e805bf9a845a4490331fcb1b6bda3038",
+  "tool_versions": {
+    "core_external_ready": true,
+    "derived": {
+      "bits": 8,
+      "cdac_adjustments_per_conversion": 7,
+      "clks_hz": 2000000.0,
+      "codes": 256,
+      "comparisons_per_conversion": 8,
+      "conversion_time_s": 3.75e-07,
+      "cycles_per_conversion": 8,
+      "fs_hz": 2000000.0,
+      "internal_bit_slot_hz": 21333333.333333332,
+      "internal_bit_slot_period_s": 4.6875e-08,
+      "internal_bit_slots": 8,
+      "lsb": 0.01328125,
+      "max_code": 255,
+      "sample_period_s": 5e-07,
+      "sample_rate_from_clock_hz": 2000000.0,
+      "sar_clock_hz": 21333333.333333332,
+      "sar_clock_period_s": 4.6875e-08,
+      "track_time_s": 1.25e-07,
+      "vcm": 1.65,
+      "vfs_diff_peak": 1.7,
+      "vfs_diff_pp": 3.4,
+      "vmax": 1.7,
+      "vmin": -1.7,
+      "vrefn": 0.8,
+      "vrefp": 2.5
+    },
+    "evidence": {
+      "imports_csv": "/work/verification/ideal_sar/results/csv/preflight_python_imports.csv",
+      "input_files_csv": "/work/verification/ideal_sar/results/csv/required_input_files.csv",
+      "log": "/work/verification/ideal_sar/results/logs/preflight.log",
+      "tools_csv": "/work/verification/ideal_sar/results/csv/preflight_tools.csv"
+    },
+    "python_imports": [
+      {
+        "module": "numpy",
+        "status": "PASS",
+        "version": "2.4.4"
+      },
+      {
+        "module": "matplotlib",
+        "status": "PASS",
+        "version": "3.10.8"
+      },
+      {
+        "module": "yaml",
+        "status": "PASS",
+        "version": "6.0.3"
+      },
+      {
+        "module": "cocotb",
+        "status": "PASS",
+        "version": "2.0.1"
+      }
+    ],
+    "required_input_files": [
+      {
+        "bytes": 0,
+        "path": "D:/PICO/current_goal.md",
+        "status": "MISSING"
+      },
+      {
+        "bytes": 1226,
+        "path": "/work/README.md",
+        "status": "READ"
+      },
+      {
+        "bytes": 884,
+        "path": "/work/Makefile",
+        "status": "READ"
+      },
+      {
+        "bytes": 0,
+        "path": "/work/docs/reproducing-docker.md",
+        "status": "MISSING"
+      },
+      {
+        "bytes": 0,
+        "path": "/work/docs/reproducing-native.md",
+        "status": "MISSING"
+      },
+      {
+        "bytes": 0,
+        "path": "/work/cocotb/chip_top_tb.py",
+        "status": "MISSING"
+      },
+      {
+        "bytes": 0,
+        "path": "/work/src/chip_core.sv",
+        "status": "MISSING"
+      },
+      {
+        "bytes": 0,
+        "path": "C:/Users/15031/eda/designs/sscs-chipathon-2026/resources/Analog/eda/README.md",
+        "status": "MISSING"
+      }
+    ],
+    "status": "PASS",
+    "tools": [
+      {
+        "path": "/foss/tools/bin/python",
+        "status": "PASS",
+        "tool": "python",
+        "version": "Python 3.12.3"
+      },
+      {
+        "path": "/foss/tools/bin/python3",
+        "status": "PASS",
+        "tool": "python3",
+        "version": "Python 3.12.3"
+      },
+      {
+        "path": "/foss/tools/bin/ngspice",
+        "status": "PASS",
+        "tool": "ngspice",
+        "version": "******"
+      },
+      {
+        "path": "/foss/tools/bin/xschem",
+        "status": "PASS",
+        "tool": "xschem",
+        "version": "XSCHEM V3.4.8RC"
+      },
+      {
+        "path": "/foss/tools/bin/iverilog",
+        "status": "PASS",
+        "tool": "iverilog",
+        "version": "Icarus Verilog version 14.0 (devel) (s20251012-145-g9b0d46b4-dirty)"
+      },
+      {
+        "path": "/foss/tools/bin/verilator",
+        "status": "PASS",
+        "tool": "verilator",
+        "version": "Verilator 5.046 2026-02-28 rev v5.046"
+      },
+      {
+        "path": "/foss/tools/bin/gtkwave",
+        "status": "PASS",
+        "tool": "gtkwave",
+        "version": "Could not initialize GTK!  Is DISPLAY env var/xhost set?"
+      },
+      {
+        "path": "/usr/bin/make",
+        "status": "PASS",
+        "tool": "make",
+        "version": "GNU Make 4.3"
+      }
+    ]
+  }
+}

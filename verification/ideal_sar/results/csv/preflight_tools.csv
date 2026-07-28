@@ -1,0 +1,9 @@
+tool,path,status,version
+python,/foss/tools/bin/python,PASS,Python 3.12.3
+python3,/foss/tools/bin/python3,PASS,Python 3.12.3
+ngspice,/foss/tools/bin/ngspice,PASS,******
+xschem,/foss/tools/bin/xschem,PASS,XSCHEM V3.4.8RC
+iverilog,/foss/tools/bin/iverilog,PASS,Icarus Verilog version 14.0 (devel) (s20251012-145-g9b0d46b4-dirty)
+verilator,/foss/tools/bin/verilator,PASS,Verilator 5.046 2026-02-28 rev v5.046
+gtkwave,/foss/tools/bin/gtkwave,PASS,Could not initialize GTK!  Is DISPLAY env var/xhost set?
+make,/usr/bin/make,PASS,GNU Make 4.3

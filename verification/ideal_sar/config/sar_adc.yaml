@@ -1,0 +1,71 @@
+adc:
+  bits: 8
+  fs_hz: 2.0e6
+  vrefp_v: 2.50
+  vrefn_v: 0.80
+  vcm_v: 1.65
+  differential_input: true
+  output_encoding: straight_binary
+  saturation: true
+  transition_tie_rule: upper_code
+
+timing:
+  clks_hz: 2.0e6
+  track_time_s: 125.0e-9
+  conversion_time_s: 375.0e-9
+  comparisons_per_conversion: 8
+  cdac_adjustments_per_conversion: 7
+  internal_bit_slots: 8
+  alternate_cases:
+    - name: min_track_max_conversion
+      track_time_s: 100.0e-9
+      conversion_time_s: 400.0e-9
+
+interface:
+  dout_width: 8
+  external_clock: CLKS
+  external_ready: false
+  external_convst: false
+  eoc_signal: EOC_INT
+  test_reset_enabled: true
+
+dynamic_test:
+  fft_points: 65536
+  amplitude_fs_peak: 0.8823529411764706
+  harmonics: 10
+  startup_conversions_to_discard: 16
+  random_seed: 2026
+  coherent_bins:
+    low_frequency: 997
+    near_nyquist: 32113
+  representative_stimuli:
+    display_phase_rad: 0.37
+    low_frequency:
+      coherent_bin: 997
+      display_samples: 192
+    near_nyquist:
+      coherent_bin: 32113
+      display_samples: 64
+  quantization_metrics:
+    sqnr_total_time_domain: true
+    sqnr_spectral: true
+    sqdr_spectral: true
+    quantization_distortion_harmonics: 10
+    remove_dc_from_quantization_error: true
+    amplitude_sweep_fs_peak: [0.8823529411764706, 0.5, 0.25, 0.125, 0.0625]
+    phase_sweep_rad: [0.0, 0.37, 1.11]
+    closure_tolerance_db: 0.05
+
+static_test:
+  transition_search_resolution_lsb: 1.0e-4
+  ramp_samples_per_code: 128
+  sine_histogram_samples: 262144
+
+fault_injection:
+  random_seed: 2026
+  offset_lsb: 0.5
+  gain_error_fraction: 0.01
+  distorted_code: 100
+  missing_code: 73
+  harmonic_dbc: -60.0
+  noise_rms_lsb: 0.5

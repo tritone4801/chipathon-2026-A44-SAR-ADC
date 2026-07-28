@@ -1,0 +1,23 @@
+test,status,details
+derived_lsb,PASS,lsb=0.013281250000000
+vmin_code,PASS,0
+vmax_saturation,PASS,255
+tie_upper_code_1,PASS,transition=-1.686718750000
+tie_upper_code_2,PASS,transition=-1.673437500000
+tie_upper_code_127,PASS,transition=-0.013281250000
+tie_upper_code_128,PASS,transition=0.000000000000
+tie_upper_code_255,PASS,transition=1.686718750000
+centers_round_trip,PASS,all 256 centers
+direct_vs_sar_random,PASS,4096 random samples
+direct_vs_oracle_random,PASS,4096 random samples
+quant_error_bound,PASS,max=0.499981 LSB
+known_white_noise_sqnr,PASS,"measured=35.562, expected=35.558"
+known_harmonic_sqdr,PASS,"measured=50.000, expected=50.0"
+enob_formula,PASS,SNDR=44 dB -> ENOB=7.0166
+db10_linear_roundtrip,PASS,linear/dB conversion
+harmonic_folding_unique,PASS,"folded=[38, 57, 76, 95]..."
+sqndr_power_closure,PASS,closure=6.75029e-15 dB
+synthetic_dnl_known_widths,PASS,known +/-0.25 LSB DNL
+endpoint_bestfit_inl_distinct,PASS,endpoint INL preserves gain-like slope while best-fit INL removes it
+zero_power_ratio_inf,PASS,zero denominator -> +inf
+sqnr_total_td_mse,PASS,direct MSE calculation

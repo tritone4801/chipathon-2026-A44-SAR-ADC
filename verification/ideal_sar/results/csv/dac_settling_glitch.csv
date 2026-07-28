@@ -1,0 +1,4 @@
+step,from_code,to_code,initial_v,final_v,ideal_settling_time_s,glitch_area_v_s,status
+zero_to_full,0,255,-1.7,1.68671875,0.0,0.0,PASS
+major_carry,127,128,-0.013281249999999911,0.0,0.0,0.0,PASS
+full_to_zero,255,0,1.68671875,-1.7,0.0,0.0,PASS

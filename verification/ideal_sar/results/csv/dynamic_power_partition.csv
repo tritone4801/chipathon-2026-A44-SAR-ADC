@@ -1,0 +1,7 @@
+case,partition,power
+low_frequency,Psignal,1.1244377475132563
+low_frequency,Pqn,1.453303058994998e-05
+low_frequency,Pqd,2.7530630168540553e-07
+near_nyquist,Psignal,1.124437747513256
+near_nyquist,Pqn,1.4533030589950005e-05
+near_nyquist,Pqd,2.7530630168540426e-07

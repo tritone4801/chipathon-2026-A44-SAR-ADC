@@ -1,0 +1,10 @@
+* Known-current power measurement proxy for ideal SAR harness.
+VDD avdd 0 DC 2.5
+RLOAD avdd 0 3300.0
+.control
+tran 1n 1e-06
+meas tran iavg AVG i(vdd) FROM=0 TO=1e-06
+wrdata ../results/raw/power_proxy_waveform.csv time v(avdd)
+quit
+.endc
+.end
