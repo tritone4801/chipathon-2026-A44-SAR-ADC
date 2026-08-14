@@ -1,0 +1,26 @@
+{
+  "automatic_promotion": false,
+  "checks": {
+    "builder_manifest_exact": true,
+    "builder_pass_pending_audit": true,
+    "derived_layout_views_reconstructed": true,
+    "derived_source_reconstructed": true,
+    "failed_attempts_preserved": true,
+    "four_full_transistor_and_ports_exact": true,
+    "four_views_exact_and_unique": true,
+    "hierarchical_flat_distinct": true,
+    "native_readback_byte_exact_pairs": true,
+    "no_fill_or_promotion": true,
+    "replacement_actions_valid": true
+  },
+  "claim_boundary": "Independent PASS closes prefill G7 four-view full-transistor LVS and authorizes only G8 PEX. It does not claim PEX metrics, fill, postfill closure, performance, promotion, or signoff.",
+  "failures": [],
+  "fill_executed": false,
+  "g7_pass": true,
+  "g8_authorized": true,
+  "generated_utc": "2026-08-13T13:11:33.872485+00:00",
+  "image_audit_status": "NONE_REPORT_ONLY",
+  "pass": true,
+  "schema": "a44-r3-child-eco1-prefill-r1-g7-full-lvs-builder-r5-independent-audit-v1",
+  "status": "PASS_G7_PREFILL_R1_FULL_LVS"
+}

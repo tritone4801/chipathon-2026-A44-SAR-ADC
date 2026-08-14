@@ -3,6 +3,17 @@
 This repository contains the Team A44 8-bit, 2 MS/s, 3.3 V fully differential
 capacitive SAR ADC design and its verification evidence.
 
+## DRC dry-run submission
+
+The current Chipathon 2026 DRC dry-run submission is rooted at
+[`info.yaml`](info.yaml). It binds the padless, pre-fill 1000 um A44 core GDS
+to [`lvs_config.json`](lvs_config.json), its LVS SPICE source, LEF, physical
+black-box model, and a SHA-256 manifest.
+
+Start with [`drc_dry_run/README.md`](drc_dry_run/README.md). This upload is a
+dry-run input for organizer DRC/LVS ingestion. It is not the workshop
+full-die/padring result, a post-fill promotion, or tapeout signoff.
+
 ## Current project status
 
 The current transistor-level/electrical package is:

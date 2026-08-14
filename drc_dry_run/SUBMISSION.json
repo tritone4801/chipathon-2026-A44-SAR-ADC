@@ -1,0 +1,53 @@
+{
+  "schema": "a44-chipathon-2026-drc-dry-run-submission-v1",
+  "submission_id": "A44_DRC_DRY_RUN_20260814_R1",
+  "generated_at": "2026-08-14T01:36:42-04:00",
+  "status": "READY_FOR_ORGANIZER_DRC_DRY_RUN_NO_PROMOTION",
+  "repository": "https://github.com/tritone4801/chipathon-2026-A44-SAR-ADC",
+  "required_branch": "main",
+  "project_entry": "info.yaml",
+  "lvs_config": "lvs_config.json",
+  "design": {
+    "team": "A44 JST",
+    "title": "A44 8-bit 2-MS/s SAR ADC",
+    "pdk": "GF180MCU",
+    "top_source": "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+    "top_layout": "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+    "bbox_um": [0.0, 0.0, 1000.0, 1000.0],
+    "baseline": "R3B_CHILD_ECO1_PREFILL_R1",
+    "fill_state": "PREFILL_NO_NEW_TOP_OWNED_DUMMY_FILL",
+    "io_pads_present": false
+  },
+  "pins": {
+    "power": ["VDD"],
+    "ground": ["GND"],
+    "analog": ["VINP", "VINN", "VREFP", "VREFN"],
+    "clock": ["CLKS"],
+    "digital_outputs": [
+      "DOUT[7]", "DOUT[6]", "DOUT[5]", "DOUT[4]",
+      "DOUT[3]", "DOUT[2]", "DOUT[1]", "DOUT[0]"
+    ]
+  },
+  "files": {
+    "gds": "gds/A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR.gds",
+    "lef": "lef/A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR.lef",
+    "lvs_spice": "netlists/A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR.spice",
+    "verilog_blackbox": "verilog/A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR.blackbox.v",
+    "prefill_lvs_evidence": "drc_dry_run/evidence/PREFILL_G7_FULL_LVS_INDEPENDENT_GATE.json"
+  },
+  "prepublication_evidence": {
+    "prefill_full_transistor_lvs": "PASS_G7_PREFILL_R1_FULL_LVS",
+    "organizer_drc_dry_run": "PENDING",
+    "automatic_visual_judgement": false,
+    "manual_review_completed": false,
+    "promotion": false,
+    "tapeout_signoff": false
+  },
+  "excluded": [
+    "workshop full-die and padring output",
+    "DEF/OAS",
+    "post-fill R4 manual-review candidate",
+    "report-only layout images"
+  ],
+  "claim_boundary": "Dry-run ingestion package only; not organizer acceptance, fill-aware PEX closure, promotion, foundry signoff, or tapeout readiness."
+}

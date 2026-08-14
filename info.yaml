@@ -1,0 +1,9 @@
+# Chipathon 2026 project configuration for Team A44.
+# Data is intentionally bound from the repository main branch.
+
+project:
+  title: "A44 8-bit 2-MS/s SAR ADC"
+  team: "A44 JST"
+  discord: ""
+  description: "3.3-V fully differential capacitive SAR ADC in GF180MCU"
+  lvs_config: "lvs_config.json"
