@@ -1,9 +1,2 @@
 verification/a44_r2/** -text
 *.xlsx binary
-*.gds binary
-info.yaml -text
-lvs_config.json -text
-drc_dry_run/** -text
-lef/** -text
-netlists/** -text
-verilog/** -text
