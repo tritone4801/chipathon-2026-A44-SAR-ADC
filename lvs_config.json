@@ -21,7 +21,7 @@
     ""
   ],
   "LVS_SPICE_FILES": [
-    "$UPRJ_ROOT/netlists/A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR.spice"
+    ""
   ],
   "LVS_VERILOG_FILES": [
     ""
