@@ -3,6 +3,20 @@
 This repository contains the Team A44 8-bit, 2 MS/s, 3.3 V fully differential
 capacitive SAR ADC design and its verification evidence.
 
+## Current layout review
+
+The current Chipathon 2026 layout-review baseline is the no-pad, pre-fill CORE
+layout bound by `info.yaml` and `lvs_config.json`:
+
+- [CORE GDS](gds/A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR.gds)
+- [Component GDS](gds/components)
+- [Layout catalog, integration views, and images](layout/README.md)
+- [Layout-review presentation](docs/slides/A44_SAR_ADC_LAYOUT_REVIEW_20260821.pptx)
+
+This publication is for layout review. It does not claim density/fill closure,
+padframe or ESD completion, full-chip signoff, Channel Partner acceptance, or
+tapeout readiness.
+
 ## Current project status
 
 The current transistor-level/electrical package is:
