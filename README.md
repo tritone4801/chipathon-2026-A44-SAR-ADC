@@ -8,7 +8,7 @@ capacitive SAR ADC design and its verification evidence.
 The current Chipathon 2026 layout-review baseline is the no-pad, pre-fill CORE
 layout bound by `info.yaml` and `lvs_config.json`:
 
-- [CORE GDS](gds/A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR.gds)
+- [CORE GDS](gds/A44_SAR_ADC_CORE_1000.gds)
 - [Component GDS](gds/components)
 - [Layout catalog, integration views, and images](layout/README.md)
 - [Layout-review presentation](docs/slides/A44_SAR_ADC_LAYOUT_REVIEW_20260821.pptx)

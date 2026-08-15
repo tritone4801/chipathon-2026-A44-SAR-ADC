@@ -26,5 +26,5 @@
   "LVS_VERILOG_FILES": [
     ""
   ],
-  "LAYOUT_FILE": "$UPRJ_ROOT/gds/$TOP_LAYOUT.gds"
+  "LAYOUT_FILE": "$UPRJ_ROOT/gds/A44_SAR_ADC_CORE_1000.gds"
 }
