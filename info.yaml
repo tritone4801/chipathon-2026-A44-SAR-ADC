@@ -7,3 +7,40 @@ project:
   discord: ""
   description: "3.3-V fully differential capacitive SAR ADC in GF180MCU"
   lvs_config: "lvs_config.json"
+
+# Clockwise pad order for the upper-left quadrant, from bottom-left to
+# upper-right. VDD is first so every following I/O pad uses this project's
+# power rail. GND is omitted because the padframe provides a common ground.
+pins:
+  - name: "VDD"
+    io_type: power
+  - name: "CLKS"
+    io_type: input_cmos
+  - name: "DOUT[7]"
+    io_type: bidirectional
+  - name: "DOUT[6]"
+    io_type: bidirectional
+  - name: "DOUT[5]"
+    io_type: bidirectional
+  - name: "DOUT[4]"
+    io_type: bidirectional
+  - name: "DOUT[3]"
+    io_type: bidirectional
+  - name: "DOUT[2]"
+    io_type: bidirectional
+  - name: "DOUT[1]"
+    io_type: bidirectional
+  - name: "DOUT[0]"
+    io_type: bidirectional
+  - name: "VREFN"
+    io_type: analog
+    secondary_esd: true
+  - name: "VINN"
+    io_type: analog
+    secondary_esd: true
+  - name: "VINP"
+    io_type: analog
+    secondary_esd: true
+  - name: "VREFP"
+    io_type: analog
+    secondary_esd: true
