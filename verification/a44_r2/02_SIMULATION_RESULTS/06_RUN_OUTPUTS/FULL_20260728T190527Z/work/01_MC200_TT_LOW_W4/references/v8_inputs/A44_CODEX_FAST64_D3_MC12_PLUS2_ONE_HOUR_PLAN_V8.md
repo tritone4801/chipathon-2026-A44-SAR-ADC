@@ -1,9 +1,8 @@
-# A44 FAST64 D3 MC12+2 One-Hour Selected-Seed Simulation Plan V8
+# A44 One-Hour Selected-Seed Plan for a 12-Sample Monte Carlo Mismatch and Qualified Temporal-Noise 64-Frame Dynamic Simulation, with Two Optional Samples (Version 8)
 
 **Document ID:** `A44_CODEX_FAST64_D3_MC12_PLUS2_ONE_HOUR_PLAN_V8`  
-**Purpose:** 在当前主机上，用 MC200 中选定的少量 seed 完成 1 小时以内的 FAST64 D3 双频带快速回归。  
-**Evidence class:** `FAST64_D3_SELECTED_SEED_QUICK_REGRESSION_MODEL_CONDITIONAL`  
-**This is not:** 新的 MC200 良率估计、量产良率声明或动态 signoff。
+**Purpose:** 在当前主机上，用 200 样本蒙特卡洛失配仿真中选定的少量 seed 完成 1 小时以内的蒙特卡洛失配与合格时域噪声组合类别的 64 帧动态仿真双频带快速回归。
+**This is not:** 新的 200 样本蒙特卡洛失配仿真良率估计、量产良率声明或动态 signoff。
 
 ## 1. Current measured basis
 
@@ -52,7 +51,7 @@ execution mode       = separate ngspice process fallback
 
 这是一个结果知情的覆盖型集合，目的是快速发现回归，不用于无偏良率统计。
 
-### 3.1 Mandatory core: MC12
+### 3.1 Mandatory core: 12-sample Monte Carlo mismatch simulation
 
 | Seed | Selection role | Worst band | Baseline worst SNDR (dB) | LOW state | NEAR state | Historical dual-band runtime (s) |
 |---:|---|---|---:|---|---|---:|
@@ -87,7 +86,7 @@ historical 4-worker wall    = 34.62 min
 
 ### 3.2 Optional extension: +2 seeds
 
-Only launch these seeds when the mandatory MC12 phase has completed by overall minute 42:
+Only launch these seeds when the mandatory 12-sample Monte Carlo mismatch simulation phase has completed by overall minute 42:
 
 | Seed | Selection role | Worst band | Baseline worst SNDR (dB) | Historical dual-band runtime (s) |
 |---:|---|---|---:|---:|
@@ -100,27 +99,27 @@ Optional seed expression:
 13,167
 ```
 
-The optional pair historically requires about 7.9 minutes with two active seed jobs. If the MC12 completion time is later than minute 42, skip the optional pair and close the valid MC12 package.
+The optional pair historically requires about 7.9 minutes with two active seed jobs. If the 12-sample Monte Carlo mismatch simulation completion time is later than minute 42, skip the optional pair and close the valid 12-sample Monte Carlo mismatch simulation package.
 
 ## 4. Parallel-execution policy
 
-1. Use exactly 4 workers for MC12.
+1. Use exactly 4 workers for 12-sample Monte Carlo mismatch simulation.
 2. A worker owns one seed and runs its LOW and NEAR_NYQUIST records sequentially.
 3. Never run more than 4 seed jobs or 4 ngspice processes on this host.
 4. Run the optional pair with 2 workers, not 4 placeholder workers.
-5. Do not run plotting, full-waveform replay, final raw-file hashing, Docker image work or another ngspice campaign concurrently.
+5. Do not run plotting, full-waveform replay, final raw-file packaging, Docker image work or another ngspice campaign concurrently.
 6. Do not launch automatic retries. A failed record is recorded as unresolved unless there is enough time for one controlled retry before minute 42.
-7. If dependency or qualification-cache hashes do not match V7, stop with `BLOCKED_STALE_QUALIFICATION_CACHE`; do not spend the one-hour window rebuilding qualification.
+7. If dependency or qualification-cache versions do not match V7, stop with `BLOCKED_STALE_QUALIFICATION_CACHE`; do not spend the one-hour window rebuilding qualification.
 
 ## 5. Independent workspace
 
-Do not modify or clear the completed MC200 V7 package. Create an independent package:
+Do not modify or clear the completed 200-sample Monte Carlo mismatch simulation V7 package. Create an independent package:
 
 ```text
 /foss/designs/manual_goal/verification/A44_FAST64_D3_MC12_PLUS2_1H_V8/
 ```
 
-Copy only the small frozen inputs, scripts, dependency manifests and qualified cache required by the runner. Do not copy the approximately 30 GB full-waveform audit data. The new package must begin with no `dynamic_master.csv`, no `dynamic_codes.csv` and no terminal job rows, otherwise resume logic will skip the selected seeds.
+Copy only the small frozen inputs, scripts, dependencies and qualified cache required by the runner. Do not copy the approximately 30 GB full-waveform diagnostic data. The new package must begin with no `dynamic_master.csv`, no `dynamic_codes.csv` and no terminal job rows, otherwise resume logic will skip the selected seeds.
 
 The quick package shall set:
 
@@ -128,7 +127,7 @@ The quick package shall set:
 campaign id           = A44_FAST64_D3_MC12_PLUS2_1H_V8
 required core seeds   = 12
 optional seeds        = 2
-MC200 yield claim     = false
+200-sample Monte Carlo mismatch simulation yield claim = false
 production yield claim = false
 ```
 
@@ -136,12 +135,12 @@ production yield claim = false
 
 | Overall time | Action | Admission rule |
 |---|---|---|
-| 0:00 to 0:05 | Preflight, package creation, dependency/cache hash check, process and disk check | Must finish by minute 5 |
-| 0:05 to about 0:40 | Run mandatory MC12 with 4 workers | 24 records |
+| 0:00 to 0:05 | Preflight, package creation, dependency/cache version check, process and disk check | Must finish by minute 5 |
+| 0:05 to about 0:40 | Run mandatory 12-sample Monte Carlo mismatch simulation with 4 workers | 24 records |
 | up to 0:42 | Validate mandatory completeness and runtime | Optional admission deadline |
 | 0:40 to 0:50 | Run seeds 13 and 167 with 2 workers, only if admitted | Otherwise skip |
-| 0:50 to 0:57 | Merge CSV, compare with MC200 baseline, generate three selected spectra and quick audit | No raw replay |
-| 0:57 to 1:00 | Write final status and compact manifest | No new simulation launch |
+| 0:50 to 0:57 | Merge CSV, compare with 200-sample Monte Carlo mismatch simulation baseline, generate three selected spectra and a quick summary | No raw replay |
+| 0:57 to 1:00 | Write final status and compact result list | No new simulation launch |
 
 Budget for the mandatory path:
 
@@ -149,7 +148,7 @@ Budget for the mandatory path:
 preflight                         = 5.0 min
 MC12 historical wall             = 34.6 min
 MC12 wall with 25% margin        = 43.3 min
-postprocess and compact audit     = 7.0 min
+postprocess and compact packaging = 7.0 min
 total conservative mandatory     = 55.3 min
 ```
 
@@ -157,7 +156,7 @@ total conservative mandatory     = 55.3 min
 
 All EDA execution must occur in the installed Chipathon container.
 
-Mandatory MC12:
+Mandatory 12-sample Monte Carlo mismatch simulation:
 
 ```bash
 cd /foss/designs/manual_goal/verification/A44_FAST64_D3_MC12_PLUS2_1H_V8
@@ -176,7 +175,7 @@ PYTHONPATH=scripts python3 scripts/run_v7.py \
   --workers 2
 ```
 
-The V8 quick finalizer must use the explicit required-seed list. Do not run the existing V7 MC200 finalizer unchanged because it expects 200 dies and 400 records.
+The V8 quick finalizer must use the explicit required-seed list. Do not run the existing version 7 200-sample Monte Carlo mismatch simulation finalizer unchanged because it expects 200 dies and 400 records.
 
 ## 8. Required quick outputs
 
@@ -184,17 +183,14 @@ The V8 quick finalizer must use the explicit required-seed list. Do not run the 
 csv/dynamic_master_mc12.csv
 csv/dynamic_codes_mc12.csv
 csv/selected_seed_comparison.csv
-csv/representative_spectra_manifest.csv
 plots/P1 spectrum: seed 21
 plots/P5 spectrum: seed 129
 plots/P10 spectrum: seed 183
 results/quick_status.json
-results/quick_audit.json
-manifests/compact_manifest_sha256.csv
 reports/FINAL_MC12_PLUS2_ONE_HOUR_REPORT.md
 ```
 
-Do not generate six full-waveform raw replays or the 30 MC200 population plots in the one-hour path.
+Do not generate six full-waveform raw replays or the 30 200-sample Monte Carlo mismatch simulation population plots in the one-hour path.
 
 ## 9. Acceptance gates
 
@@ -207,14 +203,14 @@ Mandatory PASS requires:
 64 / 64 frames per record
 no timeout, clipping, missing frame or duplicate frame
 Parseval check passes for every record
-mismatch and noise-input checksums match the frozen manifests
+mismatch realizations and noise-input sequences match the frozen inputs
 ```
 
 If the optional pair was admitted, require `28 / 28` total records terminal and valid.
 
 ### Gate B: regression comparison
 
-Compare every selected record with its frozen MC200 baseline:
+Compare every selected record with its frozen 200-sample Monte Carlo mismatch simulation baseline:
 
 ```text
 LOW/NEAR validity state unchanged
@@ -224,7 +220,7 @@ abs(delta SNR)  <= 0.20 dB
 abs(delta ENOB) <= 0.02 bit
 ```
 
-These are quick-regression tolerances, not new ADC performance specifications. Record compact-code checksum equality separately. A code-stream mismatch must be reported even when the metric tolerances pass.
+These are quick-regression tolerances, not new ADC performance specifications. Record compact-code equality separately. A code-stream mismatch must be reported even when the metric tolerances pass.
 
 ### Gate C: status wording
 
@@ -244,9 +240,9 @@ The report must state the number of executed seeds and whether the optional pair
 1. Do not launch optional work after minute 42.
 2. Do not launch any new simulation after minute 50.
 3. At minute 55, stop postprocessing expansion and retain only required outputs.
-4. If simulation is still active near the deadline, verify PID and process group before a controlled `SIGTERM`; preserve raw exit evidence and mark the package incomplete.
+4. If simulation is still active near the deadline, verify PID and process group before a controlled `SIGTERM`; preserve the raw exit record and mark the package incomplete.
 5. Never rewrite an interrupted or partial run as PASS.
 
 ## 11. Final recommendation
 
-Use MC12 as the guaranteed one-hour product and treat seeds 13 and 167 as opportunistic coverage. The seed set intentionally overrepresents tails, threshold-adjacent cases and known LOW/NEAR disagreements. It is therefore useful for regression sensitivity but statistically biased for yield estimation.
+Use 12-sample Monte Carlo mismatch simulation as the guaranteed one-hour product and treat seeds 13 and 167 as opportunistic coverage. The seed set intentionally overrepresents tails, threshold-adjacent cases and known LOW/NEAR disagreements. It is therefore useful for regression sensitivity but statistically biased for yield estimation.

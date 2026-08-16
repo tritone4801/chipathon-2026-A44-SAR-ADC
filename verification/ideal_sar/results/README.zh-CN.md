@@ -1,4 +1,4 @@
-# 理想 SAR ADC 结果证据索引
+# 理想 SAR ADC 结果索引
 
 本文是 `verification/ideal_sar/results/` 的中文审阅索引，对齐
 `D:\PICO\CODEX_IDEAL_SAR_ADC_TESTBENCH_VALIDATION.md` 中对结果文件、日志、
@@ -20,7 +20,7 @@
 |---|---|
 | `metrics.json` | 各阶段结构化结果、工具版本、GO 状态、派生常数和动态频谱摘要。 |
 | `csv/metrics.csv` | 主指标表，包含 category、metric、variant、condition、target、measured、status、raw_data_path、plot_path 等字段。 |
-| `csv/coverage_matrix.csv` | 文档要求到证据文件的 PASS/FAIL 对照。 |
+| `csv/coverage_matrix.csv` | 文档要求到结果文件的 PASS/FAIL 对照。 |
 | `csv/adc_input_output_time_*.csv` | 代表性时域输入/输出数据，含采样时间、`EOC_INT` 时间、VINP/VINN、vdiff、输出码、十六进制码、经理想 DAC 转换后的输出电压、重构电压、量化误差、`CLKS` 下降沿采样标记和 `EOC_INT`。输入/输出波形比较的正式方法是：将 `EOC_INT` 更新后的 DOUT 经过理想重构 DAC 得到 `ideal_DAC(DOUT)`，再与对应采样输入 `x[n]` 比较。 |
 | `csv/adc_dac_reconstruction_low_frequency.csv` | 仅使用 low-frequency 输入的 DAC 重构对比数据；这是优先查看的输入/输出波形比较图，因为它清楚展示采样输入、`EOC_INT` 更新后的 DOUT、理想 DAC(DOUT) 输出与量化误差之间的对应关系。 |
 | `csv/adc_output_spectrum_*.csv` | 代表性输出频谱逐 bin 数据，含频率、线性功率、dBFS、fundamental/harmonic/largest-spur 分类。 |
@@ -31,7 +31,7 @@
 | `logs/*.log` | preflight、ngspice、cocotb、power proxy 和全量容器运行日志。 |
 | `raw/*` | 原始动态输出码、量化误差、cocotb XML 和 power proxy waveform。 |
 
-## 关键动态证据
+## 关键动态结果
 
 | 项目 | low-frequency | near-Nyquist |
 |---|---|---|

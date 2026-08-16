@@ -1,8 +1,8 @@
-# FAST64 修正版：将 first-conversion 与稳态频谱彻底分离
+# 64 帧动态仿真修正版：将 first-conversion 与稳态频谱彻底分离
 
-当前 FAST64 把 `startup=0` 的第一次冷启动转换直接纳入 64 点 FFT。J4 已证明，这会让一个仅存在于 frame 0 的 16-code 离群码把 SNDR 从约 48.8 dB 拉低到约 32.8 dB，而其余 63 帧实际上完全一致。
+当前 64 帧动态仿真把 `startup=0` 的第一次冷启动转换直接纳入 64 点 FFT。J4 的结果显示，这会让一个仅存在于 frame 0 的 16-code 离群码把 SNDR 从约 48.8 dB 拉低到约 32.8 dB，而其余 63 帧实际上完全一致。
 
-因此，FAST64 不应再用一个 SNDR 数字同时表示：
+因此，64 帧动态仿真不应再用一个 SNDR 数字同时表示：
 
 ```text
 第一次转换是否可靠
@@ -60,7 +60,7 @@ FAST64_SS_W4
 FAST64_STARTUP_INCLUSIVE_W0
 ```
 
-旧、新两类结果不得混在同一个 candidate ranking 或 MC 分布中。
+旧、新两类结果不得混在同一个 candidate ranking 或蒙特卡洛失配仿真分布中。
 
 ---
 
@@ -191,7 +191,7 @@ frame 3 与 frame 67:
     输入相位完全相同
 ```
 
-因此，一次 68-frame FAST64 仿真可同时完成：
+因此，一次采用 68 帧运行的 64 帧稳态动态仿真可同时完成：
 
 ```text
 first-conversion test
@@ -257,7 +257,7 @@ analog DOUT
 
 ## 6.2 noise-OFF 的同相位代码检查
 
-对于 nominal 和 mismatch-only FAST64：
+对于 nominal 和 mismatch-only 64 帧动态仿真：
 
 ```text
 code[0] == code[64]
@@ -309,7 +309,7 @@ first conversion 可以失败
 
 ---
 
-# 七、稳态 FAST64 Gate
+# 七、稳态 64 帧动态仿真 Gate
 
 频谱只使用：
 
@@ -377,7 +377,7 @@ enob
 
 ---
 
-# 八、bulk/strict 数值审计必须拆成两个 Gate
+# 八、bulk/strict 数值验证必须拆成两个 Gate
 
 原 N1 只比较完整 64 点码流，结果会把 first-conversion 问题和稳态数值问题混成同一个 FAIL。
 
@@ -406,7 +406,7 @@ N1_F0_PASS
 N1_F0_FAIL
 ```
 
-## N1-SS：steady-state numerical equivalence
+## N1 steady-state：steady-state numerical equivalence
 
 比较：
 
@@ -432,11 +432,11 @@ N1_SS_FAIL
 
 最终有四种状态：
 
-| F0   | SS   | 解释                                              |
+| F0   | 稳态   | 解释                                              |
 | ---- | ---- | ----------------------------------------------- |
 | PASS | PASS | 数值闭包通过                                          |
 | FAIL | PASS | first-conversion 数值敏感；稳态指标有效，但整体 candidate 不能通过 |
-| PASS | FAIL | 稳态结果数值不收敛，FAST64 指标不可用于排名                       |
+| PASS | FAIL | 稳态结果数值不收敛，64 帧动态仿真指标不可用于排名                       |
 | FAIL | FAIL | 启动和稳态均未闭合                                       |
 
 J4 当前应暂时写成：
@@ -449,17 +449,17 @@ N1_SS:
     NOT_YET_MEASURED_WITH_FULL_64_POST_WARMUP_CODES
 ```
 
-虽然现有 frame 1–63 已完全一致，但只有 63 个 post-first-conversion samples，仍缺少新的 frame 64；因此必须用 68-frame deck 重跑后才能正式生成稳态 FAST64。J4 当前的首帧 DOUT[4] 差异及其对 FFT 的污染已有明确证据。
+虽然现有 frame 1–63 已完全一致，但只有 63 个 post-first-conversion samples，仍缺少新的 frame 64；因此必须用 68-frame deck 重跑后才能正式生成稳态 64 帧动态仿真。J4 当前的首帧 DOUT[4] 差异及其对 FFT 的污染已明确记录。
 
 ---
 
 # 九、warm-up 数量资格化
 
-以前曾在某一旧 closure 上比较 startup 0、1、2、4，并因 code stream 与指标相同而选择 startup 0；J4 表明该结论不能无条件继承到新的 resizing candidate、PVT 或数值 profile。
+以前曾在某一旧 closure 上比较 startup 0、1、2、4，并因 code stream 与指标相同而选择 startup 0；J4 表明该结论不能无条件继承到新的 resizing candidate、工艺电压温度或数值 profile。
 
 修正后采用以下资格化。
 
-## W4 run
+## frames 4 through 67 steady-state analysis window run
 
 ```text
 warmup = 4
@@ -467,7 +467,7 @@ total  = 68
 FFT    = frames 4...67
 ```
 
-## W8 run
+## frames 8 through 71 steady-state comparison window run
 
 ```text
 warmup = 8
@@ -515,13 +515,13 @@ promoted candidate:
     96
 ```
 
-普通 candidate 不需要每次运行 W8；只有晋级候选或出现 startup signature 时执行。
+普通 candidate 不需要每次运行第 8 至第 71 帧稳态对照窗口；只有晋级候选或出现 startup signature 时执行。
 
 ---
 
 # 十、noise-ON 的特殊处理
 
-对 event-noise FAST64：
+对 event-noise 64 帧动态仿真：
 
 ```text
 frame 0
@@ -537,7 +537,7 @@ code[0] == code[64]
 
 作为 first-conversion 硬判据。
 
-noise-ON FAST64 中：
+noise-ON 64 帧动态仿真中：
 
 ```text
 frame 0:
@@ -557,9 +557,9 @@ F0_NOISE_COLD_START_REPEAT
 
 ---
 
-# 十一、对 MC12 和未来 MC200 的处理
+# 十一、对 12 样本蒙特卡洛失配仿真和未来 200 样本蒙特卡洛失配仿真的处理
 
-## MC12 mismatch-only
+## 12-sample Monte Carlo mismatch simulation mismatch-only
 
 每个 seed 都运行 68 帧：
 
@@ -585,7 +585,7 @@ frames 4...67:
     steady-state 双频均按原规则判定
 ```
 
-## 未来完整 MC200
+## 未来完整 200 样本蒙特卡洛失配仿真
 
 必须分别报告：
 
@@ -633,7 +633,7 @@ A4  同一 MC12 cohort 的 S31 selected-transition static
 B0  warm-up qualification:
     W4 vs W8
 
-B1  strict numerical audit:
+B1  strict numerical comparison:
     N1_F0 + N1_SS 分开判定
 
 B2  TT / SS / FF nominal FAST64_SS_W4
@@ -643,7 +643,7 @@ B3  event-noise FAST64_SS_W4
 
 B4  candidate-specific comparator/sample noise update
 
-B5  actual-SAR FAST64_SS_W4 integration audit
+B5  actual-SAR 64-frame steady-state simulation with four warm-up frames integration check
     first-conversion Gate 必须启用
 ```
 
@@ -651,7 +651,7 @@ B5  actual-SAR FAST64_SS_W4 integration audit
 
 # 十三、状态和排名规则修正
 
-原 ranking 的第一项是“无 protocol、frame、clipping、timeout 错误”，并随后按照 ENOB、静态指标和 MC12 进行排序。
+原 ranking 的第一项是“无 protocol、frame、clipping、timeout 错误”，并随后按照 ENOB、静态指标和 12 样本蒙特卡洛失配仿真进行排序。
 
 修正后应改成：
 
@@ -712,7 +712,6 @@ csv/first_conversion_path.csv
 results/first_conversion_status.json
 results/fast64_steady_state_metrics.json
 results/warmup_qualification.json
-results/numerical_split_audit.json
 ```
 
 `fast64_steady_state_metrics.json` 至少记录：
@@ -804,7 +803,7 @@ First-conversion result:
 Steady-state result:
     computed only from retained 64 frames
 
-Numerical audit:
+Numerical comparison:
     N1_F0 and N1_SS separated
 
 Warm-up qualification:

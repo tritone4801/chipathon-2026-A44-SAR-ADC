@@ -1,12 +1,11 @@
-# A44 SAR ADC — Codex FAST64 Dynamic D3-Only Measurement Plan — 32-GB / One-Day Profile
+# A44 SAR ADC — One-Day Plan for a 200-Sample Monte Carlo Mismatch and Qualified Temporal-Noise 64-Frame Dynamic Simulation, 32-GB Profile (Version 7)
 
 **Document ID:** `A44_CODEX_FAST64_D3_ONLY_32GB_ONE_DAY_PLAN_V7`  
 **Supersedes for this campaign:** `A44_CODEX_FAST64_DYNAMIC_ONLY_32GB_ONE_DAY_PLAN_V6`  
-**Scope:** dynamic performance only, **D3 only**  
-**Primary DUT lane:** transistor-level sampler + differential CDACs + StrongARM comparator + fixed TT timed-behavioral SAR controller, No-R6  
-**Formal electrical matrix:** `NOISE + MC200 mismatch` only  
-**Dynamic method:** `FAST64` only  
-**Evidence class:** `FAST64_D3_ONLY_MC200_MODEL_CONDITIONAL`
+**Scope:** dynamic performance for the combined Monte Carlo mismatch and qualified temporal-noise category only
+**Primary DUT lane:** transistor-level sampler + differential CDACs + StrongARM comparator + fixed typical-typical process corner timed-behavioral SAR controller, No-R6
+**Formal electrical matrix:** qualified temporal noise combined with a 200-sample Monte Carlo mismatch simulation only
+**Dynamic method:** 64-frame dynamic simulation only
 
 ---
 
@@ -15,12 +14,12 @@
 Codex shall execute one fixed formal dynamic matrix only:
 
 ```text
-D3  MC200 mismatch ON + qualified temporal noise ON
+combined 200-sample Monte Carlo mismatch and qualified temporal-noise category
 ```
 
-No formal D0, D1, or D2 campaign is included in this version.
+No nominal-only, mismatch-only, or noise-only formal campaign is included in this version.
 
-Every formal FAST64 record shall measure and report at least:
+Every formal 64-frame dynamic simulation record shall measure and report at least:
 
 ```text
 SNR
@@ -34,25 +33,25 @@ fundamental amplitude
 largest spur
 DC code offset
 mean/max conversion time
-frame/protocol integrity flags
+frame/protocol validity flags
 ```
 
 Non-negotiable execution rules:
 
 ```text
 1. Do not run static DNL, INL, offset, ramp, transition-search, or histogram jobs.
-2. Do not run FAST32, FAST128, or FAST256.
-3. Do not run D0, D1, or D2 as formal categories.
+2. Do not run 32-frame, 128-frame, or 256-frame dynamic simulations.
+3. Do not run nominal-only, mismatch-only, or noise-only formal categories.
 4. Do not add result-triggered P95 replay, tail upgrade, or extra corners.
 5. Do not stop the campaign after a performance failure.
 6. Complete all 200 mismatch dies in both LOW and NEAR_NYQUIST bands.
 7. Use the same frozen mismatch realization and the frozen per-die noise sequence for both bands of a die.
 8. Retry only infrastructure failures; never retry a valid performance FAIL.
 9. Never remove invalid, aborted, or unresolved required jobs from the denominator.
-10. Preserve source, model, configuration, seed, analyzer, and result hashes.
+10. Keep the frozen source, model, configuration, seed, analyzer, and result set unchanged.
 ```
 
-### 0.1 Meaning of this D3-only campaign
+### 0.1 Meaning of this combined-category campaign
 
 This campaign measures only the combined case:
 
@@ -61,7 +60,7 @@ mismatch ON
 qualified temporal noise ON
 ```
 
-It does **not** attempt, in this version, to decompose the result into mismatch-only or noise-only contributions. It is a **formal MC200 combined dynamic population run**.
+It does **not** attempt, in this version, to decompose the result into mismatch-only or noise-only contributions. It is a **formal 200-sample Monte Carlo mismatch simulation combined dynamic population run**.
 
 ---
 
@@ -92,11 +91,11 @@ The input is approximately `-1.09 dBFS` relative to `3.4 Vpp,diff`. `ENOB_raw` s
 
 ---
 
-## 2. Frozen numerical and FAST64 parameters
+## 2. Frozen numerical and 64-frame dynamic simulation parameters
 
 ### 2.1 Parameters that shall not be rescanned
 
-When the qualification-cache hash remains valid, reuse these frozen values directly:
+When the frozen qualification cache remains applicable, reuse these values directly:
 
 ```text
 frame period          = 500 ns
@@ -121,7 +120,7 @@ FFT-length comparison
 maxstep sweep
 ```
 
-### 2.2 FAST64 bands
+### 2.2 64-frame dynamic simulation bands
 
 | Band | NFFT | Coherent bin | Input frequency | Distinct input phases |
 |---|---:|---:|---:|---:|
@@ -134,7 +133,7 @@ Both coherent bins are coprime with 64.
 
 ```text
 Formal population jobs:
-    maxstep = 0.10 ns, only if the numerical qualification-cache hash is valid
+    maxstep = 0.10 ns, only if the frozen numerical qualification remains applicable
 
 Qualification / fallback:
     maxstep = 0.05 ns
@@ -144,7 +143,7 @@ If the cache is invalid, run the fixed pilot in Section 8. If the `0.10 ns` prof
 
 ### 2.4 Qualified noise model
 
-Noise-on results are formal only when the frozen noise-model qualification hash is valid:
+Noise-on results are formal only when the frozen noise-model qualification remains applicable:
 
 ```text
 sample-noise sigma        = 64.681 uVrms,diff
@@ -197,7 +196,7 @@ remove the fundamental bin
 remove duplicate folded harmonic bins
 ```
 
-The same harmonic-folding function and hash shall be used for LOW and NEAR.
+The same harmonic-folding function revision shall be used for LOW and NEAR.
 
 ### 3.3 SNR
 
@@ -274,9 +273,9 @@ preferred_nominal_pass
 
 ---
 
-## 4. Formal dynamic measurement matrix — D3 only
+## 4. Formal dynamic measurement matrix — combined Monte Carlo mismatch and qualified temporal noise only
 
-At TT:
+At typical-typical process corner:
 
 ```text
 mismatch seed i = virtual die i
@@ -344,7 +343,7 @@ Do not describe `190/200` as proof of production yield. Report the exact binomia
 
 ### 5.1 Sequential-record rule
 
-A parsed ngspice session may retain only one FAST64 record in memory at a time.
+A parsed ngspice session may retain only one 64-frame dynamic simulation record in memory at a time.
 
 For every record:
 
@@ -353,7 +352,7 @@ For every record:
 2. sample and write the 64 DOUT codes;
 3. write protocol and conversion-time scalars;
 4. compute or save the linear FFT power primitives;
-5. checksum the compact output;
+5. confirm that the compact output parses successfully;
 6. destroy all transient vectors;
 7. reset deterministic state;
 8. load the next frozen stimulus/noise sequence.
@@ -388,8 +387,8 @@ all protocol/frame flags identical
 |delta SNR|  <= 0.01 dB
 |delta SNDR| <= 0.01 dB
 |delta ENOB| <= 0.002 bit
-mismatch checksum identical
-noise-draw checksum identical to the frozen manifest
+mismatch realization identical
+noise-draw sequence identical to the frozen input
 ```
 
 If equivalence fails, use separate processes. Do not change the electrical matrix.
@@ -403,7 +402,7 @@ If equivalence fails, use separate processes. Do not change the electrical matri
 ```text
 Physical RAM                         = 32 GB
 OS and filesystem-cache reserve      = 7 GB
-Python / manifest / aggregation      = 2 GB
+Python / post-processing             = 2 GB
 Global ngspice RSS token budget      = 22 GB
 Unallocated safety                   = 1 GB
 Swap as a throughput mechanism       = prohibited
@@ -414,7 +413,7 @@ Swap as a throughput mechanism       = prohibited
 The fixed pilot shall measure peak RSS (`VmHWM`) for:
 
 ```text
-one D3 dual-band session
+one combined-category dual-band session
 one compact post-processing batch
 ```
 
@@ -472,7 +471,7 @@ NUMEXPR_NUM_THREADS=1
 
 ### 7.1 Base-netlist reuse
 
-Generate one structural base netlist per dependency hash. Per-session includes shall contain only:
+Generate one structural base netlist per frozen dependency set. Per-session includes shall contain only:
 
 ```text
 PVT selection
@@ -486,7 +485,7 @@ Do not invoke Xschem or regenerate the complete hierarchy for each die.
 
 ### 7.2 Compact-save population mode
 
-For ordinary D3 records, save only:
+For ordinary combined-category records, save only:
 
 ```text
 64 DOUT codes
@@ -498,7 +497,7 @@ metric and seed metadata
 
 Do not save all transistor-level internal nodes for the 200-die population.
 
-Fixed full-waveform audit records:
+Fixed full-waveform validation records:
 
 ```text
 seed 1 LOW
@@ -509,13 +508,13 @@ seed corresponding to median worst-band SNDR
 seed corresponding to worst observed worst-band SNDR
 ```
 
-These audit records do not alter population counts.
+These validation records do not alter population counts.
 
 ### 7.3 Raw-file policy
 
 ```text
 active raw directory = local SSD/NVMe, never tmpfs
-ordinary raw file    = delete after compact-output checksum passes
+ordinary raw file    = delete after compact-output parsing succeeds
 formal compact CSV   = retain
 plot source CSV      = retain
 ```
@@ -534,19 +533,19 @@ The final report must be reproducible from compact code and metric tables withou
 
 ## 8. Qualification cache and fixed-parameter efficiency
 
-### 8.1 Dependency hash
+### 8.1 Frozen dependencies
 
 The qualification cache key shall include:
 
 ```text
-production analog netlist hash
-PDK/model hash
-behavioral-SAR/controller hash
-noise-adapter hash
-testbench-template hash
-FFT/analyzer hash
+production analog netlist revision
+PDK/model version
+behavioral-SAR/controller revision
+noise-adapter revision
+testbench-template revision
+FFT/analyzer revision
 ngspice version
-solver-profile hash
+solver-profile revision
 ```
 
 ### 8.2 Reuse policy
@@ -569,10 +568,10 @@ session-equivalence qualification
 Run only this fixed pilot:
 
 ```text
-P0  D3 dual-band session for mismatch seed 1 at 0.10 ns
-P1  the same D3 dual-band session for mismatch seed 1 at 0.05 ns
-P2  D3 dual-band session for mismatch seed 44 at 0.10 ns
-P3  D3 dual-band session for mismatch seed 44 at 0.05 ns
+P0  combined-category dual-band session for mismatch seed 1 at 0.10 ns
+P1  the same combined-category dual-band session for mismatch seed 1 at 0.05 ns
+P2  combined-category dual-band session for mismatch seed 44 at 0.10 ns
+P3  combined-category dual-band session for mismatch seed 44 at 0.05 ns
 ```
 
 Numerical acceptance:
@@ -591,9 +590,9 @@ If the pilot fails, use `0.05 ns` for the formal matrix. Do not search additiona
 
 ## 9. Formal workload
 
-| Category | Electrical cases | FAST64 records | Preferred parsed sessions |
+| Category | Electrical cases | 64-frame dynamic simulation records | Preferred parsed sessions |
 |---|---:|---:|---:|
-| D3 noise+mismatch MC200 | 200 dual-band | 400 | 200 |
+| Combined 200-sample Monte Carlo mismatch and qualified temporal-noise simulation | 200 dual-band | 400 | 200 |
 | **Total** | **200 dual-band-equivalent cases** | **400 records** | **200 main sessions** |
 
 Qualification records are outside the formal population and shall be reported separately.
@@ -608,17 +607,11 @@ Recommended directory structure:
 A44_FAST64_D3_ONLY_MC200_V7/
 ├── config/
 │   ├── frozen_dynamic_config.yaml
-│   ├── dependency_hashes.json
 │   └── qualification_cache.json
-├── manifests/
-│   ├── mismatch_seed_manifest.csv
-│   ├── noise_seed_manifest.csv
-│   └── job_matrix.csv
 ├── csv/
 │   ├── dynamic_master.csv
 │   ├── d3_combined_summary.csv
-│   ├── population_percentiles.csv
-│   └── representative_spectra_manifest.csv
+│   └── population_percentiles.csv
 ├── plots/
 ├── reports/
 │   └── FINAL_FAST64_DYNAMIC_REPORT.md
@@ -634,7 +627,7 @@ category,pvt,mismatch_seed,noise_seed,band,nfft,bin,fin_hz,phase_rad,input_vpp_d
 
 ### 10.2 Population summary
 
-For D3, report separately for LOW, NEAR, and WORST_BAND:
+For the combined category, report separately for LOW, NEAR, and WORST_BAND:
 
 ```text
 valid count
@@ -768,7 +761,7 @@ If no failing die exists in a band, replace the “failing die nearest threshold
 
 ### 11.3 Population plots
 
-For D3, separately for LOW, NEAR, and WORST_BAND:
+For the combined category, separately for LOW, NEAR, and WORST_BAND:
 
 ```text
 SNR histogram
@@ -802,7 +795,7 @@ ENOB = 7.64 bit preferred nominal
 A campaign is complete only when:
 
 ```text
-200/200 D3 dies terminal
+200/200 combined-category dies terminal
 all 400 required FAST64 records valid or explicitly unresolved
 all required compact tables generated
 all required plots generated
@@ -861,14 +854,14 @@ silicon production yield
 
 ### 13.1 Historical measured basis
 
-The archived noncached single-band FAST64 jobs have approximately:
+The archived noncached single-band 64-frame dynamic simulation jobs have approximately:
 
 ```text
 median runtime = 95.42 s/record
 P95 runtime    = 144.58 s/record
 ```
 
-For 400 formal FAST64 records:
+For 400 formal 64-frame dynamic simulation records:
 
 ```text
 median-based dynamic core time = 10.60 core-hours
@@ -935,7 +928,6 @@ campaign:
   formal_categories: [D3_ONLY]
   dynamic_method: FAST64_ONLY
   primary_lane: TT_TIMED_BEHAVIORAL_SAR_NO_R6
-  evidence_class: MODEL_CONDITIONAL
 
 system:
   resolution_bit: 8
@@ -1031,7 +1023,6 @@ storage:
   save_all_internal_nodes: false
   active_path_must_be_local_ssd: true
   use_tmpfs: false
-  delete_ordinary_raw_after_checksum: true
   streaming_postprocess: true
 
 completion:
@@ -1046,18 +1037,18 @@ completion:
 ## 15. Final Codex checklist
 
 ```text
-[ ] Dependency hashes generated
+[ ] Frozen dependency versions recorded
 [ ] Qualification cache accepted or fixed pilot completed
 [ ] FAST64 analyzer Parseval and harmonic-folding checks passed
 [ ] SNR is present in every dynamic record and every summary
 [ ] 32-GB RSS pilot completed
 [ ] Session-equivalence checks passed or fallback documented
-[ ] D3 200/200 dies complete
+[ ] Combined-category 200/200 dies complete
 [ ] All 400 formal FAST64 records accounted for
-[ ] D3 hard pass count and SNR-budget pass count reported separately
+[ ] Combined-category hard pass count and SNR-budget pass count reported separately
 [ ] Dynamic master schema validated
 [ ] Standardized PDF/SVG, PNG, and source-CSV plots generated
 [ ] FFT spectra match the required reference-image style
 [ ] Final status is PASS, FAIL, or BLOCKED
-[ ] Claim boundary states FAST64-only and model-conditional evidence
+[ ] Claim boundary states 64-frame-only and model-conditional results
 ```

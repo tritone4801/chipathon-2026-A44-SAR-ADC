@@ -375,7 +375,7 @@ Comparator verification shall include:
 - metastability;
 - kickback to both CDAC top plates;
 - dynamic memory from incomplete reset;
-- PVT and post-layout extraction.
+- process-voltage-temperature and post-layout extraction.
 
 Working comparator targets:
 
@@ -543,7 +543,7 @@ Target CDAC settling accuracy before the next decision:
 |V_DAC - V_final| < 0.25 LSB
 ```
 
-Delay chains should preferably provide selectable taps for schematic, PVT, and extracted tuning.
+Delay chains should preferably provide selectable taps for schematic, process-voltage-temperature, and extracted tuning.
 
 ---
 
@@ -572,7 +572,7 @@ positive input boundary >= +1.50 V
 negative input boundary <= -1.50 V
 ```
 
-The fixed standard input of `3.0 Vpp,diff` shall not clip at any required PVT corner after extraction.
+The fixed standard input of `3.0 Vpp,diff` shall not clip at any required process-voltage-temperature corner after extraction.
 
 Use a differential ramp or code-density method to extract:
 
@@ -685,7 +685,7 @@ Complete at least:
 1. ideal functional model;
 2. block-level schematic simulations;
 3. full schematic transient simulations;
-4. PVT simulations;
+4. process-voltage-temperature simulations;
 5. comparator mismatch Monte Carlo;
 6. CDAC mismatch Monte Carlo;
 7. integrated ADC Monte Carlo;

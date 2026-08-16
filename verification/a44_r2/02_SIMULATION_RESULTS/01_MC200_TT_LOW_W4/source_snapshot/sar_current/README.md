@@ -12,7 +12,7 @@ SAR_ADC_TOP_FIXED.sch
 |   `-- A44_SWITCH_BOOT_SP.sym -> SWITCH_BOOT_SP
 |-- A44_Comparator_StrongARM.sym -> Comparator_StrongARM
 `-- A44_SAR_LOGIC_ACTUAL_RTL_REPAIR.sym
-    `-- current accepted SS RTL/PEX wrapper and core
+    `-- current accepted SAR logic RTL/PEX wrapper and core
 ```
 
 以下内容不在本包的 active hierarchy 中：comparator resize candidates、V2
@@ -27,12 +27,8 @@ debug candidates、ideal comparator、ideal CDAC、legacy SAR logic stub，以�
 - `logic/`：当前 accepted SAR logic RTL、PEX wrapper 与 PEX core。
 - `netlists/accepted/`：完成的 measurement campaign 所用 netlist include 闭包；
   include 根路径已重定位到本目录。
-- `source_snapshot/authoritative/`：未经改写的权威源快照，用于 hash 追溯。
-- `manifests/source_manifest.csv`：源路径、固定 SHA-256 与快照核验结果。
-- `manifests/package_manifest_sha256.csv`：最终包内文件清单与 SHA-256。
-- `reports/ASSEMBLY_AUDIT.md`：组装与 Xschem 核验结果。
-- `reports/SYMBOL_REPAIR_AUDIT.md`：本次直线接口修正、截图与 hash 证据。
-- `reports/A44_SYMBOL_PREFIX_AUDIT.md`：五个 symbol 的前缀、绑定与 hash 审计。
+- `source_snapshot/authoritative/`：未经改写的原始工程文件副本。
+- `reports/images/`：接口和 symbol 的 Xschem 截图。
 - `verification/A44_SYMBOL_NAME_CHECK.sch`：五个项目 symbol 的统一命名展示图。
 
 ## Symbol 命名
@@ -67,14 +63,14 @@ xschem verification/SAR_LOGIC_SYMBOL_STRAIGHT_WIRE_CHECK.sch
 xschem verification/SAR_ADC_TOP_SYMBOL_STRAIGHT_WIRE_CHECK.sch
 ```
 
-批处理 netlist 核验：
+生成批处理 netlist：
 
 ```bash
 cd /foss/designs/manual_goal/analog/SAR_CURRENT
 bash scripts/verify_xschem.sh
 ```
 
-accepted netlist 闭包的 ngspice 解析核验：
+用 ngspice 解析 accepted netlist 闭包：
 
 ```bash
 cd /foss/designs/manual_goal/analog/SAR_CURRENT
@@ -96,11 +92,11 @@ flattened subcircuit 实例顺序。修正前副本保存在
 增加 `A44_` 前缀之前的项目副本保存在
 `source_snapshot/project_before_a44_prefix_20260717/`。
 
-本包证明的是当前 source binding、工程文件完整性与 Xschem symbol/netlist
-可解析性，不新增模拟性能、版图后仿或 signoff 结论。当前 analog TOP/CDAC/
-switch/comparator 是 schematic-level 绑定；SAR logic 使用当前 accepted SS
+本包提供当前源文件集合和可由 Xschem 解析的 symbol/netlist，
+不新增模拟性能、版图后仿或 signoff 结论。当前 analog TOP/CDAC/
+switch/comparator 是 schematic-level 源文件集合；SAR logic 使用当前 accepted SAR logic
 RTL/PEX wrapper/core。
 
 特别说明：SAR logic 当前没有 transistor-level Xschem schematic。TOP 的
-Xschem smoke netlist 因而只用于检查图纸与 symbol 解析；实际 DUT 逻辑绑定
-由 `netlists/accepted/core/subckts/` 下的 SS RTL/PEX wrapper/core 提供。
+Xschem smoke netlist 因而只用于检查图纸与 symbol 解析；实际 DUT 逻辑来源
+由 `netlists/accepted/core/subckts/` 下的 SAR logic RTL/PEX wrapper/core 提供。
