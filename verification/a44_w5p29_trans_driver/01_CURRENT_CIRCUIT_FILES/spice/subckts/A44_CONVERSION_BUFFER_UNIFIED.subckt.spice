@@ -1,0 +1,77 @@
+* Seven identical non-inverting two-stage DCTRL driver channels.
+* INV1 N/P=2.34/4.67 um; INV2 N/P=6.22/12.44 um; L=0.28 um.
+.subckt A44_CONVERSION_BUFFER CTRL_IN[1] CTRL_OUT[1] VDD GND CTRL_IN[2] CTRL_OUT[2] CTRL_OUT[3] CTRL_IN[3] CTRL_OUT[4] CTRL_IN[4]
++ CTRL_OUT[5] CTRL_IN[5] CTRL_OUT[6] CTRL_IN[6] CTRL_OUT[7] CTRL_IN[7]
+*.ipin CTRL_IN[2]
+*.opin CTRL_OUT[2]
+*.iopin VDD
+*.iopin GND
+*.ipin CTRL_IN[1]
+*.opin CTRL_OUT[1]
+*.ipin CTRL_IN[4]
+*.opin CTRL_OUT[4]
+*.ipin CTRL_IN[3]
+*.opin CTRL_OUT[3]
+*.ipin CTRL_IN[6]
+*.opin CTRL_OUT[6]
+*.ipin CTRL_IN[5]
+*.opin CTRL_OUT[5]
+*.ipin CTRL_IN[7]
+*.opin CTRL_OUT[7]
+XDCTRL_CH2_INV1_NMOS net1 CTRL_IN[2] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH2_INV1_PMOS net1 CTRL_IN[2] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH2_INV2_NMOS CTRL_OUT[2] net1 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH2_INV2_PMOS CTRL_OUT[2] net1 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH1_INV1_NMOS net2 CTRL_IN[1] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH1_INV1_PMOS net2 CTRL_IN[1] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH1_INV2_NMOS CTRL_OUT[1] net2 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH1_INV2_PMOS CTRL_OUT[1] net2 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH4_INV1_NMOS net3 CTRL_IN[4] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH4_INV1_PMOS net3 CTRL_IN[4] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH4_INV2_NMOS CTRL_OUT[4] net3 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH4_INV2_PMOS CTRL_OUT[4] net3 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH3_INV1_NMOS net4 CTRL_IN[3] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH3_INV1_PMOS net4 CTRL_IN[3] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH3_INV2_NMOS CTRL_OUT[3] net4 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH3_INV2_PMOS CTRL_OUT[3] net4 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH6_INV1_NMOS net5 CTRL_IN[6] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH6_INV1_PMOS net5 CTRL_IN[6] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH6_INV2_NMOS CTRL_OUT[6] net5 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH6_INV2_PMOS CTRL_OUT[6] net5 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH5_INV1_NMOS net6 CTRL_IN[5] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH5_INV1_PMOS net6 CTRL_IN[5] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH5_INV2_NMOS CTRL_OUT[5] net6 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH5_INV2_PMOS CTRL_OUT[5] net6 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH7_INV1_NMOS net7 CTRL_IN[7] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH7_INV1_PMOS net7 CTRL_IN[7] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH7_INV2_NMOS CTRL_OUT[7] net7 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH7_INV2_PMOS CTRL_OUT[7] net7 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+.ends

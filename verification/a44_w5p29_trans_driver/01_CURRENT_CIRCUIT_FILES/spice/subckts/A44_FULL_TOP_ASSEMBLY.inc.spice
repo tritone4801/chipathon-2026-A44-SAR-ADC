@@ -1,0 +1,4 @@
+* A44 full flat TOP assembly; caller loads the desired GF180 PDK corner.
+* Active SAR LOGIC electrical lineage: R1L_CANDIDATE native R0.
+.include "/foss/designs/DESIGN_FILES/CURRENT/A44_W5P29_UNIT_TRANS_DRIVER/01_CIRCUIT_FILES/A44_SAR_LOGIC_ACTUAL_RTL_SS_R1L_pex_wrapper_local.spice"
+.include "/foss/designs/DESIGN_FILES/CURRENT/A44_W5P29_UNIT_TRANS_DRIVER/01_CIRCUIT_FILES/A44_SAR_ADC_TOP_FIXED.spice"

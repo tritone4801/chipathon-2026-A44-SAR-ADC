@@ -1,2 +1,3 @@
 verification/a44_r2/** -text
+verification/a44_w5p29_trans_driver/** -text whitespace=-blank-at-eof
 *.xlsx binary

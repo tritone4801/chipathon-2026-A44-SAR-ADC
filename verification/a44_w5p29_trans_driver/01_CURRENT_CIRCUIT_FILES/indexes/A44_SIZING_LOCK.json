@@ -1,0 +1,104 @@
+{
+  "schema": "a44-w5p29-unit-trans-driver-flat-sizing-lock-v1",
+  "package": "A44_W5P29_UNIT_TRANS_DRIVER",
+  "generated_utc": "2026-08-09T00:25:56.100628+00:00",
+  "inherited_unit_cdac_driver_tg8_comparator": {
+    "schema": "a44-w5p29-unit-trans-driver-sizing-lock-v1",
+    "package": "W5P29_UNIT_TRANS_DRIVER",
+    "sizing_source": "D:/PICO/DESIGN_FILES/CURRENT/W5P29_TRANS_DRIVER",
+    "unitization_rule": "One explicit C1_SWITCH represents one C18 LSB group. Repeat it 1/2/4/8/16/32/64 times; do not multiply or replicate the driver.",
+    "unit_cap": {
+      "model": "cap_mim_2f0_m4m5_noshield",
+      "w_um": 6.855,
+      "l_um": 6.855,
+      "m": 18,
+      "approx_capacitance_pf": 1.8025
+    },
+    "unit_reference_switch": {
+      "nfet": {
+        "w_um": 1.56,
+        "l_um": 0.28,
+        "nf": 1,
+        "m": 18
+      },
+      "pfet": {
+        "w_um": 1.56,
+        "l_um": 0.28,
+        "nf": 1,
+        "m": 18
+      }
+    },
+    "aggregate_m_by_bit": {
+      "DCTRL1": 18,
+      "DCTRL2": 36,
+      "DCTRL3": 72,
+      "DCTRL4": 144,
+      "DCTRL5": 288,
+      "DCTRL6": 576,
+      "DCTRL7": 1152
+    },
+    "dctrl_driver_each_channel": {
+      "inv1_n": {
+        "w_um": 2.34,
+        "l_um": 0.28
+      },
+      "inv1_p": {
+        "w_um": 4.67,
+        "l_um": 0.28
+      },
+      "inv2_n": {
+        "w_um": 6.22,
+        "l_um": 0.28
+      },
+      "inv2_p": {
+        "w_um": 12.44,
+        "l_um": 0.28
+      }
+    },
+    "sampling_tg": {
+      "nfet": {
+        "w_um": 3.11,
+        "l_um": 0.28,
+        "m": 8,
+        "effective_w_um": 24.88
+      },
+      "pfet": {
+        "w_um": 6.22,
+        "l_um": 0.28,
+        "m": 8,
+        "effective_w_um": 49.76
+      },
+      "true_clock_final_n_p_w_um": [
+        4.67,
+        9.33
+      ],
+      "complement_clock_final_n_p_w_um": [
+        6.22,
+        12.44
+      ]
+    },
+    "comparator": {
+      "variant": "CMP55_A",
+      "input_pair": "XM3/XM4",
+      "w_um": 55.8,
+      "l_um": 0.28,
+      "m": 4
+    },
+    "forbidden_substitution": "No 1.667 kohm DCTRL source replacement; the actual INV1 input remains the binding point."
+  },
+  "clks_buffer": {
+    "source": "DESIGN_FILES/CURRENT/W5P29/xschem/CLKS_BUFFER.sch",
+    "selected_candidate": "C1",
+    "selected_sizing": {
+      "id": "C1",
+      "role": "sizing_candidate",
+      "stage1_n_um": 0.78,
+      "stage1_p_um": 1.56,
+      "stage2_n_um": 3.11,
+      "stage2_p_um": 6.22
+    },
+    "sizing_evidence": "D:\\PICO\\SIMU_RESULTS\\A44_W5P29_UNIT_TRANS_DRIVER_CLKS_BUFFER_SIZING_20260808_R1\\03_RESULTS\\CLKS_BUFFER_SIZING_SUMMARY.json",
+    "matrix": "TT/SS/FF x actual/2x load",
+    "polarity": "non_inverting_two_stage"
+  }
+}

@@ -1,0 +1,36 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist A44_CLKS_BUFFER"
+spectre_format="@name ( @pinlist ) A44_CLKS_BUFFER"
+template="name=x1"
+symname=A44_CLKS_BUFFER
+pin_order="VDD GND CLKS_CORE PAD_CLK"
+source_binding=W5P29_CLKS_BUFFER_RESIZED_C1
+default_schematic=ignore
+}
+V {}
+S {}
+F {}
+E {}
+L 4 80 -10 100 -10 {}
+L 4 -120 -10 -100 -10 {}
+L 4 -40 -20 -40 20 {}
+L 4 -40 20 0 -0 {}
+L 4 -40 -20 -0 -0 {}
+L 4 0 -20 0 20 {}
+L 4 0 20 40 0 {}
+L 4 0 -20 40 0 {}
+L 7 40 -70 40 -50 {}
+L 7 40 40 40 60 {}
+B 4 -100 -50 80 40 {fill=no
+}
+B 5 37.5 -72.5 42.5 -67.5 {name=VDD dir=inout}
+B 5 37.5 57.5 42.5 62.5 {name=GND dir=inout}
+B 5 97.5 -12.5 102.5 -7.5 {name=CLKS_CORE dir=out}
+B 5 -122.5 -12.5 -117.5 -7.5 {name=PAD_CLK dir=in}
+T {A44_CLKS_BUFFER} -85 -42 0 0 0.2 0.2 {}
+T {VDD} 45 -44 0 1 0.2 0.2 {}
+T {GND} 35 34 2 1 0.2 0.2 {}
+T {CLKS_CORE} 75 -14 0 1 0.2 0.2 {}
+T {PAD_CLK} -95 -14 0 0 0.2 0.2 {}

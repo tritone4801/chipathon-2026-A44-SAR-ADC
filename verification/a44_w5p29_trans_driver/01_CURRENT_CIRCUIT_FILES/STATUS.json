@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE_CURRENT_W5P29_SCHEMATIC_FILE_SET_SIMULATION_REQUALIFICATION_OPEN",
+  "published_date": "2026-08-16",
+  "source_package": "D:\\PICO\\DESIGN_FILES\\CURRENT\\A44_W5P29_UNIT_TRANS_DRIVER",
+  "source_circuit_root": "D:\\PICO\\DESIGN_FILES\\CURRENT\\A44_W5P29_UNIT_TRANS_DRIVER\\01_CIRCUIT_FILES",
+  "active_top": "xschem/A44_SAR_ADC_TOP_FIXED.sch",
+  "source_design_file_count": 45,
+  "github_template_file_count": 1,
+  "original_files_modified": false,
+  "source_to_bundle_exact_copy_pass": true,
+  "active_sar_logic": "R1L slow-slow-corner true-transistor PEX integration candidate",
+  "top_connectivity_source_audit": "PASS_TOP_CONNECTIVITY_22_OF_22",
+  "portable_simulation_path_rebinding_required": true,
+  "simulation_payload_bundled": false,
+  "performance_requalified": false,
+  "promotion_eligible": false,
+  "signoff_eligible": false,
+  "pass_scope": "file organization, exact-copy integrity, hierarchy inventory, and manifest readback only"
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "a44-w5p29-current-schematic-github-audit-v1",
+  "audit_date": "2026-08-16",
+  "package": "verification/a44_w5p29_trans_driver/01_CURRENT_CIRCUIT_FILES",
+  "source": "D:\\PICO\\DESIGN_FILES\\CURRENT\\A44_W5P29_UNIT_TRANS_DRIVER\\01_CIRCUIT_FILES",
+  "selection": {
+    "source_file_count": 45,
+    "source_exact_copy_pass_count": 45,
+    "source_exact_copy_fail_count": 0,
+    "github_template_file_count": 1,
+    "counts": {
+      "xschem_sch": 14,
+      "xschem_sym": 15,
+      "xschemrc": 1,
+      "rtl_sv_svh": 2,
+      "spice": 13,
+      "sizing_lock": 1
+    }
+  },
+  "top_level": {
+    "subckt": "A44_SAR_ADC_TOP_FIXED",
+    "schematic": "xschem/A44_SAR_ADC_TOP_FIXED.sch",
+    "spice": "spice/A44_SAR_ADC_TOP_FIXED.spice",
+    "clock_path": "CLKS -> A44_CLKS_BUFFER -> CLKS_CORE -> two TG8 samplers plus SAR logic",
+    "source_connectivity_audit": "PASS_TOP_CONNECTIVITY_22_OF_22"
+  },
+  "active_sar_logic": {
+    "lineage": "R1L_CANDIDATE",
+    "core": "spice/subckts/A44_SAR_LOGIC_ACTUAL_RTL_SS_R1L_pex_core.spice",
+    "wrapper": "spice/subckts/A44_SAR_LOGIC_ACTUAL_RTL_SS_R1L_pex_wrapper_local.spice",
+    "header_aware_mapping_count": 28,
+    "promotion_eligible": false
+  },
+  "path_rebinding": {
+    "required_before_portable_simulation": true,
+    "reason_not_rewritten": "The selected source files are preserved as exact byte copies; rebinding belongs in a run workspace or simulation deck."
+  },
+  "scope_boundaries": {
+    "simulation_payload_bundled": false,
+    "performance_requalified": false,
+    "layout_or_pex_signoff_claim": false,
+    "tapeout_signoff_claim": false
+  },
+  "pass": true,
+  "pass_scope": "source selection, exact-copy integrity, hierarchy inventory, and packaging only"
+}

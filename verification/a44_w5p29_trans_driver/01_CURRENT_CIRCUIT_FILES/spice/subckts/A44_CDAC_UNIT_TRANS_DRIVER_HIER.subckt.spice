@@ -1,0 +1,336 @@
+* Xschem-extracted hierarchy for A44_W5P29_UNIT_TRANS_DRIVER.
+* Structural/sizing artifact only; not a performance or sign-off result.
+.subckt A44_CAP_SWITCH VREFP VREFN CTRL CAP_BOTTOM VDD GND
+*.iopin VREFP
+*.iopin VREFN
+*.ipin CTRL
+*.opin CAP_BOTTOM
+*.iopin VDD
+*.iopin GND
+XCAP_REFN_SWITCH_NMOS CAP_BOTTOM CTRL VREFN GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=18
+XCAP_REFP_SWITCH_PMOS CAP_BOTTOM CTRL VREFP VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=18
+.ends
+.subckt A44_C1_SWITCH REF_N REF_P VDD GND UNIT_OUT CTRL
+*.iopin REF_N
+*.iopin REF_P
+*.iopin VDD
+*.iopin GND
+*.ipin CTRL
+*.opin UNIT_OUT
+x1 REF_P REF_N CTRL V_BOT VDD GND A44_CAP_SWITCH
+XC1 UNIT_OUT V_BOT cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=18
+.ends
+.subckt A44_C2_SWITCH REF_N REF_P VDD GND UNIT_OUT CTRL
+*.iopin REF_N
+*.iopin REF_P
+*.iopin VDD
+*.iopin GND
+*.ipin CTRL
+*.opin UNIT_OUT
+x1 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x2 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+.ends
+.subckt A44_C4_SWITCH REF_N REF_P VDD GND UNIT_OUT CTRL
+*.iopin REF_N
+*.iopin REF_P
+*.iopin VDD
+*.iopin GND
+*.ipin CTRL
+*.opin UNIT_OUT
+x1 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x2 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x3 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x4 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+.ends
+.subckt A44_C8_SWITCH REF_N REF_P VDD GND UNIT_OUT CTRL
+*.iopin REF_N
+*.iopin REF_P
+*.iopin VDD
+*.iopin GND
+*.ipin CTRL
+*.opin UNIT_OUT
+x1 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x2 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x3 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x4 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x5 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x6 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x7 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x8 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+.ends
+.subckt A44_C16_SWITCH REF_N REF_P VDD GND UNIT_OUT CTRL
+*.iopin REF_N
+*.iopin REF_P
+*.iopin VDD
+*.iopin GND
+*.ipin CTRL
+*.opin UNIT_OUT
+x1 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x2 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x3 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x4 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x5 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x6 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x7 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x8 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x9 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x10 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x11 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x12 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x13 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x14 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x15 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x16 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+.ends
+.subckt A44_C32_SWITCH REF_N REF_P VDD GND UNIT_OUT CTRL
+*.iopin REF_N
+*.iopin REF_P
+*.iopin VDD
+*.iopin GND
+*.ipin CTRL
+*.opin UNIT_OUT
+x1 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x2 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x3 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x4 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x5 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x6 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x7 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x8 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x9 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x10 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x11 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x12 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x13 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x14 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x15 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x16 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x17 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x18 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x19 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x20 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x21 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x22 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x23 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x24 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x25 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x26 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x27 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x28 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x29 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x30 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x31 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x32 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+.ends
+.subckt A44_C64_SWITCH REF_N REF_P VDD GND UNIT_OUT CTRL
+*.iopin REF_N
+*.iopin REF_P
+*.iopin VDD
+*.iopin GND
+*.ipin CTRL
+*.opin UNIT_OUT
+x1 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x2 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x3 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x4 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x5 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x6 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x7 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x8 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x9 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x10 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x11 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x12 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x13 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x14 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x15 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x16 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x17 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x18 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x19 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x20 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x21 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x22 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x23 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x24 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x25 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x26 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x27 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x28 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x29 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x30 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x31 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x32 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x33 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x34 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x35 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x36 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x37 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x38 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x39 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x40 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x41 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x42 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x43 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x44 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x45 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x46 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x47 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x48 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x49 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x50 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x51 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x52 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x53 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x54 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x55 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x56 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x57 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x58 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x59 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x60 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x61 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x62 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x63 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+x64 REF_N REF_P VDD GND UNIT_OUT CTRL A44_C1_SWITCH
+.ends
+.subckt A44_CONVERSION_BUFFER CTRL_IN[1] CTRL_OUT[1] VDD GND CTRL_IN[2] CTRL_OUT[2] CTRL_OUT[3] CTRL_IN[3] CTRL_OUT[4] CTRL_IN[4]
++ CTRL_OUT[5] CTRL_IN[5] CTRL_OUT[6] CTRL_IN[6] CTRL_OUT[7] CTRL_IN[7]
+*.ipin CTRL_IN[2]
+*.opin CTRL_OUT[2]
+*.iopin VDD
+*.iopin GND
+*.ipin CTRL_IN[1]
+*.opin CTRL_OUT[1]
+*.ipin CTRL_IN[4]
+*.opin CTRL_OUT[4]
+*.ipin CTRL_IN[3]
+*.opin CTRL_OUT[3]
+*.ipin CTRL_IN[6]
+*.opin CTRL_OUT[6]
+*.ipin CTRL_IN[5]
+*.opin CTRL_OUT[5]
+*.ipin CTRL_IN[7]
+*.opin CTRL_OUT[7]
+XDCTRL_CH2_INV1_NMOS net1 CTRL_IN[2] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH2_INV1_PMOS net1 CTRL_IN[2] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH2_INV2_NMOS CTRL_OUT[2] net1 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH2_INV2_PMOS CTRL_OUT[2] net1 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH1_INV1_NMOS net2 CTRL_IN[1] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH1_INV1_PMOS net2 CTRL_IN[1] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH1_INV2_NMOS CTRL_OUT[1] net2 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH1_INV2_PMOS CTRL_OUT[1] net2 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH4_INV1_NMOS net3 CTRL_IN[4] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH4_INV1_PMOS net3 CTRL_IN[4] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH4_INV2_NMOS CTRL_OUT[4] net3 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH4_INV2_PMOS CTRL_OUT[4] net3 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH3_INV1_NMOS net4 CTRL_IN[3] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH3_INV1_PMOS net4 CTRL_IN[3] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH3_INV2_NMOS CTRL_OUT[3] net4 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH3_INV2_PMOS CTRL_OUT[3] net4 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH6_INV1_NMOS net5 CTRL_IN[6] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH6_INV1_PMOS net5 CTRL_IN[6] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH6_INV2_NMOS CTRL_OUT[6] net5 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH6_INV2_PMOS CTRL_OUT[6] net5 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH5_INV1_NMOS net6 CTRL_IN[5] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH5_INV1_PMOS net6 CTRL_IN[5] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH5_INV2_NMOS CTRL_OUT[5] net6 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH5_INV2_PMOS CTRL_OUT[5] net6 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH7_INV1_NMOS net7 CTRL_IN[7] GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH7_INV1_PMOS net7 CTRL_IN[7] VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH7_INV2_NMOS CTRL_OUT[7] net7 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XDCTRL_CH7_INV2_PMOS CTRL_OUT[7] net7 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+.ends
+.subckt A44_SWITCH_TRANS_TG8 CLKS VDD GND VOUT VIN
+
+*.iopin VDD
+*.iopin GND
+*.ipin VIN
+*.ipin CLKS
+*.opin VOUT
+XTG_CLK_INV1_NMOS net1 CLKS GND GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_CLK_INV1_PMOS net1 CLKS VDD VDD pfet_03v3 L=0.28u W=3.11u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_CLK_INV2_NMOS net2 net1 GND GND nfet_03v3 L=0.28u W=2.34u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_CLK_INV2_PMOS net2 net1 VDD VDD pfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_CLK_INV3_NMOS net3 net2 GND GND nfet_03v3 L=0.28u W=3.11u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_CLK_INV3_PMOS net3 net2 VDD VDD pfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_CLK_INV4_NMOS N_CLK net3 GND GND nfet_03v3 L=0.28u W=4.67u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_CLK_INV4_PMOS N_CLK net3 VDD VDD pfet_03v3 L=0.28u W=9.33u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_PCLK_INV1_NMOS net4 CLKS GND GND nfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_PCLK_INV1_PMOS net4 CLKS VDD VDD pfet_03v3 L=0.28u W=3.11u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_PCLK_INV2_NMOS net5 net4 GND GND nfet_03v3 L=0.28u W=3.11u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_PCLK_INV2_PMOS net5 net4 VDD VDD pfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_PCLK_INV3_NMOS P_CLK net5 GND GND nfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_PCLK_INV3_PMOS P_CLK net5 VDD VDD pfet_03v3 L=0.28u W=12.44u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XTG_TRANS_NMOS VIN N_CLK VOUT GND nfet_03v3 L=0.28u W=3.11u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=8
+XTG_TRANS_PMOS VIN P_CLK VOUT VDD pfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=8
+.ends
+.subckt A44_CDAC_UNIT_TRANS_DRIVER VIN CLKS VTOP DCTRL[7] DCTRL[6] DCTRL[5] DCTRL[4] DCTRL[3] DCTRL[2] DCTRL[1] VREFP VDD GND
++ VREFN
+
+*.ipin VIN
+*.ipin CLKS
+*.iopin VDD
+*.iopin GND
+*.iopin VREFP
+*.iopin VREFN
+*.iopin VTOP
+*.ipin DCTRL[7],DCTRL[6],DCTRL[5],DCTRL[4],DCTRL[3],DCTRL[2],DCTRL[1]
+XC8 VTOP GND cap_mim_2f0_m4m5_noshield c_width=6.855e-6 c_length=6.855e-6 m=18
+x2 VREFN VREFP VDD GND VTOP DCTRL_DRV[1] A44_C1_SWITCH
+x3 VREFN VREFP VDD GND VTOP DCTRL_DRV[2] A44_C2_SWITCH
+x4 VREFN VREFP VDD GND VTOP DCTRL_DRV[3] A44_C4_SWITCH
+x5 VREFN VREFP VDD GND VTOP DCTRL_DRV[4] A44_C8_SWITCH
+x6 VREFN VREFP VDD GND VTOP DCTRL_DRV[5] A44_C16_SWITCH
+x8 VREFN VREFP VDD GND VTOP DCTRL_DRV[7] A44_C64_SWITCH
+xsample CLKS VDD GND VTOP VIN A44_SWITCH_TRANS_TG8
+x1 VREFN VREFP VDD GND VTOP DCTRL_DRV[6] A44_C32_SWITCH
+xdrv DCTRL[1] DCTRL_DRV[1] VDD GND DCTRL[2] DCTRL_DRV[2] DCTRL_DRV[3] DCTRL[3] DCTRL_DRV[4] DCTRL[4] DCTRL_DRV[5] DCTRL[5]
++ DCTRL_DRV[6] DCTRL[6] DCTRL_DRV[7] DCTRL[7] A44_CONVERSION_BUFFER
+.ends

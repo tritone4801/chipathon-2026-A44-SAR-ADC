@@ -1,0 +1,45 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist A44_Comparator_StrongARM"
+spectre_format="@name ( @pinlist ) A44_Comparator_StrongARM"
+template="name=x1"
+symname=A44_Comparator_StrongARM
+source_binding=A44_Comparator_StrongARM
+default_schematic=ignore
+}
+V {}
+S {}
+F {}
+E {}
+L 4 10 60 10 80 {}
+L 4 70 -20 90 -20 {}
+L 4 -130 -20 -110 -20 {}
+L 4 70 20 90 20 {}
+L 4 -130 20 -110 20 {}
+L 4 -60 -70 -60 60 {}
+L 4 -60 60 50 0 {}
+L 4 -60 -70 50 -0 {}
+L 4 -50 10 -30 10 {}
+L 4 -30 -10 -30 10 {}
+L 4 -30 -10 -10 -10 {}
+L 4 -20 60 10 60 {}
+L 4 -20 30 -20 60 {}
+L 7 0 -90 0 -70 {}
+L 7 30 -90 30 -70 {}
+B 4 -130 -90 90 80 {fill=no}
+B 5 7.5 77.5 12.5 82.5 {name=CLK dir=in}
+B 5 87.5 -22.5 92.5 -17.5 {name=DCMPP dir=out}
+B 5 -132.5 -22.5 -127.5 -17.5 {name=VINP dir=in}
+B 5 87.5 17.5 92.5 22.5 {name=DCMPN dir=out}
+B 5 -132.5 17.5 -127.5 22.5 {name=VINN dir=in}
+B 5 -2.5 -92.5 2.5 -87.5 {name=VDD dir=inout}
+B 5 27.5 -92.5 32.5 -87.5 {name=GND dir=inout}
+T {A44_Comparator_StrongARM} -125 -82 0 0 0.14 0.14 {}
+T {CLK} 6 55 3 0 0.2 0.2 {}
+T {DCMPP} 65 -24 0 1 0.2 0.2 {}
+T {VINP} -105 -24 0 0 0.2 0.2 {}
+T {DCMPN} 65 16 0 1 0.2 0.2 {}
+T {VINN} -105 16 0 0 0.2 0.2 {}
+T {VDD} -4 -65 3 1 0.2 0.2 {}
+T {GND} 26 -65 3 1 0.2 0.2 {}

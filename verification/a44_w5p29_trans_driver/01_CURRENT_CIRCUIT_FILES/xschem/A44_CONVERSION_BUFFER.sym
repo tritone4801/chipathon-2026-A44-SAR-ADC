@@ -1,0 +1,61 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+spectre_format="@name ( @pinlist ) @symname"
+template="name=x1"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 60 -110 60 -90 {}
+L 4 60 90 60 110 {}
+L 4 40 -110 40 -90 {}
+L 4 40 90 40 110 {}
+L 4 20 90 20 110 {}
+L 4 20 -110 20 -90 {}
+L 4 0 90 0 110 {}
+L 4 0 -110 0 -90 {}
+L 4 -20 90 -20 110 {}
+L 4 -20 -110 -20 -90 {}
+L 4 -40 90 -40 110 {}
+L 4 -40 -110 -40 -90 {}
+L 4 -60 90 -60 110 {}
+L 4 -60 -110 -60 -90 {}
+L 7 130 -30 150 -30 {}
+L 7 130 20 150 20 {}
+B 5 57.5 -112.5 62.5 -107.5 {name=CTRL_IN[1] dir=in}
+B 5 57.5 107.5 62.5 112.5 {name=CTRL_OUT[1] dir=out}
+B 5 147.5 -32.5 152.5 -27.5 {name=VDD dir=inout}
+B 5 147.5 17.5 152.5 22.5 {name=GND dir=inout}
+B 5 37.5 -112.5 42.5 -107.5 {name=CTRL_IN[2] dir=in}
+B 5 37.5 107.5 42.5 112.5 {name=CTRL_OUT[2] dir=out}
+B 5 17.5 107.5 22.5 112.5 {name=CTRL_OUT[3] dir=out}
+B 5 17.5 -112.5 22.5 -107.5 {name=CTRL_IN[3] dir=in}
+B 5 -2.5 107.5 2.5 112.5 {name=CTRL_OUT[4] dir=out}
+B 5 -2.5 -112.5 2.5 -107.5 {name=CTRL_IN[4] dir=in}
+B 5 -22.5 107.5 -17.5 112.5 {name=CTRL_OUT[5] dir=out}
+B 5 -22.5 -112.5 -17.5 -107.5 {name=CTRL_IN[5] dir=in}
+B 5 -42.5 107.5 -37.5 112.5 {name=CTRL_OUT[6] dir=out}
+B 5 -42.5 -112.5 -37.5 -107.5 {name=CTRL_IN[6] dir=in}
+B 5 -62.5 107.5 -57.5 112.5 {name=CTRL_OUT[7] dir=out}
+B 5 -62.5 -112.5 -57.5 -107.5 {name=CTRL_IN[7] dir=in}
+P 4 5 130 -90 -130 -90 -130 90 130 90 130 -90 {}
+T {conversion_buffer} -115 -12 0 0 0.2 0.2 {}
+T {CTRL_IN[1]} 64 -85 1 0 0.2 0.2 {}
+T {CTRL_OUT[1]} 64 85 1 1 0.2 0.2 {}
+T {VDD} 125 -34 0 1 0.2 0.2 {}
+T {GND} 125 16 0 1 0.2 0.2 {}
+T {CTRL_IN[2]} 44 -85 1 0 0.2 0.2 {}
+T {CTRL_OUT[2]} 44 85 1 1 0.2 0.2 {}
+T {CTRL_OUT[3]} 24 85 1 1 0.2 0.2 {}
+T {CTRL_IN[3]} 24 -85 1 0 0.2 0.2 {}
+T {CTRL_OUT[4]} 4 85 1 1 0.2 0.2 {}
+T {CTRL_IN[4]} 4 -85 1 0 0.2 0.2 {}
+T {CTRL_OUT[5]} -16 85 1 1 0.2 0.2 {}
+T {CTRL_IN[5]} -16 -85 1 0 0.2 0.2 {}
+T {CTRL_OUT[6]} -36 85 1 1 0.2 0.2 {}
+T {CTRL_IN[6]} -36 -85 1 0 0.2 0.2 {}
+T {CTRL_OUT[7]} -56 85 1 1 0.2 0.2 {}
+T {CTRL_IN[7]} -56 -85 1 0 0.2 0.2 {}
