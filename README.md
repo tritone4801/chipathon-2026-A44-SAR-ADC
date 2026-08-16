@@ -22,24 +22,73 @@ Channel Partner acceptance, or tapeout readiness.
 
 The current transistor-level schematic baseline is the
 [W5P29 unit-transmission-gate-driver schematic package](verification/a44_w5p29_trans_driver/01_CURRENT_CIRCUIT_FILES).
-It is an additive package; the earlier schematic and simulation material under
-`verification/a44_r2` remains available and unchanged.
+It is additive; the
+[original GitHub schematic](verification/a44_r2/01_CURRENT_CIRCUIT_FILES)
+remains unchanged. Relative to that original schematic, the current baseline
+changes only the following published components, bindings, and sizes:
 
-The W5P29 package contains the current Xschem hierarchy, SPICE netlists,
-register-transfer-level sources, sizing lock, source index, and hash audit. Its
-active top is `A44_SAR_ADC_TOP_FIXED`, with a buffered `CLKS_CORE` clock path,
-TG8 sampling switches, unit-based differential capacitive digital-to-analog
-converters, the CMP55 StrongARM comparator, and the R1L slow-slow-corner
-parasitic-extraction candidate for the successive-approximation control logic.
+- **StrongARM comparator:** the input pair changes from M3/M4 at
+  W/L = 3.51/0.28 micrometres, `m=4`, to CMP55_A XCOMP_INPUT_P/N at
+  W/L = 55.8/0.28 micrometres, `m=4`. The published M5/M6 width of
+  8.2524 micrometres and M7/M11 width of 16.8587 micrometres are retained.
+- **Capacitive digital-to-analog converter:** the monolithic `CDAC`, whose
+  capacitor multipliers are 1/2/4/8/16/32/64, changes to
+  `A44_CDAC_UNIT_TRANS_DRIVER` with explicit
+  `A44_C1_SWITCH`/C2/C4/C8/C16/C32/C64 unit hierarchy. Each C1 unit uses the
+  6.855-by-6.855-micrometre metal-insulator-metal capacitor with multiplier 18
+  and N/P reference switches at W/L = 1.56/0.28 micrometres, `m=18`. Each side
+  has 127 switched units plus one dummy unit, approximately 230.72 picofarads
+  per side.
+- **Sampling switch:** `SWITCH_BOOT_SP` changes to `A44_SWITCH_TRANS_TG8`;
+  its N device is W/L = 3.11/0.28 micrometres, `m=8`, and its P device is
+  W/L = 6.22/0.28 micrometres, `m=8`.
+- **Digital-control drive:** the direct control connection changes to one
+  `A44_CONVERSION_BUFFER` two-stage transistor driver per bit. INV1 N/P widths are 2.34/4.67
+  micrometres and INV2 N/P widths are 6.22/12.44 micrometres, all at
+  L = 0.28 micrometres.
+- **Sampling-clock drive:** direct `CLKS` distribution changes to the
+  non-inverting C1 two-stage buffer and internal `CLKS_CORE`. Stage-one N/P
+  widths are 0.78/1.56 micrometres and stage-two N/P widths are 3.11/6.22
+  micrometres, all at L = 0.28 micrometres.
+- **Successive-approximation logic binding:** the generic slow-slow-corner
+  parasitic-extraction wrapper changes to the R1L true-transistor
+  slow-slow-corner parasitic-extraction core and a header-aware 28-pin wrapper.
+  The logic-to-converter/output interface changes from underscore aliases to
+  `DCTRLP[7:1]`, `DCTRLN[7:1]`, and `DOUT[7:0]` bracket names.
 
-The package README marks simulation results that are absent or changed after
-the electrical rebinding. No earlier result is promoted to a current W5P29
-performance qualification merely because its method or seeds are similar.
+## Current A44_W5P29_UNIT_TRANS_DRIVER electrical results
+
+| Simulation or execution | Completion | Current interpretation |
+| --- | ---: | --- |
+| 200-sample Monte Carlo mismatch dynamic simulation at the typical-typical process corner, 3.3 volts, 27 degrees Celsius, using the low differential-input band and steady-state frames 4 through 67 | **Missing for the current baseline** | The existing 200-sample result is bound to the earlier resized-StrongARM/bootstrap electrical baseline; it is not a completed TG8, unit-converter, C1-clock-buffer result |
+| Full 255-transition static transfer-curve simulation | **Missing for the current baseline** | An earlier changed-binding `FAST25 STATIC` diagnostic covers only 38 transitions and 29 local differential-nonlinearity values; it does not provide current full-range integral/differential nonlinearity, missing-code, or reversal qualification |
+| Three-corner process-voltage-temperature dynamic simulation using 20 selected Monte Carlo mismatch samples per corner | **Stopped; partial execution preserved** | The persisted stop snapshot says 32/60 terminal, but worker-to-matrix writeback lag makes that count non-authoritative. The predecessor W5P29 binding completed 60/60 with 58 hard-dynamic and 56 signal-to-noise-budget passes; those results changed with the electrical rebinding and do not qualify the current baseline |
+| 100-sample whole-converter upward T1 transfer-offset simulation at the typical-typical process corner, 3.3 volts, and 27 degrees Celsius | **0/100; execution not started** | Inputs are bound, but status is `INPUT_BOUND_EXECUTION_NOT_STARTED`. Earlier results are comparison-only; this measures whole-converter T1 transfer offset, not standalone comparator input offset |
+| Selected predecessor worst-five dynamic and offset replay on the unit-converter topology | **20/20 selected records** | All 15 dynamic and 5 offset records terminated; 12/15 meet the hard-dynamic gate and 5/5 offsets are valid. This selected tail replay fails its complete performance gate and is not a current MC20/MC100 population or yield result |
+| Two historical worst-coordinate replays after adding the C1 sampling-clock buffer | **2/2 selected coordinates** | The slow-slow seed-2 dynamic case meets the hard-dynamic gate and the typical-typical seed-65 T1 offset is valid. No current-design worst-case search or population inference was performed |
+| Sampling-clock-buffer schematic sizing over typical-typical, slow-slow, and fast-fast corners with actual and two-times load | **30/30 simulator returns; 29/30 measurements** | C1 is the minimum sizing candidate that passes all six declared actual/two-times-load gates; worst rise/fall times are 0.91661/0.78300 nanoseconds. This is schematic-level pre-layout sizing only |
+| Circuit Automatic Characterization Engine package preflight | **Missing from the current package** | No current W5P29 Circuit Automatic Characterization Engine preflight result is published |
+| Xschem generation, metal-oxide-semiconductor name synchronization, unit smoke simulation, full-top parse/elaboration, register-transfer-level lint, and layout-interface-label readback | **6/6 tool executions** | All six tools returned zero; these are structural, compile, connectivity, and interface checks, not analog-to-digital-converter performance qualification |
+| Quick result-reproduction run equivalent to the revision 2 130-record check | **Missing from the current package** | The 51/51 GitHub manifest readback verifies file integrity only and is not simulation-result reproduction |
+
+Historical typical-corner results reproduce exactly when their historical
+electrical inputs are restored. The current C18 unit converter, TG8 switch,
+CMP55_A input pair, control drivers, and C1 clock buffer form a different
+electrical baseline; matching methods or seeds alone does not transfer the old
+performance result.
+
+Current full dynamic, full static, process-voltage-temperature, and Monte Carlo
+performance requalification therefore remains open. Completed package,
+connectivity, sizing, or selected-replay checks do not imply population yield,
+layout or parasitic-extraction signoff, silicon signoff, tapeout readiness, or
+production readiness.
+
+## Preserved revision 2 package and electrical results
 
 The preserved [revision 2 resized-circuit simulation package](verification/a44_r2)
 contains:
 
-- current Xschem, SPICE, and register-transfer-level circuit files;
+- its revision 2 Xschem, SPICE, and register-transfer-level circuit files;
 - completed dynamic, static, and process-voltage-temperature simulation
   results;
 - Circuit Automatic Characterization Engine and simulation tooling;
@@ -56,8 +105,6 @@ boundaries.
 
 The current project tracker is available at
 [Team A44 project tracker, revision 2](docs/A44_SAR_ADC_Project_Tracker_20260728_R2.xlsx).
-
-## Preserved revision 2 electrical results
 
 | Simulation or execution | Completion | Current interpretation |
 | --- | ---: | --- |
