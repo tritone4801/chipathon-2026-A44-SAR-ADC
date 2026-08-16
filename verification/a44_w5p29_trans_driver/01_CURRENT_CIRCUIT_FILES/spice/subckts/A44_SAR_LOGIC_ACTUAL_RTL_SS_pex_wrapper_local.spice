@@ -1,0 +1,18 @@
+* Stable Path B wrapper for A44_SAR_LOGIC_ACTUAL_RTL_SS PEX.
+* Generated from regenerated SS GDS by Magic PEX.
+* Top-compatible alias subckt name is A44_SAR_LOGIC_ACTUAL_RTL for current ADC TOP binding.
+* Canonical interface naming is bracket form, matching TOP/CDAC and physical macro LEF/DEF/PEX/LVS.
+* Active-low CDAC controls: 0 selects VREFP, 1 selects VREFN.
+.include "/foss/designs/DESIGN_FILES/CURRENT/A44_W5P29_UNIT_TRANS_DRIVER/01_CIRCUIT_FILES/A44_SAR_LOGIC_ACTUAL_RTL_SS_pex_core.spice"
+.subckt A44_SAR_LOGIC_ACTUAL_RTL CLKS DCMPP DCMPN CMPCK DCTRLP[7] DCTRLP[6] DCTRLP[5] DCTRLP[4]
++ DCTRLP[3] DCTRLP[2] DCTRLP[1] DCTRLN[7] DCTRLN[6] DCTRLN[5] DCTRLN[4] DCTRLN[3]
++ DCTRLN[2] DCTRLN[1] DOUT[7] DOUT[6] DOUT[5] DOUT[4] DOUT[3] DOUT[2]
++ DOUT[1] DOUT[0] VDD GND
+
+* Xcore pin order generated from raw Magic PEX header.
+Xcore DCTRLN[1] DCTRLN[2] DCTRLN[3] DCTRLN[4] DCTRLN[5] DCTRLN[6] DCTRLN[7] DCTRLP[1]
++ DCTRLP[2] DCTRLP[3] DCTRLP[4] DCTRLP[5] DCTRLP[6] DCTRLP[7] CLKS CMPCK
++ DCMPN DCMPP DOUT[0] DOUT[1] DOUT[2] DOUT[3] DOUT[4] DOUT[5]
++ DOUT[6] DOUT[7] VDD GND A44_SAR_LOGIC_ACTUAL_RTL_SS_PEX_CORE
+
+.ends A44_SAR_LOGIC_ACTUAL_RTL

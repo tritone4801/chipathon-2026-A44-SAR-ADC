@@ -18,10 +18,26 @@ This publication is for layout review. It does not claim density or fill
 closure, padframe or electrostatic-discharge completion, full-chip signoff,
 Channel Partner acceptance, or tapeout readiness.
 
-## Current project status
+## Current schematic baseline
 
-The current transistor-level electrical package is available under
-[the resized-circuit simulation package](verification/a44_r2). It contains:
+The current transistor-level schematic baseline is the
+[W5P29 unit-transmission-gate-driver schematic package](verification/a44_w5p29_trans_driver/01_CURRENT_CIRCUIT_FILES).
+It is an additive package; the earlier schematic and simulation material under
+`verification/a44_r2` remains available and unchanged.
+
+The W5P29 package contains the current Xschem hierarchy, SPICE netlists,
+register-transfer-level sources, sizing lock, source index, and hash audit. Its
+active top is `A44_SAR_ADC_TOP_FIXED`, with a buffered `CLKS_CORE` clock path,
+TG8 sampling switches, unit-based differential capacitive digital-to-analog
+converters, the CMP55 StrongARM comparator, and the R1L slow-slow-corner
+parasitic-extraction candidate for the successive-approximation control logic.
+
+The package README marks simulation results that are absent or changed after
+the electrical rebinding. No earlier result is promoted to a current W5P29
+performance qualification merely because its method or seeds are similar.
+
+The preserved [revision 2 resized-circuit simulation package](verification/a44_r2)
+contains:
 
 - current Xschem, SPICE, and register-transfer-level circuit files;
 - completed dynamic, static, and process-voltage-temperature simulation
@@ -29,8 +45,10 @@ The current transistor-level electrical package is available under
 - Circuit Automatic Characterization Engine and simulation tooling;
 - one-click launchers and method documentation.
 
-All planned simulations in the package have been executed. The design is not
-promoted because three samples fail the hard dynamic acceptance criteria.
+All simulations planned for that preserved revision 2 package were executed.
+That package was not promoted because three samples failed its hard dynamic
+acceptance criteria; those results do not qualify the newer W5P29 electrical
+baseline.
 
 See [Team A44 revision 2 progress and performance](docs/A44_SAR_ADC_R2_PROGRESS_AND_PERFORMANCE.md)
 for the complete methods, numerical results, result locations, and claim
@@ -39,7 +57,7 @@ boundaries.
 The current project tracker is available at
 [Team A44 project tracker, revision 2](docs/A44_SAR_ADC_Project_Tracker_20260728_R2.xlsx).
 
-## Current electrical results
+## Preserved revision 2 electrical results
 
 | Simulation or execution | Completion | Current interpretation |
 | --- | ---: | --- |

@@ -1,0 +1,4 @@
+* A44 modular analog and CLKS buffer entrypoint.
+.include "/foss/designs/DESIGN_FILES/CURRENT/A44_W5P29_UNIT_TRANS_DRIVER/01_CIRCUIT_FILES/A44_Comparator_StrongARM_extracted.subckt.spice"
+.include "/foss/designs/DESIGN_FILES/CURRENT/A44_W5P29_UNIT_TRANS_DRIVER/01_CIRCUIT_FILES/A44_CDAC_UNIT_TRANS_DRIVER_HIER.subckt.spice"
+.include "/foss/designs/DESIGN_FILES/CURRENT/A44_W5P29_UNIT_TRANS_DRIVER/01_CIRCUIT_FILES/A44_CLKS_BUFFER.subckt.spice"

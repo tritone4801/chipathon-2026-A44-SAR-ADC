@@ -1,0 +1,3 @@
+* A44 standalone leaf reference entrypoint; do not combine with the complete CDAC hierarchy because it embeds these names.
+.include "/foss/designs/DESIGN_FILES/CURRENT/A44_W5P29_UNIT_TRANS_DRIVER/01_CIRCUIT_FILES/A44_CONVERSION_BUFFER_UNIFIED.subckt.spice"
+.include "/foss/designs/DESIGN_FILES/CURRENT/A44_W5P29_UNIT_TRANS_DRIVER/01_CIRCUIT_FILES/A44_SWITCH_TRANS_TG8.subckt.spice"

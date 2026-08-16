@@ -1,0 +1,17 @@
+* Selected C1 two-stage non-inverting CLKS buffer.
+* Stage1 N/P=0.78/1.56 um; Stage2 N/P=3.11/6.22 um; L=0.28 um.
+.subckt A44_CLKS_BUFFER VDD GND CLKS_CORE PAD_CLK
+
+*.ipin PAD_CLK
+*.opin CLKS_CORE
+*.iopin VDD
+*.iopin GND
+XCLK_INV1_NMOS INTER_PAD PAD_CLK GND GND nfet_03v3 L=0.28u W=0.78u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XCLK_INV1_PMOS INTER_PAD PAD_CLK VDD VDD pfet_03v3 L=0.28u W=1.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XCLK_INV2_NMOS CLKS_CORE INTER_PAD GND GND nfet_03v3 L=0.28u W=3.11u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XCLK_INV2_PMOS CLKS_CORE INTER_PAD VDD VDD pfet_03v3 L=0.28u W=6.22u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u'
++ pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+.ends
