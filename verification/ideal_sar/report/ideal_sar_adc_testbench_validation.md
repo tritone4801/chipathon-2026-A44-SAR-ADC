@@ -14,7 +14,7 @@ those external paths are available and passing in this environment.
 
 Spec-wide coverage is complete. No blocking or partial coverage items remain in `results/csv/coverage_matrix.csv`.
 
-| Category | Metric | Target | Measured | Status | Evidence |
+| Category | Metric | Target | Measured | Status | Result files |
 |---|---|---|---:|---|---|
 | Preflight | External core tools | ngspice+cocotb+HDL simulator available | True | PASS | `preflight_tools.csv` |
 | Static | DNL | < +/-1 LSB project, <=0.01 LSB ideal | 2.6867397195928788e-14 | PASS | `static_dnl.csv` |
@@ -117,7 +117,7 @@ transition/DNL measurement.
 - max abs DAC INL: `0.0` LSB
 - bit-weight max error: `7.105427357601002e-15` LSB
 
-Evidence: `results/csv/dac_transfer.csv`, `results/csv/dac_bit_weights.csv`.
+Result files: `results/csv/dac_transfer.csv`, `results/csv/dac_bit_weights.csv`.
 
 ## 12. ADC Dynamic-Performance Results
 
@@ -204,12 +204,11 @@ single-code DNL distortion, missing code, tie-rule error, known harmonic, known
 white noise, EOC_INT/timing faults, DOUT bit swap, SAR bit-order error, DAC weight
 error, and combined noise plus harmonic closure.
 
-## 16. Raw Data and Traceability
+## 16. Raw Data
 
 Raw dynamic code streams and quantization-error data are in `results/raw/`.
 Machine-readable summaries are `results/metrics.json` and `results/csv/metrics.csv`.
-All plots are under `results/plots/`. The file/hash manifest is
-`results/manifest.json`.
+All plots are under `results/plots/`.
 
 ## 17. Pass/Fail Criteria
 
@@ -222,15 +221,14 @@ plus theory plausibility for the time-domain quantization-error metric.
 
 This phase is ideal only. It does not validate GF180 devices, transistor-level
 sampler/comparator/CDAC behavior, post-layout parasitics, or SAR ADC power.
-The Chipathon container execution is the authoritative GO evidence for this ideal phase. Before schematic handoff, rerun the container command and confirm `results/logs/run_all_container.log` still ends with `go_no_go: GO` and `EXIT_CODE=0`.
+The Chipathon container execution is the authoritative GO result for this ideal phase. Before schematic handoff, rerun the container command and confirm `results/logs/run_all_container.log` still ends with `go_no_go: GO` and `EXIT_CODE=0`.
 
-## 19. Evidence Index
+## 19. Result Index
 
 - `results/csv/metrics.csv`
 - `results/README.md`
 - `results/README.zh-CN.md`
 - `results/csv/coverage_matrix.csv`
-- `results/manifest.json`
 - `results/metrics.json`
 - `results/csv/preflight_tools.csv`
 - `results/csv/functional_vectors.csv`

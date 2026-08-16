@@ -42,6 +42,3 @@ This is a CORE layout-review publication without padframe, I/O pads, primary
 or secondary ESD, or a workshop full-die wrapper. The CORE is the current
 pre-fill baseline. The files are not a claim of density/fill closure,
 full-chip signoff, Channel Partner acceptance, or tapeout readiness.
-
-Per the requested repository scope, this layout publication adds no audit,
-manifest, checksum, rehash, or standalone verification-result files.

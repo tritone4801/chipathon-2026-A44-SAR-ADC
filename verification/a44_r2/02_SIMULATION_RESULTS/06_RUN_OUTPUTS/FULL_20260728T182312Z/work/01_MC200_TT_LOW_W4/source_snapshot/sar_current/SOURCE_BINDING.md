@@ -1,4 +1,4 @@
-# Current SAR ADC Source Binding
+# Current SAR ADC Source Set
 
 ## Accepted hierarchy
 
@@ -9,7 +9,7 @@ SAR_ADC_TOP_FIXED
 |-- XCDACN: CDAC
 |   `-- SWITCH_BOOT_SP
 |-- XCMP: Comparator_StrongARM, production sizing
-`-- XLOGIC: SAR_LOGIC_ACTUAL_RTL, current accepted SS RTL/PEX binding
+`-- XLOGIC: SAR_LOGIC_ACTUAL_RTL, current accepted SAR logic RTL/PEX source
 ```
 
 Frozen TOP interface and order:
@@ -49,9 +49,7 @@ Only these project-copy transformations are intentional:
    subcircuit names. Standard-library/PDK symbols and immutable source snapshots
    retain their upstream names.
 
-Unmodified originals and their fixed hashes are retained under
-`source_snapshot/authoritative/` and audited by
-`manifests/source_manifest.csv`.
+Unmodified source copies are retained under `source_snapshot/authoritative/`.
 
 The exact symbol geometry is exercised by the two schematics under
 `verification/`; actual Xschem GUI captures are retained under
@@ -59,8 +57,8 @@ The exact symbol geometry is exercised by the two schematics under
 
 ## Source authority
 
-The binding follows the completed
-`cace_actual_sar_mc_noise_perf_v1` measurement package and its source manifest.
+The source set follows the completed
+`cace_actual_sar_mc_noise_perf_v1` measurement package and its source set.
 The user-mentioned guide was no longer present at its original `D:/PICO` path;
 the immutable guide snapshot from that completed package is included under
 `source_snapshot/guide/`.
@@ -70,6 +68,6 @@ the immutable guide snapshot from that completed package is included under
 - This is not a comparator-resize candidate package.
 - This does not substitute an ideal comparator, ideal CDAC, or legacy logic.
 - Xschem-generated smoke netlists are structural checks only; the accepted
-  campaign netlists under `netlists/accepted/` remain the simulation binding.
+  campaign netlists under `netlists/accepted/` remain the simulation source.
 - No new static, dynamic, noise, Monte Carlo, PEX, RCX, or signoff result is
   claimed by this assembly operation.

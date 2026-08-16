@@ -1,5 +1,5 @@
 # A44 SAR ADC — Codex Simulation Execution Guide
-## TT Timed-Behavioral SAR Control / No-R6 / MC200 / FAST64 Schematic Analog-Core Signoff Plan
+## typical-typical process corner Timed-Behavioral SAR Control / No-R6 / 200-sample Monte Carlo mismatch simulation / 64-frame dynamic simulation Schematic Analog-Core Signoff Plan
 
 - **Document status:** Execution Guide / Frozen Verification Plan
 - **Revision date:** 2026-07-18
@@ -9,7 +9,7 @@
 
 > [!IMPORTANT]
 > This document contains an explicit scope override for this verification campaign: **actual transistor-level or gate-level SAR LOGIC is not part of the signoff criteria for this campaign.**
-> All claim-bearing static, dynamic, PVT, Monte Carlo, and noise simulations shall use a timed behavioral controller derived from **TT / 3.3 V / 27 °C SAR-logic timing evidence**.
+> All claim-bearing static, dynamic, process-voltage-temperature, Monte Carlo, and noise simulations shall use a timed behavioral controller derived from **typical-typical process corner / 3.3 V / 27 °C SAR-logic timing results**.
 > The signoff scope is therefore **schematic analog-core performance signoff with timed behavioral SAR control**. It is not full-integrated actual-SAR-logic schematic signoff, and it is not PEX, layout, package, or tapeout signoff.
 
 ---
@@ -20,15 +20,15 @@
 
 Codex shall close all of the following items:
 
-1. Freeze and audit all production sources, the PDK, simulators, random seeds, and configuration files.
+1. Freeze all production sources, the PDK, simulators, random seeds, and configuration files.
 2. Use one and only one timed behavioral controller: `SAR_LOGIC_BEH_TT_3P3_27C`.
 3. Remove `R6_FULL_RC_HEAVY`, while retaining explicit, traceable input, reference, and digital-interface equivalent loads.
-4. Complete TT nominal full 255-transition DNL/INL extraction.
-5. Complete an efficient analog-PVT screen and perform claim-bearing full-transition extraction at the static-worst corner.
-6. Complete MC200 static screening, full-transfer reconstruction, and exact-seed model validation.
+4. Complete typical-typical process corner nominal full 255-transition DNL/INL extraction.
+5. Complete an efficient analog-process-voltage-temperature screen and perform claim-bearing full-transition extraction at the static-worst corner.
+6. Complete 200-sample Monte Carlo mismatch simulation static screening, full-transfer reconstruction, and exact-seed model validation.
 7. Complete comparator/sample-noise calibration, an event-based noise model, and selected-transition probability testing.
-8. Complete MC200 mismatch-plus-noise FAST64 analysis.
-9. Complete a small number of FAST256 low-frequency and near-Nyquist closure runs.
+8. Complete 200-sample Monte Carlo mismatch simulation mismatch-plus-noise 64-frame dynamic simulation analysis.
+9. Complete a small number of 256-frame dynamic simulation low-frequency and near-Nyquist closure runs.
 10. Generate numerical reports, Monte Carlo statistics, DNL plots, INL plots, and FFT spectrum plots.
 11. Automatically issue `PASS`, `FAIL`, or `BLOCKED` according to the gates defined in this document. Ambiguous status wording is prohibited.
 
@@ -38,19 +38,19 @@ Codex shall not:
 
 - modify production schematics, symbols, RTL, PEX, GDS, DEF, LEF, or current-goal files;
 - add actual SAR-logic simulation as a signoff prerequisite for this campaign;
-- build a second behavioral model from SS or FF SAR-logic delay data;
-- vary TT logic timing with analog PVT;
+- build a second behavioral model from slow-slow process corner or fast-fast process corner SAR-logic delay data;
+- vary typical-typical process corner logic timing with analog process-voltage-temperature;
 - use zero-delay, zero-output-resistance, infinitely fast ideal SAR control;
 - allow the behavioral SAR controller to read `VINP/VINN` directly and calculate an ideal code;
 - enable temporal noise during formal deterministic DNL/INL transition search;
 - change the mismatch seed on every conversion;
 - describe unverified MIM mismatch or an arbitrarily selected capacitor sigma as PDK-native Monte Carlo;
 - describe an equivalent noise model that has not been calibrated at transistor or block level as actual StrongARM noise;
-- call FAST64 the final dynamic reference without FAST256 closure;
+- call 64-frame dynamic simulation the final dynamic reference without 256-frame dynamic simulation closure;
 - save all internal nodes and very large raw files for bulk Monte Carlo runs;
 - describe no-R6 results as loaded-interface, pad, ESD, package, or final-TOP signoff;
 - silently discard failed jobs or alter the frozen seed list;
-- select a favorable FFT phase, noise seed, or PVT corner to obtain a passing result.
+- select a favorable FFT phase, noise seed, or process-voltage-temperature corner to obtain a passing result.
 
 ## 0.3 Final claim boundary
 
@@ -149,7 +149,7 @@ Common-mode / bit-cycle-dependent offset shift target:
 
 ---
 
-# 2. Sources of Truth, Precedence, and Integrity Rules
+# 2. Sources of Truth and Precedence
 
 ## 2.1 Reference inputs
 
@@ -163,10 +163,10 @@ A44_Team_JST_schematic_review.pptx
 OnChipSAR - Schematic Review.pdf
 GF180MCU PDK model files
 current production sampler/CDAC/comparator schematic/netlist
-current verified TT SAR-logic timing evidence
+current verified typical-typical process-corner SAR-logic timing results
 ```
 
-Project source for TT SAR-logic timing data:
+Project source for typical-typical process corner SAR-logic timing data:
 
 ```text
 Google Drive folder:
@@ -176,7 +176,7 @@ Required timing condition:
 TT_3P3_27C only
 ```
 
-If a read-only local mirror of the Drive content exists, prefer the local mirror. Do not substitute SS or FF timing if TT data are missing.
+If a read-only local mirror of the Drive content exists, prefer the local mirror. Do not substitute slow-slow process corner or fast-fast process corner timing if typical-typical process corner data are missing.
 
 ## 2.2 Task-level override in this document
 
@@ -189,17 +189,9 @@ The only allowed control model is SAR_LOGIC_BEH_TT_3P3_27C.
 
 Codex shall not modify `current_goal.md`. Record this override only in the claim-boundary section of the campaign master report.
 
-## 2.3 Source-file integrity
+## 2.3 Production-source policy
 
-Generate before and after execution:
-
-```text
-manifests/source_hashes_before.json
-manifests/source_hashes_after.json
-reports/source_integrity.md
-```
-
-If any production-source hash changes:
+Production sources are read-only for this campaign. If any production source changes:
 
 ```text
 STOP
@@ -254,7 +246,7 @@ representative DOUT/output-register load if it affects the modeled interface
 finite CLKS rise/fall time
 ```
 
-Values shall come from an accepted verification fixture, a project specification, or an explicitly approved configuration. They shall not be set to zero without evidence.
+Values shall come from an accepted verification fixture, a project specification, or an explicitly approved configuration. They shall not be set to zero without a defined source.
 
 If no input or reference source model can be established:
 
@@ -263,7 +255,7 @@ STOP
 status = BLOCKED_SOURCE_IMPEDANCE_NOT_DEFINED
 ```
 
-## 3.3 Analog PVT
+## 3.3 Analog process-voltage-temperature
 
 Use:
 
@@ -273,7 +265,7 @@ SS_3P0_125C
 FF_3P6_M40C
 ```
 
-All analog-PVT runs shall use the same frozen TT logic timing:
+All analog-process-voltage-temperature runs shall use the same frozen typical-typical process corner logic timing:
 
 ```text
 logic delays/slopes = frozen TT values
@@ -332,7 +324,7 @@ The behavioral model shall not read `VINP`, `VINN`, `VFOP`, or `VFON` to calcula
 
 ## 4.2 Timing contract
 
-Extract and freeze the following values from TT evidence:
+Extract and freeze the following values from typical-typical process-corner timing results:
 
 ```text
 t_CLKS_fall_to_first_CMPCK
@@ -345,9 +337,9 @@ t_DCTRL_to_next_CMPCK[7:1]
 t_last_CMPCK_to_DOUT
 ```
 
-The existing TT inter-CMPCK interval of approximately 19 ns may be used as an initial sanity value. Final configuration shall come from TT evidence and shall not be reduced to an unsupported single average delay.
+The existing typical-typical process corner inter-CMPCK interval of approximately 19 ns may be used as an initial sanity value. Final configuration shall come from typical-typical process-corner timing results and shall not be reduced to an unsupported single average delay.
 
-For each bit, use the shortest measured settling window across representative TT input sequences:
+For each bit, use the shortest measured settling window across representative typical-typical process corner input sequences:
 
 \[
 T_{\mathrm{settle},b}^{\mathrm{model}}
@@ -400,26 +392,16 @@ conversion_complete
 
 ---
 
-# 5. Evidence Classification
+# 5. Claim Boundaries
 
-Every report row shall carry an `evidence_tier` field:
+- PDK-native MOS corner, mismatch, and noise results apply only to the recorded PDK and simulator.
+- Analytical kT/C and jitter budgets are first-order physical risk assessments.
+- A MIM mismatch model or equivalent-noise sensitivity model remains conditional on its stated assumptions.
+- Typical-typical process-corner timed-behavioral SAR integration and reconstructed transfers support system statistics under that model.
+- Transistor-level sampler, CDAC, and comparator replay with behavioral control is the electrical basis for this campaign.
+- Passing every gate makes the schematic analog core a signoff candidate; it is not silicon or layout signoff.
 
-| Tier | Definition in this campaign | Permitted claim |
-|---|---|---|
-| T0 | PDK-native MOS corner, mismatch, or noise | Direct model evidence under the recorded PDK and simulator |
-| T1 | Analytical budgets such as kT/C or jitter | First-order physical risk assessment |
-| T2 | Approved MIM mismatch model or equivalent-noise sensitivity model | Engineering evidence under explicit assumptions |
-| T3 | TT timed-behavioral SAR integration or transfer reconstruction | System statistics and tail selection under the model |
-| T4 | Transistor-level sampler/CDAC/comparator exact replay with behavioral control | Claim-bearing electrical closure for this campaign |
-| T5 | All gates in this document passed | Schematic analog-core signoff candidate |
-
-If MIM local mismatch is not PDK-native, the report shall retain:
-
-```text
-CDAC mismatch evidence = T2 engineering model
-```
-
-It shall not be promoted to GF180 process-typical native-MIM signoff.
+If MIM local mismatch is not PDK-native, report it as an engineering model and do not promote it to GF180 process-typical native-MIM signoff.
 
 ---
 
@@ -466,9 +448,6 @@ A44_TT_BEH_NO_R6_MC200_FAST64_SIGNOFF_202607xx/
 │   ├── tb_sample_noise_template.spice
 │   └── tb_top_transition_probability_template.spice
 ├── scripts/
-│   ├── audit_environment.py
-│   ├── hash_sources.py
-│   ├── audit_pdk_variation.py
 │   ├── validate_behavior_contract.py
 │   ├── make_seed_tables.py
 │   ├── make_job_matrix.py
@@ -488,8 +467,7 @@ A44_TT_BEH_NO_R6_MC200_FAST64_SIGNOFF_202607xx/
 ├── raw/
 ├── csv/
 ├── plots/
-├── reports/
-└── manifests/
+└── reports/
 ```
 
 ---
@@ -575,18 +553,18 @@ Codex shall write the final values actually used back into a frozen configuratio
 
 ---
 
-# 8. Phase A — Preflight and Environment Audit
+# 8. Phase A — Preflight and Environment Setup
 
 ## 8.1 Tool and platform inventory
 
-Record the following in machine-readable form and in `reports/environment_audit.md`:
+Record the following in machine-readable form:
 
 ```text
 ngspice version and executable path
 Xyce version and executable path, if used
 Python version
 numpy, scipy, pandas, and matplotlib versions
-PDK path, revision, and Git hash when available
+PDK path and revision when available
 CPU model and physical/logical core count
 installed RAM
 filesystem type, free space, and output path
@@ -598,7 +576,7 @@ Also create:
 reports/tool_versions.txt
 ```
 
-## 8.2 DUT binding audit
+## 8.2 DUT binding
 
 Automatically verify all of the following:
 
@@ -613,11 +591,7 @@ input and reference source/load models present
 8-bit straight-binary DOUT present
 ```
 
-Write:
-
-```text
-reports/dut_binding_audit.md
-```
+Record the selected DUT hierarchy and interface in the run report.
 
 If actual SAR logic or R6 is unexpectedly present:
 
@@ -704,7 +678,7 @@ sample/hold noise model
 reference-noise model, if included in the budget
 ```
 
-Equivalent event-based noise shall not enter T5 signoff until calibrated to block-level electrical evidence.
+Equivalent event-based noise shall not enter schematic signoff until calibrated to block-level electrical results.
 
 Required outputs:
 
@@ -802,7 +776,7 @@ Freeze the shortest passing static frame. Dynamic tests shall remain at the spec
 
 ## 10.4 Startup-frame gate
 
-Compare FAST64 using:
+Compare 64-frame dynamic simulation using:
 
 ```text
 startup = 0, 1, 2, and 4 frames
@@ -816,7 +790,7 @@ Select the minimum setting satisfying:
 all retained frames valid
 ```
 
-The expected default is one startup frame; zero startup frames require explicit evidence.
+The expected default is one startup frame; zero startup frames require explicit supporting results.
 
 Required outputs:
 
@@ -828,11 +802,11 @@ reports/runtime_pilot.md
 
 ---
 
-# 11. Phase D — Efficient Analog-PVT Screening
+# 11. Phase D — Efficient Analog-process-voltage-temperature Screening
 
-All analog corners use the same fixed TT logic timing model.
+All analog corners use the same fixed typical-typical process corner logic timing model.
 
-## 11.1 Packed static PVT screen
+## 11.1 Packed static process-voltage-temperature screen
 
 At each corner, test at least:
 
@@ -866,7 +840,7 @@ conversion validity
 timeout/invalid flags
 ```
 
-## 11.2 Dynamic PVT FAST64
+## 11.2 Dynamic process-voltage-temperature 64-frame dynamic simulation
 
 At every corner, run:
 
@@ -895,7 +869,7 @@ reports/pvt_screen.md
 
 ---
 
-# 12. Phase E — Exact Nominal and Worst-PVT Static Characterization
+# 12. Phase E — Exact Nominal and Worst-process-voltage-temperature Static Characterization
 
 ## 12.1 Primary method
 
@@ -939,7 +913,7 @@ Run shards in parallel. Do not launch one long-lived simulator process for every
 
 ## 12.4 Mandatory exact curves
 
-### TT nominal
+### typical-typical process corner nominal
 
 ```text
 low-to-high: full T1...T255
@@ -948,7 +922,7 @@ noise: off
 mismatch: off
 ```
 
-### Static-worst PVT corner
+### Static-worst process-voltage-temperature corner
 
 ```text
 low-to-high: full T1...T255
@@ -1001,7 +975,7 @@ Also fit a least-squares straight line to all transitions and output `INL_BF`.
 
 ## 12.6 Ramp correlation
 
-Run one TT nominal triangular ramp:
+Run one typical-typical process corner nominal triangular ramp:
 
 ```text
 low -> high -> low
@@ -1034,7 +1008,7 @@ reports/static_exact.md
 
 ---
 
-# 13. Phase F — Static MC200
+# 13. Phase F — Static 200-sample Monte Carlo mismatch simulation
 
 ## 13.1 Seed discipline
 
@@ -1054,7 +1028,7 @@ same die seed reused in static and dynamic cohorts
 
 Do not change mismatch realization on every conversion.
 
-## 13.2 MC200 packed electrical screen
+## 13.2 200-sample Monte Carlo mismatch simulation packed electrical screen
 
 For every seed, run one packed deck of approximately 20 frames:
 
@@ -1186,7 +1160,7 @@ VICM = 1.6500 V
        2.0750 V
 ```
 
-Extract all three points at TT. Retest the worst common-mode point at the analog noise-worst PVT corner.
+Extract all three points at typical-typical process corner. Retest the worst common-mode point at the analog noise-worst process-voltage-temperature corner.
 
 Fit:
 
@@ -1279,7 +1253,7 @@ reports/top_transition_noise.md
 
 ---
 
-# 15. Phase H — Dynamic MC200 FAST64
+# 15. Phase H — Dynamic 200-sample Monte Carlo mismatch simulation 64-frame dynamic simulation
 
 ## 15.1 Ideal-quantizer baseline
 
@@ -1297,7 +1271,7 @@ same harmonic folding
 
 Sweep 16 initial phases and freeze a phase whose SNDR and SFDR are near the median, not the best phase.
 
-## 15.2 FAST64 bulk configuration
+## 15.2 64-frame dynamic simulation bulk configuration
 
 ```text
 NFFT             = 64
@@ -1385,7 +1359,7 @@ Bulk jobs shall not save complete internal waveforms. Save only:
 64 retained output codes
 valid/timeout/invalid flags
 conversion time per frame
-minimal provenance
+minimal source context
 ```
 
 Required outputs:
@@ -1398,11 +1372,11 @@ reports/dynamic_mc200_fast64.md
 
 ---
 
-# 16. Phase I — FAST256 Dynamic Closure
+# 16. Phase I — 256-frame dynamic simulation Dynamic Closure
 
-FAST64 is the bulk estimator. A small FAST256 set provides the final dynamic reference.
+64-frame dynamic simulation is the bulk estimator. A small 256-frame dynamic simulation set provides the final dynamic reference.
 
-## 16.1 Mandatory PVT cases
+## 16.1 Mandatory process-voltage-temperature cases
 
 Use strict `maxstep=0.05 ns`:
 
@@ -1425,7 +1399,7 @@ near Nyquist:
 
 ## 16.2 Monte Carlo tail cases
 
-Also run FAST256 for:
+Also run 256-frame dynamic simulation for:
 
 ```text
 MC median seed
@@ -1435,7 +1409,7 @@ MC worst-SFDR seed
 
 ## 16.3 Closure gate
 
-Because FAST64 and FAST256 may use close but not identical coherent frequencies, compare both absolute specifications and trends:
+Because 64-frame dynamic simulation and 256-frame dynamic simulation may use close but not identical coherent frequencies, compare both absolute specifications and trends:
 
 ```text
 all required FAST256 SNDR >= 44 dB
@@ -1453,7 +1427,7 @@ P5-and-below SNDR cohort
 boundary SFDR/THD cohort
 ```
 
-to FAST128 or FAST256.
+to 128-frame dynamic simulation or 256-frame dynamic simulation.
 
 Required outputs:
 
@@ -1464,7 +1438,7 @@ reports/dynamic_fast256_closure.md
 
 ---
 
-# 17. Phase J — Minimum PVT × MC Interaction Closure
+# 17. Phase J — Minimum process-voltage-temperature and Monte Carlo mismatch interaction simulation Interaction Closure
 
 Do not run `200 seeds × 3 corners`.
 
@@ -1475,7 +1449,7 @@ Run only:
 | worst-DNL | PVT_STATIC_WORST_DNL | worst transition plus major carries |
 | worst-INL | PVT_STATIC_WORST_INL | transitions around the INL extrema |
 | worst-offset | PVT_STATIC_WORST_DNL | T1, T128, and T255 |
-| worst-SNDR | PVT_DYNAMIC_WORST | FAST64 low-frequency and near-Nyquist |
+| worst-SNDR | PVT_DYNAMIC_WORST | 64-frame dynamic simulation low-frequency and near-Nyquist |
 
 If any case fails, expand only around the observed failure mechanism. Do not launch the full Cartesian matrix.
 
@@ -1588,8 +1562,8 @@ Requirements:
 - Do not use spline interpolation or smoothing.
 - Center the y-axis around zero and use symmetric limits.
 - Use a major x-axis tick approximately every 32 codes.
-- Include at least TT nominal and the exact worst-DNL seed in the formal report set.
-- Plot a reconstructed MC envelope only after model-validation passes, and label it explicitly as reconstructed.
+- Include at least typical-typical process corner nominal and the exact worst-DNL seed in the formal report set.
+- Plot a reconstructed Monte Carlo mismatch simulation envelope only after model-validation passes, and label it explicitly as reconstructed.
 
 ## 20.2 INL plot
 
@@ -1681,7 +1655,7 @@ plots/mc_sfdr_cdf.pdf
 
 # 21. Bulk Raw-Data and I/O Efficiency Rules
 
-## 21.1 Bulk MC200
+## 21.1 Bulk 200-sample Monte Carlo mismatch simulation
 
 Save only:
 
@@ -1717,11 +1691,10 @@ logs
 summary CSV files
 failure and tail raw data
 plot-source CSV files
-hash manifests
 reports
 ```
 
-Ordinary successful bulk raw data may be compressed or deleted after parsing, hashing, and audit completion.
+Ordinary successful bulk raw data may be compressed or deleted after parsing and report generation.
 
 ---
 
@@ -1739,7 +1712,6 @@ Ordinary successful bulk raw data may be compressed or deleted after parsing, ha
 Recommended command contract:
 
 ```bash
-python scripts/audit_environment.py --config config/run_config.yaml
 python scripts/make_seed_tables.py --config config/run_config.yaml
 python scripts/make_job_matrix.py --phase all --config config/run_config.yaml
 python scripts/run_jobs.py --workers 16 --resume jobs/job_matrix.csv
@@ -1796,15 +1768,12 @@ missing_frame_count
 duplicate_frame_count
 
 pass_fail
-evidence_tier
 ```
 
 ## 23.2 Master reports
 
 ```text
 reports/00_executive_summary.md
-reports/01_source_integrity.md
-reports/02_model_and_fixture_audit.md
 reports/03_numerical_convergence.md
 reports/04_pvt_screen.md
 reports/05_static_exact.md
@@ -1813,7 +1782,6 @@ reports/07_noise_calibration.md
 reports/08_dynamic_mc200_fast64.md
 reports/09_fast256_closure.md
 reports/10_pvt_mc_interaction.md
-reports/11_plot_audit.md
 reports/12_signoff_matrix.md
 reports/MASTER_SIGNOFF_REPORT.md
 ```
@@ -1831,7 +1799,7 @@ PASS_AS_SCHEMATIC_ANALOG_CORE_SIGNOFF_WITH_TIMED_BEHAVIORAL_SAR_CONTROL_MC200
 ## Gate A — Source and DUT
 
 ```text
-production hashes unchanged
+production sources unchanged
 correct transistor-level analog core bound
 actual SAR logic absent
 TT behavioral SAR model present
@@ -1849,7 +1817,7 @@ correct frozen switching sequence
 atomic DOUT update
 no deadlock
 invalid and timeout detection active
-TT timing provenance recorded
+typical-corner timing source recorded
 ```
 
 ## Gate C — Numerical convergence
@@ -1861,7 +1829,7 @@ startup-frame convergence passed
 static-frame convergence passed
 ```
 
-## Gate D — Nominal and PVT static performance
+## Gate D — Nominal and process-voltage-temperature static performance
 
 ```text
 TT full T1...T255 up/down complete
@@ -1872,7 +1840,7 @@ no missing code
 selected hysteresis <= 0.10 LSB, or triggered full reverse sweep passes
 ```
 
-## Gate E — Static MC200
+## Gate E — Static 200-sample Monte Carlo mismatch simulation
 
 ```text
 200/200 packed jobs valid
@@ -1904,7 +1872,7 @@ no invalid decision or timeout
 noise-repeat diagnostic completed
 ```
 
-## Gate H — FAST256 and frequency coverage
+## Gate H — 256-frame dynamic simulation and frequency coverage
 
 ```text
 TT low-frequency and near-Nyquist FAST256 pass
@@ -1913,17 +1881,17 @@ MC median and worst-tail FAST256 pass
 FAST64-to-FAST256 closure acceptable
 ```
 
-## Gate I — Selected PVT × MC closure
+## Gate I — Selected process-voltage-temperature and Monte Carlo mismatch interaction simulation closure
 
 ```text
 worst-DNL, worst-INL, worst-offset, and worst-SNDR tail replays pass
 ```
 
-## Gate J — Evidence and reporting
+## Gate J — Results and reporting
 
 ```text
-all configurations, seed lists, hashes, and logs present
-DNL, INL, and spectrum figures pass format audit
+all configurations, seed lists, and logs present
+DNL, INL, and spectrum figures follow the required format
 claim boundary stated explicitly
 no unsupported PEX, actual-logic, package, or production-yield claim
 ```
@@ -1951,11 +1919,10 @@ FAIL_FAST64_FAST256_CLOSURE
 
 ## 25.2 BLOCKED statuses
 
-Use when required evidence, models, or execution resources are incomplete:
+Use when required results, models, or execution resources are incomplete:
 
 ```text
 BLOCKED_PRODUCTION_SOURCE_CHANGED
-BLOCKED_TT_TIMING_EVIDENCE_MISSING
 BLOCKED_SOURCE_IMPEDANCE_NOT_DEFINED
 BLOCKED_CDAC_MISMATCH_MODEL_UNAVAILABLE
 BLOCKED_NOISE_CALIBRATION_UNAVAILABLE
@@ -1970,9 +1937,9 @@ Codex shall not convert `BLOCKED` into `FAIL`, and shall not convert `FAIL` into
 # 26. Execution Order and Dependencies
 
 ```text
-1. Source-hash and environment audit
+1. Production-source freeze and environment setup
 2. DUT-binding and behavioral-contract smoke test
-3. PDK/MOS/MIM/noise capability audit
+3. PDK/MOS/MIM/noise capability validation
 4. Numerical, maxstep, static-frame, startup-frame, and runtime pilot
 5. Analog-PVT packed-static and FAST64 screen
 6. TT nominal exact full-static extraction
@@ -1986,10 +1953,10 @@ Codex shall not convert `BLOCKED` into `FAIL`, and shall not convert `FAIL` into
 14. Select dynamic tail seeds
 15. Run FAST256 closure
 16. Run selected PVT × MC tail closure
-17. Aggregate, plot, audit, and issue the master report
+17. Aggregate, plot, validate, and issue the master report
 ```
 
-Do not launch the full MC200 matrix before the model and numerical gates pass.
+Do not launch the full 200-sample Monte Carlo mismatch simulation matrix before the model and numerical gates pass.
 
 ---
 
@@ -2012,16 +1979,16 @@ Estimated wall-clock time with parallel execution:
 
 | Phase | Estimated wall-clock time |
 |---|---:|
-| Preflight and model audit | 2–4 h |
+| Preflight and model validation | 2–4 h |
 | Numerical and runtime pilot | 2–4 h |
-| Analog-PVT screen | 1–3 h |
-| MC200 packed static | 1–3 h |
-| MC200 FAST64 | 6–12 h |
-| TT plus worst-PVT exact static | 2–6 h |
+| Analog-process-voltage-temperature screen | 1–3 h |
+| 200-sample Monte Carlo mismatch simulation packed static | 1–3 h |
+| 200-sample Monte Carlo mismatch simulation 64-frame dynamic simulation | 6–12 h |
+| typical-typical process corner plus worst-process-voltage-temperature exact static | 2–6 h |
 | Eight-seed exact static validation | 4–8 h |
 | Noise calibration and probability testing | 2–5 h |
-| FAST256 closure | 2–5 h |
-| PVT×MC tail tests | 1–3 h |
+| 256-frame dynamic simulation closure | 2–5 h |
+| process-voltage-temperature and Monte Carlo mismatch interaction simulation tail tests | 1–3 h |
 | Aggregation, plots, and reporting | 2–4 h |
 
 Expected critical path:
@@ -2092,7 +2059,7 @@ The methodology in this plan is based on these project sources and engineering p
 - the uploaded measurement-definition discussion file: full-transition search, ramp correlation, selected-transition probability, fixed-virtual-die Monte Carlo, and endpoint/best-fit INL;
 - Behzad Razavi, *Analysis and Design of Data Converters*: ADC static and dynamic metrics, SAR nonidealities, comparator noise and offset, and CDAC mismatch;
 - A23 OnChipSAR schematic review: low-cost dynamic testing near `Fs/10` and a 64-point FFT example;
-- Peter Kinget, *Design Databases and More*: source integrity, simulation configuration, scheduling, and evidence-traceability discipline.
+- Peter Kinget, *Design Databases and More*: source control, simulation configuration, and scheduling discipline.
 
 ---
 
@@ -2101,7 +2068,7 @@ The methodology in this plan is based on these project sources and engineering p
 Codex may terminate the task only after every required artifact exists:
 
 ```text
-complete source-integrity manifest
+complete read-only source set
 frozen configurations and seed lists
 all mandatory numerical CSV files
 all required DNL, INL, and FFT plots in vector, PNG, and CSV form

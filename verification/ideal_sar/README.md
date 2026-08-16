@@ -3,7 +3,8 @@
 This directory is an isolated clean-room ideal testbench for the A44 8-bit,
 2-MS/s, 3.3-V fully differential SAR ADC. It implements the execution
 specification in `D:\PICO\CODEX_IDEAL_SAR_ADC_TESTBENCH_VALIDATION.md`
-without using process mismatch, Monte Carlo, PVT, or schematic nonidealities.
+without using process mismatch, Monte Carlo, process-voltage-temperature
+corners, or schematic nonidealities.
 
 The single source of configuration is `config/sar_adc.yaml`. All Python models,
 stimulus generators, checkers, plots, and report builders load that file.
@@ -49,7 +50,6 @@ Generated results:
 - `results/csv/coverage_matrix.csv`
 - `results/csv/repeatability_check.csv`
 - `results/metrics.json`
-- `results/manifest.json`
 - `results/plots/`
 - `results/logs/`
 - `report/ideal_sar_adc_testbench_validation.md`

@@ -1,13 +1,12 @@
-# A44 FAST64 D3 MC10 One-Hour Selected-Seed Simulation Plan V10
+# A44 One-Hour Selected-Seed Plan for a 10-Sample Monte Carlo Mismatch and Qualified Temporal-Noise 64-Frame Dynamic Simulation (Version 10)
 
 **Document ID:** `A44_CODEX_FAST64_D3_MC10_ONE_HOUR_PLAN_V10`  
 **Plan status:** `READY_FOR_EXECUTION_NOT_RUN`  
-**Purpose:** 在当前主机和 Chipathon login 环境中，以 MC200 中固定选择的
-10 个 seed 完成 1 小时以内的 FAST64 D3 双频带快速回归。  
-**Evidence class:** `FAST64_D3_SELECTED_SEED_QUICK_REGRESSION_MODEL_CONDITIONAL`  
-**This is not:** MC200 良率估计、生产良率声明、动态 signoff 或完整角落覆盖。
+**Purpose:** 在当前主机和 Chipathon login 环境中，以 200 样本蒙特卡洛失配仿真中固定选择的
+10 个 seed 完成 1 小时以内的蒙特卡洛失配与合格时域噪声组合类别的 64 帧动态仿真双频带快速回归。
+**This is not:** 200 样本蒙特卡洛失配仿真良率估计、生产良率声明、动态 signoff 或完整角落覆盖。
 
-## 1. 固定 MC10
+## 1. 固定 10 样本蒙特卡洛失配仿真
 
 ```text
 1,21,44,48,64,115,129,166,170,183
@@ -40,7 +39,7 @@ maximum ngspice processes  = 4
 | 170 | 46.91 dB 阈值上方，LOW 侧 | LOW | 46.931189 | VALID_PASS | VALID_PASS |
 | 183 | WORST_BAND SNDR P10 | NEAR_NYQUIST | 44.250496 | VALID_PASS | VALID_FAIL |
 
-相对 MC8，新增：
+相对 8 样本蒙特卡洛失配仿真，新增：
 
 ```text
 seed 115 = NEAR_NYQUIST threshold-above sample
@@ -75,7 +74,7 @@ interpreter          = /foss/tools/bin/python3
 /foss/designs/manual_goal/verification/A44_FAST64_D3_MC10_1H_V10/
 ```
 
-V7、V8、MC8 V9 和 MC8 V9 exact 包保持只读。新目录开始时必须满足：
+V7、V8、8 样本蒙特卡洛失配仿真 V9 和 8 样本蒙特卡洛失配仿真 V9 exact 包保持只读。新目录开始时必须满足：
 
 ```text
 no dynamic_master.csv
@@ -96,20 +95,20 @@ no stale RUNNING state
 
 ## 6. 实测驱动的时间预算
 
-MC8 exact 实测用于 8 个已有 seed；V8 MC12 实测用于新增 seed 115 和 166。
+8 样本蒙特卡洛失配仿真 exact 实测用于 8 个已有 seed；第 8 版 12 样本蒙特卡洛失配仿真实测用于新增 seed 115 和 166。
 
 | Seed | 时间依据 | Worker | 双频带时间 (s) | 预计开始 (min) | 预计完成 (min) |
 |---:|---|---:|---:|---:|---:|
-| 1 | MC8 exact | 1 | 743.013 | 0.000 | 12.384 |
-| 21 | MC8 exact | 2 | 900.289 | 0.000 | 15.005 |
-| 44 | MC8 exact | 3 | 749.628 | 0.000 | 12.494 |
-| 48 | MC8 exact | 4 | 967.506 | 0.000 | 16.125 |
-| 64 | MC8 exact | 1 | 610.285 | 12.384 | 22.555 |
-| 115 | V8 MC12 | 3 | 1053.528 | 12.494 | 30.053 |
-| 129 | MC8 exact | 2 | 550.381 | 15.005 | 24.178 |
-| 166 | V8 MC12 | 4 | 768.560 | 16.125 | 28.934 |
-| 170 | MC8 exact | 1 | 479.780 | 22.555 | 30.551 |
-| 183 | MC8 exact | 2 | 381.376 | 24.178 | 30.534 |
+| 1 | 8-sample Monte Carlo mismatch simulation exact | 1 | 743.013 | 0.000 | 12.384 |
+| 21 | 8-sample Monte Carlo mismatch simulation exact | 2 | 900.289 | 0.000 | 15.005 |
+| 44 | 8-sample Monte Carlo mismatch simulation exact | 3 | 749.628 | 0.000 | 12.494 |
+| 48 | 8-sample Monte Carlo mismatch simulation exact | 4 | 967.506 | 0.000 | 16.125 |
+| 64 | 8-sample Monte Carlo mismatch simulation exact | 1 | 610.285 | 12.384 | 22.555 |
+| 115 | version 8 12-sample Monte Carlo mismatch simulation | 3 | 1053.528 | 12.494 | 30.053 |
+| 129 | 8-sample Monte Carlo mismatch simulation exact | 2 | 550.381 | 15.005 | 24.178 |
+| 166 | version 8 12-sample Monte Carlo mismatch simulation | 4 | 768.560 | 16.125 | 28.934 |
+| 170 | 8-sample Monte Carlo mismatch simulation exact | 1 | 479.780 | 22.555 | 30.551 |
+| 183 | 8-sample Monte Carlo mismatch simulation exact | 2 | 381.376 | 24.178 | 30.534 |
 
 ```text
 measured worker-time sum          = 120.072 min
@@ -117,7 +116,7 @@ nominal four-worker wall          = 30.551 min
 simulation with 25% margin        = 38.189 min
 package, preflight and gate       = 3.000 min
 comparison and three spectra      = 5.000 min
-audit, report and compact seal    = 3.000 min
+result consolidation and report  = 3.000 min
 conservative total                = 49.189 min
 one-hour reserve                  = 10.811 min
 ```
@@ -126,13 +125,13 @@ one-hour reserve                  = 10.811 min
 
 | 总时钟 | 动作 | 门禁 |
 |---|---|---|
-| 0:00-0:03 | 建立独立包、预检、回归门禁自测 | 任一 hash 失败立即停止 |
-| 0:03-0:42 | 4 workers 执行 MC10 | 20 records；不追加 seed |
+| 0:00-0:03 | 建立独立包、预检、回归门禁自测 | 任一依赖版本不匹配立即停止 |
+| 0:03-0:42 | 4 workers 执行 10 样本蒙特卡洛失配仿真 | 20 records；不追加 seed |
 | 0:42-0:47 | 合并 CSV、严格比较、生成 P1/P5/P10 频谱 | 不做 raw replay |
-| 0:47-0:50 | 最终状态、审计、compact manifest | 不扩展输出 |
+| 0:47-0:50 | 最终状态、结果汇总 | 不扩展输出 |
 | 0:50-1:00 | 截止缓冲 | 不再启动仿真 |
 
-到 55 分钟仍未结束时，先核对 PID/PGID，再受控停止并保留退出证据，状态写为
+到 55 分钟仍未结束时，先核对 PID/PGID，再受控停止并保留退出记录，状态写为
 incomplete，绝不改写为 PASS。
 
 ## 8. 执行命令
@@ -145,7 +144,7 @@ PYTHONPATH=scripts /foss/tools/bin/python3 scripts/run_v7.py \
   --workers 4
 ```
 
-V10 finalizer 必须使用显式 MC10 required-seed 列表和严格逐行 nested `all()`
+V10 finalizer 必须使用显式 10 样本蒙特卡洛失配仿真 required-seed 列表和严格逐行 nested `all()`
 门禁。
 
 ## 9. 必需输出
@@ -154,16 +153,12 @@ V10 finalizer 必须使用显式 MC10 required-seed 列表和严格逐行 nested
 csv/dynamic_master_mc10.csv
 csv/dynamic_codes_mc10.csv
 csv/selected_seed_comparison_mc10.csv
-csv/representative_spectra_manifest.csv
 plots/P1:  seed 21  LOW
 plots/P5:  seed 129 LOW
 plots/P10: seed 183 NEAR_NYQUIST
-results/preflight_audit.json
 results/regression_gate_self_test.json
 results/quick_status.json
-results/quick_audit.json
 results/runtime_validation_timing.json
-manifests/compact_manifest_sha256.csv
 reports/FINAL_MC10_ONE_HOUR_REPORT.md
 ```
 
@@ -172,7 +167,7 @@ reports/FINAL_MC10_ONE_HOUR_REPORT.md
 ### Gate A: Preflight
 
 ```text
-frozen dependency hashes match
+frozen dependency versions match
 qualification cache matches
 production sources = 113 / 113
 job matrix = 20 / 20 PENDING
@@ -189,7 +184,7 @@ strict regression-gate self-test = PASS
 1280 / 1280 frames valid
 no timeout, clipping, missing frame or duplicate frame
 Parseval passes for every record
-input mismatch/noise checksums match
+input mismatch realizations and noise sequences match
 ```
 
 ### Gate C: Strict Regression
@@ -199,19 +194,19 @@ input mismatch/noise checksums match
 ```text
 state unchanged
 hard-pass classification unchanged
-mismatch checksum unchanged
-noise checksum unchanged
-compact code checksum unchanged
+mismatch realization unchanged
+noise sequence unchanged
+compact code stream unchanged
 abs(delta SNDR) <= 0.10 dB
 abs(delta SNR)  <= 0.20 dB
 abs(delta ENOB) <= 0.02 bit
 ```
 
-### Gate D: Artifact and Time
+### Gate D: Outputs and Time
 
 ```text
 three required spectra exist and are non-empty
-compact manifest matches all declared files
+all required outputs exist and are non-empty
 end-to-end elapsed <= 3600 s
 ```
 
@@ -225,7 +220,7 @@ BLOCKED_STALE_QUALIFICATION_CACHE
 BLOCKED_REGRESSION_GATE_IMPLEMENTATION
 ```
 
-时间验证、执行完整性和严格回归必须分别报告。即使 20/20 仿真按时完成，
+运行时间结果、执行完成情况和严格回归必须分别报告。即使 20/20 仿真按时完成，
 只要比较超差，也必须记录 `execution_complete=true`、
 `time_validation_pass=true`、`regression_pass=false`，不能声明性能 PASS。
 
@@ -239,4 +234,4 @@ dynamic_signoff_claim = false
 ```
 
 该集合对尾部、阈值邻近和资格锚点有意识地过采样，适合快速回归，不可替代
-MC200 良率结果。
+200 样本蒙特卡洛失配仿真良率结果。

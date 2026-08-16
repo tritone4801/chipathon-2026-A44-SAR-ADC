@@ -10,7 +10,8 @@ This validation phase deliberately models only:
 - deterministic digital interface behavior.
 
 It deliberately excludes process variation, capacitor mismatch, comparator
-offset/noise, sampling noise, jitter, reference bounce, PVT corners, and layout
+offset/noise, sampling noise, jitter, reference bounce,
+process-voltage-temperature corners, and layout
 parasitics. Those effects belong to later schematic, layout, and post-layout
 verification stages.
 

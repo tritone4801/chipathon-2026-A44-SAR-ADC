@@ -1,7 +1,7 @@
-# 理想 SAR ADC 结果证据索引
+# 理想 SAR ADC 结果索引
 
 本文是 `verification/ideal_sar/results/` 的中文审阅索引，对齐
-`D:\PICO\CODEX_IDEAL_SAR_ADC_TESTBENCH_VALIDATION.md` 中对结果文件、日志、manifest、
+`D:\PICO\CODEX_IDEAL_SAR_ADC_TESTBENCH_VALIDATION.md` 中对结果文件、日志、
 时域波形和频谱图的要求。本文不重新定义测量结果；所有数值以自动生成的
 `metrics.json`、`csv/metrics.csv`、独立 CSV、日志和 PNG 图为准。
 
@@ -10,7 +10,7 @@
 - 最终判定由 `../report/ideal_sar_adc_testbench_validation.md` 给出。
 - 权威全量运行日志为 `logs/run_all_container.log`，应包含 `go_no_go: GO` 和 `EXIT_CODE=0`。
 - 单一配置源为 `../config/sar_adc.yaml`。
-- 主指标表为 `csv/metrics.csv`，覆盖矩阵为 `csv/coverage_matrix.csv`，文件/hash 清单为 `manifest.json`。
+- 主指标表为 `csv/metrics.csv`，覆盖矩阵为 `csv/coverage_matrix.csv`。
 - 动态代表性测试使用 `0.8823529411764706` FS peak，即冻结规范的 `3.0 Vpp,diff` 输入；phase=0.37 rad、M=65536、无窗 coherent FFT。
 - 两个 canonical 输入 bin 为 low-frequency `k=997` 和 near-Nyquist `k=32113`。
 
@@ -19,9 +19,8 @@
 | 路径 | 用途 |
 |---|---|
 | `metrics.json` | 各阶段结构化结果、工具版本、GO 状态、派生常数和动态频谱摘要。 |
-| `manifest.json` | 配置、工具版本、git commit 和关键文件 SHA-256。 |
 | `csv/metrics.csv` | 主指标表，包含 category、metric、variant、condition、target、measured、status、raw_data_path、plot_path 等字段。 |
-| `csv/coverage_matrix.csv` | 文档要求到证据文件的 PASS/FAIL 对照。 |
+| `csv/coverage_matrix.csv` | 文档要求到结果文件的 PASS/FAIL 对照。 |
 | `csv/adc_input_output_time_*.csv` | 代表性时域输入/输出数据，含采样时间、`EOC_INT` 时间、VINP/VINN、vdiff、输出码、十六进制码、经理想 DAC 转换后的输出电压、重构电压、量化误差、`CLKS` 下降沿采样标记和 `EOC_INT`。输入/输出波形比较的正式方法是：将 `EOC_INT` 更新后的 DOUT 经过理想重构 DAC 得到 `ideal_DAC(DOUT)`，再与对应采样输入 `x[n]` 比较。 |
 | `csv/adc_dac_reconstruction_low_frequency.csv` | 仅使用 low-frequency 输入的 DAC 重构对比数据；这是优先查看的输入/输出波形比较图，因为它清楚展示采样输入、`EOC_INT` 更新后的 DOUT、理想 DAC(DOUT) 输出与量化误差之间的对应关系。 |
 | `csv/adc_output_spectrum_*.csv` | 代表性输出频谱逐 bin 数据，含频率、线性功率、dBFS、fundamental/harmonic/largest-spur 分类。 |
@@ -32,7 +31,7 @@
 | `logs/*.log` | preflight、ngspice、cocotb、power proxy 和全量容器运行日志。 |
 | `raw/*` | 原始动态输出码、量化误差、cocotb XML 和 power proxy waveform。 |
 
-## 关键动态证据
+## 关键动态结果
 
 | 项目 | low-frequency | near-Nyquist |
 |---|---|---|
@@ -66,7 +65,6 @@
 - 检查 `logs/run_all_container.log` 是否包含 `go_no_go: GO` 与 `EXIT_CODE=0`。
 - 检查 `csv/coverage_matrix.csv` 是否全部为 `PASS`，尤其是 `DYN-06` 到 `DYN-08`。
 - 检查 `csv/metrics.csv` 是否列出 SQNR、SQDR、SQNDR、输入/输出波形和输出频谱。
-- 检查 `manifest.json` 是否包含新增 CSV 与 PNG 的 SHA-256。
 - 抽查 `plots/adc_dac_reconstruction_low_frequency.png` 是否把 ideal DAC(DOUT) 作为输入/输出波形比较方法，并展示 sampled input、`EOC_INT` 更新后的 DOUT 和 ideal DAC(DOUT) 的对应关系。
 - 抽查 `plots/adc_input_output_time_*.png` 与对应 `csv/adc_input_output_time_*.csv` 是否一致。
 - 抽查 `plots/adc_fft_*.png` 与对应 `csv/adc_output_spectrum_*.csv` 是否一致。

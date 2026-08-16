@@ -1,177 +1,145 @@
-# A44 SAR ADC R2 Progress and Performance
+# Team A44 Successive-Approximation-Register Analog-to-Digital Converter Progress and Performance
 
 ## Status summary
 
-The current resized SAR ADC circuit set and the fixed verification campaigns
-have been assembled into the self-contained package at
-[`verification/a44_r2`](../verification/a44_r2).
+The current resized converter circuit set and the fixed simulation campaigns
+are assembled under
+[the current electrical simulation package](../verification/a44_r2).
 
 The following activities are complete:
 
-- current resized circuit collection, including four `.sch` files and five
-  `.sym` files;
-- MC200 TT LOW/W4 execution;
-- selected PVT3 MC20 LOW/W4 execution;
-- six unique FULL255 static transfer-curve executions;
-- CACE 2.9 Xschem-to-ngspice package preflight;
-- 130-record quick reproducibility run;
-- full-campaign staging dry-run;
-- package source-copy, dependency-closure, root-layout, and SHA-256 audits.
+- collection of the current resized circuit files;
+- a 200-sample Monte Carlo mismatch dynamic simulation at the
+  typical-typical process corner, 3.3 volts, and 27 degrees Celsius;
+- a three-corner process-voltage-temperature dynamic simulation using 20
+  selected Monte Carlo mismatch samples per corner;
+- six unique full 255-transition static transfer-curve simulations;
+- a Circuit Automatic Characterization Engine Xschem-to-ngspice package
+  preflight;
+- a 130-record quick result-reproduction run;
+- staging of the complete campaign without dispatching the simulation matrix.
 
-The final campaign disposition is:
-
-```text
-COMPLETE_AS_EXECUTED_PERFORMANCE_FAIL_NO_PROMOTION
-```
-
-This status separates execution completeness from performance qualification.
-All prescribed matrices were completed. FULL255 static passes on its sole
-qualification case, seed 44 TT; the current no-promotion disposition remains
-because the MC200 hard-dynamic gate has three failures.
+Every prescribed simulation has executed. The present design does not meet
+the full electrical acceptance criteria and is not promoted. The full static
+transfer curve passes on its sole qualification case, seed 44 at the
+typical-typical process corner, 3.3 volts, and 27 degrees Celsius. The
+no-promotion disposition remains because the 200-sample Monte Carlo mismatch
+dynamic simulation has three hard-dynamic failures.
 
 ## Fixed simulation methods
 
-### MC200 TT LOW/W4
+### 200-sample Monte Carlo mismatch dynamic simulation at the typical-typical process corner
 
-- Method: `FAST64_SS_W4`
-- PVT: TT, 3.3 V, 27 degrees C
-- Signal scope: LOW band
-- Maximum transient step: 50 ps
-- Population: mismatch seeds 1 through 200
-- Event-noise seed: `100000 + mismatch seed`
-- Frames per job: 68
-- Startup/diagnostic frames: 0 through 3
-- Formal W4 window: frames 4 through 67, 64 records
+- Operating point: typical-typical transistor models, 3.3 volts, and
+  27 degrees Celsius.
+- Signal scope: low differential-input band.
+- Maximum transient step: 50 picoseconds.
+- Population: mismatch seeds 1 through 200.
+- Event-noise seed: 100000 plus the mismatch seed.
+- Conversions per sample: 68.
+- Startup and diagnostic conversions: 0 through 3.
+- Formal steady-state measurement window: conversions 4 through 67,
+  providing 64 retained conversion records.
 
-The MC200 result is a TT LOW-band population. It is not a two-band die-level
-yield result.
+This is a low-input-band population result at one operating point. It is not a
+two-band die-level yield result.
 
-### PVT3 selected MC20 LOW/W4
+### Three-corner process-voltage-temperature dynamic simulation with 20 selected samples per corner
 
-- Method: the same `FAST64_SS_W4` method and 50 ps maximum step
-- Formal window: frames 4 through 67
-- Corners: TT/3.3 V/27 degrees C, SS/3.0 V/125 degrees C, and
-  FF/3.6 V/-40 degrees C
-- Population: 20 selected seeds per corner, 60 records total
+- Dynamic method: the same 68-conversion method, 50-picosecond maximum step,
+  and formal steady-state conversions 4 through 67 used above.
+- Typical-typical corner: 3.3 volts and 27 degrees Celsius.
+- Slow-slow corner: 3.0 volts and 125 degrees Celsius.
+- Fast-fast corner: 3.6 volts and minus 40 degrees Celsius.
+- Population: 20 selected mismatch seeds per corner, for 60 completed jobs.
 
-The selected MC20 sets are diagnostic corner samples. They are not MC200
-populations and cannot support performance PASS, production-yield, promotion,
-or signoff claims. PVT results are reported for diagnostic visibility only and
-are not a PASS basis.
+These selected samples provide diagnostic corner visibility. They are not a
+200-sample population and cannot support performance acceptance, production
+yield, promotion, or signoff claims.
 
-### FULL255 static
+### Full 255-transition static transfer-curve simulation
 
-Each static curve uses a formal 255-transition search. The sole FULL255 static
-qualification case is seed 44 at TT/3.3 V/27 degrees C (`S044_TT`). It is
-computed once and reused in the four-seed TT view and the seed-44 PVT view
-after exact method and hash checks.
+Each static curve uses a formal search over all 255 code transitions. Seed 44
+at the typical-typical process corner, 3.3 volts, and 27 degrees Celsius is the
+sole qualification case. It is computed once and reused in the typical-corner
+multi-seed view and the seed-44 process-voltage-temperature view.
 
-The other TT seeds and the seed-44 SS/FF curves are diagnostic-only. Their
-threshold outcomes may be recorded, but they cannot establish or overturn
-FULL255 qualification PASS. The package contains six unique formal curves,
-while only `S044_TT` is used for qualification.
+The other typical-corner seeds and the seed-44 slow-slow and fast-fast corner
+curves are diagnostic only. Their threshold outcomes may be reported, but they
+cannot establish or overturn the static qualification result.
 
 ## Dynamic performance
 
-### MC200 TT LOW/W4
+### 200-sample Monte Carlo mismatch dynamic simulation
 
 | Metric | Value |
 | --- | ---: |
-| Completed records | 200/200 |
-| Exceptions | 0 |
-| Hard-dynamic PASS | 197 |
-| Hard-dynamic FAIL | 3 |
-| Failing seeds | 65, 68, 141 |
-| SNDR P1, Type-7 | 46.8729 dB |
-| SNDR P5, Type-7 | 47.2961 dB |
-| SNDR P10, Type-7 | 47.4636 dB |
-| SNDR P50, Type-7 | 48.4065 dB |
+| Completed samples | 200/200 |
+| Execution exceptions | 0 |
+| Hard-dynamic passes | 197 |
+| Hard-dynamic failures | 3 |
+| Failing mismatch seeds | 65, 68, 141 |
+| Signal-to-noise-and-distortion ratio, first percentile | 46.8729 decibels |
+| Signal-to-noise-and-distortion ratio, fifth percentile | 47.2961 decibels |
+| Signal-to-noise-and-distortion ratio, tenth percentile | 47.4636 decibels |
+| Signal-to-noise-and-distortion ratio, median | 48.4065 decibels |
 
-Authoritative result directory:
-[`02_SIMULATION_RESULTS/01_MC200_TT_LOW_W4`](../verification/a44_r2/02_SIMULATION_RESULTS/01_MC200_TT_LOW_W4)
+Result files are under
+[the 200-sample dynamic simulation directory](../verification/a44_r2/02_SIMULATION_RESULTS/01_MC200_TT_LOW_W4).
 
-### PVT3 selected MC20 LOW/W4
+### Three-corner process-voltage-temperature dynamic simulation
 
-| Corner | Completion | Hard-dynamic PASS | SNDR P50 |
+| Process corner and operating point | Completion | Hard-dynamic passes | Median signal-to-noise-and-distortion ratio |
 | --- | ---: | ---: | ---: |
-| TT, 3.3 V, 27 degrees C | 20/20 | 19/20 | 48.4048 dB |
-| SS, 3.0 V, 125 degrees C | 20/20 | 20/20 | 48.3026 dB |
-| FF, 3.6 V, -40 degrees C | 20/20 | 20/20 | 48.6010 dB |
+| Typical-typical, 3.3 volts, 27 degrees Celsius | 20/20 | 19/20 | 48.4048 decibels |
+| Slow-slow, 3.0 volts, 125 degrees Celsius | 20/20 | 20/20 | 48.3026 decibels |
+| Fast-fast, 3.6 volts, minus 40 degrees Celsius | 20/20 | 20/20 | 48.6010 decibels |
 
-Authoritative result directory:
-[`02_SIMULATION_RESULTS/02_PVT3_MC20_LOW_W4`](../verification/a44_r2/02_SIMULATION_RESULTS/02_PVT3_MC20_LOW_W4)
+Result files are under
+[the three-corner selected-sample directory](../verification/a44_r2/02_SIMULATION_RESULTS/02_PVT3_MC20_LOW_W4).
 
 ## Static performance
 
-| Case | PVT | Seed | Maximum absolute DNL | Maximum absolute INL | Missing codes | Reversals | Qualification use |
-| --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| S044_TT | TT/3.3 V/27 degrees C | 44 | 0.610351 LSB | 0.686645 LSB | 0 | 0 | **PASS — sole qualification basis** |
-| S116_TT | TT/3.3 V/27 degrees C | 116 | 0.422577 LSB | 0.358017 LSB | 0 | 0 | Diagnostic only |
-| S180_TT | TT/3.3 V/27 degrees C | 180 | 0.469508 LSB | 0.451902 LSB | 0 | 0 | Diagnostic only |
-| S106_TT | TT/3.3 V/27 degrees C | 106 | 0.146719 LSB | 0.093900 LSB | 0 | 0 | Diagnostic only |
-| S044_SS | SS/3.0 V/125 degrees C | 44 | 1.496350 LSB | 1.572634 LSB | 1 | 1 | Diagnostic only; threshold failure is not a qualification gate |
-| S044_FF | FF/3.6 V/-40 degrees C | 44 | 0.328772 LSB | 0.416836 LSB | 0 | 0 | Diagnostic only |
+| Simulation case | Seed | Maximum absolute differential nonlinearity | Maximum absolute integral nonlinearity | Missing codes | Reversals | Qualification use |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| Typical-typical process, 3.3 volts, 27 degrees Celsius | 44 | 0.610351 least-significant-bit units | 0.686645 least-significant-bit units | 0 | 0 | Pass; sole qualification basis |
+| Typical-typical process, 3.3 volts, 27 degrees Celsius | 116 | 0.422577 least-significant-bit units | 0.358017 least-significant-bit units | 0 | 0 | Diagnostic only |
+| Typical-typical process, 3.3 volts, 27 degrees Celsius | 180 | 0.469508 least-significant-bit units | 0.451902 least-significant-bit units | 0 | 0 | Diagnostic only |
+| Typical-typical process, 3.3 volts, 27 degrees Celsius | 106 | 0.146719 least-significant-bit units | 0.093900 least-significant-bit units | 0 | 0 | Diagnostic only |
+| Slow-slow process, 3.0 volts, 125 degrees Celsius | 44 | 1.496350 least-significant-bit units | 1.572634 least-significant-bit units | 1 | 1 | Diagnostic only; threshold failure is not a qualification gate |
+| Fast-fast process, 3.6 volts, minus 40 degrees Celsius | 44 | 0.328772 least-significant-bit units | 0.416836 least-significant-bit units | 0 | 0 | Diagnostic only |
 
-FULL255 static therefore qualifies as PASS based only on `S044_TT`. The SS and
-FF curves are PVT diagnostics and do not contribute to a PASS/FAIL or promotion
-decision.
+Result files are under
+[the simulation-results directory](../verification/a44_r2/02_SIMULATION_RESULTS).
 
-Authoritative result directory:
-[`02_SIMULATION_RESULTS/03_FULL255_STATIC`](../verification/a44_r2/02_SIMULATION_RESULTS/03_FULL255_STATIC)
+## Result reproduction
 
-## Reproducibility and integrity
+The Circuit Automatic Characterization Engine preflight executed the
+Xschem-to-ngspice path and produced a final voltage of 1.250 volts, inside the
+allowed range of 1.249 to 1.251 volts.
 
-The CACE 2.9 preflight executed the Xschem-to-ngspice path and passed with
-`final_v = 1.250 V`, inside the allowed 1.249 V to 1.251 V range.
+The quick result-reproduction run compares:
 
-The quick reproducibility run compares:
+- 25 retained records from the 200-sample Monte Carlo mismatch dynamic
+  simulation;
+- 75 retained records from the three-corner selected-sample dynamic
+  simulation;
+- 30 transition records from the six full static transfer curves.
 
-- 25/25 MC200 records;
-- 75/75 PVT3 records;
-- 30/30 FULL255 static records.
-
-The aggregate result is 130/130 matches with status:
-
-```text
-PASS_QUICK_REPRODUCIBILITY_ALL_LANES
-```
-
-The package audit also reports:
-
-- package integrity: PASS;
-- R1-to-R2 relocation: 3,086 exact copies plus eight declared path-only
-  portability patches;
-- generated-deck dependency closure: PASS;
-- package-owned GF180 ngspice model hashes: PASS;
-- SHA-256 manifest readback: 4,846 records, zero mismatches;
-- full-run staging: `STAGED_DRY_RUN_PASS`.
-
-Primary audit files:
-
-- [`PACKAGE_STATUS.json`](../verification/a44_r2/05_PACKAGE_AUDIT/PACKAGE_STATUS.json)
-- [`manifest_readback_latest.json`](../verification/a44_r2/05_PACKAGE_AUDIT/manifest_readback_latest.json)
-- [`dependency_closure_audit.json`](../verification/a44_r2/05_PACKAGE_AUDIT/dependency_closure_audit.json)
-- [`source_copy_audit.json`](../verification/a44_r2/05_PACKAGE_AUDIT/source_copy_audit.json)
-- [`package_manifest_sha256.csv`](../verification/a44_r2/05_PACKAGE_AUDIT/package_manifest_sha256.csv)
-
-The files under `verification/a44_r2` are frozen, hash-audited evidence. Where
-the frozen `PACKAGE_STATUS.json` describes the diagnostic seed-44 SS curve as a
-promotion blocker, this repository-level report is the current governing
-interpretation: only seed 44 TT is used for FULL255 qualification, and PVT is
-not a PASS/FAIL basis. The frozen file is retained unchanged to preserve audit
-integrity.
+All 130 compared records match their stored reference values.
 
 ## Claim boundaries and remaining work
 
-The following statements are not supported by this package:
+The package does not support claims of:
 
 - two-band die-level yield;
 - production-yield qualification;
-- layout or PEX signoff;
+- layout or parasitic-extraction signoff;
 - silicon validation;
 - tapeout readiness;
-- full ADC signoff.
+- full-converter signoff.
 
-The unresolved electrical items are the three MC200 hard-dynamic failures.
-The seed-44 SS FULL255 threshold failure remains useful diagnostic evidence but
-is not a qualification failure and does not block promotion.
+The unresolved electrical items are the three hard-dynamic failures in the
+200-sample Monte Carlo mismatch dynamic simulation. The seed-44 slow-slow
+static threshold failure remains useful diagnostic information, but it is not
+the governing static qualification case.

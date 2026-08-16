@@ -1,8 +1,7 @@
 # MOS Mismatch Sanity Test
 
 - Generated UTC: `2026-07-01T19:32:43+00:00`
-- Evidence class: `PDK_MODEL_SANITY_TEST`
-- Model provenance tier: `T0` GF180 ngspice MOS local mismatch path.
+- Model: GF180 ngspice MOS local mismatch path.
 - Observable: relative drain-current mismatch between identically biased, same-size device pairs.
 - Pair count per case: `200`
 - Pair metrics CSV: `D:\PICO\SAR_SUM_process_typicality_20260701_initial_gate\csv\mos_mismatch_pair_metrics.csv`
@@ -34,4 +33,4 @@
 | `pmos_negative_mismatch_off_area1` | PMOS | 1 | 0.0 | 0 | 0 |
 | `pmos_positive_mismatch_x2_area1` | PMOS | 1 | 2.0 | 0.0404118 | 0.119954 |
 
-Claim boundary: this proves the primitive MOS local mismatch model responds to mismatch enable/scale and device area. It does not provide comparator offset yield or ADC MC signoff.
+Claim boundary: this proves the primitive MOS local mismatch model responds to mismatch enable/scale and device area. It does not provide comparator offset yield or ADC Monte Carlo mismatch simulation signoff.
