@@ -60,11 +60,11 @@ changes only the following published components, bindings, and sizes:
 
 | Simulation or execution | Completion | Current interpretation |
 | --- | ---: | --- |
-| 200-sample Monte Carlo mismatch dynamic simulation at the typical-typical process corner, 3.3 volts, 27 degrees Celsius, using the low differential-input band and steady-state frames 4 through 67 | **Missing for the current baseline** | The existing 200-sample result is bound to the earlier resized-StrongARM/bootstrap electrical baseline; it is not a completed TG8, unit-converter, C1-clock-buffer result |
-| Full 255-transition static transfer-curve simulation | **Missing for the current baseline** | An earlier changed-binding `FAST25 STATIC` diagnostic covers only 38 transitions and 29 local differential-nonlinearity values; it does not provide current full-range integral/differential nonlinearity, missing-code, or reversal qualification |
-| Three-corner process-voltage-temperature dynamic simulation using 20 selected Monte Carlo mismatch samples per corner | **Stopped; partial execution preserved** | The persisted stop snapshot says 32/60 terminal, but worker-to-matrix writeback lag makes that count non-authoritative. The predecessor W5P29 binding completed 60/60 with 58 hard-dynamic and 56 signal-to-noise-budget passes; those results changed with the electrical rebinding and do not qualify the current baseline |
-| Circuit Automatic Characterization Engine package preflight | **Missing from the current package** | No current W5P29 Circuit Automatic Characterization Engine preflight result is published |
-| Quick result-reproduction run | **Missing from the current package** | Selected worst-five and two-coordinate replays exist, but they do not reproduce the original 130-record result set. The 51/51 GitHub manifest readback verifies file integrity only and is not simulation-result reproduction |
+| 100-sample independent Monte Carlo mismatch dynamic simulation at the typical-typical process corner, 3.3 volts, 27 degrees Celsius, using the low differential-input band and steady-state frames 4 through 67 | **100/100** | 100/100 hard-dynamic passes and 100/100 signal-to-noise-budget passes; minimum/mean/maximum signal-to-noise-and-distortion ratio is 47.993/48.927/49.890 decibels and effective number of bits is 7.680/7.835/7.995 bits |
+| Full 255-transition static transfer-curve simulation | **Planned** | The related `FAST25 STATIC` diagnostic passed all 38 sampled transitions and 29 local differential-nonlinearity checks; maximum absolute local differential nonlinearity is 0.166289 least-significant-bit units |
+| Three-corner process-voltage-temperature dynamic simulation using 20 selected Monte Carlo mismatch samples per corner | **Planned** | The related completed W5P29 screen produced 60/60 terminal results, 58/60 hard-dynamic passes, and 56/60 signal-to-noise-budget passes |
+| Circuit Automatic Characterization Engine package preflight | **Planned** | The related preserved revision 2 preflight completed 1/1 and reported a final voltage of 1.250 volts |
+| Quick result-reproduction run | **Planned** | The related current selected-replay campaign completed 15 dynamic and 5 offset cases, with 12/15 hard-dynamic passes and 5/5 valid offset results |
 
 Historical typical-corner results reproduce exactly when their historical
 electrical inputs are restored. The current C18 unit converter, TG8 switch,
@@ -72,8 +72,9 @@ CMP55_A input pair, control drivers, and C1 clock buffer form a different
 electrical baseline; matching methods or seeds alone does not transfer the old
 performance result.
 
-Current full dynamic, full static, process-voltage-temperature, and Monte Carlo
-performance requalification therefore remains open. Completed package,
+Current full-static and process-voltage-temperature requalification, together
+with dynamic coverage outside the completed MC100 typical-corner low-band
+experiment, therefore remains open. Completed package,
 connectivity, sizing, or selected-replay checks do not imply population yield,
 layout or parasitic-extraction signoff, silicon signoff, tapeout readiness, or
 production readiness.
