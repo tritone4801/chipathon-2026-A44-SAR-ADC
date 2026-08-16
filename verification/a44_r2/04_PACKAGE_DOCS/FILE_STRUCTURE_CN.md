@@ -6,48 +6,37 @@
 
 ## 1. 当前电路
 
-`D:\PICO\A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2\01_CURRENT_CIRCUIT_FILES`
+`01_CURRENT_CIRCUIT_FILES` 保存当前调整尺寸后确认的电路版本，包括
+Xschem 原理图和符号、电气 SPICE 子电路、寄存器传输级逻辑与必要配置。
 
-该目录仅保存当前 resizing 后确认的电路版本，包括 `.sch`、`.sym`、电气 SPICE 子电路、RTL 与必要配置。详细逐文件记录见：
+逐文件记录位于 `04_PACKAGE_DOCS/CURRENT_CIRCUIT_FILE_INDEX.csv`。
 
-`04_PACKAGE_DOCS\CURRENT_CIRCUIT_FILE_INDEX.csv`
+## 2. 仿真结果
 
-## 2. 所有仿真结果
+统一结果根目录为 `02_SIMULATION_RESULTS`，其中包括：
 
-统一结果根目录：
+- 200 样本蒙特卡洛失配动态仿真：典型工艺角、3.3 伏、27 摄氏度、低差分输入区间，正式稳态统计窗口为第 4 至第 67 帧；
+- 三工艺电压温度角动态仿真：每个工艺角选择 20 个蒙特卡洛失配样本，覆盖典型工艺角、慢速工艺角和快速工艺角；
+- 完整 255 个码间转换静态传输曲线仿真：共 6 条唯一曲线；
+- 跨仿真结果汇总；
+- Circuit Automatic Characterization Engine 生成的网表与报告；
+- 预运行、快速结果复现、完整矩阵准备和保留的调试输出。
 
-`D:\PICO\A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2\02_SIMULATION_RESULTS`
+逐文件记录位于 `04_PACKAGE_DOCS/SIMULATION_RESULTS_INDEX.csv`。
 
-其下包括：
+## 3. Circuit Automatic Characterization Engine 与仿真工具
 
-- `01_MC200_TT_LOW_W4`：TT LOW/W4 MC200 完整结果。
-- `02_PVT3_MC20_LOW_W4`：TT/SS/FF selected MC20 诊断结果。
-- `03_FULL255_STATIC`：6 条唯一 FULL255 静态曲线。
-- `04_CROSS_CAMPAIGN_SUMMARY`：跨 campaign 汇总。
-- `05_CACE_GENERATED`：CACE 生成 netlist 与报告。
-- `06_RUN_OUTPUTS`：preflight、quick verify、full staging 和保留的调试证据。
+`03_CACE_AND_SIMULATION_TOOLS` 包含：
 
-详细逐文件记录见：
+- Circuit Automatic Characterization Engine 配置、模板和 Xschem 预运行源文件；
+- 当前电气仿真使用的 GF180 ngspice 工艺文件；
+- 快速结果复现、完整矩阵准备和预运行脚本；
+- 统一命令入口 `Makefile`。
 
-`04_PACKAGE_DOCS\SIMULATION_RESULTS_INDEX.csv`
+逐文件记录位于 `04_PACKAGE_DOCS/CACE_AND_TOOLS_INDEX.csv`。
 
-## 3. CACE 与仿真工具
+## 4. 文档
 
-`D:\PICO\A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2\03_CACE_AND_SIMULATION_TOOLS`
-
-- `CACE`：CACE YAML、模板和 Xschem preflight 源文件。
-- `PDK`：本包电气绑定使用的 GF180 ngspice 文件快照。
-- `scripts`：快速验证、完整矩阵 staging、CACE preflight 和包审计脚本。
-- `Makefile`：工具目录内部的统一命令入口。
-
-详细逐文件记录见：
-
-`04_PACKAGE_DOCS\CACE_AND_TOOLS_INDEX.csv`
-
-## 4. 文档与审计
-
-- 文档：`D:\PICO\A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2\04_PACKAGE_DOCS`
-- 审计：`D:\PICO\A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2\05_PACKAGE_AUDIT`
-
-`05_PACKAGE_AUDIT\package_manifest_sha256.csv` 给出包内文件的相对路径、大小和 SHA-256。
+方法、完成矩阵、性能指标、结果位置和运行说明位于
+`04_PACKAGE_DOCS`。
 

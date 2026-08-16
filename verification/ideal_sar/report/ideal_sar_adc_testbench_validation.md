@@ -208,8 +208,7 @@ error, and combined noise plus harmonic closure.
 
 Raw dynamic code streams and quantization-error data are in `results/raw/`.
 Machine-readable summaries are `results/metrics.json` and `results/csv/metrics.csv`.
-All plots are under `results/plots/`. The file/hash manifest is
-`results/manifest.json`.
+All plots are under `results/plots/`.
 
 ## 17. Pass/Fail Criteria
 
@@ -230,7 +229,6 @@ The Chipathon container execution is the authoritative GO evidence for this idea
 - `results/README.md`
 - `results/README.zh-CN.md`
 - `results/csv/coverage_matrix.csv`
-- `results/manifest.json`
 - `results/metrics.json`
 - `results/csv/preflight_tools.csv`
 - `results/csv/functional_vectors.csv`

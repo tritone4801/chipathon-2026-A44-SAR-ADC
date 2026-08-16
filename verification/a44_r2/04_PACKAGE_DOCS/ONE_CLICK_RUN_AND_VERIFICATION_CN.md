@@ -1,13 +1,13 @@
-# 一键运行与验证
+# 一键运行与结果复现
 
 ## 前提
 
-- Windows 已安装 Docker Desktop。
-- 容器 `iic-osic-tools_a44_xvnc` 正在运行。
-- 容器内可使用 CACE 2.9、Xschem、ngspice 和 Python。
+- Windows 已安装 Docker Desktop；
+- 容器 `iic-osic-tools_a44_xvnc` 正在运行；
+- 容器内可使用 Circuit Automatic Characterization Engine 2.9、Xschem、ngspice 和 Python；
 - 包位于 `D:\PICO`，并通过容器映射为 `/foss/designs`。
 
-## 快速验证
+## 快速结果复现
 
 在包根目录运行：
 
@@ -21,7 +21,7 @@
 RUN_QUICK_VERIFY.bat
 ```
 
-该入口实际调用：
+该入口调用：
 
 ```text
 make -C 03_CACE_AND_SIMULATION_TOOLS quick-verify
@@ -29,26 +29,24 @@ make -C 03_CACE_AND_SIMULATION_TOOLS quick-verify
 
 执行内容：
 
-1. CACE 2.9 运行 Xschem → ngspice package preflight。
-2. MC200 前 5 个 seed，正式 W4 retained 帧 4–8，共 25 条比较。
-3. PVT3 每个 corner 前 5 个 job，正式 W4 retained 帧 4–8，共 75 条比较。
-4. 6 条 FULL255 曲线各取前 5 个 transition，共 30 条比较。
+1. Circuit Automatic Characterization Engine 2.9 运行 Xschem 到 ngspice 的包预运行；
+2. 从 200 样本蒙特卡洛失配动态仿真的前 5 个种子中，比较正式稳态窗口第 4 至第 8 帧，共 25 条记录；
+3. 从三工艺电压温度角动态仿真的每个工艺角前 5 个作业中，比较正式稳态窗口第 4 至第 8 帧，共 75 条记录；
+4. 从 6 条完整静态传输曲线中各比较前 5 个码间转换，共 30 条记录。
 
-合计 130/130 一致才通过。最近一次正式 R2 通过证据：
+全部 130 条记录一致时，快速结果复现通过。最近一次正式结果位于
+`02_SIMULATION_RESULTS/06_RUN_OUTPUTS/RUN_20260728T190259Z`。
 
-`02_SIMULATION_RESULTS\06_RUN_OUTPUTS\RUN_20260728T190259Z`
+## 完整仿真矩阵入口
 
-## 完整矩阵入口
-
-先验证 staging，不调度正式仿真：
+先准备完整矩阵而不调度仿真：
 
 ```powershell
 .\RUN_FULL_CAMPAIGN.ps1
 ```
 
-最近一次 staging 通过证据：
-
-`02_SIMULATION_RESULTS\06_RUN_OUTPUTS\FULL_20260728T190527Z`
+最近一次准备输出位于
+`02_SIMULATION_RESULTS/06_RUN_OUTPUTS/FULL_20260728T190527Z`。
 
 显式启动完整矩阵：
 
@@ -56,15 +54,8 @@ make -C 03_CACE_AND_SIMULATION_TOOLS quick-verify
 .\RUN_FULL_CAMPAIGN.ps1 -Execute
 ```
 
-全量运行会建立新的 `FULL_<UTC>` 独立输出目录，不覆盖冻结的历史结果。完整矩阵规模为 MC200 200 jobs、PVT3 selected MC20 共 60 jobs，以及 6 条 FULL255 static 曲线。
-
-## 审计
-
-重新生成索引和 SHA-256 审计：
-
-```powershell
-docker exec iic-osic-tools_a44_xvnc bash --noprofile --norc -lc "cd /foss/designs/A44_SAR_ADC_CURRENT_CACE_REPRODUCIBLE_20260728_R2 && make -C 03_CACE_AND_SIMULATION_TOOLS audit"
-```
-
-结果写入 `05_PACKAGE_AUDIT`。完整性 PASS、快速复现 PASS 与性能 PASS 是三类不同结论；本包不改变源 campaign 的 `PERFORMANCE_FAIL_NO_PROMOTION` 边界。
+完整运行会建立新的 `FULL_<UTC>` 输出目录，不覆盖既有结果。矩阵包括
+200 个典型工艺角蒙特卡洛失配动态仿真作业、三个工艺电压温度角下每角
+20 个选定失配样本的 60 个动态仿真作业，以及 6 条完整 255 个码间转换
+静态传输曲线。
 

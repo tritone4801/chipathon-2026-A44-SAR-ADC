@@ -1,84 +1,77 @@
-# Chipathon 2026 A44 SAR ADC
+# Chipathon 2026 Team A44 Successive-Approximation-Register Analog-to-Digital Converter
 
-This repository contains the Team A44 8-bit, 2 MS/s, 3.3 V fully differential
-capacitive SAR ADC design and its verification evidence.
+This repository contains the Team A44 8-bit, 2 mega-samples-per-second,
+3.3-volt fully differential capacitive successive-approximation-register
+analog-to-digital converter design, its layouts, and its simulation results.
 
 ## Current layout review
 
-The current Chipathon 2026 layout-review baseline is the no-pad, pre-fill CORE
-layout bound by `info.yaml` and `lvs_config.json`:
+The current Chipathon 2026 layout-review baseline is the no-pad, pre-fill core
+layout selected by `info.yaml` and `lvs_config.json`:
 
-- [CORE GDS](gds/A44_SAR_ADC_CORE_1000.gds)
-- [Component GDS](gds/components)
+- [Core layout in Graphic Data System format](gds/A44_SAR_ADC_CORE_1000.gds)
+- [Component layouts](gds/components)
 - [Layout catalog, integration views, and images](layout/README.md)
 - [Layout-review presentation](docs/slides/A44_SAR_ADC_LAYOUT_REVIEW_20260821.pptx)
 
-This publication is for layout review. It does not claim density/fill closure,
-padframe or ESD completion, full-chip signoff, Channel Partner acceptance, or
-tapeout readiness.
+This publication is for layout review. It does not claim density or fill
+closure, padframe or electrostatic-discharge completion, full-chip signoff,
+Channel Partner acceptance, or tapeout readiness.
 
 ## Current project status
 
-The current transistor-level/electrical package is:
+The current transistor-level electrical package is available under
+[the resized-circuit simulation package](verification/a44_r2). It contains:
 
-[`verification/a44_r2`](verification/a44_r2)
+- current Xschem, SPICE, and register-transfer-level circuit files;
+- completed dynamic, static, and process-voltage-temperature simulation
+  results;
+- Circuit Automatic Characterization Engine and simulation tooling;
+- one-click launchers and method documentation.
 
-It contains the current resized circuit set, all frozen simulation results,
-CACE and simulation tooling, one-click launchers, documentation, and SHA-256
-audits. The package is organized as follows:
+All planned simulations in the package have been executed. The design is not
+promoted because three samples fail the hard dynamic acceptance criteria.
 
-- `01_CURRENT_CIRCUIT_FILES`: current resized `.sch`, `.sym`, SPICE, and RTL
-  files.
-- `02_SIMULATION_RESULTS`: MC200, PVT3 MC20, FULL255 static, CACE-generated,
-  quick-reproduction, and staging results.
-- `03_CACE_AND_SIMULATION_TOOLS`: CACE configuration, package-owned GF180
-  ngspice model snapshot, scripts, and Makefile.
-- `04_PACKAGE_DOCS`: method, result, and file indexes.
-- `05_PACKAGE_AUDIT`: source-copy, dependency, layout, and SHA-256 audits.
-
-The package-level integrity and reproducibility checks pass. The electrical
-performance campaign is complete as executed but does **not** pass promotion:
-
-```text
-COMPLETE_AS_EXECUTED_PERFORMANCE_FAIL_NO_PROMOTION
-```
-
-See [A44 R2 progress and performance](docs/A44_SAR_ADC_R2_PROGRESS_AND_PERFORMANCE.md)
-for the exact method, metrics, evidence paths, and claim boundaries.
+See [Team A44 revision 2 progress and performance](docs/A44_SAR_ADC_R2_PROGRESS_AND_PERFORMANCE.md)
+for the complete methods, numerical results, result locations, and claim
+boundaries.
 
 The current project tracker is available at
-[A44 SAR ADC Project Tracker R2](docs/A44_SAR_ADC_Project_Tracker_20260728_R2.xlsx).
+[Team A44 project tracker, revision 2](docs/A44_SAR_ADC_Project_Tracker_20260728_R2.xlsx).
 
 ## Current electrical results
 
-| Evidence set | Completion | Current interpretation |
+| Simulation or execution | Completion | Current interpretation |
 | --- | ---: | --- |
-| MC200 TT LOW/W4 | 200/200 | 197 hard-dynamic PASS; 3 FAIL: Seeds 65, 68, and 141 |
-| FULL255 static | 6 unique curves | **PASS based only on Seed 44 TT (`S044_TT`)** |
-| PVT3 selected MC20 LOW/W4 | 60/60 | Diagnostic-only; not a PASS, yield, promotion, or signoff basis |
-| CACE package preflight | 1/1 | PASS, `final_v = 1.250 V` |
-| Quick reproducibility | 130/130 | PASS |
-| Package manifest readback | 4,846 records | PASS, zero mismatches |
+| 200-sample Monte Carlo mismatch dynamic simulation at the typical-typical process corner, 3.3 volts, 27 degrees Celsius, using the low differential-input band and steady-state frames 4 through 67 | 200/200 | 197 hard-dynamic passes; failures at seeds 65, 68, and 141 |
+| Full 255-transition static transfer-curve simulation | 6 unique curves | Pass based only on seed 44 at the typical-typical process corner, 3.3 volts, and 27 degrees Celsius |
+| Three-corner process-voltage-temperature dynamic simulation using 20 selected Monte Carlo mismatch samples per corner | 60/60 | Diagnostic only; not a performance-pass, yield, promotion, or signoff basis |
+| Circuit Automatic Characterization Engine package preflight | 1/1 | Pass; final voltage is 1.250 volts |
+| Quick result-reproduction run | 130/130 | Pass |
 
-For FULL255 qualification, `S044_TT` is the sole governing case:
-maximum `|DNL| = 0.610351 LSB`, maximum `|INL| = 0.686645 LSB`,
-zero missing codes, and zero reversals. Other TT seeds and the Seed 44 SS/FF
-curves are diagnostic-only. PVT cannot establish or overturn FULL255 PASS.
+For the full static transfer-curve qualification, seed 44 at the
+typical-typical process corner, 3.3 volts, and 27 degrees Celsius is the sole
+governing case. Its maximum absolute differential nonlinearity is 0.610351
+least-significant-bit units, its maximum absolute integral nonlinearity is
+0.686645 least-significant-bit units, and it has no missing codes or
+reversals. Other typical-process seeds and the seed-44 slow-slow and fast-fast
+corner curves are diagnostic only.
 
-Package integrity, CACE execution, and quick reproducibility PASS do not imply
-electrical performance PASS, population yield, layout/PEX signoff, silicon
-signoff, tapeout readiness, or production readiness.
+Successful package execution and quick result reproduction do not imply
+electrical performance acceptance, population yield, layout or
+parasitic-extraction signoff, silicon signoff, tapeout readiness, or production
+readiness.
 
 ## One-click package entry points
 
-From `verification/a44_r2` on Windows:
+From `verification/a44_r2` on Windows, run the quick result-reproduction flow:
 
 ```powershell
 .\RUN_QUICK_VERIFY.ps1
 ```
 
-The full campaign launcher executes the complete campaign and can be
-long-running:
+The full campaign launcher executes every planned dynamic and static
+simulation and can be long-running:
 
 ```powershell
 .\RUN_FULL_CAMPAIGN.ps1
@@ -93,7 +86,8 @@ docker exec iic-osic-tools_a44_xvnc bash --noprofile --norc -lc "cd /foss/design
 
 ## Ideal reference model
 
-The earlier ideal reference flow remains available under
-[`verification/ideal_sar`](verification/ideal_sar). It is useful as an ideal
+The earlier ideal successive-approximation-register analog-to-digital
+converter flow remains available under
+[the ideal reference model](verification/ideal_sar). It is useful as an ideal
 system-level baseline, but it is not transistor-level electrical authority and
-must not override the R2 circuit campaign results.
+does not override the current resized-circuit simulation results.
