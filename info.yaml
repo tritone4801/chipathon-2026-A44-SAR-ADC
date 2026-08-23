@@ -1,5 +1,5 @@
 # Chipathon 2026 project configuration for Team A44.
-# Data is intentionally bound from the repository main branch.
+# The main branch is the submission source.
 
 project:
   title: "A44 8-bit 2-MS/s SAR ADC"
@@ -8,14 +8,16 @@ project:
   description: "3.3-V fully differential capacitive SAR ADC in GF180MCU"
   lvs_config: "lvs_config.json"
 
-# Clockwise pad order for the upper-left quadrant, from bottom-left to
-# upper-right. VDD is first so every following I/O pad uses this project's
-# power rail. GND is omitted because the padframe provides a common ground.
 pins:
+  - name: "GND"
+    io_type: ground
+
   - name: "VDD"
     io_type: power
+
   - name: "CLKS"
     io_type: input_cmos
+
   - name: "DOUT[7]"
     io_type: bidirectional
   - name: "DOUT[6]"
@@ -32,6 +34,7 @@ pins:
     io_type: bidirectional
   - name: "DOUT[0]"
     io_type: bidirectional
+
   - name: "VREFN"
     io_type: analog
     secondary_esd: true
