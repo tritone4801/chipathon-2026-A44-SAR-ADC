@@ -1,0 +1,92 @@
+{
+  "schema": "a44-def-aligned-drc-lvs-summary-v1",
+  "status": "PASS_DRC_LVS_CLEAN",
+  "date": "2026-08-29",
+  "inputs": {
+    "official_def": "verification/a44_def_alignment/official_def/A44_A.def",
+    "repository_def": "layout/def/A44_A.def",
+    "repository_gds": "gds/A44_A.gds",
+    "repository_core_gds": "gds/A44_SAR_ADC_CORE_1000.gds",
+    "lvs_reference": "verification/a44_def_alignment/spice/A44_A_lvs_reference.spice"
+  },
+  "interface": {
+    "result": "PASS_DEF_ALIGNED",
+    "origin_um": [0.0, 0.0],
+    "bbox_um": [0.0, 0.0, 1110.0, 1110.0],
+    "logical_pins": 89,
+    "metal2_pin_shapes": 127,
+    "matched_pin_shapes": 127,
+    "pin_sides": {"WEST": 85, "NORTH": 4},
+    "core_origin_um": [55.0, 55.0],
+    "core_orientation": "R0"
+  },
+  "repository_bindings": {
+    "result": "PASS_CURRENT_BINDINGS",
+    "root_gds_set_exact": true,
+    "component_gds_set_exact": true,
+    "layout_image_set_exact": true,
+    "declared_bboxes_exact": true
+  },
+  "drc": {
+    "magic_gds_readback": {
+      "tool": "Magic 8.3 revision 636",
+      "style": "drc(full)",
+      "errors": 0,
+      "ports": 89,
+      "extraction_complete": true,
+      "log": "verification/a44_def_alignment/reports/drc_lvs/MAGIC_GDS.log"
+    },
+    "magic_def_readback": {
+      "tool": "Magic 8.3 revision 636",
+      "style": "drc(full)",
+      "errors": 0,
+      "extraction_complete": true,
+      "log": "verification/a44_def_alignment/reports/drc_lvs/MAGIC_DEF.log"
+    },
+    "klayout_gds": {
+      "tool": "KLayout 0.30.8",
+      "technology": "gf180mcuD",
+      "mim_option": "B",
+      "metal_stack": "5LM",
+      "metal_top": "9K",
+      "feol": true,
+      "beol": true,
+      "connectivity": true,
+      "offgrid": true,
+      "violations": 0,
+      "log": "verification/a44_def_alignment/reports/drc_lvs/KLAYOUT_GDS.log",
+      "results_database": "verification/a44_def_alignment/reports/drc_lvs/A44_A_main.lyrdb"
+    }
+  },
+  "lvs": {
+    "tool": "Netgen 1.5.318",
+    "gds_readback": {
+      "result": "Circuits match uniquely",
+      "top_devices_each": 67,
+      "top_nets_each": 81,
+      "disconnected_pins_each": 8,
+      "disconnected_pin_contract": "DOUT_IN[7:0]",
+      "core_devices_after_series_parallel_merge_each": 872,
+      "core_nets_each": 337,
+      "property_mismatches": 0,
+      "report": "verification/a44_def_alignment/reports/drc_lvs/LVS_GDS.report.txt"
+    },
+    "def_readback": {
+      "result": "Circuits match uniquely",
+      "top_devices_each": 67,
+      "top_nets_each": 81,
+      "disconnected_pins_each": 8,
+      "disconnected_pin_contract": "DOUT_IN[7:0]",
+      "core_devices_after_series_parallel_merge_each": 872,
+      "core_nets_each": 337,
+      "property_mismatches": 0,
+      "report": "verification/a44_def_alignment/reports/drc_lvs/LVS_DEF.report.txt"
+    }
+  },
+  "execution_scope": {
+    "conversion_simulation_run": false,
+    "performance_simulation_run": false,
+    "pex_extraction_run": false,
+    "hash_audit_run": false
+  }
+}

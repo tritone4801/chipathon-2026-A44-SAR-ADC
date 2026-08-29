@@ -40,6 +40,7 @@ logs, construction worktrees, and failed-attempt history. This GitHub package
 contains the current circuit delta, verified layout deliverables, and final
 structured records used for review.
 
-No simulation, extraction, DRC, LVS, or hash audit was rerun for this GitHub
-publication. The repository-root `info.yaml` and `lvs_config.json` remain bound
-to the retained no-pad CORE/LEF/DEF layout-review submission set.
+No conversion simulation or PEX extraction was rerun while publishing this
+component package. The repository-root `lvs_config.json` now binds the
+official-DEF-aligned `A44_A` top at `gds/A44_A.gds`; its interface, DRC, and LVS
+records are kept in [`verification/a44_def_alignment`](../a44_def_alignment).

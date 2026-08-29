@@ -27,7 +27,25 @@
       "blackbox_used": false,
       "status": "PASS_TOP_MAGIC_DRC_AND_FULL_TRANSISTOR_LVS"
     },
-    "root_submission_binding_changed": false
+    "root_submission_binding_changed": true,
+    "repository_root_binding": {
+      "top": "A44_A",
+      "gds": "gds/A44_A.gds",
+      "def": "layout/def/A44_A.def",
+      "lef": "layout/lef/A44_A.lef",
+      "current_layout": "layout/CURRENT_LAYOUT.json",
+      "current_core_gds": "gds/A44_SAR_ADC_CORE_1000.gds",
+      "current_component_gds": [
+        "gds/components/A44_SAR_ADC_CDAC_E_390X399P7.gds",
+        "gds/components/A44_SAR_ADC_CDAC_W_390X399P7.gds",
+        "gds/components/A44_SAR_ADC_COMPARATOR_168X100.gds",
+        "gds/components/A44_SAR_ADC_SAR_LOGIC_240X240.gds",
+        "gds/components/A44_SAR_ADC_CLKS_BUFFER_120X60.gds"
+      ],
+      "verification": "verification/a44_def_alignment",
+      "binding_result": "PASS_CURRENT_BINDINGS",
+      "drc_lvs_result": "PASS_DRC_LVS_CLEAN"
+    }
   },
   "results": {
     "r8_m6_pex_esd_rc_gen_acquisition_ns": 151.83229969843242,
@@ -39,8 +57,9 @@
   },
   "publication": {
     "new_simulations_run": false,
-    "new_extraction_run": false,
-    "new_drc_lvs_run": false,
+    "new_lvs_extraction_run": true,
+    "new_pex_extraction_run": false,
+    "new_drc_lvs_run": true,
     "new_hash_or_rehash_audit": false,
     "raw_waveforms_in_repository": false,
     "structured_final_records_in_repository": true

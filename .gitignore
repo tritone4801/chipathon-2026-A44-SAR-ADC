@@ -19,3 +19,4 @@ verification/ideal_sar/results/raw/iverilog_build/
 verification/ideal_sar/results/raw/*.vcd
 verification/ideal_sar/results/raw/*.fst
 verification/ideal_sar/results/raw/*.raw
+verification/a44_def_alignment/runs/

@@ -1,9 +1,14 @@
-# R8/M6 CDAC layout
+# R8/M6 CDAC layout evidence
 
-Public filenames follow the repository's version-free `A44_SAR_ADC_` naming
-style. The verified internal GDS and Magic cell names are retained unchanged.
+The local files in this verification package retain the names used by the
+recorded DRC/LVS evidence. The active repository bindings use the current
+bbox-qualified public files:
 
-| Side | Public GDS | Verified internal top | Actual GDS bounding box | Fixed site |
+- [`A44_SAR_ADC_CDAC_E_390X399P7.gds`](../../../gds/components/A44_SAR_ADC_CDAC_E_390X399P7.gds)
+- [`A44_SAR_ADC_CDAC_W_390X399P7.gds`](../../../gds/components/A44_SAR_ADC_CDAC_W_390X399P7.gds)
+- [`layout/CURRENT_LAYOUT.json`](../../../layout/CURRENT_LAYOUT.json)
+
+| Side | Preserved verification GDS | Verified internal top | Actual GDS bounding box | Fixed site |
 | --- | --- | --- | ---: | ---: |
 | East | [`A44_SAR_ADC_CDAC_E.gds`](gds/A44_SAR_ADC_CDAC_E.gds) | `A44_CDAC_UNIT_E_R8_M6` | 389.9 x 399.7 um | 390 x 400 um |
 | West | [`A44_SAR_ADC_CDAC_W.gds`](gds/A44_SAR_ADC_CDAC_W.gds) | `A44_CDAC_UNIT_W_R8_M6` | 389.9 x 399.7 um | 390 x 400 um |
@@ -43,5 +48,6 @@ cell in the GDS container.
 
 ![Current west CDAC layout](images/A44_SAR_ADC_CDAC_W.png)
 
-The repository-root submission continues to use its retained CORE, LEF, DEF,
-padframe, and full-die bindings.
+The repository root uses the official-DEF-aligned `A44_A` top. This CORE is
+retained as the child layout at `(55, 55)`; the root binding and its pin map are
+documented in [`verification/a44_def_alignment`](../../a44_def_alignment).

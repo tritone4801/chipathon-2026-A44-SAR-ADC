@@ -3,7 +3,7 @@
   "INCLUDE_CONFIGS": [
     "$LVS_ROOT/tech/$PDK/lvs_config.base.json"
   ],
-  "TOP_SOURCE": "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+  "TOP_SOURCE": "A44_A",
   "TOP_LAYOUT": "$TOP_SOURCE",
   "EXTRACT_FLATGLOB": [
     ""
@@ -21,10 +21,10 @@
     ""
   ],
   "LVS_SPICE_FILES": [
-    ""
+    "$UPRJ_ROOT/verification/a44_def_alignment/spice/A44_A_lvs_reference.spice"
   ],
   "LVS_VERILOG_FILES": [
     ""
   ],
-  "LAYOUT_FILE": "$UPRJ_ROOT/gds/A44_SAR_ADC_CORE_1000.gds"
+  "LAYOUT_FILE": "$UPRJ_ROOT/gds/A44_A.gds"
 }

@@ -1,0 +1,1032 @@
+
+Magic 8.3 revision 636 - Compiled on Thu Apr 16 09:13:57 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "/foss/designs/chipathon-2026-A44-SAR-ADC_repo/verification/a44_def_alignment/scripts/readback_def.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR
+Reading "R8W__pfet_03v3_XNC3G5".
+Reading "R8W__nfet_03v3_ATEY9D".
+Reading "R8E__pfet_03v3_XNC3G5".
+Reading "R8E__nfet_03v3_ATEY9D".
+Reading "R8W__pfet_03v3_PUCBRS".
+Reading "R8W__nfet_03v3_YTQ48T".
+Reading "R8W__pfet_03v3_TTAYZ7".
+Reading "R8W__nfet_03v3_YTZ44F".
+Reading "R8W__pfet_03v3_FKHA32".
+Reading "R8W__nfet_03v3_GE79XY".
+Reading "R8W__pfet_03v3_X2N4NU".
+Reading "R8W__nfet_03v3_9HSG6M".
+Reading "R8W__A44_MIM_6P855_R0".
+Reading "R8W__A44_G6_PFET_M9_GUARD0_R0".
+Reading "R8W__A44_G6_NFET_M9_GUARD0_R0".
+Reading "R8E__pfet_03v3_PUCBRS".
+Reading "R8E__nfet_03v3_YTQ48T".
+Reading "R8E__pfet_03v3_TTAYZ7".
+Reading "R8E__nfet_03v3_YTZ44F".
+Reading "R8E__pfet_03v3_FKHA32".
+Reading "R8E__nfet_03v3_GE79XY".
+Reading "R8E__pfet_03v3_X2N4NU".
+Reading "R8E__nfet_03v3_9HSG6M".
+Reading "R8E__A44_MIM_6P855_R0".
+Reading "R8E__A44_G6_PFET_M9_GUARD0_R0".
+Reading "R8E__A44_G6_NFET_M9_GUARD0_R0".
+Reading "R8W__pfet_03v3_C2L3T7".
+Reading "R8W__nfet_03v3_SD8HJT".
+Reading "R8W__A44_TGDRV_NCLK_ROW_W_R1".
+Reading "R8W__A44_TGDRV_PCLK_ROW_W_R1".
+Reading "R8W__nfet_03v3_WHE5HU".
+Reading "R8W__pfet_03v3_GXTH48".
+Reading "R8W__nfet_03v3_6LX9QF".
+Reading "R8W__pfet_03v3_8RS7KV".
+Reading "R8W__A44_C1_MIM6_R0".
+Reading "R8W__A44_CAP_SWITCH_BANK_CORE_O2".
+Reading "R8E__A44_TGDRV_NCLK_ROW_E_R1".
+Reading "R8E__A44_TGDRV_PCLK_ROW_E_R1".
+Reading "R8E__pfet_03v3_C2L3T7".
+Reading "R8E__nfet_03v3_SD8HJT".
+Reading "R8E__nfet_03v3_WHE5HU".
+Reading "R8E__pfet_03v3_GXTH48".
+Reading "R8E__nfet_03v3_6LX9QF".
+Reading "R8E__pfet_03v3_8RS7KV".
+Reading "R8E__A44_C1_MIM6_R0".
+Reading "R8E__A44_CAP_SWITCH_BANK_CORE_O2".
+Reading "pfet_03v3_XNC3G5".
+Reading "nfet_03v3_ATEY9D".
+Reading "R8W__A44_TG8_CORE_W_R2".
+Reading "R8W__A44_TGCLK_DRIVER_UDRV_W_R1".
+Making label "VDD" on type metal2 in cell R8W__A44_TGCLK_DRIVER_UDRV_W_R1 sticky.
+Making label "VDD" on type metal2 in cell R8W__A44_TGCLK_DRIVER_UDRV_W_R1 sticky.
+Making label "GND" on type metal2 in cell R8W__A44_TGCLK_DRIVER_UDRV_W_R1 sticky.
+Reading "R8W__A44_DCTRL_BIT_DRIVER_R4".
+Reading "R8W__A44_SW_BANK64_SOUTH_R8_M6".
+Reading "R8W__A44_SW_BANK64_NORTH_R8_M6".
+Reading "R8W__A44_CAP_CORE128_M6_R1".
+CIF file read warning: CIF style import: units rescaled by factor of 5 / 1
+Reading "R8E__A44_TGCLK_DRIVER_UDRV_E_R1".
+Making label "VDD" on type metal2 in cell R8E__A44_TGCLK_DRIVER_UDRV_E_R1 sticky.
+Making label "VDD" on type metal2 in cell R8E__A44_TGCLK_DRIVER_UDRV_E_R1 sticky.
+Making label "GND" on type metal2 in cell R8E__A44_TGCLK_DRIVER_UDRV_E_R1 sticky.
+Reading "R8E__A44_TG8_CORE_R7".
+Reading "R8E__A44_DCTRL_BIT_DRIVER_R4".
+Reading "R8E__A44_SW_BANK64_SOUTH_R8_M6".
+Reading "R8E__A44_SW_BANK64_NORTH_R8_M6".
+Reading "R8E__A44_CAP_CORE128_M6_R1".
+Reading "A44_CU_R0".
+Reading "A44_G6_PFET_M9_GUARD0_R0".
+Reading "A44_G6_NFET_M9_GUARD0_R0".
+Reading "R8W__A44_TG8_SLICE_UDRV_W_R1".
+Reading "R8W__A44_DCTRL_STRIP_W_R2".
+Reading "R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6".
+CIF file read warning: Input off lambda grid by 2/5; snapped to grid.
+Reading "R8E__A44_TG8_SLICE_UDRV_E_R1".
+Reading "R8E__A44_DCTRL_STRIP_E_R2".
+Reading "R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6".
+Reading "A44_CAP_SEG16_R0".
+Reading "A44_CAP_SEG8_R0".
+Reading "A44_CAP_SEG4_R0".
+Reading "A44_CAP_SEG2_R0".
+Reading "A44_CAP_SEG1_R0".
+Reading "A44_CAP_SWITCH_BANK_CORE_O2".
+Reading "A44_CDAC_UNIT_W_R8_M6".
+Reading "A44_CDAC_UNIT_E_R8_M6".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__antenna".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlyb_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_1".
+Reading "VIA_Via3_HV".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_64".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_2".
+Reading "VIA_Via1_HV".
+Reading "VIA_Via1_VV".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_4".
+Reading "VIA_via2_3_10000_1200_1_9_1040_1040".
+Reading "VIA_via1_2_10000_1200_1_9_1040_1040".
+Reading "VIA_via3_4_10000_1200_1_9_1040_1040".
+Reading "gf180mcu_fd_sc_mcu7t5v0__filltie".
+Reading "gf180mcu_fd_sc_mcu7t5v0__endcap".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_32".
+Reading "VIA_Via2_VH".
+Reading "A44_SW_CLUSTER32_SW_R_ROUTE".
+Reading "A44_SW_CLUSTER32_SE_R_ROUTE".
+Reading "A44_CAP_QUAD32_D_XW_R0".
+Reading "A44_CAP_QUAD32_2B".
+Reading "A44_CAP_QUAD32_2A_XW_R0".
+Reading "A44_CAP_QUAD32_C".
+Reading "A44_SW_CLUSTER32_NW_R_ROUTE".
+Reading "A44_SW_CLUSTER32_NE_R_ROUTE".
+Reading "A44_SW_CLUSTER32_P_SW_R_ROUTE".
+Reading "A44_SW_CLUSTER32_P_SE_R_ROUTE".
+Reading "A44_CAP_QUAD32_2B_XW_R0".
+Reading "A44_CAP_QUAD32_D".
+Reading "A44_CAP_QUAD32_C_XW_R0".
+Reading "A44_CAP_QUAD32_2A".
+Reading "A44_SW_CLUSTER32_P_NW_R_ROUTE".
+Reading "A44_SW_CLUSTER32_P_NE_R_ROUTE".
+Reading "pfet_03v3_GXTH48".
+Reading "pfet_03v3_53FB9W".
+Reading "pfet_03v3_9ZJPMW".
+Reading "pfet_03v3_RU7DMY".
+Reading "pfet_03v3_8RS7KV".
+Reading "nfet_03v3_WHE5HU".
+Reading "nfet_03v3_W4UA4G".
+Reading "nfet_03v3_6LX9QF".
+Reading "nfet_03v3_VFKXEM".
+Reading "nfet_03v3_E6GD2A".
+Reading "pfet_03v3_C2L3T7".
+Reading "nfet_03v3_SD8HJT".
+Reading "A44_CDAC_UNIT_E_R7".
+Reading "A44_CDAC_UNIT_W_R7".
+Reading "A44_CLKS_BUFFER_R1".
+Reading "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9".
+Reading "SAR_LOGIC_ACTUAL_RTL_SS".
+Reading "A44_SW_BANK64_SOUTH_R_ROUTE".
+Reading "A44_CAP_CORE128_N".
+Reading "A44_SW_BANK64_NORTH_R_ROUTE".
+Reading "A44_TG8_CORE_R7".
+Reading "A44_TG8_CLOCK_LEAF_R7".
+Reading "A44_SW_BANK64_P_SOUTH_R_ROUTE".
+Reading "A44_CAP_CORE128_P".
+Reading "A44_SW_BANK64_P_NORTH_R_ROUTE".
+Reading "A44_DCTRL_BIT_DRIVER_R4".
+Reading "A44_TG8_CLOCK_LEAF_W_R2".
+Reading "A44_TG8_CORE_W_R2".
+Reading "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR".
+Reading "A44_CDAC_SIDE_N_R1".
+Reading "A44_DCTRL_STRIP_E_R2".
+Reading "A44_TG8_SLICE_R7".
+Reading "A44_CDAC_SIDE_P_R1".
+Reading "A44_DCTRL_STRIP_W_R2".
+Reading "A44_TG8_SLICE_W_R2".
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: gf180mcu_fd_sc_mcu7t5v0
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__oai21_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__oai22_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__oai31_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_2".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__oai31_2 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__oai32_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai33_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai33_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai33_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__oai211_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_2".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__oai211_2 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_4".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__oai211_4 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai221_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai221_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai221_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai222_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai222_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai222_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__or2_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_4".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__or2_4 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__or3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or3_2".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__or3_2 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__or3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__or4_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__sdffq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__sdffq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__sdffq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__sdffrnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__sdffrnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__sdffrnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__sdffsnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__sdffsnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__sdffsnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__tieh".
+Reading "gf180mcu_fd_sc_mcu7t5v0__tiel".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xnor2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xnor2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xnor2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xnor3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xnor3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xnor3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__xor3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_32".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_64".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__filltie".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__filltie already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__hold".
+Reading "gf180mcu_fd_sc_mcu7t5v0__icgtn_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__icgtn_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__icgtn_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__icgtp_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__icgtp_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__icgtp_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__inv_20".
+Reading "gf180mcu_fd_sc_mcu7t5v0__invz_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__invz_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__invz_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__invz_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__invz_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__invz_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__invz_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__latq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__latq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__latq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__latrnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__latrnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__latrnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__latrsnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__latrsnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__latrsnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__latsnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__latsnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__latsnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__mux2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__mux2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__mux2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__mux4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__mux4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__mux4_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__nand2_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_2".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__nand2_2 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__nand3_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_2".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__nand3_2 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__nand4_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_2".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__nand4_2 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__nor2_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__nor3_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_4".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__nor3_4 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__nor4_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_16".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_20".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_20".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnq_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__dffnq_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnsnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnsnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_2".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffsnq_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffsnq_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlya_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlya_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlya_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlyb_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__dlyb_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlyb_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlyb_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlyc_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlyc_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlyc_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlyd_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlyd_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlyd_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__endcap".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__endcap already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__fill_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_2".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__fill_2 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_32".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_64".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_4".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_8".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_16".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16 already existed before reading GDS!
+Reading "(UNNAMED)".
+Warning:  cell (UNNAMED) already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__addf_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__addf_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__addf_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__addh_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__addh_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__addh_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__and2_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__and4_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_4".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__and4_4 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__antenna".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__antenna already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_2".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__aoi22_2 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__aoi211_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_2".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__aoi211_2 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__aoi221_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi222_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi222_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi222_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_1".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__buf_1 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_2".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__buf_2 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_4".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__buf_4 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_20".
+Reading "gf180mcu_fd_sc_mcu7t5v0__bufz_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__bufz_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__bufz_3".
+Reading "gf180mcu_fd_sc_mcu7t5v0__bufz_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__bufz_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__bufz_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__bufz_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2".
+Warning:  cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 already existed before reading GDS!
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3".
+Reading DEF data from file /foss/designs/chipathon-2026-A44-SAR-ADC_repo/layout/def/A44_A.def.
+This action cannot be undone.
+  Processed 4 vias total.
+  Processed 118 subcell instances total.
+  Processed 89 pins total.
+  Processed 36 non-default rules total.
+  Processed 1 special nets total.
+  Processed 88 nets total.
+DEF read: Processed 3898 lines.
+Writing 'gf180mcu_fd_sc_mcu7t5v0__and3_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__invz_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkbuf_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__sdffsnq_2'
+Writing 'A44_CAP_QUAD32_D_XW_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__icgtp_4'
+Writing 'R8E__pfet_03v3_PUCBRS'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand3_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__icgtn_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai31_4'
+Writing 'R8E__A44_DCTRL_STRIP_E_R2'
+Writing 'R8W__pfet_03v3_C2L3T7'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__inv_16'
+Writing 'A44_TG8_SLICE_R7'
+Writing 'R8E__nfet_03v3_6LX9QF'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__latrsnq_1'
+Writing 'pfet_03v3_GXTH48'
+Writing 'nfet_03v3_WHE5HU'
+Writing 'R8E__pfet_03v3_8RS7KV'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnrnq_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__inv_8'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__icgtn_2'
+Writing 'A44_CAP_QUAD32_C_XW_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai22_1'
+Writing 'A44_CAP_SWITCH_BANK_CORE_O2'
+Writing 'R8E__nfet_03v3_GE79XY'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dlyd_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__latrsnq_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__xnor3_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__sdffsnq_4'
+Writing 'R8W__nfet_03v3_YTQ48T'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand3_4'
+Writing 'R8E__A44_C1_MIM6_R0'
+Writing 'R8W__A44_CAP_CORE128_M6_R1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai22_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__buf_1'
+Writing 'R8E__nfet_03v3_SD8HJT'
+Writing 'R8W__A44_G6_NFET_M9_GUARD0_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__xnor3_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dlyd_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnrnq_4'
+Writing 'A44_DCTRL_BIT_DRIVER_R4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__icgtn_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__buf_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__invz_8'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_2'
+Writing 'pfet_03v3_RU7DMY'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkbuf_8'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__latrsnq_4'
+Writing 'A44_CDAC_SIDE_P_R1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__buf_3'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai22_4'
+Writing 'A44_CDAC_UNIT_E_R7'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__addh_1'
+Writing 'A44_CU_R0'
+Writing 'A44_SW_CLUSTER32_P_SW_R_ROUTE'
+Writing 'A44_CAP_CORE128_N'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__xnor3_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dlyd_4'
+Writing 'R8W__A44_CAP_SWITCH_BANK_CORE_O2'
+Writing 'R8E__pfet_03v3_C2L3T7'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dlyb_1'
+Writing 'pfet_03v3_9ZJPMW'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__buf_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__addh_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__sdffrsnq_4'
+Writing 'R8E__A44_TGDRV_PCLK_ROW_E_R1'
+Writing 'R8W__A44_TGCLK_DRIVER_UDRV_W_R1'
+Writing 'R8E__A44_TG8_CORE_R7'
+Writing 'pfet_03v3_53FB9W'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dlyb_2'
+Writing 'R8W__A44_TG8_CORE_W_R2'
+Writing 'R8E__A44_SW_BANK64_NORTH_R8_M6'
+Writing 'R8E__nfet_03v3_YTQ48T'
+Writing 'A44_CAP_CORE128_P'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__latq_1'
+Writing 'R8W__pfet_03v3_XNC3G5'
+Writing 'R8E__A44_SW_BANK64_SOUTH_R8_M6'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__addh_4'
+Writing 'R8E__A44_TGDRV_NCLK_ROW_E_R1'
+Writing 'VIA_via2_3_10000_1200_1_9_1040_1040'
+Writing 'R8W__pfet_03v3_FKHA32'
+Writing 'A44_SW_CLUSTER32_NW_R_ROUTE'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi22_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__addf_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__latq_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dlyb_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkbuf_20'
+Writing 'A44_CDAC_UNIT_E_R8_M6'
+Writing 'VIA_Via2_VH'
+Writing 'nfet_03v3_W4UA4G'
+Writing 'A44_SW_CLUSTER32_P_NE_R_ROUTE'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__endcap'
+Writing 'A44_CDAC_UNIT_W_R7'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__addf_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi22_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fillcap_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__xor3_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__tieh'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__buf_8'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__sdffq_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffsnq_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__or4_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__latq_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__sdffrnq_1'
+Writing 'A44_G6_PFET_M9_GUARD0_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__xor3_2'
+Writing 'VIA_Via1_VV'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__sdffq_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffsnq_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi22_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__addf_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__mux4_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__or4_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__sdffrnq_2'
+Writing 'A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkbuf_12'
+Writing 'R8E__pfet_03v3_XNC3G5'
+Writing 'R8W__nfet_03v3_WHE5HU'
+Writing 'R8W__pfet_03v3_GXTH48'
+Writing 'A44_SW_CLUSTER32_SE_R_ROUTE'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__mux4_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__xor3_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai222_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nor3_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi222_1'
+Writing 'R8E__pfet_03v3_FKHA32'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__sdffq_4'
+Writing 'A44_TG8_SLICE_W_R2'
+Writing 'VIA_Via3_HV'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffsnq_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__or4_4'
+Writing 'R8E__A44_CAP_SWITCH_BANK_CORE_O2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fillcap_8'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__sdffrnq_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__or2_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__and4_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nor3_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai222_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi222_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffq_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__tiel'
+Writing 'R8E__A44_CAP_CORE128_M6_R1'
+Writing 'A44_CAP_QUAD32_2B_XW_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai32_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__mux4_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fillcap_64'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__and4_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__mux2_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__or2_2'
+Writing 'R8E__A44_G6_NFET_M9_GUARD0_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fill_64'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__buf_20'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffq_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai32_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fillcap_32'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__mux2_2'
+Writing 'A44_CAP_QUAD32_2A_XW_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fill_32'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai222_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nor3_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi222_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkbuf_16'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand4_1'
+Writing 'A44_CDAC_SIDE_N_R1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__or2_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__and4_4'
+Writing 'A44_TG8_CLOCK_LEAF_W_R2'
+Writing 'A44_SW_BANK64_P_NORTH_R_ROUTE'
+Writing 'R8E__nfet_03v3_WHE5HU'
+Writing 'R8E__pfet_03v3_GXTH48'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__and2_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffq_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand4_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1'
+Writing 'R8W__A44_G6_PFET_M9_GUARD0_R0'
+Writing 'A44_CAP_SEG1_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai32_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__mux2_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__and2_2'
+Writing 'A44_CAP_SEG4_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__buf_12'
+Writing 'nfet_03v3_ATEY9D'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__bufz_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2'
+Writing 'R8W__A44_C1_MIM6_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__bufz_12'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__bufz_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand4_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__invz_12'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand2_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__and2_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__bufz_3'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai211_1'
+Writing 'SAR_LOGIC_ACTUAL_RTL_SS'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffrsnq_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi211_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand2_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__latsnq_1'
+Writing 'R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6'
+Writing 'A44_A'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__bufz_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai211_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffrnq_1'
+Writing 'R8W__A44_TG8_SLICE_UDRV_W_R1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi211_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fillcap_16'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__latsnq_2'
+Writing 'A44_CAP_QUAD32_2A'
+Writing 'R8W__A44_DCTRL_BIT_DRIVER_R4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai21_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fill_16'
+Writing 'A44_CDAC_UNIT_W_R8_M6'
+Writing 'nfet_03v3_6LX9QF'
+Writing 'A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__buf_16'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fill_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__xnor2_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dlyc_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand2_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffrnq_2'
+Writing 'pfet_03v3_8RS7KV'
+Writing 'A44_SW_BANK64_P_SOUTH_R_ROUTE'
+Writing 'A44_CAP_QUAD32_2B'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__hold'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai21_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fill_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__bufz_16'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__invz_16'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__xnor2_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai211_4'
+Writing 'A44_TG8_CLOCK_LEAF_R7'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi211_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dlyc_2'
+Writing 'A44_SW_CLUSTER32_P_NW_R_ROUTE'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__latsnq_4'
+Writing 'nfet_03v3_SD8HJT'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkinv_20'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffrnq_4'
+Writing 'R8W__A44_DCTRL_STRIP_W_R2'
+Writing 'R8W__pfet_03v3_X2N4NU'
+Writing 'A44_SW_BANK64_NORTH_R_ROUTE'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai21_4'
+Writing 'VIA_Via1_HV'
+Writing 'nfet_03v3_E6GD2A'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fill_4'
+Writing 'A44_CAP_QUAD32_C'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkinv_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__bufz_8'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dlyc_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__xnor2_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dlya_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1'
+Writing 'VIA_via1_2_10000_1200_1_9_1040_1040'
+Writing 'A44_CAP_QUAD32_D'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkinv_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dlya_2'
+Writing 'pfet_03v3_C2L3T7'
+Writing 'A44_SW_CLUSTER32_SW_R_ROUTE'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnsnq_2'
+Writing 'VIA_via3_4_10000_1200_1_9_1040_1040'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkinv_12'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkinv_3'
+Writing 'R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__antenna'
+Writing 'A44_SW_CLUSTER32_P_SE_R_ROUTE'
+Writing 'R8W__pfet_03v3_TTAYZ7'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi21_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkinv_4'
+Writing 'A44_TG8_CORE_R7'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dlya_4'
+Writing 'R8E__A44_G6_PFET_M9_GUARD0_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnsnq_4'
+Writing 'R8W__nfet_03v3_ATEY9D'
+Writing 'R8W__A44_MIM_6P855_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fill_8'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi21_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_2'
+Writing 'R8W__A44_SW_BANK64_NORTH_R8_M6'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nor4_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__xor2_1'
+Writing 'R8E__pfet_03v3_X2N4NU'
+Writing 'A44_CAP_SEG2_R0'
+Writing 'nfet_03v3_VFKXEM'
+Writing 'A44_DCTRL_STRIP_E_R2'
+Writing 'R8E__A44_TG8_SLICE_UDRV_E_R1'
+Writing 'R8W__nfet_03v3_9HSG6M'
+Writing 'R8W__A44_SW_BANK64_SOUTH_R8_M6'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__or3_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__inv_20'
+Writing 'A44_SW_CLUSTER32_NE_R_ROUTE'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nor4_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__xor2_2'
+Writing 'A44_SW_BANK64_SOUTH_R_ROUTE'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__inv_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai33_1'
+Writing 'R8W__nfet_03v3_YTZ44F'
+Writing 'A44_CAP_SEG8_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__or3_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi21_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkinv_16'
+Writing 'A44_TG8_CORE_W_R2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__latrnq_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__inv_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai33_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkinv_8'
+Writing 'R8W__pfet_03v3_PUCBRS'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nor4_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__xor2_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai221_1'
+Writing 'R8E__pfet_03v3_TTAYZ7'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nor2_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__latrnq_2'
+Writing 'R8W__nfet_03v3_6LX9QF'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi221_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__inv_3'
+Writing 'pfet_03v3_XNC3G5'
+Writing 'A44_G6_NFET_M9_GUARD0_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__or3_4'
+Writing 'R8W__pfet_03v3_8RS7KV'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnq_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__and3_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__inv_12'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nor2_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__invz_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai221_2'
+Writing 'A44_DCTRL_STRIP_W_R2'
+Writing 'R8E__nfet_03v3_ATEY9D'
+Writing 'R8E__A44_MIM_6P855_R0'
+Writing 'A44_CLKS_BUFFER_R1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkbuf_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi221_2'
+Writing 'R8W__nfet_03v3_GE79XY'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__filltie'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai33_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__inv_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__icgtp_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnq_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai31_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__and3_2'
+Writing 'R8W__A44_TGDRV_PCLK_ROW_W_R1'
+Writing 'R8E__A44_DCTRL_BIT_DRIVER_R4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__invz_2'
+Writing 'R8E__A44_TGCLK_DRIVER_UDRV_E_R1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__latrnq_4'
+Writing 'R8E__nfet_03v3_9HSG6M'
+Writing 'A44_CAP_SEG16_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkbuf_2'
+Writing 'R8W__nfet_03v3_SD8HJT'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__icgtp_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai31_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nor2_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__invz_3'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai221_4'
+Writing 'R8E__nfet_03v3_YTZ44F'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkbuf_3'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi221_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__sdffsnq_1'
+Writing '(UNNAMED)'
+Must specify name for cell (UNNAMED).
+Can't write file named '(UNNAMED)'
+Writing 'R8W__A44_TGDRV_NCLK_ROW_W_R1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand3_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnq_4'
+DRC style is now "drc(full)"
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  1110.000 x 1110.000  ( 0.000,  0.000), ( 1110.000,  1110.000)  1232100.000
+lambda:   22200.00 x 22200.00  (  0.00,  0.00 ), ( 22200.00,  22200.00)  492840032.00
+internal: 222000 x 222000  (     0,  0    ), ( 222000,  222000)  49284000000
+Loading DRC CIF style.
+A44_DEF_DRC_BEGIN
+Total DRC errors found: 0
+A44_DEF_DRC_END
+No errors found.
+A44_DEF_DRC_WHY=
+Extracting gf180mcu_fd_sc_mcu7t5v0__endcap into gf180mcu_fd_sc_mcu7t5v0__endcap.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__filltie into gf180mcu_fd_sc_mcu7t5v0__filltie.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__tiel into gf180mcu_fd_sc_mcu7t5v0__tiel.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__tieh into gf180mcu_fd_sc_mcu7t5v0__tieh.ext:
+Extracting R8E__pfet_03v3_PUCBRS into R8E__pfet_03v3_PUCBRS.ext:
+Extracting R8E__nfet_03v3_YTQ48T into R8E__nfet_03v3_YTQ48T.ext:
+Extracting R8E__pfet_03v3_TTAYZ7 into R8E__pfet_03v3_TTAYZ7.ext:
+Extracting R8E__nfet_03v3_YTZ44F into R8E__nfet_03v3_YTZ44F.ext:
+Extracting R8E__A44_TGDRV_NCLK_ROW_E_R1 into R8E__A44_TGDRV_NCLK_ROW_E_R1.ext:
+Extracting R8E__pfet_03v3_FKHA32 into R8E__pfet_03v3_FKHA32.ext:
+Extracting R8E__nfet_03v3_GE79XY into R8E__nfet_03v3_GE79XY.ext:
+Extracting R8E__pfet_03v3_X2N4NU into R8E__pfet_03v3_X2N4NU.ext:
+Extracting R8E__nfet_03v3_9HSG6M into R8E__nfet_03v3_9HSG6M.ext:
+Extracting R8E__A44_TGDRV_PCLK_ROW_E_R1 into R8E__A44_TGDRV_PCLK_ROW_E_R1.ext:
+Extracting R8E__A44_TGCLK_DRIVER_UDRV_E_R1 into R8E__A44_TGCLK_DRIVER_UDRV_E_R1.ext:
+R8E__A44_TGCLK_DRIVER_UDRV_E_R1: 5 warnings
+Extracting R8E__pfet_03v3_C2L3T7 into R8E__pfet_03v3_C2L3T7.ext:
+Extracting R8E__nfet_03v3_SD8HJT into R8E__nfet_03v3_SD8HJT.ext:
+Extracting R8E__A44_TG8_CORE_R7 into R8E__A44_TG8_CORE_R7.ext:
+Extracting R8E__A44_TG8_SLICE_UDRV_E_R1 into R8E__A44_TG8_SLICE_UDRV_E_R1.ext:
+Extracting R8E__nfet_03v3_WHE5HU into R8E__nfet_03v3_WHE5HU.ext:
+Extracting R8E__pfet_03v3_GXTH48 into R8E__pfet_03v3_GXTH48.ext:
+Extracting R8E__nfet_03v3_6LX9QF into R8E__nfet_03v3_6LX9QF.ext:
+Extracting R8E__pfet_03v3_8RS7KV into R8E__pfet_03v3_8RS7KV.ext:
+Extracting R8E__A44_DCTRL_BIT_DRIVER_R4 into R8E__A44_DCTRL_BIT_DRIVER_R4.ext:
+Extracting R8E__A44_DCTRL_STRIP_E_R2 into R8E__A44_DCTRL_STRIP_E_R2.ext:
+Extracting R8E__pfet_03v3_XNC3G5 into R8E__pfet_03v3_XNC3G5.ext:
+Extracting R8E__A44_G6_PFET_M9_GUARD0_R0 into R8E__A44_G6_PFET_M9_GUARD0_R0.ext:
+Extracting R8E__nfet_03v3_ATEY9D into R8E__nfet_03v3_ATEY9D.ext:
+Extracting R8E__A44_G6_NFET_M9_GUARD0_R0 into R8E__A44_G6_NFET_M9_GUARD0_R0.ext:
+Extracting R8E__A44_CAP_SWITCH_BANK_CORE_O2 into R8E__A44_CAP_SWITCH_BANK_CORE_O2.ext:
+Extracting R8E__A44_SW_BANK64_SOUTH_R8_M6 into R8E__A44_SW_BANK64_SOUTH_R8_M6.ext:
+Extracting R8E__A44_SW_BANK64_NORTH_R8_M6 into R8E__A44_SW_BANK64_NORTH_R8_M6.ext:
+Extracting R8E__A44_MIM_6P855_R0 into R8E__A44_MIM_6P855_R0.ext:
+Extracting R8E__A44_C1_MIM6_R0 into R8E__A44_C1_MIM6_R0.ext:
+Extracting R8E__A44_CAP_CORE128_M6_R1 into R8E__A44_CAP_CORE128_M6_R1.ext:
+Extracting R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6 into R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6.ext:
+Extracting A44_CDAC_UNIT_E_R8_M6 into A44_CDAC_UNIT_E_R8_M6.ext:
+Extracting A44_CDAC_UNIT_E_R7 into A44_CDAC_UNIT_E_R7.ext:
+Extracting R8W__pfet_03v3_C2L3T7 into R8W__pfet_03v3_C2L3T7.ext:
+Extracting R8W__nfet_03v3_SD8HJT into R8W__nfet_03v3_SD8HJT.ext:
+Extracting R8W__A44_TG8_CORE_W_R2 into R8W__A44_TG8_CORE_W_R2.ext:
+Extracting R8W__pfet_03v3_PUCBRS into R8W__pfet_03v3_PUCBRS.ext:
+Extracting R8W__nfet_03v3_YTQ48T into R8W__nfet_03v3_YTQ48T.ext:
+Extracting R8W__pfet_03v3_TTAYZ7 into R8W__pfet_03v3_TTAYZ7.ext:
+Extracting R8W__nfet_03v3_YTZ44F into R8W__nfet_03v3_YTZ44F.ext:
+Extracting R8W__A44_TGDRV_NCLK_ROW_W_R1 into R8W__A44_TGDRV_NCLK_ROW_W_R1.ext:
+Extracting R8W__pfet_03v3_FKHA32 into R8W__pfet_03v3_FKHA32.ext:
+Extracting R8W__nfet_03v3_GE79XY into R8W__nfet_03v3_GE79XY.ext:
+Extracting R8W__pfet_03v3_X2N4NU into R8W__pfet_03v3_X2N4NU.ext:
+Extracting R8W__nfet_03v3_9HSG6M into R8W__nfet_03v3_9HSG6M.ext:
+Extracting R8W__A44_TGDRV_PCLK_ROW_W_R1 into R8W__A44_TGDRV_PCLK_ROW_W_R1.ext:
+Extracting R8W__A44_TGCLK_DRIVER_UDRV_W_R1 into R8W__A44_TGCLK_DRIVER_UDRV_W_R1.ext:
+R8W__A44_TGCLK_DRIVER_UDRV_W_R1: 5 warnings
+Extracting R8W__A44_TG8_SLICE_UDRV_W_R1 into R8W__A44_TG8_SLICE_UDRV_W_R1.ext:
+Extracting R8W__nfet_03v3_WHE5HU into R8W__nfet_03v3_WHE5HU.ext:
+Extracting R8W__pfet_03v3_GXTH48 into R8W__pfet_03v3_GXTH48.ext:
+Extracting R8W__nfet_03v3_6LX9QF into R8W__nfet_03v3_6LX9QF.ext:
+Extracting R8W__pfet_03v3_8RS7KV into R8W__pfet_03v3_8RS7KV.ext:
+Extracting R8W__A44_DCTRL_BIT_DRIVER_R4 into R8W__A44_DCTRL_BIT_DRIVER_R4.ext:
+Extracting R8W__A44_DCTRL_STRIP_W_R2 into R8W__A44_DCTRL_STRIP_W_R2.ext:
+Extracting R8W__pfet_03v3_XNC3G5 into R8W__pfet_03v3_XNC3G5.ext:
+Extracting R8W__A44_G6_PFET_M9_GUARD0_R0 into R8W__A44_G6_PFET_M9_GUARD0_R0.ext:
+Extracting R8W__nfet_03v3_ATEY9D into R8W__nfet_03v3_ATEY9D.ext:
+Extracting R8W__A44_G6_NFET_M9_GUARD0_R0 into R8W__A44_G6_NFET_M9_GUARD0_R0.ext:
+Extracting R8W__A44_CAP_SWITCH_BANK_CORE_O2 into R8W__A44_CAP_SWITCH_BANK_CORE_O2.ext:
+Extracting R8W__A44_SW_BANK64_SOUTH_R8_M6 into R8W__A44_SW_BANK64_SOUTH_R8_M6.ext:
+Extracting R8W__A44_SW_BANK64_NORTH_R8_M6 into R8W__A44_SW_BANK64_NORTH_R8_M6.ext:
+Extracting R8W__A44_MIM_6P855_R0 into R8W__A44_MIM_6P855_R0.ext:
+Extracting R8W__A44_C1_MIM6_R0 into R8W__A44_C1_MIM6_R0.ext:
+Extracting R8W__A44_CAP_CORE128_M6_R1 into R8W__A44_CAP_CORE128_M6_R1.ext:
+Extracting R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6 into R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6.ext:
+Extracting A44_CDAC_UNIT_W_R8_M6 into A44_CDAC_UNIT_W_R8_M6.ext:
+Extracting A44_CDAC_UNIT_W_R7 into A44_CDAC_UNIT_W_R7.ext:
+Extracting A44_CLKS_BUFFER_R1 into A44_CLKS_BUFFER_R1.ext:
+Extracting A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9 into A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9.ext:
+Extracting VIA_Via2_VH into VIA_Via2_VH.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_32 into gf180mcu_fd_sc_mcu7t5v0__fillcap_32.ext:
+Extracting VIA_via3_4_10000_1200_1_9_1040_1040 into VIA_via3_4_10000_1200_1_9_1040_1040.ext:
+Extracting VIA_via1_2_10000_1200_1_9_1040_1040 into VIA_via1_2_10000_1200_1_9_1040_1040.ext:
+Extracting VIA_via2_3_10000_1200_1_9_1040_1040 into VIA_via2_3_10000_1200_1_9_1040_1040.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_4 into gf180mcu_fd_sc_mcu7t5v0__fillcap_4.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_8 into gf180mcu_fd_sc_mcu7t5v0__fillcap_8.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__buf_4 into gf180mcu_fd_sc_mcu7t5v0__buf_4.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_16 into gf180mcu_fd_sc_mcu7t5v0__fillcap_16.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fill_1 into gf180mcu_fd_sc_mcu7t5v0__fill_1.ext:
+Extracting VIA_Via1_VV into VIA_Via1_VV.ext:
+Extracting VIA_Via1_HV into VIA_Via1_HV.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fill_2 into gf180mcu_fd_sc_mcu7t5v0__fill_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_64 into gf180mcu_fd_sc_mcu7t5v0__fillcap_64.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffnq_1 into gf180mcu_fd_sc_mcu7t5v0__dffnq_1.ext:
+Extracting VIA_Via3_HV into VIA_Via3_HV.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkinv_1 into gf180mcu_fd_sc_mcu7t5v0__clkinv_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai22_1 into gf180mcu_fd_sc_mcu7t5v0__oai22_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__buf_2 into gf180mcu_fd_sc_mcu7t5v0__buf_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__and4_1 into gf180mcu_fd_sc_mcu7t5v0__and4_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand2_1 into gf180mcu_fd_sc_mcu7t5v0__nand2_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 into gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai31_1 into gf180mcu_fd_sc_mcu7t5v0__oai31_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 into gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__buf_1 into gf180mcu_fd_sc_mcu7t5v0__buf_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 into gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__or4_1 into gf180mcu_fd_sc_mcu7t5v0__or4_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 into gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai21_1 into gf180mcu_fd_sc_mcu7t5v0__oai21_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi21_1 into gf180mcu_fd_sc_mcu7t5v0__aoi21_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand4_1 into gf180mcu_fd_sc_mcu7t5v0__nand4_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dlyb_1 into gf180mcu_fd_sc_mcu7t5v0__dlyb_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand3_1 into gf180mcu_fd_sc_mcu7t5v0__nand3_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai211_1 into gf180mcu_fd_sc_mcu7t5v0__oai211_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor3_4 into gf180mcu_fd_sc_mcu7t5v0__nor3_4.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand3_2 into gf180mcu_fd_sc_mcu7t5v0__nand3_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi211_2 into gf180mcu_fd_sc_mcu7t5v0__aoi211_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__and4_4 into gf180mcu_fd_sc_mcu7t5v0__and4_4.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__antenna into gf180mcu_fd_sc_mcu7t5v0__antenna.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor3_1 into gf180mcu_fd_sc_mcu7t5v0__nor3_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand2_2 into gf180mcu_fd_sc_mcu7t5v0__nand2_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor4_1 into gf180mcu_fd_sc_mcu7t5v0__nor4_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__and2_1 into gf180mcu_fd_sc_mcu7t5v0__and2_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi22_2 into gf180mcu_fd_sc_mcu7t5v0__aoi22_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai211_2 into gf180mcu_fd_sc_mcu7t5v0__oai211_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor2_1 into gf180mcu_fd_sc_mcu7t5v0__nor2_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__or3_2 into gf180mcu_fd_sc_mcu7t5v0__or3_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__or2_4 into gf180mcu_fd_sc_mcu7t5v0__or2_4.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand4_2 into gf180mcu_fd_sc_mcu7t5v0__nand4_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai31_2 into gf180mcu_fd_sc_mcu7t5v0__oai31_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__or2_1 into gf180mcu_fd_sc_mcu7t5v0__or2_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 into gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai211_4 into gf180mcu_fd_sc_mcu7t5v0__oai211_4.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi221_1 into gf180mcu_fd_sc_mcu7t5v0__aoi221_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai32_1 into gf180mcu_fd_sc_mcu7t5v0__oai32_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi211_1 into gf180mcu_fd_sc_mcu7t5v0__aoi211_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 into gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.ext:
+Extracting SAR_LOGIC_ACTUAL_RTL_SS into SAR_LOGIC_ACTUAL_RTL_SS.ext:
+Extracting A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR into A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR.ext:
+Extracting A44_A into A44_A.ext:
+Total of 10 warnings.
+exttospice finished.
+A44_DEF_READBACK_COMPLETE=1

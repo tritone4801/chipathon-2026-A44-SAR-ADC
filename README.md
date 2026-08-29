@@ -3,20 +3,23 @@
 This repository contains the Team A44 8-bit, 2 MS/s, 3.3 V fully differential
 capacitive SAR ADC design, its layouts, and its simulation results.
 
-## Published layout-review submission
+## DEF-aligned layout integration
 
-The retained Chipathon 2026 repository-root layout-review submission is the
-no-pad, pre-fill core selected by `info.yaml` and `lvs_config.json`:
+The repository-root layout selected by `info.yaml` and `lvs_config.json` is
+the `A44_A` project-slot top:
 
-- [CORE layout in GDSII format](gds/A44_SAR_ADC_CORE_1000.gds)
+- [A44_A GDSII layout](gds/A44_A.gds)
+- [A44_A integrated DEF](layout/def/A44_A.def)
+- [A44_A LEF abstract](layout/lef/A44_A.lef)
+- [DEF-to-GDS pin-alignment records](verification/a44_def_alignment)
 - [Component layouts](gds/components)
-- [Layout catalog, integration views, and images](layout/README.md)
-- [Layout-review presentation](docs/slides/A44_SAR_ADC_LAYOUT_REVIEW_20260821.pptx)
+- [Machine-readable current layout bindings](layout/CURRENT_LAYOUT.json)
+- [Layout catalog and integration views](layout/README.md)
 
-The newer R8/M6 CDAC GDS and verification records are published in the current
-engineering package below. The repository-root binding continues to use the
-retained CORE/LEF/DEF submission set selected by `info.yaml` and
-`lvs_config.json`.
+`A44_A` uses the official DEF origin `(0, 0)` and 1110-by-1110 um outline. Its
+89 logical pins and 127 Metal2 pin shapes retain the official DEF locations:
+85 logical pins are on the west edge and the four analog pins are on the north
+edge. The 1000-by-1000 um SAR ADC CORE remains a child at `(55, 55)`.
 
 ## Current engineering baseline
 
@@ -31,6 +34,7 @@ The current baseline publishes:
 - [the cap x1/3 circuit delta](verification/a44_cdac_cap_x1div3/01_CURRENT_CIRCUIT_FILES);
 - [R8/M6 east and west CDAC layouts](verification/a44_cdac_cap_x1div3/02_LAYOUT);
 - [the current final-integration GDS and DRC/LVS records](verification/a44_cdac_cap_x1div3/02_LAYOUT/final_integration);
+- [the official-DEF-aligned A44_A top and interface records](verification/a44_def_alignment);
 - [structured acquisition, offset, and conversion results](verification/a44_cdac_cap_x1div3/03_RESULTS); and
 - [the machine-readable current status](verification/a44_cdac_cap_x1div3/STATUS.json).
 

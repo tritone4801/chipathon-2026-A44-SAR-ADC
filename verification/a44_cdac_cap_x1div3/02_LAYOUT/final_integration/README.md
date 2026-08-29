@@ -1,8 +1,14 @@
-# Current final-integration CORE DRC and LVS evidence
+# Preserved final-integration CORE DRC and LVS evidence
 
-This directory publishes the exact current post-fill GDS container used by the
-baseline's unified-TOP flow and the DRC/LVS records for the selected
-CORE cell.
+This directory preserves the exact post-fill GDS container used by the
+recorded unified-TOP flow and its DRC/LVS evidence for the selected CORE cell.
+
+This directory records the embedded CORE verification. The repository-root
+layout is now the official-DEF-aligned `A44_A` wrapper; its GDS, DEF, pin map,
+and fresh top-level checks are in
+[`verification/a44_def_alignment`](../../../a44_def_alignment).
+The active standalone CORE binding is
+[`gds/A44_SAR_ADC_CORE_1000.gds`](../../../../gds/A44_SAR_ADC_CORE_1000.gds).
 
 | Item | Current value |
 | --- | --- |

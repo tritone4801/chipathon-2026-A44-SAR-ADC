@@ -1,0 +1,12 @@
+{
+  "schema": "a44-def-aligned-layout-status-v1",
+  "status": "PASS_DEF_ALIGNED_AND_DRC_LVS_CLEAN",
+  "def_alignment": "reports/DEF_ALIGNMENT.json",
+  "current_bindings": "reports/CURRENT_BINDINGS.json",
+  "drc_lvs": "reports/DRC_LVS_SUMMARY.json",
+  "repository_top": "A44_A",
+  "repository_gds": "gds/A44_A.gds",
+  "repository_def": "layout/def/A44_A.def",
+  "current_core_gds": "gds/A44_SAR_ADC_CORE_1000.gds",
+  "conversion_simulation_repeated": false
+}

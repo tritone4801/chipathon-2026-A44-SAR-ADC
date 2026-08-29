@@ -1,0 +1,38 @@
+{
+  "schema": "a44-current-layout-binding-v1",
+  "repository_top": {
+    "design": "A44_A",
+    "gds": "gds/A44_A.gds",
+    "def": "layout/def/A44_A.def",
+    "lef": "layout/lef/A44_A.lef",
+    "mag": "layout/mag/A44_A.mag",
+    "lvs_reference": "verification/a44_def_alignment/spice/A44_A_lvs_reference.spice",
+    "origin_um": [0.0, 0.0],
+    "bbox_um": [0.0, 0.0, 1110.0, 1110.0],
+    "logical_pins": 89,
+    "metal2_pin_shapes": 127
+  },
+  "embedded_core": {
+    "public_gds": "gds/A44_SAR_ADC_CORE_1000.gds",
+    "contract_cell": "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+    "origin_um": [55.0, 55.0],
+    "orientation": "R0",
+    "bbox_um": [0.0, 0.0, 1000.0, 1000.0],
+    "cdac_implementation": "R8_M6"
+  },
+  "components": [
+    {"role": "CDAC_E", "gds": "gds/components/A44_SAR_ADC_CDAC_E_390X399P7.gds", "top": "A44_CDAC_UNIT_E_R8_M6", "bbox_um": [0.0, 0.0, 390.0, 399.7]},
+    {"role": "CDAC_W", "gds": "gds/components/A44_SAR_ADC_CDAC_W_390X399P7.gds", "top": "A44_CDAC_UNIT_W_R8_M6", "bbox_um": [0.0, 0.0, 390.0, 399.7]},
+    {"role": "COMPARATOR", "gds": "gds/components/A44_SAR_ADC_COMPARATOR_168X100.gds", "top": "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9", "bbox_um": [0.0, 0.0, 168.0, 100.0]},
+    {"role": "SAR_LOGIC", "gds": "gds/components/A44_SAR_ADC_SAR_LOGIC_240X240.gds", "top": "SAR_LOGIC_ACTUAL_RTL_SS", "bbox_um": [0.0, 0.0, 240.0, 240.0]},
+    {"role": "CLKS_BUFFER", "gds": "gds/components/A44_SAR_ADC_CLKS_BUFFER_120X60.gds", "top": "A44_CLKS_BUFFER_R1", "bbox_um": [0.0, 0.0, 120.0, 60.0]}
+  ],
+  "binding_files": [
+    "info.yaml",
+    "lvs_config.json",
+    "layout/MODULE_NAMING_MAP.csv",
+    "layout/NAMING_POLICY.json",
+    "verification/a44_def_alignment/reports/DEF_ALIGNMENT.json"
+  ],
+  "legacy_root": "gds/legacy/pre_def_alignment"
+}

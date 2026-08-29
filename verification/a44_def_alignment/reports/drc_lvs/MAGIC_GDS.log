@@ -1,0 +1,1169 @@
+
+Magic 8.3 revision 636 - Compiled on Thu Apr 16 09:13:57 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "verification/a44_def_alignment/scripts/readback_gds.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: A44_A
+Reading "gf180mcu_fd_sc_mcu7t5v0__endcap".
+Reading "gf180mcu_fd_sc_mcu7t5v0__tiel".
+Reading "gf180mcu_fd_sc_mcu7t5v0__filltie".
+Reading "gf180mcu_fd_sc_mcu7t5v0__tieh".
+Reading "R8E__pfet_03v3_PUCBRS".
+Reading "R8E__nfet_03v3_YTQ48T".
+Reading "R8E__pfet_03v3_TTAYZ7".
+Reading "R8E__nfet_03v3_YTZ44F".
+Reading "R8E__A44_TGDRV_NCLK_ROW_E_R1".
+Reading "R8E__pfet_03v3_FKHA32".
+Reading "R8E__nfet_03v3_GE79XY".
+Reading "R8E__pfet_03v3_X2N4NU".
+Reading "R8E__nfet_03v3_9HSG6M".
+Reading "R8E__A44_TGDRV_PCLK_ROW_E_R1".
+Reading "R8E__A44_TGCLK_DRIVER_UDRV_E_R1".
+Making label "VDD" on type metal2 in cell R8E__A44_TGCLK_DRIVER_UDRV_E_R1 sticky.
+Making label "VDD" on type metal2 in cell R8E__A44_TGCLK_DRIVER_UDRV_E_R1 sticky.
+Making label "GND" on type metal2 in cell R8E__A44_TGCLK_DRIVER_UDRV_E_R1 sticky.
+Reading "R8E__pfet_03v3_C2L3T7".
+Reading "R8E__nfet_03v3_SD8HJT".
+Reading "R8E__A44_TG8_CORE_R7".
+Reading "R8E__A44_TG8_SLICE_UDRV_E_R1".
+Reading "R8E__nfet_03v3_WHE5HU".
+Reading "R8E__pfet_03v3_GXTH48".
+Reading "R8E__nfet_03v3_6LX9QF".
+Reading "R8E__pfet_03v3_8RS7KV".
+Reading "R8E__A44_DCTRL_BIT_DRIVER_R4".
+Reading "R8E__A44_DCTRL_STRIP_E_R2".
+Reading "R8E__pfet_03v3_XNC3G5".
+Reading "R8E__A44_G6_PFET_M9_GUARD0_R0".
+Reading "R8E__nfet_03v3_ATEY9D".
+Reading "R8E__A44_G6_NFET_M9_GUARD0_R0".
+Reading "R8E__A44_CAP_SWITCH_BANK_CORE_O2".
+Reading "R8E__A44_SW_BANK64_SOUTH_R8_M6".
+Reading "R8E__A44_SW_BANK64_NORTH_R8_M6".
+Reading "R8E__A44_MIM_6P855_R0".
+Reading "R8E__A44_C1_MIM6_R0".
+Reading "R8E__A44_CAP_CORE128_M6_R1".
+CIF file read warning: CIF style import: units rescaled by factor of 5 / 1
+Reading "R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6".
+CIF file read warning: Input off lambda grid by 2/5; snapped to grid.
+Reading "A44_CDAC_UNIT_E_R8_M6".
+Reading "A44_CDAC_UNIT_E_R7".
+Reading "R8W__pfet_03v3_C2L3T7".
+Reading "R8W__nfet_03v3_SD8HJT".
+Reading "R8W__A44_TG8_CORE_W_R2".
+Reading "R8W__pfet_03v3_PUCBRS".
+Reading "R8W__nfet_03v3_YTQ48T".
+Reading "R8W__pfet_03v3_TTAYZ7".
+Reading "R8W__nfet_03v3_YTZ44F".
+Reading "R8W__A44_TGDRV_NCLK_ROW_W_R1".
+Reading "R8W__pfet_03v3_FKHA32".
+Reading "R8W__nfet_03v3_GE79XY".
+Reading "R8W__pfet_03v3_X2N4NU".
+Reading "R8W__nfet_03v3_9HSG6M".
+Reading "R8W__A44_TGDRV_PCLK_ROW_W_R1".
+Reading "R8W__A44_TGCLK_DRIVER_UDRV_W_R1".
+Making label "VDD" on type metal2 in cell R8W__A44_TGCLK_DRIVER_UDRV_W_R1 sticky.
+Making label "VDD" on type metal2 in cell R8W__A44_TGCLK_DRIVER_UDRV_W_R1 sticky.
+Making label "GND" on type metal2 in cell R8W__A44_TGCLK_DRIVER_UDRV_W_R1 sticky.
+Reading "R8W__A44_TG8_SLICE_UDRV_W_R1".
+Reading "R8W__nfet_03v3_WHE5HU".
+Reading "R8W__pfet_03v3_GXTH48".
+Reading "R8W__nfet_03v3_6LX9QF".
+Reading "R8W__pfet_03v3_8RS7KV".
+Reading "R8W__A44_DCTRL_BIT_DRIVER_R4".
+Reading "R8W__A44_DCTRL_STRIP_W_R2".
+Reading "R8W__pfet_03v3_XNC3G5".
+Reading "R8W__A44_G6_PFET_M9_GUARD0_R0".
+Reading "R8W__nfet_03v3_ATEY9D".
+Reading "R8W__A44_G6_NFET_M9_GUARD0_R0".
+Reading "R8W__A44_CAP_SWITCH_BANK_CORE_O2".
+Reading "R8W__A44_SW_BANK64_SOUTH_R8_M6".
+Reading "R8W__A44_SW_BANK64_NORTH_R8_M6".
+Reading "R8W__A44_MIM_6P855_R0".
+Reading "R8W__A44_C1_MIM6_R0".
+Reading "R8W__A44_CAP_CORE128_M6_R1".
+Reading "R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6".
+Reading "A44_CDAC_UNIT_W_R8_M6".
+Reading "A44_CDAC_UNIT_W_R7".
+Reading "A44_CLKS_BUFFER_R1".
+Reading "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9".
+Reading "VIA_Via2_VH".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_32".
+Reading "VIA_via3_4_10000_1200_1_9_1040_1040".
+Reading "VIA_via1_2_10000_1200_1_9_1040_1040".
+Reading "VIA_via2_3_10000_1200_1_9_1040_1040".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_1".
+Reading "VIA_Via1_VV".
+Reading "VIA_Via1_HV".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_64".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnq_1".
+Reading "VIA_Via3_HV".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlyb_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__antenna".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or3_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_2".
+Reading "SAR_LOGIC_ACTUAL_RTL_SS".
+Reading "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR".
+Reading "A44_A".
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 9.500   ( 0.000,  69.140), ( 1.000,  78.640)  9.500     
+lambda:    20.00 x 190.00  (  0.00,  1382.80), ( 20.00,  1572.80)  3800.00   
+internal:    200 x 1900    (     0,  13828), (   200,  15728)  380000    
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+No label found with index 0.
+No label found with index 0.
+No label found with index 0.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 9.500   ( 0.000,  169.140), ( 1.000,  178.640)  9.500     
+lambda:    20.00 x 190.00  (  0.00,  3382.80), ( 20.00,  3572.80)  3800.00   
+internal:    200 x 1900    (     0,  33828), (   200,  35728)  380000    
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  273.655), ( 1.000,  274.035)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  5473.10), ( 20.00,  5480.70)  152.00    
+internal:    200 x 76      (     0,  54731), (   200,  54807)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  269.290), ( 1.000,  269.670)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  5385.80), ( 20.00,  5393.40)  152.00    
+internal:    200 x 76      (     0,  53858), (   200,  53934)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  208.760), ( 1.000,  209.140)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  4175.20), ( 20.00,  4182.80)  152.00    
+internal:    200 x 76      (     0,  41752), (   200,  41828)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  376.260), ( 1.000,  376.640)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  7525.20), ( 20.00,  7532.80)  152.00    
+internal:    200 x 76      (     0,  75252), (   200,  75328)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  310.950), ( 1.000,  311.330)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  6219.00), ( 20.00,  6226.60)  152.00    
+internal:    200 x 76      (     0,  62190), (   200,  62266)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  368.235), ( 1.000,  368.615)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  7364.70), ( 20.00,  7372.30)  152.00    
+internal:    200 x 76      (     0,  73647), (   200,  73723)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  309.490), ( 1.000,  309.870)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  6189.80), ( 20.00,  6197.40)  152.00    
+internal:    200 x 76      (     0,  61898), (   200,  61974)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  373.655), ( 1.000,  374.035)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  7473.10), ( 20.00,  7480.70)  152.00    
+internal:    200 x 76      (     0,  74731), (   200,  74807)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  369.290), ( 1.000,  369.670)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  7385.80), ( 20.00,  7393.40)  152.00    
+internal:    200 x 76      (     0,  73858), (   200,  73934)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  310.220), ( 1.000,  310.600)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  6204.40), ( 20.00,  6212.00)  152.00    
+internal:    200 x 76      (     0,  62044), (   200,  62120)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  372.510), ( 1.000,  372.890)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  7450.20), ( 20.00,  7457.80)  152.00    
+internal:    200 x 76      (     0,  74502), (   200,  74578)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  371.800), ( 1.000,  372.180)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  7436.00), ( 20.00,  7443.60)  152.00    
+internal:    200 x 76      (     0,  74360), (   200,  74436)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  308.760), ( 1.000,  309.140)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  6175.20), ( 20.00,  6182.80)  152.00    
+internal:    200 x 76      (     0,  61752), (   200,  61828)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  476.260), ( 1.000,  476.640)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  9525.20), ( 20.00,  9532.80)  152.00    
+internal:    200 x 76      (     0,  95252), (   200,  95328)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  410.950), ( 1.000,  411.330)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  8219.00), ( 20.00,  8226.60)  152.00    
+internal:    200 x 76      (     0,  82190), (   200,  82266)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  468.235), ( 1.000,  468.615)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  9364.70), ( 20.00,  9372.30)  152.00    
+internal:    200 x 76      (     0,  93647), (   200,  93723)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  409.490), ( 1.000,  409.870)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  8189.80), ( 20.00,  8197.40)  152.00    
+internal:    200 x 76      (     0,  81898), (   200,  81974)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  473.655), ( 1.000,  474.035)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  9473.10), ( 20.00,  9480.70)  152.00    
+internal:    200 x 76      (     0,  94731), (   200,  94807)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  469.290), ( 1.000,  469.670)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  9385.80), ( 20.00,  9393.40)  152.00    
+internal:    200 x 76      (     0,  93858), (   200,  93934)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  410.220), ( 1.000,  410.600)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  8204.40), ( 20.00,  8212.00)  152.00    
+internal:    200 x 76      (     0,  82044), (   200,  82120)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  472.510), ( 1.000,  472.890)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  9450.20), ( 20.00,  9457.80)  152.00    
+internal:    200 x 76      (     0,  94502), (   200,  94578)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  471.800), ( 1.000,  472.180)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  9436.00), ( 20.00,  9443.60)  152.00    
+internal:    200 x 76      (     0,  94360), (   200,  94436)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  408.760), ( 1.000,  409.140)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  8175.20), ( 20.00,  8182.80)  152.00    
+internal:    200 x 76      (     0,  81752), (   200,  81828)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  576.260), ( 1.000,  576.640)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  11525.20), ( 20.00,  11532.80)  152.00    
+internal:    200 x 76      (     0,  115252), (   200,  115328)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  510.950), ( 1.000,  511.330)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  10219.00), ( 20.00,  10226.60)  152.00    
+internal:    200 x 76      (     0,  102190), (   200,  102266)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  568.235), ( 1.000,  568.615)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  11364.70), ( 20.00,  11372.30)  152.00    
+internal:    200 x 76      (     0,  113647), (   200,  113723)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  509.490), ( 1.000,  509.870)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  10189.80), ( 20.00,  10197.40)  152.00    
+internal:    200 x 76      (     0,  101898), (   200,  101974)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  573.655), ( 1.000,  574.035)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  11473.10), ( 20.00,  11480.70)  152.00    
+internal:    200 x 76      (     0,  114731), (   200,  114807)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  569.290), ( 1.000,  569.670)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  11385.80), ( 20.00,  11393.40)  152.00    
+internal:    200 x 76      (     0,  113858), (   200,  113934)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  510.220), ( 1.000,  510.600)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  10204.40), ( 20.00,  10212.00)  152.00    
+internal:    200 x 76      (     0,  102044), (   200,  102120)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  572.510), ( 1.000,  572.890)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  11450.20), ( 20.00,  11457.80)  152.00    
+internal:    200 x 76      (     0,  114502), (   200,  114578)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  571.800), ( 1.000,  572.180)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  11436.00), ( 20.00,  11443.60)  152.00    
+internal:    200 x 76      (     0,  114360), (   200,  114436)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  508.760), ( 1.000,  509.140)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  10175.20), ( 20.00,  10182.80)  152.00    
+internal:    200 x 76      (     0,  101752), (   200,  101828)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  676.260), ( 1.000,  676.640)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  13525.20), ( 20.00,  13532.80)  152.00    
+internal:    200 x 76      (     0,  135252), (   200,  135328)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  610.950), ( 1.000,  611.330)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  12219.00), ( 20.00,  12226.60)  152.00    
+internal:    200 x 76      (     0,  122190), (   200,  122266)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  668.235), ( 1.000,  668.615)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  13364.70), ( 20.00,  13372.30)  152.00    
+internal:    200 x 76      (     0,  133647), (   200,  133723)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  609.490), ( 1.000,  609.870)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  12189.80), ( 20.00,  12197.40)  152.00    
+internal:    200 x 76      (     0,  121898), (   200,  121974)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  673.655), ( 1.000,  674.035)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  13473.10), ( 20.00,  13480.70)  152.00    
+internal:    200 x 76      (     0,  134731), (   200,  134807)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  669.290), ( 1.000,  669.670)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  13385.80), ( 20.00,  13393.40)  152.00    
+internal:    200 x 76      (     0,  133858), (   200,  133934)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  610.220), ( 1.000,  610.600)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  12204.40), ( 20.00,  12212.00)  152.00    
+internal:    200 x 76      (     0,  122044), (   200,  122120)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  672.510), ( 1.000,  672.890)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  13450.20), ( 20.00,  13457.80)  152.00    
+internal:    200 x 76      (     0,  134502), (   200,  134578)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  671.800), ( 1.000,  672.180)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  13436.00), ( 20.00,  13443.60)  152.00    
+internal:    200 x 76      (     0,  134360), (   200,  134436)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  608.760), ( 1.000,  609.140)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  12175.20), ( 20.00,  12182.80)  152.00    
+internal:    200 x 76      (     0,  121752), (   200,  121828)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  776.260), ( 1.000,  776.640)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  15525.20), ( 20.00,  15532.80)  152.00    
+internal:    200 x 76      (     0,  155252), (   200,  155328)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  710.950), ( 1.000,  711.330)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  14219.00), ( 20.00,  14226.60)  152.00    
+internal:    200 x 76      (     0,  142190), (   200,  142266)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  768.235), ( 1.000,  768.615)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  15364.70), ( 20.00,  15372.30)  152.00    
+internal:    200 x 76      (     0,  153647), (   200,  153723)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  709.490), ( 1.000,  709.870)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  14189.80), ( 20.00,  14197.40)  152.00    
+internal:    200 x 76      (     0,  141898), (   200,  141974)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  773.655), ( 1.000,  774.035)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  15473.10), ( 20.00,  15480.70)  152.00    
+internal:    200 x 76      (     0,  154731), (   200,  154807)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  769.290), ( 1.000,  769.670)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  15385.80), ( 20.00,  15393.40)  152.00    
+internal:    200 x 76      (     0,  153858), (   200,  153934)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  710.220), ( 1.000,  710.600)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  14204.40), ( 20.00,  14212.00)  152.00    
+internal:    200 x 76      (     0,  142044), (   200,  142120)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  772.510), ( 1.000,  772.890)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  15450.20), ( 20.00,  15457.80)  152.00    
+internal:    200 x 76      (     0,  154502), (   200,  154578)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  771.800), ( 1.000,  772.180)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  15436.00), ( 20.00,  15443.60)  152.00    
+internal:    200 x 76      (     0,  154360), (   200,  154436)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  708.760), ( 1.000,  709.140)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  14175.20), ( 20.00,  14182.80)  152.00    
+internal:    200 x 76      (     0,  141752), (   200,  141828)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  876.260), ( 1.000,  876.640)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  17525.20), ( 20.00,  17532.80)  152.00    
+internal:    200 x 76      (     0,  175252), (   200,  175328)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  810.950), ( 1.000,  811.330)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  16219.00), ( 20.00,  16226.60)  152.00    
+internal:    200 x 76      (     0,  162190), (   200,  162266)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  868.235), ( 1.000,  868.615)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  17364.70), ( 20.00,  17372.30)  152.00    
+internal:    200 x 76      (     0,  173647), (   200,  173723)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  809.490), ( 1.000,  809.870)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  16189.80), ( 20.00,  16197.40)  152.00    
+internal:    200 x 76      (     0,  161898), (   200,  161974)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  873.655), ( 1.000,  874.035)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  17473.10), ( 20.00,  17480.70)  152.00    
+internal:    200 x 76      (     0,  174731), (   200,  174807)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  869.290), ( 1.000,  869.670)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  17385.80), ( 20.00,  17393.40)  152.00    
+internal:    200 x 76      (     0,  173858), (   200,  173934)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  810.220), ( 1.000,  810.600)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  16204.40), ( 20.00,  16212.00)  152.00    
+internal:    200 x 76      (     0,  162044), (   200,  162120)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  872.510), ( 1.000,  872.890)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  17450.20), ( 20.00,  17457.80)  152.00    
+internal:    200 x 76      (     0,  174502), (   200,  174578)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  871.800), ( 1.000,  872.180)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  17436.00), ( 20.00,  17443.60)  152.00    
+internal:    200 x 76      (     0,  174360), (   200,  174436)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  808.760), ( 1.000,  809.140)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  16175.20), ( 20.00,  16182.80)  152.00    
+internal:    200 x 76      (     0,  161752), (   200,  161828)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  976.260), ( 1.000,  976.640)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  19525.20), ( 20.00,  19532.80)  152.00    
+internal:    200 x 76      (     0,  195252), (   200,  195328)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  910.950), ( 1.000,  911.330)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  18219.00), ( 20.00,  18226.60)  152.00    
+internal:    200 x 76      (     0,  182190), (   200,  182266)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  968.235), ( 1.000,  968.615)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  19364.70), ( 20.00,  19372.30)  152.00    
+internal:    200 x 76      (     0,  193647), (   200,  193723)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  909.490), ( 1.000,  909.870)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  18189.80), ( 20.00,  18197.40)  152.00    
+internal:    200 x 76      (     0,  181898), (   200,  181974)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  973.655), ( 1.000,  974.035)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  19473.10), ( 20.00,  19480.70)  152.00    
+internal:    200 x 76      (     0,  194731), (   200,  194807)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  969.290), ( 1.000,  969.670)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  19385.80), ( 20.00,  19393.40)  152.00    
+internal:    200 x 76      (     0,  193858), (   200,  193934)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  910.220), ( 1.000,  910.600)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  18204.40), ( 20.00,  18212.00)  152.00    
+internal:    200 x 76      (     0,  182044), (   200,  182120)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  972.510), ( 1.000,  972.890)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  19450.20), ( 20.00,  19457.80)  152.00    
+internal:    200 x 76      (     0,  194502), (   200,  194578)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  971.800), ( 1.000,  972.180)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  19436.00), ( 20.00,  19443.60)  152.00    
+internal:    200 x 76      (     0,  194360), (   200,  194436)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  908.760), ( 1.000,  909.140)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  18175.20), ( 20.00,  18182.80)  152.00    
+internal:    200 x 76      (     0,  181752), (   200,  181828)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  1076.260), ( 1.000,  1076.640)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  21525.20), ( 20.00,  21532.80)  152.00    
+internal:    200 x 76      (     0,  215252), (   200,  215328)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  1010.950), ( 1.000,  1011.330)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  20219.00), ( 20.00,  20226.60)  152.00    
+internal:    200 x 76      (     0,  202190), (   200,  202266)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  1068.235), ( 1.000,  1068.615)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  21364.70), ( 20.00,  21372.30)  152.00    
+internal:    200 x 76      (     0,  213647), (   200,  213723)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  1009.490), ( 1.000,  1009.870)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  20189.80), ( 20.00,  20197.40)  152.00    
+internal:    200 x 76      (     0,  201898), (   200,  201974)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  1073.655), ( 1.000,  1074.035)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  21473.10), ( 20.00,  21480.70)  152.00    
+internal:    200 x 76      (     0,  214731), (   200,  214807)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  1069.290), ( 1.000,  1069.670)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  21385.80), ( 20.00,  21393.40)  152.00    
+internal:    200 x 76      (     0,  213858), (   200,  213934)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  1010.220), ( 1.000,  1010.600)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  20204.40), ( 20.00,  20212.00)  152.00    
+internal:    200 x 76      (     0,  202044), (   200,  202120)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  1072.510), ( 1.000,  1072.890)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  21450.20), ( 20.00,  21457.80)  152.00    
+internal:    200 x 76      (     0,  214502), (   200,  214578)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  1071.800), ( 1.000,  1072.180)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  21436.00), ( 20.00,  21443.60)  152.00    
+internal:    200 x 76      (     0,  214360), (   200,  214436)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 0.380   ( 0.000,  1008.760), ( 1.000,  1009.140)  0.380     
+lambda:    20.00 x 7.60    (  0.00,  20175.20), ( 20.00,  20182.80)  152.00    
+internal:    200 x 76      (     0,  201752), (   200,  201828)  15200     
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   2.540 x 1.000   ( 87.120,  1109.000), ( 89.660,  1110.000)  2.540     
+lambda:    50.80 x 20.00   ( 1742.40,  22180.00), ( 1793.20,  22200.00)  1016.00   
+internal:    508 x 200     ( 17424,  221800), ( 17932,  222000)  101600    
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   2.540 x 1.000   ( 187.120,  1109.000), ( 189.660,  1110.000)  2.540     
+lambda:    50.80 x 20.00   ( 3742.40,  22180.00), ( 3793.20,  22200.00)  1016.00   
+internal:    508 x 200     ( 37424,  221800), ( 37932,  222000)  101600    
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   2.540 x 1.000   ( 287.120,  1109.000), ( 289.660,  1110.000)  2.540     
+lambda:    50.80 x 20.00   ( 5742.40,  22180.00), ( 5793.20,  22200.00)  1016.00   
+internal:    508 x 200     ( 57424,  221800), ( 57932,  222000)  101600    
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   2.540 x 1.000   ( 387.120,  1109.000), ( 389.660,  1110.000)  2.540     
+lambda:    50.80 x 20.00   ( 7742.40,  22180.00), ( 7793.20,  22200.00)  1016.00   
+internal:    508 x 200     ( 77424,  221800), ( 77932,  222000)  101600    
+Exactly one label may be present under the cursor box.
+Use "port <name> ..." to specify a unique port.
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand3_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1'
+Writing 'R8W__pfet_03v3_C2L3T7'
+Writing 'R8E__A44_DCTRL_STRIP_E_R2'
+Writing 'R8E__pfet_03v3_PUCBRS'
+Writing 'R8E__pfet_03v3_8RS7KV'
+Writing 'R8E__nfet_03v3_6LX9QF'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai22_1'
+Writing 'R8W__nfet_03v3_YTQ48T'
+Writing 'R8E__nfet_03v3_GE79XY'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__buf_1'
+Writing 'R8W__A44_CAP_CORE128_M6_R1'
+Writing 'R8E__A44_C1_MIM6_R0'
+Writing 'R8E__nfet_03v3_SD8HJT'
+Writing 'R8W__A44_G6_NFET_M9_GUARD0_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkbuf_8'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__buf_2'
+Writing 'A44_CDAC_UNIT_E_R7'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dlyb_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__buf_4'
+Writing 'R8W__A44_CAP_SWITCH_BANK_CORE_O2'
+Writing 'R8E__pfet_03v3_C2L3T7'
+Writing 'R8W__A44_TGCLK_DRIVER_UDRV_W_R1'
+Writing 'R8E__A44_TG8_CORE_R7'
+Writing 'R8E__A44_TGDRV_PCLK_ROW_E_R1'
+Writing 'R8W__A44_TG8_CORE_W_R2'
+Writing 'R8E__A44_SW_BANK64_NORTH_R8_M6'
+Writing 'R8E__nfet_03v3_YTQ48T'
+Writing 'R8W__pfet_03v3_XNC3G5'
+Writing 'R8E__A44_SW_BANK64_SOUTH_R8_M6'
+Writing 'VIA_via2_3_10000_1200_1_9_1040_1040'
+Writing 'R8W__pfet_03v3_FKHA32'
+Writing 'R8E__A44_TGDRV_NCLK_ROW_E_R1'
+Writing 'VIA_Via2_VH'
+Writing 'A44_CDAC_UNIT_E_R8_M6'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi22_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fillcap_4'
+Writing 'A44_CDAC_UNIT_W_R7'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__endcap'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__tieh'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__or4_1'
+Writing 'VIA_Via1_VV'
+Writing 'A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR'
+Writing 'R8W__pfet_03v3_GXTH48'
+Writing 'R8W__nfet_03v3_WHE5HU'
+Writing 'R8E__pfet_03v3_XNC3G5'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nor3_1'
+Writing 'VIA_Via3_HV'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fillcap_8'
+Writing 'R8E__A44_CAP_SWITCH_BANK_CORE_O2'
+Writing 'R8E__pfet_03v3_FKHA32'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__or2_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__and4_1'
+Writing 'R8E__A44_CAP_CORE128_M6_R1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__tiel'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai32_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fillcap_64'
+Writing 'R8E__A44_G6_NFET_M9_GUARD0_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fillcap_32'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nor3_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand4_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkbuf_16'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__or2_4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__and2_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__and4_4'
+Writing 'R8E__pfet_03v3_GXTH48'
+Writing 'R8E__nfet_03v3_WHE5HU'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand4_2'
+Writing 'R8W__A44_G6_PFET_M9_GUARD0_R0'
+Writing 'R8W__A44_C1_MIM6_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand2_1'
+Writing 'SAR_LOGIC_ACTUAL_RTL_SS'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai211_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi211_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand2_2'
+Writing 'A44_A'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai211_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi211_2'
+Writing 'R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6'
+Writing 'R8W__A44_TG8_SLICE_UDRV_W_R1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai21_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fillcap_16'
+Writing 'A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9'
+Writing 'A44_CDAC_UNIT_W_R8_M6'
+Writing 'R8W__A44_DCTRL_BIT_DRIVER_R4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffrnq_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fill_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__fill_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai211_4'
+Writing 'VIA_Via1_HV'
+Writing 'R8W__A44_DCTRL_STRIP_W_R2'
+Writing 'R8W__pfet_03v3_X2N4NU'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkinv_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1'
+Writing 'VIA_via1_2_10000_1200_1_9_1040_1040'
+Writing 'VIA_via3_4_10000_1200_1_9_1040_1040'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__antenna'
+Writing 'R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi21_1'
+Writing 'R8W__pfet_03v3_TTAYZ7'
+Writing 'R8E__A44_G6_PFET_M9_GUARD0_R0'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nor4_1'
+Writing 'R8W__A44_MIM_6P855_R0'
+Writing 'R8W__A44_SW_BANK64_NORTH_R8_M6'
+Writing 'R8W__nfet_03v3_ATEY9D'
+Writing 'R8E__A44_TG8_SLICE_UDRV_E_R1'
+Writing 'R8E__pfet_03v3_X2N4NU'
+Writing 'R8W__A44_SW_BANK64_SOUTH_R8_M6'
+Writing 'R8W__nfet_03v3_9HSG6M'
+Writing 'R8W__nfet_03v3_YTZ44F'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__or3_2'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__aoi221_1'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nor2_1'
+Writing 'R8W__nfet_03v3_6LX9QF'
+Writing 'R8W__pfet_03v3_PUCBRS'
+Writing 'R8E__pfet_03v3_TTAYZ7'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__dffnq_1'
+Writing 'R8W__pfet_03v3_8RS7KV'
+Writing 'A44_CLKS_BUFFER_R1'
+Writing 'R8W__nfet_03v3_GE79XY'
+Writing 'R8E__A44_MIM_6P855_R0'
+Writing 'R8E__nfet_03v3_ATEY9D'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__filltie'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai31_1'
+Writing 'R8W__A44_TGDRV_PCLK_ROW_W_R1'
+Writing 'R8E__A44_DCTRL_BIT_DRIVER_R4'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__clkbuf_2'
+Writing 'R8W__nfet_03v3_SD8HJT'
+Writing 'R8E__A44_TGCLK_DRIVER_UDRV_E_R1'
+Writing 'R8E__nfet_03v3_9HSG6M'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__oai31_2'
+Writing 'R8E__nfet_03v3_YTZ44F'
+Writing 'gf180mcu_fd_sc_mcu7t5v0__nand3_1'
+Writing 'R8W__A44_TGDRV_NCLK_ROW_W_R1'
+Writing '(UNNAMED)'
+Must specify name for cell (UNNAMED).
+Can't write file named '(UNNAMED)'
+A44_GDS_PORT_COUNT=89
+DRC style is now "drc(full)"
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  1110.000 x 1110.000  ( 0.000,  0.000), ( 1110.000,  1110.000)  1232100.000
+lambda:   22200.00 x 22200.00  (  0.00,  0.00 ), ( 22200.00,  22200.00)  492840032.00
+internal: 222000 x 222000  (     0,  0    ), ( 222000,  222000)  49284000000
+Loading DRC CIF style.
+A44_GDS_DRC_BEGIN
+Total DRC errors found: 0
+A44_GDS_DRC_END
+No errors found.
+A44_GDS_DRC_WHY=
+Extracting gf180mcu_fd_sc_mcu7t5v0__endcap into gf180mcu_fd_sc_mcu7t5v0__endcap.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__filltie into gf180mcu_fd_sc_mcu7t5v0__filltie.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__tiel into gf180mcu_fd_sc_mcu7t5v0__tiel.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__tieh into gf180mcu_fd_sc_mcu7t5v0__tieh.ext:
+Extracting R8E__pfet_03v3_PUCBRS into R8E__pfet_03v3_PUCBRS.ext:
+Extracting R8E__nfet_03v3_YTQ48T into R8E__nfet_03v3_YTQ48T.ext:
+Extracting R8E__pfet_03v3_TTAYZ7 into R8E__pfet_03v3_TTAYZ7.ext:
+Extracting R8E__nfet_03v3_YTZ44F into R8E__nfet_03v3_YTZ44F.ext:
+Extracting R8E__A44_TGDRV_NCLK_ROW_E_R1 into R8E__A44_TGDRV_NCLK_ROW_E_R1.ext:
+Extracting R8E__pfet_03v3_FKHA32 into R8E__pfet_03v3_FKHA32.ext:
+Extracting R8E__nfet_03v3_GE79XY into R8E__nfet_03v3_GE79XY.ext:
+Extracting R8E__pfet_03v3_X2N4NU into R8E__pfet_03v3_X2N4NU.ext:
+Extracting R8E__nfet_03v3_9HSG6M into R8E__nfet_03v3_9HSG6M.ext:
+Extracting R8E__A44_TGDRV_PCLK_ROW_E_R1 into R8E__A44_TGDRV_PCLK_ROW_E_R1.ext:
+Extracting R8E__A44_TGCLK_DRIVER_UDRV_E_R1 into R8E__A44_TGCLK_DRIVER_UDRV_E_R1.ext:
+R8E__A44_TGCLK_DRIVER_UDRV_E_R1: 5 warnings
+Extracting R8E__pfet_03v3_C2L3T7 into R8E__pfet_03v3_C2L3T7.ext:
+Extracting R8E__nfet_03v3_SD8HJT into R8E__nfet_03v3_SD8HJT.ext:
+Extracting R8E__A44_TG8_CORE_R7 into R8E__A44_TG8_CORE_R7.ext:
+Extracting R8E__A44_TG8_SLICE_UDRV_E_R1 into R8E__A44_TG8_SLICE_UDRV_E_R1.ext:
+Extracting R8E__nfet_03v3_WHE5HU into R8E__nfet_03v3_WHE5HU.ext:
+Extracting R8E__pfet_03v3_GXTH48 into R8E__pfet_03v3_GXTH48.ext:
+Extracting R8E__nfet_03v3_6LX9QF into R8E__nfet_03v3_6LX9QF.ext:
+Extracting R8E__pfet_03v3_8RS7KV into R8E__pfet_03v3_8RS7KV.ext:
+Extracting R8E__A44_DCTRL_BIT_DRIVER_R4 into R8E__A44_DCTRL_BIT_DRIVER_R4.ext:
+Extracting R8E__A44_DCTRL_STRIP_E_R2 into R8E__A44_DCTRL_STRIP_E_R2.ext:
+Extracting R8E__pfet_03v3_XNC3G5 into R8E__pfet_03v3_XNC3G5.ext:
+Extracting R8E__A44_G6_PFET_M9_GUARD0_R0 into R8E__A44_G6_PFET_M9_GUARD0_R0.ext:
+Extracting R8E__nfet_03v3_ATEY9D into R8E__nfet_03v3_ATEY9D.ext:
+Extracting R8E__A44_G6_NFET_M9_GUARD0_R0 into R8E__A44_G6_NFET_M9_GUARD0_R0.ext:
+Extracting R8E__A44_CAP_SWITCH_BANK_CORE_O2 into R8E__A44_CAP_SWITCH_BANK_CORE_O2.ext:
+Extracting R8E__A44_SW_BANK64_SOUTH_R8_M6 into R8E__A44_SW_BANK64_SOUTH_R8_M6.ext:
+Extracting R8E__A44_SW_BANK64_NORTH_R8_M6 into R8E__A44_SW_BANK64_NORTH_R8_M6.ext:
+Extracting R8E__A44_MIM_6P855_R0 into R8E__A44_MIM_6P855_R0.ext:
+Extracting R8E__A44_C1_MIM6_R0 into R8E__A44_C1_MIM6_R0.ext:
+Extracting R8E__A44_CAP_CORE128_M6_R1 into R8E__A44_CAP_CORE128_M6_R1.ext:
+Extracting R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6 into R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6.ext:
+Extracting A44_CDAC_UNIT_E_R8_M6 into A44_CDAC_UNIT_E_R8_M6.ext:
+Extracting A44_CDAC_UNIT_E_R7 into A44_CDAC_UNIT_E_R7.ext:
+Extracting R8W__pfet_03v3_C2L3T7 into R8W__pfet_03v3_C2L3T7.ext:
+Extracting R8W__nfet_03v3_SD8HJT into R8W__nfet_03v3_SD8HJT.ext:
+Extracting R8W__A44_TG8_CORE_W_R2 into R8W__A44_TG8_CORE_W_R2.ext:
+Extracting R8W__pfet_03v3_PUCBRS into R8W__pfet_03v3_PUCBRS.ext:
+Extracting R8W__nfet_03v3_YTQ48T into R8W__nfet_03v3_YTQ48T.ext:
+Extracting R8W__pfet_03v3_TTAYZ7 into R8W__pfet_03v3_TTAYZ7.ext:
+Extracting R8W__nfet_03v3_YTZ44F into R8W__nfet_03v3_YTZ44F.ext:
+Extracting R8W__A44_TGDRV_NCLK_ROW_W_R1 into R8W__A44_TGDRV_NCLK_ROW_W_R1.ext:
+Extracting R8W__pfet_03v3_FKHA32 into R8W__pfet_03v3_FKHA32.ext:
+Extracting R8W__nfet_03v3_GE79XY into R8W__nfet_03v3_GE79XY.ext:
+Extracting R8W__pfet_03v3_X2N4NU into R8W__pfet_03v3_X2N4NU.ext:
+Extracting R8W__nfet_03v3_9HSG6M into R8W__nfet_03v3_9HSG6M.ext:
+Extracting R8W__A44_TGDRV_PCLK_ROW_W_R1 into R8W__A44_TGDRV_PCLK_ROW_W_R1.ext:
+Extracting R8W__A44_TGCLK_DRIVER_UDRV_W_R1 into R8W__A44_TGCLK_DRIVER_UDRV_W_R1.ext:
+R8W__A44_TGCLK_DRIVER_UDRV_W_R1: 5 warnings
+Extracting R8W__A44_TG8_SLICE_UDRV_W_R1 into R8W__A44_TG8_SLICE_UDRV_W_R1.ext:
+Extracting R8W__nfet_03v3_WHE5HU into R8W__nfet_03v3_WHE5HU.ext:
+Extracting R8W__pfet_03v3_GXTH48 into R8W__pfet_03v3_GXTH48.ext:
+Extracting R8W__nfet_03v3_6LX9QF into R8W__nfet_03v3_6LX9QF.ext:
+Extracting R8W__pfet_03v3_8RS7KV into R8W__pfet_03v3_8RS7KV.ext:
+Extracting R8W__A44_DCTRL_BIT_DRIVER_R4 into R8W__A44_DCTRL_BIT_DRIVER_R4.ext:
+Extracting R8W__A44_DCTRL_STRIP_W_R2 into R8W__A44_DCTRL_STRIP_W_R2.ext:
+Extracting R8W__pfet_03v3_XNC3G5 into R8W__pfet_03v3_XNC3G5.ext:
+Extracting R8W__A44_G6_PFET_M9_GUARD0_R0 into R8W__A44_G6_PFET_M9_GUARD0_R0.ext:
+Extracting R8W__nfet_03v3_ATEY9D into R8W__nfet_03v3_ATEY9D.ext:
+Extracting R8W__A44_G6_NFET_M9_GUARD0_R0 into R8W__A44_G6_NFET_M9_GUARD0_R0.ext:
+Extracting R8W__A44_CAP_SWITCH_BANK_CORE_O2 into R8W__A44_CAP_SWITCH_BANK_CORE_O2.ext:
+Extracting R8W__A44_SW_BANK64_SOUTH_R8_M6 into R8W__A44_SW_BANK64_SOUTH_R8_M6.ext:
+Extracting R8W__A44_SW_BANK64_NORTH_R8_M6 into R8W__A44_SW_BANK64_NORTH_R8_M6.ext:
+Extracting R8W__A44_MIM_6P855_R0 into R8W__A44_MIM_6P855_R0.ext:
+Extracting R8W__A44_C1_MIM6_R0 into R8W__A44_C1_MIM6_R0.ext:
+Extracting R8W__A44_CAP_CORE128_M6_R1 into R8W__A44_CAP_CORE128_M6_R1.ext:
+Extracting R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6 into R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6.ext:
+Extracting A44_CDAC_UNIT_W_R8_M6 into A44_CDAC_UNIT_W_R8_M6.ext:
+Extracting A44_CDAC_UNIT_W_R7 into A44_CDAC_UNIT_W_R7.ext:
+Extracting A44_CLKS_BUFFER_R1 into A44_CLKS_BUFFER_R1.ext:
+Extracting A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9 into A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9.ext:
+Extracting VIA_Via2_VH into VIA_Via2_VH.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_32 into gf180mcu_fd_sc_mcu7t5v0__fillcap_32.ext:
+Extracting VIA_via3_4_10000_1200_1_9_1040_1040 into VIA_via3_4_10000_1200_1_9_1040_1040.ext:
+Extracting VIA_via1_2_10000_1200_1_9_1040_1040 into VIA_via1_2_10000_1200_1_9_1040_1040.ext:
+Extracting VIA_via2_3_10000_1200_1_9_1040_1040 into VIA_via2_3_10000_1200_1_9_1040_1040.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_4 into gf180mcu_fd_sc_mcu7t5v0__fillcap_4.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_8 into gf180mcu_fd_sc_mcu7t5v0__fillcap_8.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__buf_4 into gf180mcu_fd_sc_mcu7t5v0__buf_4.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_16 into gf180mcu_fd_sc_mcu7t5v0__fillcap_16.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fill_1 into gf180mcu_fd_sc_mcu7t5v0__fill_1.ext:
+Extracting VIA_Via1_VV into VIA_Via1_VV.ext:
+Extracting VIA_Via1_HV into VIA_Via1_HV.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fill_2 into gf180mcu_fd_sc_mcu7t5v0__fill_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_64 into gf180mcu_fd_sc_mcu7t5v0__fillcap_64.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffnq_1 into gf180mcu_fd_sc_mcu7t5v0__dffnq_1.ext:
+Extracting VIA_Via3_HV into VIA_Via3_HV.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkinv_1 into gf180mcu_fd_sc_mcu7t5v0__clkinv_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai22_1 into gf180mcu_fd_sc_mcu7t5v0__oai22_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__buf_2 into gf180mcu_fd_sc_mcu7t5v0__buf_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__and4_1 into gf180mcu_fd_sc_mcu7t5v0__and4_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand2_1 into gf180mcu_fd_sc_mcu7t5v0__nand2_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 into gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai31_1 into gf180mcu_fd_sc_mcu7t5v0__oai31_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 into gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__buf_1 into gf180mcu_fd_sc_mcu7t5v0__buf_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 into gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__or4_1 into gf180mcu_fd_sc_mcu7t5v0__or4_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 into gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai21_1 into gf180mcu_fd_sc_mcu7t5v0__oai21_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi21_1 into gf180mcu_fd_sc_mcu7t5v0__aoi21_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand4_1 into gf180mcu_fd_sc_mcu7t5v0__nand4_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dlyb_1 into gf180mcu_fd_sc_mcu7t5v0__dlyb_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand3_1 into gf180mcu_fd_sc_mcu7t5v0__nand3_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai211_1 into gf180mcu_fd_sc_mcu7t5v0__oai211_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor3_4 into gf180mcu_fd_sc_mcu7t5v0__nor3_4.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand3_2 into gf180mcu_fd_sc_mcu7t5v0__nand3_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi211_2 into gf180mcu_fd_sc_mcu7t5v0__aoi211_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__and4_4 into gf180mcu_fd_sc_mcu7t5v0__and4_4.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__antenna into gf180mcu_fd_sc_mcu7t5v0__antenna.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor3_1 into gf180mcu_fd_sc_mcu7t5v0__nor3_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand2_2 into gf180mcu_fd_sc_mcu7t5v0__nand2_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor4_1 into gf180mcu_fd_sc_mcu7t5v0__nor4_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__and2_1 into gf180mcu_fd_sc_mcu7t5v0__and2_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi22_2 into gf180mcu_fd_sc_mcu7t5v0__aoi22_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai211_2 into gf180mcu_fd_sc_mcu7t5v0__oai211_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor2_1 into gf180mcu_fd_sc_mcu7t5v0__nor2_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__or3_2 into gf180mcu_fd_sc_mcu7t5v0__or3_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__or2_4 into gf180mcu_fd_sc_mcu7t5v0__or2_4.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand4_2 into gf180mcu_fd_sc_mcu7t5v0__nand4_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai31_2 into gf180mcu_fd_sc_mcu7t5v0__oai31_2.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__or2_1 into gf180mcu_fd_sc_mcu7t5v0__or2_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 into gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai211_4 into gf180mcu_fd_sc_mcu7t5v0__oai211_4.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi221_1 into gf180mcu_fd_sc_mcu7t5v0__aoi221_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai32_1 into gf180mcu_fd_sc_mcu7t5v0__oai32_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi211_1 into gf180mcu_fd_sc_mcu7t5v0__aoi211_1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 into gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.ext:
+Extracting SAR_LOGIC_ACTUAL_RTL_SS into SAR_LOGIC_ACTUAL_RTL_SS.ext:
+Extracting A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR into A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR.ext:
+Extracting A44_A into A44_A.ext:
+Total of 10 warnings.
+exttospice finished.
+A44_GDS_READBACK_COMPLETE=1

@@ -1,0 +1,65 @@
+{
+  "schema": "a44-def-alignment-verification-v1",
+  "status": "PASS_DEF_ALIGNED",
+  "pass": true,
+  "authority": {
+    "official_def": "verification/a44_def_alignment/official_def/A44_A.def",
+    "final_def": "layout/def/A44_A.def",
+    "gds": "gds/A44_A.gds"
+  },
+  "top": {
+    "name": "A44_A",
+    "origin_um": [
+      0.0,
+      0.0
+    ],
+    "bbox_um": [
+      0.0,
+      0.0,
+      1110.0,
+      1110.0
+    ],
+    "width_um": 1110.0,
+    "height_um": 1110.0
+  },
+  "pins": {
+    "logical_count": 89,
+    "shape_count": 127,
+    "matched_shape_count": 127,
+    "side_counts": {
+      "NORTH": 4,
+      "WEST": 85
+    }
+  },
+  "core": [
+    {
+      "cell": "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+      "origin_um": [
+        55.0,
+        55.0
+      ],
+      "angle": 0.0,
+      "reflected": false
+    }
+  ],
+  "checks": {
+    "design_exact": true,
+    "units_exact": true,
+    "diearea_exact": true,
+    "pin_section_exact": true,
+    "pin_contract_exact": true,
+    "logical_pin_count_89": true,
+    "pin_shape_count_127": true,
+    "gds_top_bbox_exact": true,
+    "gds_pin_labels_127": true,
+    "all_pin_shapes_attached": true,
+    "core_single_instance": true,
+    "core_origin_55_55": true,
+    "core_orientation_r0": true
+  },
+  "notes": [
+    "Every official DEF pin rectangle is covered by top-level Metal2 and has a same-name GDS label at the rectangle center.",
+    "No SHA-256 or full-manifest audit was performed.",
+    "No conversion or performance simulation was run."
+  ]
+}
