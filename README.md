@@ -3,6 +3,21 @@
 This repository contains the Team A44 8-bit, 2 MS/s, 3.3 V fully differential
 capacitive SAR ADC design, its layouts, and its simulation results.
 
+## Published layout-review submission
+
+The retained Chipathon 2026 repository-root layout-review submission is the
+no-pad, pre-fill core selected by `info.yaml` and `lvs_config.json`:
+
+- [CORE layout in GDSII format](gds/A44_SAR_ADC_CORE_1000.gds)
+- [Component layouts](gds/components)
+- [Layout catalog, integration views, and images](layout/README.md)
+- [Layout-review presentation](docs/slides/A44_SAR_ADC_LAYOUT_REVIEW_20260821.pptx)
+
+The newer R8/M6 CDAC GDS and verification records are published in the current
+engineering package below. The repository-root binding continues to use the
+retained CORE/LEF/DEF submission set selected by `info.yaml` and
+`lvs_config.json`.
+
 ## Current engineering baseline
 
 The current working engineering baseline is the
@@ -27,21 +42,6 @@ The unified-TOP conversion records include `FAIL_FORMAL_MIN2`, where the second
 MIN2 frame resolves to 0x00 in PEX while ideal and matching schematic resolve
 to 0x01. The MIN-MAX-MIN and 0x7F-0x80-0x7F records contain the corresponding
 three-frame codes and settling data.
-
-## Published layout-review submission
-
-The retained Chipathon 2026 repository-root layout-review submission is the
-no-pad, pre-fill core selected by `info.yaml` and `lvs_config.json`:
-
-- [CORE layout in GDSII format](gds/A44_SAR_ADC_CORE_1000.gds)
-- [Component layouts](gds/components)
-- [Layout catalog, integration views, and images](layout/README.md)
-- [Layout-review presentation](docs/slides/A44_SAR_ADC_LAYOUT_REVIEW_20260821.pptx)
-
-The newer R8/M6 CDAC GDS and verification records are published in the current
-engineering package above. The repository-root binding continues to use the
-retained CORE/LEF/DEF submission set selected by `info.yaml` and
-`lvs_config.json`.
 
 ## Preserved W5P29 schematic baseline
 
