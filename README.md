@@ -3,6 +3,25 @@
 This repository contains the Team A44 8-bit, 2 MS/s, 3.3 V fully differential
 capacitive SAR ADC design, its layouts, and its simulation results.
 
+## Published layout-review submission
+
+The retained Chipathon 2026 repository-root layout-review submission is the
+no-pad, pre-fill core selected by `info.yaml` and `lvs_config.json`:
+
+- [CORE layout in GDSII format](gds/A44_SAR_ADC_CORE_1000.gds)
+- [Component layouts](gds/components)
+- [Layout catalog, integration views, and images](layout/README.md)
+- [Layout-review presentation](docs/slides/A44_SAR_ADC_LAYOUT_REVIEW_20260821.pptx)
+
+This publication is for layout review. It does not claim density or fill
+closure, padframe or ESD completion, full-chip signoff,
+Channel Partner acceptance, or tapeout readiness.
+
+The newer R8/M6 CDAC GDS and verification records are published in the current
+engineering package above. The repository-root binding is not repointed because
+that component package does not provide a newly requalified, coherent root
+CORE/LEF/DEF submission set.
+
 ## Current engineering baseline
 
 The current working engineering baseline is the
@@ -31,25 +50,6 @@ they do not override the formal MIN2 failure.
 
 This is a current working baseline, not promotion, full ADC performance
 qualification, Channel Partner acceptance, or tapeout signoff.
-
-## Published layout-review submission
-
-The retained Chipathon 2026 repository-root layout-review submission is the
-no-pad, pre-fill core selected by `info.yaml` and `lvs_config.json`:
-
-- [CORE layout in GDSII format](gds/A44_SAR_ADC_CORE_1000.gds)
-- [Component layouts](gds/components)
-- [Layout catalog, integration views, and images](layout/README.md)
-- [Layout-review presentation](docs/slides/A44_SAR_ADC_LAYOUT_REVIEW_20260821.pptx)
-
-This publication is for layout review. It does not claim density or fill
-closure, padframe or ESD completion, full-chip signoff,
-Channel Partner acceptance, or tapeout readiness.
-
-The newer R8/M6 CDAC GDS and verification records are published in the current
-engineering package above. The repository-root binding is not repointed because
-that component package does not provide a newly requalified, coherent root
-CORE/LEF/DEF submission set.
 
 ## Preserved W5P29 schematic baseline
 
