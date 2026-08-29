@@ -4,12 +4,10 @@
   current working-status record.
 - [`CONFIRMED_SIMULATION_METHODS.json`](CONFIRMED_SIMULATION_METHODS.json)
   freezes the input fixture, acquisition criterion, transient method, and
-  claim boundaries.
+  result classifications.
 - [`SIMULATION_COVERAGE_CURRENT_VS_OLD.csv`](SIMULATION_COVERAGE_CURRENT_VS_OLD.csv)
-  separates completed current-capacitor work from historical results, open
-  gates, and out-of-scope items.
+  separates completed current-capacitor work from historical results and
+  remaining coverage.
 
-These files are copied from the named baseline without upgrading any partial
-or diagnostic result. In particular, schematic comparison data are not PEX,
-acquisition completion is not full ADC performance, and package integrity is
-not electrical signoff.
+These files are copied from the named baseline and retain its recorded values
+and classifications.

@@ -23,22 +23,19 @@ results without noise, mismatch, comparator/scope loading, or PVT coverage.
 All 100 requested TT seeds completed for whole-ADC upward-T1 transfer offset
 with a direct ideal zero-impedance input. The signed mean is 0.430039 LSB, the
 population standard deviation is 0.226182 LSB, and the observed range is
--0.134766 to 1.007813 LSB. This is not comparator-only input offset, a PEX
-result, unbounded statistical yield, or signoff.
+-0.134766 to 1.007813 LSB.
 
 ## Unified-TOP conversion
 
-| Scenario | Ideal | Schematic | PEX | Current interpretation |
+| Scenario | Ideal | Schematic | PEX | Result summary |
 | --- | --- | --- | --- | --- |
-| MIN2 | [0, 1] | [0, 1] | [0, 0] | `FAIL_FUNCTIONAL_CONVERSION`; controlling `FAIL_FORMAL_MIN2` |
-| MIN-MAX-MIN | [0, 255, 0] | [0, 255, 0] | [0, 255, 0] | `PASS_FUNCTIONAL_NOMINAL`; internal settling warning; robust margin not proven |
-| 0x7F-0x80-0x7F | [127, 128, 127] | [127, 128, 127] | [127, 128, 127] | `PASS_FUNCTIONAL_NOMINAL`; settling and aperture-sensitivity warnings; robust margin not proven |
+| MIN2 | [0, 1] | [0, 1] | [0, 0] | `FAIL_FUNCTIONAL_CONVERSION`; `FAIL_FORMAL_MIN2` |
+| MIN-MAX-MIN | [0, 255, 0] | [0, 255, 0] | [0, 255, 0] | `PASS_FUNCTIONAL_NOMINAL`; internal settling warning |
+| 0x7F-0x80-0x7F | [127, 128, 127] | [127, 128, 127] | [127, 128, 127] | `PASS_FUNCTIONAL_NOMINAL`; settling and aperture-sensitivity warnings |
 
-Numerical completion, protocol structure, nominal function, internal settling,
-signed decision margin, robust margin, and end-to-end ADC performance remain
-separate gates. See
+See
 [`conversion/LAYERED_CONVERSION_STATUS.json`](conversion/LAYERED_CONVERSION_STATUS.json)
-for the machine-readable controlling judgment.
+for the machine-readable conversion record.
 
-Raw waveforms and long simulator logs remain in the named engineering baseline
-and are intentionally not duplicated in this review-sized GitHub package.
+Raw waveforms and long simulator logs are stored in the named engineering
+baseline; this GitHub package provides the structured result summaries.

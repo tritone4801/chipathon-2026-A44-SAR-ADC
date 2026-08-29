@@ -1,4 +1,4 @@
-# Qualified R8/M6 CDAC layout
+# R8/M6 CDAC layout
 
 Public filenames follow the repository's version-free `A44_SAR_ADC_` naming
 style. The verified internal GDS and Magic cell names are retained unchanged.
@@ -36,14 +36,12 @@ result sets. For the selected
 zero errors and all three full-transistor LVS views are unique, property-clean,
 and free of black-box options.
 
-That PASS is scoped to the selected CORE cell. It does not upgrade the
-container's `chip_top`, official KLayout DRC, density, PEX behavior,
-performance, promotion, or tapeout signoff.
+The result set uses the selected CORE cell; `chip_top` remains a separate top
+cell in the GDS container.
 
 ![Current east CDAC layout](images/A44_SAR_ADC_CDAC_E.png)
 
 ![Current west CDAC layout](images/A44_SAR_ADC_CDAC_W.png)
 
-The CDAC component and selected-CORE results do not repoint the repository-root
-submission or independently requalify its LEF, DEF, padframe, or full-die
-binding. They also do not imply PEX performance, promotion, or tapeout signoff.
+The repository-root submission continues to use its retained CORE, LEF, DEF,
+padframe, and full-die bindings.

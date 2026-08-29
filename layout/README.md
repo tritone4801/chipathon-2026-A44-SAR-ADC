@@ -15,8 +15,7 @@ LAYOUT_FILE = gds/A44_SAR_ADC_CORE_1000.gds
 The later cap x1/3 R8/M6 CDAC component layouts and their current DRC/LVS and
 PEX result records are published separately under
 [`verification/a44_cdac_cap_x1div3`](../verification/a44_cdac_cap_x1div3).
-They do not replace this root binding because no newly requalified coherent
-CORE/LEF/DEF submission set is claimed by that component package.
+The repository-root binding continues to use the retained CORE/LEF/DEF set.
 
 ## Published layout names
 
@@ -42,10 +41,7 @@ contracts are preserved.
 - `images/`: exactly one full-layout image for each published GDS.
 - `../docs/slides/`: the layout-review presentation.
 
-## Scope boundary
+## Layout contents
 
-This is the retained CORE layout-review publication without padframe, I/O
-pads, primary or secondary ESD, or a workshop full-die wrapper. The CORE is
-the published pre-fill submission baseline. The files are not a claim of
-density/fill closure, full-chip signoff, Channel Partner acceptance, or
-tapeout readiness.
+This retained layout-review publication contains the pre-fill CORE without a
+padframe, I/O pads, primary or secondary ESD, or a workshop full-die wrapper.
