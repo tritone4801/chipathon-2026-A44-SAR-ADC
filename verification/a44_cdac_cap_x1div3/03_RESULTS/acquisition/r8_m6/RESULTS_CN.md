@@ -17,7 +17,7 @@
 - 每个 unit capacitor 为当前 cap×1/3 的 MIM 单元（schematic `m=6`）；加上一组接 GND 的 Cdummy，共 `128` 个逻辑 site、`768` 个物理 MIM-B primitive。
 - 每个 active CAP_SWITCH 由一只连接 VREFN 的 NMOS 和一只连接 VREFP 的 PMOS 构成。
 - 七通道 DCTRL conversion buffer / driver strip，每通道为两级反相器。
-- 输入采样 transmission gate：NMOS 与 PMOS pass device（schematic `m=8`），以及产生 `N_CLK/P_CLK` 的本地 TG clock-driver chains。
+- 输入采样 TG：NMOS 与 PMOS pass device（schematic `m=8`），以及产生 `N_CLK/P_CLK` 的本地 TG clock-driver chains。
 - `VIN、CLKS、VTOP、DCTRL[7:1]、VREFP、VREFN、VDD、GND` 的 pin、参考/供电轨和互连；E/W 两个版本仅镜像侧向集成接口。
 
 当前完整提取每侧统计为 `768 MIM + 2337 NFET + 2337 PFET + 162 nets`。这些组分都包含在本轮 FULL-RC-CC PEX acquisition DUT 中。

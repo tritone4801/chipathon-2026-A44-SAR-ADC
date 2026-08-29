@@ -14,8 +14,8 @@ The electrical delta is intentionally narrow:
 | `spice/A44_CDAC_UNIT_TRANS_DRIVER_HIER.subckt.spice` | Matching C1 and dummy netlist multipliers change from 18 to 6 |
 | `spice/A44_SAR_ADC_TOP_FIXED.spice` | Matching flattened TOP occurrences change from 18 to 6 |
 
-The reference-switch devices remain at multiplier 18; the sampling
-transmission gate remains at multiplier 8. The fixed nominal input network,
+The reference-switch devices remain at multiplier 18; the sampling TG remains
+at multiplier 8. The fixed nominal input network,
 the acquisition execution view of the primary analog pad, its source receipt,
 and the secondary-ESD wrapper are under `input_model/`.
 

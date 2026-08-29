@@ -10,6 +10,6 @@
   gates, and out-of-scope items.
 
 These files are copied from the named baseline without upgrading any partial
-or diagnostic result. In particular, schematic comparison data are not
-parasitic extraction, acquisition completion is not full ADC performance, and
-package integrity is not electrical signoff.
+or diagnostic result. In particular, schematic comparison data are not PEX,
+acquisition completion is not full ADC performance, and package integrity is
+not electrical signoff.

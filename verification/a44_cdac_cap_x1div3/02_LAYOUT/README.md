@@ -15,7 +15,7 @@ plus one dummy C1 tied to ground, grouped as 1/2/4/8/16/32/64.
 ## Verification result
 
 - Native recursive full DRC: zero errors for east and west.
-- Second-generation GDS-readback full DRC: zero errors for east and west.
+- GDS-readback full DRC: zero errors for east and west.
 - Native and readback LVS against the complete current schematic: unique in
   unmerged and conservative extractions.
 - Native-to-readback and east-to-west comparisons: unique.
