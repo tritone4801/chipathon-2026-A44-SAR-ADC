@@ -1,0 +1,160 @@
+[
+  {
+  },
+  {
+  },
+  {
+  },
+  {
+  },
+  {
+   "name": [
+      "SAR_LOGIC_ACTUAL_RTL_SS",
+      "SAR_LOGIC_ACTUAL_RTL_SS"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 3959],
+         ["nfet_05v0", 3961],
+         ["diode_nd2ps_06v0", 3],
+         ["diode_pd2nw_06v0", 3 ]
+       ], [
+         ["pfet_05v0", 3959 ],
+         ["nfet_05v0", 3961 ],
+         ["diode_nd2ps_06v0", 3 ],
+         ["diode_pd2nw_06v0", 3 ]
+       ]
+   ],
+   "nets": [
+    6718,
+    6718
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "CMPCK",
+        "DOUT[0]",
+        "DCTRLN[3]",
+        "DCTRLN[6]",
+        "DCTRLN[5]",
+        "DCTRLP[6]",
+        "DCTRLN[1]",
+        "DCTRLN[4]",
+        "DCTRLN[2]",
+        "DOUT[6]",
+        "DOUT[5]",
+        "DOUT[7]",
+        "DOUT[3]",
+        "DOUT[2]",
+        "DOUT[1]",
+        "DOUT[4]",
+        "DCTRLN[7]",
+        "DCTRLP[7]",
+        "DCTRLP[3]",
+        "DCTRLP[1]",
+        "DCTRLP[5]",
+        "DCTRLP[4]",
+        "DCTRLP[2]",
+        "DCMPN",
+        "DCMPP",
+        "CLKS",
+        "VSS",
+        "VDD"
+      ], [
+        "CMPCK",
+        "DOUT[0]",
+        "DCTRLN[3]",
+        "DCTRLN[6]",
+        "DCTRLN[5]",
+        "DCTRLP[6]",
+        "DCTRLN[1]",
+        "DCTRLN[4]",
+        "DCTRLN[2]",
+        "DOUT[6]",
+        "DOUT[5]",
+        "DOUT[7]",
+        "DOUT[3]",
+        "DOUT[2]",
+        "DOUT[1]",
+        "DOUT[4]",
+        "DCTRLN[7]",
+        "DCTRLP[7]",
+        "DCTRLP[3]",
+        "DCTRLP[1]",
+        "DCTRLP[5]",
+        "DCTRLP[4]",
+        "DCTRLP[2]",
+        "DCMPN",
+        "DCMPP",
+        "CLKS",
+        "VSS",
+        "VDD"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+      "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR"
+   ],
+   "devices": [
+       [
+         ["SAR_LOGIC_ACTUAL_RTL_SS", 1],
+         ["nfet_03v3", 307],
+         ["pfet_03v3", 308],
+         ["cap_mim_2f0_m4m5_noshield", 256 ]
+       ], [
+         ["SAR_LOGIC_ACTUAL_RTL_SS", 1 ],
+         ["nfet_03v3", 307 ],
+         ["pfet_03v3", 308 ],
+         ["cap_mim_2f0_m4m5_noshield", 256 ]
+       ]
+   ],
+   "nets": [
+    337,
+    337
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "CLKS",
+        "VINP",
+        "VINN",
+        "VREFP",
+        "VREFN",
+        "GND",
+        "VDD",
+        "DOUT[0]",
+        "DOUT[1]",
+        "DOUT[2]",
+        "DOUT[3]",
+        "DOUT[4]",
+        "DOUT[5]",
+        "DOUT[6]",
+        "DOUT[7]"
+      ], [
+        "CLKS",
+        "VINP",
+        "VINN",
+        "VREFP",
+        "VREFN",
+        "GND",
+        "VDD",
+        "DOUT[0]",
+        "DOUT[1]",
+        "DOUT[2]",
+        "DOUT[3]",
+        "DOUT[4]",
+        "DOUT[5]",
+        "DOUT[6]",
+        "DOUT[7]"
+      ]
+   ]
+  }
+]

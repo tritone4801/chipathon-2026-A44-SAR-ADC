@@ -1,3 +1,6 @@
 verification/a44_r2/** -text
 verification/a44_w5p29_trans_driver/** -text whitespace=-blank-at-eof
+verification/a44_cdac_cap_x1div3/01_CURRENT_CIRCUIT_FILES/input_model/*.spice whitespace=-blank-at-eof
+verification/a44_cdac_cap_x1div3/02_LAYOUT/final_integration/drc_lvs/** whitespace=-blank-at-eol,-blank-at-eof
+verification/a44_cdac_cap_x1div3/03_RESULTS/conversion/README_CN.md whitespace=-blank-at-eof
 *.xlsx binary

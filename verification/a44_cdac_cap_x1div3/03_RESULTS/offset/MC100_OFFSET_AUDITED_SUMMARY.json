@@ -1,0 +1,61 @@
+{
+  "abs_offset_lsb_max": 1.0078125000000133,
+  "abs_offset_lsb_mean": 0.4330859375000054,
+  "abs_offset_lsb_median": 0.4160156250000234,
+  "abs_offset_lsb_p95": 0.7914062500000034,
+  "abs_offset_lsb_p99": 0.8840625000000107,
+  "baseline_cap_x1_mc100_summary": {
+    "offset_lsb_max": 0.7578125000000067,
+    "offset_lsb_mean": 0.18259765625000138,
+    "offset_lsb_median": 0.16992187500001005,
+    "offset_lsb_min": -0.3808593750000167,
+    "offset_lsb_stddev_population": 0.22539544767777334,
+    "seed_count": 100
+  },
+  "cap_scale": 0.3333333333333333,
+  "cap_x1div3_minus_baseline_mc100_summary_delta": {
+    "offset_lsb_max": 0.25000000000000666,
+    "offset_lsb_mean": 0.24744140625000385,
+    "offset_lsb_min": 0.24609375000001335
+  },
+  "claim_boundary": "Exact TT seeds 1-100 whole-ADC upward T1 transfer offset for the current cap-x1/3 CDAC with direct ideal zero-impedance input. No nominal PAD/ESD/input-RC is bound. This is not comparator-only Vos, PVT offset, unbounded statistical yield, PEX, promotion, or signoff.",
+  "completion_status": "PASS_COMPLETE_EVIDENCE",
+  "contract_sha256": "50e5ea0217b66710b93a28fc1d12e2b46babcdb5c5e0103494218e7436d645d7",
+  "cpu_affinity_seed_counts": {
+    "0": 11,
+    "10": 14,
+    "12": 13,
+    "14": 11,
+    "2": 13,
+    "4": 15,
+    "6": 11,
+    "8": 12
+  },
+  "generated_utc": "2026-08-25T03:11:35.425002Z",
+  "method_id": "W5P29_UNIT_TRANS_DRIVER_TT_MC100_OFFSET_CAP_X1DIV3_DIRECT_IDEAL_INPUT_V1",
+  "negative_offset_count": 2,
+  "offset_lsb_max": 1.0078125000000133,
+  "offset_lsb_mean": 0.43003906250000523,
+  "offset_lsb_median": 0.4160156250000234,
+  "offset_lsb_min": -0.13476562500000336,
+  "offset_lsb_p01": -0.018750000000003347,
+  "offset_lsb_p05": 0.052148437500009366,
+  "offset_lsb_p95": 0.7914062500000034,
+  "offset_lsb_p99": 0.8840625000000107,
+  "offset_lsb_stddev_population": 0.22618172136922207,
+  "paired_seed_offset_lsb_delta": {
+    "count": 100,
+    "max": 0.2578125000000268,
+    "mean": 0.24744140625000388,
+    "min": 0.24023437500000666
+  },
+  "positive_offset_count": 98,
+  "qualified_seed_count": 100,
+  "release_id": "A44_CDAC_CAP_X1DIV3_MC100_OFFSET_DIRECT_INPUT_R1",
+  "required_seed_count": 100,
+  "runner_summary_consistent": true,
+  "runner_summary_path": "A44_CDAC_CAP_X1DIV3_MC100_OFFSET_DIRECT_INPUT_R1/04_ANALYSIS/MC100_OFFSET_SUMMARY.json",
+  "runner_summary_sha256": "b9b05028de5c23952fe50761cb1901149ea4f08591495d3b2d1cfc56e34effbd",
+  "schema": "a44-cap-x1div3-offset-mc100-audited-summary-v1",
+  "zero_offset_count": 0
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "a44-public-cap-x1div3-status-v1",
+  "source_release": "A44_CDAC_CAP_X1DIV3_BASELINE_20260828_R1",
+  "status": "CURRENT_WORKING_BASELINE",
+  "circuit": {
+    "baseline": "A44_W5P29_UNIT_TRANS_DRIVER",
+    "change": "C1_AND_CDUMMY_MIM_MULTIPLIER_18_TO_6",
+    "cap_switch_multiplier": 18,
+    "sampling_tg_multiplier": 8
+  },
+  "layout": {
+    "qualified_cells": [
+      "A44_CDAC_UNIT_E_R8_M6",
+      "A44_CDAC_UNIT_W_R8_M6"
+    ],
+    "fixed_site_um": [390.0, 400.0],
+    "native_drc": "ZERO_ERRORS_BOTH_SIDES",
+    "gds_readback_drc": "ZERO_ERRORS_BOTH_SIDES",
+    "lvs": "UNIQUE_ALL_TWELVE_RECORDED_COMPARISONS",
+    "final_integration": {
+      "selected_top": "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+      "magic_full_drc_total": 0,
+      "magic_return_code": 0,
+      "lvs_views": 3,
+      "all_lvs_views_unique": true,
+      "property_clean": true,
+      "blackbox_used": false,
+      "status": "PASS_TOP_MAGIC_DRC_AND_FULL_TRANSISTOR_LVS"
+    },
+    "root_submission_binding_changed": false
+  },
+  "results": {
+    "r8_m6_pex_esd_rc_gen_acquisition_ns": 151.83229969843242,
+    "attempt20_pex_esd_rc_gen_acquisition_ns": 151.9349400810248,
+    "mc100_direct_input_upward_t1_offset_mean_lsb": 0.43003906250000523,
+    "formal_min2": "FAIL_FORMAL_MIN2",
+    "min_max_min": "PASS_FUNCTIONAL_NOMINAL_WITH_INTERNAL_SETTLING_MARGIN_WARNING",
+    "mid127_128_127": "PASS_FUNCTIONAL_NOMINAL_WITH_INTERNAL_SETTLING_AND_APERTURE_SENSITIVITY_WARNINGS"
+  },
+  "publication": {
+    "new_simulations_run": false,
+    "new_extraction_run": false,
+    "new_drc_lvs_run": false,
+    "new_hash_or_rehash_audit": false,
+    "raw_waveforms_in_repository": false,
+    "structured_final_records_in_repository": true
+  },
+  "performance_thresholds_applied": false,
+  "promotion_eligible": false,
+  "tapeout_signoff": false
+}

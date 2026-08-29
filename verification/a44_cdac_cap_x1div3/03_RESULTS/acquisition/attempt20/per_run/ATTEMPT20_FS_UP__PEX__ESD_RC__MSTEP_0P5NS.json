@@ -1,0 +1,107 @@
+{
+  "run_id": "ATTEMPT20_FS_UP__PEX__ESD_RC__MSTEP_0P5NS",
+  "direction": "FS_UP",
+  "maxstep_ns": 0.5,
+  "simulator": "Xyce 7.10-opensource",
+  "input_model_id": "A44_SCHEM_ACQ_ESD_LUMPED_RC_GEN50_R1",
+  "input_model": {
+    "series_resistance_ohm_per_leg": 55.0,
+    "shunt_capacitance_f_per_leg": 1.5e-12,
+    "differential_capacitance_f": 2e-13,
+    "primary_pad_view": "GF180_ASIG_5P0_EXTRACTED_RLE0P1_R1",
+    "secondary_esd_bound": true
+  },
+  "t0_ns": 20.1,
+  "hold_edge_nominal_ns": 500.3,
+  "track_window_guard_ns": 2.0,
+  "formal_primary_reference_plane": "GEN",
+  "criterion": "ABS_DIFFERENTIAL_ERROR_LE_3P3203125MV_ENTER_AND_REMAIN",
+  "previous_p_v": 0.8,
+  "previous_n_v": 2.5,
+  "target_p_v": 2.5,
+  "target_n_v": 0.8,
+  "deck_path": "D:\\PICO\\A44_CDAC_ATTEMPT20_LAYOUT_ACQUISITION_ESD_RC_20260825_R1\\02_SIMULATION\\decks\\ATTEMPT20_FS_UP__PEX__ESD_RC__MSTEP_0P5NS.spice",
+  "data_path": "D:\\PICO\\A44_CDAC_ATTEMPT20_LAYOUT_ACQUISITION_ESD_RC_20260825_R1\\02_SIMULATION\\results\\ATTEMPT20_FS_UP__PEX__ESD_RC__MSTEP_0P5NS.csv",
+  "log_path": "D:\\PICO\\A44_CDAC_ATTEMPT20_LAYOUT_ACQUISITION_ESD_RC_20260825_R1\\02_SIMULATION\\results\\ATTEMPT20_FS_UP__PEX__ESD_RC__MSTEP_0P5NS.log",
+  "source_gds_e": "D:\\PICO\\A44_W5P29_CDAC_R8_TOP_LAYOUT_20260825_R1\\04_CDAC_TOP_INTEGRATION\\01_BUILD\\attempt20_cdac_klayout_drc_repair\\G3\\E\\A44_CDAC_UNIT_E_R8_M6_RAW.gds",
+  "source_gds_w": "D:\\PICO\\A44_W5P29_CDAC_R8_TOP_LAYOUT_20260825_R1\\04_CDAC_TOP_INTEGRATION\\01_BUILD\\attempt20_cdac_klayout_drc_repair\\G3\\W\\A44_CDAC_UNIT_W_R8_M6_RAW.gds",
+  "claim_boundary": "TT_3P3V_27C_ATTEMPT20_CDAC_FULL_RC_CC_FROZEN_ESD_RC_XYCE_NO_NOISE_NO_MISMATCH_NO_COMPARATOR_SCOPE_LOAD",
+  "simulator_completion_verified": true,
+  "nonlinear_convergence_failures": 0,
+  "waveform_rows": 1155,
+  "waveform_end_ns": 520.0,
+  "hold_edge_50pct_ns": 500.2999999999999,
+  "measurement_window_end_ns": 498.2999999999999,
+  "error_definition": "(VFOP-VFON)-(VREFP_PLANE-VREFN_PLANE)",
+  "measurements": {
+    "GEN": {
+      "0p5lsb": {
+        "status": "FINITE",
+        "time_ns": 136.07385942747942,
+        "crossing_ns": 156.1738594274794,
+        "final_error_v": 2.300963998225214e-07
+      },
+      "0p25lsb": {
+        "status": "FINITE",
+        "time_ns": 151.9187130366222,
+        "crossing_ns": 172.0187130366222,
+        "final_error_v": 2.300963998225214e-07
+      },
+      "0p1lsb": {
+        "status": "FINITE",
+        "time_ns": 172.96257847061125,
+        "crossing_ns": 193.06257847061124,
+        "final_error_v": 2.300963998225214e-07
+      }
+    },
+    "PAD": {
+      "0p5lsb": {
+        "status": "FINITE",
+        "time_ns": 131.14743632838386,
+        "crossing_ns": 151.24743632838386,
+        "final_error_v": 1.9377249971253008e-07
+      },
+      "0p25lsb": {
+        "status": "FINITE",
+        "time_ns": 146.99386556143887,
+        "crossing_ns": 167.09386556143886,
+        "final_error_v": 1.9377249971253008e-07
+      },
+      "0p1lsb": {
+        "status": "FINITE",
+        "time_ns": 168.04214010288342,
+        "crossing_ns": 188.14214010288342,
+        "final_error_v": 1.9377249971253008e-07
+      }
+    },
+    "TG": {
+      "0p5lsb": {
+        "status": "FINITE",
+        "time_ns": 118.65738030392126,
+        "crossing_ns": 138.75738030392125,
+        "final_error_v": 1.283085501180281e-07
+      },
+      "0p25lsb": {
+        "status": "FINITE",
+        "time_ns": 134.53386494906482,
+        "crossing_ns": 154.63386494906482,
+        "final_error_v": 1.283085501180281e-07
+      },
+      "0p1lsb": {
+        "status": "FINITE",
+        "time_ns": 155.6274418965604,
+        "crossing_ns": 175.7274418965604,
+        "final_error_v": 1.283085501180281e-07
+      }
+    }
+  },
+  "t_acq_gen_0p5lsb_ns": 136.07385942747942,
+  "t_acq_gen_0p25lsb_ns": 151.9187130366222,
+  "t_acq_gen_0p1lsb_ns": 172.96257847061125,
+  "t_acq_pad_0p5lsb_ns": 131.14743632838386,
+  "t_acq_pad_0p25lsb_ns": 146.99386556143887,
+  "t_acq_pad_0p1lsb_ns": 168.04214010288342,
+  "t_acq_tg_0p5lsb_ns": 118.65738030392126,
+  "t_acq_tg_0p25lsb_ns": 134.53386494906482,
+  "t_acq_tg_0p1lsb_ns": 155.6274418965604
+}

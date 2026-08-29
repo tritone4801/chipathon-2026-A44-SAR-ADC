@@ -1,0 +1,2399 @@
+
+Magic 8.3 revision 636 - Compiled on Thu Apr 16 09:13:57 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Using technology "gf180mcuD", version 1.0.575-2-g7b70722
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "R8W__pfet_03v3_XNC3G5".
+Reading "R8W__nfet_03v3_ATEY9D".
+Reading "R8E__pfet_03v3_XNC3G5".
+Reading "R8E__nfet_03v3_ATEY9D".
+Reading "R8W__pfet_03v3_PUCBRS".
+Reading "R8W__nfet_03v3_YTQ48T".
+Reading "R8W__pfet_03v3_TTAYZ7".
+Reading "R8W__nfet_03v3_YTZ44F".
+Reading "R8W__pfet_03v3_FKHA32".
+Reading "R8W__nfet_03v3_GE79XY".
+Reading "R8W__pfet_03v3_X2N4NU".
+Reading "R8W__nfet_03v3_9HSG6M".
+Reading "R8W__A44_MIM_6P855_R0".
+Reading "R8W__A44_G6_PFET_M9_GUARD0_R0".
+Reading "R8W__A44_G6_NFET_M9_GUARD0_R0".
+Reading "R8E__pfet_03v3_PUCBRS".
+Reading "R8E__nfet_03v3_YTQ48T".
+Reading "R8E__pfet_03v3_TTAYZ7".
+Reading "R8E__nfet_03v3_YTZ44F".
+Reading "R8E__pfet_03v3_FKHA32".
+Reading "R8E__nfet_03v3_GE79XY".
+Reading "R8E__pfet_03v3_X2N4NU".
+Reading "R8E__nfet_03v3_9HSG6M".
+Reading "R8E__A44_MIM_6P855_R0".
+Reading "R8E__A44_G6_PFET_M9_GUARD0_R0".
+Reading "R8E__A44_G6_NFET_M9_GUARD0_R0".
+Reading "M1_PSUB_CDNS_4066195314563".
+Saving contents of cell M1_PSUB_CDNS_4066195314563
+Reading "M1_PSUB_CDNS_406619531455".
+Saving contents of cell M1_PSUB_CDNS_406619531455
+Reading "R8W__pfet_03v3_C2L3T7".
+Reading "R8W__nfet_03v3_SD8HJT".
+Reading "R8W__A44_TGDRV_NCLK_ROW_W_R1".
+Reading "R8W__A44_TGDRV_PCLK_ROW_W_R1".
+Reading "R8W__nfet_03v3_WHE5HU".
+Reading "R8W__pfet_03v3_GXTH48".
+Reading "R8W__nfet_03v3_6LX9QF".
+Reading "R8W__pfet_03v3_8RS7KV".
+Reading "R8W__A44_C1_MIM6_R0".
+Reading "R8W__A44_CAP_SWITCH_BANK_CORE_O2".
+Reading "R8E__A44_TGDRV_NCLK_ROW_E_R1".
+Reading "R8E__A44_TGDRV_PCLK_ROW_E_R1".
+Reading "R8E__pfet_03v3_C2L3T7".
+Reading "R8E__nfet_03v3_SD8HJT".
+Reading "R8E__nfet_03v3_WHE5HU".
+Reading "R8E__pfet_03v3_GXTH48".
+Reading "R8E__nfet_03v3_6LX9QF".
+Reading "R8E__pfet_03v3_8RS7KV".
+Reading "R8E__A44_C1_MIM6_R0".
+Reading "R8E__A44_CAP_SWITCH_BANK_CORE_O2".
+Reading "3LM_METAL_RAIL".
+CIF file read warning: CIF style import: units rescaled by factor of 5 / 1
+Reading "M4_M3_CDNS_4066195314562".
+Saving contents of cell M4_M3_CDNS_4066195314562
+Reading "M4_M3_CDNS_4066195314558".
+Saving contents of cell M4_M3_CDNS_4066195314558
+Reading "M4_M3_CDNS_4066195314557".
+Saving contents of cell M4_M3_CDNS_4066195314557
+Reading "M2_M1_CDNS_40661953145141".
+Saving contents of cell M2_M1_CDNS_40661953145141
+Reading "M2_M1_CDNS_4066195314574".
+Saving contents of cell M2_M1_CDNS_4066195314574
+Reading "M2_M1_CDNS_4066195314586".
+Saving contents of cell M2_M1_CDNS_4066195314586
+Reading "M2_M1_CDNS_4066195314585".
+Saving contents of cell M2_M1_CDNS_4066195314585
+Reading "M2_M1_CDNS_4066195314573".
+Saving contents of cell M2_M1_CDNS_4066195314573
+Reading "M2_M1_CDNS_40661953145103".
+Saving contents of cell M2_M1_CDNS_40661953145103
+Reading "M2_M1_CDNS_40661953145140".
+Saving contents of cell M2_M1_CDNS_40661953145140
+Reading "M2_M1_CDNS_40661953145138".
+Saving contents of cell M2_M1_CDNS_40661953145138
+Reading "M2_M1_CDNS_40661953145139".
+Saving contents of cell M2_M1_CDNS_40661953145139
+Reading "M2_M1_CDNS_40661953145137".
+Saving contents of cell M2_M1_CDNS_40661953145137
+Reading "M2_M1_CDNS_40661953145146".
+Saving contents of cell M2_M1_CDNS_40661953145146
+Reading "M2_M1_CDNS_40661953145162".
+Saving contents of cell M2_M1_CDNS_40661953145162
+Reading "nmos_6p0_CDNS_4066195314511".
+Saving contents of cell nmos_6p0_CDNS_4066195314511
+Reading "pmos_6p0_CDNS_4066195314512".
+Saving contents of cell pmos_6p0_CDNS_4066195314512
+Reading "M1_POLY2_CDNS_40661953145222".
+Saving contents of cell M1_POLY2_CDNS_40661953145222
+Reading "M1_PSUB_CDNS_40661953145226".
+Saving contents of cell M1_PSUB_CDNS_40661953145226
+Reading "M1_NWELL_CDNS_40661953145218".
+Saving contents of cell M1_NWELL_CDNS_40661953145218
+Reading "M1_PSUB_CDNS_40661953145224".
+Saving contents of cell M1_PSUB_CDNS_40661953145224
+Reading "M2_M1_CDNS_40661953145164".
+Saving contents of cell M2_M1_CDNS_40661953145164
+Reading "nmos_6p0_CDNS_4066195314530".
+Saving contents of cell nmos_6p0_CDNS_4066195314530
+Reading "M1_NWELL_CDNS_40661953145315".
+Saving contents of cell M1_NWELL_CDNS_40661953145315
+Reading "M1_PSUB_CDNS_40661953145324".
+Saving contents of cell M1_PSUB_CDNS_40661953145324
+Reading "M1_NWELL_CDNS_40661953145323".
+Saving contents of cell M1_NWELL_CDNS_40661953145323
+Reading "M3_M2_CDNS_40661953145264".
+Saving contents of cell M3_M2_CDNS_40661953145264
+Reading "M3_M2_CDNS_40661953145208".
+Saving contents of cell M3_M2_CDNS_40661953145208
+Reading "M3_M2_CDNS_40661953145303".
+Saving contents of cell M3_M2_CDNS_40661953145303
+Reading "M3_M2_CDNS_40661953145305".
+Saving contents of cell M3_M2_CDNS_40661953145305
+Reading "M3_M2_CDNS_40661953145306".
+Saving contents of cell M3_M2_CDNS_40661953145306
+Reading "M2_M1_CDNS_40661953145307".
+Saving contents of cell M2_M1_CDNS_40661953145307
+Reading "M2_M1_CDNS_40661953145304".
+Saving contents of cell M2_M1_CDNS_40661953145304
+Reading "M1_PSUB_CDNS_40661953145309".
+Saving contents of cell M1_PSUB_CDNS_40661953145309
+Reading "M1_PSUB_CDNS_40661953145310".
+Saving contents of cell M1_PSUB_CDNS_40661953145310
+Reading "M1_NWELL_CDNS_40661953145311".
+Saving contents of cell M1_NWELL_CDNS_40661953145311
+Reading "M1_NWELL_CDNS_40661953145308".
+Saving contents of cell M1_NWELL_CDNS_40661953145308
+Reading "M2_M1_CDNS_40661953145292".
+Saving contents of cell M2_M1_CDNS_40661953145292
+Reading "pmos_6p0_esd".
+Reading "M3_M2_CDNS_40661953145302".
+Saving contents of cell M3_M2_CDNS_40661953145302
+Reading "M2_M1_CDNS_40661953145301".
+Saving contents of cell M2_M1_CDNS_40661953145301
+Reading "M2_M1_CDNS_40661953145300".
+Saving contents of cell M2_M1_CDNS_40661953145300
+Reading "M3_M2_CDNS_40661953145353".
+Saving contents of cell M3_M2_CDNS_40661953145353
+Reading "M2_M1_CDNS_40661953145366".
+Saving contents of cell M2_M1_CDNS_40661953145366
+Reading "M2_M1_CDNS_40661953145365".
+Saving contents of cell M2_M1_CDNS_40661953145365
+Reading "pmos_6p0_esd_40".
+Reading "M2_M1_CDNS_40661953145367".
+Saving contents of cell M2_M1_CDNS_40661953145367
+Reading "M2_M1_CDNS_40661953145368".
+Saving contents of cell M2_M1_CDNS_40661953145368
+Reading "M3_M2_CDNS_40661953145371".
+Saving contents of cell M3_M2_CDNS_40661953145371
+Reading "M3_M2_CDNS_40661953145370".
+Saving contents of cell M3_M2_CDNS_40661953145370
+Reading "M3_M2_CDNS_40661953145369".
+Saving contents of cell M3_M2_CDNS_40661953145369
+Reading "M1_PSUB_CDNS_40661953145372".
+Saving contents of cell M1_PSUB_CDNS_40661953145372
+Reading "M1_PSUB_CDNS_40661953145375".
+Saving contents of cell M1_PSUB_CDNS_40661953145375
+Reading "M1_PSUB_CDNS_40661953145376".
+Saving contents of cell M1_PSUB_CDNS_40661953145376
+Reading "M1_NWELL_CDNS_40661953145374".
+Saving contents of cell M1_NWELL_CDNS_40661953145374
+Reading "M1_NWELL_CDNS_40661953145373".
+Saving contents of cell M1_NWELL_CDNS_40661953145373
+Reading "M1_PSUB_CDNS_40661953145126".
+Saving contents of cell M1_PSUB_CDNS_40661953145126
+Reading "M1_NWELL_CDNS_40661953145127".
+Saving contents of cell M1_NWELL_CDNS_40661953145127
+Reading "M1_NWELL_CDNS_40661953145128".
+Saving contents of cell M1_NWELL_CDNS_40661953145128
+Reading "M1_PSUB_CDNS_40661953145129".
+Saving contents of cell M1_PSUB_CDNS_40661953145129
+Reading "ppolyf_u_CDNS_406619531453".
+Saving contents of cell ppolyf_u_CDNS_406619531453
+Reading "nmoscap_6p0_CDNS_406619531454".
+Saving contents of cell nmoscap_6p0_CDNS_406619531454
+Reading "M1_POLY2_CDNS_40661953145132".
+Saving contents of cell M1_POLY2_CDNS_40661953145132
+Reading "nmos_6p0_CDNS_406619531457".
+Saving contents of cell nmos_6p0_CDNS_406619531457
+Reading "M2_M1_CDNS_40661953145136".
+Saving contents of cell M2_M1_CDNS_40661953145136
+Reading "M1_NWELL_CDNS_40661953145135".
+Saving contents of cell M1_NWELL_CDNS_40661953145135
+Reading "M1_PSUB_CDNS_40661953145134".
+Saving contents of cell M1_PSUB_CDNS_40661953145134
+Reading "M1_PSUB_CDNS_40661953145133".
+Saving contents of cell M1_PSUB_CDNS_40661953145133
+Reading "M1_NWELL_CDNS_40661953145131".
+Saving contents of cell M1_NWELL_CDNS_40661953145131
+Reading "M1_PSUB_CDNS_40661953145130".
+Saving contents of cell M1_PSUB_CDNS_40661953145130
+Reading "M2_M1_CDNS_40661953145158".
+Saving contents of cell M2_M1_CDNS_40661953145158
+Reading "M2_M1_CDNS_40661953145149".
+Saving contents of cell M2_M1_CDNS_40661953145149
+Reading "M2_M1_CDNS_40661953145147".
+Saving contents of cell M2_M1_CDNS_40661953145147
+Reading "M2_M1_CDNS_40661953145787".
+Saving contents of cell M2_M1_CDNS_40661953145787
+Reading "M2_M1_CDNS_40661953145789".
+Saving contents of cell M2_M1_CDNS_40661953145789
+Reading "M2_M1_CDNS_40661953145788".
+Saving contents of cell M2_M1_CDNS_40661953145788
+Reading "M2_M1_CDNS_40661953145791".
+Saving contents of cell M2_M1_CDNS_40661953145791
+Reading "M2_M1_CDNS_40661953145790".
+Saving contents of cell M2_M1_CDNS_40661953145790
+Reading "M2_M1_CDNS_40661953145792".
+Saving contents of cell M2_M1_CDNS_40661953145792
+Reading "M2_M1_CDNS_40661953145793".
+Saving contents of cell M2_M1_CDNS_40661953145793
+Reading "M2_M1_CDNS_40661953145794".
+Saving contents of cell M2_M1_CDNS_40661953145794
+Reading "M2_M1_CDNS_40661953145805".
+Saving contents of cell M2_M1_CDNS_40661953145805
+Reading "R8W__A44_TG8_CORE_W_R2".
+Reading "R8W__A44_TGCLK_DRIVER_UDRV_W_R1".
+Making label "VDD" on type metal2 in cell R8W__A44_TGCLK_DRIVER_UDRV_W_R1 sticky.
+Making label "VDD" on type metal2 in cell R8W__A44_TGCLK_DRIVER_UDRV_W_R1 sticky.
+Making label "GND" on type metal2 in cell R8W__A44_TGCLK_DRIVER_UDRV_W_R1 sticky.
+Reading "R8W__A44_DCTRL_BIT_DRIVER_R4".
+Reading "R8W__A44_SW_BANK64_SOUTH_R8_M6".
+Reading "R8W__A44_SW_BANK64_NORTH_R8_M6".
+Reading "R8W__A44_CAP_CORE128_M6_R1".
+Reading "R8E__A44_TGCLK_DRIVER_UDRV_E_R1".
+Making label "VDD" on type metal2 in cell R8E__A44_TGCLK_DRIVER_UDRV_E_R1 sticky.
+Making label "VDD" on type metal2 in cell R8E__A44_TGCLK_DRIVER_UDRV_E_R1 sticky.
+Making label "GND" on type metal2 in cell R8E__A44_TGCLK_DRIVER_UDRV_E_R1 sticky.
+Reading "R8E__A44_TG8_CORE_R7".
+Reading "R8E__A44_DCTRL_BIT_DRIVER_R4".
+Reading "R8E__A44_SW_BANK64_SOUTH_R8_M6".
+Reading "R8E__A44_SW_BANK64_NORTH_R8_M6".
+Reading "R8E__A44_CAP_CORE128_M6_R1".
+Reading "M3_M2_CDNS_4066195314552".
+Saving contents of cell M3_M2_CDNS_4066195314552
+Reading "M3_M2_CDNS_4066195314550".
+Saving contents of cell M3_M2_CDNS_4066195314550
+Reading "M3_M2_CDNS_4066195314548".
+Saving contents of cell M3_M2_CDNS_4066195314548
+Reading "M3_M2_CDNS_4066195314545".
+Saving contents of cell M3_M2_CDNS_4066195314545
+Reading "M4_M3_CDNS_4066195314551".
+Saving contents of cell M4_M3_CDNS_4066195314551
+Reading "M4_M3_CDNS_4066195314549".
+Saving contents of cell M4_M3_CDNS_4066195314549
+Reading "M4_M3_CDNS_4066195314547".
+Saving contents of cell M4_M3_CDNS_4066195314547
+Reading "M4_M3_CDNS_4066195314546".
+Saving contents of cell M4_M3_CDNS_4066195314546
+Reading "M5_M4_CDNS_4066195314556".
+Saving contents of cell M5_M4_CDNS_4066195314556
+Reading "M5_M4_CDNS_4066195314555".
+Saving contents of cell M5_M4_CDNS_4066195314555
+Reading "M5_M4_CDNS_4066195314554".
+Saving contents of cell M5_M4_CDNS_4066195314554
+Reading "M5_M4_CDNS_4066195314553".
+Saving contents of cell M5_M4_CDNS_4066195314553
+Reading "4LM_METAL_RAIL".
+Reading "M5_M4_CDNS_4066195314561".
+Saving contents of cell M5_M4_CDNS_4066195314561
+Reading "M5_M4_CDNS_4066195314559".
+Saving contents of cell M5_M4_CDNS_4066195314559
+Reading "M5_M4_CDNS_4066195314560".
+Saving contents of cell M5_M4_CDNS_4066195314560
+Reading "M2_M1_CDNS_40661953145161".
+Saving contents of cell M2_M1_CDNS_40661953145161
+Reading "M2_M1_CDNS_40661953145112".
+Saving contents of cell M2_M1_CDNS_40661953145112
+Reading "M2_M1_CDNS_40661953145120".
+Saving contents of cell M2_M1_CDNS_40661953145120
+Reading "M2_M1_CDNS_40661953145116".
+Saving contents of cell M2_M1_CDNS_40661953145116
+Reading "M2_M1_CDNS_40661953145114".
+Saving contents of cell M2_M1_CDNS_40661953145114
+Reading "M2_M1_CDNS_40661953145125".
+Saving contents of cell M2_M1_CDNS_40661953145125
+Reading "M2_M1_CDNS_40661953145122".
+Saving contents of cell M2_M1_CDNS_40661953145122
+Reading "M1_PSUB_CDNS_40661953145124".
+Saving contents of cell M1_PSUB_CDNS_40661953145124
+Reading "M1_PSUB_CDNS_40661953145123".
+Saving contents of cell M1_PSUB_CDNS_40661953145123
+Reading "M2_M1_CDNS_40661953145118".
+Saving contents of cell M2_M1_CDNS_40661953145118
+Reading "M2_M1_CDNS_40661953145113".
+Saving contents of cell M2_M1_CDNS_40661953145113
+Reading "M2_M1_CDNS_40661953145121".
+Saving contents of cell M2_M1_CDNS_40661953145121
+Reading "M2_M1_CDNS_40661953145119".
+Saving contents of cell M2_M1_CDNS_40661953145119
+Reading "M2_M1_CDNS_40661953145104".
+Saving contents of cell M2_M1_CDNS_40661953145104
+Reading "nmos_clamp_20_50_4_DVDD".
+Reading "M2_M1_CDNS_40661953145159".
+Saving contents of cell M2_M1_CDNS_40661953145159
+Reading "M2_M1_CDNS_40661953145160".
+Saving contents of cell M2_M1_CDNS_40661953145160
+Reading "nmos_clamp_20_50_4_DVSS".
+Reading "M2_M1_CDNS_40661953145359".
+Saving contents of cell M2_M1_CDNS_40661953145359
+Reading "M2_M1_CDNS_4066195314588".
+Saving contents of cell M2_M1_CDNS_4066195314588
+Reading "M3_M2_CDNS_4066195314587".
+Saving contents of cell M3_M2_CDNS_4066195314587
+Reading "M1_PSUB_CDNS_40661953145221".
+Saving contents of cell M1_PSUB_CDNS_40661953145221
+Reading "M1_PSUB_CDNS_40661953145228".
+Saving contents of cell M1_PSUB_CDNS_40661953145228
+Reading "M3_M2_CDNS_40661953145207".
+Saving contents of cell M3_M2_CDNS_40661953145207
+Reading "M2_M1_CDNS_40661953145117".
+Saving contents of cell M2_M1_CDNS_40661953145117
+Reading "M1_NWELL_CDNS_40661953145231".
+Saving contents of cell M1_NWELL_CDNS_40661953145231
+Reading "M1_PSUB_CDNS_40661953145237".
+Saving contents of cell M1_PSUB_CDNS_40661953145237
+Reading "M1_NWELL_CDNS_40661953145316".
+Saving contents of cell M1_NWELL_CDNS_40661953145316
+Reading "ppolyf_u_CDNS_4066195314533".
+Saving contents of cell ppolyf_u_CDNS_4066195314533
+Reading "ppolyf_u_CDNS_4066195314532".
+Saving contents of cell ppolyf_u_CDNS_4066195314532
+Reading "M1_NWELL_CDNS_40661953145273".
+Saving contents of cell M1_NWELL_CDNS_40661953145273
+Reading "comp018green_std_nand2".
+Reading "comp018green_std_xor2".
+Reading "M1_PSUB_CDNS_40661953145321".
+Saving contents of cell M1_PSUB_CDNS_40661953145321
+Reading "pmos_6p0_CDNS_4066195314529".
+Saving contents of cell pmos_6p0_CDNS_4066195314529
+Reading "nmos_6p0_CDNS_4066195314531".
+Saving contents of cell nmos_6p0_CDNS_4066195314531
+Reading "M1_NWELL_CDNS_40661953145322".
+Saving contents of cell M1_NWELL_CDNS_40661953145322
+Reading "M2_M1_CDNS_40661953145216".
+Saving contents of cell M2_M1_CDNS_40661953145216
+Reading "M1_PSUB_CDNS_40661953145326".
+Saving contents of cell M1_PSUB_CDNS_40661953145326
+Reading "M1_PSUB_CDNS_40661953145327".
+Saving contents of cell M1_PSUB_CDNS_40661953145327
+Reading "pmos_6p0_CDNS_4066195314548".
+Saving contents of cell pmos_6p0_CDNS_4066195314548
+Reading "pmos_6p0_CDNS_4066195314546".
+Saving contents of cell pmos_6p0_CDNS_4066195314546
+Reading "nmos_6p0_CDNS_4066195314549".
+Saving contents of cell nmos_6p0_CDNS_4066195314549
+Reading "nmos_6p0_CDNS_4066195314550".
+Saving contents of cell nmos_6p0_CDNS_4066195314550
+Reading "nmos_6p0_CDNS_4066195314547".
+Saving contents of cell nmos_6p0_CDNS_4066195314547
+Reading "M1_NWELL_CDNS_40661953145328".
+Saving contents of cell M1_NWELL_CDNS_40661953145328
+Reading "M1_NWELL_CDNS_40661953145325".
+Saving contents of cell M1_NWELL_CDNS_40661953145325
+Reading "pmos_6p0_CDNS_4066195314539".
+Saving contents of cell pmos_6p0_CDNS_4066195314539
+Reading "M2_M1_CDNS_40661953145115".
+Saving contents of cell M2_M1_CDNS_40661953145115
+Reading "M1_PSUB_CDNS_40661953145317".
+Saving contents of cell M1_PSUB_CDNS_40661953145317
+Reading "M1_NWELL_CDNS_40661953145318".
+Saving contents of cell M1_NWELL_CDNS_40661953145318
+Reading "M1_PSUB_CDNS_40661953145319".
+Saving contents of cell M1_PSUB_CDNS_40661953145319
+Reading "M1_NWELL_CDNS_40661953145320".
+Saving contents of cell M1_NWELL_CDNS_40661953145320
+Reading "pmos_6p0_CDNS_4066195314534".
+Saving contents of cell pmos_6p0_CDNS_4066195314534
+Reading "nmos_6p0_CDNS_4066195314535".
+Saving contents of cell nmos_6p0_CDNS_4066195314535
+Reading "nmos_6p0_CDNS_4066195314536".
+Saving contents of cell nmos_6p0_CDNS_4066195314536
+Reading "nmos_6p0_CDNS_4066195314537".
+Saving contents of cell nmos_6p0_CDNS_4066195314537
+Reading "pmos_6p0_CDNS_4066195314538".
+Saving contents of cell pmos_6p0_CDNS_4066195314538
+Reading "nmos_6p0_CDNS_4066195314540".
+Saving contents of cell nmos_6p0_CDNS_4066195314540
+Reading "nmos_6p0_CDNS_4066195314541".
+Saving contents of cell nmos_6p0_CDNS_4066195314541
+Reading "nmos_6p0_CDNS_4066195314542".
+Saving contents of cell nmos_6p0_CDNS_4066195314542
+Reading "pmos_6p0_CDNS_4066195314543".
+Saving contents of cell pmos_6p0_CDNS_4066195314543
+Reading "pmos_6p0_CDNS_4066195314544".
+Saving contents of cell pmos_6p0_CDNS_4066195314544
+Reading "pmos_6p0_CDNS_4066195314545".
+Saving contents of cell pmos_6p0_CDNS_4066195314545
+Reading "M1_POLY2_CDNS_40661953145106".
+Saving contents of cell M1_POLY2_CDNS_40661953145106
+Reading "M3_M2_CDNS_40661953145180".
+Saving contents of cell M3_M2_CDNS_40661953145180
+Reading "M3_M2_CDNS_40661953145209".
+Saving contents of cell M3_M2_CDNS_40661953145209
+Reading "M2_M1_CDNS_40661953145177".
+Saving contents of cell M2_M1_CDNS_40661953145177
+Reading "nmos_metal_stack".
+Reading "GR_NMOS".
+Reading "comp018green_out_drv_nleg_6T".
+Reading "M1_NWELL_CDNS_40661953145286".
+Saving contents of cell M1_NWELL_CDNS_40661953145286
+Reading "M1_PSUB_CDNS_40661953145283".
+Saving contents of cell M1_PSUB_CDNS_40661953145283
+Reading "M1_PSUB_CDNS_40661953145284".
+Saving contents of cell M1_PSUB_CDNS_40661953145284
+Reading "M1_PSUB_CDNS_40661953145285".
+Saving contents of cell M1_PSUB_CDNS_40661953145285
+Reading "M1_PSUB_CDNS_40661953145287".
+Saving contents of cell M1_PSUB_CDNS_40661953145287
+Reading "M2_M1_CDNS_40661953145288".
+Saving contents of cell M2_M1_CDNS_40661953145288
+Reading "M1_PSUB_CDNS_40661953145289".
+Saving contents of cell M1_PSUB_CDNS_40661953145289
+Reading "M3_M2_CDNS_40661953145290".
+Saving contents of cell M3_M2_CDNS_40661953145290
+Reading "M1_PSUB_CDNS_40661953145291".
+Saving contents of cell M1_PSUB_CDNS_40661953145291
+Reading "M3_M2_CDNS_40661953145293".
+Saving contents of cell M3_M2_CDNS_40661953145293
+Reading "M3_M2_CDNS_40661953145294".
+Saving contents of cell M3_M2_CDNS_40661953145294
+Reading "M3_M2_CDNS_40661953145295".
+Saving contents of cell M3_M2_CDNS_40661953145295
+Reading "M2_M1_CDNS_40661953145296".
+Saving contents of cell M2_M1_CDNS_40661953145296
+Reading "M2_M1_CDNS_40661953145297".
+Saving contents of cell M2_M1_CDNS_40661953145297
+Reading "M1_NACTIVE_CDNS_40661953145298".
+Saving contents of cell M1_NACTIVE_CDNS_40661953145298
+Reading "comp018green_out_drv_pleg_6T_Y".
+Reading "PMOS_metal_stack".
+Reading "comp018green_out_drv_pleg_6T_X".
+Reading "M1_NWELL_CDNS_40661953145299".
+Saving contents of cell M1_NWELL_CDNS_40661953145299
+Reading "M2_M1_CDNS_40661953145364".
+Saving contents of cell M2_M1_CDNS_40661953145364
+Reading "M2_M1_CDNS_40661953145348".
+Saving contents of cell M2_M1_CDNS_40661953145348
+Reading "M2_M1_CDNS_40661953145356".
+Saving contents of cell M2_M1_CDNS_40661953145356
+Reading "M2_M1_CDNS_40661953145347".
+Saving contents of cell M2_M1_CDNS_40661953145347
+Reading "M3_M2_CDNS_40661953145363".
+Saving contents of cell M3_M2_CDNS_40661953145363
+Reading "M3_M2_CDNS_40661953145350".
+Saving contents of cell M3_M2_CDNS_40661953145350
+Reading "M2_M1_CDNS_40661953145346".
+Saving contents of cell M2_M1_CDNS_40661953145346
+Reading "M2_M1_CDNS_40661953145354".
+Saving contents of cell M2_M1_CDNS_40661953145354
+Reading "M1_PSUB_CDNS_40661953145351".
+Saving contents of cell M1_PSUB_CDNS_40661953145351
+Reading "M1_PSUB_CDNS_40661953145357".
+Saving contents of cell M1_PSUB_CDNS_40661953145357
+Reading "M3_M2_CDNS_40661953145358".
+Saving contents of cell M3_M2_CDNS_40661953145358
+Reading "M1_NWELL_CDNS_40661953145345".
+Saving contents of cell M1_NWELL_CDNS_40661953145345
+Reading "M2_M1_CDNS_40661953145360".
+Saving contents of cell M2_M1_CDNS_40661953145360
+Reading "M2_M1_CDNS_40661953145355".
+Saving contents of cell M2_M1_CDNS_40661953145355
+Reading "M1_PSUB_CDNS_40661953145349".
+Saving contents of cell M1_PSUB_CDNS_40661953145349
+Reading "M1_PSUB_CDNS_40661953145362".
+Saving contents of cell M1_PSUB_CDNS_40661953145362
+Reading "PMOS_4T_metal_stack".
+Reading "comp018green_out_drv_pleg_4T_Y".
+Reading "comp018green_out_drv_pleg_4T_X".
+Reading "M1_NWELL_CDNS_40661953145361".
+Saving contents of cell M1_NWELL_CDNS_40661953145361
+Reading "M1_NWELL_CDNS_40661953145352".
+Saving contents of cell M1_NWELL_CDNS_40661953145352
+Reading "comp018green_out_drv_nleg_4T".
+Reading "nmos_4T_metal_stack".
+Reading "GR_NMOS_4T".
+Reading "M3_M2_CDNS_4066195314590".
+Saving contents of cell M3_M2_CDNS_4066195314590
+Reading "M3_M2_CDNS_4066195314584".
+Saving contents of cell M3_M2_CDNS_4066195314584
+Reading "nmos_6p0_CDNS_406619531459".
+Saving contents of cell nmos_6p0_CDNS_406619531459
+Reading "nmos_6p0_CDNS_406619531458".
+Saving contents of cell nmos_6p0_CDNS_406619531458
+Reading "pmos_6p0_CDNS_406619531456".
+Saving contents of cell pmos_6p0_CDNS_406619531456
+Reading "pmos_6p0_CDNS_406619531455".
+Saving contents of cell pmos_6p0_CDNS_406619531455
+Reading "comp018green_esd_rc_v5p0".
+Reading "pmos_6p0_CDNS_406619531452".
+Saving contents of cell pmos_6p0_CDNS_406619531452
+Reading "M1_NWELL_CDNS_40661953145111".
+Saving contents of cell M1_NWELL_CDNS_40661953145111
+Reading "M1_POLY2_CDNS_40661953145110".
+Saving contents of cell M1_POLY2_CDNS_40661953145110
+Reading "M1_POLY2_CDNS_40661953145109".
+Saving contents of cell M1_POLY2_CDNS_40661953145109
+Reading "M1_POLY2_CDNS_40661953145108".
+Saving contents of cell M1_POLY2_CDNS_40661953145108
+Reading "M1_NWELL_CDNS_40661953145107".
+Saving contents of cell M1_NWELL_CDNS_40661953145107
+Reading "M1_POLY2_CDNS_40661953145105".
+Saving contents of cell M1_POLY2_CDNS_40661953145105
+Reading "M1_PSUB_CDNS_40661953145102".
+Saving contents of cell M1_PSUB_CDNS_40661953145102
+Reading "M2_M1_CDNS_4066195314518".
+Saving contents of cell M2_M1_CDNS_4066195314518
+Reading "M3_M2_CDNS_40661953145786".
+Saving contents of cell M3_M2_CDNS_40661953145786
+Reading "M3_M2_CDNS_40661953145785".
+Saving contents of cell M3_M2_CDNS_40661953145785
+Reading "M3_M2_CDNS_40661953145784".
+Saving contents of cell M3_M2_CDNS_40661953145784
+Reading "M3_M2_CDNS_40661953145783".
+Saving contents of cell M3_M2_CDNS_40661953145783
+Reading "M3_M2_CDNS_40661953145782".
+Saving contents of cell M3_M2_CDNS_40661953145782
+Reading "M3_M2_CDNS_40661953145781".
+Saving contents of cell M3_M2_CDNS_40661953145781
+Reading "M3_M2_CDNS_40661953145779".
+Saving contents of cell M3_M2_CDNS_40661953145779
+Reading "M3_M2_CDNS_40661953145780".
+Saving contents of cell M3_M2_CDNS_40661953145780
+Reading "M3_M2_CDNS_40661953145778".
+Saving contents of cell M3_M2_CDNS_40661953145778
+Reading "M3_M2_CDNS_40661953145777".
+Saving contents of cell M3_M2_CDNS_40661953145777
+Reading "nmos_clamp_20_50_4".
+Reading "comp018green_esd_rc_v5p0_1".
+Reading "top_route".
+Reading "M3_M2_CDNS_40661953145795".
+Saving contents of cell M3_M2_CDNS_40661953145795
+Reading "M3_M2_CDNS_40661953145799".
+Saving contents of cell M3_M2_CDNS_40661953145799
+Reading "M3_M2_CDNS_40661953145798".
+Saving contents of cell M3_M2_CDNS_40661953145798
+Reading "M3_M2_CDNS_40661953145797".
+Saving contents of cell M3_M2_CDNS_40661953145797
+Reading "M3_M2_CDNS_40661953145796".
+Saving contents of cell M3_M2_CDNS_40661953145796
+Reading "M3_M2_CDNS_40661953145804".
+Saving contents of cell M3_M2_CDNS_40661953145804
+Reading "M3_M2_CDNS_40661953145803".
+Saving contents of cell M3_M2_CDNS_40661953145803
+Reading "M3_M2_CDNS_40661953145802".
+Saving contents of cell M3_M2_CDNS_40661953145802
+Reading "M3_M2_CDNS_40661953145801".
+Saving contents of cell M3_M2_CDNS_40661953145801
+Reading "M3_M2_CDNS_40661953145800".
+Saving contents of cell M3_M2_CDNS_40661953145800
+Reading "top_route_1".
+Reading "M1_PSUB_CDNS_40661953145674".
+Saving contents of cell M1_PSUB_CDNS_40661953145674
+Reading "M1_PSUB_CDNS_40661953145669".
+Saving contents of cell M1_PSUB_CDNS_40661953145669
+Reading "M3_M2_CDNS_40661953145675".
+Saving contents of cell M3_M2_CDNS_40661953145675
+Reading "M3_M2_CDNS_40661953145676".
+Saving contents of cell M3_M2_CDNS_40661953145676
+Reading "M1_PSUB_CDNS_40661953145672".
+Saving contents of cell M1_PSUB_CDNS_40661953145672
+Reading "M1_PSUB_CDNS_40661953145673".
+Saving contents of cell M1_PSUB_CDNS_40661953145673
+Reading "M1_PSUB_CDNS_40661953145671".
+Saving contents of cell M1_PSUB_CDNS_40661953145671
+Reading "M1_PSUB_CDNS_40661953145670".
+Saving contents of cell M1_PSUB_CDNS_40661953145670
+Reading "pfet_03v3_XNC3G5".
+Reading "nfet_03v3_ATEY9D".
+Reading "R8W__A44_TG8_SLICE_UDRV_W_R1".
+Reading "R8W__A44_DCTRL_STRIP_W_R2".
+Reading "R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6".
+CIF file read warning: Input off lambda grid by 2/5; snapped to grid.
+Reading "R8E__A44_TG8_SLICE_UDRV_E_R1".
+Reading "R8E__A44_DCTRL_STRIP_E_R2".
+Reading "R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6".
+Reading "Bondpad_5LM".
+Error while reading cell "Bondpad_5LM" (byte position 4271806): Warning: cell "M3_M2_CDNS_4066195314545" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "Bondpad_5LM" (byte position 4271938): Warning: cell "M3_M2_CDNS_4066195314545" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "Bondpad_5LM" (byte position 4272034): Warning: cell "M3_M2_CDNS_4066195314548" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "Bondpad_5LM" (byte position 4272130): Warning: cell "M3_M2_CDNS_4066195314550" placed on top of itself.  Ignoring the extra one.
+Reading "5LM_METAL_RAIL".
+Reading "M2_M1_CDNS_40661953145151".
+Saving contents of cell M2_M1_CDNS_40661953145151
+Reading "np_6p0_CDNS_406619531451".
+Saving contents of cell np_6p0_CDNS_406619531451
+Reading "nmoscap_6p0_CDNS_406619531450".
+Saving contents of cell nmoscap_6p0_CDNS_406619531450
+Reading "M3_M2_CDNS_4066195314598".
+Saving contents of cell M3_M2_CDNS_4066195314598
+Reading "M3_M2_CDNS_4066195314596".
+Saving contents of cell M3_M2_CDNS_4066195314596
+Reading "M3_M2_CDNS_4066195314594".
+Saving contents of cell M3_M2_CDNS_4066195314594
+Reading "M1_PSUB_CDNS_4066195314567".
+Saving contents of cell M1_PSUB_CDNS_4066195314567
+Reading "M1_PSUB_CDNS_4066195314565".
+Saving contents of cell M1_PSUB_CDNS_4066195314565
+Reading "M3_M2_CDNS_4066195314595".
+Saving contents of cell M3_M2_CDNS_4066195314595
+Reading "M1_PSUB_CDNS_40661953145101".
+Saving contents of cell M1_PSUB_CDNS_40661953145101
+Reading "M1_PSUB_CDNS_40661953145100".
+Saving contents of cell M1_PSUB_CDNS_40661953145100
+Reading "M1_PSUB_CDNS_4066195314599".
+Saving contents of cell M1_PSUB_CDNS_4066195314599
+Reading "M3_M2_CDNS_4066195314597".
+Saving contents of cell M3_M2_CDNS_4066195314597
+Reading "M3_M2_CDNS_4066195314593".
+Saving contents of cell M3_M2_CDNS_4066195314593
+Reading "M3_M2_CDNS_4066195314592".
+Saving contents of cell M3_M2_CDNS_4066195314592
+Reading "M3_M2_CDNS_4066195314589".
+Saving contents of cell M3_M2_CDNS_4066195314589
+Reading "M1_NWELL_CDNS_4066195314572".
+Saving contents of cell M1_NWELL_CDNS_4066195314572
+Reading "M1_NWELL_CDNS_4066195314571".
+Saving contents of cell M1_NWELL_CDNS_4066195314571
+Reading "M1_PSUB_CDNS_4066195314570".
+Saving contents of cell M1_PSUB_CDNS_4066195314570
+Reading "M1_PSUB_CDNS_4066195314569".
+Saving contents of cell M1_PSUB_CDNS_4066195314569
+Reading "M1_PSUB_CDNS_4066195314568".
+Saving contents of cell M1_PSUB_CDNS_4066195314568
+Reading "M1_PSUB_CDNS_4066195314564".
+Saving contents of cell M1_PSUB_CDNS_4066195314564
+Reading "M2_M1_CDNS_4066195314575".
+Saving contents of cell M2_M1_CDNS_4066195314575
+Reading "M2_M1_CDNS_4066195314576".
+Saving contents of cell M2_M1_CDNS_4066195314576
+Reading "M2_M1_CDNS_4066195314577".
+Saving contents of cell M2_M1_CDNS_4066195314577
+Reading "M2_M1_CDNS_4066195314578".
+Saving contents of cell M2_M1_CDNS_4066195314578
+Reading "M2_M1_CDNS_4066195314579".
+Saving contents of cell M2_M1_CDNS_4066195314579
+Reading "M2_M1_CDNS_4066195314580".
+Saving contents of cell M2_M1_CDNS_4066195314580
+Reading "M2_M1_CDNS_4066195314581".
+Saving contents of cell M2_M1_CDNS_4066195314581
+Reading "M2_M1_CDNS_4066195314583".
+Saving contents of cell M2_M1_CDNS_4066195314583
+Reading "M2_M1_CDNS_4066195314582".
+Saving contents of cell M2_M1_CDNS_4066195314582
+Reading "M2_M1_CDNS_4066195314591".
+Saving contents of cell M2_M1_CDNS_4066195314591
+Reading "comp018green_esd_clamp_v5p0_DVDD".
+Reading "M3_M2_CDNS_40661953145152".
+Saving contents of cell M3_M2_CDNS_40661953145152
+Reading "M2_M1_CDNS_40661953145148".
+Saving contents of cell M2_M1_CDNS_40661953145148
+Reading "M3_M2_CDNS_40661953145150".
+Saving contents of cell M3_M2_CDNS_40661953145150
+Reading "M3_M2_CDNS_40661953145153".
+Saving contents of cell M3_M2_CDNS_40661953145153
+Reading "M2_M1_CDNS_40661953145154".
+Saving contents of cell M2_M1_CDNS_40661953145154
+Reading "M3_M2_CDNS_40661953145155".
+Saving contents of cell M3_M2_CDNS_40661953145155
+Reading "M2_M1_CDNS_40661953145142".
+Saving contents of cell M2_M1_CDNS_40661953145142
+Reading "M2_M1_CDNS_40661953145143".
+Saving contents of cell M2_M1_CDNS_40661953145143
+Reading "M2_M1_CDNS_40661953145144".
+Saving contents of cell M2_M1_CDNS_40661953145144
+Reading "M2_M1_CDNS_40661953145156".
+Saving contents of cell M2_M1_CDNS_40661953145156
+Reading "M2_M1_CDNS_40661953145145".
+Saving contents of cell M2_M1_CDNS_40661953145145
+Reading "M2_M1_CDNS_40661953145157".
+Saving contents of cell M2_M1_CDNS_40661953145157
+Reading "comp018green_esd_clamp_v5p0_DVSS".
+Reading "M1_PSUB_CDNS_4066195314566".
+Saving contents of cell M1_PSUB_CDNS_4066195314566
+Reading "M3_M2_CDNS_40661953145175".
+Saving contents of cell M3_M2_CDNS_40661953145175
+Reading "M2_M1_CDNS_40661953145386".
+Saving contents of cell M2_M1_CDNS_40661953145386
+Reading "M2_M1_CDNS_40661953145385".
+Saving contents of cell M2_M1_CDNS_40661953145385
+Reading "M2_M1_CDNS_40661953145393".
+Saving contents of cell M2_M1_CDNS_40661953145393
+Reading "M1_NWELL_CDNS_40661953145217".
+Saving contents of cell M1_NWELL_CDNS_40661953145217
+Reading "M1_NWELL_CDNS_40661953145400".
+Saving contents of cell M1_NWELL_CDNS_40661953145400
+Reading "M2_M1_CDNS_40661953145410".
+Saving contents of cell M2_M1_CDNS_40661953145410
+Reading "M2_M1_CDNS_40661953145408".
+Saving contents of cell M2_M1_CDNS_40661953145408
+Reading "M2_M1_CDNS_40661953145406".
+Saving contents of cell M2_M1_CDNS_40661953145406
+Reading "M1_PSUB_CDNS_40661953145409".
+Saving contents of cell M1_PSUB_CDNS_40661953145409
+Reading "M2_M1_CDNS_40661953145414".
+Saving contents of cell M2_M1_CDNS_40661953145414
+Reading "M2_M1_CDNS_40661953145413".
+Saving contents of cell M2_M1_CDNS_40661953145413
+Reading "M1_PSUB_CDNS_40661953145402".
+Saving contents of cell M1_PSUB_CDNS_40661953145402
+Reading "M1_NWELL_CDNS_40661953145412".
+Saving contents of cell M1_NWELL_CDNS_40661953145412
+Reading "M1_PSUB_CDNS_40661953145404".
+Saving contents of cell M1_PSUB_CDNS_40661953145404
+Reading "M1_PSUB_CDNS_40661953145401".
+Saving contents of cell M1_PSUB_CDNS_40661953145401
+Reading "M1_PSUB_CDNS_40661953145403".
+Saving contents of cell M1_PSUB_CDNS_40661953145403
+Reading "M1_PSUB_CDNS_40661953145405".
+Saving contents of cell M1_PSUB_CDNS_40661953145405
+Reading "M1_PSUB_CDNS_40661953145411".
+Saving contents of cell M1_PSUB_CDNS_40661953145411
+Reading "np_6p0_CDNS_4066195314553".
+Saving contents of cell np_6p0_CDNS_4066195314553
+Reading "pn_6p0_CDNS_4066195314552".
+Saving contents of cell pn_6p0_CDNS_4066195314552
+Reading "M1_NWELL_CDNS_40661953145399".
+Saving contents of cell M1_NWELL_CDNS_40661953145399
+Reading "M1_NWELL_CDNS_40661953145398".
+Saving contents of cell M1_NWELL_CDNS_40661953145398
+Reading "M1_NWELL_CDNS_40661953145397".
+Saving contents of cell M1_NWELL_CDNS_40661953145397
+Reading "M1_NWELL_CDNS_40661953145407".
+Saving contents of cell M1_NWELL_CDNS_40661953145407
+Reading "M1_PSUB_CDNS_40661953145271".
+Saving contents of cell M1_PSUB_CDNS_40661953145271
+Reading "M1_NWELL_CDNS_40661953145223".
+Saving contents of cell M1_NWELL_CDNS_40661953145223
+Reading "M1_NWELL_CDNS_40661953145225".
+Saving contents of cell M1_NWELL_CDNS_40661953145225
+Reading "pmos_6p0_CDNS_4066195314513".
+Saving contents of cell pmos_6p0_CDNS_4066195314513
+Reading "M1_NWELL_CDNS_40661953145272".
+Saving contents of cell M1_NWELL_CDNS_40661953145272
+Reading "M2_M1_CDNS_40661953145227".
+Saving contents of cell M2_M1_CDNS_40661953145227
+Reading "pn_6p0_CDNS_4066195314510".
+Saving contents of cell pn_6p0_CDNS_4066195314510
+Reading "M3_M2_CDNS_40661953145313".
+Saving contents of cell M3_M2_CDNS_40661953145313
+Reading "comp018green_in_pupd".
+Reading "comp018green_in_logic_pupd".
+Reading "M2_M1_CDNS_40661953145312".
+Saving contents of cell M2_M1_CDNS_40661953145312
+Reading "comp018green_sigbuf".
+Reading "M3_M2_CDNS_40661953145314".
+Saving contents of cell M3_M2_CDNS_40661953145314
+Reading "comp018green_in_drv".
+Reading "pn_6p0_CDNS_4066195314528".
+Saving contents of cell pn_6p0_CDNS_4066195314528
+Reading "comp018green_in_cms_smt".
+Reading "M1_NWELL_CDNS_40661953145230".
+Saving contents of cell M1_NWELL_CDNS_40661953145230
+Reading "M1_PSUB_CDNS_40661953145232".
+Saving contents of cell M1_PSUB_CDNS_40661953145232
+Reading "M1_PSUB_CDNS_40661953145233".
+Saving contents of cell M1_PSUB_CDNS_40661953145233
+Reading "M1_PSUB_CDNS_40661953145234".
+Saving contents of cell M1_PSUB_CDNS_40661953145234
+Reading "M1_PSUB_CDNS_40661953145235".
+Saving contents of cell M1_PSUB_CDNS_40661953145235
+Reading "M1_NWELL_CDNS_40661953145236".
+Saving contents of cell M1_NWELL_CDNS_40661953145236
+Reading "M1_PSUB_CDNS_40661953145238".
+Saving contents of cell M1_PSUB_CDNS_40661953145238
+Reading "M2_M1_CDNS_40661953145181".
+Saving contents of cell M2_M1_CDNS_40661953145181
+Reading "pmos_6p0_CDNS_4066195314521".
+Saving contents of cell pmos_6p0_CDNS_4066195314521
+Reading "pmos_6p0_CDNS_4066195314517".
+Saving contents of cell pmos_6p0_CDNS_4066195314517
+Reading "pmos_6p0_CDNS_4066195314516".
+Saving contents of cell pmos_6p0_CDNS_4066195314516
+Reading "pmos_6p0_CDNS_4066195314515".
+Saving contents of cell pmos_6p0_CDNS_4066195314515
+Reading "M1_POLY2_CDNS_40661953145229".
+Saving contents of cell M1_POLY2_CDNS_40661953145229
+Reading "nmos_6p0_CDNS_4066195314519".
+Saving contents of cell nmos_6p0_CDNS_4066195314519
+Reading "nmos_6p0_CDNS_4066195314520".
+Saving contents of cell nmos_6p0_CDNS_4066195314520
+Reading "nmos_6p0_CDNS_4066195314518".
+Saving contents of cell nmos_6p0_CDNS_4066195314518
+Reading "nmos_6p0_CDNS_4066195314514".
+Saving contents of cell nmos_6p0_CDNS_4066195314514
+Reading "M3_M2_CDNS_40661953145202".
+Saving contents of cell M3_M2_CDNS_40661953145202
+Reading "M3_M2_CDNS_40661953145199".
+Saving contents of cell M3_M2_CDNS_40661953145199
+Reading "M1_PSUB_CDNS_40661953145275".
+Saving contents of cell M1_PSUB_CDNS_40661953145275
+Reading "M1_NWELL_CDNS_40661953145274".
+Saving contents of cell M1_NWELL_CDNS_40661953145274
+Reading "M2_M1_CDNS_40661953145260".
+Saving contents of cell M2_M1_CDNS_40661953145260
+Reading "M2_M1_CDNS_40661953145256".
+Saving contents of cell M2_M1_CDNS_40661953145256
+Reading "M2_M1_CDNS_40661953145247".
+Saving contents of cell M2_M1_CDNS_40661953145247
+Reading "M2_M1_CDNS_40661953145270".
+Saving contents of cell M2_M1_CDNS_40661953145270
+Reading "M1_PACTIVE_CDNS_40661953145251".
+Saving contents of cell M1_PACTIVE_CDNS_40661953145251
+Reading "M2_M1_CDNS_40661953145182".
+Saving contents of cell M2_M1_CDNS_40661953145182
+Reading "M2_M1_CDNS_40661953145257".
+Saving contents of cell M2_M1_CDNS_40661953145257
+Reading "M3_M2_CDNS_40661953145269".
+Saving contents of cell M3_M2_CDNS_40661953145269
+Reading "M3_M2_CDNS_40661953145258".
+Saving contents of cell M3_M2_CDNS_40661953145258
+Reading "M1_NACTIVE_CDNS_40661953145242".
+Saving contents of cell M1_NACTIVE_CDNS_40661953145242
+Reading "M1_PACTIVE_CDNS_40661953145249".
+Saving contents of cell M1_PACTIVE_CDNS_40661953145249
+Reading "M2_M1_CDNS_40661953145261".
+Saving contents of cell M2_M1_CDNS_40661953145261
+Reading "M3_M2_CDNS_40661953145263".
+Saving contents of cell M3_M2_CDNS_40661953145263
+Reading "M3_M2_CDNS_40661953145262".
+Saving contents of cell M3_M2_CDNS_40661953145262
+Reading "M3_M2_CDNS_40661953145265".
+Saving contents of cell M3_M2_CDNS_40661953145265
+Reading "ppolyf_u_CDNS_4066195314525".
+Saving contents of cell ppolyf_u_CDNS_4066195314525
+Reading "M2_M1_CDNS_40661953145266".
+Saving contents of cell M2_M1_CDNS_40661953145266
+Reading "M1_NACTIVE_CDNS_40661953145244".
+Saving contents of cell M1_NACTIVE_CDNS_40661953145244
+Reading "M2_M1_CDNS_40661953145267".
+Saving contents of cell M2_M1_CDNS_40661953145267
+Reading "M3_M2_CDNS_40661953145268".
+Saving contents of cell M3_M2_CDNS_40661953145268
+Reading "M1_NACTIVE_CDNS_40661953145254".
+Saving contents of cell M1_NACTIVE_CDNS_40661953145254
+Reading "M1_NACTIVE_CDNS_40661953145243".
+Saving contents of cell M1_NACTIVE_CDNS_40661953145243
+Reading "M1_NACTIVE_CDNS_40661953145245".
+Saving contents of cell M1_NACTIVE_CDNS_40661953145245
+Reading "M1_NACTIVE_CDNS_40661953145246".
+Saving contents of cell M1_NACTIVE_CDNS_40661953145246
+Reading "M1_PACTIVE_CDNS_40661953145248".
+Saving contents of cell M1_PACTIVE_CDNS_40661953145248
+Reading "M1_PACTIVE_CDNS_40661953145250".
+Saving contents of cell M1_PACTIVE_CDNS_40661953145250
+Reading "M1_PACTIVE_CDNS_40661953145252".
+Saving contents of cell M1_PACTIVE_CDNS_40661953145252
+Reading "M1_PACTIVE_CDNS_40661953145253".
+Saving contents of cell M1_PACTIVE_CDNS_40661953145253
+Reading "M1_NACTIVE_CDNS_40661953145255".
+Saving contents of cell M1_NACTIVE_CDNS_40661953145255
+Reading "M2_M1_CDNS_40661953145259".
+Saving contents of cell M2_M1_CDNS_40661953145259
+Reading "M2_M1_CDNS_40661953145239".
+Saving contents of cell M2_M1_CDNS_40661953145239
+Reading "M1_PACTIVE_CDNS_40661953145240".
+Saving contents of cell M1_PACTIVE_CDNS_40661953145240
+Reading "M1_NACTIVE_CDNS_40661953145241".
+Saving contents of cell M1_NACTIVE_CDNS_40661953145241
+Reading "np_6p0_CDNS_4066195314526".
+Saving contents of cell np_6p0_CDNS_4066195314526
+Reading "pn_6p0_CDNS_4066195314527".
+Saving contents of cell pn_6p0_CDNS_4066195314527
+Reading "M2_M1_CDNS_40661953145201".
+Saving contents of cell M2_M1_CDNS_40661953145201
+Reading "M2_M1_CDNS_40661953145183".
+Saving contents of cell M2_M1_CDNS_40661953145183
+Reading "M3_M2_CDNS_40661953145278".
+Saving contents of cell M3_M2_CDNS_40661953145278
+Reading "M2_M1_CDNS_40661953145280".
+Saving contents of cell M2_M1_CDNS_40661953145280
+Reading "M2_M1_CDNS_40661953145279".
+Saving contents of cell M2_M1_CDNS_40661953145279
+Reading "M2_M1_CDNS_40661953145276".
+Saving contents of cell M2_M1_CDNS_40661953145276
+Reading "M3_M2_CDNS_40661953145277".
+Saving contents of cell M3_M2_CDNS_40661953145277
+Reading "M2_M1_CDNS_40661953145281".
+Saving contents of cell M2_M1_CDNS_40661953145281
+Reading "M2_M1_CDNS_40661953145282".
+Saving contents of cell M2_M1_CDNS_40661953145282
+Reading "comp018green_out_paddrv_6T_NMOS_GROUP".
+Reading "comp018green_out_paddrv_6T_PMOS_GROUP".
+Reading "M3_M2_CDNS_40661953145340".
+Saving contents of cell M3_M2_CDNS_40661953145340
+Reading "M3_M2_CDNS_40661953145341".
+Saving contents of cell M3_M2_CDNS_40661953145341
+Reading "M3_M2_CDNS_40661953145342".
+Saving contents of cell M3_M2_CDNS_40661953145342
+Reading "M2_M1_CDNS_40661953145343".
+Saving contents of cell M2_M1_CDNS_40661953145343
+Reading "M2_M1_CDNS_40661953145344".
+Saving contents of cell M2_M1_CDNS_40661953145344
+Reading "comp018green_out_paddrv_4T_PMOS_GROUP".
+Reading "comp018green_out_paddrv_4T_NMOS_GROUP".
+Reading "M1_PSUB_CDNS_4066195314516".
+Saving contents of cell M1_PSUB_CDNS_4066195314516
+Reading "M3_M2_CDNS_406619531456".
+Saving contents of cell M3_M2_CDNS_406619531456
+Reading "M1_PSUB_CDNS_4066195314525".
+Saving contents of cell M1_PSUB_CDNS_4066195314525
+Reading "M2_M1_CDNS_4066195314526".
+Saving contents of cell M2_M1_CDNS_4066195314526
+Reading "M2_M1_CDNS_4066195314527".
+Saving contents of cell M2_M1_CDNS_4066195314527
+Reading "M3_M2_CDNS_4066195314528".
+Saving contents of cell M3_M2_CDNS_4066195314528
+Reading "M3_M2_CDNS_4066195314529".
+Saving contents of cell M3_M2_CDNS_4066195314529
+Reading "M3_M2_CDNS_4066195314510".
+Saving contents of cell M3_M2_CDNS_4066195314510
+Reading "M3_M2_CDNS_406619531459".
+Saving contents of cell M3_M2_CDNS_406619531459
+Reading "POLY_SUB_FILL".
+Reading "M2_M1_CDNS_4066195314515".
+Saving contents of cell M2_M1_CDNS_4066195314515
+Reading "M3_M2_CDNS_4066195314517".
+Saving contents of cell M3_M2_CDNS_4066195314517
+Reading "M1_PSUB_CDNS_40661953145704".
+Saving contents of cell M1_PSUB_CDNS_40661953145704
+Reading "M1_PSUB_CDNS_40661953145699".
+Saving contents of cell M1_PSUB_CDNS_40661953145699
+Reading "M1_PSUB_CDNS_40661953145710".
+Saving contents of cell M1_PSUB_CDNS_40661953145710
+Reading "M1_PSUB_CDNS_40661953145711".
+Saving contents of cell M1_PSUB_CDNS_40661953145711
+Reading "M1_PSUB_CDNS_40661953145709".
+Saving contents of cell M1_PSUB_CDNS_40661953145709
+Reading "M3_M2_CDNS_40661953145739".
+Saving contents of cell M3_M2_CDNS_40661953145739
+Reading "M1_PSUB_CDNS_40661953145712".
+Saving contents of cell M1_PSUB_CDNS_40661953145712
+Reading "M1_PSUB_CDNS_40661953145685".
+Saving contents of cell M1_PSUB_CDNS_40661953145685
+Reading "M1_PSUB_CDNS_40661953145701".
+Saving contents of cell M1_PSUB_CDNS_40661953145701
+Reading "M1_PSUB_CDNS_40661953145706".
+Saving contents of cell M1_PSUB_CDNS_40661953145706
+Reading "M1_PSUB_CDNS_40661953145707".
+Saving contents of cell M1_PSUB_CDNS_40661953145707
+Reading "M1_PSUB_CDNS_40661953145708".
+Saving contents of cell M1_PSUB_CDNS_40661953145708
+Reading "M3_M2_CDNS_40661953145758".
+Saving contents of cell M3_M2_CDNS_40661953145758
+Reading "M2_M1_CDNS_40661953145751".
+Saving contents of cell M2_M1_CDNS_40661953145751
+Reading "M2_M1_CDNS_40661953145767".
+Saving contents of cell M2_M1_CDNS_40661953145767
+Reading "M3_M2_CDNS_40661953145756".
+Saving contents of cell M3_M2_CDNS_40661953145756
+Reading "M2_M1_CDNS_40661953145769".
+Saving contents of cell M2_M1_CDNS_40661953145769
+Reading "M2_M1_CDNS_40661953145772".
+Saving contents of cell M2_M1_CDNS_40661953145772
+Reading "M2_M1_CDNS_40661953145774".
+Saving contents of cell M2_M1_CDNS_40661953145774
+Reading "M2_M1_CDNS_40661953145775".
+Saving contents of cell M2_M1_CDNS_40661953145775
+Reading "M3_M2_CDNS_40661953145776".
+Saving contents of cell M3_M2_CDNS_40661953145776
+Reading "M3_M2_CDNS_40661953145773".
+Saving contents of cell M3_M2_CDNS_40661953145773
+Reading "M2_M1_CDNS_40661953145755".
+Saving contents of cell M2_M1_CDNS_40661953145755
+Reading "M2_M1_CDNS_40661953145757".
+Saving contents of cell M2_M1_CDNS_40661953145757
+Reading "M2_M1_CDNS_40661953145759".
+Saving contents of cell M2_M1_CDNS_40661953145759
+Reading "M3_M2_CDNS_40661953145771".
+Saving contents of cell M3_M2_CDNS_40661953145771
+Reading "M3_M2_CDNS_40661953145770".
+Saving contents of cell M3_M2_CDNS_40661953145770
+Reading "M3_M2_CDNS_40661953145754".
+Saving contents of cell M3_M2_CDNS_40661953145754
+Reading "M2_M1_CDNS_40661953145733".
+Saving contents of cell M2_M1_CDNS_40661953145733
+Reading "M1_PSUB_CDNS_40661953145705".
+Saving contents of cell M1_PSUB_CDNS_40661953145705
+Reading "M3_M2_CDNS_40661953145768".
+Saving contents of cell M3_M2_CDNS_40661953145768
+Reading "M3_M2_CDNS_40661953145753".
+Saving contents of cell M3_M2_CDNS_40661953145753
+Reading "M2_M1_CDNS_40661953145735".
+Saving contents of cell M2_M1_CDNS_40661953145735
+Reading "M1_PSUB_CDNS_40661953145702".
+Saving contents of cell M1_PSUB_CDNS_40661953145702
+Reading "M1_PSUB_CDNS_40661953145700".
+Saving contents of cell M1_PSUB_CDNS_40661953145700
+Reading "M1_PSUB_CDNS_40661953145703".
+Saving contents of cell M1_PSUB_CDNS_40661953145703
+Reading "M1_PSUB_CDNS_40661953145698".
+Saving contents of cell M1_PSUB_CDNS_40661953145698
+Reading "M3_M2_CDNS_40661953145746".
+Saving contents of cell M3_M2_CDNS_40661953145746
+Reading "M2_M1_CDNS_40661953145745".
+Saving contents of cell M2_M1_CDNS_40661953145745
+Reading "M1_PSUB_CDNS_40661953145721".
+Saving contents of cell M1_PSUB_CDNS_40661953145721
+Reading "M1_PSUB_CDNS_40661953145720".
+Saving contents of cell M1_PSUB_CDNS_40661953145720
+Reading "M2_M1_CDNS_40661953145736".
+Saving contents of cell M2_M1_CDNS_40661953145736
+Reading "M1_PSUB_CDNS_40661953145723".
+Saving contents of cell M1_PSUB_CDNS_40661953145723
+Reading "M3_M2_CDNS_40661953145742".
+Saving contents of cell M3_M2_CDNS_40661953145742
+Reading "M2_M1_CDNS_40661953145740".
+Saving contents of cell M2_M1_CDNS_40661953145740
+Reading "M3_M2_CDNS_40661953145741".
+Saving contents of cell M3_M2_CDNS_40661953145741
+Reading "M3_M2_CDNS_40661953145737".
+Saving contents of cell M3_M2_CDNS_40661953145737
+Reading "M1_PSUB_CDNS_40661953145715".
+Saving contents of cell M1_PSUB_CDNS_40661953145715
+Reading "M1_PSUB_CDNS_40661953145713".
+Saving contents of cell M1_PSUB_CDNS_40661953145713
+Reading "M2_M1_CDNS_40661953145734".
+Saving contents of cell M2_M1_CDNS_40661953145734
+Reading "M3_M2_CDNS_40661953145744".
+Saving contents of cell M3_M2_CDNS_40661953145744
+Reading "M1_PSUB_CDNS_40661953145718".
+Saving contents of cell M1_PSUB_CDNS_40661953145718
+Reading "M2_M1_CDNS_40661953145743".
+Saving contents of cell M2_M1_CDNS_40661953145743
+Reading "M3_M2_CDNS_40661953145738".
+Saving contents of cell M3_M2_CDNS_40661953145738
+Reading "M1_PSUB_CDNS_40661953145717".
+Saving contents of cell M1_PSUB_CDNS_40661953145717
+Reading "M1_PSUB_CDNS_40661953145716".
+Saving contents of cell M1_PSUB_CDNS_40661953145716
+Reading "M2_M1_CDNS_40661953145752".
+Saving contents of cell M2_M1_CDNS_40661953145752
+Reading "M3_M2_CDNS_40661953145766".
+Saving contents of cell M3_M2_CDNS_40661953145766
+Reading "M3_M2_CDNS_40661953145727".
+Saving contents of cell M3_M2_CDNS_40661953145727
+Reading "M2_M1_CDNS_40661953145728".
+Saving contents of cell M2_M1_CDNS_40661953145728
+Reading "M2_M1_CDNS_40661953145761".
+Saving contents of cell M2_M1_CDNS_40661953145761
+Reading "M2_M1_CDNS_40661953145763".
+Saving contents of cell M2_M1_CDNS_40661953145763
+Reading "M3_M2_CDNS_40661953145762".
+Saving contents of cell M3_M2_CDNS_40661953145762
+Reading "M3_M2_CDNS_40661953145760".
+Saving contents of cell M3_M2_CDNS_40661953145760
+Reading "M3_M2_CDNS_40661953145726".
+Saving contents of cell M3_M2_CDNS_40661953145726
+Reading "M2_M1_CDNS_40661953145725".
+Saving contents of cell M2_M1_CDNS_40661953145725
+Reading "M2_M1_CDNS_40661953145731".
+Saving contents of cell M2_M1_CDNS_40661953145731
+Reading "M2_M1_CDNS_40661953145688".
+Saving contents of cell M2_M1_CDNS_40661953145688
+Reading "M3_M2_CDNS_40661953145747".
+Saving contents of cell M3_M2_CDNS_40661953145747
+Reading "M2_M1_CDNS_40661953145748".
+Saving contents of cell M2_M1_CDNS_40661953145748
+Reading "M1_PSUB_CDNS_40661953145697".
+Saving contents of cell M1_PSUB_CDNS_40661953145697
+Reading "M2_M1_CDNS_40661953145724".
+Saving contents of cell M2_M1_CDNS_40661953145724
+Reading "M2_M1_CDNS_40661953145729".
+Saving contents of cell M2_M1_CDNS_40661953145729
+Reading "M2_M1_CDNS_40661953145749".
+Saving contents of cell M2_M1_CDNS_40661953145749
+Reading "M3_M2_CDNS_40661953145750".
+Saving contents of cell M3_M2_CDNS_40661953145750
+Reading "M3_M2_CDNS_40661953145730".
+Saving contents of cell M3_M2_CDNS_40661953145730
+Reading "M3_M2_CDNS_40661953145719".
+Saving contents of cell M3_M2_CDNS_40661953145719
+Reading "M2_M1_CDNS_40661953145686".
+Saving contents of cell M2_M1_CDNS_40661953145686
+Reading "M2_M1_CDNS_40661953145687".
+Saving contents of cell M2_M1_CDNS_40661953145687
+Reading "M2_M1_CDNS_40661953145692".
+Saving contents of cell M2_M1_CDNS_40661953145692
+Reading "M2_M1_CDNS_40661953145694".
+Saving contents of cell M2_M1_CDNS_40661953145694
+Reading "M2_M1_CDNS_40661953145722".
+Saving contents of cell M2_M1_CDNS_40661953145722
+Reading "M3_M2_CDNS_40661953145690".
+Saving contents of cell M3_M2_CDNS_40661953145690
+Reading "M2_M1_CDNS_40661953145765".
+Saving contents of cell M2_M1_CDNS_40661953145765
+Reading "M3_M2_CDNS_40661953145764".
+Saving contents of cell M3_M2_CDNS_40661953145764
+Reading "M3_M2_CDNS_40661953145696".
+Saving contents of cell M3_M2_CDNS_40661953145696
+Reading "M3_M2_CDNS_40661953145693".
+Saving contents of cell M3_M2_CDNS_40661953145693
+Reading "M3_M2_CDNS_40661953145691".
+Saving contents of cell M3_M2_CDNS_40661953145691
+Reading "M3_M2_CDNS_40661953145689".
+Saving contents of cell M3_M2_CDNS_40661953145689
+Reading "M2_M1_CDNS_40661953145732".
+Saving contents of cell M2_M1_CDNS_40661953145732
+Reading "M1_PSUB_CDNS_40661953145714".
+Saving contents of cell M1_PSUB_CDNS_40661953145714
+Reading "M1_PSUB_CDNS_40661953145695".
+Saving contents of cell M1_PSUB_CDNS_40661953145695
+Reading "M1_PSUB_CDNS_40661953145678".
+Saving contents of cell M1_PSUB_CDNS_40661953145678
+Reading "M1_PSUB_CDNS_40661953145680".
+Saving contents of cell M1_PSUB_CDNS_40661953145680
+Reading "M1_PSUB_CDNS_40661953145679".
+Saving contents of cell M1_PSUB_CDNS_40661953145679
+Reading "M1_PSUB_CDNS_40661953145684".
+Saving contents of cell M1_PSUB_CDNS_40661953145684
+Reading "M1_PSUB_CDNS_40661953145683".
+Saving contents of cell M1_PSUB_CDNS_40661953145683
+Reading "M1_PSUB_CDNS_40661953145682".
+Saving contents of cell M1_PSUB_CDNS_40661953145682
+Reading "M1_PSUB_CDNS_40661953145681".
+Saving contents of cell M1_PSUB_CDNS_40661953145681
+Reading "power_via_cor_3".
+Reading "comp018green_esd_clamp_v5p0_1".
+Reading "power_via_cor_5".
+Reading "comp018green_esd_clamp_v5p0_2".
+Reading "top_routing_cor".
+Reading "M4_M3_CDNS_40661953145551".
+Saving contents of cell M4_M3_CDNS_40661953145551
+Reading "M4_M3_CDNS_40661953145613".
+Saving contents of cell M4_M3_CDNS_40661953145613
+Reading "M4_M3_CDNS_40661953145611".
+Saving contents of cell M4_M3_CDNS_40661953145611
+Reading "M4_M3_CDNS_40661953145554".
+Saving contents of cell M4_M3_CDNS_40661953145554
+Reading "M4_M3_CDNS_40661953145550".
+Saving contents of cell M4_M3_CDNS_40661953145550
+Reading "M4_M3_CDNS_40661953145612".
+Saving contents of cell M4_M3_CDNS_40661953145612
+Reading "M4_M3_CDNS_40661953145614".
+Saving contents of cell M4_M3_CDNS_40661953145614
+Reading "M4_M3_CDNS_40661953145548".
+Saving contents of cell M4_M3_CDNS_40661953145548
+Reading "M4_M3_CDNS_40661953145549".
+Saving contents of cell M4_M3_CDNS_40661953145549
+Reading "M4_M3_CDNS_40661953145615".
+Saving contents of cell M4_M3_CDNS_40661953145615
+Reading "M4_M3_CDNS_40661953145609".
+Saving contents of cell M4_M3_CDNS_40661953145609
+Reading "M4_M3_CDNS_40661953145608".
+Saving contents of cell M4_M3_CDNS_40661953145608
+Reading "M4_M3_CDNS_40661953145604".
+Saving contents of cell M4_M3_CDNS_40661953145604
+Reading "M4_M3_CDNS_40661953145605".
+Saving contents of cell M4_M3_CDNS_40661953145605
+Reading "M4_M3_CDNS_40661953145603".
+Saving contents of cell M4_M3_CDNS_40661953145603
+Reading "M4_M3_CDNS_40661953145606".
+Saving contents of cell M4_M3_CDNS_40661953145606
+Reading "M4_M3_CDNS_40661953145602".
+Saving contents of cell M4_M3_CDNS_40661953145602
+Reading "M4_M3_CDNS_40661953145607".
+Saving contents of cell M4_M3_CDNS_40661953145607
+Reading "M4_M3_CDNS_40661953145610".
+Saving contents of cell M4_M3_CDNS_40661953145610
+Reading "M4_M3_CDNS_40661953145552".
+Saving contents of cell M4_M3_CDNS_40661953145552
+Reading "M4_M3_CDNS_40661953145598".
+Saving contents of cell M4_M3_CDNS_40661953145598
+Reading "M4_M3_CDNS_40661953145600".
+Saving contents of cell M4_M3_CDNS_40661953145600
+Reading "M4_M3_CDNS_40661953145599".
+Saving contents of cell M4_M3_CDNS_40661953145599
+Reading "M4_M3_CDNS_40661953145601".
+Saving contents of cell M4_M3_CDNS_40661953145601
+Reading "M4_M3_CDNS_40661953145571".
+Saving contents of cell M4_M3_CDNS_40661953145571
+Reading "M4_M3_CDNS_40661953145573".
+Saving contents of cell M4_M3_CDNS_40661953145573
+Reading "M4_M3_CDNS_40661953145585".
+Saving contents of cell M4_M3_CDNS_40661953145585
+Reading "M4_M3_CDNS_40661953145581".
+Saving contents of cell M4_M3_CDNS_40661953145581
+Reading "M4_M3_CDNS_40661953145579".
+Saving contents of cell M4_M3_CDNS_40661953145579
+Reading "M4_M3_CDNS_40661953145580".
+Saving contents of cell M4_M3_CDNS_40661953145580
+Reading "M4_M3_CDNS_40661953145584".
+Saving contents of cell M4_M3_CDNS_40661953145584
+Reading "M4_M3_CDNS_40661953145586".
+Saving contents of cell M4_M3_CDNS_40661953145586
+Reading "M4_M3_CDNS_40661953145578".
+Saving contents of cell M4_M3_CDNS_40661953145578
+Reading "M4_M3_CDNS_40661953145588".
+Saving contents of cell M4_M3_CDNS_40661953145588
+Reading "M4_M3_CDNS_40661953145590".
+Saving contents of cell M4_M3_CDNS_40661953145590
+Reading "M4_M3_CDNS_40661953145592".
+Saving contents of cell M4_M3_CDNS_40661953145592
+Reading "M4_M3_CDNS_40661953145546".
+Saving contents of cell M4_M3_CDNS_40661953145546
+Reading "M4_M3_CDNS_40661953145556".
+Saving contents of cell M4_M3_CDNS_40661953145556
+Reading "M4_M3_CDNS_40661953145543".
+Saving contents of cell M4_M3_CDNS_40661953145543
+Reading "M4_M3_CDNS_40661953145558".
+Saving contents of cell M4_M3_CDNS_40661953145558
+Reading "M4_M3_CDNS_40661953145542".
+Saving contents of cell M4_M3_CDNS_40661953145542
+Reading "M4_M3_CDNS_40661953145555".
+Saving contents of cell M4_M3_CDNS_40661953145555
+Reading "M4_M3_CDNS_40661953145594".
+Saving contents of cell M4_M3_CDNS_40661953145594
+Reading "M4_M3_CDNS_40661953145595".
+Saving contents of cell M4_M3_CDNS_40661953145595
+Reading "M4_M3_CDNS_40661953145596".
+Saving contents of cell M4_M3_CDNS_40661953145596
+Reading "M4_M3_CDNS_40661953145561".
+Saving contents of cell M4_M3_CDNS_40661953145561
+Reading "M4_M3_CDNS_40661953145597".
+Saving contents of cell M4_M3_CDNS_40661953145597
+Reading "M4_M3_CDNS_40661953145650".
+Saving contents of cell M4_M3_CDNS_40661953145650
+Reading "M4_M3_CDNS_40661953145570".
+Saving contents of cell M4_M3_CDNS_40661953145570
+Reading "M4_M3_CDNS_40661953145566".
+Saving contents of cell M4_M3_CDNS_40661953145566
+Reading "M4_M3_CDNS_40661953145569".
+Saving contents of cell M4_M3_CDNS_40661953145569
+Reading "M4_M3_CDNS_40661953145568".
+Saving contents of cell M4_M3_CDNS_40661953145568
+Reading "M4_M3_CDNS_40661953145567".
+Saving contents of cell M4_M3_CDNS_40661953145567
+Reading "M4_M3_CDNS_40661953145593".
+Saving contents of cell M4_M3_CDNS_40661953145593
+Reading "M4_M3_CDNS_40661953145544".
+Saving contents of cell M4_M3_CDNS_40661953145544
+Reading "M4_M3_CDNS_40661953145616".
+Saving contents of cell M4_M3_CDNS_40661953145616
+Reading "M4_M3_CDNS_40661953145655".
+Saving contents of cell M4_M3_CDNS_40661953145655
+Reading "M4_M3_CDNS_40661953145654".
+Saving contents of cell M4_M3_CDNS_40661953145654
+Reading "M4_M3_CDNS_40661953145653".
+Saving contents of cell M4_M3_CDNS_40661953145653
+Reading "M4_M3_CDNS_40661953145652".
+Saving contents of cell M4_M3_CDNS_40661953145652
+Reading "M4_M3_CDNS_40661953145651".
+Saving contents of cell M4_M3_CDNS_40661953145651
+Reading "M4_M3_CDNS_40661953145657".
+Saving contents of cell M4_M3_CDNS_40661953145657
+Reading "M4_M3_CDNS_40661953145656".
+Saving contents of cell M4_M3_CDNS_40661953145656
+Reading "M4_M3_CDNS_40661953145617".
+Saving contents of cell M4_M3_CDNS_40661953145617
+Reading "M4_M3_CDNS_40661953145658".
+Saving contents of cell M4_M3_CDNS_40661953145658
+Reading "M4_M3_CDNS_40661953145664".
+Saving contents of cell M4_M3_CDNS_40661953145664
+Reading "M4_M3_CDNS_40661953145663".
+Saving contents of cell M4_M3_CDNS_40661953145663
+Reading "M4_M3_CDNS_40661953145662".
+Saving contents of cell M4_M3_CDNS_40661953145662
+Reading "M4_M3_CDNS_40661953145661".
+Saving contents of cell M4_M3_CDNS_40661953145661
+Reading "M4_M3_CDNS_40661953145660".
+Saving contents of cell M4_M3_CDNS_40661953145660
+Reading "M4_M3_CDNS_40661953145659".
+Saving contents of cell M4_M3_CDNS_40661953145659
+Reading "M4_M3_CDNS_40661953145666".
+Saving contents of cell M4_M3_CDNS_40661953145666
+Reading "M4_M3_CDNS_40661953145665".
+Saving contents of cell M4_M3_CDNS_40661953145665
+Reading "M4_M3_CDNS_40661953145563".
+Saving contents of cell M4_M3_CDNS_40661953145563
+Reading "M4_M3_CDNS_40661953145562".
+Saving contents of cell M4_M3_CDNS_40661953145562
+Reading "M4_M3_CDNS_40661953145577".
+Saving contents of cell M4_M3_CDNS_40661953145577
+Reading "M4_M3_CDNS_40661953145649".
+Saving contents of cell M4_M3_CDNS_40661953145649
+Reading "M4_M3_CDNS_40661953145648".
+Saving contents of cell M4_M3_CDNS_40661953145648
+Reading "M4_M3_CDNS_40661953145647".
+Saving contents of cell M4_M3_CDNS_40661953145647
+Reading "M4_M3_CDNS_40661953145646".
+Saving contents of cell M4_M3_CDNS_40661953145646
+Reading "M4_M3_CDNS_40661953145565".
+Saving contents of cell M4_M3_CDNS_40661953145565
+Reading "M4_M3_CDNS_40661953145564".
+Saving contents of cell M4_M3_CDNS_40661953145564
+Reading "M4_M3_CDNS_40661953145619".
+Saving contents of cell M4_M3_CDNS_40661953145619
+Reading "M4_M3_CDNS_40661953145621".
+Saving contents of cell M4_M3_CDNS_40661953145621
+Reading "M4_M3_CDNS_40661953145623".
+Saving contents of cell M4_M3_CDNS_40661953145623
+Reading "M4_M3_CDNS_40661953145625".
+Saving contents of cell M4_M3_CDNS_40661953145625
+Reading "M4_M3_CDNS_40661953145627".
+Saving contents of cell M4_M3_CDNS_40661953145627
+Reading "M4_M3_CDNS_40661953145629".
+Saving contents of cell M4_M3_CDNS_40661953145629
+Reading "M4_M3_CDNS_40661953145583".
+Saving contents of cell M4_M3_CDNS_40661953145583
+Reading "M4_M3_CDNS_40661953145582".
+Saving contents of cell M4_M3_CDNS_40661953145582
+Reading "M4_M3_CDNS_40661953145631".
+Saving contents of cell M4_M3_CDNS_40661953145631
+Reading "M4_M3_CDNS_40661953145572".
+Saving contents of cell M4_M3_CDNS_40661953145572
+Reading "M4_M3_CDNS_40661953145574".
+Saving contents of cell M4_M3_CDNS_40661953145574
+Reading "M4_M3_CDNS_40661953145587".
+Saving contents of cell M4_M3_CDNS_40661953145587
+Reading "M4_M3_CDNS_40661953145633".
+Saving contents of cell M4_M3_CDNS_40661953145633
+Reading "M4_M3_CDNS_40661953145589".
+Saving contents of cell M4_M3_CDNS_40661953145589
+Reading "M4_M3_CDNS_40661953145591".
+Saving contents of cell M4_M3_CDNS_40661953145591
+Reading "M4_M3_CDNS_40661953145545".
+Saving contents of cell M4_M3_CDNS_40661953145545
+Reading "M4_M3_CDNS_40661953145635".
+Saving contents of cell M4_M3_CDNS_40661953145635
+Reading "M4_M3_CDNS_40661953145547".
+Saving contents of cell M4_M3_CDNS_40661953145547
+Reading "M4_M3_CDNS_40661953145553".
+Saving contents of cell M4_M3_CDNS_40661953145553
+Reading "M4_M3_CDNS_40661953145557".
+Saving contents of cell M4_M3_CDNS_40661953145557
+Reading "M4_M3_CDNS_40661953145637".
+Saving contents of cell M4_M3_CDNS_40661953145637
+Reading "M4_M3_CDNS_40661953145559".
+Saving contents of cell M4_M3_CDNS_40661953145559
+Reading "M4_M3_CDNS_40661953145560".
+Saving contents of cell M4_M3_CDNS_40661953145560
+Reading "M4_M3_CDNS_40661953145639".
+Saving contents of cell M4_M3_CDNS_40661953145639
+Reading "M4_M3_CDNS_40661953145618".
+Saving contents of cell M4_M3_CDNS_40661953145618
+Reading "M4_M3_CDNS_40661953145620".
+Saving contents of cell M4_M3_CDNS_40661953145620
+Reading "M4_M3_CDNS_40661953145622".
+Saving contents of cell M4_M3_CDNS_40661953145622
+Reading "M4_M3_CDNS_40661953145624".
+Saving contents of cell M4_M3_CDNS_40661953145624
+Reading "M4_M3_CDNS_40661953145626".
+Saving contents of cell M4_M3_CDNS_40661953145626
+Reading "M4_M3_CDNS_40661953145628".
+Saving contents of cell M4_M3_CDNS_40661953145628
+Reading "M4_M3_CDNS_40661953145641".
+Saving contents of cell M4_M3_CDNS_40661953145641
+Reading "M4_M3_CDNS_40661953145630".
+Saving contents of cell M4_M3_CDNS_40661953145630
+Reading "M4_M3_CDNS_40661953145632".
+Saving contents of cell M4_M3_CDNS_40661953145632
+Reading "M4_M3_CDNS_40661953145634".
+Saving contents of cell M4_M3_CDNS_40661953145634
+Reading "M4_M3_CDNS_40661953145668".
+Saving contents of cell M4_M3_CDNS_40661953145668
+Reading "M4_M3_CDNS_40661953145667".
+Saving contents of cell M4_M3_CDNS_40661953145667
+Reading "M4_M3_CDNS_40661953145644".
+Saving contents of cell M4_M3_CDNS_40661953145644
+Reading "M4_M3_CDNS_40661953145643".
+Saving contents of cell M4_M3_CDNS_40661953145643
+Reading "M4_M3_CDNS_40661953145636".
+Saving contents of cell M4_M3_CDNS_40661953145636
+Reading "M4_M3_CDNS_40661953145638".
+Saving contents of cell M4_M3_CDNS_40661953145638
+Reading "M4_M3_CDNS_40661953145640".
+Saving contents of cell M4_M3_CDNS_40661953145640
+Reading "M4_M3_CDNS_40661953145576".
+Saving contents of cell M4_M3_CDNS_40661953145576
+Reading "M4_M3_CDNS_40661953145575".
+Saving contents of cell M4_M3_CDNS_40661953145575
+Reading "M4_M3_CDNS_40661953145645".
+Saving contents of cell M4_M3_CDNS_40661953145645
+Reading "M4_M3_CDNS_40661953145642".
+Saving contents of cell M4_M3_CDNS_40661953145642
+Reading "POWER_RAIL_COR_1".
+Reading "M2_M1_CDNS_406619531454".
+Saving contents of cell M2_M1_CDNS_406619531454
+Reading "M3_M2_CDNS_406619531457".
+Saving contents of cell M3_M2_CDNS_406619531457
+Reading "M1_PSUB_CDNS_406619531458".
+Saving contents of cell M1_PSUB_CDNS_406619531458
+Reading "POLY_SUB_FILL_1".
+Reading "A44_CU_R0".
+Reading "A44_G6_PFET_M9_GUARD0_R0".
+Reading "A44_G6_NFET_M9_GUARD0_R0".
+Reading "A44_CDAC_UNIT_W_R8_M6".
+Reading "A44_CDAC_UNIT_E_R8_M6".
+Reading "5LM_METAL_RAIL_PAD_60".
+Reading "GF_NI_DVDD_BASE".
+Reading "GF_NI_DVSS_BASE".
+Reading "M1_PSUB_CDNS_40661953145396".
+Saving contents of cell M1_PSUB_CDNS_40661953145396
+Reading "M3_M2_CDNS_40661953145388".
+Saving contents of cell M3_M2_CDNS_40661953145388
+Reading "M2_M1_CDNS_40661953145392".
+Saving contents of cell M2_M1_CDNS_40661953145392
+Reading "M1_NWELL_CDNS_40661953145380".
+Saving contents of cell M1_NWELL_CDNS_40661953145380
+Reading "M1_PSUB_CDNS_40661953145381".
+Saving contents of cell M1_PSUB_CDNS_40661953145381
+Reading "M2_M1_CDNS_40661953145394".
+Saving contents of cell M2_M1_CDNS_40661953145394
+Reading "M2_M1_CDNS_40661953145391".
+Saving contents of cell M2_M1_CDNS_40661953145391
+Reading "M2_M1_CDNS_40661953145390".
+Saving contents of cell M2_M1_CDNS_40661953145390
+Reading "M3_M2_CDNS_40661953145387".
+Saving contents of cell M3_M2_CDNS_40661953145387
+Reading "M2_M1_CDNS_40661953145389".
+Saving contents of cell M2_M1_CDNS_40661953145389
+Reading "M2_M1_CDNS_40661953145395".
+Saving contents of cell M2_M1_CDNS_40661953145395
+Reading "M1_PSUB_CDNS_40661953145383".
+Saving contents of cell M1_PSUB_CDNS_40661953145383
+Reading "M1_PSUB_CDNS_40661953145382".
+Saving contents of cell M1_PSUB_CDNS_40661953145382
+Reading "M1_PSUB_CDNS_40661953145379".
+Saving contents of cell M1_PSUB_CDNS_40661953145379
+Reading "comp018green_esd_hbm".
+Reading "M1_NWELL_CDNS_40661953145384".
+Saving contents of cell M1_NWELL_CDNS_40661953145384
+Reading "nmoscap_6p0_CDNS_4066195314522".
+Saving contents of cell nmoscap_6p0_CDNS_4066195314522
+Reading "nmoscap_6p0_CDNS_4066195314523".
+Saving contents of cell nmoscap_6p0_CDNS_4066195314523
+Reading "comp018green_out_sigbuf_a".
+Reading "comp018green_out_sigbuf_oe".
+Reading "comp018green_inpath_cms_smt".
+Reading "comp018green_out_predrv".
+Reading "M1_PSUB_CDNS_40661953145215".
+Saving contents of cell M1_PSUB_CDNS_40661953145215
+Reading "M2_M1_CDNS_40661953145214".
+Saving contents of cell M2_M1_CDNS_40661953145214
+Reading "M3_M2_CDNS_40661953145213".
+Saving contents of cell M3_M2_CDNS_40661953145213
+Reading "M3_M2_CDNS_40661953145212".
+Saving contents of cell M3_M2_CDNS_40661953145212
+Reading "M2_M1_CDNS_40661953145211".
+Saving contents of cell M2_M1_CDNS_40661953145211
+Reading "M3_M2_CDNS_40661953145210".
+Saving contents of cell M3_M2_CDNS_40661953145210
+Reading "M3_M2_CDNS_40661953145206".
+Saving contents of cell M3_M2_CDNS_40661953145206
+Reading "M2_M1_CDNS_40661953145205".
+Saving contents of cell M2_M1_CDNS_40661953145205
+Reading "M3_M2_CDNS_40661953145204".
+Saving contents of cell M3_M2_CDNS_40661953145204
+Reading "M2_M1_CDNS_40661953145204".
+Saving contents of cell M2_M1_CDNS_40661953145204
+Reading "M2_M1_CDNS_40661953145203".
+Saving contents of cell M2_M1_CDNS_40661953145203
+Reading "M3_M2_CDNS_40661953145200".
+Saving contents of cell M3_M2_CDNS_40661953145200
+Reading "M2_M1_CDNS_40661953145198".
+Saving contents of cell M2_M1_CDNS_40661953145198
+Reading "M3_M2_CDNS_40661953145197".
+Saving contents of cell M3_M2_CDNS_40661953145197
+Reading "M3_M2_CDNS_40661953145196".
+Saving contents of cell M3_M2_CDNS_40661953145196
+Reading "M2_M1_CDNS_40661953145195".
+Saving contents of cell M2_M1_CDNS_40661953145195
+Reading "M3_M2_CDNS_40661953145194".
+Saving contents of cell M3_M2_CDNS_40661953145194
+Reading "M3_M2_CDNS_40661953145193".
+Saving contents of cell M3_M2_CDNS_40661953145193
+Reading "M3_M2_CDNS_40661953145190".
+Saving contents of cell M3_M2_CDNS_40661953145190
+Reading "M2_M1_CDNS_40661953145189".
+Saving contents of cell M2_M1_CDNS_40661953145189
+Reading "M3_M2_CDNS_40661953145188".
+Saving contents of cell M3_M2_CDNS_40661953145188
+Reading "M2_M1_CDNS_40661953145187".
+Saving contents of cell M2_M1_CDNS_40661953145187
+Reading "M3_M2_CDNS_40661953145186".
+Saving contents of cell M3_M2_CDNS_40661953145186
+Reading "M2_M1_CDNS_40661953145185".
+Saving contents of cell M2_M1_CDNS_40661953145185
+Reading "M3_M2_CDNS_40661953145179".
+Saving contents of cell M3_M2_CDNS_40661953145179
+Reading "M2_M1_CDNS_40661953145178".
+Saving contents of cell M2_M1_CDNS_40661953145178
+Reading "M2_M1_CDNS_40661953145176".
+Saving contents of cell M2_M1_CDNS_40661953145176
+Reading "M3_M2_CDNS_40661953145174".
+Saving contents of cell M3_M2_CDNS_40661953145174
+Reading "M2_M1_CDNS_40661953145173".
+Saving contents of cell M2_M1_CDNS_40661953145173
+Reading "M3_M2_CDNS_40661953145172".
+Saving contents of cell M3_M2_CDNS_40661953145172
+Reading "M2_M1_CDNS_40661953145171".
+Saving contents of cell M2_M1_CDNS_40661953145171
+Reading "M3_M2_CDNS_40661953145170".
+Saving contents of cell M3_M2_CDNS_40661953145170
+Reading "M2_M1_CDNS_40661953145169".
+Saving contents of cell M2_M1_CDNS_40661953145169
+Reading "M1_PACTIVE_CDNS_40661953145168".
+Saving contents of cell M1_PACTIVE_CDNS_40661953145168
+Reading "M1_PACTIVE_CDNS_40661953145167".
+Saving contents of cell M1_PACTIVE_CDNS_40661953145167
+Reading "M1_PACTIVE_CDNS_40661953145166".
+Saving contents of cell M1_PACTIVE_CDNS_40661953145166
+Reading "M1_PACTIVE_CDNS_40661953145165".
+Saving contents of cell M1_PACTIVE_CDNS_40661953145165
+Reading "M2_M1_CDNS_40661953145163".
+Saving contents of cell M2_M1_CDNS_40661953145163
+Reading "comp018green_sigbuf_1".
+Reading "comp018green_esd_cdm".
+Reading "M1_PSUB_CDNS_40661953145220".
+Saving contents of cell M1_PSUB_CDNS_40661953145220
+Reading "ppolyf_u_CDNS_4066195314524".
+Saving contents of cell ppolyf_u_CDNS_4066195314524
+Reading "M2_M1_CDNS_40661953145184".
+Saving contents of cell M2_M1_CDNS_40661953145184
+Reading "M3_M2_CDNS_40661953145219".
+Saving contents of cell M3_M2_CDNS_40661953145219
+Reading "M2_M1_CDNS_40661953145191".
+Saving contents of cell M2_M1_CDNS_40661953145191
+Reading "M3_M2_CDNS_40661953145192".
+Saving contents of cell M3_M2_CDNS_40661953145192
+Reading "comp018green_out_paddrv_24T".
+Reading "comp018green_out_paddrv_16T".
+Reading "M1_PSUB_CDNS_40661953145339".
+Saving contents of cell M1_PSUB_CDNS_40661953145339
+Reading "M1_PSUB_CDNS_40661953145338".
+Saving contents of cell M1_PSUB_CDNS_40661953145338
+Reading "M2_M1_CDNS_40661953145333".
+Saving contents of cell M2_M1_CDNS_40661953145333
+Reading "M3_M2_CDNS_40661953145332".
+Saving contents of cell M3_M2_CDNS_40661953145332
+Reading "M2_M1_CDNS_40661953145331".
+Saving contents of cell M2_M1_CDNS_40661953145331
+Reading "M3_M2_CDNS_40661953145330".
+Saving contents of cell M3_M2_CDNS_40661953145330
+Reading "M2_M1_CDNS_40661953145329".
+Saving contents of cell M2_M1_CDNS_40661953145329
+Reading "GF_NI_FILL1_1".
+Reading "M4_M3_CDNS_4066195314524".
+Saving contents of cell M4_M3_CDNS_4066195314524
+Reading "M4_M3_CDNS_4066195314523".
+Saving contents of cell M4_M3_CDNS_4066195314523
+Reading "M4_M3_CDNS_4066195314522".
+Saving contents of cell M4_M3_CDNS_4066195314522
+Reading "M4_M3_CDNS_4066195314512".
+Saving contents of cell M4_M3_CDNS_4066195314512
+Reading "M4_M3_CDNS_4066195314514".
+Saving contents of cell M4_M3_CDNS_4066195314514
+Reading "GF_NI_FILL5_1".
+Reading "moscap_routing".
+Error while reading cell "moscap_routing" (byte position 12889594): Warning: cell "M2_M1_CDNS_40661953145765" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12889644): Warning: cell "M2_M1_CDNS_40661953145765" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12889794): Warning: cell "M2_M1_CDNS_40661953145765" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12889844): Warning: cell "M2_M1_CDNS_40661953145765" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12889894): Warning: cell "M2_M1_CDNS_40661953145765" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12889944): Warning: cell "M2_M1_CDNS_40661953145765" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12889994): Warning: cell "M2_M1_CDNS_40661953145765" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12890044): Warning: cell "M2_M1_CDNS_40661953145765" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12890094): Warning: cell "M2_M1_CDNS_40661953145765" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12890794): Warning: cell "M2_M1_CDNS_40661953145724" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12890844): Warning: cell "M2_M1_CDNS_40661953145724" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12890894): Warning: cell "M2_M1_CDNS_40661953145724" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12890944): Warning: cell "M2_M1_CDNS_40661953145724" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12892496): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12892546): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12892696): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12892746): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12892796): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12892846): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12892896): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12892946): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12892996): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893046): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893096): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893146): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893196): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893296): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893346): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893396): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893446): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893496): Warning: cell "M2_M1_CDNS_40661953145729" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893546): Warning: cell "M2_M1_CDNS_40661953145724" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893596): Warning: cell "M2_M1_CDNS_40661953145724" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893646): Warning: cell "M2_M1_CDNS_40661953145724" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893696): Warning: cell "M2_M1_CDNS_40661953145724" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12893746): Warning: cell "M2_M1_CDNS_40661953145724" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12895646): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12895696): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12895796): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12895846): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12895896): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12895946): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12895996): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12896046): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12896096): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12896196): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12896296): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12896346): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12896396): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12896446): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12896496): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12896546): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12896596): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12896646): Warning: cell "M2_M1_CDNS_40661953145725" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12899756): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12899806): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12899856): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12899906): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12899956): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12901406): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12901456): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12901506): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12901556): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12901606): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12901656): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12901706): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12901756): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12901806): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12901856): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12901906): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12901956): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902006): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902156): Warning: cell "M2_M1_CDNS_40661953145763" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902206): Warning: cell "M2_M1_CDNS_40661953145763" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902256): Warning: cell "M2_M1_CDNS_40661953145763" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902356): Warning: cell "M2_M1_CDNS_40661953145761" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902406): Warning: cell "M2_M1_CDNS_40661953145761" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902456): Warning: cell "M2_M1_CDNS_40661953145761" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902506): Warning: cell "M2_M1_CDNS_40661953145761" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902556): Warning: cell "M2_M1_CDNS_40661953145761" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902606): Warning: cell "M2_M1_CDNS_40661953145761" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902656): Warning: cell "M2_M1_CDNS_40661953145761" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902706): Warning: cell "M2_M1_CDNS_40661953145761" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902756): Warning: cell "M2_M1_CDNS_40661953145761" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902806): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902856): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12902906): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12903106): Warning: cell "M2_M1_CDNS_40661953145763" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12903156): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12903206): Warning: cell "M2_M1_CDNS_40661953145763" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12903256): Warning: cell "M2_M1_CDNS_40661953145763" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12903306): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12903356): Warning: cell "M2_M1_CDNS_40661953145763" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12903406): Warning: cell "M2_M1_CDNS_40661953145763" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "moscap_routing" (byte position 12903456): Warning: cell "M2_M1_CDNS_40661953145728" placed on top of itself.  Ignoring the extra one.
+Error limit set:  Remaining errors will not be reported.
+Reading "moscap_corner_1".
+Reading "moscap_corner".
+Reading "moscap_corner_2".
+Reading "moscap_corner_3".
+Reading "ESD_CLAMP_COR".
+Reading "M1_PSUB_CDNS_40661953145677".
+Saving contents of cell M1_PSUB_CDNS_40661953145677
+Reading "M5_M4_CDNS_40661953145530".
+Saving contents of cell M5_M4_CDNS_40661953145530
+Reading "M5_M4_CDNS_40661953145532".
+Saving contents of cell M5_M4_CDNS_40661953145532
+Reading "M5_M4_CDNS_40661953145493".
+Saving contents of cell M5_M4_CDNS_40661953145493
+Reading "M5_M4_CDNS_40661953145505".
+Saving contents of cell M5_M4_CDNS_40661953145505
+Reading "M5_M4_CDNS_40661953145507".
+Saving contents of cell M5_M4_CDNS_40661953145507
+Reading "M5_M4_CDNS_40661953145508".
+Saving contents of cell M5_M4_CDNS_40661953145508
+Reading "M5_M4_CDNS_40661953145503".
+Saving contents of cell M5_M4_CDNS_40661953145503
+Reading "M5_M4_CDNS_40661953145504".
+Saving contents of cell M5_M4_CDNS_40661953145504
+Reading "M5_M4_CDNS_40661953145531".
+Saving contents of cell M5_M4_CDNS_40661953145531
+Reading "M5_M4_CDNS_40661953145506".
+Saving contents of cell M5_M4_CDNS_40661953145506
+Reading "M5_M4_CDNS_40661953145514".
+Saving contents of cell M5_M4_CDNS_40661953145514
+Reading "M5_M4_CDNS_40661953145512".
+Saving contents of cell M5_M4_CDNS_40661953145512
+Reading "M5_M4_CDNS_40661953145513".
+Saving contents of cell M5_M4_CDNS_40661953145513
+Reading "M5_M4_CDNS_40661953145510".
+Saving contents of cell M5_M4_CDNS_40661953145510
+Reading "M5_M4_CDNS_40661953145515".
+Saving contents of cell M5_M4_CDNS_40661953145515
+Reading "M5_M4_CDNS_40661953145509".
+Saving contents of cell M5_M4_CDNS_40661953145509
+Reading "M5_M4_CDNS_40661953145517".
+Saving contents of cell M5_M4_CDNS_40661953145517
+Reading "M5_M4_CDNS_40661953145511".
+Saving contents of cell M5_M4_CDNS_40661953145511
+Reading "M5_M4_CDNS_40661953145516".
+Saving contents of cell M5_M4_CDNS_40661953145516
+Reading "M5_M4_CDNS_40661953145495".
+Saving contents of cell M5_M4_CDNS_40661953145495
+Reading "M5_M4_CDNS_40661953145496".
+Saving contents of cell M5_M4_CDNS_40661953145496
+Reading "M5_M4_CDNS_40661953145519".
+Saving contents of cell M5_M4_CDNS_40661953145519
+Reading "M5_M4_CDNS_40661953145501".
+Saving contents of cell M5_M4_CDNS_40661953145501
+Reading "M5_M4_CDNS_40661953145518".
+Saving contents of cell M5_M4_CDNS_40661953145518
+Reading "M5_M4_CDNS_40661953145441".
+Saving contents of cell M5_M4_CDNS_40661953145441
+Reading "M5_M4_CDNS_40661953145462".
+Saving contents of cell M5_M4_CDNS_40661953145462
+Reading "M5_M4_CDNS_40661953145468".
+Saving contents of cell M5_M4_CDNS_40661953145468
+Reading "M5_M4_CDNS_40661953145484".
+Saving contents of cell M5_M4_CDNS_40661953145484
+Reading "M5_M4_CDNS_40661953145485".
+Saving contents of cell M5_M4_CDNS_40661953145485
+Reading "M5_M4_CDNS_40661953145469".
+Saving contents of cell M5_M4_CDNS_40661953145469
+Reading "M5_M4_CDNS_40661953145470".
+Saving contents of cell M5_M4_CDNS_40661953145470
+Reading "M5_M4_CDNS_40661953145460".
+Saving contents of cell M5_M4_CDNS_40661953145460
+Reading "M5_M4_CDNS_40661953145443".
+Saving contents of cell M5_M4_CDNS_40661953145443
+Reading "M5_M4_CDNS_40661953145487".
+Saving contents of cell M5_M4_CDNS_40661953145487
+Reading "M5_M4_CDNS_40661953145459".
+Saving contents of cell M5_M4_CDNS_40661953145459
+Reading "M5_M4_CDNS_40661953145456".
+Saving contents of cell M5_M4_CDNS_40661953145456
+Reading "M5_M4_CDNS_40661953145454".
+Saving contents of cell M5_M4_CDNS_40661953145454
+Reading "M5_M4_CDNS_40661953145488".
+Saving contents of cell M5_M4_CDNS_40661953145488
+Reading "M5_M4_CDNS_40661953145486".
+Saving contents of cell M5_M4_CDNS_40661953145486
+Reading "M5_M4_CDNS_40661953145448".
+Saving contents of cell M5_M4_CDNS_40661953145448
+Reading "M5_M4_CDNS_40661953145452".
+Saving contents of cell M5_M4_CDNS_40661953145452
+Reading "M5_M4_CDNS_40661953145500".
+Saving contents of cell M5_M4_CDNS_40661953145500
+Reading "M5_M4_CDNS_40661953145499".
+Saving contents of cell M5_M4_CDNS_40661953145499
+Reading "M5_M4_CDNS_40661953145533".
+Saving contents of cell M5_M4_CDNS_40661953145533
+Reading "M5_M4_CDNS_40661953145534".
+Saving contents of cell M5_M4_CDNS_40661953145534
+Reading "M5_M4_CDNS_40661953145498".
+Saving contents of cell M5_M4_CDNS_40661953145498
+Reading "M5_M4_CDNS_40661953145497".
+Saving contents of cell M5_M4_CDNS_40661953145497
+Reading "M5_M4_CDNS_40661953145521".
+Saving contents of cell M5_M4_CDNS_40661953145521
+Reading "M5_M4_CDNS_40661953145523".
+Saving contents of cell M5_M4_CDNS_40661953145523
+Reading "M5_M4_CDNS_40661953145525".
+Saving contents of cell M5_M4_CDNS_40661953145525
+Reading "M5_M4_CDNS_40661953145520".
+Saving contents of cell M5_M4_CDNS_40661953145520
+Reading "M5_M4_CDNS_40661953145524".
+Saving contents of cell M5_M4_CDNS_40661953145524
+Reading "M5_M4_CDNS_40661953145522".
+Saving contents of cell M5_M4_CDNS_40661953145522
+Reading "M5_M4_CDNS_40661953145535".
+Saving contents of cell M5_M4_CDNS_40661953145535
+Reading "M5_M4_CDNS_40661953145537".
+Saving contents of cell M5_M4_CDNS_40661953145537
+Reading "M5_M4_CDNS_40661953145536".
+Saving contents of cell M5_M4_CDNS_40661953145536
+Reading "M5_M4_CDNS_40661953145502".
+Saving contents of cell M5_M4_CDNS_40661953145502
+Reading "M5_M4_CDNS_40661953145480".
+Saving contents of cell M5_M4_CDNS_40661953145480
+Reading "M5_M4_CDNS_40661953145479".
+Saving contents of cell M5_M4_CDNS_40661953145479
+Reading "M5_M4_CDNS_40661953145478".
+Saving contents of cell M5_M4_CDNS_40661953145478
+Reading "M5_M4_CDNS_40661953145483".
+Saving contents of cell M5_M4_CDNS_40661953145483
+Reading "M5_M4_CDNS_40661953145467".
+Saving contents of cell M5_M4_CDNS_40661953145467
+Reading "M5_M4_CDNS_40661953145482".
+Saving contents of cell M5_M4_CDNS_40661953145482
+Reading "M5_M4_CDNS_40661953145450".
+Saving contents of cell M5_M4_CDNS_40661953145450
+Reading "M5_M4_CDNS_40661953145477".
+Saving contents of cell M5_M4_CDNS_40661953145477
+Reading "M5_M4_CDNS_40661953145476".
+Saving contents of cell M5_M4_CDNS_40661953145476
+Reading "M5_M4_CDNS_40661953145475".
+Saving contents of cell M5_M4_CDNS_40661953145475
+Reading "M5_M4_CDNS_40661953145474".
+Saving contents of cell M5_M4_CDNS_40661953145474
+Reading "M5_M4_CDNS_40661953145473".
+Saving contents of cell M5_M4_CDNS_40661953145473
+Reading "M5_M4_CDNS_40661953145472".
+Saving contents of cell M5_M4_CDNS_40661953145472
+Reading "M5_M4_CDNS_40661953145471".
+Saving contents of cell M5_M4_CDNS_40661953145471
+Reading "M5_M4_CDNS_40661953145494".
+Saving contents of cell M5_M4_CDNS_40661953145494
+Reading "M5_M4_CDNS_40661953145436".
+Saving contents of cell M5_M4_CDNS_40661953145436
+Reading "M5_M4_CDNS_40661953145481".
+Saving contents of cell M5_M4_CDNS_40661953145481
+Reading "M5_M4_CDNS_40661953145527".
+Saving contents of cell M5_M4_CDNS_40661953145527
+Reading "M5_M4_CDNS_40661953145526".
+Saving contents of cell M5_M4_CDNS_40661953145526
+Reading "M5_M4_CDNS_40661953145541".
+Saving contents of cell M5_M4_CDNS_40661953145541
+Reading "M5_M4_CDNS_40661953145540".
+Saving contents of cell M5_M4_CDNS_40661953145540
+Reading "M5_M4_CDNS_40661953145539".
+Saving contents of cell M5_M4_CDNS_40661953145539
+Reading "M5_M4_CDNS_40661953145538".
+Saving contents of cell M5_M4_CDNS_40661953145538
+Reading "M5_M4_CDNS_40661953145529".
+Saving contents of cell M5_M4_CDNS_40661953145529
+Reading "M5_M4_CDNS_40661953145528".
+Saving contents of cell M5_M4_CDNS_40661953145528
+Reading "M5_M4_CDNS_40661953145446".
+Saving contents of cell M5_M4_CDNS_40661953145446
+Reading "M5_M4_CDNS_40661953145445".
+Saving contents of cell M5_M4_CDNS_40661953145445
+Reading "M5_M4_CDNS_40661953145442".
+Saving contents of cell M5_M4_CDNS_40661953145442
+Reading "M5_M4_CDNS_40661953145425".
+Saving contents of cell M5_M4_CDNS_40661953145425
+Reading "M5_M4_CDNS_40661953145433".
+Saving contents of cell M5_M4_CDNS_40661953145433
+Reading "M5_M4_CDNS_40661953145435".
+Saving contents of cell M5_M4_CDNS_40661953145435
+Reading "M5_M4_CDNS_40661953145458".
+Saving contents of cell M5_M4_CDNS_40661953145458
+Reading "M5_M4_CDNS_40661953145440".
+Saving contents of cell M5_M4_CDNS_40661953145440
+Reading "M5_M4_CDNS_40661953145434".
+Saving contents of cell M5_M4_CDNS_40661953145434
+Reading "M5_M4_CDNS_40661953145463".
+Saving contents of cell M5_M4_CDNS_40661953145463
+Reading "M5_M4_CDNS_40661953145415".
+Saving contents of cell M5_M4_CDNS_40661953145415
+Reading "M5_M4_CDNS_40661953145461".
+Saving contents of cell M5_M4_CDNS_40661953145461
+Reading "M5_M4_CDNS_40661953145432".
+Saving contents of cell M5_M4_CDNS_40661953145432
+Reading "M5_M4_CDNS_40661953145444".
+Saving contents of cell M5_M4_CDNS_40661953145444
+Reading "M5_M4_CDNS_40661953145457".
+Saving contents of cell M5_M4_CDNS_40661953145457
+Reading "M5_M4_CDNS_40661953145455".
+Saving contents of cell M5_M4_CDNS_40661953145455
+Reading "M5_M4_CDNS_40661953145430".
+Saving contents of cell M5_M4_CDNS_40661953145430
+Reading "M5_M4_CDNS_40661953145431".
+Saving contents of cell M5_M4_CDNS_40661953145431
+Reading "M5_M4_CDNS_40661953145451".
+Saving contents of cell M5_M4_CDNS_40661953145451
+Reading "M5_M4_CDNS_40661953145429".
+Saving contents of cell M5_M4_CDNS_40661953145429
+Reading "M5_M4_CDNS_40661953145492".
+Saving contents of cell M5_M4_CDNS_40661953145492
+Reading "M5_M4_CDNS_40661953145453".
+Saving contents of cell M5_M4_CDNS_40661953145453
+Reading "M5_M4_CDNS_40661953145439".
+Saving contents of cell M5_M4_CDNS_40661953145439
+Reading "M5_M4_CDNS_40661953145466".
+Saving contents of cell M5_M4_CDNS_40661953145466
+Reading "M5_M4_CDNS_40661953145427".
+Saving contents of cell M5_M4_CDNS_40661953145427
+Reading "M5_M4_CDNS_40661953145449".
+Saving contents of cell M5_M4_CDNS_40661953145449
+Reading "M5_M4_CDNS_40661953145447".
+Saving contents of cell M5_M4_CDNS_40661953145447
+Reading "M5_M4_CDNS_40661953145417".
+Saving contents of cell M5_M4_CDNS_40661953145417
+Reading "M5_M4_CDNS_40661953145423".
+Saving contents of cell M5_M4_CDNS_40661953145423
+Reading "M5_M4_CDNS_40661953145419".
+Saving contents of cell M5_M4_CDNS_40661953145419
+Reading "M5_M4_CDNS_40661953145418".
+Saving contents of cell M5_M4_CDNS_40661953145418
+Reading "M5_M4_CDNS_40661953145428".
+Saving contents of cell M5_M4_CDNS_40661953145428
+Reading "M5_M4_CDNS_40661953145416".
+Saving contents of cell M5_M4_CDNS_40661953145416
+Reading "M5_M4_CDNS_40661953145438".
+Saving contents of cell M5_M4_CDNS_40661953145438
+Reading "M5_M4_CDNS_40661953145465".
+Saving contents of cell M5_M4_CDNS_40661953145465
+Reading "M5_M4_CDNS_40661953145491".
+Saving contents of cell M5_M4_CDNS_40661953145491
+Reading "M5_M4_CDNS_40661953145490".
+Saving contents of cell M5_M4_CDNS_40661953145490
+Reading "M5_M4_CDNS_40661953145489".
+Saving contents of cell M5_M4_CDNS_40661953145489
+Reading "M5_M4_CDNS_40661953145422".
+Saving contents of cell M5_M4_CDNS_40661953145422
+Reading "M5_M4_CDNS_40661953145420".
+Saving contents of cell M5_M4_CDNS_40661953145420
+Reading "M5_M4_CDNS_40661953145421".
+Saving contents of cell M5_M4_CDNS_40661953145421
+Reading "M5_M4_CDNS_40661953145464".
+Saving contents of cell M5_M4_CDNS_40661953145464
+Reading "M5_M4_CDNS_40661953145426".
+Saving contents of cell M5_M4_CDNS_40661953145426
+Reading "M5_M4_CDNS_40661953145424".
+Saving contents of cell M5_M4_CDNS_40661953145424
+Reading "M5_M4_CDNS_40661953145437".
+Saving contents of cell M5_M4_CDNS_40661953145437
+Reading "POWER_RAIL_COR_0".
+Reading "M4_M3_CDNS_406619531452".
+Saving contents of cell M4_M3_CDNS_406619531452
+Reading "M4_M3_CDNS_406619531453".
+Saving contents of cell M4_M3_CDNS_406619531453
+Reading "GF_NI_FILL10_1".
+Reading "ppolyf_u_CDNS_4066195314551".
+Saving contents of cell ppolyf_u_CDNS_4066195314551
+Reading "M1_NWELL_CDNS_40661953145377".
+Saving contents of cell M1_NWELL_CDNS_40661953145377
+Reading "M2_M1_CDNS_40661953145378".
+Saving contents of cell M2_M1_CDNS_40661953145378
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffrnq_2$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai32_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi221_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_4$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_2$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_2$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or2_4$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or3_2$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor2_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_2$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi22_2$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and2_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor4_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_2$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__antenna$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_4$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi211_2$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_2$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nor3_4$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai211_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand3_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dlyb_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand4_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__aoi21_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai21_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_16$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__or4_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai31_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__nand2_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__and4_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_2$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__oai22_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__clkinv_1$1".
+Reading "VIA_Via3_HV$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__dffnq_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_64$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_2$1".
+Reading "VIA_Via1_HV$1".
+Reading "VIA_Via1_VV$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_1$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_16$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_4$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_8$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_4$1".
+Reading "VIA_via2_3_10000_1200_1_9_1040_1040$1".
+Reading "VIA_via1_2_10000_1200_1_9_1040_1040$1".
+Reading "VIA_via3_4_10000_1200_1_9_1040_1040$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__filltie$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__endcap$1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_32$1".
+Reading "VIA_Via2_VH$1".
+Reading "Metal5_fill_cell".
+Reading "Metal4_fill_cell".
+Reading "Metal3_fill_cell".
+Reading "Metal2_fill_cell".
+Reading "Metal1_fill_cell".
+Reading "COMP_fill_cell".
+Reading "A44_CAP_SEG16_R0".
+Reading "A44_CAP_SEG8_R0".
+Reading "A44_CAP_SEG4_R0".
+Reading "A44_CAP_SEG2_R0".
+Reading "A44_CAP_SEG1_R0".
+Reading "A44_CAP_SWITCH_BANK_CORE_O2".
+Reading "gf180mcu_fd_io__dvdd".
+Reading "gf180mcu_fd_io__dvss".
+Reading "GF_NI_ASIG_5P0_BASE".
+Reading "GF_NI_BI_24T_BASE".
+Reading "M5_M4_CDNS_4066195314519".
+Saving contents of cell M5_M4_CDNS_4066195314519
+Reading "M5_M4_CDNS_4066195314520".
+Saving contents of cell M5_M4_CDNS_4066195314520
+Reading "M5_M4_CDNS_4066195314521".
+Saving contents of cell M5_M4_CDNS_4066195314521
+Reading "GF_NI_FILL1_0".
+Reading "M5_M4_CDNS_4066195314511".
+Saving contents of cell M5_M4_CDNS_4066195314511
+Reading "M5_M4_CDNS_4066195314513".
+Saving contents of cell M5_M4_CDNS_4066195314513
+Reading "GF_NI_FILL5_0".
+Reading "GF_NI_COR_BASE".
+Reading "POWER_RAIL_COR".
+Reading "M5_M4_CDNS_406619531451".
+Saving contents of cell M5_M4_CDNS_406619531451
+Reading "M5_M4_CDNS_406619531450".
+Saving contents of cell M5_M4_CDNS_406619531450
+Reading "GF_NI_FILL10_0".
+Reading "GF_NI_IN_C_BASE".
+Reading "GF_NI_IN_S_BASE".
+Reading "A44_CDAC_UNIT_E_R7".
+Reading "A44_CDAC_UNIT_W_R7".
+Reading "A44_CLKS_BUFFER_R1".
+Reading "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9".
+Reading "SAR_LOGIC_ACTUAL_RTL_SS".
+Reading "METAL5_FILL".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+    45000 uses
+Reading "METAL4_FILL".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+    45000 uses
+    50000 uses
+    55000 uses
+    60000 uses
+    65000 uses
+    70000 uses
+    75000 uses
+    80000 uses
+    85000 uses
+    90000 uses
+    95000 uses
+    100000 uses
+    105000 uses
+    110000 uses
+    115000 uses
+    120000 uses
+    125000 uses
+    130000 uses
+    135000 uses
+    140000 uses
+    145000 uses
+    150000 uses
+    155000 uses
+    160000 uses
+    165000 uses
+    170000 uses
+    175000 uses
+    180000 uses
+    185000 uses
+    190000 uses
+    195000 uses
+    200000 uses
+    205000 uses
+    210000 uses
+Reading "METAL3_FILL".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+    45000 uses
+    50000 uses
+    55000 uses
+    60000 uses
+    65000 uses
+    70000 uses
+    75000 uses
+    80000 uses
+    85000 uses
+    90000 uses
+    95000 uses
+Reading "METAL2_FILL".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+    45000 uses
+    50000 uses
+    55000 uses
+    60000 uses
+    65000 uses
+    70000 uses
+    75000 uses
+    80000 uses
+    85000 uses
+Reading "METAL1_FILL".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+Reading "COMP_FILL".
+Reading "A44_SW_CLUSTER32_SW_R_ROUTE".
+Reading "A44_SW_CLUSTER32_SE_R_ROUTE".
+Reading "A44_CAP_QUAD32_D_XW_R0".
+Reading "A44_CAP_QUAD32_2B".
+Reading "A44_CAP_QUAD32_2A_XW_R0".
+Reading "A44_CAP_QUAD32_C".
+Reading "A44_SW_CLUSTER32_NW_R_ROUTE".
+Reading "A44_SW_CLUSTER32_NE_R_ROUTE".
+Reading "A44_SW_CLUSTER32_P_SW_R_ROUTE".
+Reading "A44_SW_CLUSTER32_P_SE_R_ROUTE".
+Reading "A44_CAP_QUAD32_2B_XW_R0".
+Reading "A44_CAP_QUAD32_D".
+Reading "A44_CAP_QUAD32_C_XW_R0".
+Reading "A44_CAP_QUAD32_2A".
+Reading "A44_SW_CLUSTER32_P_NW_R_ROUTE".
+Reading "A44_SW_CLUSTER32_P_NE_R_ROUTE".
+Reading "pfet_03v3_GXTH48".
+Reading "pfet_03v3_53FB9W".
+Reading "pfet_03v3_9ZJPMW".
+Reading "pfet_03v3_RU7DMY".
+Reading "pfet_03v3_8RS7KV".
+Reading "nfet_03v3_WHE5HU".
+Reading "nfet_03v3_W4UA4G".
+Reading "nfet_03v3_6LX9QF".
+Reading "nfet_03v3_VFKXEM".
+Reading "nfet_03v3_E6GD2A".
+Reading "pfet_03v3_C2L3T7".
+Reading "nfet_03v3_SD8HJT".
+Reading "VIA_Via1_VV".
+Reading "VIA_Via1_HV".
+Reading "VIA_Via3_HV".
+Reading "VIA_Via2_VH".
+Reading "VIA_via4_5_5600_8100_4_4_1240_1240".
+Reading "VIA_Via4_VH".
+Reading "VIA_via1_2_10000_1200_1_9_1040_1040".
+Reading "VIA_via2_3_10000_1200_1_9_1040_1040".
+Reading "VIA_via3_4_10000_1200_1_9_1040_1040".
+Reading "VIA_via2_3_20500_50000_4_4_1240_1240".
+Reading "VIA_via2_3_19000_50000_4_3_1240_1240".
+Reading "VIA_via2_3_19000_50000_4_4_1240_1240".
+Reading "VIA_via2_3_50000_20500_4_4_1240_1240".
+Reading "VIA_via2_3_50000_19000_3_4_1240_1240".
+Reading "VIA_via2_3_50000_19000_4_4_1240_1240".
+Reading "VIA_via2_3_50000_50000_4_4_1240_1240".
+Reading "VIA_via2_3_50000_10000_4_4_1240_1240".
+Reading "VIA_via3_4_50000_10000_4_4_1240_1240".
+Reading "VIA_via4_5_50000_10000_4_4_1240_1240".
+Reading "VIA_via3_4_10000_50000_4_4_1240_1240".
+Reading "VIA_via4_5_10000_10000_4_4_1240_1240".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_12".
+Reading "gf180mcu_fd_sc_mcu7t5v0__buf_8".
+Reading "gf180mcu_ws_ip__logo".
+Reading "gf180mcu_fd_io__in_c".
+Reading "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR".
+Reading "gf180mcu_ws_io__dvss".
+Reading "gf180mcu_ws_io__dvdd".
+Reading "gf180mcu_fd_io__in_s".
+Reading "gf180mcu_ws_ip__id".
+Reading "gf180mcu_fd_sc_mcu7t5v0__tieh".
+Reading "gf180mcu_fd_sc_mcu7t5v0__tiel".
+Reading "gf180mcu_fd_io__bi_24t".
+Reading "gf180mcu_fd_io__asig_5p0".
+Reading "gf180mcu_fd_sc_mcu7t5v0__filltie".
+Reading "gf180mcu_fd_sc_mcu7t5v0__endcap".
+Reading "gf180mcu_fd_io__fill5".
+Reading "gf180mcu_fd_io__fill1".
+Reading "gf180mcu_fd_io__fill10".
+Reading "gf180mcu_fd_io__cor".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_64".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_4".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_8".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_2".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_32".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fill_1".
+Reading "gf180mcu_fd_sc_mcu7t5v0__fillcap_16".
+Reading "gf180mcu_fd_sc_mcu7t5v0__antenna".
+Reading "A44_FILL_EXCLUSION_R1".
+Reading "A44_FULLDIE_FILL_OVERLAY_R1".
+Reading "A44_SW_BANK64_SOUTH_R_ROUTE".
+Reading "A44_CAP_CORE128_N".
+Reading "A44_SW_BANK64_NORTH_R_ROUTE".
+Reading "A44_TG8_CORE_R7".
+Reading "A44_TG8_CLOCK_LEAF_R7".
+Reading "A44_SW_BANK64_P_SOUTH_R_ROUTE".
+Reading "A44_CAP_CORE128_P".
+Reading "A44_SW_BANK64_P_NORTH_R_ROUTE".
+Reading "A44_DCTRL_BIT_DRIVER_R4".
+Reading "A44_TG8_CLOCK_LEAF_W_R2".
+Reading "A44_TG8_CORE_W_R2".
+Reading "chip_top".
+    5000 uses
+    10000 uses
+    15000 uses
+    20000 uses
+    25000 uses
+    30000 uses
+    35000 uses
+    40000 uses
+    45000 uses
+    50000 uses
+    55000 uses
+    60000 uses
+    65000 uses
+    70000 uses
+    75000 uses
+    80000 uses
+    85000 uses
+    90000 uses
+    95000 uses
+    100000 uses
+    105000 uses
+    110000 uses
+Reading "A44_CDAC_SIDE_N_R1".
+Reading "A44_DCTRL_STRIP_E_R2".
+Reading "A44_TG8_SLICE_R7".
+Reading "A44_CDAC_SIDE_P_R1".
+Reading "A44_DCTRL_STRIP_W_R2".
+Reading "A44_TG8_SLICE_W_R2".
+DRC style is now "drc(full)"
+Loading DRC CIF style.
+Total DRC errors found: 0
+A44_TOP_MAGIC_DRC_COMPLETE=1
+Extracting R8E__pfet_03v3_PUCBRS into R8E__pfet_03v3_PUCBRS.ext:
+Extracting R8E__nfet_03v3_YTQ48T into R8E__nfet_03v3_YTQ48T.ext:
+Extracting R8E__pfet_03v3_TTAYZ7 into R8E__pfet_03v3_TTAYZ7.ext:
+Extracting R8E__nfet_03v3_YTZ44F into R8E__nfet_03v3_YTZ44F.ext:
+Extracting R8E__A44_TGDRV_NCLK_ROW_E_R1 into R8E__A44_TGDRV_NCLK_ROW_E_R1.ext:
+Extracting R8E__pfet_03v3_FKHA32 into R8E__pfet_03v3_FKHA32.ext:
+Extracting R8E__nfet_03v3_GE79XY into R8E__nfet_03v3_GE79XY.ext:
+Extracting R8E__pfet_03v3_X2N4NU into R8E__pfet_03v3_X2N4NU.ext:
+Extracting R8E__nfet_03v3_9HSG6M into R8E__nfet_03v3_9HSG6M.ext:
+Extracting R8E__A44_TGDRV_PCLK_ROW_E_R1 into R8E__A44_TGDRV_PCLK_ROW_E_R1.ext:
+Extracting R8E__A44_TGCLK_DRIVER_UDRV_E_R1 into R8E__A44_TGCLK_DRIVER_UDRV_E_R1.ext:
+R8E__A44_TGCLK_DRIVER_UDRV_E_R1: 5 warnings
+Extracting R8E__pfet_03v3_C2L3T7 into R8E__pfet_03v3_C2L3T7.ext:
+Extracting R8E__nfet_03v3_SD8HJT into R8E__nfet_03v3_SD8HJT.ext:
+Extracting R8E__A44_TG8_CORE_R7 into R8E__A44_TG8_CORE_R7.ext:
+Extracting R8E__A44_TG8_SLICE_UDRV_E_R1 into R8E__A44_TG8_SLICE_UDRV_E_R1.ext:
+Extracting R8E__nfet_03v3_WHE5HU into R8E__nfet_03v3_WHE5HU.ext:
+Extracting R8E__pfet_03v3_GXTH48 into R8E__pfet_03v3_GXTH48.ext:
+Extracting R8E__nfet_03v3_6LX9QF into R8E__nfet_03v3_6LX9QF.ext:
+Extracting R8E__pfet_03v3_8RS7KV into R8E__pfet_03v3_8RS7KV.ext:
+Extracting R8E__A44_DCTRL_BIT_DRIVER_R4 into R8E__A44_DCTRL_BIT_DRIVER_R4.ext:
+Extracting R8E__A44_DCTRL_STRIP_E_R2 into R8E__A44_DCTRL_STRIP_E_R2.ext:
+Extracting R8E__pfet_03v3_XNC3G5 into R8E__pfet_03v3_XNC3G5.ext:
+Extracting R8E__A44_G6_PFET_M9_GUARD0_R0 into R8E__A44_G6_PFET_M9_GUARD0_R0.ext:
+Extracting R8E__nfet_03v3_ATEY9D into R8E__nfet_03v3_ATEY9D.ext:
+Extracting R8E__A44_G6_NFET_M9_GUARD0_R0 into R8E__A44_G6_NFET_M9_GUARD0_R0.ext:
+Extracting R8E__A44_CAP_SWITCH_BANK_CORE_O2 into R8E__A44_CAP_SWITCH_BANK_CORE_O2.ext:
+Extracting R8E__A44_SW_BANK64_SOUTH_R8_M6 into R8E__A44_SW_BANK64_SOUTH_R8_M6.ext:
+Extracting R8E__A44_SW_BANK64_NORTH_R8_M6 into R8E__A44_SW_BANK64_NORTH_R8_M6.ext:
+Extracting R8E__A44_MIM_6P855_R0 into R8E__A44_MIM_6P855_R0.ext:
+Extracting R8E__A44_C1_MIM6_R0 into R8E__A44_C1_MIM6_R0.ext:
+Extracting R8E__A44_CAP_CORE128_M6_R1 into R8E__A44_CAP_CORE128_M6_R1.ext:
+Extracting R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6 into R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6.ext:
+Extracting A44_CDAC_UNIT_E_R8_M6 into A44_CDAC_UNIT_E_R8_M6.ext:
+Extracting A44_CDAC_UNIT_E_R7 into A44_CDAC_UNIT_E_R7.ext:
+Extracting R8W__pfet_03v3_C2L3T7 into R8W__pfet_03v3_C2L3T7.ext:
+Extracting R8W__nfet_03v3_SD8HJT into R8W__nfet_03v3_SD8HJT.ext:
+Extracting R8W__A44_TG8_CORE_W_R2 into R8W__A44_TG8_CORE_W_R2.ext:
+Extracting R8W__pfet_03v3_PUCBRS into R8W__pfet_03v3_PUCBRS.ext:
+Extracting R8W__nfet_03v3_YTQ48T into R8W__nfet_03v3_YTQ48T.ext:
+Extracting R8W__pfet_03v3_TTAYZ7 into R8W__pfet_03v3_TTAYZ7.ext:
+Extracting R8W__nfet_03v3_YTZ44F into R8W__nfet_03v3_YTZ44F.ext:
+Extracting R8W__A44_TGDRV_NCLK_ROW_W_R1 into R8W__A44_TGDRV_NCLK_ROW_W_R1.ext:
+Extracting R8W__pfet_03v3_FKHA32 into R8W__pfet_03v3_FKHA32.ext:
+Extracting R8W__nfet_03v3_GE79XY into R8W__nfet_03v3_GE79XY.ext:
+Extracting R8W__pfet_03v3_X2N4NU into R8W__pfet_03v3_X2N4NU.ext:
+Extracting R8W__nfet_03v3_9HSG6M into R8W__nfet_03v3_9HSG6M.ext:
+Extracting R8W__A44_TGDRV_PCLK_ROW_W_R1 into R8W__A44_TGDRV_PCLK_ROW_W_R1.ext:
+Extracting R8W__A44_TGCLK_DRIVER_UDRV_W_R1 into R8W__A44_TGCLK_DRIVER_UDRV_W_R1.ext:
+R8W__A44_TGCLK_DRIVER_UDRV_W_R1: 5 warnings
+Extracting R8W__A44_TG8_SLICE_UDRV_W_R1 into R8W__A44_TG8_SLICE_UDRV_W_R1.ext:
+Extracting R8W__nfet_03v3_WHE5HU into R8W__nfet_03v3_WHE5HU.ext:
+Extracting R8W__pfet_03v3_GXTH48 into R8W__pfet_03v3_GXTH48.ext:
+Extracting R8W__nfet_03v3_6LX9QF into R8W__nfet_03v3_6LX9QF.ext:
+Extracting R8W__pfet_03v3_8RS7KV into R8W__pfet_03v3_8RS7KV.ext:
+Extracting R8W__A44_DCTRL_BIT_DRIVER_R4 into R8W__A44_DCTRL_BIT_DRIVER_R4.ext:
+Extracting R8W__A44_DCTRL_STRIP_W_R2 into R8W__A44_DCTRL_STRIP_W_R2.ext:
+Extracting R8W__pfet_03v3_XNC3G5 into R8W__pfet_03v3_XNC3G5.ext:
+Extracting R8W__A44_G6_PFET_M9_GUARD0_R0 into R8W__A44_G6_PFET_M9_GUARD0_R0.ext:
+Extracting R8W__nfet_03v3_ATEY9D into R8W__nfet_03v3_ATEY9D.ext:
+Extracting R8W__A44_G6_NFET_M9_GUARD0_R0 into R8W__A44_G6_NFET_M9_GUARD0_R0.ext:
+Extracting R8W__A44_CAP_SWITCH_BANK_CORE_O2 into R8W__A44_CAP_SWITCH_BANK_CORE_O2.ext:
+Extracting R8W__A44_SW_BANK64_SOUTH_R8_M6 into R8W__A44_SW_BANK64_SOUTH_R8_M6.ext:
+Extracting R8W__A44_SW_BANK64_NORTH_R8_M6 into R8W__A44_SW_BANK64_NORTH_R8_M6.ext:
+Extracting R8W__A44_MIM_6P855_R0 into R8W__A44_MIM_6P855_R0.ext:
+Extracting R8W__A44_C1_MIM6_R0 into R8W__A44_C1_MIM6_R0.ext:
+Extracting R8W__A44_CAP_CORE128_M6_R1 into R8W__A44_CAP_CORE128_M6_R1.ext:
+Extracting R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6 into R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6.ext:
+Extracting A44_CDAC_UNIT_W_R8_M6 into A44_CDAC_UNIT_W_R8_M6.ext:
+Extracting A44_CDAC_UNIT_W_R7 into A44_CDAC_UNIT_W_R7.ext:
+Extracting A44_CLKS_BUFFER_R1 into A44_CLKS_BUFFER_R1.ext:
+Extracting A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9 into A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9.ext:
+Extracting VIA_Via2_VH$1 into VIA_Via2_VH$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__endcap$1 into gf180mcu_fd_sc_mcu7t5v0__endcap$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_32$1 into gf180mcu_fd_sc_mcu7t5v0__fillcap_32$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__filltie$1 into gf180mcu_fd_sc_mcu7t5v0__filltie$1.ext:
+Extracting VIA_via3_4_10000_1200_1_9_1040_1040$1 into VIA_via3_4_10000_1200_1_9_1040_1040$1.ext:
+Extracting VIA_via2_3_10000_1200_1_9_1040_1040$1 into VIA_via2_3_10000_1200_1_9_1040_1040$1.ext:
+Extracting VIA_via1_2_10000_1200_1_9_1040_1040$1 into VIA_via1_2_10000_1200_1_9_1040_1040$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_8$1 into gf180mcu_fd_sc_mcu7t5v0__fillcap_8$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_4$1 into gf180mcu_fd_sc_mcu7t5v0__fillcap_4$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fill_1$1 into gf180mcu_fd_sc_mcu7t5v0__fill_1$1.ext:
+Extracting VIA_Via1_VV$1 into VIA_Via1_VV$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_16$1 into gf180mcu_fd_sc_mcu7t5v0__fillcap_16$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__buf_4$1 into gf180mcu_fd_sc_mcu7t5v0__buf_4$1.ext:
+Extracting VIA_Via1_HV$1 into VIA_Via1_HV$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fill_2$1 into gf180mcu_fd_sc_mcu7t5v0__fill_2$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__fillcap_64$1 into gf180mcu_fd_sc_mcu7t5v0__fillcap_64$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffnq_1$1 into gf180mcu_fd_sc_mcu7t5v0__dffnq_1$1.ext:
+Extracting VIA_Via3_HV$1 into VIA_Via3_HV$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkinv_1$1 into gf180mcu_fd_sc_mcu7t5v0__clkinv_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai22_1$1 into gf180mcu_fd_sc_mcu7t5v0__oai22_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__buf_2$1 into gf180mcu_fd_sc_mcu7t5v0__buf_2$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__and4_1$1 into gf180mcu_fd_sc_mcu7t5v0__and4_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand2_1$1 into gf180mcu_fd_sc_mcu7t5v0__nand2_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkbuf_2$1 into gf180mcu_fd_sc_mcu7t5v0__clkbuf_2$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai31_1$1 into gf180mcu_fd_sc_mcu7t5v0__oai31_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkbuf_8$1 into gf180mcu_fd_sc_mcu7t5v0__clkbuf_8$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__buf_1$1 into gf180mcu_fd_sc_mcu7t5v0__buf_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1$1 into gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__or4_1$1 into gf180mcu_fd_sc_mcu7t5v0__or4_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__clkbuf_16$1 into gf180mcu_fd_sc_mcu7t5v0__clkbuf_16$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai21_1$1 into gf180mcu_fd_sc_mcu7t5v0__oai21_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi21_1$1 into gf180mcu_fd_sc_mcu7t5v0__aoi21_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand4_1$1 into gf180mcu_fd_sc_mcu7t5v0__nand4_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dlyb_1$1 into gf180mcu_fd_sc_mcu7t5v0__dlyb_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand3_1$1 into gf180mcu_fd_sc_mcu7t5v0__nand3_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai211_1$1 into gf180mcu_fd_sc_mcu7t5v0__oai211_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor3_4$1 into gf180mcu_fd_sc_mcu7t5v0__nor3_4$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand3_2$1 into gf180mcu_fd_sc_mcu7t5v0__nand3_2$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi211_2$1 into gf180mcu_fd_sc_mcu7t5v0__aoi211_2$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__and4_4$1 into gf180mcu_fd_sc_mcu7t5v0__and4_4$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__antenna$1 into gf180mcu_fd_sc_mcu7t5v0__antenna$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor3_1$1 into gf180mcu_fd_sc_mcu7t5v0__nor3_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand2_2$1 into gf180mcu_fd_sc_mcu7t5v0__nand2_2$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor4_1$1 into gf180mcu_fd_sc_mcu7t5v0__nor4_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__and2_1$1 into gf180mcu_fd_sc_mcu7t5v0__and2_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi22_2$1 into gf180mcu_fd_sc_mcu7t5v0__aoi22_2$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai211_2$1 into gf180mcu_fd_sc_mcu7t5v0__oai211_2$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nor2_1$1 into gf180mcu_fd_sc_mcu7t5v0__nor2_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__or3_2$1 into gf180mcu_fd_sc_mcu7t5v0__or3_2$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__or2_4$1 into gf180mcu_fd_sc_mcu7t5v0__or2_4$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__nand4_2$1 into gf180mcu_fd_sc_mcu7t5v0__nand4_2$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai31_2$1 into gf180mcu_fd_sc_mcu7t5v0__oai31_2$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__or2_1$1 into gf180mcu_fd_sc_mcu7t5v0__or2_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1$1 into gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai211_4$1 into gf180mcu_fd_sc_mcu7t5v0__oai211_4$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi221_1$1 into gf180mcu_fd_sc_mcu7t5v0__aoi221_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__oai32_1$1 into gf180mcu_fd_sc_mcu7t5v0__oai32_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__aoi211_1$1 into gf180mcu_fd_sc_mcu7t5v0__aoi211_1$1.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__dffrnq_2$1 into gf180mcu_fd_sc_mcu7t5v0__dffrnq_2$1.ext:
+Extracting SAR_LOGIC_ACTUAL_RTL_SS into SAR_LOGIC_ACTUAL_RTL_SS.ext:
+Extracting A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR into A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR.ext:
+Total of 10 warnings.
+exttospice finished.
+exttospice finished.
+Devs merged: 11047
+exttospice finished.
+A44_TOP_MAGIC_EXTRACTION_COMPLETE=1

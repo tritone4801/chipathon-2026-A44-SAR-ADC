@@ -1,0 +1,21 @@
+{
+  "schema": "a44-pad-reduction-diagnostic-v1",
+  "status": "DIAGNOSTIC_ONLY_NOT_A_FORMAL_BINDING",
+  "threshold_ohm": 0.1,
+  "source_path": "D:\\PICO\\A44_CDAC_CAP_X0P5_NOMINAL_INPUT_RECHAR_20260824_R1\\01_INPUT\\02_NOMINAL_INPUT_MODEL\\gf180mcu_fd_io__asig_5p0_extracted.spice",
+  "source_sha256": "f412508f0efc3e81ad22bf9eeb0310650be4af457d9d921af0686a49e6de0a0c",
+  "derived_path": "D:\\PICO\\A44_CDAC_CAP_X0P5_NOMINAL_INPUT_RECHAR_20260824_R1\\01_INPUT\\04_PAD_REDUCTION_DIAGNOSTICS\\RLE_0p1OHM\\gf180mcu_fd_io__asig_5p0_extracted.spice",
+  "derived_sha256": "73cfed86a49a6d868f17d8e1d744df144cca690e055d100c4e5bd239d288cf0e",
+  "contracted_primitive_resistors": 9619,
+  "blocked_external_port_merges": 0,
+  "self_passives_removed_after_contraction": {
+    "R": 9789
+  },
+  "retained_primitive_resistors": 1693,
+  "retained_explicit_capacitors": 262,
+  "retained_explicit_inductors": 514,
+  "retained_nonprimitive_two_terminal_devices": 56,
+  "nonlinear_device_policy": "ALL_DIODE_AND_MOSCAP_INSTANCES_RETAINED",
+  "foundry_resistor_policy": "ALL_XR_RM2_INSTANCES_RETAINED",
+  "claim_boundary": "Requires DC/AC/transient port-equivalence validation before use."
+}

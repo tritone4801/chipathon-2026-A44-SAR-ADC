@@ -1,0 +1,78 @@
+[
+  {
+  },
+  {
+  },
+  {
+  },
+  {
+  },
+  {
+   "name": [
+      "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+      "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR"
+   ],
+   "devices": [
+       [
+         ["pfet_05v0", 3959],
+         ["nfet_05v0", 3961],
+         ["diode_nd2ps_06v0", 3],
+         ["diode_pd2nw_06v0", 3],
+         ["nfet_03v3", 307],
+         ["pfet_03v3", 308],
+         ["cap_mim_2f0_m4m5_noshield", 256 ]
+       ], [
+         ["pfet_05v0", 3959 ],
+         ["nfet_05v0", 3961 ],
+         ["diode_nd2ps_06v0", 3 ],
+         ["diode_pd2nw_06v0", 3 ],
+         ["nfet_03v3", 307 ],
+         ["pfet_03v3", 308 ],
+         ["cap_mim_2f0_m4m5_noshield", 256 ]
+       ]
+   ],
+   "nets": [
+    7027,
+    7027
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VREFP",
+        "VREFN",
+        "GND",
+        "CLKS",
+        "VINP",
+        "VINN",
+        "DOUT[0]",
+        "DOUT[3]",
+        "DOUT[2]",
+        "DOUT[1]",
+        "DOUT[4]",
+        "DOUT[6]",
+        "DOUT[5]",
+        "DOUT[7]",
+        "VDD"
+      ], [
+        "VREFP",
+        "VREFN",
+        "GND",
+        "CLKS",
+        "VINP",
+        "VINN",
+        "DOUT[0]",
+        "DOUT[3]",
+        "DOUT[2]",
+        "DOUT[1]",
+        "DOUT[4]",
+        "DOUT[6]",
+        "DOUT[5]",
+        "DOUT[7]",
+        "VDD"
+      ]
+   ]
+  }
+]

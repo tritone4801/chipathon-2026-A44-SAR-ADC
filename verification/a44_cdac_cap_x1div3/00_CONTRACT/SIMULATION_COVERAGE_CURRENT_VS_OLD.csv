@@ -1,0 +1,22 @@
+item,old_baseline_state,current_cap_x1div3_state,method_relation,current_evidence
+SCHEMATIC_ACQUISITION_ZERO_OHM,not a separately frozen old-baseline gate,COMPLETE 61.763312 ns GEN,current confirmed method,02_PEX_GOLDEN/03_R8M6_SCHEM_ACQ
+SCHEMATIC_ACQUISITION_ESD_RC_GEN50,old baseline did not bind the current GEN50 model,COMPLETE 134.335424 ns GEN,current method adds fixed ESD plus input RC,02_PEX_GOLDEN/03_R8M6_SCHEM_ACQ
+CDAC_PEX_ACQUISITION_ZERO_OHM,not complete for current modified CDAC,COMPLETE 76.550952 ns GEN,current R8 M6 FULL RC CC,03_CURRENT_PEX_R1/01_R8M6_ACQ
+CDAC_PEX_ACQUISITION_ESD_RC,not complete for current modified CDAC,COMPLETE 151.832300 ns GEN and convergence pass,current R8 M6 FULL RC CC plus fixed input model,03_CURRENT_PEX_R1/01_R8M6_ACQ
+ATTEMPT20_PEX_ACQUISITION_ESD_RC,not present,COMPLETE 151.934940 ns GEN and 3 point maxstep check,current attempt20 FULL RC CC plus fixed input model,03_CURRENT_PEX_R1/02_ATTEMPT20_ACQ
+MC10_SS_DYNAMIC_SELECTED,old baseline has MC100 TT LOW and MC20 PVT3 packages,COMPLETE 10 of 10 mean SNDR 49.194944 dB,selected SS diagnostic not equivalent to full PVT,02_PEX_GOLDEN/01_RECHAR_SCHEM/04_RESULTS/MC10_SS_DYNAMIC_SUMMARY.json
+MC10_OFFSET_SELECTED,old baseline has MC100 offset package,COMPLETE 10 of 10 mean 0.824609 LSB,selected direct-input whole-ADC T1 diagnostic,02_PEX_GOLDEN/01_RECHAR_SCHEM/04_RESULTS/MC10_DIRECT_INPUT_OFFSET_SUMMARY.json
+MC100_OFFSET_TT_DIRECT_INPUT,COMPLETE for old cap x1 baseline,COMPLETE 100 of 100 mean 0.430039 LSB,current cap x1div3 rerun with same direct-input upward-T1 class,02_PEX_GOLDEN/02_MC100_OFFSET/04_RESULTS/MC100_OFFSET_AUDITED_SUMMARY.json
+UNIFIED_TOP_MIN2,old core MIN2 precheck exists under a non-equivalent scope,NUMERICALLY_COMPLETE PROTOCOL_STRUCTURE_PASS FAIL_FUNCTIONAL_CONVERSION frame1 final D0 PEX N 0x00 vs ideal schematic P 0x01,current unified postfill FULL RC CC method,03_CURRENT_PEX_R1/09_LAYERED_CONVERSION_ASSESSMENT_R2/LAYERED_CONVERSION_STATUS.json
+UNIFIED_TOP_MIN_MAX_MIN,old core PEX codes 11 234 21 under ON_CHIP_CORE_PEX_ONLY,NUMERICALLY_COMPLETE PASS_FUNCTIONAL_NOMINAL WARN_INTERNAL_SETTLING_MARGIN 12 of 21 ROBUST_NOT_PROVEN,current and old methods are not equal-condition comparisons,03_CURRENT_PEX_R1/09_LAYERED_CONVERSION_ASSESSMENT_R2/LAYERED_CONVERSION_STATUS.json
+UNIFIED_TOP_MID127_128_127,not present,NUMERICALLY_COMPLETE PASS_FUNCTIONAL_NOMINAL WARN_INTERNAL_SETTLING_AND_APERTURE_SENSITIVITY ROBUST_NOT_PROVEN,new current unified postfill FULL RC CC scenario,03_CURRENT_PEX_R1/09_LAYERED_CONVERSION_ASSESSMENT_R2/LAYERED_CONVERSION_STATUS.json
+CURRENT_FULL255_STATIC,schematic FULL_STATIC seed098 complete,NOT_RUN,current modified CDAC requires a new run,not available
+CURRENT_PEX_T1_TO_T255_STATIC,old core PEX T1 and T1-T255 NOT_RUN,NOT_RUN,no current result,not available
+CURRENT_MC100_DYNAMIC_TT_LOW,old schematic MC100 TT LOW complete,NOT_RUN,current cap x1div3 has only selected MC10 SS diagnostic,not available
+CURRENT_MC200_DYNAMIC_TT,not a completed old baseline gate,NOT_RUN,confirmed method only where separately documented,not available
+CURRENT_MC20_PVT3_FULL_LOGIC_PVT,old schematic MC20 PVT3 complete,NOT_RUN,current SS MC10 freezes TT behavioral SAR and does not replace full logic PVT,not available
+CURRENT_PEX_LOW_DYNAMIC_FFT,old core PEX LOW timed out without eligible PEX result,NOT_RUN,no current unified TOP FFT result,not available
+CURRENT_PEX_NEAR_NYQUIST_DYNAMIC,old core NEAR out of scope and not run,NOT_RUN,no current unified TOP near-Nyquist result,not available
+CURRENT_PEX_NOISE_MISMATCH_PVT,not completed,NOT_RUN,excluded from completed acquisition and transient cases,not available
+PACKAGE_RLC_NONLINEAR_PAD_ESD_POSTFILL_PAD_PEX,out of old core scope,OUT_OF_SCOPE_NOT_MODELED,not covered by current compact transient fixture,not available
+PROMOTION_AND_SIGNOFF,not eligible,NOT_CLAIMED,results and gates remain separate,not available

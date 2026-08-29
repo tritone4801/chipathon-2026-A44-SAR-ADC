@@ -1,0 +1,75 @@
+{
+  "schema": "a44-attempt20-layout-acquisition-esd-rc-result-v1",
+  "status": "MEASURED_WITH_3_POINT_MAXSTEP_CHECK",
+  "layout_attempt": "attempt20",
+  "input_model_id": "A44_SCHEM_ACQ_ESD_LUMPED_RC_GEN50_R1",
+  "simulator": "Xyce 7.10-opensource",
+  "corner": "TT_3P3V_27C",
+  "criterion": "ABS_DIFFERENTIAL_ERROR_LE_3P3203125MV_ENTER_AND_REMAIN",
+  "error_definition": "(VFOP-VFON)-(VREFP_PLANE-VREFN_PLANE)",
+  "formal_primary_reference_plane": "GEN",
+  "nominal_maxstep_ns": 0.25,
+  "completed_run_count": 4,
+  "nominal_by_direction": {
+    "FS_DOWN": {
+      "GEN": 151.93311766188984,
+      "PAD": 147.0076676798288,
+      "TG": 134.5430958554564
+    },
+    "FS_UP": {
+      "GEN": 151.9349400810248,
+      "PAD": 147.00985534750887,
+      "TG": 134.54839543149248
+    }
+  },
+  "worst_direction": "FS_UP",
+  "T_ACQ_GEN_0P25LSB_NS": 151.9349400810248,
+  "T_ACQ_PAD_0P25LSB_NS": 147.00985534750887,
+  "T_ACQ_TG_0P25LSB_NS": 134.54839543149248,
+  "T_ACQ_GEN_0P5LSB_NS": 136.08851539592712,
+  "T_ACQ_GEN_0P1LSB_NS": 172.98133021305011,
+  "maxstep_check": {
+    "status": "COMPLETE",
+    "direction": "FS_UP",
+    "planes": {
+      "GEN": {
+        "maxstep_ns_to_t_acq_0p25lsb_ns": {
+          "0.125": 151.93901621001095,
+          "0.25": 151.9349400810248,
+          "0.5": 151.9187130366222
+        },
+        "span_ns": 0.020303173388754203,
+        "span_percent_of_0p25ns": 0.013363070652429787
+      },
+      "PAD": {
+        "maxstep_ns_to_t_acq_0p25lsb_ns": {
+          "0.125": 147.0139766006559,
+          "0.25": 147.00985534750887,
+          "0.5": 146.99386556143887
+        },
+        "span_ns": 0.020111039217027837,
+        "span_percent_of_0p25ns": 0.013680061904345397
+      },
+      "TG": {
+        "maxstep_ns_to_t_acq_0p25lsb_ns": {
+          "0.125": 134.55195866932263,
+          "0.25": 134.54839543149248,
+          "0.5": 134.53386494906482
+        },
+        "span_ns": 0.01809372025780931,
+        "span_percent_of_0p25ns": 0.01344774138686925
+      }
+    }
+  },
+  "comparison": {
+    "previous_r8_layout_gen_0p25lsb_ns": 151.83229969843242,
+    "delta_vs_previous_r8_layout_ns": 0.1026403825923694,
+    "fixed_schematic_gen_0p25lsb_ns": 134.34221824143697,
+    "layout_increment_vs_fixed_schematic_ns": 17.592721839587824
+  },
+  "source_gds": {
+    "E": "D:\\PICO\\A44_W5P29_CDAC_R8_TOP_LAYOUT_20260825_R1\\04_CDAC_TOP_INTEGRATION\\01_BUILD\\attempt20_cdac_klayout_drc_repair\\G3\\E\\A44_CDAC_UNIT_E_R8_M6_RAW.gds",
+    "W": "D:\\PICO\\A44_W5P29_CDAC_R8_TOP_LAYOUT_20260825_R1\\04_CDAC_TOP_INTEGRATION\\01_BUILD\\attempt20_cdac_klayout_drc_repair\\G3\\W\\A44_CDAC_UNIT_W_R8_M6_RAW.gds"
+  },
+  "claim_boundary": "TT_3P3V_27C_ATTEMPT20_EW_CDAC_FULL_RC_CC_WITH_FROZEN_ESD_INPUT_RC_NO_NOISE_NO_MISMATCH_NO_COMPARATOR_SCOPE_LOAD_NOT_FULL_ADC_SIGNOFF"
+}

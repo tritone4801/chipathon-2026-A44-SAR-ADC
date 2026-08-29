@@ -1,0 +1,107 @@
+{
+  "run_id": "ATTEMPT20_FS_UP__PEX__ESD_RC__MSTEP_0P125NS",
+  "direction": "FS_UP",
+  "maxstep_ns": 0.125,
+  "simulator": "Xyce 7.10-opensource",
+  "input_model_id": "A44_SCHEM_ACQ_ESD_LUMPED_RC_GEN50_R1",
+  "input_model": {
+    "series_resistance_ohm_per_leg": 55.0,
+    "shunt_capacitance_f_per_leg": 1.5e-12,
+    "differential_capacitance_f": 2e-13,
+    "primary_pad_view": "GF180_ASIG_5P0_EXTRACTED_RLE0P1_R1",
+    "secondary_esd_bound": true
+  },
+  "t0_ns": 20.1,
+  "hold_edge_nominal_ns": 500.3,
+  "track_window_guard_ns": 2.0,
+  "formal_primary_reference_plane": "GEN",
+  "criterion": "ABS_DIFFERENTIAL_ERROR_LE_3P3203125MV_ENTER_AND_REMAIN",
+  "previous_p_v": 0.8,
+  "previous_n_v": 2.5,
+  "target_p_v": 2.5,
+  "target_n_v": 0.8,
+  "deck_path": "D:\\PICO\\A44_CDAC_ATTEMPT20_LAYOUT_ACQUISITION_ESD_RC_20260825_R1\\02_SIMULATION\\decks\\ATTEMPT20_FS_UP__PEX__ESD_RC__MSTEP_0P125NS.spice",
+  "data_path": "D:\\PICO\\A44_CDAC_ATTEMPT20_LAYOUT_ACQUISITION_ESD_RC_20260825_R1\\02_SIMULATION\\results\\ATTEMPT20_FS_UP__PEX__ESD_RC__MSTEP_0P125NS.csv",
+  "log_path": "D:\\PICO\\A44_CDAC_ATTEMPT20_LAYOUT_ACQUISITION_ESD_RC_20260825_R1\\02_SIMULATION\\results\\ATTEMPT20_FS_UP__PEX__ESD_RC__MSTEP_0P125NS.log",
+  "source_gds_e": "D:\\PICO\\A44_W5P29_CDAC_R8_TOP_LAYOUT_20260825_R1\\04_CDAC_TOP_INTEGRATION\\01_BUILD\\attempt20_cdac_klayout_drc_repair\\G3\\E\\A44_CDAC_UNIT_E_R8_M6_RAW.gds",
+  "source_gds_w": "D:\\PICO\\A44_W5P29_CDAC_R8_TOP_LAYOUT_20260825_R1\\04_CDAC_TOP_INTEGRATION\\01_BUILD\\attempt20_cdac_klayout_drc_repair\\G3\\W\\A44_CDAC_UNIT_W_R8_M6_RAW.gds",
+  "claim_boundary": "TT_3P3V_27C_ATTEMPT20_CDAC_FULL_RC_CC_FROZEN_ESD_RC_XYCE_NO_NOISE_NO_MISMATCH_NO_COMPARATOR_SCOPE_LOAD",
+  "simulator_completion_verified": true,
+  "nonlinear_convergence_failures": 0,
+  "waveform_rows": 4260,
+  "waveform_end_ns": 520.0,
+  "hold_edge_50pct_ns": 500.2999999999999,
+  "measurement_window_end_ns": 498.2999999999999,
+  "error_definition": "(VFOP-VFON)-(VREFP_PLANE-VREFN_PLANE)",
+  "measurements": {
+    "GEN": {
+      "0p5lsb": {
+        "status": "FINITE",
+        "time_ns": 136.09210607173944,
+        "crossing_ns": 156.19210607173943,
+        "final_error_v": 2.3544534999420108e-07
+      },
+      "0p25lsb": {
+        "status": "FINITE",
+        "time_ns": 151.93901621001095,
+        "crossing_ns": 172.03901621001094,
+        "final_error_v": 2.3544534999420108e-07
+      },
+      "0p1lsb": {
+        "status": "FINITE",
+        "time_ns": 172.9861466385828,
+        "crossing_ns": 193.0861466385828,
+        "final_error_v": 2.3544534999420108e-07
+      }
+    },
+    "PAD": {
+      "0p5lsb": {
+        "status": "FINITE",
+        "time_ns": 131.16442228588585,
+        "crossing_ns": 151.26442228588584,
+        "final_error_v": 1.980238000243162e-07
+      },
+      "0p25lsb": {
+        "status": "FINITE",
+        "time_ns": 147.0139766006559,
+        "crossing_ns": 167.1139766006559,
+        "final_error_v": 1.980238000243162e-07
+      },
+      "0p1lsb": {
+        "status": "FINITE",
+        "time_ns": 168.06520662217,
+        "crossing_ns": 188.16520662217,
+        "final_error_v": 1.980238000243162e-07
+      }
+    },
+    "TG": {
+      "0p5lsb": {
+        "status": "FINITE",
+        "time_ns": 118.67230475924751,
+        "crossing_ns": 138.7723047592475,
+        "final_error_v": 1.30708000090074e-07
+      },
+      "0p25lsb": {
+        "status": "FINITE",
+        "time_ns": 134.55195866932263,
+        "crossing_ns": 154.65195866932262,
+        "final_error_v": 1.30708000090074e-07
+      },
+      "0p1lsb": {
+        "status": "FINITE",
+        "time_ns": 155.64775665789338,
+        "crossing_ns": 175.74775665789338,
+        "final_error_v": 1.30708000090074e-07
+      }
+    }
+  },
+  "t_acq_gen_0p5lsb_ns": 136.09210607173944,
+  "t_acq_gen_0p25lsb_ns": 151.93901621001095,
+  "t_acq_gen_0p1lsb_ns": 172.9861466385828,
+  "t_acq_pad_0p5lsb_ns": 131.16442228588585,
+  "t_acq_pad_0p25lsb_ns": 147.0139766006559,
+  "t_acq_pad_0p1lsb_ns": 168.06520662217,
+  "t_acq_tg_0p5lsb_ns": 118.67230475924751,
+  "t_acq_tg_0p25lsb_ns": 134.55195866932263,
+  "t_acq_tg_0p1lsb_ns": 155.64775665789338
+}

@@ -1,0 +1,335 @@
+{
+  "schema": "a44.cdac_r8_m6_g3_complete_unit_gate_result.v1",
+  "created_utc": "2026-08-25T07:18:13.638246+00:00",
+  "status": "PASS_G3_COMPLETE_UNITS_NATIVE_AND_GDS_READBACK_DRC_LVS_CURRENT_SOURCE",
+  "pass": true,
+  "checks": {
+    "builder_attempt5_complete": true,
+    "tops_exact": true,
+    "complete_current_source_hash_exact": true,
+    "both_127_control_endpoints": true,
+    "both_all_R0_three_children": true,
+    "both_native_drc_zero": true,
+    "both_native_complete": true,
+    "both_gds_readback_drc_zero": true,
+    "both_gds_readback_complete": true,
+    "all_native_and_readback_fixed_bbox_390x400": true,
+    "all_native_and_readback_ports_exact": true,
+    "four_view_structural_audit_pass": true,
+    "four_view_gds_independent_audit_pass": true,
+    "all_twelve_lvs_comparisons_unique": true,
+    "native_raw_counts_exact": true,
+    "readback_raw_counts_exact": true,
+    "all_four_views_162_nets": true,
+    "all_four_views_weight_groups_exact": true,
+    "all_four_gds_no_parent_routes_over_mim": true
+  },
+  "failed_checks": [],
+  "tops": {
+    "E": "A44_CDAC_UNIT_E_R8_M6",
+    "W": "A44_CDAC_UNIT_W_R8_M6"
+  },
+  "fixed_site_um": [
+    390.0,
+    400.0
+  ],
+  "complete_current_source": {
+    "path": "01_SOURCE_AUTHORITY/current_cap_x1div3_unitized/A44_CDAC_UNIT_TRANS_DRIVER_HIER.subckt.spice",
+    "bytes": 21875,
+    "sha256": "90ed7378c97bc372eb9615acfea970c5723efce2aab8f16a4fdecbbf2dc285c9"
+  },
+  "complete_current_source_top": "A44_CDAC_UNIT_TRANS_DRIVER",
+  "complete_current_source_ports": [
+    "VIN",
+    "CLKS",
+    "VTOP",
+    "DCTRL[7]",
+    "DCTRL[6]",
+    "DCTRL[5]",
+    "DCTRL[4]",
+    "DCTRL[3]",
+    "DCTRL[2]",
+    "DCTRL[1]",
+    "VREFP",
+    "VDD",
+    "GND",
+    "VREFN"
+  ],
+  "electrical_counts": {
+    "raw_each": {
+      "instances": 5442,
+      "mim": 768,
+      "nfet": 2337,
+      "pfet": 2337,
+      "nets": 162
+    },
+    "netgen_merged_each": {
+      "instances": 426,
+      "mim": 128,
+      "nfet": 149,
+      "pfet": 149,
+      "nets": 162
+    },
+    "logical": {
+      "active_switches": 127,
+      "dummy_c1_to_gnd": 1,
+      "weight_groups": {
+        "DCTRL[1]": 1,
+        "DCTRL[2]": 2,
+        "DCTRL[3]": 4,
+        "DCTRL[4]": 8,
+        "DCTRL[5]": 16,
+        "DCTRL[6]": 32,
+        "DCTRL[7]": 64
+      }
+    }
+  },
+  "side_artifacts": {
+    "E": {
+      "raw_gds": {
+        "path": "generated_attempt5/E/A44_CDAC_UNIT_E_R8_M6_RAW.gds",
+        "bytes": 422290,
+        "sha256": "f712940ff293792324e63d1021a31c2b820aac093906d87fc05966345957751e"
+      },
+      "native_mag": {
+        "path": "magic_attempt5/E/A44_CDAC_UNIT_E_R8_M6.mag",
+        "bytes": 40242,
+        "sha256": "a920cc2a83f6d5fd7560691e0610a0f8c2b4b008667c2e4c4f044bef185338b6"
+      },
+      "native_gds": {
+        "path": "magic_attempt5/E/A44_CDAC_UNIT_E_R8_M6_NATIVE.gds",
+        "bytes": 422288,
+        "sha256": "3a7f4851d83aafeaa7e36f43c6ac3437433868234ddfc2a2b16693fa422fe1f7"
+      },
+      "native_flat_none": {
+        "path": "magic_attempt5/E/A44_CDAC_UNIT_E_R8_M6_FLAT_MERGE_NONE.spice",
+        "bytes": 909475,
+        "sha256": "27edf33964358684ef05a0f8478f341779ffd8fcd8d22168601aeee3bc99a6df"
+      },
+      "native_flat_conservative": {
+        "path": "magic_attempt5/E/A44_CDAC_UNIT_E_R8_M6_FLAT_MERGE_CONSERVATIVE.spice",
+        "bytes": 162205,
+        "sha256": "f92aef216b4ae9a78d6ff7cd67d6f4bdefbd514cf619f911039e32f8b5217cd4"
+      },
+      "readback_mag": {
+        "path": "readback_attempt5/E/A44_CDAC_UNIT_E_R8_M6.mag",
+        "bytes": 40241,
+        "sha256": "22bdaa1a99620745e1b2930d0b302eb2966070aa17e1b21b439ed22539730f00"
+      },
+      "second_generation_gds": {
+        "path": "readback_attempt5/E/A44_CDAC_UNIT_E_R8_M6_NATIVE.gds",
+        "bytes": 422288,
+        "sha256": "41d56086a59827d8c82345c7ec46d11ce3ddddcc4497c4993a43e3eb21ea73a3"
+      },
+      "readback_flat_none": {
+        "path": "readback_attempt5/E/A44_CDAC_UNIT_E_R8_M6_FLAT_MERGE_NONE.spice",
+        "bytes": 909475,
+        "sha256": "27edf33964358684ef05a0f8478f341779ffd8fcd8d22168601aeee3bc99a6df"
+      },
+      "readback_flat_conservative": {
+        "path": "readback_attempt5/E/A44_CDAC_UNIT_E_R8_M6_FLAT_MERGE_CONSERVATIVE.spice",
+        "bytes": 162205,
+        "sha256": "f92aef216b4ae9a78d6ff7cd67d6f4bdefbd514cf619f911039e32f8b5217cd4"
+      }
+    },
+    "W": {
+      "raw_gds": {
+        "path": "generated_attempt5/W/A44_CDAC_UNIT_W_R8_M6_RAW.gds",
+        "bytes": 422294,
+        "sha256": "acc788638fce470087fe8da94223965097879a87255e9a38ae1ee1319907811e"
+      },
+      "native_mag": {
+        "path": "magic_attempt5/W/A44_CDAC_UNIT_W_R8_M6.mag",
+        "bytes": 41103,
+        "sha256": "644438f53c8585d221c7e8bb25cdd15381e64d62c4b7603f02ce1c4c487913ab"
+      },
+      "native_gds": {
+        "path": "magic_attempt5/W/A44_CDAC_UNIT_W_R8_M6_NATIVE.gds",
+        "bytes": 422292,
+        "sha256": "efe8938bd972e941add10c260d659d731f953cdc14cadca3323806614acfdf6a"
+      },
+      "native_flat_none": {
+        "path": "magic_attempt5/W/A44_CDAC_UNIT_W_R8_M6_FLAT_MERGE_NONE.spice",
+        "bytes": 909475,
+        "sha256": "6ad396fb16a8798b6b206c840808a1b22209ab8f2bb9fab7f549dd146769733d"
+      },
+      "native_flat_conservative": {
+        "path": "magic_attempt5/W/A44_CDAC_UNIT_W_R8_M6_FLAT_MERGE_CONSERVATIVE.spice",
+        "bytes": 162204,
+        "sha256": "08800a936e92cec0bb7f51e5af716a6f18475da53f846cde27e4e3d11f6b127f"
+      },
+      "readback_mag": {
+        "path": "readback_attempt5/W/A44_CDAC_UNIT_W_R8_M6.mag",
+        "bytes": 41102,
+        "sha256": "4deecc5d2a444de6ccc3d917d73437b3817ac647273bbe6249cc1e5a8302a35a"
+      },
+      "second_generation_gds": {
+        "path": "readback_attempt5/W/A44_CDAC_UNIT_W_R8_M6_NATIVE.gds",
+        "bytes": 422292,
+        "sha256": "98a660d03d447290943d14d6416f28291e40298152d3a6bb505975253030a619"
+      },
+      "readback_flat_none": {
+        "path": "readback_attempt5/W/A44_CDAC_UNIT_W_R8_M6_FLAT_MERGE_NONE.spice",
+        "bytes": 909475,
+        "sha256": "6ad396fb16a8798b6b206c840808a1b22209ab8f2bb9fab7f549dd146769733d"
+      },
+      "readback_flat_conservative": {
+        "path": "readback_attempt5/W/A44_CDAC_UNIT_W_R8_M6_FLAT_MERGE_CONSERVATIVE.spice",
+        "bytes": 162204,
+        "sha256": "08800a936e92cec0bb7f51e5af716a6f18475da53f846cde27e4e3d11f6b127f"
+      }
+    }
+  },
+  "evidence": {
+    "builder_result": {
+      "path": "generated_attempt5/G3_BUILDER_RESULT.json",
+      "bytes": 56057,
+      "sha256": "1a1b84f4521416f756af8a0a1ab024bc2a55c4dada5c1772b271913c39f83197"
+    },
+    "structural_audit": {
+      "path": "G3_ATTEMPT5_STRUCTURAL_AUDIT.json",
+      "bytes": 14738,
+      "sha256": "6fd315ad37ff96ca7c8b40c817040fdbd66c4934bed6293b621145e2e6d2effb"
+    },
+    "gds_independent_audit": {
+      "path": "G3_ATTEMPT5_GDS_INDEPENDENT_AUDIT.json",
+      "bytes": 9759,
+      "sha256": "16b9cdbffdeeeb2351becfbfb677c07ba7bb8fed1a6d7b1247335f45f9ac8b14"
+    },
+    "native_drc_logs": {
+      "E": {
+        "path": "magic_g3_attempt5_E.log",
+        "bytes": 17730,
+        "sha256": "bb233876f0d4e8eeea950d7b8f66a607cec5c9b1bd4f61381dfab4cedb57c66f"
+      },
+      "W": {
+        "path": "magic_g3_attempt5_W.log",
+        "bytes": 17769,
+        "sha256": "dc59ace2605e5cc3b2af95ac779d57f7ec5b250f0e86f4b1daeb07d30e7dc029"
+      }
+    },
+    "gds_readback_drc_logs": {
+      "E": {
+        "path": "magic_g3_readback_attempt5_E.log",
+        "bytes": 17695,
+        "sha256": "f00bcaab4218f9e5179de1e9f464c957bb779c2c4c393cb594932ef7c369b24f"
+      },
+      "W": {
+        "path": "magic_g3_readback_attempt5_W.log",
+        "bytes": 17734,
+        "sha256": "ae1730908450428246bc48cdcdd5932b1b6c3bcf3b75c754804ec01ba9be2dcc"
+      }
+    },
+    "lvs": {
+      "E_NATIVE_VS_COMPLETE_CURRENT_SOURCE": {
+        "path": "LVS_ATTEMPT5_E_NATIVE_VS_COMPLETE_CURRENT_SOURCE.log",
+        "bytes": 7556,
+        "sha256": "153ee1b8d60092920598dd4d1934512fc8063a22802d07e0b07cb747e44825e8",
+        "unique": true
+      },
+      "W_NATIVE_VS_COMPLETE_CURRENT_SOURCE": {
+        "path": "LVS_ATTEMPT5_W_NATIVE_VS_COMPLETE_CURRENT_SOURCE.log",
+        "bytes": 7556,
+        "sha256": "fa5a31b84ce786551cd0003b213043c4e25736c92fc1bfd6c8efa844e9b1a4ee",
+        "unique": true
+      },
+      "E_READBACK_VS_SOURCE": {
+        "path": "LVS_ATTEMPT5_E_READBACK_VS_SOURCE.log",
+        "bytes": 7556,
+        "sha256": "153ee1b8d60092920598dd4d1934512fc8063a22802d07e0b07cb747e44825e8",
+        "unique": true
+      },
+      "W_READBACK_VS_SOURCE": {
+        "path": "LVS_ATTEMPT5_W_READBACK_VS_SOURCE.log",
+        "bytes": 7556,
+        "sha256": "fa5a31b84ce786551cd0003b213043c4e25736c92fc1bfd6c8efa844e9b1a4ee",
+        "unique": true
+      },
+      "E_NATIVE_CONSERVATIVE_VS_SOURCE": {
+        "path": "LVS_ATTEMPT5_E_NATIVE_CONSERVATIVE_VS_SOURCE.log",
+        "bytes": 7555,
+        "sha256": "21f44a1f09e57d6013f64f2865887771f8b0b0661b199c45a1b209e280e337b0",
+        "unique": true
+      },
+      "W_NATIVE_CONSERVATIVE_VS_SOURCE": {
+        "path": "LVS_ATTEMPT5_W_NATIVE_CONSERVATIVE_VS_SOURCE.log",
+        "bytes": 7555,
+        "sha256": "1038e9a62a8bbf16676429cc44e5555af5aba14d804fabbb72a5b90edee1b7c8",
+        "unique": true
+      },
+      "E_READBACK_CONSERVATIVE_VS_SOURCE": {
+        "path": "LVS_ATTEMPT5_E_READBACK_CONSERVATIVE_VS_SOURCE.log",
+        "bytes": 7555,
+        "sha256": "21f44a1f09e57d6013f64f2865887771f8b0b0661b199c45a1b209e280e337b0",
+        "unique": true
+      },
+      "W_READBACK_CONSERVATIVE_VS_SOURCE": {
+        "path": "LVS_ATTEMPT5_W_READBACK_CONSERVATIVE_VS_SOURCE.log",
+        "bytes": 7555,
+        "sha256": "1038e9a62a8bbf16676429cc44e5555af5aba14d804fabbb72a5b90edee1b7c8",
+        "unique": true
+      },
+      "E_NATIVE_VS_READBACK": {
+        "path": "LVS_ATTEMPT5_E_NATIVE_VS_READBACK.log",
+        "bytes": 5438,
+        "sha256": "039cf0c28c115f659e6d7371ca97d0fac09f42398f66ad8834428977502ca904",
+        "unique": true
+      },
+      "W_NATIVE_VS_READBACK": {
+        "path": "LVS_ATTEMPT5_W_NATIVE_VS_READBACK.log",
+        "bytes": 5438,
+        "sha256": "5d3fde757ffc481205b01480a0b946e69d1115fac74a96f895161200c5559142",
+        "unique": true
+      },
+      "E_VS_W_NATIVE": {
+        "path": "LVS_ATTEMPT5_E_VS_W_NATIVE.log",
+        "bytes": 5438,
+        "sha256": "fcb7b8f977982bb1ae64851cf55039fd8055a8645127518e05985d01931591f5",
+        "unique": true
+      },
+      "E_VS_W_READBACK": {
+        "path": "LVS_ATTEMPT5_E_VS_W_READBACK.log",
+        "bytes": 5438,
+        "sha256": "fcb7b8f977982bb1ae64851cf55039fd8055a8645127518e05985d01931591f5",
+        "unique": true
+      }
+    },
+    "methods": {
+      "builder": {
+        "path": "build_g3_full_units.py",
+        "bytes": 21784,
+        "sha256": "b97e6eba2c5a7a5c7c03068b60513bcb3b0302bf1d9d21d2ebc78675bca9aa6a"
+      },
+      "hydration_and_port_binding": {
+        "path": "hydrate_g3_full_unit.tcl",
+        "bytes": 2550,
+        "sha256": "9e292bb8a0e5998e3d8ea6923c0c7d6e78867d580a2ab33dadea46b7132f12c1"
+      },
+      "extraction_audit": {
+        "path": "audit_g3_extractions.py",
+        "bytes": 10372,
+        "sha256": "2b8b1f75331a91c7fbb55194628858047be6b09d7e22b3337022c4b13d9fea7e"
+      },
+      "gds_audit": {
+        "path": "audit_g3_gds_readback.py",
+        "bytes": 8481,
+        "sha256": "aee7b46b88346c2a61e41df756859a62b5e406ed3390bff88ca2bf7ffedcfdfa"
+      }
+    }
+  },
+  "gds_port_binding_boundary": {
+    "native_magic": "Exact 14 numbered ports and FIXED_BBOX are stored in each native .mag.",
+    "calma_gds": "Magic Calma export omits the newly created parent rlabels.",
+    "readback_method": "The hash-bound hydrate_g3_full_unit.tcl restores exact names, order, layers, and coordinates before independent GDS readback DRC/extraction/LVS."
+  },
+  "failed_attempts_preserved": [
+    "failed_attempts/ATTEMPT1_BUILDER_NULL_DUMMY_FILTER",
+    "failed_attempts/ATTEMPT2_EMPTY_BIT1_SOUTH_GROUP",
+    "failed_attempts/ATTEMPT3_NATIVE_DRC_INTERFACE_ROUTING",
+    "failed_attempts/ATTEMPT4_RESIDUAL_M5_ENTRY_SPACING"
+  ],
+  "automatic_promotion": false,
+  "production_layout_promotion": false,
+  "pex_in_scope": false,
+  "claim_boundary": "PASS covers the versioned R8-M6 E/W complete-unit construction, 390x400 fixed site, native and GDS-readback full DRC, exact complete-current-schematic LVS in unmerged and conservative views, E/W equivalence, unit-multiplier driver binding, mapping, and structural keepouts. It does not claim PEX, acquisition/noise/offset performance, yield, production promotion, tapeout sign-off, or integration above this unit."
+}

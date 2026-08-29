@@ -1,8 +1,8 @@
-# A44 SAR ADC layout views
+# Published A44 SAR ADC layout-review views
 
-This directory accompanies the Chipathon 2026 layout-review submission for
-Team A44. It contains the current no-pad, pre-fill CORE layout and the five
-direct component layouts instantiated by that CORE.
+This directory retains the Chipathon 2026 layout-review submission for Team
+A44. It contains the no-pad, pre-fill CORE layout and the five direct component
+layouts instantiated by that submitted CORE.
 
 The official dry-run binding remains:
 
@@ -11,6 +11,12 @@ info.yaml -> lvs_config.json
 TOP_LAYOUT = A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR
 LAYOUT_FILE = gds/A44_SAR_ADC_CORE_1000.gds
 ```
+
+The later cap x1/3 R8/M6 CDAC component layouts and their current DRC/LVS and
+PEX result records are published separately under
+[`verification/a44_cdac_cap_x1div3`](../verification/a44_cdac_cap_x1div3).
+They do not replace this root binding because no newly requalified coherent
+CORE/LEF/DEF submission set is claimed by that component package.
 
 ## Published layout names
 
@@ -38,7 +44,8 @@ contracts are preserved.
 
 ## Scope boundary
 
-This is a CORE layout-review publication without padframe, I/O pads, primary
-or secondary ESD, or a workshop full-die wrapper. The CORE is the current
-pre-fill baseline. The files are not a claim of density/fill closure,
-full-chip signoff, Channel Partner acceptance, or tapeout readiness.
+This is the retained CORE layout-review publication without padframe, I/O
+pads, primary or secondary ESD, or a workshop full-die wrapper. The CORE is
+the published pre-fill submission baseline. The files are not a claim of
+density/fill closure, full-chip signoff, Channel Partner acceptance, or
+tapeout readiness.

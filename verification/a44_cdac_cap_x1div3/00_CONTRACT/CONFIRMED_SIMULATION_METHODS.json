@@ -1,0 +1,87 @@
+{
+  "schema": "a44-current-cdac-cap-x1div3-confirmed-methods-v1",
+  "release_id": "A44_CDAC_CAP_X1DIV3_BASELINE_20260828_R1",
+  "input_model": {
+    "model_id": "A44_SCHEM_ACQ_ESD_LUMPED_RC_GEN50_R1",
+    "source_plane": "GEN",
+    "series_resistance_per_leg_ohm": 55.0,
+    "primary_pad_esd": "GF180_ASIG_5P0",
+    "secondary_esd": "3P3_SECONDARY_ESD",
+    "shunt_capacitance_per_leg_pf": 1.5,
+    "differential_capacitance_pf": 0.2,
+    "legacy_105_ohm_series_model": "REMOVED",
+    "baseline_use": "ACQUISITION_AND_UNIFIED_TRANSIENT_INPUT_INTERFACE"
+  },
+  "acquisition": {
+    "simulator": "Xyce",
+    "corner": "TT_3P3V_27C",
+    "stimulus": "BIDIRECTIONAL_FS_UP_AND_FS_DOWN_LONG_TRACK_STEP",
+    "t0_ns": 20.1,
+    "hold_edge_nominal_ns": 500.3,
+    "track_window_guard_ns": 2.0,
+    "formal_reference_plane": "GEN",
+    "criterion": "ABS_DIFFERENTIAL_ERROR_LE_3P3203125MV_ENTER_AND_REMAIN",
+    "criterion_lsb": 0.25,
+    "nominal_maxstep_ns": 0.25,
+    "convergence_maxstep_ns": [0.125, 0.25, 0.5],
+    "comparator_scope_load": "NONE",
+    "excluded": ["noise", "mismatch", "PVT", "full ADC performance", "signoff"]
+  },
+  "mc10_dynamic": {
+    "status": "CONFIRMED_SELECTED_DIAGNOSTIC_METHOD",
+    "corner": "SS_3P0V_125C",
+    "samples": 10,
+    "frame_window": "FAST64_SS_W4_FRAMES_4_TO_67",
+    "sar_logic": "FROZEN_TT_BEHAVIORAL_SAR",
+    "claim_boundary": "SELECTED_SS_DIAGNOSTIC_NOT_FULL_ADC_LOGIC_PVT_OR_YIELD"
+  },
+  "mc10_offset": {
+    "status": "CONFIRMED_SELECTED_METHOD",
+    "corner": "TT_3P3V_27C",
+    "samples": 10,
+    "input": "DIRECT_IDEAL_ZERO_IMPEDANCE",
+    "measurement": "WHOLE_ADC_UPWARD_T1_TRANSFER_OFFSET",
+    "claim_boundary": "NOT_COMPARATOR_ONLY_VOS_NOT_PVT_NOT_PEX"
+  },
+  "mc100_offset": {
+    "status": "COMPLETED_EXACT_SEEDS_1_TO_100",
+    "corner": "TT_3P3V_27C",
+    "samples": 100,
+    "input": "DIRECT_IDEAL_ZERO_IMPEDANCE",
+    "measurement": "WHOLE_ADC_UPWARD_T1_TRANSFER_OFFSET",
+    "claim_boundary": "NOT_COMPARATOR_ONLY_VOS_NOT_PVT_NOT_PEX_NOT_YIELD_SIGNOFF"
+  },
+  "unified_top_transient": {
+    "input_fixture": "A44_LAYOUT_INPUT_ESD_RC_2P_R1_PASSIVE_COMPACT",
+    "pex_dut": "ONE_UNIFIED_CURRENT_TOP_POSTFILL_FULL_RC_CC_TRANSISTOR_PEX",
+    "schematic_reference": "SEPARATE_MATCHING_FULL_TRANSISTOR_SCHEMATIC",
+    "forbidden_views": ["mixed_view_DUT", "behavioral_SAR_inside_formal_DUT", "external_CMPCK", "external_DCTRL", "XSPICE_bridge", "Verilog_A"],
+    "corner": "TT_3P3V_27C",
+    "operating_point": "NORMAL_DCOP_NO_UIC",
+    "solver": "KLU_GEAR_MAXORD2",
+    "reltol": 0.003,
+    "maxstep_ns": 0.05,
+    "track_ns": 180.0,
+    "conversion_allocation_ns": 320.0,
+    "protocol": "8_CMPCK_7_PHYSICAL_DCTRL_GROUPS_1_EOC_ATOMIC_DOUT",
+    "settling_criterion": "PER_DECISION_0P25_LSB_ENTER_AND_REMAIN_BEFORE_NEXT_CMPCK",
+    "settling_gate_role": "INTERNAL_ANALOG_MARGIN_DIAGNOSTIC_NOT_EQUIVALENT_TO_BIT_FUNCTIONAL_ERROR",
+    "settling_row_mapping": "BIT_K_ROW_MEASURES_DK_UPDATE_TO_NEXT_DK_MINUS_1_DECISION",
+    "bit_decision_functional_margin": "EXPECTED_SIGN_TIMES_ACTUAL_RESIDUE_AT_COMPARATOR_APERTURE_GT_0",
+    "preferred_comparator_aperture": "STRONGARM_TAIL_CURRENT_ONSET",
+    "preferred_aperture_observable_in_current_waveforms": false,
+    "fallback_aperture_diagnostic": "CMPCK_10_PERCENT_CROSSING",
+    "legacy_aperture_record": "CMPCK_50_PERCENT_CROSSING_MINUS_50PS",
+    "robust_decision_margin": "SIGNED_MARGIN_GT_BOUND_OFFSET_NOISE_PVT_MODEL_AND_NON_INCLUDED_KICKBACK_UNCERTAINTY",
+    "robust_uncertainty_budget_status": "NOT_BOUND"
+  },
+  "source_method_locations": [
+    "01_BASELINE/02_SIMULATION_AND_AUXILIARY_FILES/SOURCE_METHODS",
+    "02_PEX_GOLDEN/01_RECHAR_SCHEM/00_CONTRACT",
+    "03_CURRENT_PEX_R1/01_R8M6_ACQ/02_SIMULATION",
+    "03_CURRENT_PEX_R1/02_ATTEMPT20_ACQ/METHOD",
+    "03_CURRENT_PEX_R1/03_UNIFIED_MIN2/METHOD",
+    "03_CURRENT_PEX_R1/04_UNIFIED_MINMAX/METHOD",
+    "03_CURRENT_PEX_R1/05_UNIFIED_MID/METHOD"
+  ]
+}

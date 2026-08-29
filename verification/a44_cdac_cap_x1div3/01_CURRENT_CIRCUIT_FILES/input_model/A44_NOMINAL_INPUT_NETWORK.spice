@@ -1,0 +1,25 @@
+* A44_SCHEM_ACQ_ESD_LUMPED_RC_GEN50_R1
+* Nominal two-leg external network + official primary pad + secondary ESD.
+* This is a lumped-RC acquisition model, not a board/package SI model.
+
+.param A44_REXT_OHM_PER_LEG=55
+.param A44_CCM_F_PER_LEG=1.5p
+.param A44_CDIFF_F=0.2p
+
+.subckt A44_NOMINAL_INPUT_NETWORK
++ VGENP VGENN PADP PADN ASIGP ASIGN VINP_TG VINN_TG VDD VSS
+R_EXT_P VGENP PADP {A44_REXT_OHM_PER_LEG}
+R_EXT_N VGENN PADN {A44_REXT_OHM_PER_LEG}
+C_EXT_P PADP VSS {A44_CCM_F_PER_LEG}
+C_EXT_N PADN VSS {A44_CCM_F_PER_LEG}
+C_EXT_D PADP PADN {A44_CDIFF_F}
+
+* Extracted GF180 analog HBM pad pin order: DVSS DVDD VSS VDD PAD ASIG5V.
+X_APAD_P VSS VDD VSS VDD PADP ASIGP gf180mcu_fd_io__asig_5p0_extracted
+X_APAD_N VSS VDD VSS VDD PADN ASIGN gf180mcu_fd_io__asig_5p0_extracted
+
+* Chipathon secondary 3.3-V CDM networks.
+X_SEC_P ASIGP VINP_TG VDD VSS A44_SECONDARY_ESD_3P3
+X_SEC_N ASIGN VINN_TG VDD VSS A44_SECONDARY_ESD_3P3
+.ends A44_NOMINAL_INPUT_NETWORK
+

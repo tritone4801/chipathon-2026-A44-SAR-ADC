@@ -1,0 +1,218 @@
+{
+  "schema": "a44.current-r8-m6.exact-prior-acquisition-method-summary.v1",
+  "status": "COMPLETE_8_OF_8_ALL_FINITE",
+  "method": {
+    "identity": "DIRECT_REUSE_OF_COMPLETED_CAP_X1DIV3_ACQUISITION_METHOD",
+    "stimulus": "BIDIRECTIONAL_FULL_SCALE_LONG_TRACK_STEP",
+    "t0_ns": 20.1,
+    "criterion": "ABS_DIFFERENTIAL_ERROR_LE_3P3203125MV_ENTER_AND_REMAIN",
+    "formal_primary_reference_plane": "GEN",
+    "hold_edge_nominal_ns": 500.3,
+    "track_window_guard_ns": 2.0,
+    "comparator_scope_load": "NONE_MATCHING_COMPLETED_METHOD",
+    "startup_preconditioner": "VALIDATED_RAMP_UIC_FROM_COMPLETED_METHOD"
+  },
+  "source_models": {
+    "zero_ohm": "A44_DIRECT_IDEAL_VOLTAGE_SOURCE_NO_INPUT_IMPEDANCE_R1",
+    "esd_rc": "A44_SCHEM_ACQ_ESD_LUMPED_RC_GEN50_R1"
+  },
+  "nominal_completed_run_count": 8,
+  "groups": {
+    "schematic__zero_ohm": {
+      "run_count": 2,
+      "by_direction": {
+        "FS_DOWN": {
+          "GEN": 61.763311692997966,
+          "PAD": 61.763311692997966,
+          "TG": 61.763311692997966
+        },
+        "FS_UP": {
+          "GEN": 61.763311693280606,
+          "PAD": 61.763311693280606,
+          "TG": 61.763311693280606
+        }
+      },
+      "T_ACQ_GEN_NS": 61.763311693280606,
+      "WORST_DIRECTION_GEN": "FS_UP",
+      "T_ACQ_PAD_NS": 61.763311693280606,
+      "WORST_DIRECTION_PAD": "FS_UP",
+      "T_ACQ_TG_NS": 61.763311693280606,
+      "WORST_DIRECTION_TG": "FS_UP",
+      "all_finite_0p25lsb": true
+    },
+    "schematic__esd_rc": {
+      "run_count": 2,
+      "by_direction": {
+        "FS_DOWN": {
+          "GEN": 134.33542390392904,
+          "PAD": 129.45988379157154,
+          "TG": 116.31177589827402
+        },
+        "FS_UP": {
+          "GEN": 134.33542390475597,
+          "PAD": 129.4598837713894,
+          "TG": 116.3117758664915
+        }
+      },
+      "T_ACQ_GEN_NS": 134.33542390475597,
+      "WORST_DIRECTION_GEN": "FS_UP",
+      "T_ACQ_PAD_NS": 129.45988379157154,
+      "WORST_DIRECTION_PAD": "FS_DOWN",
+      "T_ACQ_TG_NS": 116.31177589827402,
+      "WORST_DIRECTION_TG": "FS_DOWN",
+      "all_finite_0p25lsb": true
+    },
+    "pex__zero_ohm": {
+      "run_count": 2,
+      "by_direction": {
+        "FS_DOWN": {
+          "GEN": 76.45225514182593,
+          "PAD": 76.45225514182593,
+          "TG": 76.45225514182593
+        },
+        "FS_UP": {
+          "GEN": 76.55095152131676,
+          "PAD": 76.55095152131676,
+          "TG": 76.55095152131676
+        }
+      },
+      "T_ACQ_GEN_NS": 76.55095152131676,
+      "WORST_DIRECTION_GEN": "FS_UP",
+      "T_ACQ_PAD_NS": 76.55095152131676,
+      "WORST_DIRECTION_PAD": "FS_UP",
+      "T_ACQ_TG_NS": 76.55095152131676,
+      "WORST_DIRECTION_TG": "FS_UP",
+      "all_finite_0p25lsb": true
+    },
+    "pex__esd_rc": {
+      "run_count": 2,
+      "by_direction": {
+        "FS_DOWN": {
+          "GEN": 151.82992485345244,
+          "PAD": 146.9082321707724,
+          "TG": 134.45194615129023
+        },
+        "FS_UP": {
+          "GEN": 151.83229969843242,
+          "PAD": 146.91093230694068,
+          "TG": 134.4577398990686
+        }
+      },
+      "T_ACQ_GEN_NS": 151.83229969843242,
+      "WORST_DIRECTION_GEN": "FS_UP",
+      "T_ACQ_PAD_NS": 146.91093230694068,
+      "WORST_DIRECTION_PAD": "FS_UP",
+      "T_ACQ_TG_NS": 134.4577398990686,
+      "WORST_DIRECTION_TG": "FS_UP",
+      "all_finite_0p25lsb": true
+    }
+  },
+  "layout_penalty_pex_minus_schematic": {
+    "zero_ohm": {
+      "GEN": {
+        "delta_ns": 14.787639828036156,
+        "percent": 23.942433497530445
+      },
+      "PAD": {
+        "delta_ns": 14.787639828036156,
+        "percent": 23.942433497530445
+      },
+      "TG": {
+        "delta_ns": 14.787639828036156,
+        "percent": 23.942433497530445
+      }
+    },
+    "esd_rc": {
+      "GEN": {
+        "delta_ns": 17.496875793676452,
+        "percent": 13.024766874656803
+      },
+      "PAD": {
+        "delta_ns": 17.451048515369138,
+        "percent": 13.479888907875942
+      },
+      "TG": {
+        "delta_ns": 18.145964000794578,
+        "percent": 15.601140865276609
+      }
+    }
+  },
+  "input_model_penalty_esd_rc_minus_zero_ohm": {
+    "schematic": {
+      "GEN": {
+        "delta_ns": 72.57211221147537,
+        "percent": 117.50035777205692
+      },
+      "PAD": {
+        "delta_ns": 67.69657209829094,
+        "percent": 109.60644797428476
+      },
+      "TG": {
+        "delta_ns": 54.548464204993415,
+        "percent": 88.31855467187957
+      }
+    },
+    "pex": {
+      "GEN": {
+        "delta_ns": 75.28134817711566,
+        "percent": 98.34149240607732
+      },
+      "PAD": {
+        "delta_ns": 70.35998078562392,
+        "percent": 91.91261426192871
+      },
+      "TG": {
+        "delta_ns": 57.90678837775184,
+        "percent": 75.64476629872696
+      }
+    }
+  },
+  "pex_esd_rc_worst_direction_maxstep_convergence": {
+    "status": "PASS_3_POINT_MAXSTEP_SPAN_LE_MAX_1NS_OR_1PCT",
+    "direction": "FS_UP",
+    "maxstep_ns_to_t_acq_ns": {
+      "0.125": {
+        "GEN": 151.83635140454382,
+        "PAD": 146.91480172003486,
+        "TG": 134.4612868916789
+      },
+      "0.25": {
+        "GEN": 151.83229969843242,
+        "PAD": 146.91093230694068,
+        "TG": 134.4577398990686
+      },
+      "0.5": {
+        "GEN": 151.8165279091385,
+        "PAD": 146.89542316345444,
+        "TG": 134.44357173340924
+      }
+    },
+    "planes": {
+      "GEN": {
+        "span_ns": 0.019823495405319136,
+        "span_percent_of_0p25ns_result": 0.01305617806269966,
+        "acceptance_limit_ns": 1.5183229969843242,
+        "pass": true
+      },
+      "PAD": {
+        "span_ns": 0.019378556580420536,
+        "span_percent_of_0p25ns_result": 0.013190683821904392,
+        "acceptance_limit_ns": 1.4691093230694068,
+        "pass": true
+      },
+      "TG": {
+        "span_ns": 0.01771515826965242,
+        "span_percent_of_0p25ns_result": 0.013175261076789182,
+        "acceptance_limit_ns": 1.344577398990686,
+        "pass": true
+      }
+    }
+  },
+  "prior_completed_schematic_esd_rc_gen_ns": 134.34221824143697,
+  "current_schematic_esd_rc_gen_ns": 134.33542390475597,
+  "current_vs_prior_schematic_method_check": {
+    "delta_ns": -0.0067943366809970485,
+    "percent": -0.0050574843633938
+  },
+  "claim_boundary": "TT_3P3V_27C_CURRENT_R8_M6_FULL_RC_CC_CDAC_EXACT_PRIOR_LONG_TRACK_METHOD_NO_NOISE_NO_MISMATCH_NO_COMPARATOR_SCOPE_LOAD_NOT_FULL_ADC_NOT_PVT_SIGNOFF"
+}

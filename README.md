@@ -4,10 +4,39 @@ This repository contains the Team A44 8-bit, 2 mega-samples-per-second,
 3.3-volt fully differential capacitive successive-approximation-register
 analog-to-digital converter design, its layouts, and its simulation results.
 
-## Current layout review
+## Current engineering baseline
 
-The current Chipathon 2026 layout-review baseline is the no-pad, pre-fill core
-layout selected by `info.yaml` and `lvs_config.json`:
+The current working engineering baseline is the
+[cap x1/3 CDAC package](verification/a44_cdac_cap_x1div3). It changes the C1
+and dummy MIM multiplier from 18 to 6 while retaining the multiplier-18
+reference switches, multiplier-8 sampling transmission gate, comparator,
+drivers, and SAR logic inherited from the W5P29 circuit.
+
+The current baseline publishes:
+
+- [the cap x1/3 circuit delta](verification/a44_cdac_cap_x1div3/01_CURRENT_CIRCUIT_FILES);
+- [qualified R8/M6 east and west CDAC layouts](verification/a44_cdac_cap_x1div3/02_LAYOUT);
+- [the current final-integration GDS and DRC/LVS pass evidence](verification/a44_cdac_cap_x1div3/02_LAYOUT/final_integration);
+- [structured acquisition, offset, and conversion results](verification/a44_cdac_cap_x1div3/03_RESULTS); and
+- [the machine-readable current status](verification/a44_cdac_cap_x1div3/STATUS.json).
+
+The qualified CDAC component layout has zero native and GDS-readback DRC
+errors on both sides and unique results for all 12 recorded LVS comparisons.
+For the selected final-integration CORE cell, Magic full DRC reports zero
+errors and all three hierarchical/flat full-transistor LVS views are unique.
+The controlling unified-TOP conversion result is `FAIL_FORMAL_MIN2`: the
+second MIN2 frame resolves to 0x00 in PEX while ideal and matching schematic
+resolve to 0x01. The minimum-maximum-minimum and 0x7F-0x80-0x7F cases are
+bounded nominal functional passes with settling and decision-margin warnings;
+they do not override the formal MIN2 failure.
+
+This is a current working baseline, not promotion, full ADC performance
+qualification, Channel Partner acceptance, or tapeout signoff.
+
+## Published layout-review submission
+
+The retained Chipathon 2026 repository-root layout-review submission is the
+no-pad, pre-fill core selected by `info.yaml` and `lvs_config.json`:
 
 - [Core layout in Graphic Data System format](gds/A44_SAR_ADC_CORE_1000.gds)
 - [Component layouts](gds/components)
@@ -18,9 +47,14 @@ This publication is for layout review. It does not claim density or fill
 closure, padframe or electrostatic-discharge completion, full-chip signoff,
 Channel Partner acceptance, or tapeout readiness.
 
-## Current schematic baseline
+The newer R8/M6 CDAC GDS and verification records are published in the current
+engineering package above. The repository-root binding is not repointed because
+that component package does not provide a newly requalified, coherent root
+CORE/LEF/DEF submission set.
 
-The current transistor-level schematic baseline is the
+## Preserved W5P29 schematic baseline
+
+The previously published transistor-level schematic baseline is the
 [W5P29 unit-transmission-gate-driver schematic package](verification/a44_w5p29_trans_driver/01_CURRENT_CIRCUIT_FILES).
 It is additive; the
 [original GitHub schematic](verification/a44_r2/01_CURRENT_CIRCUIT_FILES)
@@ -56,7 +90,11 @@ changes only the following published components, bindings, and sizes:
   The logic-to-converter/output interface changes from underscore aliases to
   `DCTRLP[7:1]`, `DCTRLN[7:1]`, and `DOUT[7:0]` bracket names.
 
-## Current A44_W5P29_UNIT_TRANS_DRIVER electrical results
+## Preserved A44_W5P29_UNIT_TRANS_DRIVER electrical results
+
+The following five entries and their order are preserved from the prior W5P29
+publication. They qualify that multiplier-18 capacitor baseline and are not
+silently transferred to the current multiplier-6 CDAC.
 
 | Simulation or execution | Completion | Current interpretation |
 | --- | ---: | --- |

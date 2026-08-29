@@ -1,0 +1,122 @@
+{
+  "schema": "a44.cdac_r8_m6_current_verification_index.v1",
+  "created_utc": "2026-08-25T07:20:52.246998+00:00",
+  "status": "PASS_CURRENT_G3_VERIFICATION_INDEX",
+  "complete_current_source": {
+    "path": "01_SOURCE_AUTHORITY/current_cap_x1div3_unitized/A44_CDAC_UNIT_TRANS_DRIVER_HIER.subckt.spice",
+    "bytes": 21875,
+    "sha256": "90ed7378c97bc372eb9615acfea970c5723efce2aab8f16a4fdecbbf2dc285c9"
+  },
+  "complete_current_source_top": "A44_CDAC_UNIT_TRANS_DRIVER",
+  "tops": {
+    "E": "A44_CDAC_UNIT_E_R8_M6",
+    "W": "A44_CDAC_UNIT_W_R8_M6"
+  },
+  "fixed_site_um": [
+    390.0,
+    400.0
+  ],
+  "gate_chain": {
+    "bootstrap": {
+      "status": "PASS_FROZEN_INPUTS_AND_UNITIZED_SOURCE_DERIVATION",
+      "evidence": {
+        "path": "01_SOURCE_AUTHORITY/BOOTSTRAP_RECEIPT.json",
+        "bytes": 31033,
+        "sha256": "5063f9fe0883ef25990a05da49a0095a9dde806c1dd67df01b12059240bbdfb6"
+      }
+    },
+    "source_contract": {
+      "status": "PASS_COMPLETE_CURRENT_CDAC_SOURCE_UNIT_MULTIPLIER_ONLY_DERIVATION",
+      "evidence": {
+        "path": "01_SOURCE_AUTHORITY/SOURCE_CONTRACT_AUDIT.json",
+        "bytes": 3466,
+        "sha256": "abfbaa78e614c18e67edfe9553ade46cb9d1bf2126919206dba4266b63cd93e4"
+      }
+    },
+    "U1_pcell_semantics": {
+      "status": "PASS_U1_MAGIC_PCELL_PER_FINGER_SEMANTICS_PARENT_CONTEXT_DRC_PENDING",
+      "evidence": {
+        "path": "03_LAYOUT_CONSTRUCTION/U1_DRIVER_PCELL_PROBE/U1_PROBE_RESULT.json",
+        "bytes": 16865,
+        "sha256": "80728d1c2f91dc15421fa62b6f3a4a8d92716b464117ba00c819cdae979fd114"
+      }
+    },
+    "U2_unit_multiplier_driver": {
+      "status": "PASS_U2_UNIT_MULTIPLIER_DRIVER_NATIVE_AND_GDS_READBACK_DRC_LVS",
+      "evidence": {
+        "path": "03_LAYOUT_CONSTRUCTION/U2_UNIT_MULTIPLIER_DRIVER/U2_DRIVER_GATE_RESULT.json",
+        "bytes": 19204,
+        "sha256": "ea177ac0e2e0c93c6c6c080041692eb060760a858b59983f5c2cc5e02a61ef31"
+      }
+    },
+    "U3_tg8_slices_R2": {
+      "status": "PASS_U3_TG8_UNIT_MULTIPLIER_SLICES_NATIVE_AND_GDS_READBACK_DRC_LVS",
+      "evidence": {
+        "path": "03_LAYOUT_CONSTRUCTION/U3_TG8_SLICES/U3_TG8_SLICE_GATE_RESULT_R2.json",
+        "bytes": 12010,
+        "sha256": "e1551f14f427db92e70f5478df28fb212159883234789e9e8924b782b2bdb3eb"
+      }
+    },
+    "G1_mim6": {
+      "status": "PASS_G1_MIM6_NATIVE_AND_GDS_READBACK_DRC_LVS",
+      "evidence": {
+        "path": "03_LAYOUT_CONSTRUCTION/G1_MIM6/G1_MIM6_GATE_RESULT.json",
+        "bytes": 4872,
+        "sha256": "b8e814e5aeb386af1730c658b2d73ac43e1fd97df82379dbea09afcda7ab3cd8"
+      }
+    },
+    "G2_core_banks": {
+      "status": "PASS_G2_CORE_BANKS_NATIVE_AND_GDS_READBACK_DRC_STRUCTURE",
+      "evidence": {
+        "path": "03_LAYOUT_CONSTRUCTION/G2_CORE_BANKS/G2_GATE_RESULT.json",
+        "bytes": 3917,
+        "sha256": "219843e6d199902c0e2ee55fb22d4cd9b309f3c0ada9176a46e66af4f967967f"
+      }
+    },
+    "G3_complete_units": {
+      "status": "PASS_G3_COMPLETE_UNITS_NATIVE_AND_GDS_READBACK_DRC_LVS_CURRENT_SOURCE",
+      "evidence": {
+        "path": "03_LAYOUT_CONSTRUCTION/G3_FULL_UNITS/G3_COMPLETE_UNIT_GATE_RESULT.json",
+        "bytes": 12613,
+        "sha256": "fbb52565f5cb398edb2f9c403e7cd21afc08236f643de7c9cf7357d22f55a522"
+      }
+    }
+  },
+  "current_outputs": {
+    "E": {
+      "mag": {
+        "path": "03_LAYOUT_CONSTRUCTION/G3_FULL_UNITS/magic_attempt5/E/A44_CDAC_UNIT_E_R8_M6.mag",
+        "bytes": 40242,
+        "sha256": "a920cc2a83f6d5fd7560691e0610a0f8c2b4b008667c2e4c4f044bef185338b6"
+      },
+      "gds": {
+        "path": "03_LAYOUT_CONSTRUCTION/G3_FULL_UNITS/magic_attempt5/E/A44_CDAC_UNIT_E_R8_M6_NATIVE.gds",
+        "bytes": 422288,
+        "sha256": "3a7f4851d83aafeaa7e36f43c6ac3437433868234ddfc2a2b16693fa422fe1f7"
+      },
+      "flat_lvs_netlist": {
+        "path": "03_LAYOUT_CONSTRUCTION/G3_FULL_UNITS/magic_attempt5/E/A44_CDAC_UNIT_E_R8_M6_FLAT_MERGE_NONE.spice",
+        "bytes": 909475,
+        "sha256": "27edf33964358684ef05a0f8478f341779ffd8fcd8d22168601aeee3bc99a6df"
+      }
+    },
+    "W": {
+      "mag": {
+        "path": "03_LAYOUT_CONSTRUCTION/G3_FULL_UNITS/magic_attempt5/W/A44_CDAC_UNIT_W_R8_M6.mag",
+        "bytes": 41103,
+        "sha256": "644438f53c8585d221c7e8bb25cdd15381e64d62c4b7603f02ce1c4c487913ab"
+      },
+      "gds": {
+        "path": "03_LAYOUT_CONSTRUCTION/G3_FULL_UNITS/magic_attempt5/W/A44_CDAC_UNIT_W_R8_M6_NATIVE.gds",
+        "bytes": 422292,
+        "sha256": "efe8938bd972e941add10c260d659d731f953cdc14cadca3323806614acfdf6a"
+      },
+      "flat_lvs_netlist": {
+        "path": "03_LAYOUT_CONSTRUCTION/G3_FULL_UNITS/magic_attempt5/W/A44_CDAC_UNIT_W_R8_M6_FLAT_MERGE_NONE.spice",
+        "bytes": 909475,
+        "sha256": "6ad396fb16a8798b6b206c840808a1b22209ab8f2bb9fab7f549dd146769733d"
+      }
+    }
+  },
+  "claim_boundary": "Index of the qualified attempt5 complete-unit outputs. No PEX, performance, production promotion, or sign-off claim."
+}

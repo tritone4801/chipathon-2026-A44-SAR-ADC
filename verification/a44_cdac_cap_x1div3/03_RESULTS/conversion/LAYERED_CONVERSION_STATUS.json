@@ -1,0 +1,131 @@
+{
+  "schema": "a44-cap-x1div3-layered-conversion-assessment-v2",
+  "assessment_id": "A44_CAP_X1DIV3_LAYERED_CONVERSION_ASSESSMENT_20260828_R2",
+  "judgment_date": "2026-08-28",
+  "status": "FAIL_FORMAL_MIN2",
+  "role": "CURRENT_PACKAGE_LEVEL_INTERPRETATION",
+  "source_measurement_artifacts_preserved": true,
+  "lsb_diff_v": 0.01328125,
+  "gate_definitions": {
+    "internal_settling_margin_gate": {
+      "criterion": "ABS_RESIDUE_MINUS_LOCAL_PLATEAU_LT_0P25_LSB_ENTER_AND_REMAIN",
+      "threshold_v": 0.0033203125,
+      "role": "CONSERVATIVE_INTERNAL_ANALOG_MARGIN_DIAGNOSTIC",
+      "not_equivalent_to": [
+        "BIT_DECISION_FUNCTIONAL_ERROR",
+        "ROBUST_DECISION_MARGIN",
+        "END_TO_END_ADC_PERFORMANCE"
+      ]
+    },
+    "bit_decision_functional_margin_gate": {
+      "definition": "M_K_EQUALS_EXPECTED_SIGN_TIMES_ACTUAL_RESIDUE_AT_COMPARATOR_APERTURE",
+      "nominal_pass": "M_K_GT_0",
+      "preferred_aperture": "STRONGARM_TAIL_CURRENT_ONSET",
+      "preferred_aperture_available": false,
+      "current_fallback": "CMPCK_10_PERCENT_CROSSING_DIAGNOSTIC_ONLY"
+    },
+    "robust_decision_margin_gate": {
+      "criterion": "M_K_GT_BOUND_OFFSET_NOISE_PVT_MODEL_AND_NON_INCLUDED_KICKBACK_UNCERTAINTY",
+      "uncertainty_budget_status": "NOT_BOUND",
+      "pass_claim_available": false
+    },
+    "end_to_end_adc_gate": {
+      "status": "NOT_PROVEN",
+      "requires": ["ALL_CODE_STATIC", "DNL_INL", "DYNAMIC_SNDR_ENOB", "PVT", "MONTE_CARLO"]
+    }
+  },
+  "bit_row_mapping": {
+    "bit7": "D7_UPDATE_TO_D6_DECISION",
+    "bit6": "D6_UPDATE_TO_D5_DECISION",
+    "bit5": "D5_UPDATE_TO_D4_DECISION",
+    "bit1": "D1_UPDATE_TO_D0_FINAL_DECISION"
+  },
+  "cases": {
+    "MIN2": {
+      "current_status": ["FAIL_FUNCTIONAL_CONVERSION", "FAIL_BIT_DECISION_FUNCTIONAL_MARGIN", "FAIL_FORMAL_MIN2"],
+      "numerical_complete": true,
+      "protocol_structure": "PASS",
+      "ideal_codes": [0, 1],
+      "schematic_codes": [0, 1],
+      "pex_codes": [0, 0],
+      "frame1_expected_comparator_sequence": "NNNNNNNP",
+      "frame1_pex_comparator_sequence": "NNNNNNNN",
+      "failure_location": "FRAME1_FINAL_D0_DECISION",
+      "internal_settling_50pct": {"pass_count": 8, "row_count": 14},
+      "internal_settling_preedge_1pct": {"pass_count": 8, "row_count": 14},
+      "frame1_d1_to_d0_internal_settling": {
+        "pass": true,
+        "local_plateau_v": -0.02804813000000006,
+        "residual_to_local_plateau_v": 0.00009877506206855402,
+        "threshold_v": 0.0033203125,
+        "interpretation": "STABLE_ON_WRONG_DECISION_SIDE"
+      },
+      "frame1_final_d0_residue_v": {
+        "schematic": {"cmpck_1pct": 0.0007170887206608967, "cmpck_10pct": 0.0007190690136114064, "cmpck_50pct": 0.0003405519209347396},
+        "pex": {"cmpck_1pct": -0.02793246413103101, "cmpck_10pct": -0.02783297517285299, "cmpck_50pct": -0.02768537373342639}
+      },
+      "schematic_to_pex_shift_at_cmpck_10pct_v": -0.028552044186464398,
+      "schematic_to_pex_shift_at_cmpck_10pct_lsb": -2.1498009740396724,
+      "kickback_timing_interpretation": "WRONG_SIGN_ALREADY_PRESENT_AT_CMPCK_1_PERCENT_AND_PERSISTS_THROUGH_50_PERCENT; NOT_A_50_PERCENT_REVIEW_ONLY_ARTIFACT",
+      "causal_boundary": "FUNCTIONAL_FAILURE_LOCALIZED; TRANSISTOR_OR_NET_SEGMENT_ROOT_CAUSE_NOT_PROVEN"
+    },
+    "MIN_MAX_MIN": {
+      "current_status": ["PASS_FUNCTIONAL_NOMINAL", "WARN_INTERNAL_SETTLING_MARGIN", "ROBUST_DECISION_MARGIN_NOT_YET_PROVEN"],
+      "legacy_composite_parser_status": "FAIL_G3_UNIFIED_PEX_MIN_MAX_MIN",
+      "numerical_complete": true,
+      "ideal_codes": [0, 255, 0],
+      "schematic_codes": [0, 255, 0],
+      "pex_codes": [0, 255, 0],
+      "comparator_sequences": ["NNNNNNNN", "PPPPPPPP", "NNNNNNNN"],
+      "protocol_and_code": "PASS",
+      "gen_acquisition": "PASS",
+      "tail_retention": "PASS",
+      "internal_settling_50pct": {"pass_count": 12, "row_count": 21},
+      "internal_settling_preedge_1pct": {"pass_count": 12, "row_count": 21},
+      "cmpck_10pct_proxy": {
+        "decision_count": 24,
+        "nonpositive_signed_margin_count": 0,
+        "minimum_signed_margin_v": 0.04015832786902851
+      }
+    },
+    "MID127_128_127": {
+      "current_status": ["PASS_FUNCTIONAL_NOMINAL", "WARN_INTERNAL_SETTLING_MARGIN", "WARN_APERTURE_SENSITIVITY", "ROBUST_DECISION_MARGIN_NOT_YET_PROVEN"],
+      "legacy_composite_parser_status": "FAIL_G3_UNIFIED_PEX_MID127_128_127",
+      "numerical_complete": true,
+      "ideal_codes": [127, 128, 127],
+      "schematic_codes": [127, 128, 127],
+      "pex_codes": [127, 128, 127],
+      "comparator_sequences": ["NPPPPPPP", "PNNNNNNN", "NPPPPPPP"],
+      "protocol_and_code": "PASS",
+      "gen_acquisition": "PASS",
+      "tail_retention": "PASS",
+      "internal_settling_50pct": {"pass_count": 18, "row_count": 21},
+      "internal_settling_preedge_1pct_readonly_reanalysis": {"pass_count": 13, "row_count": 21},
+      "cmpck_10pct_proxy_nonpositive_rows": [
+        {"frame": 0, "decision_bit": 6, "expected_result": "P", "signed_margin_v": -0.017410135545853578},
+        {"frame": 2, "decision_bit": 6, "expected_result": "P", "signed_margin_v": -0.018333651434692122}
+      ],
+      "residue_zero_crossing_during_cmpck_rise": [
+        {"frame": 0, "decision_bit": 6, "cmpck_fraction_of_vdd": 0.17354360586934525},
+        {"frame": 2, "decision_bit": 6, "cmpck_fraction_of_vdd": 0.1773102547536402}
+      ],
+      "interpretation": "FINAL_COMPARATOR_RESULTS_AND_CODES_PASS_NOMINALLY; ACTUAL_APERTURE_MARGIN_REQUIRES_TAIL_CURRENT_ONSET_OBSERVABILITY"
+    }
+  },
+  "overall_interpretation": {
+    "dominant_formal_result": "FAIL_FORMAL_MIN2",
+    "supplemental_nominal_passes_do_not_override_formal_failure": true,
+    "internal_settling_gate_is_neither_necessary_nor_sufficient_for_nominal_functional_correctness_in_CURRENT_DATA": true,
+    "promotion_eligible": false,
+    "performance_signoff": false,
+    "tapeout_signoff": false
+  },
+  "evidence_paths": [
+    "../03_UNIFIED_MIN2/04_FORMAL_MIN2/FINAL/FORMAL_MIN2_CAMPAIGN_SUMMARY.json",
+    "../03_UNIFIED_MIN2/04_FORMAL_MIN2/G5_PEX_1300NS/parsed/LAST_LSB_SCHEMATIC_PEX_DIAGNOSTIC_R1.json",
+    "../03_UNIFIED_MIN2/04_FORMAL_MIN2/G5_PEX_1300NS/parsed/G5_PEX_TT_3P3_27C_MIN2_180NS_1300NS.preedge_1pct_settling_R1.json",
+    "../04_UNIFIED_MINMAX/03_UNIFIED_PEX/parsed/G3_PEX_TT_3P3_27C_MIN_MAX_MIN_180NS_1800NS_R1.analysis.json",
+    "../05_UNIFIED_MID/03_UNIFIED_PEX/parsed/G3_PEX_TT_3P3_27C_MID127_128_127_180NS_1800NS_R1.analysis.json"
+  ],
+  "claim_boundary": "CURRENT_UNIFIED_POSTFILL_FULL_RC_CC_TOP_PEX_WITH_FIXED_PASSIVE_INPUT_FIXTURE_AT_TT_3P3V_27C_FOR_LISTED_CONVERSION_POINTS_ONLY"
+}
