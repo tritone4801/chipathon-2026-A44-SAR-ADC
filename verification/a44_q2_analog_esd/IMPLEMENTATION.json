@@ -1,0 +1,86 @@
+{
+  "schema": "a44-layout-implementation-v1",
+  "selected_case": "Q2_LINK18_HIER_R1_ANALOG_ESD_R1",
+  "updated_date": "2026-09-03",
+  "top": "A44_A",
+  "gds": "gds/A44_A.gds",
+  "def": "layout/def/A44_A.def",
+  "lef": "layout/lef/A44_A.lef",
+  "native_top": "layout/mag/A44_A.mag",
+  "native_cell_count": 140,
+  "lvs_reference": "verification/a44_q2_analog_esd/spice/A44_A_lvs_reference.spice",
+  "top_bbox_um": [
+    0,
+    0,
+    1110,
+    1110
+  ],
+  "core_origin_um": [
+    55,
+    55
+  ],
+  "core_bbox_um": [
+    0,
+    0,
+    1000,
+    1000
+  ],
+  "external_logical_pins": 89,
+  "external_metal2_pin_rectangles": 127,
+  "source_implementations": {
+    "parent": "Q2_LINK18_HIER_R1 with analog secondary ESD",
+    "cdac": "R8_M6 cap x1/3; R13 MIM/VBOT breakout and Q2 parent VTOP M5 links",
+    "sar_logic": "TG3G_R7A2 physical implementation; SAR_LOGIC_ACTUAL_RTL_SS cell name retained"
+  },
+  "secondary_esd": {
+    "macro": "io_secondary_5p0",
+    "component_gds": "gds/components/A44_SECONDARY_ESD_M2.gds",
+    "instances": [
+      {
+        "pad": "VREFN",
+        "instance": "XESD_VREFN",
+        "protected_core_net": "XCORE/VREFN",
+        "macro": "io_secondary_5p0",
+        "positive_rail": "VDD",
+        "negative_rail": "GND"
+      },
+      {
+        "pad": "VINN",
+        "instance": "XESD_VINN",
+        "protected_core_net": "XCORE/VINN",
+        "macro": "io_secondary_5p0",
+        "positive_rail": "VDD",
+        "negative_rail": "GND"
+      },
+      {
+        "pad": "VINP",
+        "instance": "XESD_VINP",
+        "protected_core_net": "XCORE/VINP",
+        "macro": "io_secondary_5p0",
+        "positive_rail": "VDD",
+        "negative_rail": "GND"
+      },
+      {
+        "pad": "VREFP",
+        "instance": "XESD_VREFP",
+        "protected_core_net": "XCORE/VREFP",
+        "macro": "io_secondary_5p0",
+        "positive_rail": "VDD",
+        "negative_rail": "GND"
+      }
+    ],
+    "series_poly_resistors": 4,
+    "added_diodes": 32,
+    "resistor_width_um": 40,
+    "resistor_length_um": 10,
+    "diode_area_each_um2": 100,
+    "diode_perimeter_each_um": 40
+  },
+  "native_gds_caches": [
+    "layout/native_sources/A44_A_Q2_BEFORE_ESD.gds",
+    "gds/components/A44_SECONDARY_ESD_M2.gds"
+  ],
+  "change_record": "layout/CHANGELOG.md",
+  "current_binding": "layout/CURRENT_LAYOUT.json",
+  "previous_repository_commit": "52275beb778f55634d91da56488f93de2e98b827"
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "a44-public-module-naming-v1",
+  "authority": {
+    "def": "layout/def/A44_A.def",
+    "design": "A44_A",
+    "official_pin_count": 89,
+    "conflict_rule": "DEF_AND_FROZEN_HIERARCHY_CONTRACT_WINS"
+  },
+  "public_name_rule": "A44_SAR_ADC_<FUNCTION>_<BBOX_W>X<BBOX_H>",
+  "exceptions": {
+    "project_top": "A44_A is retained exactly because DESIGN A44_A is defined by the official DEF.",
+    "core": "A44_SAR_ADC_CORE_1000 is retained because the DEF-bound public contract already carries the 1000 um size token.",
+    "decimal_encoding": "P denotes the decimal point in a physical dimension; 399P7 means 399.7 um."
+  },
+  "scope": {
+    "public_artifact_filenames_normalized": true,
+    "def_design_changed": false,
+    "def_ports_changed": false,
+    "def_connectivity_changed": false,
+    "gds_internal_cell_names_changed": false
+  }
+}

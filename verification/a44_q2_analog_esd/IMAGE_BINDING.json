@@ -1,0 +1,456 @@
+{
+  "schema": "a44-layout-image-binding-v1",
+  "selected_case": "Q2_LINK18_HIER_R1_ANALOG_ESD_R1",
+  "entries": [
+    {
+      "role": "PROJECT_TOP",
+      "cell": "A44_A",
+      "visible_bbox_um": [
+        0.0,
+        5.7,
+        1055.0,
+        1110.0
+      ],
+      "visible_size_um": [
+        1055.0,
+        1104.3
+      ],
+      "all_layer_bbox_um": [
+        0.0,
+        0.0,
+        1110.0,
+        1110.0
+      ],
+      "frame_uses_visible_physical_layers_only": true,
+      "image": "layout/images/q2_analog_esd_20260903/A44_A.png",
+      "canvas_px": [
+        1746,
+        1870
+      ],
+      "gds": "gds/A44_A.gds",
+      "hierarchy_preserved": true,
+      "included_layers": [
+        [
+          21,
+          0
+        ],
+        [
+          21,
+          10
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          30,
+          0
+        ],
+        [
+          31,
+          0
+        ],
+        [
+          33,
+          0
+        ],
+        [
+          34,
+          0
+        ],
+        [
+          34,
+          10
+        ],
+        [
+          35,
+          0
+        ],
+        [
+          36,
+          0
+        ],
+        [
+          36,
+          10
+        ],
+        [
+          38,
+          0
+        ],
+        [
+          42,
+          0
+        ],
+        [
+          42,
+          10
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          46,
+          0
+        ],
+        [
+          46,
+          10
+        ],
+        [
+          41,
+          0
+        ],
+        [
+          81,
+          0
+        ],
+        [
+          81,
+          10
+        ]
+      ],
+      "source_GDS": "gds/A44_A.gds"
+    },
+    {
+      "role": "CORE",
+      "cell": "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+      "visible_bbox_um": [
+        0.0,
+        0.0,
+        1000.0,
+        1000.0
+      ],
+      "visible_size_um": [
+        1000.0,
+        1000.0
+      ],
+      "all_layer_bbox_um": [
+        0.0,
+        0.0,
+        1000.0,
+        1000.0
+      ],
+      "frame_uses_visible_physical_layers_only": true,
+      "image": "layout/images/A44_SAR_ADC_CORE_1000.png",
+      "canvas_px": [
+        1820,
+        1870
+      ],
+      "gds": "gds/A44_SAR_ADC_CORE_1000.gds",
+      "hierarchy_preserved": true
+    },
+    {
+      "role": "CDAC_E",
+      "cell": "A44_CDAC_UNIT_E_R8_M6",
+      "visible_bbox_um": [
+        0.0,
+        0.0,
+        390.0,
+        399.7
+      ],
+      "visible_size_um": [
+        390.0,
+        399.7
+      ],
+      "all_layer_bbox_um": [
+        0.0,
+        0.0,
+        390.0,
+        399.7
+      ],
+      "frame_uses_visible_physical_layers_only": true,
+      "image": "layout/images/A44_SAR_ADC_CDAC_E_390X399P7.png",
+      "canvas_px": [
+        1780,
+        1870
+      ],
+      "gds": "gds/components/A44_SAR_ADC_CDAC_E_390X399P7.gds",
+      "hierarchy_preserved": true
+    },
+    {
+      "role": "CDAC_W",
+      "cell": "A44_CDAC_UNIT_W_R8_M6",
+      "visible_bbox_um": [
+        0.0,
+        0.0,
+        390.0,
+        399.7
+      ],
+      "visible_size_um": [
+        390.0,
+        399.7
+      ],
+      "all_layer_bbox_um": [
+        0.0,
+        0.0,
+        390.0,
+        399.7
+      ],
+      "frame_uses_visible_physical_layers_only": true,
+      "image": "layout/images/A44_SAR_ADC_CDAC_W_390X399P7.png",
+      "canvas_px": [
+        1780,
+        1870
+      ],
+      "gds": "gds/components/A44_SAR_ADC_CDAC_W_390X399P7.gds",
+      "hierarchy_preserved": true
+    },
+    {
+      "role": "COMPARATOR",
+      "cell": "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9",
+      "visible_bbox_um": [
+        8.0,
+        1.1,
+        160.0,
+        98.9
+      ],
+      "visible_size_um": [
+        152.0,
+        97.8
+      ],
+      "all_layer_bbox_um": [
+        0.0,
+        0.0,
+        168.0,
+        100.0
+      ],
+      "frame_uses_visible_physical_layers_only": true,
+      "image": "layout/images/A44_SAR_ADC_COMPARATOR_168X100.png",
+      "canvas_px": [
+        1820,
+        1282
+      ],
+      "gds": "gds/components/A44_SAR_ADC_COMPARATOR_168X100.gds",
+      "hierarchy_preserved": true
+    },
+    {
+      "role": "SAR_LOGIC",
+      "cell": "SAR_LOGIC_ACTUAL_RTL_SS",
+      "visible_bbox_um": [
+        0.0,
+        0.0,
+        240.0,
+        240.0
+      ],
+      "visible_size_um": [
+        240.0,
+        240.0
+      ],
+      "all_layer_bbox_um": [
+        0.0,
+        0.0,
+        240.0,
+        240.0
+      ],
+      "frame_uses_visible_physical_layers_only": true,
+      "image": "layout/images/A44_SAR_ADC_SAR_LOGIC_240X240.png",
+      "canvas_px": [
+        1820,
+        1870
+      ],
+      "gds": "gds/components/A44_SAR_ADC_SAR_LOGIC_240X240.gds",
+      "hierarchy_preserved": true
+    },
+    {
+      "role": "CLKS_BUFFER",
+      "cell": "A44_CLKS_BUFFER_R1",
+      "visible_bbox_um": [
+        0.0,
+        0.0,
+        120.0,
+        60.0
+      ],
+      "visible_size_um": [
+        120.0,
+        60.0
+      ],
+      "all_layer_bbox_um": [
+        0.0,
+        0.0,
+        120.0,
+        60.0
+      ],
+      "frame_uses_visible_physical_layers_only": true,
+      "image": "layout/images/A44_SAR_ADC_CLKS_BUFFER_120X60.png",
+      "canvas_px": [
+        1820,
+        1045
+      ],
+      "gds": "gds/components/A44_SAR_ADC_CLKS_BUFFER_120X60.gds",
+      "hierarchy_preserved": true
+    },
+    {
+      "role": "SECONDARY_ESD",
+      "cell": "io_secondary_5p0",
+      "visible_bbox_um": [
+        -41.685,
+        0.0,
+        37.81,
+        75.65
+      ],
+      "visible_size_um": [
+        79.495,
+        75.65
+      ],
+      "all_layer_bbox_um": [
+        -41.685,
+        0.0,
+        37.81,
+        75.65
+      ],
+      "frame_uses_visible_physical_layers_only": true,
+      "included_layers": [
+        [
+          21,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          30,
+          0
+        ],
+        [
+          31,
+          0
+        ],
+        [
+          33,
+          0
+        ],
+        [
+          34,
+          0
+        ],
+        [
+          35,
+          0
+        ],
+        [
+          36,
+          0
+        ],
+        [
+          36,
+          10
+        ]
+      ],
+      "image": "layout/images/q2_analog_esd_20260903/io_secondary_5p0.png",
+      "canvas_px": [
+        1820,
+        1790
+      ],
+      "source_GDS": "gds/A44_A.gds"
+    },
+    {
+      "role": "NORTH_PAD_ESD_ROUTES",
+      "cell": "A44_ESD_NORTH_ROUTE_VIEW",
+      "visible_bbox_um": [
+        35.0,
+        1010.0,
+        715.0,
+        1110.0
+      ],
+      "visible_size_um": [
+        680.0,
+        100.0
+      ],
+      "all_layer_bbox_um": [
+        35.0,
+        1010.0,
+        715.0,
+        1110.0
+      ],
+      "frame_uses_visible_physical_layers_only": true,
+      "included_layers": [
+        [
+          21,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          30,
+          0
+        ],
+        [
+          31,
+          0
+        ],
+        [
+          33,
+          0
+        ],
+        [
+          34,
+          0
+        ],
+        [
+          35,
+          0
+        ],
+        [
+          36,
+          0
+        ],
+        [
+          36,
+          10
+        ],
+        [
+          38,
+          0
+        ],
+        [
+          42,
+          0
+        ],
+        [
+          42,
+          10
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          46,
+          0
+        ],
+        [
+          41,
+          0
+        ],
+        [
+          81,
+          0
+        ],
+        [
+          81,
+          10
+        ]
+      ],
+      "image": "layout/images/q2_analog_esd_20260903/A44_ANALOG_ESD_ROUTES.png",
+      "canvas_px": [
+        1820,
+        463
+      ],
+      "display_crop_only": true,
+      "source_cell": "A44_A",
+      "crop_bbox_um": [
+        35,
+        1010,
+        715,
+        1110
+      ],
+      "source_GDS": "gds/A44_A.gds"
+    }
+  ],
+  "catalog": "layout/images/q2_prefill_20260903/A44_SIX_COMPONENT_CATALOG.png"
+}

@@ -1,43 +1,9 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1787958005
+timestamp 1788312749
 << checkpaint >>
-rect 3514 213000 11046 216122
-rect 3514 211166 213000 213000
-rect 9000 204236 213000 211166
-rect 3514 199280 213000 204236
-rect 9000 196120 213000 199280
-rect 3514 191164 213000 196120
-rect 9000 184236 213000 191164
-rect 3514 179280 213000 184236
-rect 9000 176120 213000 179280
-rect 3514 171164 213000 176120
-rect 9000 164236 213000 171164
-rect 3514 159280 213000 164236
-rect 9000 156120 213000 159280
-rect 3514 151164 213000 156120
-rect 9000 144236 213000 151164
-rect 3514 139280 213000 144236
-rect 9000 136120 213000 139280
-rect 3514 131164 213000 136120
-rect 9000 124236 213000 131164
-rect 3514 119280 213000 124236
-rect 9000 116120 213000 119280
-rect 3514 111164 213000 116120
-rect 9000 104236 213000 111164
-rect 3514 99280 213000 104236
-rect 9000 96122 213000 99280
-rect 3514 91166 213000 96122
-rect 9000 84236 213000 91166
-rect 3514 79280 213000 84236
-rect 9000 76122 213000 79280
-rect 3514 71166 213000 76122
-rect 9000 64236 213000 71166
-rect 3514 59280 213000 64236
-rect 9000 55548 213000 59280
-rect 3514 50592 213000 55548
-rect 9000 9000 213000 50592
+rect -2000 -860 213000 224000
 << metal1 >>
 rect 5600 214076 10200 214096
 rect 5600 214062 10240 214076
@@ -713,28 +679,6 @@ rect 96974 3174 97026 3226
 rect 86974 2174 87026 2226
 rect 76974 1174 77026 1226
 << metal2 >>
-rect 9068 221800 17932 222000
-rect 29068 221800 37932 222000
-rect 49068 221800 57932 222000
-rect 69068 221800 77932 222000
-rect 17598 220028 17758 221800
-rect 17598 220000 17650 220028
-rect 17634 219972 17650 220000
-rect 17706 220000 17758 220028
-rect 17706 219972 17722 220000
-rect 17634 219956 17722 219972
-rect 37598 216080 37758 221800
-rect 57598 217680 57758 221800
-rect 77598 220828 77758 221800
-rect 77598 220800 77650 220828
-rect 77634 220772 77650 220800
-rect 77706 220800 77758 220828
-rect 77706 220772 77722 220800
-rect 77634 220756 77722 220772
-rect 57598 217600 114000 217680
-rect 57678 217520 114080 217600
-rect 37598 216000 108000 216080
-rect 37678 215920 108080 216000
 rect 6286 215328 6374 215334
 rect 0 215318 6374 215328
 rect 0 215262 6302 215318
@@ -803,18 +747,6 @@ rect 9356 213280 9444 213296
 rect 9356 213224 9372 213280
 rect 9428 213224 9444 213280
 rect 9356 213208 9444 213224
-rect 107920 210828 108080 215920
-rect 107920 210800 107972 210828
-rect 107956 210772 107972 210800
-rect 108028 210800 108080 210828
-rect 113920 210828 114080 217520
-rect 113920 210800 113972 210828
-rect 108028 210772 108044 210800
-rect 107956 210756 108044 210772
-rect 113956 210772 113972 210800
-rect 114028 210800 114080 210828
-rect 114028 210772 114044 210800
-rect 113956 210756 114044 210772
 rect 6286 202266 6374 202272
 rect 0 202256 6374 202266
 rect 0 202200 6302 202256
@@ -1710,8 +1642,6 @@ rect 756 1160 77040 1172
 rect 756 1156 77000 1160
 rect 800 1140 77000 1156
 << via2 >>
-rect 17650 219972 17706 220028
-rect 77650 220772 77706 220828
 rect 6302 215262 6358 215318
 rect 7198 214741 7254 214797
 rect 8094 214512 8150 214568
@@ -1758,8 +1688,6 @@ rect 9372 213226 9374 213278
 rect 9374 213226 9426 213278
 rect 9426 213226 9428 213278
 rect 9372 213224 9428 213226
-rect 107972 210772 108028 210828
-rect 113972 210772 114028 210828
 rect 6302 202200 6358 202256
 rect 4972 202054 5028 202110
 rect 10172 202176 10228 202178
@@ -2292,14 +2220,6 @@ rect 1972 3172 2028 3228
 rect 1372 2172 1428 2228
 rect 772 1172 828 1228
 << metal3 >>
-rect 77628 220828 77728 220850
-rect 77628 220772 77650 220828
-rect 77706 220772 77728 220828
-rect 77628 220750 77728 220772
-rect 17628 220028 17728 220050
-rect 17628 219972 17650 220028
-rect 17706 219972 17728 220028
-rect 17628 219950 17728 219972
 rect 6286 215318 6374 215334
 rect 6286 215290 6302 215318
 rect 6270 215262 6302 215290
@@ -2374,14 +2294,6 @@ rect 9350 213280 9450 213302
 rect 9350 213224 9372 213280
 rect 9428 213224 9450 213280
 rect 9350 213202 9450 213224
-rect 107956 210828 108044 210844
-rect 107956 210772 107972 210828
-rect 108028 210772 108044 210828
-rect 107956 210756 108044 210772
-rect 113956 210828 114044 210844
-rect 113956 210772 113972 210828
-rect 114028 210772 114044 210828
-rect 113956 210756 114044 210772
 rect 6286 202256 6374 202272
 rect 6286 202228 6302 202256
 rect 6270 202200 6302 202228
@@ -3225,8 +3137,6 @@ rect 828 1200 860 1228
 rect 828 1172 844 1200
 rect 756 1156 844 1172
 << via3 >>
-rect 77650 220772 77706 220828
-rect 17650 219972 17706 220028
 rect 10172 214008 10228 214064
 rect 9372 213224 9428 213280
 rect 10172 202122 10228 202178
@@ -3265,14 +3175,6 @@ rect 10172 27972 10228 28028
 rect 9372 13972 9428 14028
 rect 30972 11172 31028 11228
 << metal4 >>
-rect 77628 220828 77728 220850
-rect 77628 220772 77650 220828
-rect 77706 220772 77728 220828
-rect 77628 220750 77728 220772
-rect 17628 220028 17728 220050
-rect 17628 219972 17650 220028
-rect 17706 219972 17728 220028
-rect 17628 219950 17728 219972
 rect 9280 213280 9520 218000
 rect 9280 213224 9372 213280
 rect 9428 213224 9520 213280
@@ -3398,29 +3300,9 @@ rect 9428 8400 9520 8428
 rect 9428 8372 9450 8400
 rect 9350 8350 9450 8372
 << via4 >>
-rect 77650 220772 77706 220828
-rect 17650 219972 17706 220028
 rect 10172 9372 10228 9428
 rect 9372 8372 9428 8428
 << metal5 >>
-rect 77628 220828 77728 220850
-rect 77628 220800 77650 220828
-rect 77598 220772 77650 220800
-rect 77706 220800 77728 220828
-rect 77706 220772 77758 220800
-rect 17628 220028 17728 220050
-rect 17628 220000 17650 220028
-rect 17598 219972 17650 220000
-rect 17706 220000 17728 220028
-rect 17706 219972 17758 220000
-rect 17598 214480 17758 219972
-rect 77598 218480 77758 220772
-rect 77598 218400 123000 218480
-rect 77678 218320 123080 218400
-rect 17598 214400 99000 214480
-rect 17678 214320 99080 214400
-rect 98920 210800 99080 214320
-rect 122920 210800 123080 218320
 rect 164760 9640 165240 11400
 rect 10200 9450 165240 9640
 rect 10150 9428 165240 9450
@@ -3438,732 +3320,978 @@ rect 9428 8372 175000 8400
 rect 9350 8350 175000 8372
 rect 9400 8160 175000 8350
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XCLKS_CTRL_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 52678
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XCLKS_CTRL_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 52678
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XCLKS_CTRL_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 52678
 box -86 -86 310 870
 use A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR  XCORE
-timestamp 1616305306
+timestamp 1616914425
 transform 1 0 11000 0 1 11000
 box 0 0 200000 200000
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT0_HIGH_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 213252
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT0_HIGH_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8736 0 1 213252
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT0_HIGH_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 213252
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT0_LOW_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 201366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT0_LOW_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 201366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT0_LOW_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 201366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT1_HIGH_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 193250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT1_HIGH_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8736 0 1 193250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT1_HIGH_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 193250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT1_LOW_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 181366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT1_LOW_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 181366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT1_LOW_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 181366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT2_HIGH_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 173250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT2_HIGH_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8736 0 1 173250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT2_HIGH_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 173250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT2_LOW_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 161366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT2_LOW_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 161366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT2_LOW_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 161366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT3_HIGH_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 153250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT3_HIGH_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8736 0 1 153250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT3_HIGH_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 153250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT3_LOW_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 141366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT3_LOW_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 141366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT3_LOW_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 141366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT4_HIGH_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 133250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT4_HIGH_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8736 0 1 133250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT4_HIGH_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 133250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT4_LOW_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 121366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT4_LOW_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 121366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT4_LOW_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 121366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT5_HIGH_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 113250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT5_HIGH_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8736 0 1 113250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT5_HIGH_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 113250
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT5_LOW_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 101366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT5_LOW_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 101366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT5_LOW_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 101366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT6_HIGH_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 93252
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT6_HIGH_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8736 0 1 93252
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT6_HIGH_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 93252
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT6_LOW_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 81366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT6_LOW_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 81366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT6_LOW_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 81366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT7_HIGH_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 73252
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT7_HIGH_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8736 0 1 73252
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT7_HIGH_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 73252
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT7_LOW_END_L
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5600 0 1 61366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__endcap  XDOUT7_LOW_END_R
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 61366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__filltie  XDOUT7_LOW_TAP
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 5824 0 1 61366
 box -86 -86 310 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_CLKS_PD
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 52678
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_CLKS_PU
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 52678
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_CS_0
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 213252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_CS_1
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 193250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_CS_2
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 173250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_CS_3
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 153250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_CS_4
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 133250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_CS_5
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 113250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_CS_6
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 93252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_CS_7
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 73252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_IE_0
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 213252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_IE_1
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 193250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_IE_2
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 173250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_IE_3
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 153250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_IE_4
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 133250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_IE_5
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 113250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_IE_6
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 93252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_IE_7
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 73252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tieh  XTIE_DOUT_OE_0
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 201366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tieh  XTIE_DOUT_OE_1
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 181366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tieh  XTIE_DOUT_OE_2
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 161366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tieh  XTIE_DOUT_OE_3
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 141366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tieh  XTIE_DOUT_OE_4
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 121366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tieh  XTIE_DOUT_OE_5
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 101366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tieh  XTIE_DOUT_OE_6
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 81366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tieh  XTIE_DOUT_OE_7
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6496 0 1 61366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PD_0
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7392 0 1 213252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PD_1
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7392 0 1 193250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PD_2
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7392 0 1 173250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PD_3
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7392 0 1 153250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PD_4
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7392 0 1 133250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PD_5
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7392 0 1 113250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PD_6
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7392 0 1 93252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PD_7
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7392 0 1 73252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV0_0
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7840 0 1 213252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV0_1
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7840 0 1 193250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV0_2
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7840 0 1 173250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV0_3
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7840 0 1 153250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV0_4
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7840 0 1 133250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV0_5
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7840 0 1 113250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV0_6
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7840 0 1 93252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV0_7
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 7840 0 1 73252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV1_0
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8288 0 1 213252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV1_1
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8288 0 1 193250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV1_2
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8288 0 1 173250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV1_3
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8288 0 1 153250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV1_4
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8288 0 1 133250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV1_5
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8288 0 1 113250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV1_6
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8288 0 1 93252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PDRV1_7
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 8288 0 1 73252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PU_0
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 213252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PU_1
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 193250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PU_2
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 173250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PU_3
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 153250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PU_4
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 133250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PU_5
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 113250
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PU_6
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 93252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_PU_7
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6944 0 1 73252
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_SL_0
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 201366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_SL_1
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 181366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_SL_2
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 161366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_SL_3
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 141366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_SL_4
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 121366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_SL_5
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 101366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_SL_6
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 81366
 box -86 -86 534 870
 use gf180mcu_fd_sc_mcu7t5v0__tiel  XTIE_DOUT_SL_7
-timestamp 1486834041
+timestamp 1616914425
 transform 1 0 6048 0 1 61366
 box -86 -86 534 870
+<< metal2 >>
+rect 17424 221500 17932 222000
+rect 16288 221500 16796 222000
+rect 15152 221500 15660 222000
+rect 14016 221500 14524 222000
+rect 12476 221500 12984 222000
+rect 11340 221500 11848 222000
+rect 10204 221500 10712 222000
+rect 9068 221500 9576 222000
+rect 9068 221300 17932 221700
+rect 13340 221340 13660 221660
+rect 74486 218645 74806 218965
+rect 74531 203879 74851 204199
+rect 81700 208694 82140 209134
+rect 67184 208598 67624 209038
+rect 37424 221500 37932 222000
+rect 36288 221500 36796 222000
+rect 35152 221500 35660 222000
+rect 34016 221500 34524 222000
+rect 32476 221500 32984 222000
+rect 31340 221500 31848 222000
+rect 30204 221500 30712 222000
+rect 29068 221500 29576 222000
+rect 29068 221300 37932 221700
+rect 33340 221340 33660 221660
+rect 92486 218645 92806 218965
+rect 92531 203879 92851 204199
+rect 99700 208694 100140 209134
+rect 85184 208598 85624 209038
+rect 57424 221500 57932 222000
+rect 56288 221500 56796 222000
+rect 55152 221500 55660 222000
+rect 54016 221500 54524 222000
+rect 52476 221500 52984 222000
+rect 51340 221500 51848 222000
+rect 50204 221500 50712 222000
+rect 49068 221500 49576 222000
+rect 49068 221300 57932 221700
+rect 53340 221340 53660 221660
+rect 110486 218645 110806 218965
+rect 110531 203879 110851 204199
+rect 117700 208694 118140 209134
+rect 103184 208598 103624 209038
+rect 77424 221500 77932 222000
+rect 76288 221500 76796 222000
+rect 75152 221500 75660 222000
+rect 74016 221500 74524 222000
+rect 72476 221500 72984 222000
+rect 71340 221500 71848 222000
+rect 70204 221500 70712 222000
+rect 69068 221500 69576 222000
+rect 69068 221300 77932 221700
+rect 73340 221340 73660 221660
+rect 128486 218645 128806 218965
+rect 128491 203839 133800 204239
+rect 133440 203879 133760 204199
+rect 135700 208694 136140 209134
+rect 121184 208598 121624 209038
+<< via2 >>
+rect 13380 221380 13620 221620
+rect 74526 218685 74766 218925
+rect 74571 203919 74811 204159
+rect 81740 208734 82100 209094
+rect 67224 208638 67584 208998
+rect 33380 221380 33620 221620
+rect 92526 218685 92766 218925
+rect 92571 203919 92811 204159
+rect 99740 208734 100100 209094
+rect 85224 208638 85584 208998
+rect 53380 221380 53620 221620
+rect 110526 218685 110766 218925
+rect 110571 203919 110811 204159
+rect 117740 208734 118100 209094
+rect 103224 208638 103584 208998
+rect 73380 221380 73620 221620
+rect 128526 218685 128766 218925
+rect 133480 203919 133720 204159
+rect 135740 208734 136100 209094
+rect 121224 208638 121584 208998
+<< metal3 >>
+rect 13340 221340 13660 221660
+rect 13300 220800 13700 221700
+rect 13340 220840 13660 221160
+rect 74486 220840 74806 221160
+rect 74446 218605 74846 221200
+rect 74486 218645 74806 218965
+rect 74531 203879 74851 204199
+rect 74491 203839 74891 211800
+rect 74531 211440 74851 211760
+rect 81700 208694 82140 209134
+rect 81520 208514 82320 216400
+rect 81700 215780 82140 216220
+rect 67184 208598 67624 209038
+rect 67004 208418 67804 217800
+rect 67184 217180 67624 217620
+rect 33340 221340 33660 221660
+rect 33300 220100 33700 221700
+rect 33340 220140 33660 220460
+rect 92486 220140 92806 220460
+rect 92446 218605 92846 220500
+rect 92486 218645 92806 218965
+rect 92531 203879 92851 204199
+rect 92491 203839 92891 212600
+rect 92531 212240 92851 212560
+rect 107840 212240 108160 212560
+rect 107800 210600 108200 212600
+rect 99700 208694 100140 209134
+rect 99520 208514 100320 216400
+rect 99700 215780 100140 216220
+rect 85184 208598 85624 209038
+rect 85004 208418 85804 217800
+rect 85184 217180 85624 217620
+rect 53340 221340 53660 221660
+rect 53300 219400 53700 221700
+rect 53340 219440 53660 219760
+rect 110486 219440 110806 219760
+rect 110446 218605 110846 219800
+rect 110486 218645 110806 218965
+rect 110531 203879 110851 204199
+rect 110491 203839 110891 213400
+rect 110531 213040 110851 213360
+rect 113840 213040 114160 213360
+rect 113800 210600 114200 213400
+rect 117700 208694 118140 209134
+rect 117520 208514 118320 216400
+rect 117700 215780 118140 216220
+rect 103184 208598 103624 209038
+rect 103004 208418 103804 217800
+rect 103184 217180 103624 217620
+rect 73340 221340 73660 221660
+rect 73300 218700 73700 221700
+rect 73340 218740 73660 219060
+rect 128486 218740 128806 219060
+rect 128446 218605 128846 219100
+rect 128486 218645 128806 218965
+rect 133440 203879 133760 204199
+rect 133400 203839 133800 214200
+rect 133440 213840 133760 214160
+rect 135700 208694 136140 209134
+rect 135520 208514 136320 216400
+rect 135700 215780 136140 216220
+rect 121184 208598 121624 209038
+rect 121004 208418 121804 217800
+rect 121184 217180 121624 217620
+rect 55780 215780 56220 216220
+rect 55600 210300 56400 216400
+rect 55780 210480 56220 210920
+rect 65780 217180 66220 217620
+rect 65600 210300 66400 217800
+rect 65780 210480 66220 210920
+<< via3 >>
+rect 13380 220880 13620 221120
+rect 74526 220880 74766 221120
+rect 74571 211480 74811 211720
+rect 81740 215820 82100 216180
+rect 67224 217220 67584 217580
+rect 33380 220180 33620 220420
+rect 92526 220180 92766 220420
+rect 92571 212280 92811 212520
+rect 107880 212280 108120 212520
+rect 99740 215820 100100 216180
+rect 85224 217220 85584 217580
+rect 53380 219480 53620 219720
+rect 110526 219480 110766 219720
+rect 110571 213080 110811 213320
+rect 113880 213080 114120 213320
+rect 117740 215820 118100 216180
+rect 103224 217220 103584 217580
+rect 73380 218780 73620 219020
+rect 128526 218780 128766 219020
+rect 133480 213880 133720 214120
+rect 135740 215820 136100 216180
+rect 121224 217220 121584 217580
+rect 55820 215820 56180 216180
+rect 55820 210520 56180 210880
+rect 65820 217220 66180 217580
+rect 65820 210520 66180 210880
+<< metal4 >>
+rect 13340 220840 13660 221160
+rect 13300 220800 74846 221200
+rect 74486 220840 74806 221160
+rect 74531 211440 74851 211760
+rect 74491 211400 99200 211800
+rect 98800 210600 99200 211800
+rect 98840 210640 99160 210960
+rect 81700 215780 82140 216220
+rect 67184 217180 67624 217620
+rect 33340 220140 33660 220460
+rect 33300 220100 92846 220500
+rect 92486 220140 92806 220460
+rect 92531 212240 92851 212560
+rect 92491 212200 108200 212600
+rect 107840 212240 108160 212560
+rect 99700 215780 100140 216220
+rect 85184 217180 85624 217620
+rect 53340 219440 53660 219760
+rect 53300 219400 110846 219800
+rect 110486 219440 110806 219760
+rect 110531 213040 110851 213360
+rect 110491 213000 114200 213400
+rect 113840 213040 114160 213360
+rect 117700 215780 118140 216220
+rect 103184 217180 103624 217620
+rect 73340 218740 73660 219060
+rect 73300 218700 128846 219100
+rect 128486 218740 128806 219060
+rect 133440 213840 133760 214160
+rect 122800 213800 133800 214200
+rect 122800 210600 123200 214200
+rect 122840 210640 123160 210960
+rect 135700 215780 136140 216220
+rect 121184 217180 121624 217620
+rect 55600 215600 136320 216400
+rect 55780 215780 56220 216220
+rect 55780 210480 56220 210920
+rect 55780 210480 56220 210920
+rect 65600 217000 121804 217800
+rect 65780 217180 66220 217620
+rect 65780 210480 66220 210920
+rect 65780 210480 66220 210920
+<< via4 >>
+rect 98880 210680 99120 210920
+rect 122880 210680 123120 210920
+rect 55820 210520 56180 210880
+rect 65820 210520 66180 210880
+<< metal5 >>
+rect 98840 210640 99160 210960
+rect 122840 210640 123160 210960
+rect 55780 210480 56220 210920
+rect 65780 210480 66220 210920
+use io_secondary_5p0 XESD_VREFN
+timestamp 0
+transform 1 0 75400 0 -1 219000
+box -8400 0 7600 15200
+use io_secondary_5p0 XESD_VINN
+timestamp 0
+transform 1 0 93400 0 -1 219000
+box -8400 0 7600 15200
+use io_secondary_5p0 XESD_VINP
+timestamp 0
+transform 1 0 111400 0 -1 219000
+box -8400 0 7600 15200
+use io_secondary_5p0 XESD_VREFP
+timestamp 0
+transform 1 0 129400 0 -1 219000
+box -8400 0 7600 15200
 << labels >>
-flabel metal2 s 0 1272 200 3172 0 FreeSans 896 90 0 0 GND
-port 0 nsew ground bidirectional
-flabel metal2 s 0 3752 200 5802 0 FreeSans 896 90 0 0 GND
-port 0 nsew ground bidirectional
-flabel metal2 s 0 6122 200 8172 0 FreeSans 896 90 0 0 GND
-port 0 nsew ground bidirectional
-flabel metal2 s 0 8828 200 10878 0 FreeSans 896 90 0 0 GND
-port 0 nsew ground bidirectional
-flabel metal2 s 0 11198 200 13248 0 FreeSans 896 90 0 0 GND
-port 0 nsew ground bidirectional
-flabel metal2 s 0 13828 200 15728 0 FreeSans 896 90 0 0 GND
-port 0 nsew ground bidirectional
-flabel metal2 s 0 21272 200 23172 0 FreeSans 896 90 0 0 VDD
-port 1 nsew power bidirectional
-flabel metal2 s 0 23752 200 25802 0 FreeSans 896 90 0 0 VDD
-port 1 nsew power bidirectional
-flabel metal2 s 0 26122 200 28172 0 FreeSans 896 90 0 0 VDD
-port 1 nsew power bidirectional
-flabel metal2 s 0 28828 200 30878 0 FreeSans 896 90 0 0 VDD
-port 1 nsew power bidirectional
-flabel metal2 s 0 31198 200 33248 0 FreeSans 896 90 0 0 VDD
-port 1 nsew power bidirectional
-flabel metal2 s 0 33828 200 35728 0 FreeSans 896 90 0 0 VDD
-port 1 nsew power bidirectional
-flabel metal2 s 0 54731 200 54807 0 FreeSans 448 0 0 0 CLKS_PU
-port 2 nsew signal output
-flabel metal2 s 0 53858 200 53934 0 FreeSans 448 0 0 0 CLKS_PD
-port 3 nsew signal output
-flabel metal2 s 0 41752 200 41828 0 FreeSans 448 0 0 0 CLKS
-port 4 nsew signal input
-flabel metal2 s 0 75252 200 75328 0 FreeSans 448 0 0 0 DOUT_CS[7]
-port 5 nsew signal output
-flabel metal2 s 0 62190 200 62266 0 FreeSans 448 0 0 0 DOUT_SL[7]
-port 6 nsew signal output
-flabel metal2 s 0 73647 200 73723 0 FreeSans 448 0 0 0 DOUT_IE[7]
-port 7 nsew signal output
-flabel metal2 s 0 61898 200 61974 0 FreeSans 448 0 0 0 DOUT_OE[7]
-port 8 nsew signal output
-flabel metal2 s 0 74731 200 74807 0 FreeSans 448 0 0 0 DOUT_PU[7]
-port 9 nsew signal output
-flabel metal2 s 0 73858 200 73934 0 FreeSans 448 0 0 0 DOUT_PD[7]
-port 10 nsew signal output
-flabel metal2 s 0 62044 200 62120 0 FreeSans 448 0 0 0 DOUT_OUT[7]
-port 11 nsew signal output
-flabel metal2 s 0 74502 200 74578 0 FreeSans 448 0 0 0 DOUT_PDRV0[7]
-port 12 nsew signal output
-flabel metal2 s 0 74360 200 74436 0 FreeSans 448 0 0 0 DOUT_PDRV1[7]
-port 13 nsew signal output
-flabel metal2 s 0 61752 200 61828 0 FreeSans 448 0 0 0 DOUT_IN[7]
-port 14 nsew signal input
-flabel metal2 s 0 95252 200 95328 0 FreeSans 448 0 0 0 DOUT_CS[6]
-port 15 nsew signal output
-flabel metal2 s 0 82190 200 82266 0 FreeSans 448 0 0 0 DOUT_SL[6]
-port 16 nsew signal output
-flabel metal2 s 0 93647 200 93723 0 FreeSans 448 0 0 0 DOUT_IE[6]
-port 17 nsew signal output
-flabel metal2 s 0 81898 200 81974 0 FreeSans 448 0 0 0 DOUT_OE[6]
-port 18 nsew signal output
-flabel metal2 s 0 94731 200 94807 0 FreeSans 448 0 0 0 DOUT_PU[6]
-port 19 nsew signal output
-flabel metal2 s 0 93858 200 93934 0 FreeSans 448 0 0 0 DOUT_PD[6]
-port 20 nsew signal output
-flabel metal2 s 0 82044 200 82120 0 FreeSans 448 0 0 0 DOUT_OUT[6]
-port 21 nsew signal output
-flabel metal2 s 0 94502 200 94578 0 FreeSans 448 0 0 0 DOUT_PDRV0[6]
-port 22 nsew signal output
-flabel metal2 s 0 94360 200 94436 0 FreeSans 448 0 0 0 DOUT_PDRV1[6]
-port 23 nsew signal output
-flabel metal2 s 0 81752 200 81828 0 FreeSans 448 0 0 0 DOUT_IN[6]
-port 24 nsew signal input
-flabel metal2 s 0 115252 200 115328 0 FreeSans 448 0 0 0 DOUT_CS[5]
-port 25 nsew signal output
-flabel metal2 s 0 102190 200 102266 0 FreeSans 448 0 0 0 DOUT_SL[5]
-port 26 nsew signal output
-flabel metal2 s 0 113647 200 113723 0 FreeSans 448 0 0 0 DOUT_IE[5]
-port 27 nsew signal output
-flabel metal2 s 0 101898 200 101974 0 FreeSans 448 0 0 0 DOUT_OE[5]
-port 28 nsew signal output
-flabel metal2 s 0 114731 200 114807 0 FreeSans 448 0 0 0 DOUT_PU[5]
-port 29 nsew signal output
-flabel metal2 s 0 113858 200 113934 0 FreeSans 448 0 0 0 DOUT_PD[5]
-port 30 nsew signal output
-flabel metal2 s 0 102044 200 102120 0 FreeSans 448 0 0 0 DOUT_OUT[5]
-port 31 nsew signal output
-flabel metal2 s 0 114502 200 114578 0 FreeSans 448 0 0 0 DOUT_PDRV0[5]
-port 32 nsew signal output
-flabel metal2 s 0 114360 200 114436 0 FreeSans 448 0 0 0 DOUT_PDRV1[5]
-port 33 nsew signal output
-flabel metal2 s 0 101752 200 101828 0 FreeSans 448 0 0 0 DOUT_IN[5]
-port 34 nsew signal input
-flabel metal2 s 0 135252 200 135328 0 FreeSans 448 0 0 0 DOUT_CS[4]
-port 35 nsew signal output
-flabel metal2 s 0 122190 200 122266 0 FreeSans 448 0 0 0 DOUT_SL[4]
-port 36 nsew signal output
-flabel metal2 s 0 133647 200 133723 0 FreeSans 448 0 0 0 DOUT_IE[4]
-port 37 nsew signal output
-flabel metal2 s 0 121898 200 121974 0 FreeSans 448 0 0 0 DOUT_OE[4]
-port 38 nsew signal output
-flabel metal2 s 0 134731 200 134807 0 FreeSans 448 0 0 0 DOUT_PU[4]
-port 39 nsew signal output
-flabel metal2 s 0 133858 200 133934 0 FreeSans 448 0 0 0 DOUT_PD[4]
-port 40 nsew signal output
-flabel metal2 s 0 122044 200 122120 0 FreeSans 448 0 0 0 DOUT_OUT[4]
-port 41 nsew signal output
-flabel metal2 s 0 134502 200 134578 0 FreeSans 448 0 0 0 DOUT_PDRV0[4]
-port 42 nsew signal output
-flabel metal2 s 0 134360 200 134436 0 FreeSans 448 0 0 0 DOUT_PDRV1[4]
-port 43 nsew signal output
-flabel metal2 s 0 121752 200 121828 0 FreeSans 448 0 0 0 DOUT_IN[4]
-port 44 nsew signal input
-flabel metal2 s 0 155252 200 155328 0 FreeSans 448 0 0 0 DOUT_CS[3]
+flabel metal2 s 57424 221800 57932 222000 0 FreeSans 1120 0 0 0 VINP
+port 87 nsew signal bidirectional
+flabel metal2 s 56288 221800 56796 222000 0 FreeSans 1120 0 0 0 VINP
+port 87 nsew signal bidirectional
+flabel metal2 s 55152 221800 55660 222000 0 FreeSans 1120 0 0 0 VINP
+port 87 nsew signal bidirectional
+flabel metal2 s 54016 221800 54524 222000 0 FreeSans 1120 0 0 0 VINP
+port 87 nsew signal bidirectional
+flabel metal2 s 52476 221800 52984 222000 0 FreeSans 1120 0 0 0 VINP
+port 87 nsew signal bidirectional
+flabel metal2 s 51340 221800 51848 222000 0 FreeSans 1120 0 0 0 VINP
+port 87 nsew signal bidirectional
+flabel metal2 s 50204 221800 50712 222000 0 FreeSans 1120 0 0 0 VINP
+port 87 nsew signal bidirectional
+flabel metal2 s 49068 221800 49576 222000 0 FreeSans 1120 0 0 0 VINP
+port 87 nsew signal bidirectional
+flabel metal2 s 77424 221800 77932 222000 0 FreeSans 1120 0 0 0 VREFP
+port 88 nsew signal bidirectional
+flabel metal2 s 76288 221800 76796 222000 0 FreeSans 1120 0 0 0 VREFP
+port 88 nsew signal bidirectional
+flabel metal2 s 75152 221800 75660 222000 0 FreeSans 1120 0 0 0 VREFP
+port 88 nsew signal bidirectional
+flabel metal2 s 74016 221800 74524 222000 0 FreeSans 1120 0 0 0 VREFP
+port 88 nsew signal bidirectional
+flabel metal2 s 72476 221800 72984 222000 0 FreeSans 1120 0 0 0 VREFP
+port 88 nsew signal bidirectional
+flabel metal2 s 71340 221800 71848 222000 0 FreeSans 1120 0 0 0 VREFP
+port 88 nsew signal bidirectional
+flabel metal2 s 70204 221800 70712 222000 0 FreeSans 1120 0 0 0 VREFP
+port 88 nsew signal bidirectional
+flabel metal2 s 69068 221800 69576 222000 0 FreeSans 1120 0 0 0 VREFP
+port 88 nsew signal bidirectional
+flabel metal2 s 0 155252 200 155328 0 FreeSans 560 0 0 0 DOUT_CS[3]
 port 45 nsew signal output
-flabel metal2 s 0 142190 200 142266 0 FreeSans 448 0 0 0 DOUT_SL[3]
+flabel metal2 s 0 142190 200 142266 0 FreeSans 560 0 0 0 DOUT_SL[3]
 port 46 nsew signal output
-flabel metal2 s 0 153647 200 153723 0 FreeSans 448 0 0 0 DOUT_IE[3]
+flabel metal2 s 0 153647 200 153723 0 FreeSans 560 0 0 0 DOUT_IE[3]
 port 47 nsew signal output
-flabel metal2 s 0 141898 200 141974 0 FreeSans 448 0 0 0 DOUT_OE[3]
+flabel metal2 s 0 141898 200 141974 0 FreeSans 560 0 0 0 DOUT_OE[3]
 port 48 nsew signal output
-flabel metal2 s 0 154731 200 154807 0 FreeSans 448 0 0 0 DOUT_PU[3]
+flabel metal2 s 0 154731 200 154807 0 FreeSans 560 0 0 0 DOUT_PU[3]
 port 49 nsew signal output
-flabel metal2 s 0 153858 200 153934 0 FreeSans 448 0 0 0 DOUT_PD[3]
+flabel metal2 s 0 153858 200 153934 0 FreeSans 560 0 0 0 DOUT_PD[3]
 port 50 nsew signal output
-flabel metal2 s 0 142044 200 142120 0 FreeSans 448 0 0 0 DOUT_OUT[3]
+flabel metal2 s 0 142044 200 142120 0 FreeSans 560 0 0 0 DOUT_OUT[3]
 port 51 nsew signal output
-flabel metal2 s 0 154502 200 154578 0 FreeSans 448 0 0 0 DOUT_PDRV0[3]
+flabel metal2 s 0 154502 200 154578 0 FreeSans 560 0 0 0 DOUT_PDRV0[3]
 port 52 nsew signal output
-flabel metal2 s 0 154360 200 154436 0 FreeSans 448 0 0 0 DOUT_PDRV1[3]
+flabel metal2 s 0 154360 200 154436 0 FreeSans 560 0 0 0 DOUT_PDRV1[3]
 port 53 nsew signal output
-flabel metal2 s 0 141752 200 141828 0 FreeSans 448 0 0 0 DOUT_IN[3]
+flabel metal2 s 0 141752 200 141828 0 FreeSans 560 0 0 0 DOUT_IN[3]
 port 54 nsew signal input
-flabel metal2 s 0 175252 200 175328 0 FreeSans 448 0 0 0 DOUT_CS[2]
+flabel metal2 s 0 175252 200 175328 0 FreeSans 560 0 0 0 DOUT_CS[2]
 port 55 nsew signal output
-flabel metal2 s 0 162190 200 162266 0 FreeSans 448 0 0 0 DOUT_SL[2]
+flabel metal2 s 0 162190 200 162266 0 FreeSans 560 0 0 0 DOUT_SL[2]
 port 56 nsew signal output
-flabel metal2 s 0 173647 200 173723 0 FreeSans 448 0 0 0 DOUT_IE[2]
+flabel metal2 s 0 173647 200 173723 0 FreeSans 560 0 0 0 DOUT_IE[2]
 port 57 nsew signal output
-flabel metal2 s 0 161898 200 161974 0 FreeSans 448 0 0 0 DOUT_OE[2]
+flabel metal2 s 0 161898 200 161974 0 FreeSans 560 0 0 0 DOUT_OE[2]
 port 58 nsew signal output
-flabel metal2 s 0 174731 200 174807 0 FreeSans 448 0 0 0 DOUT_PU[2]
+flabel metal2 s 0 174731 200 174807 0 FreeSans 560 0 0 0 DOUT_PU[2]
 port 59 nsew signal output
-flabel metal2 s 0 173858 200 173934 0 FreeSans 448 0 0 0 DOUT_PD[2]
+flabel metal2 s 0 173858 200 173934 0 FreeSans 560 0 0 0 DOUT_PD[2]
 port 60 nsew signal output
-flabel metal2 s 0 162044 200 162120 0 FreeSans 448 0 0 0 DOUT_OUT[2]
+flabel metal2 s 0 162044 200 162120 0 FreeSans 560 0 0 0 DOUT_OUT[2]
 port 61 nsew signal output
-flabel metal2 s 0 174502 200 174578 0 FreeSans 448 0 0 0 DOUT_PDRV0[2]
+flabel metal2 s 0 174502 200 174578 0 FreeSans 560 0 0 0 DOUT_PDRV0[2]
 port 62 nsew signal output
-flabel metal2 s 0 174360 200 174436 0 FreeSans 448 0 0 0 DOUT_PDRV1[2]
+flabel metal2 s 0 174360 200 174436 0 FreeSans 560 0 0 0 DOUT_PDRV1[2]
 port 63 nsew signal output
-flabel metal2 s 0 161752 200 161828 0 FreeSans 448 0 0 0 DOUT_IN[2]
+flabel metal2 s 0 161752 200 161828 0 FreeSans 560 0 0 0 DOUT_IN[2]
 port 64 nsew signal input
-flabel metal2 s 0 195252 200 195328 0 FreeSans 448 0 0 0 DOUT_CS[1]
+flabel metal2 s 0 195252 200 195328 0 FreeSans 560 0 0 0 DOUT_CS[1]
 port 65 nsew signal output
-flabel metal2 s 0 182190 200 182266 0 FreeSans 448 0 0 0 DOUT_SL[1]
+flabel metal2 s 0 182190 200 182266 0 FreeSans 560 0 0 0 DOUT_SL[1]
 port 66 nsew signal output
-flabel metal2 s 0 193647 200 193723 0 FreeSans 448 0 0 0 DOUT_IE[1]
+flabel metal2 s 0 193647 200 193723 0 FreeSans 560 0 0 0 DOUT_IE[1]
 port 67 nsew signal output
-flabel metal2 s 0 181898 200 181974 0 FreeSans 448 0 0 0 DOUT_OE[1]
+flabel metal2 s 0 181898 200 181974 0 FreeSans 560 0 0 0 DOUT_OE[1]
 port 68 nsew signal output
-flabel metal2 s 0 194731 200 194807 0 FreeSans 448 0 0 0 DOUT_PU[1]
+flabel metal2 s 0 194731 200 194807 0 FreeSans 560 0 0 0 DOUT_PU[1]
 port 69 nsew signal output
-flabel metal2 s 0 193858 200 193934 0 FreeSans 448 0 0 0 DOUT_PD[1]
+flabel metal2 s 0 193858 200 193934 0 FreeSans 560 0 0 0 DOUT_PD[1]
 port 70 nsew signal output
-flabel metal2 s 0 182044 200 182120 0 FreeSans 448 0 0 0 DOUT_OUT[1]
+flabel metal2 s 0 182044 200 182120 0 FreeSans 560 0 0 0 DOUT_OUT[1]
 port 71 nsew signal output
-flabel metal2 s 0 194502 200 194578 0 FreeSans 448 0 0 0 DOUT_PDRV0[1]
+flabel metal2 s 0 194502 200 194578 0 FreeSans 560 0 0 0 DOUT_PDRV0[1]
 port 72 nsew signal output
-flabel metal2 s 0 194360 200 194436 0 FreeSans 448 0 0 0 DOUT_PDRV1[1]
+flabel metal2 s 0 194360 200 194436 0 FreeSans 560 0 0 0 DOUT_PDRV1[1]
 port 73 nsew signal output
-flabel metal2 s 0 181752 200 181828 0 FreeSans 448 0 0 0 DOUT_IN[1]
+flabel metal2 s 0 181752 200 181828 0 FreeSans 560 0 0 0 DOUT_IN[1]
 port 74 nsew signal input
-flabel metal2 s 0 215252 200 215328 0 FreeSans 448 0 0 0 DOUT_CS[0]
+flabel metal2 s 0 215252 200 215328 0 FreeSans 560 0 0 0 DOUT_CS[0]
 port 75 nsew signal output
-flabel metal2 s 0 202190 200 202266 0 FreeSans 448 0 0 0 DOUT_SL[0]
+flabel metal2 s 0 202190 200 202266 0 FreeSans 560 0 0 0 DOUT_SL[0]
 port 76 nsew signal output
-flabel metal2 s 0 213647 200 213723 0 FreeSans 448 0 0 0 DOUT_IE[0]
+flabel metal2 s 0 213647 200 213723 0 FreeSans 560 0 0 0 DOUT_IE[0]
 port 77 nsew signal output
-flabel metal2 s 0 201898 200 201974 0 FreeSans 448 0 0 0 DOUT_OE[0]
+flabel metal2 s 0 201898 200 201974 0 FreeSans 560 0 0 0 DOUT_OE[0]
 port 78 nsew signal output
-flabel metal2 s 0 214731 200 214807 0 FreeSans 448 0 0 0 DOUT_PU[0]
+flabel metal2 s 0 214731 200 214807 0 FreeSans 560 0 0 0 DOUT_PU[0]
 port 79 nsew signal output
-flabel metal2 s 0 213858 200 213934 0 FreeSans 448 0 0 0 DOUT_PD[0]
+flabel metal2 s 0 213858 200 213934 0 FreeSans 560 0 0 0 DOUT_PD[0]
 port 80 nsew signal output
-flabel metal2 s 0 202044 200 202120 0 FreeSans 448 0 0 0 DOUT_OUT[0]
+flabel metal2 s 0 202044 200 202120 0 FreeSans 560 0 0 0 DOUT_OUT[0]
 port 81 nsew signal output
-flabel metal2 s 0 214502 200 214578 0 FreeSans 448 0 0 0 DOUT_PDRV0[0]
+flabel metal2 s 0 214502 200 214578 0 FreeSans 560 0 0 0 DOUT_PDRV0[0]
 port 82 nsew signal output
-flabel metal2 s 0 214360 200 214436 0 FreeSans 448 0 0 0 DOUT_PDRV1[0]
+flabel metal2 s 0 214360 200 214436 0 FreeSans 560 0 0 0 DOUT_PDRV1[0]
 port 83 nsew signal output
-flabel metal2 s 0 201752 200 201828 0 FreeSans 448 0 0 0 DOUT_IN[0]
+flabel metal2 s 0 201752 200 201828 0 FreeSans 560 0 0 0 DOUT_IN[0]
 port 84 nsew signal input
-flabel metal2 s 9068 221800 9576 222000 0 FreeSans 896 0 0 0 VREFN
+flabel metal2 s 17424 221800 17932 222000 0 FreeSans 1120 0 0 0 VREFN
 port 85 nsew signal bidirectional
-flabel metal2 s 10204 221800 10712 222000 0 FreeSans 896 0 0 0 VREFN
+flabel metal2 s 16288 221800 16796 222000 0 FreeSans 1120 0 0 0 VREFN
 port 85 nsew signal bidirectional
-flabel metal2 s 11340 221800 11848 222000 0 FreeSans 896 0 0 0 VREFN
+flabel metal2 s 15152 221800 15660 222000 0 FreeSans 1120 0 0 0 VREFN
 port 85 nsew signal bidirectional
-flabel metal2 s 12476 221800 12984 222000 0 FreeSans 896 0 0 0 VREFN
+flabel metal2 s 14016 221800 14524 222000 0 FreeSans 1120 0 0 0 VREFN
 port 85 nsew signal bidirectional
-flabel metal2 s 14016 221800 14524 222000 0 FreeSans 896 0 0 0 VREFN
+flabel metal2 s 12476 221800 12984 222000 0 FreeSans 1120 0 0 0 VREFN
 port 85 nsew signal bidirectional
-flabel metal2 s 15152 221800 15660 222000 0 FreeSans 896 0 0 0 VREFN
+flabel metal2 s 11340 221800 11848 222000 0 FreeSans 1120 0 0 0 VREFN
 port 85 nsew signal bidirectional
-flabel metal2 s 16288 221800 16796 222000 0 FreeSans 896 0 0 0 VREFN
+flabel metal2 s 10204 221800 10712 222000 0 FreeSans 1120 0 0 0 VREFN
 port 85 nsew signal bidirectional
-flabel metal2 s 17424 221800 17932 222000 0 FreeSans 896 0 0 0 VREFN
+flabel metal2 s 9068 221800 9576 222000 0 FreeSans 1120 0 0 0 VREFN
 port 85 nsew signal bidirectional
-flabel metal2 s 29068 221800 29576 222000 0 FreeSans 896 0 0 0 VINN
+flabel metal2 s 37424 221800 37932 222000 0 FreeSans 1120 0 0 0 VINN
 port 86 nsew signal bidirectional
-flabel metal2 s 30204 221800 30712 222000 0 FreeSans 896 0 0 0 VINN
+flabel metal2 s 36288 221800 36796 222000 0 FreeSans 1120 0 0 0 VINN
 port 86 nsew signal bidirectional
-flabel metal2 s 31340 221800 31848 222000 0 FreeSans 896 0 0 0 VINN
+flabel metal2 s 35152 221800 35660 222000 0 FreeSans 1120 0 0 0 VINN
 port 86 nsew signal bidirectional
-flabel metal2 s 32476 221800 32984 222000 0 FreeSans 896 0 0 0 VINN
+flabel metal2 s 34016 221800 34524 222000 0 FreeSans 1120 0 0 0 VINN
 port 86 nsew signal bidirectional
-flabel metal2 s 34016 221800 34524 222000 0 FreeSans 896 0 0 0 VINN
+flabel metal2 s 32476 221800 32984 222000 0 FreeSans 1120 0 0 0 VINN
 port 86 nsew signal bidirectional
-flabel metal2 s 35152 221800 35660 222000 0 FreeSans 896 0 0 0 VINN
+flabel metal2 s 31340 221800 31848 222000 0 FreeSans 1120 0 0 0 VINN
 port 86 nsew signal bidirectional
-flabel metal2 s 36288 221800 36796 222000 0 FreeSans 896 0 0 0 VINN
+flabel metal2 s 30204 221800 30712 222000 0 FreeSans 1120 0 0 0 VINN
 port 86 nsew signal bidirectional
-flabel metal2 s 37424 221800 37932 222000 0 FreeSans 896 0 0 0 VINN
+flabel metal2 s 29068 221800 29576 222000 0 FreeSans 1120 0 0 0 VINN
 port 86 nsew signal bidirectional
-flabel metal2 s 49068 221800 49576 222000 0 FreeSans 896 0 0 0 VINP
-port 87 nsew signal bidirectional
-flabel metal2 s 50204 221800 50712 222000 0 FreeSans 896 0 0 0 VINP
-port 87 nsew signal bidirectional
-flabel metal2 s 51340 221800 51848 222000 0 FreeSans 896 0 0 0 VINP
-port 87 nsew signal bidirectional
-flabel metal2 s 52476 221800 52984 222000 0 FreeSans 896 0 0 0 VINP
-port 87 nsew signal bidirectional
-flabel metal2 s 54016 221800 54524 222000 0 FreeSans 896 0 0 0 VINP
-port 87 nsew signal bidirectional
-flabel metal2 s 55152 221800 55660 222000 0 FreeSans 896 0 0 0 VINP
-port 87 nsew signal bidirectional
-flabel metal2 s 56288 221800 56796 222000 0 FreeSans 896 0 0 0 VINP
-port 87 nsew signal bidirectional
-flabel metal2 s 57424 221800 57932 222000 0 FreeSans 896 0 0 0 VINP
-port 87 nsew signal bidirectional
-flabel metal2 s 69068 221800 69576 222000 0 FreeSans 896 0 0 0 VREFP
-port 88 nsew signal bidirectional
-flabel metal2 s 70204 221800 70712 222000 0 FreeSans 896 0 0 0 VREFP
-port 88 nsew signal bidirectional
-flabel metal2 s 71340 221800 71848 222000 0 FreeSans 896 0 0 0 VREFP
-port 88 nsew signal bidirectional
-flabel metal2 s 72476 221800 72984 222000 0 FreeSans 896 0 0 0 VREFP
-port 88 nsew signal bidirectional
-flabel metal2 s 74016 221800 74524 222000 0 FreeSans 896 0 0 0 VREFP
-port 88 nsew signal bidirectional
-flabel metal2 s 75152 221800 75660 222000 0 FreeSans 896 0 0 0 VREFP
-port 88 nsew signal bidirectional
-flabel metal2 s 76288 221800 76796 222000 0 FreeSans 896 0 0 0 VREFP
-port 88 nsew signal bidirectional
-flabel metal2 s 77424 221800 77932 222000 0 FreeSans 896 0 0 0 VREFP
-port 88 nsew signal bidirectional
+flabel metal2 s 0 115252 200 115328 0 FreeSans 560 0 0 0 DOUT_CS[5]
+port 25 nsew signal output
+flabel metal2 s 0 113647 200 113723 0 FreeSans 560 0 0 0 DOUT_IE[5]
+port 27 nsew signal output
+flabel metal2 s 0 114731 200 114807 0 FreeSans 560 0 0 0 DOUT_PU[5]
+port 29 nsew signal output
+flabel metal2 s 0 113858 200 113934 0 FreeSans 560 0 0 0 DOUT_PD[5]
+port 30 nsew signal output
+flabel metal2 s 0 114502 200 114578 0 FreeSans 560 0 0 0 DOUT_PDRV0[5]
+port 32 nsew signal output
+flabel metal2 s 0 114360 200 114436 0 FreeSans 560 0 0 0 DOUT_PDRV1[5]
+port 33 nsew signal output
+flabel metal2 s 0 135252 200 135328 0 FreeSans 560 0 0 0 DOUT_CS[4]
+port 35 nsew signal output
+flabel metal2 s 0 122190 200 122266 0 FreeSans 560 0 0 0 DOUT_SL[4]
+port 36 nsew signal output
+flabel metal2 s 0 133647 200 133723 0 FreeSans 560 0 0 0 DOUT_IE[4]
+port 37 nsew signal output
+flabel metal2 s 0 121898 200 121974 0 FreeSans 560 0 0 0 DOUT_OE[4]
+port 38 nsew signal output
+flabel metal2 s 0 134731 200 134807 0 FreeSans 560 0 0 0 DOUT_PU[4]
+port 39 nsew signal output
+flabel metal2 s 0 133858 200 133934 0 FreeSans 560 0 0 0 DOUT_PD[4]
+port 40 nsew signal output
+flabel metal2 s 0 122044 200 122120 0 FreeSans 560 0 0 0 DOUT_OUT[4]
+port 41 nsew signal output
+flabel metal2 s 0 134502 200 134578 0 FreeSans 560 0 0 0 DOUT_PDRV0[4]
+port 42 nsew signal output
+flabel metal2 s 0 134360 200 134436 0 FreeSans 560 0 0 0 DOUT_PDRV1[4]
+port 43 nsew signal output
+flabel metal2 s 0 121752 200 121828 0 FreeSans 560 0 0 0 DOUT_IN[4]
+port 44 nsew signal input
+flabel metal2 s 0 23752 200 25802 0 FreeSans 1120 90 0 0 VDD
+port 1 nsew power bidirectional
+flabel metal2 s 0 21272 200 23172 0 FreeSans 1120 90 0 0 VDD
+port 1 nsew power bidirectional
+flabel metal2 s 0 54731 200 54807 0 FreeSans 560 0 0 0 CLKS_PU
+port 2 nsew signal output
+flabel metal2 s 0 53858 200 53934 0 FreeSans 560 0 0 0 CLKS_PD
+port 3 nsew signal output
+flabel metal2 s 0 41752 200 41828 0 FreeSans 560 0 0 0 CLKS
+port 4 nsew signal input
+flabel metal2 s 0 75252 200 75328 0 FreeSans 560 0 0 0 DOUT_CS[7]
+port 5 nsew signal output
+flabel metal2 s 0 62190 200 62266 0 FreeSans 560 0 0 0 DOUT_SL[7]
+port 6 nsew signal output
+flabel metal2 s 0 73647 200 73723 0 FreeSans 560 0 0 0 DOUT_IE[7]
+port 7 nsew signal output
+flabel metal2 s 0 61898 200 61974 0 FreeSans 560 0 0 0 DOUT_OE[7]
+port 8 nsew signal output
+flabel metal2 s 0 74731 200 74807 0 FreeSans 560 0 0 0 DOUT_PU[7]
+port 9 nsew signal output
+flabel metal2 s 0 73858 200 73934 0 FreeSans 560 0 0 0 DOUT_PD[7]
+port 10 nsew signal output
+flabel metal2 s 0 62044 200 62120 0 FreeSans 560 0 0 0 DOUT_OUT[7]
+port 11 nsew signal output
+flabel metal2 s 0 74502 200 74578 0 FreeSans 560 0 0 0 DOUT_PDRV0[7]
+port 12 nsew signal output
+flabel metal2 s 0 74360 200 74436 0 FreeSans 560 0 0 0 DOUT_PDRV1[7]
+port 13 nsew signal output
+flabel metal2 s 0 61752 200 61828 0 FreeSans 560 0 0 0 DOUT_IN[7]
+port 14 nsew signal input
+flabel metal2 s 0 95252 200 95328 0 FreeSans 560 0 0 0 DOUT_CS[6]
+port 15 nsew signal output
+flabel metal2 s 0 82190 200 82266 0 FreeSans 560 0 0 0 DOUT_SL[6]
+port 16 nsew signal output
+flabel metal2 s 0 93647 200 93723 0 FreeSans 560 0 0 0 DOUT_IE[6]
+port 17 nsew signal output
+flabel metal2 s 0 81898 200 81974 0 FreeSans 560 0 0 0 DOUT_OE[6]
+port 18 nsew signal output
+flabel metal2 s 0 94731 200 94807 0 FreeSans 560 0 0 0 DOUT_PU[6]
+port 19 nsew signal output
+flabel metal2 s 0 93858 200 93934 0 FreeSans 560 0 0 0 DOUT_PD[6]
+port 20 nsew signal output
+flabel metal2 s 0 82044 200 82120 0 FreeSans 560 0 0 0 DOUT_OUT[6]
+port 21 nsew signal output
+flabel metal2 s 0 94502 200 94578 0 FreeSans 560 0 0 0 DOUT_PDRV0[6]
+port 22 nsew signal output
+flabel metal2 s 0 94360 200 94436 0 FreeSans 560 0 0 0 DOUT_PDRV1[6]
+port 23 nsew signal output
+flabel metal2 s 0 81752 200 81828 0 FreeSans 560 0 0 0 DOUT_IN[6]
+port 24 nsew signal input
+flabel metal2 s 0 13828 200 15728 0 FreeSans 1120 90 0 0 GND
+port 0 nsew ground bidirectional
+flabel metal2 s 0 102190 200 102266 0 FreeSans 560 0 0 0 DOUT_SL[5]
+port 26 nsew signal output
+flabel metal2 s 0 11198 200 13248 0 FreeSans 1120 90 0 0 GND
+port 0 nsew ground bidirectional
+flabel metal2 s 0 101898 200 101974 0 FreeSans 560 0 0 0 DOUT_OE[5]
+port 28 nsew signal output
+flabel metal2 s 0 8828 200 10878 0 FreeSans 1120 90 0 0 GND
+port 0 nsew ground bidirectional
+flabel metal2 s 0 6122 200 8172 0 FreeSans 1120 90 0 0 GND
+port 0 nsew ground bidirectional
+flabel metal2 s 0 102044 200 102120 0 FreeSans 560 0 0 0 DOUT_OUT[5]
+port 31 nsew signal output
+flabel metal2 s 0 3752 200 5802 0 FreeSans 1120 90 0 0 GND
+port 0 nsew ground bidirectional
+flabel metal2 s 0 1272 200 3172 0 FreeSans 1120 90 0 0 GND
+port 0 nsew ground bidirectional
+flabel metal2 s 0 101752 200 101828 0 FreeSans 560 0 0 0 DOUT_IN[5]
+port 34 nsew signal input
+flabel metal2 s 0 33828 200 35728 0 FreeSans 1120 90 0 0 VDD
+port 1 nsew power bidirectional
+flabel metal2 s 0 31198 200 33248 0 FreeSans 1120 90 0 0 VDD
+port 1 nsew power bidirectional
+flabel metal2 s 0 28828 200 30878 0 FreeSans 1120 90 0 0 VDD
+port 1 nsew power bidirectional
+flabel metal2 s 0 26122 200 28172 0 FreeSans 1120 90 0 0 VDD
+port 1 nsew power bidirectional
 << properties >>
 string FIXED_BBOX 0 0 222000 222000
 << end >>

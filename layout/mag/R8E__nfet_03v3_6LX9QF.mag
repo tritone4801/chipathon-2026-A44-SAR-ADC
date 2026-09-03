@@ -1,0 +1,47 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1616914425
+<< checkpaint >>
+rect -2172 -2714 2172 2714
+<< pwell >>
+rect -172 -714 172 714
+<< nmos >>
+rect -28 -646 28 598
+<< ndiff >>
+rect -135 537 -28 598
+rect -148 516 -28 537
+rect -148 -564 -135 516
+rect -89 -564 -28 516
+rect -148 -585 -28 -564
+rect -135 -646 -28 -585
+rect 28 537 135 598
+rect 28 516 148 537
+rect 28 -564 89 516
+rect 135 -564 148 516
+rect 28 -585 148 -564
+rect 28 -646 135 -585
+<< ndiffc >>
+rect -135 -564 -89 516
+rect 89 -564 135 516
+<< polysilicon >>
+rect -36 677 36 690
+rect -36 631 -23 677
+rect 23 631 36 677
+rect -36 618 36 631
+rect -28 598 28 618
+rect -28 -690 28 -646
+<< polycontact >>
+rect -23 631 23 677
+<< metal1 >>
+rect -34 631 -23 677
+rect 23 631 34 677
+rect -135 516 -89 535
+rect -135 -583 -89 -564
+rect 89 516 135 535
+rect 89 -583 135 -564
+<< properties >>
+string GDS_END 143838
+string GDS_FILE ../native_sources/A44_A_Q2_BEFORE_ESD.gds
+string GDS_START 141338
+<< end >>

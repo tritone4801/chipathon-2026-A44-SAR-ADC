@@ -1,0 +1,48 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1616914425
+<< checkpaint >>
+rect -2000 -2000 6593 5102
+<< metal4 >>
+rect 20 760 100 850
+<< metal5 >>
+rect 120 750 4473 860
+rect 120 2241 4473 2351
+rect 755 805 855 2296
+rect 160 160 310 310
+use R8W__A44_MIM_6P855_R0  XMIM_R0_C0_R0
+timestamp 1616914425
+transform 1 0 120 0 1 120
+box -120 -120 1491 1491
+use R8W__A44_MIM_6P855_R0  XMIM_R0_C1_R0
+timestamp 1616914425
+transform 1 0 1611 0 1 120
+box -120 -120 1491 1491
+use R8W__A44_MIM_6P855_R0  XMIM_R0_C2_R0
+timestamp 1616914425
+transform 1 0 3102 0 1 120
+box -120 -120 1491 1491
+use R8W__A44_MIM_6P855_R0  XMIM_R1_C0_R0
+timestamp 1616914425
+transform 1 0 120 0 1 1611
+box -120 -120 1491 1491
+use R8W__A44_MIM_6P855_R0  XMIM_R1_C1_R0
+timestamp 1616914425
+transform 1 0 1611 0 1 1611
+box -120 -120 1491 1491
+use R8W__A44_MIM_6P855_R0  XMIM_R1_C2_R0
+timestamp 1616914425
+transform 1 0 3102 0 1 1611
+box -120 -120 1491 1491
+<< labels >>
+rlabel metal4 s 36 782 84 830 4 V_BOT
+port 1 nsew
+rlabel metal5 s 186 186 234 234 4 VTOP
+port 3 nsew
+<< properties >>
+string GDS_END 212546
+string GDS_FILE ../native_sources/A44_A_Q2_BEFORE_ESD.gds
+string GDS_START 211592
+string FIXED_BBOX 0 0 4713 3200
+<< end >>

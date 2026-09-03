@@ -1,0 +1,15 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1616914425
+<< checkpaint >>
+rect -1086 -2116 1086 2116
+use R8E__nfet_03v3_ATEY9D  M9_R0
+timestamp 1616914425
+transform 1 0 0 0 1 0
+box -86 -1116 86 1116
+<< properties >>
+string GDS_END 54690
+string GDS_FILE ../native_sources/A44_A_Q2_BEFORE_ESD.gds
+string GDS_START 54624
+<< end >>

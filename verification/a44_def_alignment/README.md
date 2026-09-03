@@ -1,11 +1,14 @@
 # A44_A official-DEF alignment
 
-This package verifies the repository layout against the official `A44_A` DEF
-and records the current repository bindings.
+This package records the layout selection at commit `52275be`. Its reports
+and scripts refer to that earlier selection, now preserved in
+[the layout history](../a44_layout_history/pre_q2_20260903).
+The current implementation is selected by
+[CURRENT_LAYOUT.json](../../layout/CURRENT_LAYOUT.json).
 
-## Current layout contract
+## Recorded layout contract
 
-| Item | Current value |
+| Item | Recorded value |
 | --- | --- |
 | Design and GDS top | `A44_A` |
 | Origin | `(0, 0) um` |

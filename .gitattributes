@@ -4,3 +4,10 @@ verification/a44_cdac_cap_x1div3/01_CURRENT_CIRCUIT_FILES/input_model/*.spice wh
 verification/a44_cdac_cap_x1div3/02_LAYOUT/final_integration/drc_lvs/** whitespace=-blank-at-eol,-blank-at-eof
 verification/a44_cdac_cap_x1div3/03_RESULTS/conversion/README_CN.md whitespace=-blank-at-eof
 *.xlsx binary
+
+# Preserve generated layout and circuit source files verbatim.
+layout/def/*.def -text whitespace=-blank-at-eol,-blank-at-eof
+layout/lef/*.lef -text whitespace=-blank-at-eol,-blank-at-eof
+layout/mag/*.mag -text whitespace=-blank-at-eol,-blank-at-eof
+verification/a44_layout_history/** -text whitespace=-blank-at-eol,-blank-at-eof
+verification/a44_q2_analog_esd/spice/*.spice -text whitespace=-blank-at-eof

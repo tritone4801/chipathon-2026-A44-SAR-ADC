@@ -35,6 +35,8 @@ pins:
   - name: "DOUT[0]"
     io_type: bidirectional
 
+  # Secondary ESD is physically implemented in A44_A for all four analog pins.
+  # See verification/a44_q2_analog_esd; no automatic insertion is assumed.
   - name: "VREFN"
     io_type: analog
     secondary_esd: true

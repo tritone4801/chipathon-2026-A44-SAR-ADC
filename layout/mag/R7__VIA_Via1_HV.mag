@@ -1,0 +1,21 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1616914425
+<< checkpaint >>
+rect -1019 -1019 1019 1019
+<< metal1 >>
+rect -19 -13 -13 13
+rect 13 -13 19 13
+<< via1 >>
+rect -13 -13 13 13
+<< metal2 >>
+rect -14 13 14 19
+rect -14 -13 -13 13
+rect 13 -13 14 13
+rect -14 -19 14 -13
+<< properties >>
+string GDS_END 1153544
+string GDS_FILE ../native_sources/A44_A_Q2_BEFORE_ESD.gds
+string GDS_START 1153348
+<< end >>

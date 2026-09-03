@@ -1,0 +1,6 @@
+set a44_esd_pdk_root /foss/pdks
+if {[info exists env(PDK_ROOT)]} {set a44_esd_pdk_root $env(PDK_ROOT)}
+source $a44_esd_pdk_root/gf180mcuD/libs.tech/xschem/xschemrc
+append XSCHEM_LIBRARY_PATH :$a44_esd_pdk_root/gf180mcuD/libs.tech/xschem
+append XSCHEM_LIBRARY_PATH :[file dirname [info script]]
+set top_is_subckt 1

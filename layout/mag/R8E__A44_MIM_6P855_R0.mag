@@ -1,0 +1,28 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1616914425
+<< checkpaint >>
+rect -2120 -2120 3491 3491
+<< mimcap >>
+rect 0 1246 1371 1371
+rect 0 126 126 1246
+rect 1246 126 1371 1246
+rect 0 0 1371 126
+<< mimcapcontact >>
+rect 126 126 1246 1246
+<< metal4 >>
+rect -120 1371 1491 1491
+rect -120 0 0 1371
+rect 1371 0 1491 1371
+rect -120 -120 1491 0
+<< metal5 >>
+rect 100 1246 1271 1271
+rect 100 126 126 1246
+rect 1246 126 1271 1246
+rect 100 100 1271 126
+<< properties >>
+string GDS_END 54562
+string GDS_FILE ../native_sources/A44_A_Q2_BEFORE_ESD.gds
+string GDS_START 50142
+<< end >>

@@ -11,7 +11,8 @@ the `A44_A` project-slot top:
 - [A44_A GDSII layout](gds/A44_A.gds)
 - [A44_A integrated DEF](layout/def/A44_A.def)
 - [A44_A LEF abstract](layout/lef/A44_A.lef)
-- [DEF-to-GDS pin-alignment records](verification/a44_def_alignment)
+- [Current layout implementation](verification/a44_q2_analog_esd)
+- [Layout update record](layout/CHANGELOG.md)
 - [Component layouts](gds/components)
 - [Machine-readable current layout bindings](layout/CURRENT_LAYOUT.json)
 - [Layout catalog and integration views](layout/README.md)
@@ -21,22 +22,36 @@ the `A44_A` project-slot top:
 85 logical pins are on the west edge and the four analog pins are on the north
 edge. The 1000-by-1000 um SAR ADC CORE remains a child at `(55, 55)`.
 
-## Current engineering baseline
+## Current Q2 layout implementation
 
-The current working engineering baseline is the
+The selected layout is `Q2_LINK18_HIER_R1_ANALOG_ESD_R1`. It includes the Q2
+CDAC MIM/VBOT and parent VTOP routing, the TG3G_R7A2 SAR-logic implementation,
+and four physical `io_secondary_5p0` cells on VREFN, VINN, VINP and VREFP.
+Each analog pad connects to the CORE through a poly resistor; the protected
+side connects to four diodes per supply rail.
+
+The TOP, CORE and component GDS files, routed DEF, LEF, native Magic hierarchy,
+layout images and full TOP LVS reference are bound by
+[CURRENT_LAYOUT.json](layout/CURRENT_LAYOUT.json).
+[Implementation details](verification/a44_q2_analog_esd) and the
+[change record](layout/CHANGELOG.md) describe the updated files and connections.
+
+## Preserved earlier cap x1/3 baseline
+
+The earlier cap x1/3 engineering baseline is preserved in the
 [cap x1/3 CDAC package](verification/a44_cdac_cap_x1div3). It changes the C1
 and dummy MIM multiplier from 18 to 6 while retaining the multiplier-18
 reference switches, multiplier-8 sampling TG, comparator,
 drivers, and SAR logic inherited from the W5P29 circuit.
 
-The current baseline publishes:
+The earlier package contains:
 
 - [the cap x1/3 circuit delta](verification/a44_cdac_cap_x1div3/01_CURRENT_CIRCUIT_FILES);
 - [R8/M6 east and west CDAC layouts](verification/a44_cdac_cap_x1div3/02_LAYOUT);
-- [the current final-integration GDS and DRC/LVS records](verification/a44_cdac_cap_x1div3/02_LAYOUT/final_integration);
+- [the earlier final-integration GDS and DRC/LVS records](verification/a44_cdac_cap_x1div3/02_LAYOUT/final_integration);
 - [the official-DEF-aligned A44_A top and interface records](verification/a44_def_alignment);
 - [structured acquisition, offset, and conversion results](verification/a44_cdac_cap_x1div3/03_RESULTS); and
-- [the machine-readable current status](verification/a44_cdac_cap_x1div3/STATUS.json).
+- [the earlier package status](verification/a44_cdac_cap_x1div3/STATUS.json).
 
 The CDAC component layout has zero native and GDS-readback DRC
 errors on both sides and unique results for all 12 recorded LVS comparisons.

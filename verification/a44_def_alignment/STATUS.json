@@ -8,5 +8,9 @@
   "repository_gds": "gds/A44_A.gds",
   "repository_def": "layout/def/A44_A.def",
   "current_core_gds": "gds/A44_SAR_ADC_CORE_1000.gds",
-  "conversion_simulation_repeated": false
+  "conversion_simulation_repeated": false,
+  "recorded_repository_commit": "52275beb778f55634d91da56488f93de2e98b827",
+  "applies_to_current_layout": false,
+  "current_layout_binding": "layout/CURRENT_LAYOUT.json",
+  "recorded_files_root": "verification/a44_layout_history/pre_q2_20260903"
 }

@@ -1,0 +1,25 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@spiceprefix@name @pinlist @symname"
+lvs_format="@spiceprefix@name @pinlist @symname"
+template="name=XESD spiceprefix=X"}
+V {}
+S {}
+E {}
+B 4 -70 -70 70 70 {}
+B 5 -102.5 -2.5 -97.5 2.5 {name=PAD dir=inout}
+B 5 97.5 -2.5 102.5 2.5 {name=CORE dir=inout}
+B 5 -2.5 -102.5 2.5 -97.5 {name=VDD dir=inout}
+B 5 -2.5 97.5 2.5 102.5 {name=VSS dir=inout}
+L 4 -100 0 -70 0 {}
+L 4 70 0 100 0 {}
+L 4 0 -100 0 -70 {}
+L 4 0 70 0 100 {}
+T {PAD} -64 -17 0 0 0.2 0.2 {}
+T {CORE} 17 -17 0 0 0.2 0.2 {}
+T {VDD} -14 -65 0 0 0.2 0.2 {}
+T {VSS} -14 47 0 0 0.2 0.2 {}
+T {CDM ESD
+R + 8 diodes} -39 8 0 0 0.2 0.2 {}
+T {@name} -65 -90 0 0 0.25 0.25 {}

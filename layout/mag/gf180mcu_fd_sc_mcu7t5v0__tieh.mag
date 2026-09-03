@@ -1,0 +1,81 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1616914425
+<< checkpaint >>
+rect -2086 -2086 2534 2870
+<< nwell >>
+rect -86 352 534 870
+<< pwell >>
+rect -86 -86 534 352
+<< mvnmos >>
+rect 125 68 245 232
+<< mvpmos >>
+rect 125 472 225 716
+<< mvndiff >>
+rect 37 172 125 232
+rect 37 126 50 172
+rect 96 126 125 172
+rect 37 68 125 126
+rect 245 175 333 232
+rect 245 129 274 175
+rect 320 129 333 175
+rect 245 68 333 129
+<< mvpdiff >>
+rect 37 649 125 716
+rect 37 509 50 649
+rect 96 509 125 649
+rect 37 472 125 509
+rect 225 649 313 716
+rect 225 509 254 649
+rect 300 509 313 649
+rect 225 472 313 509
+<< mvndiffc >>
+rect 50 126 96 172
+rect 274 129 320 175
+<< mvpdiffc >>
+rect 50 509 96 649
+rect 254 509 300 649
+<< polysilicon >>
+rect 125 716 225 760
+rect 125 327 225 472
+rect 125 314 245 327
+rect 125 268 186 314
+rect 232 268 245 314
+rect 125 232 245 268
+rect 125 24 245 68
+<< polycontact >>
+rect 186 268 232 314
+<< metal1 >>
+rect 0 724 448 844
+rect 50 649 96 724
+rect 50 472 96 509
+rect 244 649 316 678
+rect 244 509 254 649
+rect 300 509 316 649
+rect 244 461 316 509
+rect 175 268 186 314
+rect 232 268 320 314
+rect 175 267 320 268
+rect 50 172 96 232
+rect 50 60 96 126
+rect 274 175 320 267
+rect 274 106 320 129
+rect 0 -60 448 60
+<< labels >>
+flabel metal1 s 280 616 280 616 0 FreeSans 400 0 0 0 Z
+port 1 nsew
+flabel metal1 s 224 787 224 787 0 FreeSans 400 0 0 0 VDD
+port 2 nsew
+flabel metal1 s 224 -6 224 -6 0 FreeSans 400 0 0 0 VSS
+port 3 nsew
+flabel nwell s 69 784 69 784 0 FreeSans 400 0 0 0 VNW
+port 4 nsew
+flabel pwell s 68 -17 68 -17 0 FreeSans 400 0 0 0 VPW
+port 5 nsew
+<< properties >>
+string GDS_END 2079506
+string GDS_FILE ../native_sources/A44_A_Q2_BEFORE_ESD.gds
+string GDS_START 2077420
+string FIXED_BBOX 0 0 448 784
+<< end >>

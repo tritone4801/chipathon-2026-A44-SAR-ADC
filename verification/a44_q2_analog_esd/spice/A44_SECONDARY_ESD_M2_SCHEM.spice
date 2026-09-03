@@ -1,0 +1,11 @@
+.subckt A44_SECONDARY_ESD_M2_SCHEM PAD CORE VDD VSS
+XR_CDM CORE PAD VDD ppolyf_u r_width=40u r_length=10u
+DP0 CORE VDD diode_pd2nw_06v0 area=100p pj=40u
+DN0 VSS CORE diode_nd2ps_06v0 area=100p pj=40u
+DP1 CORE VDD diode_pd2nw_06v0 area=100p pj=40u
+DN1 VSS CORE diode_nd2ps_06v0 area=100p pj=40u
+DP2 CORE VDD diode_pd2nw_06v0 area=100p pj=40u
+DN2 VSS CORE diode_nd2ps_06v0 area=100p pj=40u
+DP3 CORE VDD diode_pd2nw_06v0 area=100p pj=40u
+DN3 VSS CORE diode_nd2ps_06v0 area=100p pj=40u
+.ends A44_SECONDARY_ESD_M2_SCHEM
