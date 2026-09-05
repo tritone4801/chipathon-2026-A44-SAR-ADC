@@ -1,0 +1,465 @@
+
+Magic 8.3 revision 636 - Compiled on Thu Apr 16 09:13:57 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "/foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/run.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: A44_A
+Reading "gf180mcu_fd_sc_mcu7t5v0__tiel".
+Reading "gf180mcu_fd_sc_mcu7t5v0__filltie".
+Reading "gf180mcu_fd_sc_mcu7t5v0__endcap".
+Reading "gf180mcu_fd_sc_mcu7t5v0__tieh".
+Reading "via_dev$2$1$1".
+Reading "ppolyf_u_9H3LNU$1$1".
+Reading "diode_pd2nw_06v0_5DG9HC$1$1".
+Reading "diode_nd2ps_06v0_MV3SZ3$1$1".
+Reading "io_secondary_5p0".
+Reading "R7__VIA_Via3_HV".
+Reading "R7__VIA_via3_4_10000_1200_1_9_1040_1040".
+Reading "R7__VIA_Via2_VH".
+Reading "R7__VIA_via2_3_10000_1200_1_9_1040_1040".
+Reading "R7__VIA_Via1_VV".
+Reading "R7__VIA_Via1_HV".
+Reading "R7__VIA_via1_2_10000_1200_1_9_1040_1040".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__or2_4".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__or2_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__oai211_2".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__oai211_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__oai21_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__nor4_4".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__nor4_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__nor3_2".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__nor3_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__nor2_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__nand4_4".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__nand4_2".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__nand4_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__nand3_2".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__nand2_4".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__nand2_2".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__nand2_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__mux2_2".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__filltie".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_64".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_32".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_16".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_8".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_4".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__fill_2".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__fill_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__endcap".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__dlyb_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__dlya_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__dffrnq_2".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__dffnq_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__clkinv_2".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__clkinv_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_16".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_8".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_2".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__buf_4".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__buf_2".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__buf_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__aoi221_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__aoi22_4".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__aoi22_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__aoi21_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__antenna".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__and4_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__and3_1".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__and2_4".
+Reading "R7__gf180mcu_fd_sc_mcu7t5v0__and2_1".
+Reading "SAR_LOGIC_ACTUAL_RTL_SS".
+Reading "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9".
+Reading "A44_CLKS_BUFFER_R1".
+Reading "R8W__pfet_03v3_FKHA32".
+Reading "R8W__pfet_03v3_X2N4NU".
+Reading "R8W__nfet_03v3_GE79XY".
+Reading "R8W__nfet_03v3_9HSG6M".
+Reading "R8W__A44_TGDRV_PCLK_ROW_W_R1".
+Reading "R8W__pfet_03v3_PUCBRS".
+Reading "R8W__pfet_03v3_TTAYZ7".
+Reading "R8W__nfet_03v3_YTQ48T".
+Reading "R8W__nfet_03v3_YTZ44F".
+Reading "R8W__A44_TGDRV_NCLK_ROW_W_R1".
+Reading "R8W__A44_TGCLK_DRIVER_UDRV_W_R1".
+Making label "VDD" on type metal2 in cell R8W__A44_TGCLK_DRIVER_UDRV_W_R1 sticky.
+Making label "VDD" on type metal2 in cell R8W__A44_TGCLK_DRIVER_UDRV_W_R1 sticky.
+Making label "GND" on type metal2 in cell R8W__A44_TGCLK_DRIVER_UDRV_W_R1 sticky.
+Reading "R8W__pfet_03v3_C2L3T7".
+Reading "R8W__nfet_03v3_SD8HJT".
+Reading "R8W__A44_TG8_CORE_W_R2".
+Reading "R8W__A44_TG8_SLICE_UDRV_W_R1".
+Reading "R8W__pfet_03v3_8RS7KV".
+Reading "R8W__nfet_03v3_6LX9QF".
+Reading "R8W__pfet_03v3_GXTH48".
+Reading "R8W__nfet_03v3_WHE5HU".
+Reading "R8W__A44_DCTRL_BIT_DRIVER_R4".
+Reading "R8W__A44_DCTRL_STRIP_W_R2".
+Reading "R8W__pfet_03v3_XNC3G5".
+Reading "R8W__A44_G6_PFET_M9_GUARD0_R0".
+Reading "R8W__nfet_03v3_ATEY9D".
+Reading "R8W__A44_G6_NFET_M9_GUARD0_R0".
+Reading "R8W__A44_CAP_SWITCH_BANK_CORE_O2".
+Reading "R8W__A44_SW_BANK64_SOUTH_R8_M6".
+Reading "R8W__A44_SW_BANK64_NORTH_R8_M6".
+Reading "R8W__A44_MIM_6P855_R0".
+Reading "R8W__A44_C1_MIM6_R0".
+Reading "R8W__A44_CAP_CORE128_M6_R1".
+Reading "R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6".
+Reading "A44_CDAC_UNIT_W_R8_M6".
+Reading "A44_CDAC_UNIT_W_R7".
+Reading "R8E__pfet_03v3_FKHA32".
+Reading "R8E__pfet_03v3_X2N4NU".
+Reading "R8E__nfet_03v3_GE79XY".
+Reading "R8E__nfet_03v3_9HSG6M".
+Reading "R8E__A44_TGDRV_PCLK_ROW_E_R1".
+Reading "R8E__pfet_03v3_PUCBRS".
+Reading "R8E__pfet_03v3_TTAYZ7".
+Reading "R8E__nfet_03v3_YTQ48T".
+Reading "R8E__nfet_03v3_YTZ44F".
+Reading "R8E__A44_TGDRV_NCLK_ROW_E_R1".
+Reading "R8E__A44_TGCLK_DRIVER_UDRV_E_R1".
+Making label "VDD" on type metal2 in cell R8E__A44_TGCLK_DRIVER_UDRV_E_R1 sticky.
+Making label "VDD" on type metal2 in cell R8E__A44_TGCLK_DRIVER_UDRV_E_R1 sticky.
+Making label "GND" on type metal2 in cell R8E__A44_TGCLK_DRIVER_UDRV_E_R1 sticky.
+Reading "R8E__pfet_03v3_C2L3T7".
+Reading "R8E__nfet_03v3_SD8HJT".
+Reading "R8E__A44_TG8_CORE_R7".
+Reading "R8E__A44_TG8_SLICE_UDRV_E_R1".
+Reading "R8E__pfet_03v3_8RS7KV".
+Reading "R8E__nfet_03v3_6LX9QF".
+Reading "R8E__pfet_03v3_GXTH48".
+Reading "R8E__nfet_03v3_WHE5HU".
+Reading "R8E__A44_DCTRL_BIT_DRIVER_R4".
+Reading "R8E__A44_DCTRL_STRIP_E_R2".
+Reading "R8E__pfet_03v3_XNC3G5".
+Reading "R8E__A44_G6_PFET_M9_GUARD0_R0".
+Reading "R8E__nfet_03v3_ATEY9D".
+Reading "R8E__A44_G6_NFET_M9_GUARD0_R0".
+Reading "R8E__A44_CAP_SWITCH_BANK_CORE_O2".
+Reading "R8E__A44_SW_BANK64_SOUTH_R8_M6".
+Reading "R8E__A44_SW_BANK64_NORTH_R8_M6".
+Reading "R8E__A44_MIM_6P855_R0".
+Reading "R8E__A44_C1_MIM6_R0".
+Reading "R8E__A44_CAP_CORE128_M6_R1".
+Reading "R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6".
+Reading "A44_CDAC_UNIT_E_R8_M6".
+Reading "A44_CDAC_UNIT_E_R7".
+Reading "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR".
+Reading "A44_A".
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  1110.000 x 1110.000  ( 0.000,  0.000), ( 1110.000,  1110.000)  1232100.000
+lambda:   22200.00 x 22200.00  (  0.00,  0.00 ), ( 22200.00,  22200.00)  492840032.00
+internal: 222000 x 222000  (     0,  0    ), ( 222000,  222000)  49284000000
+DOWNLOADED_NATIVE_AND_LVS_PORT_CONTRACT=89
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  1220.000 x 1220.000  (-20.000, -20.000), ( 1200.000,  1200.000)  1488400.000
+lambda:   24400.00 x 24400.00  (-400.00, -400.00), ( 24000.00,  24000.00)  595360000.00
+internal: 244000 x 244000  ( -4000, -4000 ), ( 240000,  240000)  59536000000
+DRC style is now "drc(full)"
+Loading DRC CIF style.
+No errors found.
+Processing gf180mcu_fd_sc_mcu7t5v0__endcap
+Processing gf180mcu_fd_sc_mcu7t5v0__filltie
+Processing gf180mcu_fd_sc_mcu7t5v0__tiel
+Processing gf180mcu_fd_sc_mcu7t5v0__tieh
+Processing diode_nd2ps_06v0_MV3SZ3$1$1
+Processing diode_pd2nw_06v0_5DG9HC$1$1
+Processing ppolyf_u_9H3LNU$1$1
+Processing via_dev$2$1$1
+Processing io_secondary_5p0
+Processing R8E__pfet_03v3_PUCBRS
+Processing R8E__nfet_03v3_YTQ48T
+Processing R8E__pfet_03v3_TTAYZ7
+Processing R8E__nfet_03v3_YTZ44F
+Processing R8E__A44_TGDRV_NCLK_ROW_E_R1
+Processing R8E__pfet_03v3_FKHA32
+Processing R8E__nfet_03v3_GE79XY
+Processing R8E__pfet_03v3_X2N4NU
+Processing R8E__nfet_03v3_9HSG6M
+Processing R8E__A44_TGDRV_PCLK_ROW_E_R1
+Processing R8E__A44_TGCLK_DRIVER_UDRV_E_R1
+Processing R8E__pfet_03v3_C2L3T7
+Processing R8E__nfet_03v3_SD8HJT
+Processing R8E__A44_TG8_CORE_R7
+Processing R8E__A44_TG8_SLICE_UDRV_E_R1
+Processing R8E__A44_MIM_6P855_R0
+Processing R8E__A44_C1_MIM6_R0
+Processing R8E__A44_CAP_CORE128_M6_R1
+Processing R8E__pfet_03v3_XNC3G5
+Processing R8E__A44_G6_PFET_M9_GUARD0_R0
+Processing R8E__nfet_03v3_ATEY9D
+Processing R8E__A44_G6_NFET_M9_GUARD0_R0
+Processing R8E__A44_CAP_SWITCH_BANK_CORE_O2
+Processing R8E__A44_SW_BANK64_NORTH_R8_M6
+Processing R8E__A44_SW_BANK64_SOUTH_R8_M6
+Processing R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6
+Processing R8E__nfet_03v3_WHE5HU
+Processing R8E__pfet_03v3_GXTH48
+Processing R8E__nfet_03v3_6LX9QF
+Processing R8E__pfet_03v3_8RS7KV
+Processing R8E__A44_DCTRL_BIT_DRIVER_R4
+Processing R8E__A44_DCTRL_STRIP_E_R2
+Processing A44_CDAC_UNIT_E_R8_M6
+Processing A44_CDAC_UNIT_E_R7
+Processing R8W__pfet_03v3_PUCBRS
+Processing R8W__nfet_03v3_YTQ48T
+Processing R8W__pfet_03v3_TTAYZ7
+Processing R8W__nfet_03v3_YTZ44F
+Processing R8W__A44_TGDRV_NCLK_ROW_W_R1
+Processing R8W__pfet_03v3_FKHA32
+Processing R8W__nfet_03v3_GE79XY
+Processing R8W__pfet_03v3_X2N4NU
+Processing R8W__nfet_03v3_9HSG6M
+Processing R8W__A44_TGDRV_PCLK_ROW_W_R1
+Processing R8W__A44_TGCLK_DRIVER_UDRV_W_R1
+Processing R8W__pfet_03v3_C2L3T7
+Processing R8W__nfet_03v3_SD8HJT
+Processing R8W__A44_TG8_CORE_W_R2
+Processing R8W__A44_TG8_SLICE_UDRV_W_R1
+Processing R8W__A44_MIM_6P855_R0
+Processing R8W__A44_C1_MIM6_R0
+Processing R8W__A44_CAP_CORE128_M6_R1
+Processing R8W__pfet_03v3_XNC3G5
+Processing R8W__A44_G6_PFET_M9_GUARD0_R0
+Processing R8W__nfet_03v3_ATEY9D
+Processing R8W__A44_G6_NFET_M9_GUARD0_R0
+Processing R8W__A44_CAP_SWITCH_BANK_CORE_O2
+Processing R8W__A44_SW_BANK64_NORTH_R8_M6
+Processing R8W__A44_SW_BANK64_SOUTH_R8_M6
+Processing R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6
+Processing R8W__nfet_03v3_WHE5HU
+Processing R8W__pfet_03v3_GXTH48
+Processing R8W__nfet_03v3_6LX9QF
+Processing R8W__pfet_03v3_8RS7KV
+Processing R8W__A44_DCTRL_BIT_DRIVER_R4
+Processing R8W__A44_DCTRL_STRIP_W_R2
+Processing A44_CDAC_UNIT_W_R8_M6
+Processing A44_CDAC_UNIT_W_R7
+Processing A44_CLKS_BUFFER_R1
+Processing A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9
+Processing R7__VIA_Via2_VH
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__filltie
+Processing R7__VIA_via2_3_10000_1200_1_9_1040_1040
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__endcap
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+Processing R7__VIA_via1_2_10000_1200_1_9_1040_1040
+Processing R7__VIA_via3_4_10000_1200_1_9_1040_1040
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_8
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_4
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+Processing R7__VIA_Via1_VV
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__buf_4
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__fill_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__fill_2
+Processing R7__VIA_Via1_HV
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__mux2_2
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__dffnq_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__buf_2
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__nand4_4
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__buf_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__nand2_1
+Processing R7__VIA_Via3_HV
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__nor4_4
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__nor3_2
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__nor3_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__nand3_2
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__nand4_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__and4_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__nand4_2
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__oai211_2
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__oai21_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__antenna
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__and3_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__oai211_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__dlya_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__clkinv_2
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__nor4_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__nand2_4
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__or2_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__and2_4
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__nor2_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__aoi22_4
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__dffrnq_2
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__and2_1
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__or2_4
+Processing R7__gf180mcu_fd_sc_mcu7t5v0__nand2_2
+Processing SAR_LOGIC_ACTUAL_RTL_SS
+Processing A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR
+Processing A44_A
+Extracting gf180mcu_fd_sc_mcu7t5v0__endcap into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/gf180mcu_fd_sc_mcu7t5v0__endcap.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__filltie into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/gf180mcu_fd_sc_mcu7t5v0__filltie.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__tiel into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/gf180mcu_fd_sc_mcu7t5v0__tiel.ext:
+Extracting gf180mcu_fd_sc_mcu7t5v0__tieh into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/gf180mcu_fd_sc_mcu7t5v0__tieh.ext:
+Extracting diode_nd2ps_06v0_MV3SZ3$1$1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/diode_nd2ps_06v0_MV3SZ3$1$1.ext:
+Extracting diode_pd2nw_06v0_5DG9HC$1$1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/diode_pd2nw_06v0_5DG9HC$1$1.ext:
+Extracting ppolyf_u_9H3LNU$1$1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/ppolyf_u_9H3LNU$1$1.ext:
+Extracting via_dev$2$1$1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/via_dev$2$1$1.ext:
+Extracting io_secondary_5p0 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/io_secondary_5p0.ext:
+Extracting R8E__pfet_03v3_PUCBRS into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__pfet_03v3_PUCBRS.ext:
+Extracting R8E__nfet_03v3_YTQ48T into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__nfet_03v3_YTQ48T.ext:
+Extracting R8E__pfet_03v3_TTAYZ7 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__pfet_03v3_TTAYZ7.ext:
+Extracting R8E__nfet_03v3_YTZ44F into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__nfet_03v3_YTZ44F.ext:
+Extracting R8E__A44_TGDRV_NCLK_ROW_E_R1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_TGDRV_NCLK_ROW_E_R1.ext:
+Extracting R8E__pfet_03v3_FKHA32 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__pfet_03v3_FKHA32.ext:
+Extracting R8E__nfet_03v3_GE79XY into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__nfet_03v3_GE79XY.ext:
+Extracting R8E__pfet_03v3_X2N4NU into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__pfet_03v3_X2N4NU.ext:
+Extracting R8E__nfet_03v3_9HSG6M into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__nfet_03v3_9HSG6M.ext:
+Extracting R8E__A44_TGDRV_PCLK_ROW_E_R1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_TGDRV_PCLK_ROW_E_R1.ext:
+Extracting R8E__A44_TGCLK_DRIVER_UDRV_E_R1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_TGCLK_DRIVER_UDRV_E_R1.ext:
+Extracting R8E__pfet_03v3_C2L3T7 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__pfet_03v3_C2L3T7.ext:
+Extracting R8E__nfet_03v3_SD8HJT into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__nfet_03v3_SD8HJT.ext:
+Extracting R8E__A44_TG8_CORE_R7 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_TG8_CORE_R7.ext:
+Extracting R8E__A44_TG8_SLICE_UDRV_E_R1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_TG8_SLICE_UDRV_E_R1.ext:
+Extracting R8E__A44_MIM_6P855_R0 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_MIM_6P855_R0.ext:
+Extracting R8E__A44_C1_MIM6_R0 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_C1_MIM6_R0.ext:
+Extracting R8E__A44_CAP_CORE128_M6_R1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_CAP_CORE128_M6_R1.ext:
+Extracting R8E__pfet_03v3_XNC3G5 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__pfet_03v3_XNC3G5.ext:
+Extracting R8E__A44_G6_PFET_M9_GUARD0_R0 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_G6_PFET_M9_GUARD0_R0.ext:
+Extracting R8E__nfet_03v3_ATEY9D into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__nfet_03v3_ATEY9D.ext:
+Extracting R8E__A44_G6_NFET_M9_GUARD0_R0 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_G6_NFET_M9_GUARD0_R0.ext:
+Extracting R8E__A44_CAP_SWITCH_BANK_CORE_O2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_CAP_SWITCH_BANK_CORE_O2.ext:
+Extracting R8E__A44_SW_BANK64_NORTH_R8_M6 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_SW_BANK64_NORTH_R8_M6.ext:
+Extracting R8E__A44_SW_BANK64_SOUTH_R8_M6 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_SW_BANK64_SOUTH_R8_M6.ext:
+Extracting R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6.ext:
+Extracting R8E__nfet_03v3_WHE5HU into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__nfet_03v3_WHE5HU.ext:
+Extracting R8E__pfet_03v3_GXTH48 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__pfet_03v3_GXTH48.ext:
+Extracting R8E__nfet_03v3_6LX9QF into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__nfet_03v3_6LX9QF.ext:
+Extracting R8E__pfet_03v3_8RS7KV into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__pfet_03v3_8RS7KV.ext:
+Extracting R8E__A44_DCTRL_BIT_DRIVER_R4 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_DCTRL_BIT_DRIVER_R4.ext:
+Extracting R8E__A44_DCTRL_STRIP_E_R2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8E__A44_DCTRL_STRIP_E_R2.ext:
+Extracting A44_CDAC_UNIT_E_R8_M6 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/A44_CDAC_UNIT_E_R8_M6.ext:
+Extracting A44_CDAC_UNIT_E_R7 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/A44_CDAC_UNIT_E_R7.ext:
+Extracting R8W__pfet_03v3_PUCBRS into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__pfet_03v3_PUCBRS.ext:
+Extracting R8W__nfet_03v3_YTQ48T into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__nfet_03v3_YTQ48T.ext:
+Extracting R8W__pfet_03v3_TTAYZ7 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__pfet_03v3_TTAYZ7.ext:
+Extracting R8W__nfet_03v3_YTZ44F into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__nfet_03v3_YTZ44F.ext:
+Extracting R8W__A44_TGDRV_NCLK_ROW_W_R1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_TGDRV_NCLK_ROW_W_R1.ext:
+Extracting R8W__pfet_03v3_FKHA32 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__pfet_03v3_FKHA32.ext:
+Extracting R8W__nfet_03v3_GE79XY into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__nfet_03v3_GE79XY.ext:
+Extracting R8W__pfet_03v3_X2N4NU into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__pfet_03v3_X2N4NU.ext:
+Extracting R8W__nfet_03v3_9HSG6M into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__nfet_03v3_9HSG6M.ext:
+Extracting R8W__A44_TGDRV_PCLK_ROW_W_R1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_TGDRV_PCLK_ROW_W_R1.ext:
+Extracting R8W__A44_TGCLK_DRIVER_UDRV_W_R1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_TGCLK_DRIVER_UDRV_W_R1.ext:
+Extracting R8W__pfet_03v3_C2L3T7 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__pfet_03v3_C2L3T7.ext:
+Extracting R8W__nfet_03v3_SD8HJT into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__nfet_03v3_SD8HJT.ext:
+Extracting R8W__A44_TG8_CORE_W_R2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_TG8_CORE_W_R2.ext:
+Extracting R8W__A44_TG8_SLICE_UDRV_W_R1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_TG8_SLICE_UDRV_W_R1.ext:
+Extracting R8W__A44_MIM_6P855_R0 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_MIM_6P855_R0.ext:
+Extracting R8W__A44_C1_MIM6_R0 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_C1_MIM6_R0.ext:
+Extracting R8W__A44_CAP_CORE128_M6_R1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_CAP_CORE128_M6_R1.ext:
+Extracting R8W__pfet_03v3_XNC3G5 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__pfet_03v3_XNC3G5.ext:
+Extracting R8W__A44_G6_PFET_M9_GUARD0_R0 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_G6_PFET_M9_GUARD0_R0.ext:
+Extracting R8W__nfet_03v3_ATEY9D into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__nfet_03v3_ATEY9D.ext:
+Extracting R8W__A44_G6_NFET_M9_GUARD0_R0 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_G6_NFET_M9_GUARD0_R0.ext:
+Extracting R8W__A44_CAP_SWITCH_BANK_CORE_O2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_CAP_SWITCH_BANK_CORE_O2.ext:
+Extracting R8W__A44_SW_BANK64_NORTH_R8_M6 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_SW_BANK64_NORTH_R8_M6.ext:
+Extracting R8W__A44_SW_BANK64_SOUTH_R8_M6 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_SW_BANK64_SOUTH_R8_M6.ext:
+Extracting R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6.ext:
+Extracting R8W__nfet_03v3_WHE5HU into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__nfet_03v3_WHE5HU.ext:
+Extracting R8W__pfet_03v3_GXTH48 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__pfet_03v3_GXTH48.ext:
+Extracting R8W__nfet_03v3_6LX9QF into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__nfet_03v3_6LX9QF.ext:
+Extracting R8W__pfet_03v3_8RS7KV into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__pfet_03v3_8RS7KV.ext:
+Extracting R8W__A44_DCTRL_BIT_DRIVER_R4 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_DCTRL_BIT_DRIVER_R4.ext:
+Extracting R8W__A44_DCTRL_STRIP_W_R2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R8W__A44_DCTRL_STRIP_W_R2.ext:
+Extracting A44_CDAC_UNIT_W_R8_M6 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/A44_CDAC_UNIT_W_R8_M6.ext:
+Extracting A44_CDAC_UNIT_W_R7 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/A44_CDAC_UNIT_W_R7.ext:
+Extracting A44_CLKS_BUFFER_R1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/A44_CLKS_BUFFER_R1.ext:
+Extracting A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9.ext:
+Extracting R7__VIA_Via2_VH into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__VIA_Via2_VH.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__filltie into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__filltie.ext:
+Extracting R7__VIA_via2_3_10000_1200_1_9_1040_1040 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__VIA_via2_3_10000_1200_1_9_1040_1040.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__endcap into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__endcap.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_32 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_32.ext:
+Extracting R7__VIA_via1_2_10000_1200_1_9_1040_1040 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__VIA_via1_2_10000_1200_1_9_1040_1040.ext:
+Extracting R7__VIA_via3_4_10000_1200_1_9_1040_1040 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__VIA_via3_4_10000_1200_1_9_1040_1040.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_8 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_8.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_4 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_4.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_64 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_64.ext:
+Extracting R7__VIA_Via1_VV into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__VIA_Via1_VV.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_16 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_16.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__buf_4 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__buf_4.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__fill_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__fill_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__fill_2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__fill_2.ext:
+Extracting R7__VIA_Via1_HV into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__VIA_Via1_HV.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__mux2_2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__mux2_2.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__dffnq_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__dffnq_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__buf_2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__buf_2.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__clkinv_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__clkinv_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__nand4_4 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__nand4_4.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__buf_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__buf_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__nand2_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__nand2_1.ext:
+Extracting R7__VIA_Via3_HV into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__VIA_Via3_HV.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__nor4_4 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__nor4_4.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__nor3_2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__nor3_2.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__nor3_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__nor3_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__nand3_2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__nand3_2.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__nand4_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__nand4_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__aoi22_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__aoi22_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__and4_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__and4_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__nand4_2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__nand4_2.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__oai211_2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__oai211_2.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__oai21_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__oai21_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__antenna into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__antenna.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__aoi221_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__aoi221_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__dlyb_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__dlyb_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__aoi21_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__aoi21_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__and3_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__and3_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__oai211_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__oai211_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__dlya_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__dlya_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__clkinv_2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__clkinv_2.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__nor4_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__nor4_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__nand2_4 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__nand2_4.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__or2_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__or2_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__and2_4 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__and2_4.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__nor2_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__nor2_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__aoi22_4 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__aoi22_4.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__and2_1 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__and2_1.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__or2_4 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__or2_4.ext:
+Extracting R7__gf180mcu_fd_sc_mcu7t5v0__nand2_2 into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/R7__gf180mcu_fd_sc_mcu7t5v0__nand2_2.ext:
+Extracting SAR_LOGIC_ACTUAL_RTL_SS into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/SAR_LOGIC_ACTUAL_RTL_SS.ext:
+Extracting A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR.ext:
+Extracting A44_A into /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/A44_A.ext:
+exttospice finished.

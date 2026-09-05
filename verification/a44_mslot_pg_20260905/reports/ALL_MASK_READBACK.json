@@ -1,0 +1,292 @@
+[
+  {
+    "layer": [
+      0,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      21,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      22,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      30,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      31,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      32,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      33,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      34,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 490.76795,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      35,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 187.31959999999998,
+    "new_cuts": 2771
+  },
+  {
+    "layer": [
+      36,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 1277.2694,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      36,
+      10
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      38,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 193.9444,
+    "new_cuts": 2869
+  },
+  {
+    "layer": [
+      40,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 53.9448,
+    "new_cuts": 798
+  },
+  {
+    "layer": [
+      41,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 12.4384,
+    "new_cuts": 184
+  },
+  {
+    "layer": [
+      42,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 2013.778325,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      42,
+      10
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      46,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 573.96865,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      46,
+      10
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      49,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      55,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      75,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      81,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 33.1444,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      81,
+      10
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      110,
+      5
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      112,
+      1
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      115,
+      5
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      117,
+      5
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      117,
+      10
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  },
+  {
+    "layer": [
+      204,
+      0
+    ],
+    "same_as_flat_diagnostic": true,
+    "old_geometry_retained": true,
+    "added_area_um2": 0.0,
+    "new_cuts": null
+  }
+]

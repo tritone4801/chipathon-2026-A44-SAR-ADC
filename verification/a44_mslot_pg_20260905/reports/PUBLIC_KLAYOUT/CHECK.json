@@ -1,0 +1,30 @@
+{
+  "stage": "VMP3_DIAGNOSTIC",
+  "input_GDS": "/foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/outputs/VMP3_DIAGNOSTIC/A44_A.gds",
+  "input_dbu_um": 0.001,
+  "returncode": 0,
+  "reports": [
+    {
+      "file": "/foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/02_KLAYOUT/GEOMETRY_ANTENNA/A44_A_antenna.lyrdb",
+      "items": 0,
+      "categories": {}
+    },
+    {
+      "file": "/foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/02_KLAYOUT/GEOMETRY_ANTENNA/A44_A_main.lyrdb",
+      "items": 0,
+      "categories": {}
+    }
+  ],
+  "total_items": 0,
+  "clean": true,
+  "variant": "D",
+  "metal_level": "5LM",
+  "mim_option": "B",
+  "metal_top": "11K",
+  "density_enabled": false,
+  "antenna_enabled": true,
+  "scope": "Public prefill geometry/connectivity/offgrid and antenna deck; not proprietary MSLOT or final signoff",
+  "proprietary_rules_executed": false,
+  "final_fill_slot_recheck": false,
+  "process_PATH": "/foss/tools/bin:/foss/tools/klayout:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+}

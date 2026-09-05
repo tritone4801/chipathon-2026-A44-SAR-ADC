@@ -1,0 +1,24 @@
+{
+  "stage": "VMP3_DIAGNOSTIC",
+  "input_GDS": "/foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/outputs/VMP3_DIAGNOSTIC/A44_A.gds",
+  "input_route": "MASK_EXACT_REPLAY_FROM_V0",
+  "magic_returncode": 0,
+  "drc_count": 0,
+  "drc_clean": true,
+  "fresh_GDS_readback": true,
+  "GDS_restream_performed": false,
+  "native_source_used_for_geometry": false,
+  "native_metadata_helper_only": true,
+  "connectivity_extraction_only": true,
+  "full_RC_PEX_performed": false,
+  "actual_cut_RC_qualified": false,
+  "LVS_reference": "/foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/reference/verification/a44_q2_analog_esd/spice/A44_A_lvs_reference.spice",
+  "netgen_returncode": 0,
+  "top_comparison_present": true,
+  "comparison_mismatch_records": [],
+  "top_net_counts": [
+    85,
+    85
+  ],
+  "lvs_match": true
+}

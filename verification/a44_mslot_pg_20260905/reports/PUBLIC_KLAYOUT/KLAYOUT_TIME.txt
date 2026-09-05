@@ -1,0 +1,23 @@
+	Command being timed: "python3 -B /foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/run_drc.py --path=/foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/outputs/VMP3_DIAGNOSTIC/A44_A.gds --variant=D --topcell=A44_A --mp=1 --thr=1 --run_mode=deep --run_dir=/foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/02_KLAYOUT/GEOMETRY_ANTENNA --antenna"
+	User time (seconds): 25.97
+	System time (seconds): 0.78
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:27.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 521452
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 177
+	Minor (reclaiming a frame) page faults: 205363
+	Voluntary context switches: 15753
+	Involuntary context switches: 44
+	Swaps: 0
+	File system inputs: 596870
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,380 @@
+Netgen 1.5.318 compiled on Thu Apr 16 09:02:45 PM CEST 2026
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
+Reading netlist file /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/A44_A_extracted.spice for /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/A44_A_extracted.spice A44_A
+Call to undefined subcircuit nfet_05v0
+Creating placeholder cell definition.
+Call to undefined subcircuit pfet_05v0
+Creating placeholder cell definition.
+Call to undefined subcircuit ppolyf_u
+Creating placeholder cell definition.
+Call to undefined subcircuit nfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit pfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit cap_mim_2f0_m4m5_noshield
+Creating placeholder cell definition.
+Reading netlist file /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/reference/verification/a44_q2_analog_esd/spice/A44_A_lvs_reference.spice for /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/reference/verification/a44_q2_analog_esd/spice/A44_A_lvs_reference.spice A44_A
+Call to undefined subcircuit A44_Comparator_StrongARM
+Creating placeholder cell definition.
+Call to undefined subcircuit A44_CDAC_UNIT_TRANS_DRIVER
+Creating placeholder cell definition.
+Call to undefined subcircuit A44_SAR_LOGIC_ACTUAL_RTL
+Creating placeholder cell definition.
+Call to undefined subcircuit A44_CLKS_BUFFER
+Creating placeholder cell definition.
+Call to undefined subcircuit nfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit pfet_03v3
+Creating placeholder cell definition.
+Call to undefined subcircuit cap_mim_2f0_m4m5_noshield
+Creating placeholder cell definition.
+Call to undefined subcircuit A44_C1_SWITCH
+Creating placeholder cell definition.
+Call to undefined subcircuit A44_C2_SWITCH
+Creating placeholder cell definition.
+Call to undefined subcircuit A44_C4_SWITCH
+Creating placeholder cell definition.
+Call to undefined subcircuit A44_C8_SWITCH
+Creating placeholder cell definition.
+Call to undefined subcircuit A44_C16_SWITCH
+Creating placeholder cell definition.
+Call to undefined subcircuit A44_C64_SWITCH
+Creating placeholder cell definition.
+Call to undefined subcircuit A44_SWITCH_TRANS_TG8
+Creating placeholder cell definition.
+Call to undefined subcircuit A44_C32_SWITCH
+Creating placeholder cell definition.
+Call to undefined subcircuit A44_CONVERSION_BUFFER
+Creating placeholder cell definition.
+Call to undefined subcircuit A44_CAP_SWITCH
+Creating placeholder cell definition.
+Call to undefined subcircuit nfet_05v0
+Creating placeholder cell definition.
+Call to undefined subcircuit pfet_05v0
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_fd_sc_mcu7t5v0__and2_4
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_fd_sc_mcu7t5v0__mux2_2
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_fd_sc_mcu7t5v0__dlya_1
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_fd_sc_mcu7t5v0__nand4_4
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_fd_sc_mcu7t5v0__and3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_fd_sc_mcu7t5v0__clkinv_2
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_fd_sc_mcu7t5v0__nor4_4
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_fd_sc_mcu7t5v0__aoi22_4
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_fd_sc_mcu7t5v0__nor3_2
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+Creating placeholder cell definition.
+Call to undefined subcircuit gf180mcu_fd_sc_mcu7t5v0__nand2_4
+Creating placeholder cell definition.
+Call to undefined subcircuit ppolyf_u
+Creating placeholder cell definition.
+
+Reading setup file /foss/pdks/gf180mcuD/libs.tech/netgen/gf180mcuD_setup.tcl
+
+Model ppolyf_u pin 1 == 2
+No property par1 found for device ppolyf_u
+No property pm found for device ppolyf_u
+No property par found for device ppolyf_u
+No property r found for device ppolyf_u
+Model ppolyf_u pin 1 == 2
+No property par1 found for device ppolyf_u
+No property pm found for device ppolyf_u
+No property par found for device ppolyf_u
+No property r found for device ppolyf_u
+Model nfet_03v3 pin 1 == 3
+No property par1 found for device nfet_03v3
+No property NRD found for device nfet_03v3
+No property NRS found for device nfet_03v3
+No property par found for device nfet_03v3
+No property sa found for device nfet_03v3
+No property sb found for device nfet_03v3
+No property sd found for device nfet_03v3
+No property par found for device nfet_03v3
+No property dtemp found for device nfet_03v3
+No property nf found for device nfet_03v3
+No property $D found for device nfet_03v3
+No property $X found for device nfet_03v3
+No property $Y found for device nfet_03v3
+Model nfet_03v3 pin 1 == 3
+No property par1 found for device nfet_03v3
+No property par found for device nfet_03v3
+No property par found for device nfet_03v3
+No property dtemp found for device nfet_03v3
+No property $D found for device nfet_03v3
+No property $X found for device nfet_03v3
+No property $Y found for device nfet_03v3
+Model pfet_03v3 pin 1 == 3
+No property par1 found for device pfet_03v3
+No property NRD found for device pfet_03v3
+No property NRS found for device pfet_03v3
+No property par found for device pfet_03v3
+No property sa found for device pfet_03v3
+No property sb found for device pfet_03v3
+No property sd found for device pfet_03v3
+No property par found for device pfet_03v3
+No property dtemp found for device pfet_03v3
+No property nf found for device pfet_03v3
+No property $D found for device pfet_03v3
+No property $X found for device pfet_03v3
+No property $Y found for device pfet_03v3
+Model pfet_03v3 pin 1 == 3
+No property par1 found for device pfet_03v3
+No property par found for device pfet_03v3
+No property par found for device pfet_03v3
+No property dtemp found for device pfet_03v3
+No property $D found for device pfet_03v3
+No property $X found for device pfet_03v3
+No property $Y found for device pfet_03v3
+Model nfet_05v0 pin 1 == 3
+No property par1 found for device nfet_05v0
+No property NRD found for device nfet_05v0
+No property NRS found for device nfet_05v0
+No property par found for device nfet_05v0
+No property sa found for device nfet_05v0
+No property sb found for device nfet_05v0
+No property sd found for device nfet_05v0
+No property par found for device nfet_05v0
+No property dtemp found for device nfet_05v0
+No property nf found for device nfet_05v0
+No property $D found for device nfet_05v0
+No property $X found for device nfet_05v0
+No property $Y found for device nfet_05v0
+Model nfet_05v0 pin 1 == 3
+No property par1 found for device nfet_05v0
+No property NRD found for device nfet_05v0
+No property NRS found for device nfet_05v0
+No property par found for device nfet_05v0
+No property sa found for device nfet_05v0
+No property sb found for device nfet_05v0
+No property sd found for device nfet_05v0
+No property par found for device nfet_05v0
+No property dtemp found for device nfet_05v0
+No property nf found for device nfet_05v0
+No property as found for device nfet_05v0
+No property ad found for device nfet_05v0
+No property ps found for device nfet_05v0
+No property pd found for device nfet_05v0
+No property $D found for device nfet_05v0
+No property $X found for device nfet_05v0
+No property $Y found for device nfet_05v0
+Model pfet_05v0 pin 1 == 3
+No property par1 found for device pfet_05v0
+No property NRD found for device pfet_05v0
+No property NRS found for device pfet_05v0
+No property par found for device pfet_05v0
+No property sa found for device pfet_05v0
+No property sb found for device pfet_05v0
+No property sd found for device pfet_05v0
+No property par found for device pfet_05v0
+No property dtemp found for device pfet_05v0
+No property nf found for device pfet_05v0
+No property $D found for device pfet_05v0
+No property $X found for device pfet_05v0
+No property $Y found for device pfet_05v0
+Model pfet_05v0 pin 1 == 3
+No property par1 found for device pfet_05v0
+No property NRD found for device pfet_05v0
+No property NRS found for device pfet_05v0
+No property par found for device pfet_05v0
+No property sa found for device pfet_05v0
+No property sb found for device pfet_05v0
+No property sd found for device pfet_05v0
+No property par found for device pfet_05v0
+No property dtemp found for device pfet_05v0
+No property nf found for device pfet_05v0
+No property as found for device pfet_05v0
+No property ad found for device pfet_05v0
+No property ps found for device pfet_05v0
+No property pd found for device pfet_05v0
+No property $D found for device pfet_05v0
+No property $X found for device pfet_05v0
+No property $Y found for device pfet_05v0
+No property par1 found for device diode_nd2ps_06v0
+No property par1 found for device diode_nd2ps_06v0
+No property par1 found for device diode_pd2nw_06v0
+No property par1 found for device diode_pd2nw_06v0
+No property par1 found for device cap_mim_2f0_m4m5_noshield
+No property par1 found for device cap_mim_2f0_m4m5_noshield
+Comparison output logged to file /foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/LVS.log
+Logging to file "/foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/LVS.log" enabled
+Circuit pfet_03v3 contains no devices.
+Circuit nfet_03v3 contains no devices.
+Circuit cap_mim_2f0_m4m5_noshield contains no devices.
+Circuit nfet_05v0 contains no devices.
+Circuit pfet_05v0 contains no devices.
+Circuit ppolyf_u contains no devices.
+
+Contents of circuit 1:  Circuit: 'SAR_LOGIC_ACTUAL_RTL_SS'
+Circuit SAR_LOGIC_ACTUAL_RTL_SS contains 10344 device instances.
+  Class: pfet_05v0             instances: 5209
+  Class: diode_pd2nw_06v0      instances:   6
+  Class: diode_nd2ps_06v0      instances:   6
+  Class: nfet_05v0             instances: 5123
+Circuit contains 6733 nets.
+Contents of circuit 2:  Circuit: 'SAR_LOGIC_ACTUAL_RTL_SS'
+Circuit SAR_LOGIC_ACTUAL_RTL_SS contains 10344 device instances.
+  Class: pfet_05v0             instances: 5209
+  Class: diode_pd2nw_06v0      instances:   6
+  Class: diode_nd2ps_06v0      instances:   6
+  Class: nfet_05v0             instances: 5123
+Circuit contains 6733 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'SAR_LOGIC_ACTUAL_RTL_SS'
+Circuit SAR_LOGIC_ACTUAL_RTL_SS contains 8105 device instances.
+  Class: pfet_05v0             instances: 4020
+  Class: diode_pd2nw_06v0      instances:   3
+  Class: diode_nd2ps_06v0      instances:   3
+  Class: nfet_05v0             instances: 4079
+Circuit contains 6733 nets.
+Contents of circuit 2:  Circuit: 'SAR_LOGIC_ACTUAL_RTL_SS'
+Circuit SAR_LOGIC_ACTUAL_RTL_SS contains 8105 device instances.
+  Class: pfet_05v0             instances: 4020
+  Class: diode_pd2nw_06v0      instances:   3
+  Class: diode_nd2ps_06v0      instances:   3
+  Class: nfet_05v0             instances: 4079
+Circuit contains 6733 nets.
+
+Circuit 1 contains 8105 devices, Circuit 2 contains 8105 devices.
+Circuit 1 contains 6733 nets,    Circuit 2 contains 6733 nets.
+
+
+Contents of circuit 1:  Circuit: 'A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR'
+Circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR contains 10981 device instances.
+  Class: cap_mim_2f0_m4m5_noshield instances: 1536
+  Class: nfet_03v3             instances: 4740
+  Class: SAR_LOGIC_ACTUAL_RTL_SS instances:   1
+  Class: pfet_03v3             instances: 4704
+Circuit contains 337 nets.
+Contents of circuit 2:  Circuit: 'A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR'
+Circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR contains 872 device instances.
+  Class: cap_mim_2f0_m4m5_noshield instances: 256
+  Class: nfet_03v3             instances: 307
+  Class: SAR_LOGIC_ACTUAL_RTL_SS instances:   1
+  Class: pfet_03v3             instances: 308
+Circuit contains 337 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR'
+Circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR contains 872 device instances.
+  Class: cap_mim_2f0_m4m5_noshield instances: 256
+  Class: nfet_03v3             instances: 307
+  Class: SAR_LOGIC_ACTUAL_RTL_SS instances:   1
+  Class: pfet_03v3             instances: 308
+Circuit contains 337 nets.
+Contents of circuit 2:  Circuit: 'A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR'
+Circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR contains 872 device instances.
+  Class: cap_mim_2f0_m4m5_noshield instances: 256
+  Class: nfet_03v3             instances: 307
+  Class: SAR_LOGIC_ACTUAL_RTL_SS instances:   1
+  Class: pfet_03v3             instances: 308
+Circuit contains 337 nets.
+
+Circuit 1 contains 872 devices, Circuit 2 contains 872 devices.
+Circuit 1 contains 337 nets,    Circuit 2 contains 337 nets.
+
+No more changes can be made to series/parallel networks.
+No more changes can be made to series/parallel networks.
+No more changes can be made to series/parallel networks.
+No more changes can be made to series/parallel networks.
+No more changes can be made to series/parallel networks.
+No more changes can be made to series/parallel networks.
+No more changes can be made to series/parallel networks.
+No more changes can be made to series/parallel networks.
+
+Contents of circuit 1:  Circuit: 'gf180mcu_fd_sc_mcu7t5v0__tiel'
+Circuit gf180mcu_fd_sc_mcu7t5v0__tiel contains 2 device instances.
+  Class: pfet_05v0             instances:   1
+  Class: nfet_05v0             instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'gf180mcu_fd_sc_mcu7t5v0__tiel'
+Circuit gf180mcu_fd_sc_mcu7t5v0__tiel contains 2 device instances.
+  Class: pfet_05v0             instances:   1
+  Class: nfet_05v0             instances:   1
+Circuit contains 6 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+
+Contents of circuit 1:  Circuit: 'gf180mcu_fd_sc_mcu7t5v0__tieh'
+Circuit gf180mcu_fd_sc_mcu7t5v0__tieh contains 2 device instances.
+  Class: pfet_05v0             instances:   1
+  Class: nfet_05v0             instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'gf180mcu_fd_sc_mcu7t5v0__tieh'
+Circuit gf180mcu_fd_sc_mcu7t5v0__tieh contains 2 device instances.
+  Class: pfet_05v0             instances:   1
+  Class: nfet_05v0             instances:   1
+Circuit contains 6 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+
+Contents of circuit 1:  Circuit: 'A44_A'
+Circuit A44_A contains 103 device instances.
+  Class: gf180mcu_fd_sc_mcu7t5v0__tieh instances:   8
+  Class: diode_pd2nw_06v0      instances:  16
+  Class: ppolyf_u              instances:   4
+  Class: diode_nd2ps_06v0      instances:  16
+  Class: A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR instances:   1
+  Class: gf180mcu_fd_sc_mcu7t5v0__tiel instances:  58
+Circuit contains 85 nets, and 8 disconnected pins.
+Contents of circuit 2:  Circuit: 'A44_A'
+Circuit A44_A contains 103 device instances.
+  Class: gf180mcu_fd_sc_mcu7t5v0__tieh instances:   8
+  Class: diode_pd2nw_06v0      instances:  16
+  Class: ppolyf_u              instances:   4
+  Class: diode_nd2ps_06v0      instances:  16
+  Class: A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR instances:   1
+  Class: gf180mcu_fd_sc_mcu7t5v0__tiel instances:  58
+Circuit contains 85 nets, and 8 disconnected pins.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'A44_A'
+Circuit A44_A contains 79 device instances.
+  Class: gf180mcu_fd_sc_mcu7t5v0__tieh instances:   8
+  Class: diode_pd2nw_06v0      instances:   4
+  Class: ppolyf_u              instances:   4
+  Class: diode_nd2ps_06v0      instances:   4
+  Class: A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR instances:   1
+  Class: gf180mcu_fd_sc_mcu7t5v0__tiel instances:  58
+Circuit contains 85 nets, and 8 disconnected pins.
+Contents of circuit 2:  Circuit: 'A44_A'
+Circuit A44_A contains 79 device instances.
+  Class: gf180mcu_fd_sc_mcu7t5v0__tieh instances:   8
+  Class: diode_pd2nw_06v0      instances:   4
+  Class: ppolyf_u              instances:   4
+  Class: diode_nd2ps_06v0      instances:   4
+  Class: A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR instances:   1
+  Class: gf180mcu_fd_sc_mcu7t5v0__tiel instances:  58
+Circuit contains 85 nets, and 8 disconnected pins.
+
+Circuit 1 contains 79 devices, Circuit 2 contains 79 devices.
+Circuit 1 contains 85 nets,    Circuit 2 contains 85 nets.
+
+
+Final result: 
+Circuits match uniquely.
+.
+Logging to file "/foss/designs/A44_MPG_PG_HIERARCHY_20260905_R1/verification/VMP3_DIAGNOSTIC/01_PHYSICAL/GDS/LVS.log" disabled
+LVS Done.

@@ -17,10 +17,10 @@
     "public_artifact_filenames_normalized": true,
     "def_design_changed": false,
     "def_ports_changed": false,
-    "def_connectivity_changed": true,
+    "def_connectivity_changed": false,
     "gds_internal_cell_names_changed": false,
-    "change": "Four series secondary ESD cells added at parent A44_A; external ports and CORE retained."
+    "change": "Existing VMP3 GDS publication: MIM M5 coverFT and additive parent PG geometry."
   },
-  "selected_case": "Q2_LINK18_HIER_R1_ANALOG_ESD_R1",
-  "presentation_rule": "Public stems preserve frozen GDS cell envelopes. Dated images measure visible physical layers separately and print their actual W/H. Nominal envelope and visible framing must not be conflated."
+  "selected_case": "Q2_ANALOG_ESD_MSLOT_COVERFT_PG_VMP3_DIAGNOSTIC",
+  "presentation_rule": "Public stems and GDS cell envelopes are retained. Current images display saved metal/MIM layers in each cell envelope."
 }

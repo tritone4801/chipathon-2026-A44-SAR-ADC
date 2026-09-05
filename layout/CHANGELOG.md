@@ -1,5 +1,12 @@
 # Layout updates
 
+## 2026-09-05 — MIM coverFT and PG layout snapshot
+
+- Updated the existing TOP, CORE and five component GDS paths from the saved VMP3 files.
+- Updated their existing image entries and added the corresponding dated image set.
+- Updated layout bindings and included the existing GDS DRC/LVS, public KLayout and geometry records.
+- Retained the Q2 DEF/LEF interface files, circuit reference and historical layout sources.
+
 ## 2026-09-03 — Q2 implementation with analog secondary ESD
 
 Replaces the GitHub layout selection at commit `52275be` with

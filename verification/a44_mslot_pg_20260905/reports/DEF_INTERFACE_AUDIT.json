@@ -1,0 +1,17 @@
+{
+  "status": "PASS_DIAGNOSTIC_GDS_INTERFACE",
+  "candidate_project_sha256": "970f418ff9b68331d47cbf85c5a515cebaaaab8a0c9f0c0a6412f6a7570b931a",
+  "official_DEF_pin_rectangles": 127,
+  "logical_ports": 89,
+  "physical_labels": 127,
+  "uncovered_M2_pin_area_um2": 0,
+  "labels_in_correct_named_DEF_pins": true,
+  "copied_DEF_pin_contract_equals_official_DEF": true,
+  "outline_um": [
+    0.0,
+    0.0,
+    1110.0,
+    1110.0
+  ],
+  "final_processed_view_qualified": false
+}

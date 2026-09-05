@@ -1,0 +1,516 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Equate elements:  no current cell.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0_m4m5_noshield are black boxes.
+Equate elements:  no current cell.
+Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0_m4m5_noshield are equivalent.
+
+Circuit 1 cell nfet_05v0 and Circuit 2 cell nfet_05v0 are black boxes.
+Equate elements:  no current cell.
+Device classes nfet_05v0 and nfet_05v0 are equivalent.
+
+Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_05v0 are black boxes.
+Equate elements:  no current cell.
+Device classes pfet_05v0 and pfet_05v0 are equivalent.
+
+Circuit 1 cell ppolyf_u and Circuit 2 cell ppolyf_u are black boxes.
+Equate elements:  no current cell.
+Device classes ppolyf_u and ppolyf_u are equivalent.
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__buf_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(22 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_8 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(91 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_64 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(74 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(27 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__dlya_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(18 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__nand4_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(5 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__clkinv_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(44 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(209 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__nor2_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(2 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__aoi221_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__and2_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__nand2_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(13 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(32 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__mux2_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(27 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__buf_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(31 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_32 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(108 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__nor3_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(2 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__oai211_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(19 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_16 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(59 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__nand3_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(3 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__or2_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(27 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__buf_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(10 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__clkinv_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__nor4_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(2 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__and2_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__dffnq_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(8 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__and4_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(6 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__dlyb_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(3 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__nand2_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__nand4_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(2 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__aoi22_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(2 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__nand2_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__or2_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(2 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__nor3_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(2 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__oai211_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__and3_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__oai21_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(5 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__nor4_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__antenna in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(6 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__aoi21_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(2 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__nand4_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(3 instances)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__aoi22_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(1 instance)
+Flattening unmatched subcell R7__gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (0)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_32 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(108 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(209 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(44 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(74 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__buf_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(31 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_8 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(91 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_16 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(59 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(27 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nand2_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(13 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(27 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(32 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__and2_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__mux2_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(27 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nand4_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dlya_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(18 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(19 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nor3_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__buf_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(10 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nand4_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(3 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nand3_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__antenna in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(6 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__buf_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(22 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__and3_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkinv_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nand4_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(5 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nor4_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__aoi22_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nor3_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkbuf_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nor2_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(3 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__or2_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__and4_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(6 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nand2_4 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dffnq_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(8 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__oai21_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(5 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dlyb_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(3 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__oai211_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__oai211_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__aoi221_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__and2_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nor4_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nand2_2 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__or2_1 in circuit SAR_LOGIC_ACTUAL_RTL_SS (1)(1 instance)
+
+Class SAR_LOGIC_ACTUAL_RTL_SS (0):  Merged 2239 parallel devices.
+Class SAR_LOGIC_ACTUAL_RTL_SS (1):  Merged 2239 parallel devices.
+Subcircuit summary:
+Circuit 1: SAR_LOGIC_ACTUAL_RTL_SS         |Circuit 2: SAR_LOGIC_ACTUAL_RTL_SS         
+-------------------------------------------|-------------------------------------------
+nfet_05v0 (5123->4079)                     |nfet_05v0 (5123->4079)                     
+pfet_05v0 (5209->4020)                     |pfet_05v0 (5209->4020)                     
+diode_nd2ps_06v0 (6->3)                    |diode_nd2ps_06v0 (6->3)                    
+diode_pd2nw_06v0 (6->3)                    |diode_pd2nw_06v0 (6->3)                    
+Number of devices: 8105                    |Number of devices: 8105                    
+Number of nets: 6733                       |Number of nets: 6733                       
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 105 symmetries.
+
+Subcircuit pins:
+Circuit 1: SAR_LOGIC_ACTUAL_RTL_SS         |Circuit 2: SAR_LOGIC_ACTUAL_RTL_SS         
+-------------------------------------------|-------------------------------------------
+CMPCK                                      |CMPCK                                      
+DCTRLP[4]                                  |DCTRLP[4]                                  
+DCTRLP[6]                                  |DCTRLP[6]                                  
+DCTRLP[5]                                  |DCTRLP[5]                                  
+DCTRLP[3]                                  |DCTRLP[3]                                  
+DCTRLP[2]                                  |DCTRLP[2]                                  
+DCTRLP[1]                                  |DCTRLP[1]                                  
+DCTRLN[3]                                  |DCTRLN[3]                                  
+DCTRLN[6]                                  |DCTRLN[6]                                  
+DCTRLN[2]                                  |DCTRLN[2]                                  
+DCTRLN[1]                                  |DCTRLN[1]                                  
+DCTRLN[4]                                  |DCTRLN[4]                                  
+DCTRLN[5]                                  |DCTRLN[5]                                  
+DOUT[0]                                    |DOUT[0]                                    
+DOUT[2]                                    |DOUT[2]                                    
+DOUT[1]                                    |DOUT[1]                                    
+DOUT[3]                                    |DOUT[3]                                    
+DOUT[7]                                    |DOUT[7]                                    
+DOUT[4]                                    |DOUT[4]                                    
+DOUT[6]                                    |DOUT[6]                                    
+DCTRLP[7]                                  |DCTRLP[7]                                  
+DCTRLN[7]                                  |DCTRLN[7]                                  
+DOUT[5]                                    |DOUT[5]                                    
+CLKS                                       |CLKS                                       
+DCMPN                                      |DCMPN                                      
+DCMPP                                      |DCMPP                                      
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes SAR_LOGIC_ACTUAL_RTL_SS and SAR_LOGIC_ACTUAL_RTL_SS are equivalent.
+Flattening unmatched subcell A44_CDAC_UNIT_E_R7 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell A44_CDAC_UNIT_E_R8_M6 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__A44_DCTRL_STRIP_E_R2 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__A44_DCTRL_BIT_DRIVER_R4 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(7 instances)
+Flattening unmatched subcell R8E__nfet_03v3_6LX9QF in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(7 instances)
+Flattening unmatched subcell R8E__pfet_03v3_GXTH48 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(7 instances)
+Flattening unmatched subcell R8E__nfet_03v3_WHE5HU in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(7 instances)
+Flattening unmatched subcell R8E__pfet_03v3_8RS7KV in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(7 instances)
+Flattening unmatched subcell R8E__A44_TG8_SLICE_UDRV_E_R1 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__A44_TGCLK_DRIVER_UDRV_E_R1 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__A44_TGDRV_PCLK_ROW_E_R1 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__pfet_03v3_X2N4NU in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__nfet_03v3_GE79XY in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__nfet_03v3_9HSG6M in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__pfet_03v3_FKHA32 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__A44_TGDRV_NCLK_ROW_E_R1 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__nfet_03v3_YTQ48T in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__pfet_03v3_TTAYZ7 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__nfet_03v3_YTZ44F in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__pfet_03v3_PUCBRS in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__A44_TG8_CORE_R7 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__pfet_03v3_C2L3T7 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(2 instances)
+Flattening unmatched subcell R8E__nfet_03v3_SD8HJT in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(2 instances)
+Flattening unmatched subcell R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__A44_CAP_CORE128_M6_R1 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__A44_C1_MIM6_R0 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(128 instances)
+Flattening unmatched subcell R8E__A44_MIM_6P855_R0 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(768 instances)
+Flattening unmatched subcell R8E__A44_SW_BANK64_NORTH_R8_M6 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__A44_CAP_SWITCH_BANK_CORE_O2 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(64 instances)
+Flattening unmatched subcell R8E__A44_G6_PFET_M9_GUARD0_R0 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(128 instances)
+Flattening unmatched subcell R8E__pfet_03v3_XNC3G5 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(128 instances)
+Flattening unmatched subcell R8E__A44_G6_NFET_M9_GUARD0_R0 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(128 instances)
+Flattening unmatched subcell R8E__nfet_03v3_ATEY9D in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(128 instances)
+Flattening unmatched subcell R8E__A44_SW_BANK64_SOUTH_R8_M6 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8E__A44_CAP_SWITCH_BANK_CORE_O2 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(63 instances)
+Flattening unmatched subcell R8E__A44_G6_PFET_M9_GUARD0_R0 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(126 instances)
+Flattening unmatched subcell R8E__pfet_03v3_XNC3G5 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(126 instances)
+Flattening unmatched subcell R8E__A44_G6_NFET_M9_GUARD0_R0 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(126 instances)
+Flattening unmatched subcell R8E__nfet_03v3_ATEY9D in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(126 instances)
+Flattening unmatched subcell A44_CDAC_UNIT_W_R7 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell A44_CDAC_UNIT_W_R8_M6 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__A44_SW_BANK64_NORTH_R8_M6 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__A44_CAP_SWITCH_BANK_CORE_O2 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(64 instances)
+Flattening unmatched subcell R8W__A44_G6_PFET_M9_GUARD0_R0 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(128 instances)
+Flattening unmatched subcell R8W__pfet_03v3_XNC3G5 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(128 instances)
+Flattening unmatched subcell R8W__A44_G6_NFET_M9_GUARD0_R0 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(128 instances)
+Flattening unmatched subcell R8W__nfet_03v3_ATEY9D in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(128 instances)
+Flattening unmatched subcell R8W__A44_SW_BANK64_SOUTH_R8_M6 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__A44_CAP_SWITCH_BANK_CORE_O2 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(63 instances)
+Flattening unmatched subcell R8W__A44_G6_PFET_M9_GUARD0_R0 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(126 instances)
+Flattening unmatched subcell R8W__pfet_03v3_XNC3G5 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(126 instances)
+Flattening unmatched subcell R8W__A44_G6_NFET_M9_GUARD0_R0 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(126 instances)
+Flattening unmatched subcell R8W__nfet_03v3_ATEY9D in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(126 instances)
+Flattening unmatched subcell R8W__A44_CAP_CORE128_M6_R1 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__A44_C1_MIM6_R0 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(128 instances)
+Flattening unmatched subcell R8W__A44_MIM_6P855_R0 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(768 instances)
+Flattening unmatched subcell R8W__A44_TG8_SLICE_UDRV_W_R1 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__A44_TGCLK_DRIVER_UDRV_W_R1 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__A44_TGDRV_PCLK_ROW_W_R1 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__pfet_03v3_FKHA32 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__pfet_03v3_X2N4NU in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__nfet_03v3_GE79XY in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__nfet_03v3_9HSG6M in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__A44_TGDRV_NCLK_ROW_W_R1 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__pfet_03v3_PUCBRS in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__nfet_03v3_YTQ48T in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__pfet_03v3_TTAYZ7 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__nfet_03v3_YTZ44F in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__A44_TG8_CORE_W_R2 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__pfet_03v3_C2L3T7 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(2 instances)
+Flattening unmatched subcell R8W__nfet_03v3_SD8HJT in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(2 instances)
+Flattening unmatched subcell R8W__A44_DCTRL_STRIP_W_R2 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell R8W__A44_DCTRL_BIT_DRIVER_R4 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(7 instances)
+Flattening unmatched subcell R8W__nfet_03v3_6LX9QF in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(7 instances)
+Flattening unmatched subcell R8W__pfet_03v3_GXTH48 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(7 instances)
+Flattening unmatched subcell R8W__nfet_03v3_WHE5HU in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(7 instances)
+Flattening unmatched subcell R8W__pfet_03v3_8RS7KV in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(7 instances)
+Flattening unmatched subcell A44_CLKS_BUFFER_R1 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0)(1 instance)
+Flattening unmatched subcell A44_CLKS_BUFFER in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(1 instance)
+Flattening unmatched subcell A44_CDAC_UNIT_TRANS_DRIVER in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(2 instances)
+Flattening unmatched subcell A44_C1_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(2 instances)
+Flattening unmatched subcell A44_CAP_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(2 instances)
+Flattening unmatched subcell A44_C2_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(2 instances)
+Flattening unmatched subcell A44_C1_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(4 instances)
+Flattening unmatched subcell A44_CAP_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(4 instances)
+Flattening unmatched subcell A44_C4_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(2 instances)
+Flattening unmatched subcell A44_C1_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(8 instances)
+Flattening unmatched subcell A44_CAP_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(8 instances)
+Flattening unmatched subcell A44_C8_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(2 instances)
+Flattening unmatched subcell A44_C1_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(16 instances)
+Flattening unmatched subcell A44_CAP_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(16 instances)
+Flattening unmatched subcell A44_C16_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(2 instances)
+Flattening unmatched subcell A44_C1_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(32 instances)
+Flattening unmatched subcell A44_CAP_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(32 instances)
+Flattening unmatched subcell A44_C64_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(2 instances)
+Flattening unmatched subcell A44_C1_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(128 instances)
+Flattening unmatched subcell A44_CAP_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(128 instances)
+Flattening unmatched subcell A44_SWITCH_TRANS_TG8 in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(2 instances)
+Flattening unmatched subcell A44_C32_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(2 instances)
+Flattening unmatched subcell A44_C1_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(64 instances)
+Flattening unmatched subcell A44_CAP_SWITCH in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(64 instances)
+Flattening unmatched subcell A44_CONVERSION_BUFFER in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(2 instances)
+Flattening unmatched subcell A44_Comparator_StrongARM in circuit A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (1)(1 instance)
+
+Class A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR (0):  Merged 10109 parallel devices.
+Subcircuit summary:
+Circuit 1: A44_SAR_ADC_CORE_1000_R3_DUMMY_ |Circuit 2: A44_SAR_ADC_CORE_1000_R3_DUMMY_ 
+-------------------------------------------|-------------------------------------------
+SAR_LOGIC_ACTUAL_RTL_SS (1)                |SAR_LOGIC_ACTUAL_RTL_SS (1)                
+nfet_03v3 (4740->307)                      |nfet_03v3 (4652->307)                      
+pfet_03v3 (4704->308)                      |pfet_03v3 (4640->308)                      
+cap_mim_2f0_m4m5_noshield (1536->256)      |cap_mim_2f0_m4m5_noshield (1536->256)      
+Number of devices: 872                     |Number of devices: 872                     
+Number of nets: 337                        |Number of nets: 337                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 48 symmetries.
+
+Subcircuit pins:
+Circuit 1: A44_SAR_ADC_CORE_1000_R3_DUMMY_ |Circuit 2: A44_SAR_ADC_CORE_1000_R3_DUMMY_ 
+-------------------------------------------|-------------------------------------------
+CLKS                                       |CLKS                                       
+VINP                                       |VINP                                       
+VINN                                       |VINN                                       
+VREFP                                      |VREFP                                      
+VREFN                                      |VREFN                                      
+GND                                        |GND                                        
+VDD                                        |VDD                                        
+DOUT[0]                                    |DOUT[0]                                    
+DOUT[1]                                    |DOUT[1]                                    
+DOUT[2]                                    |DOUT[2]                                    
+DOUT[3]                                    |DOUT[3]                                    
+DOUT[4]                                    |DOUT[4]                                    
+DOUT[5]                                    |DOUT[5]                                    
+DOUT[6]                                    |DOUT[6]                                    
+DOUT[7]                                    |DOUT[7]                                    
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR and A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__tiel   |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__tiel   
+-------------------------------------------|-------------------------------------------
+nfet_05v0 (1)                              |nfet_05v0 (1)                              
+pfet_05v0 (1)                              |pfet_05v0 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__tiel   |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__tiel   
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+ZN                                         |ZN                                         
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+VNW                                        |VNW                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__tiel and gf180mcu_fd_sc_mcu7t5v0__tiel are equivalent.
+
+Subcircuit summary:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__tieh   |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__tieh   
+-------------------------------------------|-------------------------------------------
+pfet_05v0 (1)                              |pfet_05v0 (1)                              
+nfet_05v0 (1)                              |nfet_05v0 (1)                              
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: gf180mcu_fd_sc_mcu7t5v0__tieh   |Circuit 2: gf180mcu_fd_sc_mcu7t5v0__tieh   
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VPW                                        |VPW                                        
+VDD                                        |VDD                                        
+Z                                          |Z                                          
+VNW                                        |VNW                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_fd_sc_mcu7t5v0__tieh and gf180mcu_fd_sc_mcu7t5v0__tieh are equivalent.
+Flattening unmatched subcell io_secondary_5p0 in circuit A44_A (0)(4 instances)
+Flattening unmatched subcell ppolyf_u_9H3LNU$1$1 in circuit A44_A (0)(4 instances)
+Flattening unmatched subcell diode_nd2ps_06v0_MV3SZ3$1$1 in circuit A44_A (0)(4 instances)
+Flattening unmatched subcell diode_pd2nw_06v0_5DG9HC$1$1 in circuit A44_A (0)(4 instances)
+Flattening unmatched subcell A44_Q2_BASE_REF in circuit A44_A (1)(1 instance)
+Flattening unmatched subcell A44_SECONDARY_ESD_M2_SCHEM in circuit A44_A (1)(4 instances)
+
+Cell A44_A (0) disconnected node: DOUT_IN[7]
+Cell A44_A (0) disconnected node: DOUT_IN[6]
+Cell A44_A (0) disconnected node: DOUT_IN[5]
+Cell A44_A (0) disconnected node: DOUT_IN[4]
+Cell A44_A (0) disconnected node: DOUT_IN[3]
+Cell A44_A (0) disconnected node: DOUT_IN[2]
+Cell A44_A (0) disconnected node: DOUT_IN[1]
+Cell A44_A (0) disconnected node: DOUT_IN[0]
+Cell A44_A (1) disconnected node: DOUT_IN[7]
+Cell A44_A (1) disconnected node: DOUT_IN[6]
+Cell A44_A (1) disconnected node: DOUT_IN[5]
+Cell A44_A (1) disconnected node: DOUT_IN[4]
+Cell A44_A (1) disconnected node: DOUT_IN[3]
+Cell A44_A (1) disconnected node: DOUT_IN[2]
+Cell A44_A (1) disconnected node: DOUT_IN[1]
+Cell A44_A (1) disconnected node: DOUT_IN[0]
+Class A44_A (0):  Merged 24 parallel devices.
+Class A44_A (1):  Merged 24 parallel devices.
+Cell A44_A (0) disconnected node: DOUT_IN[7]
+Cell A44_A (0) disconnected node: DOUT_IN[6]
+Cell A44_A (0) disconnected node: DOUT_IN[5]
+Cell A44_A (0) disconnected node: DOUT_IN[4]
+Cell A44_A (0) disconnected node: DOUT_IN[3]
+Cell A44_A (0) disconnected node: DOUT_IN[2]
+Cell A44_A (0) disconnected node: DOUT_IN[1]
+Cell A44_A (0) disconnected node: DOUT_IN[0]
+Cell A44_A (1) disconnected node: DOUT_IN[7]
+Cell A44_A (1) disconnected node: DOUT_IN[6]
+Cell A44_A (1) disconnected node: DOUT_IN[5]
+Cell A44_A (1) disconnected node: DOUT_IN[4]
+Cell A44_A (1) disconnected node: DOUT_IN[3]
+Cell A44_A (1) disconnected node: DOUT_IN[2]
+Cell A44_A (1) disconnected node: DOUT_IN[1]
+Cell A44_A (1) disconnected node: DOUT_IN[0]
+Subcircuit summary:
+Circuit 1: A44_A                           |Circuit 2: A44_A                           
+-------------------------------------------|-------------------------------------------
+gf180mcu_fd_sc_mcu7t5v0__tiel (58)         |gf180mcu_fd_sc_mcu7t5v0__tiel (58)         
+ppolyf_u (4)                               |ppolyf_u (4)                               
+diode_nd2ps_06v0 (16->4)                   |diode_nd2ps_06v0 (16->4)                   
+diode_pd2nw_06v0 (16->4)                   |diode_pd2nw_06v0 (16->4)                   
+A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR |A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR 
+gf180mcu_fd_sc_mcu7t5v0__tieh (8)          |gf180mcu_fd_sc_mcu7t5v0__tieh (8)          
+Number of devices: 79                      |Number of devices: 79                      
+Number of nets: 85                         |Number of nets: 85                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: A44_A                           |Circuit 2: A44_A                           
+-------------------------------------------|-------------------------------------------
+GND                                        |GND                                        
+VDD                                        |VDD                                        
+CLKS                                       |CLKS                                       
+DOUT_OUT[7]                                |DOUT_OUT[7]                                
+DOUT_OUT[6]                                |DOUT_OUT[6]                                
+DOUT_OUT[5]                                |DOUT_OUT[5]                                
+DOUT_OUT[4]                                |DOUT_OUT[4]                                
+DOUT_OUT[3]                                |DOUT_OUT[3]                                
+DOUT_OUT[2]                                |DOUT_OUT[2]                                
+DOUT_OUT[1]                                |DOUT_OUT[1]                                
+DOUT_OE[7]                                 |DOUT_OE[7]                                 
+DOUT_OE[6]                                 |DOUT_OE[6]                                 
+DOUT_OE[5]                                 |DOUT_OE[5]                                 
+DOUT_OE[4]                                 |DOUT_OE[4]                                 
+DOUT_OE[3]                                 |DOUT_OE[3]                                 
+DOUT_OE[2]                                 |DOUT_OE[2]                                 
+DOUT_OE[1]                                 |DOUT_OE[1]                                 
+DOUT_OE[0]                                 |DOUT_OE[0]                                 
+DOUT_OUT[0]                                |DOUT_OUT[0]                                
+CLKS_PU                                    |CLKS_PU                                    
+CLKS_PD                                    |CLKS_PD                                    
+DOUT_CS[7]                                 |DOUT_CS[7]                                 
+DOUT_SL[7]                                 |DOUT_SL[7]                                 
+DOUT_IE[7]                                 |DOUT_IE[7]                                 
+DOUT_PU[7]                                 |DOUT_PU[7]                                 
+DOUT_PD[7]                                 |DOUT_PD[7]                                 
+DOUT_PDRV0[7]                              |DOUT_PDRV0[7]                              
+DOUT_PDRV1[7]                              |DOUT_PDRV1[7]                              
+DOUT_CS[6]                                 |DOUT_CS[6]                                 
+DOUT_SL[6]                                 |DOUT_SL[6]                                 
+DOUT_IE[6]                                 |DOUT_IE[6]                                 
+DOUT_PU[6]                                 |DOUT_PU[6]                                 
+DOUT_PD[6]                                 |DOUT_PD[6]                                 
+DOUT_PDRV0[6]                              |DOUT_PDRV0[6]                              
+DOUT_PDRV1[6]                              |DOUT_PDRV1[6]                              
+DOUT_CS[5]                                 |DOUT_CS[5]                                 
+DOUT_SL[5]                                 |DOUT_SL[5]                                 
+DOUT_IE[5]                                 |DOUT_IE[5]                                 
+DOUT_PU[5]                                 |DOUT_PU[5]                                 
+DOUT_PD[5]                                 |DOUT_PD[5]                                 
+DOUT_PDRV0[5]                              |DOUT_PDRV0[5]                              
+DOUT_PDRV1[5]                              |DOUT_PDRV1[5]                              
+DOUT_CS[4]                                 |DOUT_CS[4]                                 
+DOUT_SL[4]                                 |DOUT_SL[4]                                 
+DOUT_IE[4]                                 |DOUT_IE[4]                                 
+DOUT_PU[4]                                 |DOUT_PU[4]                                 
+DOUT_PD[4]                                 |DOUT_PD[4]                                 
+DOUT_PDRV0[4]                              |DOUT_PDRV0[4]                              
+DOUT_PDRV1[4]                              |DOUT_PDRV1[4]                              
+DOUT_CS[3]                                 |DOUT_CS[3]                                 
+DOUT_SL[3]                                 |DOUT_SL[3]                                 
+DOUT_IE[3]                                 |DOUT_IE[3]                                 
+DOUT_PU[3]                                 |DOUT_PU[3]                                 
+DOUT_PD[3]                                 |DOUT_PD[3]                                 
+DOUT_PDRV0[3]                              |DOUT_PDRV0[3]                              
+DOUT_PDRV1[3]                              |DOUT_PDRV1[3]                              
+DOUT_CS[2]                                 |DOUT_CS[2]                                 
+DOUT_SL[2]                                 |DOUT_SL[2]                                 
+DOUT_IE[2]                                 |DOUT_IE[2]                                 
+DOUT_PU[2]                                 |DOUT_PU[2]                                 
+DOUT_PD[2]                                 |DOUT_PD[2]                                 
+DOUT_PDRV0[2]                              |DOUT_PDRV0[2]                              
+DOUT_PDRV1[2]                              |DOUT_PDRV1[2]                              
+DOUT_CS[1]                                 |DOUT_CS[1]                                 
+DOUT_SL[1]                                 |DOUT_SL[1]                                 
+DOUT_IE[1]                                 |DOUT_IE[1]                                 
+DOUT_PU[1]                                 |DOUT_PU[1]                                 
+DOUT_PD[1]                                 |DOUT_PD[1]                                 
+DOUT_PDRV0[1]                              |DOUT_PDRV0[1]                              
+DOUT_PDRV1[1]                              |DOUT_PDRV1[1]                              
+DOUT_CS[0]                                 |DOUT_CS[0]                                 
+DOUT_SL[0]                                 |DOUT_SL[0]                                 
+DOUT_IE[0]                                 |DOUT_IE[0]                                 
+DOUT_PU[0]                                 |DOUT_PU[0]                                 
+DOUT_PD[0]                                 |DOUT_PD[0]                                 
+DOUT_PDRV0[0]                              |DOUT_PDRV0[0]                              
+DOUT_PDRV1[0]                              |DOUT_PDRV1[0]                              
+VREFP                                      |VREFP                                      
+VINP                                       |VINP                                       
+VREFN                                      |VREFN                                      
+VINN                                       |VINN                                       
+DOUT_IN[7]                                 |DOUT_IN[7]                                 
+DOUT_IN[6]                                 |DOUT_IN[6]                                 
+DOUT_IN[5]                                 |DOUT_IN[5]                                 
+DOUT_IN[4]                                 |DOUT_IN[4]                                 
+DOUT_IN[3]                                 |DOUT_IN[3]                                 
+DOUT_IN[2]                                 |DOUT_IN[2]                                 
+DOUT_IN[1]                                 |DOUT_IN[1]                                 
+DOUT_IN[0]                                 |DOUT_IN[0]                                 
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes A44_A and A44_A are equivalent.
+
+Final result: Circuits match uniquely.
+.

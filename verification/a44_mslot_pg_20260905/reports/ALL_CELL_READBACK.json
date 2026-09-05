@@ -1,0 +1,2257 @@
+[
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__tiel",
+    "bbox_dbu": [
+      -430,
+      -430,
+      2670,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__filltie",
+    "bbox_dbu": [
+      -430,
+      -430,
+      1550,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__endcap",
+    "bbox_dbu": [
+      -430,
+      -430,
+      1550,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "gf180mcu_fd_sc_mcu7t5v0__tieh",
+    "bbox_dbu": [
+      -430,
+      -430,
+      2670,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "via_dev$2$1$1",
+    "bbox_dbu": [
+      -8040,
+      48480,
+      -4040,
+      96330
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "ppolyf_u_9H3LNU$1$1",
+    "bbox_dbu": [
+      -3210,
+      -55180,
+      10050,
+      -12940
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "diode_pd2nw_06v0_5DG9HC$1$1",
+    "bbox_dbu": [
+      26940,
+      -16800,
+      40620,
+      30120
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "diode_nd2ps_06v0_MV3SZ3$1$1",
+    "bbox_dbu": [
+      -28640,
+      40060,
+      -16640,
+      85540
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "io_secondary_5p0",
+    "bbox_dbu": [
+      -41685,
+      0,
+      37810,
+      75650
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__VIA_Via3_HV",
+    "bbox_dbu": [
+      -190,
+      -190,
+      190,
+      190
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__VIA_via3_4_10000_1200_1_9_1040_1040",
+    "bbox_dbu": [
+      -2500,
+      -190,
+      2500,
+      190
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__VIA_Via2_VH",
+    "bbox_dbu": [
+      -190,
+      -190,
+      190,
+      190
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__VIA_via2_3_10000_1200_1_9_1040_1040",
+    "bbox_dbu": [
+      -2270,
+      -190,
+      2270,
+      190
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__VIA_Via1_VV",
+    "bbox_dbu": [
+      -140,
+      -190,
+      140,
+      190
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__VIA_Via1_HV",
+    "bbox_dbu": [
+      -190,
+      -190,
+      190,
+      190
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__VIA_via1_2_10000_1200_1_9_1040_1040",
+    "bbox_dbu": [
+      -2270,
+      -300,
+      2270,
+      300
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__or2_4",
+    "bbox_dbu": [
+      -430,
+      -430,
+      10510,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__or2_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      4910,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__oai211_2",
+    "bbox_dbu": [
+      -430,
+      -430,
+      10510,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__oai211_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      6030,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__oai21_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      4910,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__nor4_4",
+    "bbox_dbu": [
+      -430,
+      -430,
+      21150,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__nor4_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      6030,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__nor3_2",
+    "bbox_dbu": [
+      -430,
+      -430,
+      8270,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__nor3_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      4910,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__nor2_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      3790,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__nand4_4",
+    "bbox_dbu": [
+      -430,
+      -430,
+      18350,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__nand4_2",
+    "bbox_dbu": [
+      -430,
+      -430,
+      9390,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__nand4_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      5470,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__nand3_2",
+    "bbox_dbu": [
+      -430,
+      -430,
+      7710,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__nand2_4",
+    "bbox_dbu": [
+      -430,
+      -430,
+      9390,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__nand2_2",
+    "bbox_dbu": [
+      -430,
+      -430,
+      5470,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__nand2_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      3230,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__mux2_2",
+    "bbox_dbu": [
+      -430,
+      -430,
+      8830,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__filltie",
+    "bbox_dbu": [
+      -430,
+      -430,
+      1550,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_64",
+    "bbox_dbu": [
+      -430,
+      -430,
+      36270,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_32",
+    "bbox_dbu": [
+      -430,
+      -430,
+      18350,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_16",
+    "bbox_dbu": [
+      -430,
+      -430,
+      9390,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_8",
+    "bbox_dbu": [
+      -430,
+      -430,
+      4910,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__fillcap_4",
+    "bbox_dbu": [
+      -430,
+      -430,
+      2670,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__fill_2",
+    "bbox_dbu": [
+      -430,
+      -430,
+      1550,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__fill_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      990,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__endcap",
+    "bbox_dbu": [
+      -430,
+      -430,
+      1550,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__dlyb_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      9390,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__dlya_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      6590,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__dffrnq_2",
+    "bbox_dbu": [
+      -430,
+      -430,
+      20590,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      20590,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      19470,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__dffnq_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      17230,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__clkinv_2",
+    "bbox_dbu": [
+      -430,
+      -430,
+      3790,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__clkinv_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      2670,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_16",
+    "bbox_dbu": [
+      -430,
+      -430,
+      28430,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_8",
+    "bbox_dbu": [
+      -430,
+      -430,
+      14990,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_2",
+    "bbox_dbu": [
+      -430,
+      -430,
+      4910,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__clkbuf_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      3790,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__buf_4",
+    "bbox_dbu": [
+      -430,
+      -430,
+      8270,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__buf_2",
+    "bbox_dbu": [
+      -430,
+      -430,
+      4910,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__buf_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      3790,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__aoi221_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      6590,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__aoi22_4",
+    "bbox_dbu": [
+      -430,
+      -430,
+      18350,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__aoi22_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      5470,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__aoi21_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      4910,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__antenna",
+    "bbox_dbu": [
+      -430,
+      -430,
+      1550,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__and4_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      6590,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__and3_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      6030,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__and2_4",
+    "bbox_dbu": [
+      -430,
+      -430,
+      9950,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R7__gf180mcu_fd_sc_mcu7t5v0__and2_1",
+    "bbox_dbu": [
+      -430,
+      -430,
+      4910,
+      4350
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "SAR_LOGIC_ACTUAL_RTL_SS",
+    "bbox_dbu": [
+      0,
+      0,
+      240000,
+      240000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9",
+    "bbox_dbu": [
+      0,
+      0,
+      168000,
+      100000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "A44_CLKS_BUFFER_R1",
+    "bbox_dbu": [
+      0,
+      0,
+      120000,
+      60000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8W__pfet_03v3_FKHA32",
+    "bbox_dbu": [
+      -5090,
+      -1550,
+      5090,
+      1550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__pfet_03v3_X2N4NU",
+    "bbox_dbu": [
+      -3970,
+      -1550,
+      3970,
+      1550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__nfet_03v3_GE79XY",
+    "bbox_dbu": [
+      -4820,
+      -850,
+      4820,
+      850
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__nfet_03v3_9HSG6M",
+    "bbox_dbu": [
+      -3700,
+      -850,
+      3700,
+      850
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__A44_TGDRV_PCLK_ROW_W_R1",
+    "bbox_dbu": [
+      0,
+      0,
+      34000,
+      90000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8W__pfet_03v3_PUCBRS",
+    "bbox_dbu": [
+      -6210,
+      -1550,
+      6210,
+      1550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__pfet_03v3_TTAYZ7",
+    "bbox_dbu": [
+      -3410,
+      -1550,
+      3410,
+      1550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__nfet_03v3_YTQ48T",
+    "bbox_dbu": [
+      -5940,
+      -850,
+      5940,
+      850
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__nfet_03v3_YTZ44F",
+    "bbox_dbu": [
+      -3140,
+      -850,
+      3140,
+      850
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__A44_TGDRV_NCLK_ROW_W_R1",
+    "bbox_dbu": [
+      0,
+      0,
+      34000,
+      90000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8W__A44_TGCLK_DRIVER_UDRV_W_R1",
+    "bbox_dbu": [
+      0,
+      0,
+      34000,
+      90000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        42,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8W__pfet_03v3_C2L3T7",
+    "bbox_dbu": [
+      -1170,
+      -15070,
+      1170,
+      15070
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__nfet_03v3_SD8HJT",
+    "bbox_dbu": [
+      -900,
+      -8060,
+      900,
+      8060
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__A44_TG8_CORE_W_R2",
+    "bbox_dbu": [
+      0,
+      0,
+      61000,
+      90000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        42,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8W__A44_TG8_SLICE_UDRV_W_R1",
+    "bbox_dbu": [
+      0,
+      0,
+      95000,
+      90000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8W__pfet_03v3_8RS7KV",
+    "bbox_dbu": [
+      -1170,
+      -7110,
+      1170,
+      7110
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__nfet_03v3_6LX9QF",
+    "bbox_dbu": [
+      -900,
+      -3570,
+      900,
+      3570
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__pfet_03v3_GXTH48",
+    "bbox_dbu": [
+      -1170,
+      -3225,
+      1170,
+      3225
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__nfet_03v3_WHE5HU",
+    "bbox_dbu": [
+      -900,
+      -1630,
+      900,
+      1630
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__A44_DCTRL_BIT_DRIVER_R4",
+    "bbox_dbu": [
+      0,
+      0,
+      40000,
+      28000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        42,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8W__A44_DCTRL_STRIP_W_R2",
+    "bbox_dbu": [
+      0,
+      0,
+      285000,
+      28000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8W__pfet_03v3_XNC3G5",
+    "bbox_dbu": [
+      -1170,
+      -12550,
+      1170,
+      12550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__A44_G6_PFET_M9_GUARD0_R0",
+    "bbox_dbu": [
+      -1170,
+      -12550,
+      1170,
+      12550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__nfet_03v3_ATEY9D",
+    "bbox_dbu": [
+      -900,
+      -11160,
+      900,
+      11160
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__A44_G6_NFET_M9_GUARD0_R0",
+    "bbox_dbu": [
+      -900,
+      -11160,
+      900,
+      11160
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__A44_CAP_SWITCH_BANK_CORE_O2",
+    "bbox_dbu": [
+      -900,
+      -12550,
+      8770,
+      12550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8W__A44_SW_BANK64_SOUTH_R8_M6",
+    "bbox_dbu": [
+      0,
+      0,
+      386720,
+      52000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8W__A44_SW_BANK64_NORTH_R8_M6",
+    "bbox_dbu": [
+      0,
+      0,
+      386720,
+      52000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8W__A44_MIM_6P855_R0",
+    "bbox_dbu": [
+      -600,
+      -600,
+      7455,
+      7455
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__A44_C1_MIM6_R0",
+    "bbox_dbu": [
+      0,
+      0,
+      23565,
+      16000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__A44_CAP_CORE128_M6_R1",
+    "bbox_dbu": [
+      605,
+      -100,
+      386720,
+      157670
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8W__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6",
+    "bbox_dbu": [
+      0,
+      0,
+      386720,
+      261570
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "A44_CDAC_UNIT_W_R8_M6",
+    "bbox_dbu": [
+      0,
+      0,
+      390000,
+      399700
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        41,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        0
+      ],
+      [
+        81,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "A44_CDAC_UNIT_W_R7",
+    "bbox_dbu": [
+      0,
+      0,
+      390000,
+      609850
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__pfet_03v3_FKHA32",
+    "bbox_dbu": [
+      -5090,
+      -1550,
+      5090,
+      1550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__pfet_03v3_X2N4NU",
+    "bbox_dbu": [
+      -3970,
+      -1550,
+      3970,
+      1550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__nfet_03v3_GE79XY",
+    "bbox_dbu": [
+      -4820,
+      -850,
+      4820,
+      850
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__nfet_03v3_9HSG6M",
+    "bbox_dbu": [
+      -3700,
+      -850,
+      3700,
+      850
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__A44_TGDRV_PCLK_ROW_E_R1",
+    "bbox_dbu": [
+      0,
+      0,
+      34000,
+      90000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8E__pfet_03v3_PUCBRS",
+    "bbox_dbu": [
+      -6210,
+      -1550,
+      6210,
+      1550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__pfet_03v3_TTAYZ7",
+    "bbox_dbu": [
+      -3410,
+      -1550,
+      3410,
+      1550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__nfet_03v3_YTQ48T",
+    "bbox_dbu": [
+      -5940,
+      -850,
+      5940,
+      850
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__nfet_03v3_YTZ44F",
+    "bbox_dbu": [
+      -3140,
+      -850,
+      3140,
+      850
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__A44_TGDRV_NCLK_ROW_E_R1",
+    "bbox_dbu": [
+      0,
+      0,
+      34000,
+      90000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8E__A44_TGCLK_DRIVER_UDRV_E_R1",
+    "bbox_dbu": [
+      0,
+      0,
+      34000,
+      90000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        42,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8E__pfet_03v3_C2L3T7",
+    "bbox_dbu": [
+      -1170,
+      -15070,
+      1170,
+      15070
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__nfet_03v3_SD8HJT",
+    "bbox_dbu": [
+      -900,
+      -8060,
+      900,
+      8060
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__A44_TG8_CORE_R7",
+    "bbox_dbu": [
+      0,
+      0,
+      61000,
+      90000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        42,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8E__A44_TG8_SLICE_UDRV_E_R1",
+    "bbox_dbu": [
+      0,
+      0,
+      95000,
+      90000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8E__pfet_03v3_8RS7KV",
+    "bbox_dbu": [
+      -1170,
+      -7110,
+      1170,
+      7110
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__nfet_03v3_6LX9QF",
+    "bbox_dbu": [
+      -900,
+      -3570,
+      900,
+      3570
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__pfet_03v3_GXTH48",
+    "bbox_dbu": [
+      -1170,
+      -3225,
+      1170,
+      3225
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__nfet_03v3_WHE5HU",
+    "bbox_dbu": [
+      -900,
+      -1630,
+      900,
+      1630
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__A44_DCTRL_BIT_DRIVER_R4",
+    "bbox_dbu": [
+      0,
+      0,
+      40000,
+      28000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        42,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8E__A44_DCTRL_STRIP_E_R2",
+    "bbox_dbu": [
+      0,
+      0,
+      285000,
+      28000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8E__pfet_03v3_XNC3G5",
+    "bbox_dbu": [
+      -1170,
+      -12550,
+      1170,
+      12550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__A44_G6_PFET_M9_GUARD0_R0",
+    "bbox_dbu": [
+      -1170,
+      -12550,
+      1170,
+      12550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__nfet_03v3_ATEY9D",
+    "bbox_dbu": [
+      -900,
+      -11160,
+      900,
+      11160
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__A44_G6_NFET_M9_GUARD0_R0",
+    "bbox_dbu": [
+      -900,
+      -11160,
+      900,
+      11160
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__A44_CAP_SWITCH_BANK_CORE_O2",
+    "bbox_dbu": [
+      -900,
+      -12550,
+      8770,
+      12550
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8E__A44_SW_BANK64_SOUTH_R8_M6",
+    "bbox_dbu": [
+      0,
+      0,
+      386720,
+      52000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8E__A44_SW_BANK64_NORTH_R8_M6",
+    "bbox_dbu": [
+      0,
+      0,
+      386720,
+      52000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "R8E__A44_MIM_6P855_R0",
+    "bbox_dbu": [
+      -600,
+      -600,
+      7455,
+      7455
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__A44_C1_MIM6_R0",
+    "bbox_dbu": [
+      0,
+      0,
+      23565,
+      16000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__A44_CAP_CORE128_M6_R1",
+    "bbox_dbu": [
+      605,
+      -100,
+      386720,
+      157670
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "R8E__A44_CDAC_CAP_BANK_ASSEMBLY_R8_M6",
+    "bbox_dbu": [
+      0,
+      0,
+      386720,
+      261570
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "A44_CDAC_UNIT_E_R8_M6",
+    "bbox_dbu": [
+      0,
+      0,
+      390000,
+      399700
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        41,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        0
+      ],
+      [
+        81,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "A44_CDAC_UNIT_E_R7",
+    "bbox_dbu": [
+      0,
+      0,
+      390000,
+      609850
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": []
+  },
+  {
+    "cell": "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+    "bbox_dbu": [
+      0,
+      0,
+      1000000,
+      1000000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        41,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        0
+      ],
+      [
+        81,
+        0
+      ]
+    ]
+  },
+  {
+    "cell": "A44_A",
+    "bbox_dbu": [
+      0,
+      0,
+      1110000,
+      1110000
+    ],
+    "bbox_unchanged": true,
+    "own_geometry_exact_registered_union": true,
+    "modified_own_layers": [
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        36,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0
+      ],
+      [
+        41,
+        0
+      ],
+      [
+        42,
+        0
+      ],
+      [
+        46,
+        0
+      ],
+      [
+        81,
+        0
+      ]
+    ]
+  }
+]

@@ -11,7 +11,7 @@ the `A44_A` project-slot top:
 - [A44_A GDSII layout](gds/A44_A.gds)
 - [A44_A integrated DEF](layout/def/A44_A.def)
 - [A44_A LEF abstract](layout/lef/A44_A.lef)
-- [Current layout implementation](verification/a44_q2_analog_esd)
+- [Current layout files and physical checks](verification/a44_mslot_pg_20260905)
 - [Layout update record](layout/CHANGELOG.md)
 - [Component layouts](gds/components)
 - [Machine-readable current layout bindings](layout/CURRENT_LAYOUT.json)
@@ -24,17 +24,14 @@ edge. The 1000-by-1000 um SAR ADC CORE remains a child at `(55, 55)`.
 
 ## Current Q2 layout implementation
 
-The selected layout is `Q2_LINK18_HIER_R1_ANALOG_ESD_R1`. It includes the Q2
-CDAC MIM/VBOT and parent VTOP routing, the TG3G_R7A2 SAR-logic implementation,
-and four physical `io_secondary_5p0` cells on VREFN, VINN, VINP and VREFP.
-Each analog pad connects to the CORE through a poly resistor; the protected
-side connects to four diodes per supply rail.
+The selected files are the VMP3 layout snapshot built on
+`Q2_LINK18_HIER_R1_ANALOG_ESD_R1`. They include the MIM M5 coverFT update and
+additive parent-level PG metal/via changes. The TOP, CORE, component GDS files
+and saved layout images are listed in [CURRENT_LAYOUT.json](layout/CURRENT_LAYOUT.json).
 
-The TOP, CORE and component GDS files, routed DEF, LEF, native Magic hierarchy,
-layout images and full TOP LVS reference are bound by
-[CURRENT_LAYOUT.json](layout/CURRENT_LAYOUT.json).
-[Implementation details](verification/a44_q2_analog_esd) and the
-[change record](layout/CHANGELOG.md) describe the updated files and connections.
+The existing [physical-check records](verification/a44_mslot_pg_20260905),
+[Q2 analog ESD circuit](verification/a44_q2_analog_esd) and
+[layout update record](layout/CHANGELOG.md) provide the corresponding files.
 
 ## Preserved earlier cap x1/3 baseline
 

@@ -1,0 +1,1190 @@
+{
+  "status": "PASS_ACTUAL_DIAGNOSTIC_GDS_GEOMETRY_AND_ROUTING_INVARIANTS",
+  "candidate_project_sha256": "970f418ff9b68331d47cbf85c5a515cebaaaab8a0c9f0c0a6412f6a7570b931a",
+  "MIM_instances": 1536,
+  "leaves": [
+    {
+      "cell": "R8E__A44_MIM_6P855_R0",
+      "instances": 768,
+      "Via4_per_MIM": 64,
+      "grid_first_lower_left_dbu": [
+        640,
+        640
+      ],
+      "pitch_dbu": 760,
+      "cut_width_dbu": 260,
+      "CAP_and_length_markers_exact": true
+    },
+    {
+      "cell": "R8W__A44_MIM_6P855_R0",
+      "instances": 768,
+      "Via4_per_MIM": 64,
+      "grid_first_lower_left_dbu": [
+        640,
+        640
+      ],
+      "pitch_dbu": 760,
+      "cut_width_dbu": 260,
+      "CAP_and_length_markers_exact": true
+    }
+  ],
+  "C1_per_side": {
+    "R8W": 128,
+    "R8E": 128
+  },
+  "independent_bottom_networks_per_side": {
+    "R8W": 128,
+    "R8E": 128
+  },
+  "common_top_plate_networks_per_side": {
+    "R8W": 1,
+    "R8E": 1
+  },
+  "MIM_top_bottom_not_shorted": true,
+  "real_PG_rail_probes": [
+    {
+      "name": "VINP",
+      "metal": "M2",
+      "xy_dbu": [
+        246610,
+        1109500
+      ],
+      "cluster_id": 6907
+    },
+    {
+      "name": "VINP",
+      "metal": "M2",
+      "xy_dbu": [
+        252290,
+        1109500
+      ],
+      "cluster_id": 6907
+    },
+    {
+      "name": "VINP",
+      "metal": "M2",
+      "xy_dbu": [
+        257970,
+        1109500
+      ],
+      "cluster_id": 6907
+    },
+    {
+      "name": "VINP",
+      "metal": "M2",
+      "xy_dbu": [
+        263650,
+        1109500
+      ],
+      "cluster_id": 6907
+    },
+    {
+      "name": "VINP",
+      "metal": "M2",
+      "xy_dbu": [
+        271350,
+        1109500
+      ],
+      "cluster_id": 6907
+    },
+    {
+      "name": "VINP",
+      "metal": "M2",
+      "xy_dbu": [
+        277030,
+        1109500
+      ],
+      "cluster_id": 6907
+    },
+    {
+      "name": "VINP",
+      "metal": "M2",
+      "xy_dbu": [
+        282710,
+        1109500
+      ],
+      "cluster_id": 6907
+    },
+    {
+      "name": "VINP",
+      "metal": "M2",
+      "xy_dbu": [
+        288390,
+        1109500
+      ],
+      "cluster_id": 6907
+    },
+    {
+      "name": "VREFP",
+      "metal": "M2",
+      "xy_dbu": [
+        346610,
+        1109500
+      ],
+      "cluster_id": 6908
+    },
+    {
+      "name": "VREFP",
+      "metal": "M2",
+      "xy_dbu": [
+        352290,
+        1109500
+      ],
+      "cluster_id": 6908
+    },
+    {
+      "name": "VREFP",
+      "metal": "M2",
+      "xy_dbu": [
+        357970,
+        1109500
+      ],
+      "cluster_id": 6908
+    },
+    {
+      "name": "VREFP",
+      "metal": "M2",
+      "xy_dbu": [
+        363650,
+        1109500
+      ],
+      "cluster_id": 6908
+    },
+    {
+      "name": "VREFP",
+      "metal": "M2",
+      "xy_dbu": [
+        371350,
+        1109500
+      ],
+      "cluster_id": 6908
+    },
+    {
+      "name": "VREFP",
+      "metal": "M2",
+      "xy_dbu": [
+        377030,
+        1109500
+      ],
+      "cluster_id": 6908
+    },
+    {
+      "name": "VREFP",
+      "metal": "M2",
+      "xy_dbu": [
+        382710,
+        1109500
+      ],
+      "cluster_id": 6908
+    },
+    {
+      "name": "VREFP",
+      "metal": "M2",
+      "xy_dbu": [
+        388390,
+        1109500
+      ],
+      "cluster_id": 6908
+    },
+    {
+      "name": "DOUT_CS[3]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        776450
+      ],
+      "cluster_id": 6858
+    },
+    {
+      "name": "DOUT_SL[3]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        711140
+      ],
+      "cluster_id": 6832
+    },
+    {
+      "name": "DOUT_IE[3]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        768425
+      ],
+      "cluster_id": 6851
+    },
+    {
+      "name": "DOUT_OE[3]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        709680
+      ],
+      "cluster_id": 6834
+    },
+    {
+      "name": "DOUT_PU[3]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        773845
+      ],
+      "cluster_id": 6852
+    },
+    {
+      "name": "DOUT_PD[3]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        769480
+      ],
+      "cluster_id": 6846
+    },
+    {
+      "name": "DOUT_OUT[3]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        710410
+      ],
+      "cluster_id": 5
+    },
+    {
+      "name": "DOUT_PDRV0[3]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        772700
+      ],
+      "cluster_id": 6849
+    },
+    {
+      "name": "DOUT_PDRV1[3]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        771990
+      ],
+      "cluster_id": 6867
+    },
+    {
+      "name": "DOUT_IN[3]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        708950
+      ],
+      "cluster_id": 6835
+    },
+    {
+      "name": "DOUT_CS[2]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        876450
+      ],
+      "cluster_id": 6859
+    },
+    {
+      "name": "DOUT_SL[2]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        811140
+      ],
+      "cluster_id": 6843
+    },
+    {
+      "name": "DOUT_IE[2]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        868425
+      ],
+      "cluster_id": 6844
+    },
+    {
+      "name": "DOUT_OE[2]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        809680
+      ],
+      "cluster_id": 6850
+    },
+    {
+      "name": "DOUT_PU[2]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        873845
+      ],
+      "cluster_id": 6862
+    },
+    {
+      "name": "DOUT_PD[2]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        869480
+      ],
+      "cluster_id": 6863
+    },
+    {
+      "name": "DOUT_OUT[2]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        810410
+      ],
+      "cluster_id": 6
+    },
+    {
+      "name": "DOUT_PDRV0[2]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        872700
+      ],
+      "cluster_id": 6864
+    },
+    {
+      "name": "DOUT_PDRV1[2]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        871990
+      ],
+      "cluster_id": 6866
+    },
+    {
+      "name": "DOUT_IN[2]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        808950
+      ],
+      "cluster_id": 6854
+    },
+    {
+      "name": "DOUT_CS[1]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        976450
+      ],
+      "cluster_id": 6861
+    },
+    {
+      "name": "DOUT_SL[1]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        911140
+      ],
+      "cluster_id": 6845
+    },
+    {
+      "name": "DOUT_IE[1]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        968425
+      ],
+      "cluster_id": 6856
+    },
+    {
+      "name": "DOUT_OE[1]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        909680
+      ],
+      "cluster_id": 6847
+    },
+    {
+      "name": "DOUT_PU[1]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        973845
+      ],
+      "cluster_id": 6853
+    },
+    {
+      "name": "DOUT_PD[1]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        969480
+      ],
+      "cluster_id": 6841
+    },
+    {
+      "name": "DOUT_OUT[1]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        910410
+      ],
+      "cluster_id": 7
+    },
+    {
+      "name": "DOUT_PDRV0[1]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        972700
+      ],
+      "cluster_id": 6842
+    },
+    {
+      "name": "DOUT_PDRV1[1]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        971990
+      ],
+      "cluster_id": 6865
+    },
+    {
+      "name": "DOUT_IN[1]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        908950
+      ],
+      "cluster_id": 6848
+    },
+    {
+      "name": "DOUT_CS[0]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        1076450
+      ],
+      "cluster_id": 6893
+    },
+    {
+      "name": "DOUT_SL[0]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        1011140
+      ],
+      "cluster_id": 6860
+    },
+    {
+      "name": "DOUT_IE[0]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        1068425
+      ],
+      "cluster_id": 6894
+    },
+    {
+      "name": "DOUT_OE[0]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        1009680
+      ],
+      "cluster_id": 6857
+    },
+    {
+      "name": "DOUT_PU[0]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        1073845
+      ],
+      "cluster_id": 6895
+    },
+    {
+      "name": "DOUT_PD[0]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        1069480
+      ],
+      "cluster_id": 6896
+    },
+    {
+      "name": "DOUT_OUT[0]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        1010410
+      ],
+      "cluster_id": 8
+    },
+    {
+      "name": "DOUT_PDRV0[0]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        1072700
+      ],
+      "cluster_id": 6897
+    },
+    {
+      "name": "DOUT_PDRV1[0]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        1071990
+      ],
+      "cluster_id": 6898
+    },
+    {
+      "name": "DOUT_IN[0]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        1008950
+      ],
+      "cluster_id": 6855
+    },
+    {
+      "name": "VREFN",
+      "metal": "M2",
+      "xy_dbu": [
+        46610,
+        1109500
+      ],
+      "cluster_id": 6905
+    },
+    {
+      "name": "VREFN",
+      "metal": "M2",
+      "xy_dbu": [
+        52290,
+        1109500
+      ],
+      "cluster_id": 6905
+    },
+    {
+      "name": "VREFN",
+      "metal": "M2",
+      "xy_dbu": [
+        57970,
+        1109500
+      ],
+      "cluster_id": 6905
+    },
+    {
+      "name": "VREFN",
+      "metal": "M2",
+      "xy_dbu": [
+        63650,
+        1109500
+      ],
+      "cluster_id": 6905
+    },
+    {
+      "name": "VREFN",
+      "metal": "M2",
+      "xy_dbu": [
+        71350,
+        1109500
+      ],
+      "cluster_id": 6905
+    },
+    {
+      "name": "VREFN",
+      "metal": "M2",
+      "xy_dbu": [
+        77030,
+        1109500
+      ],
+      "cluster_id": 6905
+    },
+    {
+      "name": "VREFN",
+      "metal": "M2",
+      "xy_dbu": [
+        82710,
+        1109500
+      ],
+      "cluster_id": 6905
+    },
+    {
+      "name": "VREFN",
+      "metal": "M2",
+      "xy_dbu": [
+        88390,
+        1109500
+      ],
+      "cluster_id": 6905
+    },
+    {
+      "name": "VINN",
+      "metal": "M2",
+      "xy_dbu": [
+        146610,
+        1109500
+      ],
+      "cluster_id": 6906
+    },
+    {
+      "name": "VINN",
+      "metal": "M2",
+      "xy_dbu": [
+        152290,
+        1109500
+      ],
+      "cluster_id": 6906
+    },
+    {
+      "name": "VINN",
+      "metal": "M2",
+      "xy_dbu": [
+        157970,
+        1109500
+      ],
+      "cluster_id": 6906
+    },
+    {
+      "name": "VINN",
+      "metal": "M2",
+      "xy_dbu": [
+        163650,
+        1109500
+      ],
+      "cluster_id": 6906
+    },
+    {
+      "name": "VINN",
+      "metal": "M2",
+      "xy_dbu": [
+        171350,
+        1109500
+      ],
+      "cluster_id": 6906
+    },
+    {
+      "name": "VINN",
+      "metal": "M2",
+      "xy_dbu": [
+        177030,
+        1109500
+      ],
+      "cluster_id": 6906
+    },
+    {
+      "name": "VINN",
+      "metal": "M2",
+      "xy_dbu": [
+        182710,
+        1109500
+      ],
+      "cluster_id": 6906
+    },
+    {
+      "name": "VINN",
+      "metal": "M2",
+      "xy_dbu": [
+        188390,
+        1109500
+      ],
+      "cluster_id": 6906
+    },
+    {
+      "name": "DOUT_CS[5]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        576450
+      ],
+      "cluster_id": 6671
+    },
+    {
+      "name": "DOUT_IE[5]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        568425
+      ],
+      "cluster_id": 6672
+    },
+    {
+      "name": "DOUT_PU[5]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        573845
+      ],
+      "cluster_id": 6673
+    },
+    {
+      "name": "DOUT_PD[5]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        569480
+      ],
+      "cluster_id": 6674
+    },
+    {
+      "name": "DOUT_PDRV0[5]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        572700
+      ],
+      "cluster_id": 6675
+    },
+    {
+      "name": "DOUT_PDRV1[5]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        571990
+      ],
+      "cluster_id": 6676
+    },
+    {
+      "name": "DOUT_CS[4]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        676450
+      ],
+      "cluster_id": 6752
+    },
+    {
+      "name": "DOUT_SL[4]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        611140
+      ],
+      "cluster_id": 6683
+    },
+    {
+      "name": "DOUT_IE[4]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        668425
+      ],
+      "cluster_id": 6753
+    },
+    {
+      "name": "DOUT_OE[4]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        609680
+      ],
+      "cluster_id": 6684
+    },
+    {
+      "name": "DOUT_PU[4]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        673845
+      ],
+      "cluster_id": 6754
+    },
+    {
+      "name": "DOUT_PD[4]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        669480
+      ],
+      "cluster_id": 6755
+    },
+    {
+      "name": "DOUT_OUT[4]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        610410
+      ],
+      "cluster_id": 4
+    },
+    {
+      "name": "DOUT_PDRV0[4]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        672700
+      ],
+      "cluster_id": 6756
+    },
+    {
+      "name": "DOUT_PDRV1[4]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        671990
+      ],
+      "cluster_id": 6757
+    },
+    {
+      "name": "DOUT_IN[4]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        608950
+      ],
+      "cluster_id": 6685
+    },
+    {
+      "name": "VDD",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        111110
+      ],
+      "cluster_id": 12
+    },
+    {
+      "name": "VDD",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        123885
+      ],
+      "cluster_id": 12
+    },
+    {
+      "name": "CLKS_PU",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        273845
+      ],
+      "cluster_id": 3315
+    },
+    {
+      "name": "CLKS_PD",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        269480
+      ],
+      "cluster_id": 3316
+    },
+    {
+      "name": "CLKS",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        208950
+      ],
+      "cluster_id": 9
+    },
+    {
+      "name": "DOUT_CS[7]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        376450
+      ],
+      "cluster_id": 6397
+    },
+    {
+      "name": "DOUT_SL[7]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        311140
+      ],
+      "cluster_id": 4638
+    },
+    {
+      "name": "DOUT_IE[7]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        368425
+      ],
+      "cluster_id": 6396
+    },
+    {
+      "name": "DOUT_OE[7]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        309680
+      ],
+      "cluster_id": 4755
+    },
+    {
+      "name": "DOUT_PU[7]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        373845
+      ],
+      "cluster_id": 6398
+    },
+    {
+      "name": "DOUT_PD[7]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        369480
+      ],
+      "cluster_id": 6395
+    },
+    {
+      "name": "DOUT_OUT[7]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        310410
+      ],
+      "cluster_id": 1
+    },
+    {
+      "name": "DOUT_PDRV0[7]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        372700
+      ],
+      "cluster_id": 6399
+    },
+    {
+      "name": "DOUT_PDRV1[7]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        371990
+      ],
+      "cluster_id": 6400
+    },
+    {
+      "name": "DOUT_IN[7]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        308950
+      ],
+      "cluster_id": 4637
+    },
+    {
+      "name": "DOUT_CS[6]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        476450
+      ],
+      "cluster_id": 6498
+    },
+    {
+      "name": "DOUT_SL[6]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        411140
+      ],
+      "cluster_id": 6477
+    },
+    {
+      "name": "DOUT_IE[6]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        468425
+      ],
+      "cluster_id": 6499
+    },
+    {
+      "name": "DOUT_OE[6]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        409680
+      ],
+      "cluster_id": 6480
+    },
+    {
+      "name": "DOUT_PU[6]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        473845
+      ],
+      "cluster_id": 6500
+    },
+    {
+      "name": "DOUT_PD[6]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        469480
+      ],
+      "cluster_id": 6501
+    },
+    {
+      "name": "DOUT_OUT[6]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        410410
+      ],
+      "cluster_id": 2
+    },
+    {
+      "name": "DOUT_PDRV0[6]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        472700
+      ],
+      "cluster_id": 6502
+    },
+    {
+      "name": "DOUT_PDRV1[6]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        471990
+      ],
+      "cluster_id": 6503
+    },
+    {
+      "name": "DOUT_IN[6]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        408950
+      ],
+      "cluster_id": 6478
+    },
+    {
+      "name": "GND",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        11110
+      ],
+      "cluster_id": 6491
+    },
+    {
+      "name": "DOUT_SL[5]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        511140
+      ],
+      "cluster_id": 6595
+    },
+    {
+      "name": "GND",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        23885
+      ],
+      "cluster_id": 6491
+    },
+    {
+      "name": "DOUT_OE[5]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        509680
+      ],
+      "cluster_id": 6601
+    },
+    {
+      "name": "GND",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        35735
+      ],
+      "cluster_id": 6491
+    },
+    {
+      "name": "GND",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        49265
+      ],
+      "cluster_id": 6491
+    },
+    {
+      "name": "DOUT_OUT[5]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        510410
+      ],
+      "cluster_id": 3
+    },
+    {
+      "name": "GND",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        61115
+      ],
+      "cluster_id": 6491
+    },
+    {
+      "name": "GND",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        73890
+      ],
+      "cluster_id": 6491
+    },
+    {
+      "name": "DOUT_IN[5]",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        508950
+      ],
+      "cluster_id": 6594
+    },
+    {
+      "name": "VDD",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        135735
+      ],
+      "cluster_id": 12
+    },
+    {
+      "name": "VDD",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        149265
+      ],
+      "cluster_id": 12
+    },
+    {
+      "name": "VDD",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        161115
+      ],
+      "cluster_id": 12
+    },
+    {
+      "name": "VDD",
+      "metal": "M2",
+      "xy_dbu": [
+        500,
+        173890
+      ],
+      "cluster_id": 12
+    }
+  ],
+  "actual_cut_RC_qualified": false
+}
