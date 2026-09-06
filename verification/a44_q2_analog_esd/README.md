@@ -20,7 +20,13 @@ The original file and license are in [reference/official](reference/official).
 The standalone published GDS uses 1 nm database units and retains the official
 cell names. `info.yaml` records `secondary_esd: true` on all four analog pins.
 
-The full TOP circuit reference is [A44_A_lvs_reference.spice](spice/A44_A_lvs_reference.spice).
+The mixed-signal LVS inputs are configured in [lvs_config.json](../../lvs_config.json):
+
+- [A44_A_lvs_reference.spice](spice/A44_A_lvs_reference.spice) contains the analog circuits and TOP/CORE connections.
+- [SAR_LOGIC_ACTUAL_RTL_SS.pnl.v](verilog/SAR_LOGIC_ACTUAL_RTL_SS.pnl.v) is the final powered gate-level Verilog from the TG3G_R7A2 implementation. It includes VDD, VSS, well connections and physical cells.
+
+The SPICE `XSAR` call follows the Verilog declaration order: `CLKS CMPCK DCMPN DCMPP VDD VSS DCTRLN[7:1] DCTRLP[7:1] DOUT[7:0]`, with buses expanded from the most significant bit down. CORE GND connects to the Verilog VSS port. The included GF180MCU D LVS configuration supplies standard-cell transistor models; the analog SPICE file does not duplicate the SAR module or those models.
+
 The editable ESD [schematic](schematic/A44_SECONDARY_ESD_M2_SCHEM.sch),
 [symbol](schematic/A44_SECONDARY_ESD_M2_SCHEM.sym) and
 [subcircuit](spice/A44_SECONDARY_ESD_M2_SCHEM.spice) are included with the source.

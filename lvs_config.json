@@ -24,7 +24,7 @@
     "$UPRJ_ROOT/verification/a44_q2_analog_esd/spice/A44_A_lvs_reference.spice"
   ],
   "LVS_VERILOG_FILES": [
-    ""
+    "$UPRJ_ROOT/verification/a44_q2_analog_esd/verilog/SAR_LOGIC_ACTUAL_RTL_SS.pnl.v"
   ],
   "LAYOUT_FILE": "$UPRJ_ROOT/gds/A44_A.gds"
 }
