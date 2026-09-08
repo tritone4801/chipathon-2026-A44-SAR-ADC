@@ -34,7 +34,7 @@
       1000.0,
       1000.0
     ],
-    "cdac_implementation": "R8_M6 cap x1/3, R13 legal MIM/VBOT breakout, Q2_LINK18_HIER_R1 parent VTOP M5 links",
+    "cdac_implementation": "R8_M6 cap x1/3, R13 legal MIM/VBOT breakout, Q2_LINK18_HIER_R1 parent VTOP M5 links, DRIVER_R2 internal current-driven PG reinforcement",
     "sar_implementation": "TG3G_R7A2 regenerated physical implementation; cell name SAR_LOGIC_ACTUAL_RTL_SS retained"
   },
   "components": [
@@ -121,10 +121,12 @@
     "layout/MODULE_NAMING_MAP.csv",
     "layout/NAMING_POLICY.json",
     "layout/CHANGELOG.md",
-    "verification/a44_mslot_pg_20260905/IMAGE_BINDING.json"
+    "verification/a44_current_driven_pg_20260908/IMAGE_BINDING.json",
+    "verification/a44_current_driven_pg_20260908/IMPLEMENTATION.json",
+    "verification/a44_current_driven_pg_20260908/STATUS.json"
   ],
   "legacy_root": "gds/legacy/pre_def_alignment",
-  "selected_case": "Q2_ANALOG_ESD_MSLOT_COVERFT_PG_VMP3_DIAGNOSTIC",
+  "selected_case": "DRIVER_R2_CURRENT_DRIVEN_PG_REPAIR",
   "layout_phase": "PREFILL",
   "lvs_reference": "verification/a44_q2_analog_esd/spice/A44_A_lvs_reference.spice",
   "view_measurements": [
@@ -132,7 +134,7 @@
       "role": "PROJECT_TOP",
       "cell": "A44_A",
       "gds": "gds/A44_A.gds",
-      "image": "layout/images/mslot_pg_20260905/A44_A.png",
+      "image": "layout/images/current_driven_pg_20260908/A44_A.png",
       "all_layer_bbox_um": [
         0.0,
         0.0,
@@ -176,7 +178,7 @@
       "role": "CORE",
       "cell": "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
       "gds": "gds/A44_SAR_ADC_CORE_1000.gds",
-      "image": "layout/images/mslot_pg_20260905/A44_SAR_ADC_CORE_1000.png",
+      "image": "layout/images/current_driven_pg_20260908/A44_SAR_ADC_CORE_1000.png",
       "all_layer_bbox_um": [
         0.0,
         0.0,
@@ -220,7 +222,7 @@
       "role": "CDAC_E",
       "cell": "A44_CDAC_UNIT_E_R8_M6",
       "gds": "gds/components/A44_SAR_ADC_CDAC_E_390X399P7.gds",
-      "image": "layout/images/mslot_pg_20260905/A44_SAR_ADC_CDAC_E_390X399P7.png",
+      "image": "layout/images/current_driven_pg_20260908/A44_SAR_ADC_CDAC_E_390X399P7.png",
       "all_layer_bbox_um": [
         0.0,
         0.0,
@@ -264,7 +266,7 @@
       "role": "CDAC_W",
       "cell": "A44_CDAC_UNIT_W_R8_M6",
       "gds": "gds/components/A44_SAR_ADC_CDAC_W_390X399P7.gds",
-      "image": "layout/images/mslot_pg_20260905/A44_SAR_ADC_CDAC_W_390X399P7.png",
+      "image": "layout/images/current_driven_pg_20260908/A44_SAR_ADC_CDAC_W_390X399P7.png",
       "all_layer_bbox_um": [
         0.0,
         0.0,
@@ -308,7 +310,7 @@
       "role": "COMPARATOR",
       "cell": "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9",
       "gds": "gds/components/A44_SAR_ADC_COMPARATOR_168X100.gds",
-      "image": "layout/images/mslot_pg_20260905/A44_SAR_ADC_COMPARATOR_168X100.png",
+      "image": "layout/images/current_driven_pg_20260908/A44_SAR_ADC_COMPARATOR_168X100.png",
       "all_layer_bbox_um": [
         0.0,
         0.0,
@@ -352,7 +354,7 @@
       "role": "SAR_LOGIC",
       "cell": "SAR_LOGIC_ACTUAL_RTL_SS",
       "gds": "gds/components/A44_SAR_ADC_SAR_LOGIC_240X240.gds",
-      "image": "layout/images/mslot_pg_20260905/A44_SAR_ADC_SAR_LOGIC_240X240.png",
+      "image": "layout/images/current_driven_pg_20260908/A44_SAR_ADC_SAR_LOGIC_240X240.png",
       "all_layer_bbox_um": [
         0.0,
         0.0,
@@ -396,7 +398,7 @@
       "role": "CLKS_BUFFER",
       "cell": "A44_CLKS_BUFFER_R1",
       "gds": "gds/components/A44_SAR_ADC_CLKS_BUFFER_120X60.gds",
-      "image": "layout/images/mslot_pg_20260905/A44_SAR_ADC_CLKS_BUFFER_120X60.png",
+      "image": "layout/images/current_driven_pg_20260908/A44_SAR_ADC_CLKS_BUFFER_120X60.png",
       "all_layer_bbox_um": [
         0.0,
         0.0,
@@ -516,16 +518,26 @@
   },
   "change_record": "layout/CHANGELOG.md",
   "previous_repository_layout": {
-    "commit": "7ed565d81c7d12fbe421034eee4b109fd713054f"
+    "commit": "5a30eed5dbb3db858119ff30cbfeba4c98259346"
   },
-  "gds_cell_count": 140,
+  "gds_cell_count": 143,
   "retained_native_provenance": {
     "directory": "layout/mag",
     "commit": "7ed565d81c7d12fbe421034eee4b109fd713054f",
     "represents_current_GDS": false,
     "cache": "layout/native_sources/A44_A_Q2_BEFORE_ESD.gds"
   },
-  "image_binding": "verification/a44_mslot_pg_20260905/IMAGE_BINDING.json",
-  "physical_checks": "verification/a44_mslot_pg_20260905/reports",
+  "current_driver_r2_provenance": {
+    "record": "verification/a44_current_driven_pg_20260908/IMPLEMENTATION.json",
+    "owner_cells": [
+      "A44_A",
+      "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+      "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9"
+    ],
+    "additive_metal_rectangles": 209,
+    "additive_ordinary_via_cuts": 1924
+  },
+  "image_binding": "verification/a44_current_driven_pg_20260908/IMAGE_BINDING.json",
+  "physical_checks": "PENDING_POSTPUSH_GITHUB_CONFIG_BOUND_DRC_LVS",
   "base_implementation_record": "verification/a44_q2_analog_esd/IMPLEMENTATION.json"
 }

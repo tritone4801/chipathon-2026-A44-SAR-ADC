@@ -1,7 +1,8 @@
 # A44 SAR ADC layout and DEF integration views
 
-The current files are the saved VMP3 layout snapshot built on the Q2 analog
-ESD implementation, with the MIM M5 coverFT update and parent PG additions.
+The current files are the `DRIVER_R2` current-driven PG repair built on the
+saved VMP3/Q2 analog-ESD layout. The MIM M5 coverFT and earlier PG additions
+are retained; the new additive metal/via reinforcement is carried by the GDS.
 
 ```text
 info.yaml -> lvs_config.json -> gds/A44_A.gds
@@ -24,19 +25,19 @@ envelopes. Each drawing preserves its physical aspect ratio.
 
 | Role | GDS top cell | Cell envelope (µm) | Image |
 | --- | --- | ---: | --- |
-| [TOP](../gds/A44_A.gds) | `A44_A` | 1110 × 1110 | [View](../layout/images/mslot_pg_20260905/A44_A.png) |
-| [CORE](../gds/A44_SAR_ADC_CORE_1000.gds) | `A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR` | 1000 × 1000 | [View](../layout/images/mslot_pg_20260905/A44_SAR_ADC_CORE_1000.png) |
-| [CDAC east](../gds/components/A44_SAR_ADC_CDAC_E_390X399P7.gds) | `A44_CDAC_UNIT_E_R8_M6` | 390 × 399.7 | [View](../layout/images/mslot_pg_20260905/A44_SAR_ADC_CDAC_E_390X399P7.png) |
-| [CDAC west](../gds/components/A44_SAR_ADC_CDAC_W_390X399P7.gds) | `A44_CDAC_UNIT_W_R8_M6` | 390 × 399.7 | [View](../layout/images/mslot_pg_20260905/A44_SAR_ADC_CDAC_W_390X399P7.png) |
-| [Comparator](../gds/components/A44_SAR_ADC_COMPARATOR_168X100.gds) | `A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9` | 168 × 100 | [View](../layout/images/mslot_pg_20260905/A44_SAR_ADC_COMPARATOR_168X100.png) |
-| [SAR logic](../gds/components/A44_SAR_ADC_SAR_LOGIC_240X240.gds) | `SAR_LOGIC_ACTUAL_RTL_SS` | 240 × 240 | [View](../layout/images/mslot_pg_20260905/A44_SAR_ADC_SAR_LOGIC_240X240.png) |
-| [Clock buffer](../gds/components/A44_SAR_ADC_CLKS_BUFFER_120X60.gds) | `A44_CLKS_BUFFER_R1` | 120 × 60 | [View](../layout/images/mslot_pg_20260905/A44_SAR_ADC_CLKS_BUFFER_120X60.png) |
+| [TOP](../gds/A44_A.gds) | `A44_A` | 1110 × 1110 | [View](images/current_driven_pg_20260908/A44_A.png) |
+| [CORE](../gds/A44_SAR_ADC_CORE_1000.gds) | `A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR` | 1000 × 1000 | [View](images/current_driven_pg_20260908/A44_SAR_ADC_CORE_1000.png) |
+| [CDAC east](../gds/components/A44_SAR_ADC_CDAC_E_390X399P7.gds) | `A44_CDAC_UNIT_E_R8_M6` | 390 × 399.7 | [View](images/current_driven_pg_20260908/A44_SAR_ADC_CDAC_E_390X399P7.png) |
+| [CDAC west](../gds/components/A44_SAR_ADC_CDAC_W_390X399P7.gds) | `A44_CDAC_UNIT_W_R8_M6` | 390 × 399.7 | [View](images/current_driven_pg_20260908/A44_SAR_ADC_CDAC_W_390X399P7.png) |
+| [Comparator](../gds/components/A44_SAR_ADC_COMPARATOR_168X100.gds) | `A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9` | 168 × 100 | [View](images/current_driven_pg_20260908/A44_SAR_ADC_COMPARATOR_168X100.png) |
+| [SAR logic](../gds/components/A44_SAR_ADC_SAR_LOGIC_240X240.gds) | `SAR_LOGIC_ACTUAL_RTL_SS` | 240 × 240 | [View](images/current_driven_pg_20260908/A44_SAR_ADC_SAR_LOGIC_240X240.png) |
+| [Clock buffer](../gds/components/A44_SAR_ADC_CLKS_BUFFER_120X60.gds) | `A44_CLKS_BUFFER_R1` | 120 × 60 | [View](images/current_driven_pg_20260908/A44_SAR_ADC_CLKS_BUFFER_120X60.png) |
 | [Secondary ESD](../gds/components/A44_SECONDARY_ESD_M2.gds) | `io_secondary_5p0` | Source envelope 80 × 76 | [View](images/q2_analog_esd_20260903/io_secondary_5p0.png) |
 
 ## Source and verification files
 
-- [TOP and component GDS](../gds) and [current physical-check records](../verification/a44_mslot_pg_20260905).
+- [TOP and component GDS](../gds) and [current publication/physical-check records](../verification/a44_current_driven_pg_20260908).
 - [DEF](def/A44_A.def), [LEF](lef/A44_A.lef) and the [unchanged TOP circuit reference](../verification/a44_q2_analog_esd/spice/A44_A_lvs_reference.spice).
-- The original `layout/mag` hierarchy and Q2 cache are retained as the source snapshot from commit `7ed565d`; they do not represent the current VMP3 GDS.
+- The original `layout/mag` hierarchy and Q2 cache remain historical sources; they do not represent the current DRIVER_R2 GDS.
 - [Q2 analog ESD files](../verification/a44_q2_analog_esd) retain the four `io_secondary_5p0` cells and their original circuit material.
-- Previous component images remain in `images/q2_prefill_20260903`.
+- Previous component images remain in `images/mslot_pg_20260905` and `images/q2_prefill_20260903`.

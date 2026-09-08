@@ -11,7 +11,7 @@ the `A44_A` project-slot top:
 - [A44_A GDSII layout](gds/A44_A.gds)
 - [A44_A integrated DEF](layout/def/A44_A.def)
 - [A44_A LEF abstract](layout/lef/A44_A.lef)
-- [Current layout files and physical checks](verification/a44_mslot_pg_20260905)
+- [Current layout files and physical checks](verification/a44_current_driven_pg_20260908)
 - [Layout update record](layout/CHANGELOG.md)
 - [Component layouts](gds/components)
 - [Machine-readable current layout bindings](layout/CURRENT_LAYOUT.json)
@@ -22,14 +22,17 @@ the `A44_A` project-slot top:
 85 logical pins are on the west edge and the four analog pins are on the north
 edge. The 1000-by-1000 um SAR ADC CORE remains a child at `(55, 55)`.
 
-## Current Q2 layout implementation
+## Current DRIVER_R2 layout implementation
 
-The selected files are the VMP3 layout snapshot built on
-`Q2_LINK18_HIER_R1_ANALOG_ESD_R1`. They include the MIM M5 coverFT update and
-additive parent-level PG metal/via changes. The TOP, CORE, component GDS files
-and saved layout images are listed in [CURRENT_LAYOUT.json](layout/CURRENT_LAYOUT.json).
+The selected files are the local `DRIVER_R2` current-driven PG repair built on
+the published VMP3/Q2 analog-ESD snapshot. It retains the MIM M5 coverFT and
+earlier parent PG changes, then adds 209 metal rectangles and 1,924 ordinary
+via cuts at the TOP, CORE and comparator owner levels. The interface, circuit
+reference, DEF and LEF are unchanged. Current GDS files and saved views are
+listed in [CURRENT_LAYOUT.json](layout/CURRENT_LAYOUT.json).
 
-The existing [physical-check records](verification/a44_mslot_pg_20260905),
+The [current publication and physical-check records](verification/a44_current_driven_pg_20260908),
+[preserved VMP3 records](verification/a44_mslot_pg_20260905),
 [Q2 analog ESD circuit](verification/a44_q2_analog_esd) and
 [layout update record](layout/CHANGELOG.md) provide the corresponding files.
 

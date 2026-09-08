@@ -1,5 +1,14 @@
 # Layout updates
 
+## 2026-09-08 — current-driven PG repair
+
+- Replaced the selected `A44_A` GDS with the retained local `DRIVER_R2` candidate based on GitHub commit `5a30eed`.
+- Updated the public CORE and comparator GDS views because the repair adds owner-level overlay cells there; the CDAC, SAR logic, clock buffer and secondary-ESD component GDS files remain unchanged.
+- Added 209 metal rectangles and 1,924 ordinary via cuts while retaining the 1110 × 1110 µm TOP, 1000 × 1000 µm CORE, 89 logical pins and 127 external Metal2 pin rectangles.
+- Regenerated the canonical metal/MIM images and added the dated `current_driven_pg_20260908` view set.
+- Added a versioned publication package and a repository-contained verifier that follows `info.yaml` to `lvs_config.json` and its declared GDS/SPICE/Verilog inputs.
+- Post-push GitHub-derived DRC/LVS is recorded separately from PEX, performance, density, ESD stress, promotion and signoff.
+
 ## 2026-09-05 — MIM coverFT and PG layout snapshot
 
 - Updated the existing TOP, CORE and five component GDS paths from the saved VMP3 files.

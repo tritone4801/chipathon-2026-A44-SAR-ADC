@@ -1,0 +1,7 @@
+{
+  "status": "PREPARED_FOR_INITIAL_LAYOUT_PUSH_REMOTE_DRC_LVS_PENDING",
+  "layout_publication_commit": null,
+  "postpush_verification_commit": null,
+  "GitHub_config_bound_DRC_LVS": "PENDING",
+  "promotion_or_signoff": false
+}

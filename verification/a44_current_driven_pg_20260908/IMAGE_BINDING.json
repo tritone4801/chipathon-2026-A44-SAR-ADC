@@ -1,0 +1,316 @@
+{
+  "status": "EXPORTED_DRIVER_R2_PUBLIC_VIEWS_AND_IMAGES",
+  "source_GDS": "/foss/designs/A44_PG_CURRENT_DRIVEN_REPAIR_20260907_R1/layout/DRIVER_R2/A44_A.gds",
+  "source_top": "A44_A",
+  "source_cells": 143,
+  "affected_owner_cells": [
+    "A44_A",
+    "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+    "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9"
+  ],
+  "exports": [
+    {
+      "role": "PROJECT_TOP",
+      "path": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/gds/A44_A.gds",
+      "top": "A44_A",
+      "cells": 143,
+      "bbox_um": [
+        0.0,
+        0.0,
+        1110.0,
+        1110.0
+      ],
+      "bytes": 3475662,
+      "exact_source_copy": true
+    },
+    {
+      "path": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/gds/A44_SAR_ADC_CORE_1000.gds",
+      "top": "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+      "cells": 132,
+      "bbox_um": [
+        0.0,
+        0.0,
+        1000.0,
+        1000.0
+      ],
+      "bytes": 2810362,
+      "role": "CORE",
+      "exact_source_copy": false
+    },
+    {
+      "path": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/gds/components/A44_SAR_ADC_COMPARATOR_168X100.gds",
+      "top": "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9",
+      "cells": 2,
+      "bbox_um": [
+        0.0,
+        0.0,
+        168.0,
+        100.0
+      ],
+      "bytes": 566384,
+      "role": "COMPARATOR",
+      "exact_source_copy": false
+    }
+  ],
+  "unchanged_public_component_checks": [
+    {
+      "role": "CDAC_E",
+      "path": "gds/components/A44_SAR_ADC_CDAC_E_390X399P7.gds",
+      "top": "A44_CDAC_UNIT_E_R8_M6",
+      "bbox_um": [
+        0.0,
+        0.0,
+        390.0,
+        399.7
+      ],
+      "not_rewritten": true
+    },
+    {
+      "role": "CDAC_W",
+      "path": "gds/components/A44_SAR_ADC_CDAC_W_390X399P7.gds",
+      "top": "A44_CDAC_UNIT_W_R8_M6",
+      "bbox_um": [
+        0.0,
+        0.0,
+        390.0,
+        399.7
+      ],
+      "not_rewritten": true
+    },
+    {
+      "role": "SAR_LOGIC",
+      "path": "gds/components/A44_SAR_ADC_SAR_LOGIC_240X240.gds",
+      "top": "SAR_LOGIC_ACTUAL_RTL_SS",
+      "bbox_um": [
+        0.0,
+        0.0,
+        240.0,
+        240.0
+      ],
+      "not_rewritten": true
+    },
+    {
+      "role": "CLKS_BUFFER",
+      "path": "gds/components/A44_SAR_ADC_CLKS_BUFFER_120X60.gds",
+      "top": "A44_CLKS_BUFFER_R1",
+      "bbox_um": [
+        0.0,
+        0.0,
+        120.0,
+        60.0
+      ],
+      "not_rewritten": true
+    },
+    {
+      "role": "SECONDARY_ESD",
+      "path": "gds/components/A44_SECONDARY_ESD_M2.gds",
+      "top": "io_secondary_5p0",
+      "bbox_um": [
+        -41.685,
+        0.0,
+        37.81,
+        75.65
+      ],
+      "not_rewritten": true
+    }
+  ],
+  "views": [
+    {
+      "role": "PROJECT_TOP",
+      "cell": "A44_A",
+      "image": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/layout/images/current_driven_pg_20260908/A44_A.png",
+      "bbox_um": [
+        0.0,
+        0.0,
+        1110.0,
+        1110.0
+      ],
+      "displayed_layers": [
+        34,
+        36,
+        42,
+        46,
+        75,
+        81
+      ],
+      "polygons": {
+        "M1": 56489,
+        "M2": 10681,
+        "M3": 9750,
+        "M4": 3603,
+        "FuseTop": 1536,
+        "M5": 2697
+      },
+      "seconds": 0.8344118989989511
+    },
+    {
+      "role": "CORE",
+      "cell": "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+      "image": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/layout/images/current_driven_pg_20260908/A44_SAR_ADC_CORE_1000.png",
+      "bbox_um": [
+        0.0,
+        0.0,
+        1000.0,
+        1000.0
+      ],
+      "displayed_layers": [
+        34,
+        36,
+        42,
+        46,
+        75,
+        81
+      ],
+      "polygons": {
+        "M1": 55537,
+        "M2": 10016,
+        "M3": 9268,
+        "M4": 3450,
+        "FuseTop": 1536,
+        "M5": 2669
+      },
+      "seconds": 0.7375436520014773
+    },
+    {
+      "role": "CDAC_E",
+      "cell": "A44_CDAC_UNIT_E_R8_M6",
+      "image": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/layout/images/current_driven_pg_20260908/A44_SAR_ADC_CDAC_E_390X399P7.png",
+      "bbox_um": [
+        0.0,
+        0.0,
+        390.0,
+        399.7
+      ],
+      "displayed_layers": [
+        34,
+        36,
+        42,
+        46,
+        75,
+        81
+      ],
+      "polygons": {
+        "M1": 21661,
+        "M2": 2674,
+        "M3": 2865,
+        "M4": 1424,
+        "FuseTop": 768,
+        "M5": 1259
+      },
+      "seconds": 0.329574720999517
+    },
+    {
+      "role": "CDAC_W",
+      "cell": "A44_CDAC_UNIT_W_R8_M6",
+      "image": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/layout/images/current_driven_pg_20260908/A44_SAR_ADC_CDAC_W_390X399P7.png",
+      "bbox_um": [
+        0.0,
+        0.0,
+        390.0,
+        399.7
+      ],
+      "displayed_layers": [
+        34,
+        36,
+        42,
+        46,
+        75,
+        81
+      ],
+      "polygons": {
+        "M1": 21661,
+        "M2": 2674,
+        "M3": 2865,
+        "M4": 1428,
+        "FuseTop": 768,
+        "M5": 1267
+      },
+      "seconds": 0.3293978119982057
+    },
+    {
+      "role": "COMPARATOR",
+      "cell": "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9",
+      "image": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/layout/images/current_driven_pg_20260908/A44_SAR_ADC_COMPARATOR_168X100.png",
+      "bbox_um": [
+        0.0,
+        0.0,
+        168.0,
+        100.0
+      ],
+      "displayed_layers": [
+        34,
+        36,
+        42,
+        46,
+        75,
+        81
+      ],
+      "polygons": {
+        "M1": 711,
+        "M2": 489,
+        "M3": 973,
+        "M4": 20,
+        "FuseTop": 0,
+        "M5": 0
+      },
+      "seconds": 0.11662603600416332
+    },
+    {
+      "role": "SAR_LOGIC",
+      "cell": "SAR_LOGIC_ACTUAL_RTL_SS",
+      "image": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/layout/images/current_driven_pg_20260908/A44_SAR_ADC_SAR_LOGIC_240X240.png",
+      "bbox_um": [
+        0.0,
+        0.0,
+        240.0,
+        240.0
+      ],
+      "displayed_layers": [
+        34,
+        36,
+        42,
+        46,
+        75,
+        81
+      ],
+      "polygons": {
+        "M1": 11389,
+        "M2": 4026,
+        "M3": 2264,
+        "M4": 238,
+        "FuseTop": 0,
+        "M5": 0
+      },
+      "seconds": 0.289372025996272
+    },
+    {
+      "role": "CLKS_BUFFER",
+      "cell": "A44_CLKS_BUFFER_R1",
+      "image": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/layout/images/current_driven_pg_20260908/A44_SAR_ADC_CLKS_BUFFER_120X60.png",
+      "bbox_um": [
+        0.0,
+        0.0,
+        120.0,
+        60.0
+      ],
+      "displayed_layers": [
+        34,
+        36,
+        42,
+        46,
+        75,
+        81
+      ],
+      "polygons": {
+        "M1": 102,
+        "M2": 65,
+        "M3": 56,
+        "M4": 61,
+        "FuseTop": 0,
+        "M5": 0
+      },
+      "seconds": 0.09922837600606726
+    }
+  ],
+  "source_modified": false
+}

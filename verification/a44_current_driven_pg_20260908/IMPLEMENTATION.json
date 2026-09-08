@@ -1,0 +1,31 @@
+{
+  "status": "PREPARED_DRIVER_R2_GITHUB_PUBLICATION",
+  "stage": "DRIVER_R2",
+  "source_package": "D:/PICO/A44_PG_CURRENT_DRIVEN_REPAIR_20260907_R1",
+  "source_GDS": "layout/DRIVER_R2/A44_A.gds",
+  "source_top": "A44_A",
+  "source_cells": 143,
+  "previous_GitHub_main_commit": "5a30eed5dbb3db858119ff30cbfeba4c98259346",
+  "base_selected_case": "Q2_ANALOG_ESD_MSLOT_COVERFT_PG_VMP3_DIAGNOSTIC",
+  "new_selected_case": "DRIVER_R2_CURRENT_DRIVEN_PG_REPAIR",
+  "owner_cells_updated": [
+    "A44_A",
+    "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+    "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9"
+  ],
+  "metal_rectangles_added_vs_previous_GitHub_GDS": 209,
+  "ordinary_via_cuts_added_vs_previous_GitHub_GDS": 1924,
+  "TOP_bbox_um": [0, 0, 1110, 1110],
+  "CORE_bbox_um": [0, 0, 1000, 1000],
+  "logical_pins": 89,
+  "metal2_pin_shapes": 127,
+  "prepublication_local_candidate_checks": {
+    "Magic_DRC_errors": 0,
+    "KLayout_DRC_items": 0,
+    "KLayout_antenna_items": 0,
+    "Netgen_LVS_unique_match": true
+  },
+  "postpush_GitHub_config_bound_DRC_LVS": "PENDING",
+  "layout_source_modified": false,
+  "performance_or_signoff_claim": false
+}
