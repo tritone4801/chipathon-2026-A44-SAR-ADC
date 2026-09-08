@@ -1,0 +1,18 @@
+{
+  "status": "PASS_GITHUB_YAML_AND_LVS_BINDING",
+  "github_derived_checkout_commit": "f221089b9738ea45f94f1fde199e762975e49db9",
+  "git_worktree_clean": true,
+  "info_yaml": "info.yaml",
+  "lvs_config_from_info_yaml": "lvs_config.json",
+  "top_source": "A44_A",
+  "layout_file": "gds/A44_A.gds",
+  "lvs_spice_files": [
+    "verification/a44_q2_analog_esd/spice/A44_A_lvs_reference.spice"
+  ],
+  "lvs_verilog_files": [
+    "verification/a44_q2_analog_esd/verilog/SAR_LOGIC_ACTUAL_RTL_SS.pnl.v"
+  ],
+  "std_cell_library": "gf180mcu_fd_sc_mcu7t5v0",
+  "all_declared_inputs_exist": true,
+  "hash_manifest_used": false
+}

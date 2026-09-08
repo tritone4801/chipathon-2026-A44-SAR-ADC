@@ -1,0 +1,853 @@
+/foss/pdks/gf180mcuD/libs.tech/klayout/tech/drc/run_drc.py:729: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now_str = datetime.utcnow().strftime("drc_run_%Y_%m_%d_%H_%M_%S")
+08-Sep-2026 16:55:45 | INFO    | Your Klayout version is: KLayout 0.30.8
+08-Sep-2026 16:55:45 | INFO    | Running Global Foundries 180nm MCU /foss/designs/A44_PG_DRIVER_R2_GITHUB_READBACK_20260908_R1/gds/A44_A.gds checks on design antenna on cell A44_A:
+2026-09-08 16:55:46 +0200: Memory Usage (443192K) : Starting running GF180MCU Klayout DRC runset on /foss/designs/A44_PG_DRIVER_R2_GITHUB_READBACK_20260908_R1/gds/A44_A.gds
+2026-09-08 16:55:46 +0200: Memory Usage (443192K) : Ruby Version for klayout: 3.2.3
+2026-09-08 16:55:46 +0200: Memory Usage (447240K) : Loading database to memory is complete.
+2026-09-08 16:55:46 +0200: Memory Usage (447240K) : GF180MCU Klayout antenna DRC runset output at: /foss/designs/A44_PG_DRIVER_R2_GITHUB_POSTPUSH_VERIFY_20260908_R1/KLAYOUT/A44_A_antenna.lyrdb
+2026-09-08 16:55:46 +0200: Memory Usage (447240K) : Evaluate switches.
+2026-09-08 16:55:46 +0200: Memory Usage (447240K) : Number of threads to use 1
+2026-09-08 16:55:46 +0200: Memory Usage (447240K) : Verbose mode: false
+2026-09-08 16:55:46 +0200: Memory Usage (447240K) : deep mode is enabled.
+2026-09-08 16:55:46 +0200: Memory Usage (447240K) : METAL_TOP Selected is 11K
+2026-09-08 16:55:46 +0200: Memory Usage (447240K) : METAL_STACK Selected is 5LM
+2026-09-08 16:55:46 +0200: Memory Usage (447240K) : MIM Option selected: B
+2026-09-08 16:55:46 +0200: Memory Usage (447240K) : Read in polygons from layers.
+2026-09-08 16:55:46 +0200: Memory Usage (448724K) : nwell has 2548 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (448936K) : comp has 35924 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (449128K) : dualgate has 1937 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (449128K) : poly2 has 31150 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (449320K) : nplus has 25388 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (449320K) : pplus has 25820 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (449704K) : contact has 159839 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (449896K) : metal1 has 66063 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (450088K) : metal1_label has 0 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (450088K) : metal1_slot has 0 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (450088K) : metal1_blk has 0 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (450280K) : via1 has 15597 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (450472K) : metal2 has 10813 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (450664K) : metal2_label has 665 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (450664K) : metal2_slot has 0 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (450664K) : metal2_blk has 0 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (450856K) : via2 has 7614 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (451048K) : metal3 has 9750 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (451240K) : metal3_label has 1088 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (451240K) : metal3_slot has 0 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (451240K) : metal3_blk has 0 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (451240K) : via3 has 3703 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (451432K) : metal4 has 3603 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (451624K) : metal4_label has 340 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (451624K) : metal4_slot has 0 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (451624K) : metal4_blk has 0 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (451624K) : via4 has 101040 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (451816K) : metal5 has 3217 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (451816K) : metal5_label has 260 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (451816K) : metal5_slot has 0 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (452008K) : metal5_blk has 0 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (452008K) : res_mk has 4 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (452008K) : fusetop has 1536 polygons
+2026-09-08 16:55:46 +0200: Memory Usage (452008K) : Starting GF180MCU ANTENNA layer derivations.
+2026-09-08 16:55:46 +0200: Memory Usage (457492K) : Starting GF180MCU ANTENNA DRC rules.
+2026-09-08 16:55:46 +0200: Memory Usage (457492K) : Construct connectivity for POLY
+2026-09-08 16:55:46 +0200: Memory Usage (457684K) : Executing rule ANT.1
+2026-09-08 16:55:46 +0200: Memory Usage (458644K) : Construct connectivity for CONTACT
+2026-09-08 16:55:46 +0200: Memory Usage (458644K) : Executing rule ANT.8
+2026-09-08 16:55:46 +0200: Memory Usage (463636K) : Construct connectivity for METAL1
+2026-09-08 16:55:46 +0200: Memory Usage (463636K) : Executing rule ANT.16_i_ANT.2
+2026-09-08 16:55:46 +0200: Memory Usage (464448K) : Executing rule ANT.16_ii_ANT.2
+2026-09-08 16:55:46 +0200: Memory Usage (464448K) : Construct connectivity for VIA1
+2026-09-08 16:55:47 +0200: Memory Usage (464448K) : Executing rule ANT.16_i_ANT.9
+2026-09-08 16:55:47 +0200: Memory Usage (465408K) : Executing rule ANT.16_ii_ANT.9
+2026-09-08 16:55:47 +0200: Memory Usage (465408K) : Construct connectivity for METAL2
+2026-09-08 16:55:47 +0200: Memory Usage (465408K) : Executing rule ANT.16_i_ANT.3
+2026-09-08 16:55:47 +0200: Memory Usage (466560K) : Executing rule ANT.16_ii_ANT.3
+2026-09-08 16:55:47 +0200: Memory Usage (466560K) : Construct connectivity for VIA2
+2026-09-08 16:55:47 +0200: Memory Usage (466560K) : Executing rule ANT.16_i_ANT.10
+2026-09-08 16:55:47 +0200: Memory Usage (466560K) : Executing rule ANT.16_ii_ANT.10
+2026-09-08 16:55:47 +0200: Memory Usage (466560K) : Construct connectivity for METAL3
+2026-09-08 16:55:47 +0200: Memory Usage (466560K) : Executing rule ANT.16_i_ANT.4
+2026-09-08 16:55:47 +0200: Memory Usage (467136K) : Executing rule ANT.16_ii_ANT.4
+2026-09-08 16:55:47 +0200: Memory Usage (467136K) : Construct connectivity for VIA3
+2026-09-08 16:55:47 +0200: Memory Usage (467136K) : Executing rule ANT.16_i_ANT.11
+2026-09-08 16:55:47 +0200: Memory Usage (467136K) : Executing rule ANT.16_ii_ANT.11
+2026-09-08 16:55:47 +0200: Memory Usage (467136K) : Construct connectivity for METAL4
+2026-09-08 16:55:47 +0200: Memory Usage (467136K) : Executing rule ANT.16_i_ANT.5
+2026-09-08 16:55:47 +0200: Memory Usage (467136K) : Executing rule ANT.16_ii_ANT.5
+2026-09-08 16:55:47 +0200: Memory Usage (467136K) : Construct connectivity for VIA4
+2026-09-08 16:55:47 +0200: Memory Usage (467136K) : Executing rule ANT.16_i_ANT.12
+2026-09-08 16:55:48 +0200: Memory Usage (467136K) : Executing rule ANT.16_ii_ANT.12
+2026-09-08 16:55:48 +0200: Memory Usage (467136K) : Construct connectivity for METAL5
+2026-09-08 16:55:48 +0200: Memory Usage (467136K) : Executing rule ANT.16_i_ANT.7
+2026-09-08 16:55:48 +0200: Memory Usage (468480K) : Executing rule ANT.16_ii_ANT.7
+2026-09-08 16:55:48 +0200: Memory Usage (468480K) : Executing rule ANT.16_iii_ANT.14_MT_MIMB
+2026-09-08 16:55:48 +0200: Memory Usage (468480K) : Antenna DRC total Run time: 2.011258991 seconds
+08-Sep-2026 16:55:48 | INFO    | ## Generating template with for the following rule tables: ['dummy_metal5.drc', 'drc_bjt.drc', 'via4_split.drc', 'via2.drc', 'dummy_poly2.drc', 'dummy_metal3.drc', 'metal1.drc', 'ymtp_mk.drc', 'sab.drc', 'lres.drc', 'ldpmos.drc', 'metal2.drc', 'via1_split.drc', 'mslot.drc', 'otp_mk.drc', 'hres.drc', 'guard_ring.drc', 'dualgate.drc', 'metal3.drc', 'metal5.drc', 'via3_split.drc', 'contact_split.drc', 'mim_a.drc', 'dummy_metal2.drc', 'poly2.drc', 'pres.drc', 'mcell.drc', 'ldnmos_split.drc', 'via2_split.drc', 'cup.drc', 'comp.drc', 'nwell_split.drc', 'via1.drc', 'metaltop.drc', 'ldnmos.drc', 'dummy_metal1.drc', 'dnwell_split.drc', 'dummy_exclude.drc', 'mim_b.drc', 'sram_3p3.drc', 'via5.drc', 'metal1_split.drc', 'ldpmos_split.drc', 'dummy_metal4.drc', 'metaltop_30k.drc', 'via4.drc', 'efuse.drc', 'pplus.drc', 'nat_split.drc', 'lvpwell.drc', 'via3.drc', 'sram_5p0.drc', 'dummy_comp.drc', 'nplus.drc', 'dnwell.drc', 'nwell.drc', 'metal4.drc', 'lvs_bjt.drc', 'contact.drc', 'nat.drc', 'esd.drc', 'lvpwell_split.drc', 'geom.drc']
+08-Sep-2026 16:55:48 | INFO    | ## Your run dir located at: /foss/designs/A44_PG_DRIVER_R2_GITHUB_POSTPUSH_VERIFY_20260908_R1/KLAYOUT
+08-Sep-2026 16:55:48 | INFO    | Running Global Foundries 180nm MCU /foss/designs/A44_PG_DRIVER_R2_GITHUB_READBACK_20260908_R1/gds/A44_A.gds checks on design main on cell A44_A:
+2026-09-08 16:55:49 +0200: Memory Usage (449676K) : Starting running GF180MCU Klayout DRC runset on /foss/designs/A44_PG_DRIVER_R2_GITHUB_READBACK_20260908_R1/gds/A44_A.gds
+2026-09-08 16:55:49 +0200: Memory Usage (449676K) : Ruby Version for klayout: 3.2.3
+2026-09-08 16:55:49 +0200: Memory Usage (451040K) : Loading database to memory is complete.
+2026-09-08 16:55:49 +0200: Memory Usage (451040K) : GF180MCU Klayout DRC runset output at: /foss/designs/A44_PG_DRIVER_R2_GITHUB_POSTPUSH_VERIFY_20260908_R1/KLAYOUT/A44_A_main.lyrdb
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : Evaluate switches.
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : table_name selected  main
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : CONNECTIVITY_RULES enabled: true
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : Wedge enabled: false
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : Ball enabled: false
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : Gold enabled: false
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : MIM Option selected: B
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : Offgrid enabled:  true
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : Number of threads to use 1
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : Verbose mode: false
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : deep  mode is enabled for main table
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : METAL_TOP Selected is 11K
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : METAL_STACK Selected is 5LM
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : FEOL enabled: true
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : BEOL enabled: true
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : DUMMY enabled: false
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : SLOW_VIA enabled: false
+2026-09-08 16:55:49 +0200: Memory Usage (451232K) : Read in polygons from layers.
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : comp has 35924 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : dnwell has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : nwell has 2548 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : lvpwell has 2565 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : dualgate has 1937 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : poly2 has 31150 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : nplus has 25388 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : pplus has 25820 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : sab has 4 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : esd has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : resistor has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : fhres has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : fusetop has 1536 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : fusewindow_d has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : polyfuse has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : mvsd has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452576K) : mvpsd has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452768K) : nat has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452768K) : comp_dummy has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452768K) : poly2_dummy has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452768K) : schottky_diode has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452768K) : zener has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452768K) : res_mk has 4 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452960K) : opc_drc has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452960K) : v5_xtor has 1712 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452960K) : cap_mk has 1536 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452960K) : mos_cap_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452960K) : ind_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452960K) : diode_mk has 38 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452960K) : drc_bjt has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452960K) : lvs_bjt has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (452960K) : mim_l_mk has 1536 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453152K) : latchup_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453152K) : guard_ring_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453152K) : otp_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453152K) : mtpmark has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453152K) : neo_ee_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453344K) : sramcore has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453344K) : lvs_rf has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453344K) : lvs_drain has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453344K) : ind_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453344K) : hvpolyrs has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453536K) : lvs_io has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453536K) : probe_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453536K) : esd_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453536K) : lvs_source has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453728K) : well_diode_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453728K) : ldmos_xtor has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453728K) : plfuse has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453728K) : efuse_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453920K) : mcell_feol_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453920K) : ymtp_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453920K) : dev_wf_mk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453920K) : comp_label has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (453920K) : poly2_label has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (454112K) : mdiode has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (454112K) : ndmy has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (454112K) : pmndmy has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (454304K) : contact has 159839 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (454688K) : metal1_drawn has 66063 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (454880K) : metal1_dummy has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (455264K) : metal1_label has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (455264K) : metal1_slot has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (455264K) : metal1_blk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (455456K) : via1 has 15597 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (455648K) : metal2_drawn has 10813 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (455840K) : metal2_dummy has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (456032K) : metal2_label has 665 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (456032K) : metal2_slot has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (456032K) : metal2_blk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (456224K) : via2 has 7614 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (456416K) : metal3_drawn has 9750 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (456608K) : metal3_dummy has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (456800K) : metal3_label has 1088 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (456992K) : metal3_slot has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (456992K) : metal3_blk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (456992K) : via3 has 3703 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (456992K) : metal4_drawn has 3603 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457184K) : metal4_dummy has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457376K) : metal4_label has 340 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457376K) : metal4_slot has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457376K) : metal4_blk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457568K) : via4 has 101040 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457568K) : metal5_drawn has 3217 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457760K) : metal5_dummy has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457760K) : metal5_label has 260 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457952K) : metal5_slot has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457952K) : metal5_blk has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457952K) : pad has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457952K) : ubmpperi has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457952K) : ubmparray has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457952K) : ubmeplate has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457952K) : metal1_res has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457952K) : metal2_res has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457952K) : metal3_res has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (457952K) : metal4_res has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (458144K) : metal5_res has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (458144K) : metal6_res has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (458144K) : pr_bndry has 2011 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (458144K) : border has 0 polygons
+2026-09-08 16:55:49 +0200: Memory Usage (458144K) : Total no. of polygons in the design is 517301
+2026-09-08 16:55:49 +0200: Memory Usage (458144K) : Starting deriving base layers.
+2026-09-08 16:55:50 +0200: Memory Usage (466080K) : Construct connectivity for the design.
+2026-09-08 16:55:50 +0200: Memory Usage (466272K) : Connectivity rules enabled, Netlist object will be generated.
+2026-09-08 16:55:50 +0200: Memory Usage (475872K) : Total area of the design is 1232100.0 um^2.
+2026-09-08 16:55:50 +0200: Memory Usage (475872K) : Starting GF180MCU DRC rules.
+2026-09-08 16:55:50 +0200: Memory Usage (475872K) : Running all FEOL rules
+2026-09-08 16:55:50 +0200: Memory Usage (475872K) : Running all BEOL rules
+2026-09-08 16:55:50 +0200: Memory Usage (475872K) : Executing rule BJT.1
+2026-09-08 16:55:50 +0200: Memory Usage (475872K) : Executing rule BJT.2
+2026-09-08 16:55:50 +0200: Memory Usage (475872K) : Executing rule BJT.3
+2026-09-08 16:55:50 +0200: Memory Usage (475872K) : Executing rule V2.1
+2026-09-08 16:55:50 +0200: Memory Usage (478784K) : Executing rule V2.2a
+2026-09-08 16:55:50 +0200: Memory Usage (479168K) : Executing rule V2.2b
+2026-09-08 16:55:50 +0200: Memory Usage (479168K) : Executing rule V2.3b
+2026-09-08 16:55:50 +0200: Memory Usage (479168K) : Executing rule V2.3c
+2026-09-08 16:55:50 +0200: Memory Usage (479552K) : Executing rule V2.3d
+2026-09-08 16:55:50 +0200: Memory Usage (479552K) : Executing rule V2.4a
+2026-09-08 16:55:50 +0200: Memory Usage (479552K) : Executing rule V2.4b
+2026-09-08 16:55:50 +0200: Memory Usage (479744K) : Executing rule V2.4c
+2026-09-08 16:55:50 +0200: Memory Usage (479744K) : Executing rule M1.1
+2026-09-08 16:55:51 +0200: Memory Usage (479744K) : Executing rule M1.2a
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule M1.2b
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule M1.3
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Starting YMTP_MK derivations
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.NW.2b_LV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.NW.2b_MV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.DF.6_MV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.DF.16_LV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.DF.16_MV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.PL.1_LV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.PL.1_MV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.PL.2_LV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.PL.2_MV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.PL.4_MV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.PL.5a_LV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.PL.5a_MV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.PL.5b_LV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule Y.PL.5b_MV
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Starting sab derivations
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.1
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.2
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.3
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.4
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.5a
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.5b
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.6
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.7
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.8
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.9
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.10
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.11
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.12
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.13
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.14a
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.14b
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.15a
+2026-09-08 16:55:51 +0200: Memory Usage (482816K) : Executing rule SB.15b
+2026-09-08 16:55:52 +0200: Memory Usage (482816K) : Executing rule SB.16
+2026-09-08 16:55:52 +0200: Memory Usage (482816K) : Starting LRES derivations
+2026-09-08 16:55:52 +0200: Memory Usage (482816K) : Executing rule LRES.1
+2026-09-08 16:55:52 +0200: Memory Usage (482816K) : Executing rule LRES.2
+2026-09-08 16:55:52 +0200: Memory Usage (482816K) : Executing rule LRES.3
+2026-09-08 16:55:52 +0200: Memory Usage (482816K) : Executing rule LRES.4
+2026-09-08 16:55:52 +0200: Memory Usage (482816K) : Executing rule LRES.5
+2026-09-08 16:55:52 +0200: Memory Usage (482816K) : Executing rule LRES.6
+2026-09-08 16:55:52 +0200: Memory Usage (482816K) : Executing rule LRES.7
+2026-09-08 16:55:52 +0200: Memory Usage (483008K) : Executing rule LRES.9a
+2026-09-08 16:55:52 +0200: Memory Usage (483200K) : Executing rule LRES.9b
+2026-09-08 16:55:52 +0200: Memory Usage (483584K) : Executing rule MDP.1
+2026-09-08 16:55:52 +0200: Memory Usage (483584K) : Executing rule MDP.1a
+2026-09-08 16:55:52 +0200: Memory Usage (483584K) : Executing rule MDP.2
+2026-09-08 16:55:52 +0200: Memory Usage (483584K) : Executing rule MDP.3
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.3ai
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.3aii
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.3b
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.3c
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.3d
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.4
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.4a
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.4b
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.5
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.5a
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.6
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.6a
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.7
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.8
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.9a
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.9b
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.9c
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.9d
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.9ei
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.9eii
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.9f
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.10
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : CONNECTIVITY_RULES section
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.10a
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.10b
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.11
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.12
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.13a
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.13b
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.13c
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.15
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.16a
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.16b
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.17a
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule MDP.17c
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule M2.1
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule M2.2a
+2026-09-08 16:55:52 +0200: Memory Usage (484352K) : Executing rule M2.2b
+2026-09-08 16:55:53 +0200: Memory Usage (484352K) : Executing rule M2.3
+2026-09-08 16:55:53 +0200: Memory Usage (484352K) : Starting Metal Slotting rules derivations
+2026-09-08 16:55:53 +0200: Memory Usage (484352K) : Checking slots for: metal1
+2026-09-08 16:55:53 +0200: Memory Usage (493760K) : Executing rule MSLOT.1
+2026-09-08 16:55:53 +0200: Memory Usage (493760K) : Executing rule MSLOT.2
+2026-09-08 16:55:53 +0200: Memory Usage (493952K) : Executing rule MSLOT.3
+2026-09-08 16:55:53 +0200: Memory Usage (493952K) : Executing rule MSLOT.4
+2026-09-08 16:55:53 +0200: Memory Usage (493952K) : Executing rule MSLOT.5
+2026-09-08 16:55:53 +0200: Memory Usage (493952K) : Executing rule MSLOT.7
+2026-09-08 16:55:53 +0200: Memory Usage (493952K) : Executing rule MSLOT.8
+2026-09-08 16:55:53 +0200: Memory Usage (493952K) : Executing rule MSLOT.9
+2026-09-08 16:55:53 +0200: Memory Usage (493952K) : Checking slots for: metal2
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.1
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.2
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.3
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.4
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.5
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.7
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.8
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.9
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Checking slots for: metal3
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.1
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.2
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.3
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.4
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.5
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.7
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.8
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.9
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Checking slots for: metal4
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.1
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.2
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.3
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.4
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.5
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.7
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.8
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.9
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Checking slots for: metal5
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.1
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.2
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.3
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.4
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.5
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.7
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.8
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule MSLOT.9
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Starting OTP_MK derivations
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.DF.3a
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.DF.6
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.DF.9
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.PL.2
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.PL.3a
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.PL.4
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.SB.2
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.SB.3
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.SB.4
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.SB.5b_LV
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.SB.9
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.SB.11
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.SB.13_LV
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.SB.13_MV
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.CO.7
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule O.PL.ORT
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Starting HRES derivations
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule HRES.1
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule HRES.2
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule HRES.3
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule HRES.4
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule HRES.5
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule HRES.6
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule HRES.7
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule HRES.8
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule HRES.9
+2026-09-08 16:55:54 +0200: Memory Usage (493952K) : Executing rule HRES.10
+2026-09-08 16:55:54 +0200: Memory Usage (495680K) : Executing rule HRES.12a
+2026-09-08 16:55:54 +0200: Memory Usage (495680K) : Executing rule HRES.12b
+2026-09-08 16:55:54 +0200: Memory Usage (495680K) : Executing rule DV.1
+2026-09-08 16:55:54 +0200: Memory Usage (495680K) : Executing rule DV.2
+2026-09-08 16:55:54 +0200: Memory Usage (495680K) : Executing rule DV.3
+2026-09-08 16:55:54 +0200: Memory Usage (497984K) : Executing rule DV.5
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule DV.6
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule DV.7
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule DV.8
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule DV.9
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule M3.1
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule M3.2a
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule M3.2b
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule M3.3
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Starting POLY2 derivations
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.1_LV
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.1_MV
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.1a_LV
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.1a_MV
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.2_LV
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.2_MV
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.3a
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.4_LV
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.4_MV
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.5a_LV
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.5a_MV
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.5b_LV
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.5b_MV
+2026-09-08 16:55:55 +0200: Memory Usage (497984K) : Executing rule PL.6
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PL.7_LV
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PL.7_MV
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PL.9
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PL.11
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PL.12
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Starting PRES derivations
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PRES.1
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PRES.2
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PRES.3
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PRES.4
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PRES.5
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PRES.6
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PRES.7
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PRES.9a
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule PRES.9b
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule MC.1
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule MC.2
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule MC.3
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule MC.4
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule CUP.2
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule CUP.3
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Starting comp derivations
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule DF.1a_LV
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule DF.1a_MV
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule DF.1c
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule DF.2a_LV
+2026-09-08 16:55:56 +0200: Memory Usage (497984K) : Executing rule DF.2a_MV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.2b
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.3a_LV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.3a_MV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.3b
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.3c_LV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.3c_MV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.4a_LV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.4a_MV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.4b_LV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.4b_MV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.4c_LV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.4c_MV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.4d_LV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.4d_MV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.4e_LV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.4e_MV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.5_LV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.5_MV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.6_LV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.6_MV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.7_LV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.7_MV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.8_LV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.8_MV
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.9
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.10
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.11
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Executing rule DF.12
+2026-09-08 16:55:57 +0200: Memory Usage (497984K) : Preparations for rule DF.13_LV and DF.13_MV
+2026-09-08 16:55:58 +0200: Memory Usage (497984K) : Executing rule DF.13_LV
+2026-09-08 16:55:58 +0200: Memory Usage (497984K) : Executing rule DF.13_MV
+2026-09-08 16:55:58 +0200: Memory Usage (497984K) : Executing rule DF.14_LV
+2026-09-08 16:55:58 +0200: Memory Usage (497984K) : Executing rule DF.14_MV
+2026-09-08 16:55:58 +0200: Memory Usage (497984K) : Executing rule DF.16_LV
+2026-09-08 16:55:59 +0200: Memory Usage (497984K) : Executing rule DF.16_MV
+2026-09-08 16:55:59 +0200: Memory Usage (497984K) : Executing rule DF.17_LV
+2026-09-08 16:55:59 +0200: Memory Usage (497984K) : Executing rule DF.17_MV
+2026-09-08 16:55:59 +0200: Memory Usage (497984K) : Executing rule DF.18
+2026-09-08 16:55:59 +0200: Memory Usage (497984K) : Executing rule DF.19_LV
+2026-09-08 16:55:59 +0200: Memory Usage (497984K) : Executing rule DF.19_MV
+2026-09-08 16:55:59 +0200: Memory Usage (497984K) : Executing rule V1.1
+2026-09-08 16:55:59 +0200: Memory Usage (497984K) : Executing rule V1.2a
+2026-09-08 16:55:59 +0200: Memory Usage (497984K) : Executing rule V1.2b
+2026-09-08 16:55:59 +0200: Memory Usage (497984K) : Executing rule V1.3a
+2026-09-08 16:55:59 +0200: Memory Usage (497984K) : Executing rule V1.3c
+2026-09-08 16:55:59 +0200: Memory Usage (501056K) : Executing rule V1.3d
+2026-09-08 16:55:59 +0200: Memory Usage (501056K) : Executing rule V1.4a
+2026-09-08 16:55:59 +0200: Memory Usage (501056K) : Executing rule V1.4b
+2026-09-08 16:55:59 +0200: Memory Usage (501056K) : Executing rule V1.4c
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : MetalTop thickness 9k/11k section
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MT.1
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MT.2a
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MT.2b
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MT.4
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Starting 10V LDNMOS derivations
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.1
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : CONNECTIVITY_RULES section
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.2a
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.2b
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.3a
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.3b
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.4a
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.4b
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.5ai
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.5aii
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.5b
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.5c
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.6
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.6a
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.7
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.7a
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : CONNECTIVITY_RULES section
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.8a
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.8b
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.9
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.10a
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.10b
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.10c
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.10d
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.10ei
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.10eii
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.10f
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.11
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.12
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.13a
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.13b
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.13c
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.13d
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.14
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.15a
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.15b
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MDN.17
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule DE.2
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule DE.3
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule DE.4
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : MIM Capacitor Option B section
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MIMTM.1
+2026-09-08 16:56:00 +0200: Memory Usage (501056K) : Executing rule MIMTM.2
+2026-09-08 16:56:01 +0200: Memory Usage (501056K) : Executing rule MIMTM.3
+2026-09-08 16:56:01 +0200: Memory Usage (501056K) : Executing rule MIMTM.4
+2026-09-08 16:56:01 +0200: Memory Usage (501056K) : Executing rule MIMTM.5
+2026-09-08 16:56:01 +0200: Memory Usage (501056K) : Executing rule MIMTM.6
+2026-09-08 16:56:01 +0200: Memory Usage (501056K) : Executing rule MIMTM.7
+2026-09-08 16:56:01 +0200: Memory Usage (501056K) : Executing rule MIMTM.8a
+2026-09-08 16:56:01 +0200: Memory Usage (501056K) : Executing rule MIMTM.8b
+2026-09-08 16:56:01 +0200: Memory Usage (501056K) : Executing rule MIMTM.9
+2026-09-08 16:56:01 +0200: Memory Usage (501056K) : Executing rule MIMTM.10
+2026-09-08 16:56:01 +0200: Memory Usage (501056K) : Executing rule MIMTM.11
+2026-09-08 16:56:01 +0200: Memory Usage (506432K) : Starting 3.3V SRAM derivations
+2026-09-08 16:56:01 +0200: Memory Usage (506432K) : Executing rule S.DF.4c_LV
+2026-09-08 16:56:01 +0200: Memory Usage (506432K) : Executing rule S.DF.16_LV
+2026-09-08 16:56:01 +0200: Memory Usage (506432K) : Executing rule S.CO.3_LV
+2026-09-08 16:56:01 +0200: Memory Usage (506432K) : Executing rule S.CO.4_LV
+2026-09-08 16:56:01 +0200: Memory Usage (506432K) : Executing rule S.CO.6_ii_LV
+2026-09-08 16:56:01 +0200: Memory Usage (506432K) : Executing rule S.M1.1_LV
+2026-09-08 16:56:01 +0200: Memory Usage (506432K) : Executing rule V4.1
+2026-09-08 16:56:01 +0200: Memory Usage (506432K) : Executing rule V4.2a
+2026-09-08 16:56:01 +0200: Memory Usage (506432K) : Executing rule V4.2b
+2026-09-08 16:56:01 +0200: Memory Usage (506432K) : Executing rule V4.3b
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule V4.3c
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule V4.3d
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule V4.4a
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule V4.4b
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule V4.4c
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Starting EFUSE derivations
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.01
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.02
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.03
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.04a
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.04b
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.04c
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.04d
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.05
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.06
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.07
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.08
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.09
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.10
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.11
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.12
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.13
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.14
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.15
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.16a
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.16b
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.17
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.18
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.19
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.20
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.21
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.22a
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule EF.22b
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Starting PPLUS derivations
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule PP.1
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule PP.2
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule PP.3a
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule PP.3bi
+2026-09-08 16:56:02 +0200: Memory Usage (506432K) : Executing rule PP.3bii
+2026-09-08 16:56:02 +0200: Memory Usage (506624K) : Executing rule PP.3ci
+2026-09-08 16:56:02 +0200: Memory Usage (506624K) : Executing rule PP.3cii
+2026-09-08 16:56:02 +0200: Memory Usage (506624K) : Executing rule PP.3d
+2026-09-08 16:56:02 +0200: Memory Usage (506624K) : Executing rule PP.3e
+2026-09-08 16:56:02 +0200: Memory Usage (506624K) : Executing rule PP.4a
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.4b
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.5a
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.5b
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.5ci
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.5cii
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.5di
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.5dii
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.6
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.7
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.8a
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.8b
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.9
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.10
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.11
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule PP.12
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Starting LVPWELL derivations
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule LPW.1_LV
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule LPW.1_MV
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : CONNECTIVITY_RULES section
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule LPW.2a_LV
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule LPW.2a_MV
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule LPW.2b_LV
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule LPW.2b_MV
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule LPW.3_LV
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule LPW.5
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule LPW.11
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule LPW.12
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule V3.1
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule V3.2a
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule V3.2b
+2026-09-08 16:56:03 +0200: Memory Usage (506624K) : Executing rule V3.3b
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule V3.3c
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule V3.3d
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule V3.4a
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule V3.4b
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule V3.4c
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Starting 5V SRAM derivations
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule S.DF.4c_MV
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule S.DF.6_MV
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule S.DF.7_MV
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule S.DF.8_MV
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule S.DF.16_MV
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule S.PL.5a_MV
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule S.PL.5b_MV
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule S.CO.4_MV
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Starting NPLUS derivations
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule NP.1
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule NP.2
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule NP.3a
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule NP.3bi
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule NP.3bii
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule NP.3ci
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule NP.3cii
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule NP.3d
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule NP.3e
+2026-09-08 16:56:04 +0200: Memory Usage (506624K) : Executing rule NP.4a
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.4b
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.5a
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule PP.5b
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.5ci
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.5cii
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.5di
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.5dii
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.6
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.7
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.8a
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.8b
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.9
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.10
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.11
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule NP.12
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule DN.1
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : CONNECTIVITY_RULES section
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule DN.2a
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule DN.2b
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Executing rule DN.3
+2026-09-08 16:56:05 +0200: Memory Usage (506624K) : Starting NWELL derivations
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule NW.1a_LV
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule NW.1a_MV
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule NW.1b_LV
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule NW.1b_MV
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : CONNECTIVITY_RULES section
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule NW.2a_LV
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule NW.2a_MV
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule NW.2b_LV
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule NW.2b_MV
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule NW.3
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule NW.4
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule NW.5_LV
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule NW.5_MV
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule NW.6
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule M4.1
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule M4.2a
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule M4.2b
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule M4.3
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule LVS_BJT.1
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Starting CONTACT derivations
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule CO.1
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule CO.2a
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule CO.2b
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule CO.3
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule CO.4
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule CO.5a
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule CO.5b
+2026-09-08 16:56:06 +0200: Memory Usage (506624K) : Executing rule CO.6
+2026-09-08 16:56:07 +0200: Memory Usage (506624K) : Executing rule CO.6a
+2026-09-08 16:56:07 +0200: Memory Usage (507776K) : Executing rule CO.6b
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule CO.7
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule CO.8
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule CO.9
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule CO.10
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule CO.11
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Starting NAT derivations
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule NAT.1
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule NAT.2
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule NAT.3
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule NAT.4
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule NAT.5
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : CONNECTIVITY_RULES section
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule NAT.6
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule NAT.7
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule NAT.8
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule NAT.9
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule NAT.10
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule NAT.11
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule NAT.12
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Starting ESD derivations
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.1
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.2
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.3a
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.3b
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.4a
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.4b
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.5a
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.5b
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.6
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.7
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.8
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.pl
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.9
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule ESD.10
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : OFFGRID-ANGLES section
+2026-09-08 16:56:08 +0200: Memory Usage (520640K) : Executing rule comp_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (520832K) : Executing rule dnwell_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (520832K) : Executing rule nwell_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521024K) : Executing rule lvpwell_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521024K) : Executing rule dualgate_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521216K) : Executing rule poly2_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521216K) : Executing rule nplus_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521216K) : Executing rule pplus_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521600K) : Executing rule sab_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521600K) : Executing rule esd_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521792K) : Executing rule resistor_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521792K) : Executing rule fhres_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule fusetop_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule fusewindow_d_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule polyfuse_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule mvsd_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule mvpsd_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule nat_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule comp_dummy_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule poly2_dummy_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule schottky_diode_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule zener_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule res_mk_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule opc_drc_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule ndmy_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule pmndmy_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule v5_xtor_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule cap_mk_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule mos_cap_mk_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule ind_mk_OFFGRID
+2026-09-08 16:56:08 +0200: Memory Usage (521984K) : Executing rule diode_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (521984K) : Executing rule drc_bjt_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (521984K) : Executing rule lvs_bjt_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (521984K) : Executing rule mim_l_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (521984K) : Executing rule latchup_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (521984K) : Executing rule guard_ring_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (521984K) : Executing rule otp_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (522176K) : Executing rule mtpmark_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (522176K) : Executing rule neo_ee_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (522368K) : Executing rule sramcore_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (522368K) : Executing rule lvs_rf_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (522560K) : Executing rule lvs_drain_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (522560K) : Executing rule ind_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (522752K) : Executing rule hvpolyrs_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (522752K) : Executing rule lvs_io_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (522944K) : Executing rule probe_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (522944K) : Executing rule esd_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (523328K) : Executing rule lvs_source_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (524096K) : Executing rule well_diode_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (524672K) : Executing rule ldmos_xtor_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (525440K) : Executing rule plfuse_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (525824K) : Executing rule efuse_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (525824K) : Executing rule mcell_feol_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (526016K) : Executing rule ymtp_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (526016K) : Executing rule dev_wf_mk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (526208K) : Executing rule comp_label_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (526208K) : Executing rule poly2_label_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (526400K) : Executing rule mdiode_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (526592K) : Executing rule contact_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (526592K) : Executing rule metal1_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (527744K) : Executing rule metal1_slot_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (527936K) : Executing rule metal1_blk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (528704K) : Executing rule metal1_label_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (529472K) : Executing rule via1_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal2_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal2_label_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal2_slot_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal2_blk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule via2_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal3_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal3_dummy_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal3_label_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal3_blk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule via3_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal4_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal4_dummy_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal4_label_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal4_blk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule via4_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal5_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal5_dummy_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal5_label_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal5_blk_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule pad_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule ubmpperi_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule ubmparray_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule ubmeplate_OFFGRID
+2026-09-08 16:56:09 +0200: Memory Usage (530816K) : Executing rule metal1_res_OFFGRID
+2026-09-08 16:56:10 +0200: Memory Usage (530816K) : Executing rule metal2_res_OFFGRID
+2026-09-08 16:56:10 +0200: Memory Usage (530816K) : Executing rule metal3_res_OFFGRID
+2026-09-08 16:56:10 +0200: Memory Usage (530816K) : Executing rule metal4_res_OFFGRID
+2026-09-08 16:56:10 +0200: Memory Usage (530816K) : Executing rule metal5_res_OFFGRID
+2026-09-08 16:56:10 +0200: Memory Usage (530816K) : Executing rule metal6_res_OFFGRID
+2026-09-08 16:56:10 +0200: Memory Usage (530816K) : Executing rule pr_bndry_OFFGRID
+2026-09-08 16:56:10 +0200: Memory Usage (530816K) : Executing rule border_OFFGRID
+2026-09-08 16:56:10 +0200: Memory Usage (530816K) : main DRC Total Run time 20.359677998 seconds
+08-Sep-2026 16:56:10 | INFO    | Klayout DRC run is clean. GDS has no DRC violations.

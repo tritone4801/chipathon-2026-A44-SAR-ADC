@@ -538,6 +538,6 @@
     "additive_ordinary_via_cuts": 1924
   },
   "image_binding": "verification/a44_current_driven_pg_20260908/IMAGE_BINDING.json",
-  "physical_checks": "PENDING_POSTPUSH_GITHUB_CONFIG_BOUND_DRC_LVS",
+  "physical_checks": "verification/a44_current_driven_pg_20260908/reports/GITHUB_CONFIG_DRC_LVS_R1/SUMMARY.json",
   "base_implementation_record": "verification/a44_q2_analog_esd/IMPLEMENTATION.json"
 }

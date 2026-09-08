@@ -1,0 +1,158 @@
+{
+  "status": "PASS_DRIVER_R2_PUBLICATION_BINDING",
+  "pass": true,
+  "checks": {
+    "selected_case_DRIVER_R2": true,
+    "top_143_cells": true,
+    "all_GDS_bboxes_match": true,
+    "all_images_exist": true,
+    "all_binding_files_exist": true,
+    "info_yaml_selects_lvs_config": true,
+    "lvs_top_A44_A": true,
+    "lvs_layout_is_current_top_GDS": true,
+    "lvs_spice_matches_current_binding": true,
+    "powered_SAR_gate_Verilog_declared": true,
+    "official_interface_retained": true
+  },
+  "gds_records": [
+    {
+      "path": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/gds/A44_A.gds",
+      "top": "A44_A",
+      "stream_top_cells": [
+        "A44_A"
+      ],
+      "cells": 143,
+      "bbox_um": [
+        0.0,
+        0.0,
+        1110.0,
+        1110.0
+      ],
+      "bytes": 3475662,
+      "role": "PROJECT_TOP",
+      "bbox_matches_binding": true
+    },
+    {
+      "path": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/gds/A44_SAR_ADC_CORE_1000.gds",
+      "top": "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR",
+      "stream_top_cells": [
+        "A44_SAR_ADC_CORE_1000_R3_DUMMY_FILL_REPAIR"
+      ],
+      "cells": 132,
+      "bbox_um": [
+        0.0,
+        0.0,
+        1000.0,
+        1000.0
+      ],
+      "bytes": 2810362,
+      "role": "CORE",
+      "bbox_matches_binding": true
+    },
+    {
+      "path": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/gds/components/A44_SAR_ADC_CDAC_E_390X399P7.gds",
+      "top": "A44_CDAC_UNIT_E_R8_M6",
+      "stream_top_cells": [
+        "A44_CDAC_UNIT_E_R8_M6"
+      ],
+      "cells": 33,
+      "bbox_um": [
+        0.0,
+        0.0,
+        390.0,
+        399.7
+      ],
+      "bytes": 705210,
+      "role": "CDAC_E",
+      "bbox_matches_binding": true
+    },
+    {
+      "path": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/gds/components/A44_SAR_ADC_CDAC_W_390X399P7.gds",
+      "top": "A44_CDAC_UNIT_W_R8_M6",
+      "stream_top_cells": [
+        "A44_CDAC_UNIT_W_R8_M6"
+      ],
+      "cells": 33,
+      "bbox_um": [
+        0.0,
+        0.0,
+        390.0,
+        399.7
+      ],
+      "bytes": 705982,
+      "role": "CDAC_W",
+      "bbox_matches_binding": true
+    },
+    {
+      "path": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/gds/components/A44_SAR_ADC_COMPARATOR_168X100.gds",
+      "top": "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9",
+      "stream_top_cells": [
+        "A44_COMP_PEX_ECO1_SD_REQUIRED_G6_FULL_R9"
+      ],
+      "cells": 2,
+      "bbox_um": [
+        0.0,
+        0.0,
+        168.0,
+        100.0
+      ],
+      "bytes": 566384,
+      "role": "COMPARATOR",
+      "bbox_matches_binding": true
+    },
+    {
+      "path": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/gds/components/A44_SAR_ADC_SAR_LOGIC_240X240.gds",
+      "top": "SAR_LOGIC_ACTUAL_RTL_SS",
+      "stream_top_cells": [
+        "SAR_LOGIC_ACTUAL_RTL_SS"
+      ],
+      "cells": 59,
+      "bbox_um": [
+        0.0,
+        0.0,
+        240.0,
+        240.0
+      ],
+      "bytes": 645628,
+      "role": "SAR_LOGIC",
+      "bbox_matches_binding": true
+    },
+    {
+      "path": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/gds/components/A44_SAR_ADC_CLKS_BUFFER_120X60.gds",
+      "top": "A44_CLKS_BUFFER_R1",
+      "stream_top_cells": [
+        "A44_CLKS_BUFFER_R1"
+      ],
+      "cells": 1,
+      "bbox_um": [
+        0.0,
+        0.0,
+        120.0,
+        60.0
+      ],
+      "bytes": 38930,
+      "role": "CLKS_BUFFER",
+      "bbox_matches_binding": true
+    },
+    {
+      "path": "/foss/designs/A44_PG_DRIVER_R2_GITHUB_20260908_R1/gds/components/A44_SECONDARY_ESD_M2.gds",
+      "top": "io_secondary_5p0",
+      "stream_top_cells": [
+        "io_secondary_5p0"
+      ],
+      "cells": 5,
+      "bbox_um": [
+        -41.685,
+        0.0,
+        37.81,
+        75.65
+      ],
+      "bytes": 377826,
+      "role": "SECONDARY_ESD",
+      "bbox_matches_binding": true
+    }
+  ],
+  "image_count": 8,
+  "binding_file_count": 8,
+  "hash_manifest_used": false
+}
