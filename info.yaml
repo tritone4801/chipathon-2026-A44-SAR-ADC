@@ -7,6 +7,7 @@ project:
   discord: ""
   description: "3.3-V fully differential capacitive SAR ADC in GF180MCU"
   lvs_config: "lvs_config.json"
+  export_control: "documents/Export_Control_GF_Rev8.2.docx"
 
 pins:
   - name: "GND"
